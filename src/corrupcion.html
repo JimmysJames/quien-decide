@@ -1,0 +1,499 @@
+<title>Corrupción y calidad de la política, hechos del Estado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,500..800&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Layout: resumen en lenguaje llano, línea de tiempo de ocho años como hilo, cada hecho con una frase clara y el detalle técnico plegado. Las series largas van en filas horizontales para leerse bien en el móvil. */
+:root{
+  --paper:#EDF0F2;
+  --card:#FFFFFF;
+  --ink:#121B23;
+  --ink-2:#4B5967;
+  --rule:#CBD3DA;
+  --accent:#0B6E63;
+  --on-accent:#FFFFFF;
+  --accent-soft:#D6ECE8;
+  --alt:#5D6D7B;
+  --alt2:#B8C4CE;
+  --note-bg:#FFF2CF;
+  --note-ink:#6B4700;
+  --f-display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E151B; --card:#16212A; --ink:#E7EDF1; --ink-2:#9FB0BD; --rule:#2A3946;
+    --accent:#4DC2B1; --on-accent:#07201C; --accent-soft:#143A38; --alt:#6F8394; --alt2:#3E5160;
+    --note-bg:#3A2F10; --note-ink:#F0C96A;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E151B; --card:#16212A; --ink:#E7EDF1; --ink-2:#9FB0BD; --rule:#2A3946;
+  --accent:#4DC2B1; --on-accent:#07201C; --accent-soft:#143A38; --alt:#6F8394; --alt2:#3E5160;
+  --note-bg:#3A2F10; --note-ink:#F0C96A;
+  color-scheme: dark;
+}
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.5}
+h1,h2,h3,p,ul,ol,dl,dd{margin:0}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+a{color:var(--accent)}
+
+.app{max-width:680px;margin-inline:auto;padding-inline:16px;padding-block:20px 56px;display:flex;flex-direction:column;gap:32px}
+
+.top{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.brand{font-family:var(--f-display);font-size:1.1rem;font-weight:800;font-variation-settings:"wdth" 112;color:var(--ink);text-decoration:none}
+.tag{font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;border:1px solid var(--ink-2);color:var(--ink-2);padding:2px 8px;border-radius:3px;white-space:nowrap}
+
+.head{display:flex;flex-direction:column;gap:10px;border-top:2px solid var(--ink);padding-top:14px}
+.head h1{font-size:2.1rem;font-weight:800;font-variation-settings:"wdth" 108;line-height:1.08}
+.kicker{font-family:var(--f-mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2)}
+.k{font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-2)}
+
+.sum{background:var(--ink);color:var(--paper);border-radius:6px;padding:6px 18px;display:flex;flex-direction:column}
+.sum .row{display:grid;grid-template-columns:minmax(0,1fr);gap:4px;padding-block:14px;border-top:1px solid color-mix(in srgb, var(--paper) 25%, transparent)}
+.sum .row:first-child{border-top:0}
+.sum .k{color:var(--paper);opacity:.7}
+.sum p{font-size:1.08rem;line-height:1.4}
+.sum b{font-weight:700;font-variant-numeric:tabular-nums}
+.sum .gap p{opacity:.9}
+
+section{display:flex;flex-direction:column;gap:14px}
+section>h2{font-size:1.45rem;font-weight:700;font-variation-settings:"wdth" 105;line-height:1.2}
+.lede{color:var(--ink-2)}
+
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.88rem;color:var(--ink-2)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.dot{width:12px;height:12px;border-radius:50%;border:2px solid var(--accent);background:var(--accent);flex:none;display:inline-block}
+.dot.no{background:transparent;border-color:var(--alt)}
+.tl{list-style:none;padding:0;margin:0;display:flex;flex-direction:column}
+.tl li{display:grid;grid-template-columns:84px 20px minmax(0,1fr);gap:0 8px;padding-bottom:18px;position:relative}
+.tl li:last-child{padding-bottom:0}
+.tl time{font-family:var(--f-mono);font-size:.8rem;color:var(--ink-2);padding-top:3px;font-variant-numeric:tabular-nums}
+.tl .mk{position:relative;display:flex;justify-content:center;padding-top:5px}
+.tl .mk::after{content:"";position:absolute;top:22px;bottom:-18px;width:2px;background:var(--rule)}
+.tl li:last-child .mk::after{display:none}
+.tl .t{font-weight:600;line-height:1.3}
+.tl .s{color:var(--ink-2);font-size:.95rem}
+
+.fact{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:16px;display:flex;flex-direction:column;gap:10px}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}
+.meta time{font-family:var(--f-mono);font-size:.8rem;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.badge{font-family:var(--f-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;padding:2px 7px;border-radius:3px;border:1px solid var(--ink-2);color:var(--ink-2)}
+.badge.of{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.fact h3{font-size:1.2rem;font-weight:700;line-height:1.25}
+.plain{font-size:1.05rem}
+.fact p{margin:0}
+.num{font-variant-numeric:tabular-nums}
+details{border-top:1px solid var(--rule);padding-top:10px}
+summary{cursor:pointer;font-family:var(--f-mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);padding-block:4px}
+details[open] summary{margin-bottom:8px}
+details .in{display:flex;flex-direction:column;gap:8px;font-size:.96rem}
+.src{font-size:.88rem;overflow-wrap:anywhere}
+.limit{background:var(--note-bg);color:var(--note-ink);font-size:.92rem;padding:8px 10px;border-radius:3px}
+
+.split{display:flex;flex-direction:column;gap:6px}
+.stack{display:flex;height:38px;border-radius:3px;overflow:hidden;font-family:var(--f-mono);font-size:.82rem;font-variant-numeric:tabular-nums}
+.stack span{display:flex;align-items:center;padding-inline:8px;white-space:nowrap;overflow:hidden}
+.s1{background:var(--accent);color:var(--on-accent)}
+.s2{background:var(--alt);color:var(--paper)}
+.s3{background:var(--alt2);color:var(--ink)}
+.flow{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:8px;align-items:stretch}
+.flow .bx{border:1px solid var(--rule);border-radius:4px;padding:10px 12px;display:flex;flex-direction:column;gap:2px;background:var(--paper)}
+.flow .bx b{font-family:var(--f-display)}
+.flow .ar{display:grid;place-items:center;font-family:var(--f-mono);color:var(--ink-2)}
+@media (max-width:480px){.flow{grid-template-columns:minmax(0,1fr)}.flow .ar{transform:rotate(90deg);padding-block:2px}}
+
+.vote{display:flex;flex-direction:column;gap:6px}
+.bar{display:flex;height:36px;border-radius:3px;overflow:hidden;font-family:var(--f-mono);font-size:.82rem;font-variant-numeric:tabular-nums}
+.bar span{display:flex;align-items:center;padding-inline:8px;white-space:nowrap}
+.bar .y{background:var(--accent);color:var(--on-accent)}
+.bar .n{background:var(--alt);color:var(--paper);justify-content:flex-end}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--rule);border-radius:6px}
+table{border-collapse:collapse;width:100%;min-width:340px;font-size:.95rem}
+th,td{text-align:left;padding:7px 12px;border-top:1px solid var(--rule)}
+thead th{border-top:0;font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);font-weight:500}
+td.y{font-weight:600}
+td.n{color:var(--ink-2)}
+
+.chart{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.chart h3{font-size:1.1rem;font-weight:700}
+.chart svg{width:100%;height:auto;display:block;max-width:100%}
+.cap{font-size:.9rem;color:var(--ink-2)}
+.bigs{display:flex;flex-wrap:wrap;gap:8px 28px}
+.big{display:flex;flex-direction:column;gap:0}
+.big b{font-family:var(--f-display);font-size:2.4rem;font-weight:800;font-variation-settings:"wdth" 108;font-variant-numeric:tabular-nums;line-height:1.1}
+.big span{color:var(--ink-2);font-size:.92rem}
+
+.foot{border-top:1px solid var(--rule);padding-top:14px;display:flex;flex-direction:column;gap:8px;font-size:.9rem;color:var(--ink-2)}
+</style>
+<style>
+.aviso{background:var(--accent-soft);border-left:4px solid var(--accent);border-radius:4px;padding:12px 14px;display:flex;flex-direction:column;gap:4px}
+.aviso b{font-family:var(--f-display)}
+.nada{color:var(--ink-2)}
+.nolist{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:4px}
+.vote .lbl{font-family:var(--f-mono);font-size:.78rem;color:var(--ink-2)}
+.bar .a{background:var(--alt2);color:var(--ink);justify-content:center;padding-inline:0}
+details.yg{border-top:0;padding-top:0}
+details.yg>summary{display:flex;align-items:baseline;gap:10px;border-bottom:2px solid var(--ink);padding-block:8px 4px;color:var(--ink);text-transform:none;letter-spacing:0;list-style-position:inside}
+details.yg>summary .yy{font-family:var(--f-display);font-size:1.25rem;font-weight:800;font-variation-settings:"wdth" 108}
+details.yg>summary .yn{font-family:var(--f-mono);font-size:.72rem;color:var(--ink-2);text-transform:uppercase;letter-spacing:.06em}
+details.yg[open]>summary{margin-bottom:12px}
+details.yg>summary{cursor:pointer;list-style:none}
+details.yg>summary::-webkit-details-marker{display:none}
+details.yg>summary::before{content:"+";font-family:var(--f-mono);font-size:1rem;color:var(--accent);width:14px;flex:none}
+details.yg[open]>summary::before{content:"−"}
+.ygi{display:flex;flex-direction:column;gap:14px}
+.tl.compact li{padding-bottom:10px}
+.tl.compact .t{font-weight:500;font-size:.95rem}
+.keys{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.88rem;color:var(--ink-2)}
+.keys i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px}
+.count{font-family:var(--f-mono);font-size:.74rem;font-weight:400;color:var(--ink-2);text-transform:uppercase;letter-spacing:.06em;margin-left:8px}
+</style>
+
+<main class="app">
+  <header class="top">
+    <a class="brand" href="index.html">Quién decide</a>
+    <span class="tag">Beta</span>
+  </header>
+
+  <div class="head">
+    <p class="kicker">Gobierno central y Cortes · 2018 a 2026</p>
+    <h1>Corrupción y calidad de la política: qué ha hecho el Estado</h1>
+    <p class="lede">Ocho años con Pedro Sánchez como presidente del Gobierno, desde junio de 2018.</p>
+  </div>
+
+  <div class="sum" aria-label="Resumen">
+    <div class="row">
+      <span class="k">Lo que se aprobó</span>
+      <p>Las empresas pasaron a responder penalmente por malversación (2019). Se reformó la malversación y se suprimió la sedición (2022). Se aprobó la ley que protege a quien denuncia infracciones (2023) y la ley de amnistía, que incluye la malversación ligada al proceso independentista sin enriquecimiento (2024). El Gobierno aprobó un Plan Estatal de Lucha contra la Corrupción (2025).</p>
+    </div>
+    <div class="row">
+      <span class="k">Lo que no salió</span>
+      <p>El Congreso rechazó tramitar leyes contra la corrupción o de protección de denunciantes de Ciudadanos (2020, 159 a favor y 178 en contra), Vox (2021, 150 a 192) y Sumar (2025, 170 a 176). La ley de lobbies y el proyecto de Ley Orgánica de Integridad Pública no llegaron a aprobarse antes de la disolución.</p>
+    </div>
+    <div class="row">
+      <span class="k">Lo que dicen las cifras</span>
+      <p>España tenía 58 puntos sobre 100 en el Índice de Percepción de la Corrupción en 2018 (puesto 41) y 55 en 2025 (puesto 49). Su puntuación más alta del periodo fue 62, en 2019 y 2020.</p>
+    </div>
+    <div class="row gap">
+      <span class="k">Lo que esta página no sabe</span>
+      <p>Esta ficha no recoge casos judiciales. Falta el recuento final de varias leyes y el voto por grupos de casi todas las votaciones.</p>
+    </div>
+  </div>
+
+  <section aria-labelledby="h-tl">
+    <h2 id="h-tl">Qué pasó y cuándo</h2>
+    <div class="legend"><span><i class="dot"></i>Aprobado</span><span><i class="dot no"></i>No salió</span></div>
+    <ol class="tl compact">
+      <li><time>20 feb 2019</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley Orgánica 1/2019, reforma del Código Penal por directivas europeas</p><p class="s"></p></div></li>
+      <li><time>4 feb 2020</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 3/2020, contratación pública en sectores especiales</p><p class="s"></p></div></li>
+      <li><time>17 jun 2020</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proposición de Ley de medidas de lucha contra la corrupción (Ciudadanos)</p><p class="s">Rechazado</p></div></li>
+      <li><time>30 dic 2020</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 36/2020, gestión del Plan de Recuperación</p><p class="s"></p></div></li>
+      <li><time>22 jun 2021</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proposición de Ley de protección integral de los denunciantes de corrupción (Vox)</p><p class="s">Rechazado</p></div></li>
+      <li><time>8 jul 2022</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley 14/2022, reforma de la Ley de transparencia (pymes en la contratación pública)</p><p class="s"></p></div></li>
+      <li><time>22 dic 2022</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley Orgánica 14/2022: reforma de la malversación y supresión de la sedición</p><p class="s"></p></div></li>
+      <li><time>20 feb 2023</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley 2/2023, de protección de las personas que informen sobre infracciones y de lucha contra la corrupción</p><p class="s"></p></div></li>
+      <li><time>10 jun 2024</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley Orgánica 1/2024, de amnistía</p><p class="s"></p></div></li>
+      <li><time>25 mar 2025</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Ley de grupos de interés (lobbies): el Congreso rechaza devolverla al Gobierno</p><p class="s">Votación sobre las enmiendas de totalidad: rechazadas, el texto sigue adelante</p></div></li>
+      <li><time>26 ago 2025</time><span class="mk"><i class="dot"></i></span><div><p class="t">Plan Estatal de Lucha contra la Corrupción</p><p class="s"></p></div></li>
+      <li><time>16 sep 2025</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proposición de ley de creación de la Oficina de prevención de la corrupción</p><p class="s">Rechazado</p></div></li>
+      <li><time>28 jul 2026</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proyecto de Ley Orgánica de Integridad Pública</p><p class="s"></p></div></li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="h-a">
+    <h2 id="h-a">Qué ha aprobado el Estado<span class="count">8</span></h2>
+    <article class="fact">
+      <div class="meta"><time>20 feb 2019</time><span class="badge of">Oficial</span></div>
+      <h3>Ley Orgánica 1/2019, reforma del Código Penal por directivas europeas</h3>
+      <p class="plain">Las empresas y otras personas jurídicas pueden responder penalmente por malversación. El cohecho se extiende a funcionarios de otros países, de la UE y de organizaciones internacionales.</p>
+      
+      <p class="limit">No se ha localizado el recuento de la votación final en el Congreso. La corrupción es uno de varios bloques de la norma, no el único.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>LO 1/2019, de 20 de febrero, que modifica el Código Penal para transponer directivas de la UE en materia financiera y de terrorismo, y abordar cuestiones internacionales. BOE núm. 45, de 21-02-2019 (BOE-A-2019-2363). En vigor el 13-03-2019. Añade el ordinal 5.º al art. 435 (personas jurídicas responsables de malversación, con multas según la pena de la persona física); reescribe el art. 427 (cohecho de funcionarios extranjeros, de la UE y de organizaciones internacionales); nuevo art. 435 bis sobre quién es funcionario público a estos efectos. El preámbulo dice que la malversación era el único tipo de la directiva de fraude a los intereses financieros de la UE que no admitía responsabilidad de personas jurídicas. La norma trata también abuso de mercado, terrorismo, protección del euro y tráfico de órganos.</p>
+          <a class="src" href="https://www.boe.es/buscar/doc.php?id=BOE-A-2019-2363" target="_blank" rel="noopener">Oficial: BOE-A-2019-2363, 21 feb 2019</a>
+          <a class="src" href="https://www.legaltoday.com/actualidad-juridica/noticias-de-derecho/el-codigo-penal-se-adapta-a-la-normativa-europea-en-los-ambitos-financieros-y-de-terrorismo-2019-02-21/" target="_blank" rel="noopener">Legal Today: el Código Penal se adapta a la normativa europea en los ámbitos financieros y de terrorismo, 21 feb 2019</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>4 feb 2020</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 3/2020, contratación pública en sectores especiales</h3>
+      <p class="plain">Fija las reglas de contratación de las empresas de agua, energía, transporte y servicios postales, y modifica la Ley 9/2017 de contratos. Incluye también cambios en seguros, planes de pensiones e impuestos.</p>
+      <div class="vote" role="img" aria-label="185 a favor, 136 en contra, 18 abstenciones"><span class="lbl">20 feb 2020 · Convalidado</span><div class="bar"><span class="y" style="width:54.57%">185 a favor</span><span class="n" style="width:40.12%">136 en contra</span><span class="a" style="width:5.31%"></span></div></div>
+      <p class="limit">No consta el voto por grupos. No consta si la tramitación como proyecto de ley terminó en una ley.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto-ley 3/2020, de 4 de febrero, de medidas urgentes por el que se incorporan al ordenamiento jurídico español diversas directivas de la UE en el ámbito de la contratación pública en determinados sectores; de seguros privados; de planes y fondos de pensiones; del ámbito tributario y de litigios fiscales. BOE núm. 31, de 5-02-2020 (BOE-A-2020-1651). Modifica los arts. 118 y 331 y la disposición final 1.3 de la Ley 9/2017. Convalidado el 20-02-2020 (Resolución BOE-A-2020-2897) y tramitado como proyecto de ley por urgencia (335 a favor, 0 en contra, 4 abstenciones).</p>
+          <a class="src" href="https://www.boe.es/buscar/act.php?id=BOE-A-2020-1651" target="_blank" rel="noopener">Oficial: BOE-A-2020-1651, 5 feb 2020</a>
+          <a class="src" href="https://www.boe.es/eli/es/res/2020/02/20/(2)" target="_blank" rel="noopener">Oficial: BOE-A-2020-2897 (convalidación), 29 feb 2020</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-11.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, Pleno núm. 11 (XIV), 20 feb 2020</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>30 dic 2020</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 36/2020, gestión del Plan de Recuperación</h3>
+      <p class="plain">Cambia normas de contratación pública, subvenciones y control para gestionar los fondos europeos de recuperación. Modifica tres artículos de la Ley 9/2017 de contratos.</p>
+      <div class="vote" role="img" aria-label="170 a favor, 126 en contra, 52 abstenciones"><span class="lbl">28 ene 2021 · Convalidado</span><div class="bar"><span class="y" style="width:48.85%">170 a favor</span><span class="n" style="width:36.21%">126 en contra</span><span class="a" style="width:14.94%">52</span></div></div>
+      <p>En contra: Ciudadanos, PP.</p>
+      <p class="limit">El recuento es oficial. Que PP y Ciudadanos votaron en contra y Vox se abstuvo lo dice una sola fuente de prensa. La contratación es uno de varios bloques de la norma. No consta si la tramitación como proyecto de ley terminó en una ley.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto-ley 36/2020, de 30 de diciembre, por el que se aprueban medidas urgentes para la modernización de la Administración Pública y para la ejecución del Plan de Recuperación, Transformación y Resiliencia (BOE-A-2020-17340). Modifica los arts. 32.7.b), 45.1 y 208.2.a) de la Ley 9/2017. Convalidado el 28-01-2021 y tramitado como proyecto de ley por urgencia (346 a favor, 1 en contra, 1 abstención).</p>
+          <a class="src" href="https://www.boe.es/buscar/act.php?id=BOE-A-2020-17340" target="_blank" rel="noopener">Oficial: BOE-A-2020-17340, 31 dic 2020</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-74.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, Pleno núm. 74 (XIV), 28 ene 2021</a>
+          <a class="src" href="https://www.elsaltodiario.com/crisis-economica/plan-recuperacion-resiliencia-congreso-debate-futuro-economia-espanola-via-rapida" target="_blank" rel="noopener">El Salto: la abstención de Vox facilita la validación del decreto sobre los fondos europeos, 28 ene 2021</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>8 jul 2022</time><span class="badge of">Oficial</span></div>
+      <h3>Ley 14/2022, reforma de la Ley de transparencia (pymes en la contratación pública)</h3>
+      <p class="plain">Las administraciones deben publicar cada seis meses qué parte de los contratos públicos, en número y en valor, va a pequeñas y medianas empresas.</p>
+      <p class="vote"><span class="lbl">1 feb 2022 · Admitido a trámite · las fuentes no dan el recuento</span></p>
+      <p class="limit">La votación que se muestra es la toma en consideración: el Diario de Sesiones da 288 a favor y 55 abstenciones y no menciona votos en contra. No consta el recuento de la votación final (enmiendas del Senado, 30-06-2022) ni el voto por grupos. En la toma en consideración constan 288 votos a favor y 55 abstenciones; el Diario de Sesiones no da votos en contra.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Ley 14/2022, de 8 de julio, de modificación de la Ley 19/2013, de transparencia, acceso a la información pública y buen gobierno, con el fin de regular las estadísticas de las microempresas, pequeñas y medianas empresas (PYME) en la contratación pública. BOE núm. 164, de 9-07-2022 (BOE-A-2022-11392). En vigor el 29-07-2022. Modifica el art. 8.1.a) de la Ley 19/2013; publicación semestral a partir de un año desde la ley. Origen: proposición de ley del Grupo Socialista (122/000194), tomada en consideración el 1-02-2022. El 30-06-2022 el Congreso aprobó todas las enmiendas del Senado.</p>
+          <a class="src" href="https://www.boe.es/buscar/act.php?id=BOE-A-2022-11392" target="_blank" rel="noopener">Oficial: BOE-A-2022-11392, 9 jul 2022</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/BOCG/B/BOCG-14-B-216-2.PDF" target="_blank" rel="noopener">Oficial: BOCG Congreso, Serie B, núm. 216-2, 7 feb 2022</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-154.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, Pleno núm. 154 (XIV), 1 feb 2022</a>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXIV/tramit_pleno30062022_192.pdf" target="_blank" rel="noopener">Oficial: Congreso, resultados del Pleno del 30-06-2022, 30 jun 2022</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>22 dic 2022</time><span class="badge of">Oficial</span></div>
+      <h3>Ley Orgánica 14/2022: reforma de la malversación y supresión de la sedición</h3>
+      <p class="plain">Cambia las penas de la malversación según el uso que se dé al dinero público. Suprime el delito de sedición y reescribe el de desórdenes públicos.</p>
+      <div class="vote" role="img" aria-label="184 a favor, 64 en contra, 1 abstenciones"><span class="lbl">15 dic 2022 · Aprobado</span><div class="bar"><span class="y" style="width:73.90%">184 a favor</span><span class="n" style="width:25.70%">64 en contra</span><span class="a" style="width:0.40%"></span></div></div>
+      <p>En contra: BNG, CC, CUP, Foro Asturias, Junts, Navarra Suma, PRC, Teruel Existe, Vox.</p>
+      <p class="limit">La norma consta en el BOE. El recuento del Congreso procede de dos medios de prensa; la lista de grupos en contra, de uno solo (Valencia Plaza), que añade que una diputada del PP votó en contra y que el resto del PP y Ciudadanos no votaron.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>LO 14/2022, de 22 de diciembre. BOE núm. 307, de 23-12-2022 (BOE-A-2022-21800). En vigor el 12-01-2023. Malversación: apropiación (art. 432), 2 a 6 años de prisión, hasta 4-8 en casos agravados; uso temporal para fines privados (nuevo art. 432 bis), 6 meses a 3 años; desvío a otra finalidad pública (art. 433), 1 a 4 años si causa daño grave al servicio. Suprime los artículos 544 a 549 (sedición). Senado, 22-12-2022: 140 a favor, 118 en contra, 3 abstenciones (una fuente de prensa).</p>
+          <a class="src" href="https://www.boe.es/buscar/act.php?id=BOE-A-2022-21800" target="_blank" rel="noopener">Oficial: BOE-A-2022-21800, 23 dic 2022</a>
+          <a class="src" href="https://orain.eus/es/politica/2022/12/15/el-congreso-aprueba-derogar-sedicion-rebajar-penas-por-malversacion-y-modificar-tc/" target="_blank" rel="noopener">Orain: el Congreso aprueba derogar la sedición y rebajar penas por malversación, 15 dic 2022</a>
+          <a class="src" href="https://valenciaplaza.com/congreso-aprueba-reforma-penal-suprime-sedicion" target="_blank" rel="noopener">Valencia Plaza: el Congreso aprueba la reforma que suprime la sedición y modifica la malversación, 15 dic 2022</a>
+          <a class="src" href="https://rtvc.es/aprobada-reforma-sobre-sedicion-y-rebaja-penas-por-malversacion/" target="_blank" rel="noopener">RTVC: aprobada la reforma sobre sedición y malversación (Senado), 22 dic 2022</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>20 feb 2023</time><span class="badge of">Oficial</span></div>
+      <h3>Ley 2/2023, de protección de las personas que informen sobre infracciones y de lucha contra la corrupción</h3>
+      <p class="plain">Protege frente a represalias a quien informa de infracciones graves que conoce por su trabajo. Obliga a empresas de 50 o más trabajadores y al sector público a tener un canal interno de denuncias.</p>
+      <p class="vote"><span class="lbl">16 feb 2023 · Aprobado · las fuentes no dan el recuento</span></p>
+      <p>En contra: PP, Vox.</p>
+      <p class="limit">No consta el recuento de votos. El Diario de Sesiones solo dice que las enmiendas del Senado se aprobaron. Que PP y Vox votaron en contra lo dice una sola fuente de prensa.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Ley 2/2023, de 20 de febrero. BOE núm. 44, de 21-02-2023 (BOE-A-2023-4513). En vigor el 13-03-2023. Admite comunicaciones anónimas (art. 7.3). Acuse de recibo en 7 días naturales y respuesta en 3 meses, ampliable 3 más (art. 9). Crea el canal externo de la Autoridad Independiente de Protección del Informante, A.A.I. (título III). Transpone la directiva europea de protección de denunciantes.</p>
+          <a class="src" href="https://www.boe.es/buscar/act.php?id=BOE-A-2023-4513" target="_blank" rel="noopener">Oficial: BOE-A-2023-4513, 21 feb 2023</a>
+          <a class="src" href="https://www.lawandtrends.com/noticias/compliance/aprobada-definitivamente-la-ley-que-protege-a-los-denunciantes-de-corrupcion-1.html" target="_blank" rel="noopener">Law &amp; Trends: aprobada definitivamente la ley que protege a los denunciantes de corrupción, 16 feb 2023</a>
+          <a class="src" href="https://finreg360.com/alerta/el-congreso-de-los-diputados-aprueba-la-ley-que-traspone-la-directiva-whistleblowing/" target="_blank" rel="noopener">Finreg360: el Congreso aprueba la ley que traspone la directiva whistleblowing, 16 feb 2023</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>10 jun 2024</time><span class="badge of">Oficial</span></div>
+      <h3>Ley Orgánica 1/2024, de amnistía</h3>
+      <p class="plain">Amnistía determinados actos vinculados al proceso independentista de Cataluña, entre ellos las consultas del 9 de noviembre de 2014 y del 1 de octubre de 2017. Incluye la malversación destinada a esos fines cuando no hubo propósito de enriquecimiento.</p>
+      <div class="vote" role="img" aria-label="177 a favor, 172 en contra"><span class="lbl">30 may 2024 · Aprobado</span><div class="bar"><span class="y" style="width:50.72%">177 a favor</span><span class="n" style="width:49.28%">172 en contra</span></div></div>
+      <p>En contra: CC, PP, UPN, Vox.</p>
+      <p class="limit">Entra en esta ficha porque la propia ley regula la malversación (art. 1). El recuento es oficial; la lista de grupos en contra viene de una sola fuente de prensa. No consta a cuántas personas se ha aplicado por malversación.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Ley Orgánica 1/2024, de 10 de junio, de amnistía para la normalización institucional, política y social en Cataluña. BOE núm. 141, de 11-06-2024 (BOE-A-2024-11776). En vigor el 11-06-2024. Art. 1.1.a) y b): incluye los actos de malversación dirigidos a financiar, sufragar o facilitar las conductas descritas, «siempre que no haya existido propósito de enriquecimiento». Art. 1.4: aplicar fondos públicos a esos fines no se considera enriquecimiento si no hubo intención de obtener un beneficio personal de carácter patrimonial. Art. 2.e): excluye los delitos que afecten a los intereses financieros de la Unión Europea. El texto consolidado del BOE anota que el art. 1.1 fue objeto de las SSTC 137/2025 y 164/2025, que lo declaran inconstitucional con el alcance que fijan esas sentencias. Votación: el 30-05-2024 el Congreso levantó el veto del Senado y ratificó el texto (votación por llamamiento).</p>
+          <a class="src" href="https://www.boe.es/buscar/act.php?id=BOE-A-2024-11776" target="_blank" rel="noopener">Oficial: BOE-A-2024-11776, 11 jun 2024</a>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20240530.pdf" target="_blank" rel="noopener">Oficial: Acta del Pleno del Congreso, 30-05-2024, 30 may 2024</a>
+          <a class="src" href="https://www.eldiario.es/canariasahora/politica/coalicion-canaria-separa-socio-europeas-vota-amnistia-pp-vox_1_11408467.amp.html" target="_blank" rel="noopener">elDiario.es / Canarias Ahora: Coalición Canaria vota en contra de la amnistía junto al PP y Vox, 30 may 2024</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>26 ago 2025</time><span class="badge of">Oficial</span></div>
+      <h3>Plan Estatal de Lucha contra la Corrupción</h3>
+      <p class="plain">El Gobierno aprueba un plan de 15 medidas. Incluye una agencia independiente de integridad, más control de la contratación pública y de las cuentas de los partidos.</p>
+      
+      <p class="limit">No consta cuántas medidas se habían ejecutado a la disolución.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Aprobado por el Consejo de Ministros el 26-08-2025, elaborado con la OCDE. Medidas: Agencia Independiente de Integridad Pública; plataforma de contratación con big data e IA; ley de lobbies; auditoría obligatoria de partidos con más de 50.000 euros de financiación pública y publicidad de donaciones desde 2.500 euros; más protección a informantes; secciones especializadas en fiscalía y tribunales; decomiso sin condena previa. Es un plan del Gobierno, no una ley.</p>
+          <a class="src" href="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/presidencia/paginas/2025/medidas-plan-corrupcion-gobierno-espana.aspx" target="_blank" rel="noopener">Oficial: La Moncloa: medidas del Plan Estatal de Lucha contra la Corrupción, 27 ago 2025</a>
+        </div>
+      </details>
+    </article>
+  </section>
+
+  <section aria-labelledby="h-b">
+    <h2 id="h-b">Qué intentó y no salió<span class="count">5</span></h2>
+    <p class="lede">Solo se cuenta lo que pasó, sin juzgar a nadie. Los motivos de cada grupo se añadirán como cita literal del Diario de Sesiones.</p>
+    <article class="fact">
+      <div class="meta"><time>17 jun 2020</time><span class="badge of">Oficial</span></div>
+      <h3>Proposición de Ley de medidas de lucha contra la corrupción (Ciudadanos)</h3>
+      <p class="plain">El Congreso rechaza empezar a tramitar una ley de Ciudadanos con medidas contra la corrupción y protección de denunciantes en el sector público.</p>
+      <div class="vote" role="img" aria-label="159 a favor, 178 en contra, 11 abstenciones"><span class="lbl">17 jun 2020 · Rechazado</span><div class="bar"><span class="y" style="width:45.69%">159 a favor</span><span class="n" style="width:51.15%">178 en contra</span><span class="a" style="width:3.16%"></span></div></div>
+      <p>En contra: ERC, PNV, PSOE, Unidas Podemos.</p>
+      <p class="limit">El recuento es oficial. PSOE y Unidas Podemos en contra lo dicen dos medios; ERC y PNV, uno solo. Ciudadanos volvió a registrar una ley parecida en diciembre de 2020 (122/000116); no consta que se votara en el Pleno.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Proposición de Ley de medidas de lucha contra la corrupción (122/000009), del Grupo Parlamentario Ciudadanos. Toma en consideración rechazada en el Pleno del 17-06-2020 (BOCG Serie B núm. 35-2).</p>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/BOCG/B/BOCG-14-B-35-2.PDF" target="_blank" rel="noopener">Oficial: BOCG Congreso, Serie B, núm. 35-2, 24 jun 2020</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-30.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, Pleno núm. 30 (XIV), 17 jun 2020</a>
+          <a class="src" href="https://www.moncloa.com/2020/06/17/ley-de-ciudadanos-contra-la-corrupcion-217357/" target="_blank" rel="noopener">Moncloa.com: el Congreso rechaza la ley de Ciudadanos contra la corrupción, 17 jun 2020</a>
+          <a class="src" href="https://www.ultimahora.es/noticias/nacional/2020/06/17/1174067/psoe-podemos-tumban-propuesta-ciudadanos-contra-corrupcion.html" target="_blank" rel="noopener">Última Hora: PSOE y Podemos tumban la propuesta de Ciudadanos contra la corrupción, 17 jun 2020</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>22 jun 2021</time><span class="badge of">Oficial</span></div>
+      <h3>Proposición de Ley de protección integral de los denunciantes de corrupción (Vox)</h3>
+      <p class="plain">El Congreso rechaza empezar a tramitar una ley de Vox para proteger a quien denuncia casos de corrupción.</p>
+      <div class="vote" role="img" aria-label="150 a favor, 192 en contra, 3 abstenciones"><span class="lbl">22 jun 2021 · Rechazado</span><div class="bar"><span class="y" style="width:43.48%">150 a favor</span><span class="n" style="width:55.65%">192 en contra</span><span class="a" style="width:0.87%"></span></div></div>
+      <p class="limit">No consta el voto por grupos.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Proposición de Ley de protección integral de los denunciantes de corrupción (122/000031), del Grupo Parlamentario VOX. Toma en consideración rechazada en el Pleno del 22-06-2021 (BOCG Serie B núm. 56-2).</p>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/BOCG/B/BOCG-14-B-56-2.PDF" target="_blank" rel="noopener">Oficial: BOCG Congreso, Serie B, núm. 56-2, 28 jun 2021</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-113.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, Pleno núm. 113 (XIV), 22 jun 2021</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>25 mar 2025</time><span class="badge of">Oficial</span></div>
+      <h3>Ley de grupos de interés (lobbies): el Congreso rechaza devolverla al Gobierno</h3>
+      <p class="plain">El proyecto crea un registro público y obligatorio de lobbies ante la Administración del Estado. Superó la enmienda de devolución, pero no llegó a aprobarse antes de la disolución.</p>
+      <div class="vote" role="img" aria-label="32 a favor, 177 en contra, 136 abstenciones"><span class="lbl">25 mar 2025 · Votación sobre las enmiendas de totalidad: rechazadas, el texto sigue adelante</span><div class="bar"><span class="y" style="width:9.28%">32 a favor</span><span class="n" style="width:51.30%">177 en contra</span><span class="a" style="width:39.42%">136</span></div></div>
+      <p class="limit">La votación es sobre la enmienda de devolución, no sobre la ley: los votos a favor son a favor de devolverla. No consta el voto por grupos. Que la ley decae con la disolución lo dice una fuente de prensa.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Proyecto de Ley de transparencia e integridad de las actividades de los grupos de interés (121/000046), BOCG 7-02-2025. Registro de Grupos de Interés gestionado por la Oficina de Conflictos de Intereses, código de conducta, huella normativa y régimen sancionador. El 25-03-2025 el Pleno rechazó la enmienda a la totalidad de devolución de Vox. Decae con la disolución de las Cortes (6-10-2026).</p>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-46-1.PDF" target="_blank" rel="noopener">Oficial: BOCG Congreso, Serie A, núm. 46-1, 7 feb 2025</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-106.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, Pleno núm. 106, 25 mar 2025</a>
+          <a class="src" href="https://www.legaltoday.com/sin-categoria/disolucion-de-las-cortes-la-agenda-anticorrupcion-decae-pero-el-reloj-europeo-sigue-corriendo-2026-10-12/" target="_blank" rel="noopener">Legal Today: con la disolución, la agenda anticorrupción decae, 12 oct 2026</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>16 sep 2025</time><span class="badge of">Oficial</span></div>
+      <h3>Proposición de ley de creación de la Oficina de prevención de la corrupción</h3>
+      <p class="plain">El Congreso rechaza empezar a tramitar una ley de Sumar para crear una oficina estatal contra la corrupción.</p>
+      <div class="vote" role="img" aria-label="170 a favor, 176 en contra, 1 abstenciones"><span class="lbl">16 sep 2025 · Rechazado</span><div class="bar"><span class="y" style="width:48.99%">170 a favor</span><span class="n" style="width:50.72%">176 en contra</span><span class="a" style="width:0.29%"></span></div></div>
+      <p>En contra: Junts, PP, Vox.</p>
+      <p class="limit">El recuento es oficial. Los grupos en contra los nombran dos medios de prensa.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Proposición de Ley de creación de la Oficina de prevención de la corrupción (122/000086), del Grupo Plurinacional SUMAR. Toma en consideración rechazada en el Pleno del 16-09-2025.</p>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-99-2.PDF" target="_blank" rel="noopener">Oficial: BOCG Congreso, Serie B, núm. 99-2, 16 sep 2025</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-136.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, Pleno núm. 136, 16 sep 2025</a>
+          <a class="src" href="https://es.ara.cat/politica/tumba-pp-vox-congreso-creacion-agencia-anticorrupcion_1_5499230.html" target="_blank" rel="noopener">Ara: PP, Vox y Junts tumban la creación de una agencia anticorrupción, 16 sep 2025</a>
+          <a class="src" href="https://www.elindependiente.com/espana/2025/09/16/sumar-fracasa-al-reabrir-en-el-congreso-el-debate-contra-la-corrupcion-que-sigue-paralizado-en-el-gobierno/amp/" target="_blank" rel="noopener">El Independiente: Sumar fracasa al reabrir el debate contra la corrupción, 16 sep 2025</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>28 jul 2026</time><span class="badge of">Oficial</span></div>
+      <h3>Proyecto de Ley Orgánica de Integridad Pública</h3>
+      <p class="plain">El Gobierno lleva al Congreso una ley que crea una agencia independiente contra la corrupción y endurece penas. No llegó a votarse y decae con la disolución.</p>
+      
+      <p class="limit">No consta ninguna votación en el Pleno. Que decae con la disolución lo dice una fuente de prensa, que cita el art. 207 del Reglamento del Congreso.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Aprobado por el Consejo de Ministros el 28-07-2026. BOCG 11-09-2026 (121/000111), por urgencia; plazo de enmiendas hasta el 21-09-2026. Contenido: Agencia Independiente de Integridad Pública, con presidencia elegida por mayoría reforzada del Congreso; mapas de riesgo; registro público de prohibiciones de contratar; auditoría externa de partidos y publicidad de donaciones desde 2.500 euros (antes 25.000); prescripción de delitos de corrupción de 5 a 7 años; decomiso sin condena.</p>
+          <a class="src" href="https://www.lamoncloa.gob.es/consejodeministros/resumenes/Documents/2026/280726-presentacion-proyecto-ley-integridad-publica.pdf" target="_blank" rel="noopener">Oficial: La Moncloa: presentación del proyecto de Ley de Integridad Pública, 28 jul 2026</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-112-1.PDF" target="_blank" rel="noopener">Oficial: BOCG Congreso, Serie A, núm. 112-1, 11 sep 2026</a>
+          <a class="src" href="https://www.legaltoday.com/sin-categoria/disolucion-de-las-cortes-la-agenda-anticorrupcion-decae-pero-el-reloj-europeo-sigue-corriendo-2026-10-12/" target="_blank" rel="noopener">Legal Today: con la disolución, la agenda anticorrupción decae, 12 oct 2026</a>
+        </div>
+      </details>
+    </article>
+  </section>
+
+  <section aria-labelledby="h-c">
+    <h2 id="h-c">Qué dicen las cifras oficiales</h2>
+    <p class="lede">Se enseñan para ver la escala, no para repartir culpas.</p>
+    <div class="chart">
+      <h3>Índice de Percepción de la Corrupción de Transparencia Internacional, puntuación de España (0-100)</h3>
+      <div id="c1"></div>
+      <p class="cap">Encuesta de percepción de expertos y empresarios sobre la corrupción en el sector público, no una medida de casos. 0 = muy corrupto, 100 = muy limpio. Cada año corresponde a la edición publicada a comienzos del año siguiente. TI advierte de que un cambio de un punto no es estadísticamente significativo.</p>
+      <details>
+        <summary>Fuentes</summary>
+        <div class="in">
+          <a class="src" href="https://transparencia.org.es/wp-content/uploads/2022_01_20_PRESENTACION-IPC2021_DATOS-GENERALES_ESPAN%CC%83A_DMG2.pdf" target="_blank" rel="noopener">Oficial: Transparencia Internacional España, presentación IPC 2021 (datos 2018-2021), 20 ene 2022</a>
+          <a class="src" href="https://transparencia.org.es/wp-content/uploads/NdP-Transparencia-Internacional-IPC-2022.pdf" target="_blank" rel="noopener">Oficial: Transparencia Internacional España, nota de prensa IPC 2022</a>
+          <a class="src" href="https://www.cronista.com/espana/actualidad-es/aumento-la-corrupcion-en-espana-esto-es-lo-que-dice-el-ranking-de-transparencia-institucional" target="_blank" rel="noopener">El Cronista: IPC 2023</a>
+          <a class="src" href="https://www.diarioestrategia.cl/texto-diario/mostrar/5767714/espana-continua-empeorando-indice-percepcion-corrupcion-caer-otros-tres-puestos" target="_blank" rel="noopener">Europa Press en Diario Estrategia: IPC 2025 y 2024, 10 feb 2026</a>
+          <a class="src" href="https://www.transparency.org/en/countries/spain" target="_blank" rel="noopener">Oficial: Transparency International, ficha de España (2025)</a>
+        </div>
+      </details>
+    </div>
+    <div class="chart">
+      <h3>Posición de España en ese índice</h3>
+      <div id="c2"></div>
+      <p class="cap">Puesto en la clasificación mundial (1 = mejor percepción). Hay empates: en 2018 España compartía los puestos 41-44. Se evalúan 180 países hasta 2024 y 182 en 2025, por lo que el puesto no es del todo comparable entre años.</p>
+      <details>
+        <summary>Fuentes</summary>
+        <div class="in">
+          <a class="src" href="https://transparencia.org.es/wp-content/uploads/2022_01_20_PRESENTACION-IPC2021_DATOS-GENERALES_ESPAN%CC%83A_DMG2.pdf" target="_blank" rel="noopener">Oficial: Transparencia Internacional España, presentación IPC 2021 (datos 2018-2021), 20 ene 2022</a>
+          <a class="src" href="https://transparencia.org.es/wp-content/uploads/Documento-analisis-IPC2018.pdf" target="_blank" rel="noopener">Oficial: Transparencia Internacional España, análisis IPC 2018</a>
+          <a class="src" href="https://transparencia.org.es/wp-content/uploads/NdP-Transparencia-Internacional-IPC-2022.pdf" target="_blank" rel="noopener">Oficial: Transparencia Internacional España, nota de prensa IPC 2022</a>
+          <a class="src" href="https://www.cronista.com/espana/actualidad-es/aumento-la-corrupcion-en-espana-esto-es-lo-que-dice-el-ranking-de-transparencia-institucional" target="_blank" rel="noopener">El Cronista: IPC 2023</a>
+          <a class="src" href="https://www.diarioestrategia.cl/texto-diario/mostrar/5767714/espana-continua-empeorando-indice-percepcion-corrupcion-caer-otros-tres-puestos" target="_blank" rel="noopener">Europa Press en Diario Estrategia: IPC 2025 y 2024, 10 feb 2026</a>
+          <a class="src" href="https://www.transparency.org/en/countries/spain" target="_blank" rel="noopener">Oficial: Transparency International, ficha de España (2025)</a>
+        </div>
+      </details>
+    </div>
+    <div class="limit"><p>Qué no dicen estas cifras: qué las causó ni qué parte corresponde al Estado, a las comunidades o a los ayuntamientos.</p><ul class="nolist"><li>Esta ficha no recoge casos judiciales, investigaciones ni imputaciones.</li><li>No consta el recuento de votos de la aprobación final de la Ley 2/2023.</li><li>No se ha podido confirmar la fecha de aprobación de una Estrategia Nacional Antifraude.</li><li>No consta el voto por grupos en la enmienda de devolución de la ley de lobbies.</li><li>No consta el grado de ejecución del Plan Estatal de Lucha contra la Corrupción.</li><li>No consta el recuento de la votación final de la LO 1/2019 ni de la Ley 14/2022.</li><li>Las leyes y decretos-leyes que solo tocan uno o dos artículos de la Ley 9/2017 dentro de otra materia (presupuestos, crecimiento empresarial, igualdad, etc.) no se recogen como hechos. Tampoco los reales decretos de desarrollo ni las órdenes que actualizan los umbrales de contratación.</li><li>No se recogen las reformas del Reglamento del Congreso sobre grupos de interés, porque no son leyes.</li><li>No se ha revisado el registro completo de votaciones del Pleno: puede haber proposiciones de ley sobre estos asuntos que no constan.</li></ul></div>
+  </section>
+
+  <footer class="foot">
+    <p><b>Estado de la verificación.</b> Las normas y proyectos constan en el BOE, el BOCG o La Moncloa. Los recuentos de las votaciones de 2020, 2021, 2022 (toma en consideración), 2024 y 2025 salen del Diario de Sesiones o de las actas del Pleno. El recuento de la reforma penal de 2022 viene de dos medios de prensa. Los grupos que votaron en contra vienen casi siempre de prensa, a menudo de una sola fuente. El índice de percepción procede de Transparencia Internacional; los datos de 2023 y la posición de 2024 se toman de prensa que cita el informe. Que Pedro Sánchez preside el Gobierno desde junio de 2018 es de dominio público.</p>
+    <p>Última revisión: 11 de noviembre de 2026. ¿Un dato está mal? <a href="metodologia.html#correcciones">Dínoslo</a>. Cómo se ha hecho: <a href="metodologia.html">metodología</a>.</p>
+  </footer>
+</main>
+
+<script>
+(function(){
+  var SPECS=[{"id": "c1", "u": "puntos", "dec": 0, "t": "Índice de Percepción de la Corrupción de Transparencia Internacional, puntuación de España (0-100)", "s": [{"l": "2018", "v": 58, "c": false}, {"l": "2019", "v": 62, "c": false}, {"l": "2020", "v": 62, "c": false}, {"l": "2021", "v": 61, "c": false}, {"l": "2022", "v": 60, "c": false}, {"l": "2023", "v": 60, "c": false}, {"l": "2024", "v": 56, "c": false}, {"l": "2025", "v": 55, "c": false}]}, {"id": "c2", "u": "puesto", "dec": 0, "t": "Posición de España en ese índice", "s": [{"l": "2018", "v": 41, "c": false}, {"l": "2019", "v": 30, "c": false}, {"l": "2020", "v": 32, "c": false}, {"l": "2021", "v": 34, "c": false}, {"l": "2022", "v": 35, "c": false}, {"l": "2023", "v": 36, "c": false}, {"l": "2024", "v": 46, "c": false}, {"l": "2025", "v": 49, "c": false}]}];
+  function num(v,dec){var s=Math.abs(v).toFixed(dec).split('.');s[0]=s[0].replace(/\B(?=(\d{3})+(?!\d))/g,'.');return (v<0?'−':'')+s.join(',')}
+  function fmt(v,u,dec){var n=num(v,dec);if(!u)return n;return u==='%'?n+' %':n+' '+u}
+  SPECS.forEach(function(sp){
+    var vals=sp.s.filter(function(d){return d.v!=null}).map(function(d){return d.v});
+    var mn=Math.min(0,Math.min.apply(null,vals)), mx=Math.max(0,Math.max.apply(null,vals));
+    var W=360,LB=58,VL=86,RH=25,BH=15,pw=W-LB-VL-(mn<0?VL*0.6:0),H=sp.s.length*RH+2;
+    var span=(mx-mn)||1, x0=LB+(mn<0?VL*0.6:0)+(-mn/span)*pw;
+    var s='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+sp.t+': '+sp.s.map(function(d){return d.l+' '+(d.v==null?'sin dato':fmt(d.v,sp.u,sp.dec))}).join(', ')+'">';
+    sp.s.forEach(function(d,i){
+      var y=i*RH+2;
+      s+='<text x="0" y="'+(y+12)+'" font-size="12" font-family="IBM Plex Mono, monospace" fill="var(--ink-2)">'+d.l+'</text>';
+      if(d.v==null){s+='<text x="'+(x0+4)+'" y="'+(y+12)+'" font-size="12" font-style="italic" font-family="Source Sans 3, system-ui, sans-serif" fill="var(--ink-2)">sin dato</text>';return}
+      var w=Math.max(2,Math.abs(d.v)/span*pw), x=d.v<0?x0-w:x0;
+      s+='<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+BH+'" fill="'+(d.c?'var(--alt)':'var(--accent)')+'" rx="2"/>';
+      var tx=d.v<0?x-6:x+w+6, an=d.v<0?'end':'start';
+      s+='<text x="'+tx+'" y="'+(y+12)+'" text-anchor="'+an+'" font-size="12" font-weight="600" font-family="IBM Plex Mono, monospace" fill="var(--ink)">'+fmt(d.v,sp.u,sp.dec)+'</text>';
+    });
+    s+='<line x1="'+x0+'" x2="'+x0+'" y1="0" y2="'+H+'" stroke="var(--ink-2)" stroke-width="1"/></svg>';
+    document.getElementById(sp.id).innerHTML=s;
+  });
+})();
+</script>

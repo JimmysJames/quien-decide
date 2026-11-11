@@ -1,0 +1,7 @@
+shots/
+dist/
+dist-artifact/
+data/v1/
+__pycache__/
+.DS_Store
+docs/mensajes.md

@@ -1,0 +1,804 @@
+<title>Sanidad, hechos del Estado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,500..800&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Layout: resumen en lenguaje llano, línea de tiempo de ocho años como hilo, cada hecho con una frase clara y el detalle técnico plegado. Las series largas van en filas horizontales para leerse bien en el móvil. */
+:root{
+  --paper:#EDF0F2;
+  --card:#FFFFFF;
+  --ink:#121B23;
+  --ink-2:#4B5967;
+  --rule:#CBD3DA;
+  --accent:#0B6E63;
+  --on-accent:#FFFFFF;
+  --accent-soft:#D6ECE8;
+  --alt:#5D6D7B;
+  --alt2:#B8C4CE;
+  --note-bg:#FFF2CF;
+  --note-ink:#6B4700;
+  --f-display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E151B; --card:#16212A; --ink:#E7EDF1; --ink-2:#9FB0BD; --rule:#2A3946;
+    --accent:#4DC2B1; --on-accent:#07201C; --accent-soft:#143A38; --alt:#6F8394; --alt2:#3E5160;
+    --note-bg:#3A2F10; --note-ink:#F0C96A;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E151B; --card:#16212A; --ink:#E7EDF1; --ink-2:#9FB0BD; --rule:#2A3946;
+  --accent:#4DC2B1; --on-accent:#07201C; --accent-soft:#143A38; --alt:#6F8394; --alt2:#3E5160;
+  --note-bg:#3A2F10; --note-ink:#F0C96A;
+  color-scheme: dark;
+}
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.5}
+h1,h2,h3,p,ul,ol,dl,dd{margin:0}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+a{color:var(--accent)}
+
+.app{max-width:680px;margin-inline:auto;padding-inline:16px;padding-block:20px 56px;display:flex;flex-direction:column;gap:32px}
+
+.top{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.brand{font-family:var(--f-display);font-size:1.1rem;font-weight:800;font-variation-settings:"wdth" 112;color:var(--ink);text-decoration:none}
+.tag{font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;border:1px solid var(--ink-2);color:var(--ink-2);padding:2px 8px;border-radius:3px;white-space:nowrap}
+
+.head{display:flex;flex-direction:column;gap:10px;border-top:2px solid var(--ink);padding-top:14px}
+.head h1{font-size:2.1rem;font-weight:800;font-variation-settings:"wdth" 108;line-height:1.08}
+.kicker{font-family:var(--f-mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2)}
+.k{font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-2)}
+
+.sum{background:var(--ink);color:var(--paper);border-radius:6px;padding:6px 18px;display:flex;flex-direction:column}
+.sum .row{display:grid;grid-template-columns:minmax(0,1fr);gap:4px;padding-block:14px;border-top:1px solid color-mix(in srgb, var(--paper) 25%, transparent)}
+.sum .row:first-child{border-top:0}
+.sum .k{color:var(--paper);opacity:.7}
+.sum p{font-size:1.08rem;line-height:1.4}
+.sum b{font-weight:700;font-variant-numeric:tabular-nums}
+.sum .gap p{opacity:.9}
+
+section{display:flex;flex-direction:column;gap:14px}
+section>h2{font-size:1.45rem;font-weight:700;font-variation-settings:"wdth" 105;line-height:1.2}
+.lede{color:var(--ink-2)}
+
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.88rem;color:var(--ink-2)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.dot{width:12px;height:12px;border-radius:50%;border:2px solid var(--accent);background:var(--accent);flex:none;display:inline-block}
+.dot.no{background:transparent;border-color:var(--alt)}
+.tl{list-style:none;padding:0;margin:0;display:flex;flex-direction:column}
+.tl li{display:grid;grid-template-columns:84px 20px minmax(0,1fr);gap:0 8px;padding-bottom:18px;position:relative}
+.tl li:last-child{padding-bottom:0}
+.tl time{font-family:var(--f-mono);font-size:.8rem;color:var(--ink-2);padding-top:3px;font-variant-numeric:tabular-nums}
+.tl .mk{position:relative;display:flex;justify-content:center;padding-top:5px}
+.tl .mk::after{content:"";position:absolute;top:22px;bottom:-18px;width:2px;background:var(--rule)}
+.tl li:last-child .mk::after{display:none}
+.tl .t{font-weight:600;line-height:1.3}
+.tl .s{color:var(--ink-2);font-size:.95rem}
+
+.fact{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:16px;display:flex;flex-direction:column;gap:10px}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}
+.meta time{font-family:var(--f-mono);font-size:.8rem;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.badge{font-family:var(--f-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;padding:2px 7px;border-radius:3px;border:1px solid var(--ink-2);color:var(--ink-2)}
+.badge.of{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.fact h3{font-size:1.2rem;font-weight:700;line-height:1.25}
+.plain{font-size:1.05rem}
+.fact p{margin:0}
+.num{font-variant-numeric:tabular-nums}
+details{border-top:1px solid var(--rule);padding-top:10px}
+summary{cursor:pointer;font-family:var(--f-mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);padding-block:4px}
+details[open] summary{margin-bottom:8px}
+details .in{display:flex;flex-direction:column;gap:8px;font-size:.96rem}
+.src{font-size:.88rem;overflow-wrap:anywhere}
+.limit{background:var(--note-bg);color:var(--note-ink);font-size:.92rem;padding:8px 10px;border-radius:3px}
+
+.split{display:flex;flex-direction:column;gap:6px}
+.stack{display:flex;height:38px;border-radius:3px;overflow:hidden;font-family:var(--f-mono);font-size:.82rem;font-variant-numeric:tabular-nums}
+.stack span{display:flex;align-items:center;padding-inline:8px;white-space:nowrap;overflow:hidden}
+.s1{background:var(--accent);color:var(--on-accent)}
+.s2{background:var(--alt);color:var(--paper)}
+.s3{background:var(--alt2);color:var(--ink)}
+.flow{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:8px;align-items:stretch}
+.flow .bx{border:1px solid var(--rule);border-radius:4px;padding:10px 12px;display:flex;flex-direction:column;gap:2px;background:var(--paper)}
+.flow .bx b{font-family:var(--f-display)}
+.flow .ar{display:grid;place-items:center;font-family:var(--f-mono);color:var(--ink-2)}
+@media (max-width:480px){.flow{grid-template-columns:minmax(0,1fr)}.flow .ar{transform:rotate(90deg);padding-block:2px}}
+
+.vote{display:flex;flex-direction:column;gap:6px}
+.bar{display:flex;height:36px;border-radius:3px;overflow:hidden;font-family:var(--f-mono);font-size:.82rem;font-variant-numeric:tabular-nums}
+.bar span{display:flex;align-items:center;padding-inline:8px;white-space:nowrap}
+.bar .y{background:var(--accent);color:var(--on-accent)}
+.bar .n{background:var(--alt);color:var(--paper);justify-content:flex-end}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--rule);border-radius:6px}
+table{border-collapse:collapse;width:100%;min-width:340px;font-size:.95rem}
+th,td{text-align:left;padding:7px 12px;border-top:1px solid var(--rule)}
+thead th{border-top:0;font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);font-weight:500}
+td.y{font-weight:600}
+td.n{color:var(--ink-2)}
+
+.chart{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.chart h3{font-size:1.1rem;font-weight:700}
+.chart svg{width:100%;height:auto;display:block;max-width:100%}
+.cap{font-size:.9rem;color:var(--ink-2)}
+.bigs{display:flex;flex-wrap:wrap;gap:8px 28px}
+.big{display:flex;flex-direction:column;gap:0}
+.big b{font-family:var(--f-display);font-size:2.4rem;font-weight:800;font-variation-settings:"wdth" 108;font-variant-numeric:tabular-nums;line-height:1.1}
+.big span{color:var(--ink-2);font-size:.92rem}
+
+.foot{border-top:1px solid var(--rule);padding-top:14px;display:flex;flex-direction:column;gap:8px;font-size:.9rem;color:var(--ink-2)}
+</style>
+<style>
+.aviso{background:var(--accent-soft);border-left:4px solid var(--accent);border-radius:4px;padding:12px 14px;display:flex;flex-direction:column;gap:4px}
+.aviso b{font-family:var(--f-display)}
+.nada{color:var(--ink-2)}
+.nolist{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:4px}
+.vote .lbl{font-family:var(--f-mono);font-size:.78rem;color:var(--ink-2)}
+.bar .a{background:var(--alt2);color:var(--ink);justify-content:center;padding-inline:0}
+details.yg{border-top:0;padding-top:0}
+details.yg>summary{display:flex;align-items:baseline;gap:10px;border-bottom:2px solid var(--ink);padding-block:8px 4px;color:var(--ink);text-transform:none;letter-spacing:0;list-style-position:inside}
+details.yg>summary .yy{font-family:var(--f-display);font-size:1.25rem;font-weight:800;font-variation-settings:"wdth" 108}
+details.yg>summary .yn{font-family:var(--f-mono);font-size:.72rem;color:var(--ink-2);text-transform:uppercase;letter-spacing:.06em}
+details.yg[open]>summary{margin-bottom:12px}
+details.yg>summary{cursor:pointer;list-style:none}
+details.yg>summary::-webkit-details-marker{display:none}
+details.yg>summary::before{content:"+";font-family:var(--f-mono);font-size:1rem;color:var(--accent);width:14px;flex:none}
+details.yg[open]>summary::before{content:"−"}
+.ygi{display:flex;flex-direction:column;gap:14px}
+.tl.compact li{padding-bottom:10px}
+.tl.compact .t{font-weight:500;font-size:.95rem}
+.keys{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.88rem;color:var(--ink-2)}
+.keys i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px}
+.count{font-family:var(--f-mono);font-size:.74rem;font-weight:400;color:var(--ink-2);text-transform:uppercase;letter-spacing:.06em;margin-left:8px}
+</style>
+
+<main class="app">
+  <header class="top">
+    <a class="brand" href="index.html">Quién decide</a>
+    <span class="tag">Beta</span>
+  </header>
+
+  <div class="head">
+    <p class="kicker">Gobierno central y Cortes · 2018 a 2026</p>
+    <h1>Sanidad: qué ha hecho el Estado</h1>
+    <p class="lede">Ocho años con Pedro Sánchez como presidente del Gobierno, desde junio de 2018.</p>
+  </div>
+
+  <div class="aviso"><b>Aquí quien más decide es tu comunidad</b><p>La sanidad la gestionan las comunidades autónomas: hospitales, centros de salud, personal y listas de espera. Esta ficha solo recoge lo que ha hecho el Estado.</p></div>
+
+  <div class="sum" aria-label="Resumen">
+    <div class="row">
+      <span class="k">Lo que se aprobó</span>
+      <p>Acceso a la sanidad pública por residencia (2018), decretos y ley de la COVID-19 con la mascarilla obligatoria (2020-2021), ley de eutanasia (2021), reforma de la ley del aborto (2023), ley ELA (2024), Agencia Estatal de Salud Pública (2025) y nuevo copago de medicamentos (2026).</p>
+    </div>
+    <div class="row">
+      <span class="k">Lo que no salió</span>
+      <p>El Congreso rechazó el primer proyecto de la Agencia Estatal de Salud Pública (20 de marzo de 2025, 167 a favor y 176 en contra) y no admitió a trámite cuatro proposiciones de ley: sanidad universal de Asturias (2021), publicidad sanitaria (2022), instrucciones previas (2024) y violencia contra sanitarios (2025, 171 a 173).</p>
+    </div>
+    <div class="row">
+      <span class="k">Lo que dicen las cifras</span>
+      <p>El gasto sanitario público consolidado pasó de 71.117 millones de euros en 2018 a 101.739 millones en 2024 (dato provisional). La espera media para operarse era de 129 días en diciembre de 2018 y de 122 días en diciembre de 2025.</p>
+    </div>
+    <div class="row gap">
+      <span class="k">Lo que esta página no sabe</span>
+      <p>Cuánto dinero de cada plan se ha ejecutado, el voto de cada grupo en varias votaciones y qué pasó con los proyectos de ley que quedaron pendientes al disolverse las Cortes.</p>
+    </div>
+  </div>
+
+  <section aria-labelledby="h-tl">
+    <h2 id="h-tl">Qué pasó y cuándo</h2>
+    <div class="legend"><span><i class="dot"></i>Aprobado</span><span><i class="dot no"></i>No salió</span></div>
+    <ol class="tl compact">
+      <li><time>27 jul 2018</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 7/2018, sobre el acceso universal al Sistema Nacional de Salud</p><p class="s"></p></div></li>
+      <li><time>9 jun 2020</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 21/2020, de medidas urgentes de prevención, contención y coordinación frente a la COVID-19</p><p class="s"></p></div></li>
+      <li><time>29 sep 2020</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 29/2020, teletrabajo en las administraciones y personal del Sistema Nacional de Salud frente a la COVID-19</p><p class="s"></p></div></li>
+      <li><time>24 nov 2020</time><span class="mk"><i class="dot"></i></span><div><p class="t">Estrategia de Vacunación COVID-19 en España</p><p class="s"></p></div></li>
+      <li><time>24 mar 2021</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley Orgánica 3/2021, de regulación de la eutanasia</p><p class="s"></p></div></li>
+      <li><time>29 mar 2021</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley 2/2021, de medidas urgentes de prevención, contención y coordinación frente a la COVID-19</p><p class="s"></p></div></li>
+      <li><time>4 may 2021</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 8/2021, medidas urgentes en el orden sanitario, social y jurisdiccional tras el estado de alarma</p><p class="s"></p></div></li>
+      <li><time>11 may 2021</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proposición de ley de la Junta General de Asturias de universalización de la asistencia sanitaria pública, rechazada</p><p class="s">Rechazado</p></div></li>
+      <li><time>24 jun 2021</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 13/2021, fin de la mascarilla obligatoria al aire libre</p><p class="s"></p></div></li>
+      <li><time>28 sep 2021</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proposición de ley general de salud mental, admitida a trámite</p><p class="s">Admitido a trámite</p></div></li>
+      <li><time>15 dic 2021</time><span class="mk"><i class="dot"></i></span><div><p class="t">Plan de Acción de Atención Primaria y Comunitaria 2022-2023</p><p class="s"></p></div></li>
+      <li><time>23 dic 2021</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 30/2021, vuelve la mascarilla obligatoria al aire libre</p><p class="s"></p></div></li>
+      <li><time>28 abr 2022</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proposición de ley del PP sobre publicidad de prestaciones y actividades sanitarias, rechazada</p><p class="s">Rechazado</p></div></li>
+      <li><time>22 sep 2022</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proyecto de ley de equidad, universalidad y cohesión del SNS: rechazadas las enmiendas de totalidad</p><p class="s">Votación sobre las enmiendas de totalidad: rechazadas, el texto sigue adelante</p></div></li>
+      <li><time>28 feb 2023</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley Orgánica 1/2023, reforma de la ley de salud sexual y reproductiva y del aborto</p><p class="s"></p></div></li>
+      <li><time>30 oct 2024</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley 3/2024, para mejorar la calidad de vida de personas con ELA y otras enfermedades de alta complejidad y curso irreversible</p><p class="s"></p></div></li>
+      <li><time>10 dic 2024</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proposición de ley del PSOE sobre el derecho a otorgar instrucciones previas, rechazada</p><p class="s">Rechazado</p></div></li>
+      <li><time>11 feb 2025</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proposición de ley del PP relativa a la violencia en el ámbito sanitario, rechazada</p><p class="s">Rechazado</p></div></li>
+      <li><time>20 mar 2025</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Primer proyecto de ley de la Agencia Estatal de Salud Pública, rechazado en el Pleno</p><p class="s">Rechazado</p></div></li>
+      <li><time>28 jul 2025</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley 7/2025, por la que se crea la Agencia Estatal de Salud Pública</p><p class="s"></p></div></li>
+      <li><time>21 oct 2025</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 11/2025, financiación de la ley ELA y refuerzo de la dependencia</p><p class="s"></p></div></li>
+      <li><time>11 mar 2026</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto 180/2026, sobre el reconocimiento del derecho a la atención sanitaria de personas extranjeras sin residencia legal</p><p class="s"></p></div></li>
+      <li><time>21 abr 2026</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proposición de ley del PSOE sobre la crioconservación de óvulos, admitida a trámite</p><p class="s">Admitido a trámite</p></div></li>
+      <li><time>12 may 2026</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 11/2026, por el que se modifica la aportación de los usuarios en la prestación farmacéutica ambulatoria</p><p class="s"></p></div></li>
+      <li><time>11 jun 2026</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proposición de ley del Parlamento de Cataluña sobre normas procesales y el derecho a morir dignamente, admitida a trámite</p><p class="s">Admitido a trámite</p></div></li>
+      <li><time>29 jul 2026</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley 3/2026, de modificación de normas sobre el programa de cribado neonatal del SNS</p><p class="s"></p></div></li>
+      <li><time>10 sep 2026</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proposición de ley del PSOE para reconocer como profesiones sanitarias la de biólogo y la de trabajador social, admitida a trámite</p><p class="s">Admitido a trámite</p></div></li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="h-a">
+    <h2 id="h-a">Qué ha aprobado el Estado<span class="count">17</span></h2>
+    <details class="yg">
+    <summary><span class="yy">2018</span><span class="yn">1 hecho</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>27 jul 2018</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 7/2018, sobre el acceso universal al Sistema Nacional de Salud</h3>
+      <p class="plain">El derecho a la sanidad pública pasa a depender de residir en España, no de la situación administrativa. Incluye a personas extranjeras sin permiso de residencia, con condiciones.</p>
+      <div class="vote" role="img" aria-label="177 a favor, 133 en contra, 31 abstenciones"><span class="lbl">6 sep 2018 · Convalidado</span><div class="bar"><span class="y" style="width:51.91%">177 a favor</span><span class="n" style="width:39.00%">133 en contra</span><span class="a" style="width:9.09%">31</span></div></div>
+      <p>En contra: PP.</p>
+      <p class="limit">El recuento está cotejado con el Diario de Sesiones. Que el PP votó en contra y Ciudadanos se abstuvo lo dice una sola fuente de prensa.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>BOE núm. 183, de 30 de julio de 2018 (BOE-A-2018-10752). En vigor el 31 de julio de 2018. Modifica la Ley 16/2003, de cohesión y calidad del SNS. Las personas extranjeras no registradas ni autorizadas a residir tienen derecho a la atención con fondos públicos si no tienen otra cobertura ni un tercero obligado al pago. Las comunidades autónomas fijan el procedimiento para expedir el documento que acredita el derecho. Convalidado por el Congreso el 6 de septiembre de 2018 (BOE-A-2018-12574): 177 votos a favor (173 presenciales y 4 telemáticos), 133 en contra y 31 abstenciones, según el Diario de Sesiones. La tramitación por el procedimiento de urgencia se aprobó por 336 votos a favor, 4 en contra y 1 abstención.</p>
+          <a class="src" href="https://www.boe.es/buscar/doc.php?id=BOE-A-2018-10752" target="_blank" rel="noopener">Oficial: BOE-A-2018-10752, 30 jul 2018</a>
+          <a class="src" href="https://www.boe.es/buscar/doc.php?id=BOE-A-2018-12574" target="_blank" rel="noopener">Oficial: BOE-A-2018-12574, acuerdo de convalidación, 6 sep 2018</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L12/CONG/DS/PL/DSCD-12-PL-144.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-12-PL-144 (6 de septiembre de 2018), 6 sep 2018</a>
+          <a class="src" href="https://elderecho.com/convalidado-real-decreto-ley-sanidad-universal" target="_blank" rel="noopener">El Derecho, convalidación del RDL de sanidad universal, 7 sep 2018</a>
+          <a class="src" href="https://progressivespain.com/?p=23449" target="_blank" rel="noopener">Progressive Spain, votación de la sanidad universal</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg">
+    <summary><span class="yy">2020</span><span class="yn">3 hechos</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>9 jun 2020</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 21/2020, de medidas urgentes de prevención, contención y coordinación frente a la COVID-19</h3>
+      <p class="plain">Fija las normas para salir del estado de alarma: mascarilla obligatoria desde los seis años en espacios donde no se pueda mantener 1,5 metros de distancia, y medidas de prevención en trabajos, colegios, comercios y transporte.</p>
+      <div class="vote" role="img" aria-label="265 a favor, 77 en contra, 5 abstenciones"><span class="lbl">25 jun 2020 · Convalidado</span><div class="bar"><span class="y" style="width:76.37%">265 a favor</span><span class="n" style="width:22.19%">77 en contra</span><span class="a" style="width:1.44%"></span></div></div>
+      <p>En contra: EH Bildu, ERC, Junts, Vox.</p>
+      <p class="limit">Recuento cotejado con el Diario de Sesiones; corrige las cifras de prensa (una daba 70 votos en contra). Qué grupos votaron en contra viene de prensa, no del registro del Congreso.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>BOE núm. 163, de 10 de junio de 2020 (BOE-A-2020-5895). En vigor al día siguiente de su publicación. No llevar mascarilla se tipifica como infracción leve, con multa de hasta 100 euros. Convalidado el 25 de junio de 2020 (BOE-A-2020-6901): 265 votos a favor, 77 en contra y 5 abstenciones, según el Diario de Sesiones. Ese día el Congreso acordó tramitarlo como proyecto de ley por urgencia (337 a favor, 7 en contra, 2 abstenciones). Hoy figura en el BOE como disposición derogada. Ver el hecho de la Ley 2/2021, de igual título.</p>
+          <a class="src" href="https://www.boe.es/buscar/doc.php?id=BOE-A-2020-5895" target="_blank" rel="noopener">Oficial: BOE-A-2020-5895, 10 jun 2020</a>
+          <a class="src" href="https://www.boe.es/boe/dias/2020/06/30/pdfs/BOE-A-2020-6901.pdf" target="_blank" rel="noopener">Oficial: BOE-A-2020-6901, acuerdo de convalidación, 30 jun 2020</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-33.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-14-PL-33 (25 de junio de 2020), 25 jun 2020</a>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXIV/tramit_pleno25062020_32.pdf" target="_blank" rel="noopener">Oficial: Congreso, resultado de la tramitación del Pleno del 25 de junio de 2020, 25 jun 2020</a>
+          <a class="src" href="https://www.redaccionmedica.com/politica/20200625/covid-19-nueva-normalidad-el-congreso-convalida-decreto-del-gobierno/274622_0.html" target="_blank" rel="noopener">Redacción Médica, convalidación del decreto de nueva normalidad, 25 jun 2020</a>
+          <a class="src" href="https://www.moncloa.com/2020/06/25/gobierno-logra-convalidar-decreto-nueva-normalidad-230706/" target="_blank" rel="noopener">Moncloa.com (medio privado), convalidación del decreto de nueva normalidad, 25 jun 2020</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>29 sep 2020</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 29/2020, teletrabajo en las administraciones y personal del Sistema Nacional de Salud frente a la COVID-19</h3>
+      <p class="plain">Durante la pandemia, las comunidades pueden contratar a médicos sin el título de especialista reconocido en España y mover a personal sanitario a las unidades que más lo necesitan.</p>
+      <div class="vote" role="img" aria-label="196 a favor, 141 en contra, 10 abstenciones"><span class="lbl">15 oct 2020 · Convalidado</span><div class="bar"><span class="y" style="width:56.48%">196 a favor</span><span class="n" style="width:40.63%">141 en contra</span><span class="a" style="width:2.88%"></span></div></div>
+      <p class="limit">No consta qué grupos votaron en contra. No consta cuántas personas se contrataron con esta vía ni hasta cuándo se prorrogó.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>BOE núm. 259, de 30 de septiembre de 2020 (BOE-A-2020-11415). En vigor el 1 de octubre de 2020. Permite a las comunidades y al INGESA contratar a quienes aprobaron el examen de formación sanitaria especializada 2019/2020 sin obtener plaza y a especialistas con título de fuera de la UE con informe favorable, por un máximo de doce meses prorrogables. Permite redistribuir al personal médico y de enfermería entre unidades, hospitales y atención primaria. Regula también el teletrabajo en las administraciones públicas. Convalidado el 15 de octubre de 2020 (BOE-A-2020-12690): 196 a favor, 141 en contra y 10 abstenciones. La tramitación como proyecto de ley se rechazó (158 a favor, 190 en contra).</p>
+          <a class="src" href="https://www.boe.es/buscar/pdf/2020/BOE-A-2020-11415-consolidado.pdf" target="_blank" rel="noopener">Oficial: BOE-A-2020-11415 (texto consolidado), 30 sep 2020</a>
+          <a class="src" href="https://boe.es//boe/dias/2020/10/22/pdfs/BOE-A-2020-12690.pdf" target="_blank" rel="noopener">Oficial: BOE-A-2020-12690, acuerdo de convalidación, 22 oct 2020</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-53.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-14-PL-53 (15 de octubre de 2020), 15 oct 2020</a>
+          <a class="src" href="https://www.redaccionmedica.com/politica/20201015/el-congreso-respalda-el-rdl-para-fichar-medicos-extracomunitarios-sin-mir/267373_0.html" target="_blank" rel="noopener">Redacción Médica, el Congreso respalda el RDL para fichar médicos extracomunitarios sin MIR, 15 oct 2020</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>24 nov 2020</time><span class="badge of">Oficial</span></div>
+      <h3>Estrategia de Vacunación COVID-19 en España</h3>
+      <p class="plain">La vacuna contra la COVID-19 se pone de forma gratuita y voluntaria en la sanidad pública. Primero, residentes y personal de residencias de mayores y personas con gran dependencia.</p>
+      
+      <p class="limit">La fuente dice que la Estrategia se «presentó» al Consejo de Ministros, no que este la aprobara. No hay norma con rango de ley sobre vacunación en el periodo. No consta en esta ficha cuántas dosis se pusieron.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>El ministro de Sanidad presentó la Estrategia al Consejo de Ministros el 24 de noviembre de 2020. Se elaboró por un acuerdo del Consejo Interterritorial del SNS de 9 de septiembre. Prevé tres etapas, con un suministro inicial de dosis muy limitado entre enero y marzo de 2021. Ese día el Consejo de Ministros autorizó la compra de más de 20 millones de dosis de Pfizer-BioNTech (20.873.941, la parte española de la compra conjunta de la UE). La vacunación la hacen los servicios de salud de las comunidades.</p>
+          <a class="src" href="https://www.lamoncloa.gob.es/consejodeministros/resumenes/Paginas/2020/241120-cministros.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, resumen del Consejo de Ministros del 24 de noviembre de 2020, 24 nov 2020</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg">
+    <summary><span class="yy">2021</span><span class="yn">6 hechos</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>24 mar 2021</time><span class="badge of">Oficial</span></div>
+      <h3>Ley Orgánica 3/2021, de regulación de la eutanasia</h3>
+      <p class="plain">Una persona mayor de edad con una enfermedad grave e incurable, o un padecimiento grave, crónico e imposibilitante, puede pedir ayuda para morir. La prestación entra en la cartera común del Sistema Nacional de Salud.</p>
+      <div class="vote" role="img" aria-label="202 a favor, 141 en contra, 2 abstenciones"><span class="lbl">18 mar 2021 · Aprobado</span><div class="bar"><span class="y" style="width:58.55%">202 a favor</span><span class="n" style="width:40.87%">141 en contra</span><span class="a" style="width:0.58%"></span></div></div>
+      <p>En contra: PP, UPN, Vox.</p>
+      <p class="limit">Recuento cotejado con el Diario de Sesiones. Los grupos en contra vienen de prensa; una de las fuentes añade a Foro Asturias. Cuántas personas han recibido la prestación no consta en esta ficha.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>BOE núm. 72, de 25 de marzo de 2021 (BOE-A-2021-4628). En vigor el 25 de junio de 2021. Exige dos solicitudes por escrito separadas por un plazo mínimo y la consulta a un médico consultor. Crea una Comisión de Garantía y Evaluación en cada comunidad autónoma y en Ceuta y Melilla. Reconoce la objeción de conciencia de los profesionales sanitarios. Modifica el artículo 143 del Código Penal. Votación de conjunto en el Congreso el 18 de marzo de 2021, tras las enmiendas del Senado: 202 a favor, 141 en contra y 2 abstenciones, según el Diario de Sesiones. En contra PP, UPN y Vox, según dos fuentes de prensa.</p>
+          <a class="src" href="https://www.boe.es/buscar/doc.php?id=BOE-A-2021-4628" target="_blank" rel="noopener">Oficial: BOE-A-2021-4628, 25 mar 2021</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-89.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-14-PL-89 (18 de marzo de 2021), 18 mar 2021</a>
+          <a class="src" href="https://www.elsaltodiario.com/eutanasia/aprobada-definitiva-ley-eutanasia" target="_blank" rel="noopener">El Salto, aprobación definitiva de la ley de eutanasia, 18 mar 2021</a>
+          <a class="src" href="https://www.bolsamania.com/noticias_print/politica/congreso-aprueba-mayoria-absoluta-ley-eutanasia--7845627.html" target="_blank" rel="noopener">Bolsamanía (Europa Press), el Congreso aprueba la ley de eutanasia, 18 mar 2021</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>29 mar 2021</time><span class="badge of">Oficial</span></div>
+      <h3>Ley 2/2021, de medidas urgentes de prevención, contención y coordinación frente a la COVID-19</h3>
+      <p class="plain">Pasa a ley la obligación de llevar mascarilla desde los seis años en la calle, al aire libre, en espacios cerrados públicos y en el transporte, con excepciones. No llevarla es una infracción leve con multa de hasta 100 euros.</p>
+      <div class="vote" role="img" aria-label="199 a favor, 91 en contra, 57 abstenciones"><span class="lbl">18 mar 2021 · Aprobado</span><div class="bar"><span class="y" style="width:57.35%">199 a favor</span><span class="n" style="width:26.22%">91 en contra</span><span class="a" style="width:16.43%">57</span></div></div>
+      <p class="limit">La votación recogida es la del bloque principal de enmiendas del Senado; no hubo votación de conjunto. No consta qué grupos votaron en contra. El texto del BOE leído no menciona el RDL 21/2020; la relación se deduce del acuerdo de tramitarlo como proyecto de ley y del título idéntico.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>BOE núm. 76, de 30 de marzo de 2021 (BOE-A-2021-4908). En vigor el 31 de marzo de 2021. Tiene el mismo título que el Real Decreto-ley 21/2020, que el Congreso acordó tramitar como proyecto de ley el 25 de junio de 2020. Excepciones a la mascarilla: enfermedades respiratorias, discapacidad, deporte individual al aire libre, entre otras. El 18 de marzo de 2021 el Pleno votó las enmiendas del Senado en tres bloques; el bloque principal se aprobó con 199 votos a favor, 91 en contra y 57 abstenciones. Otras dos enmiendas (contratos de investigación y visado de la triple terapia de la EPOC) se aprobaron por separado. Se modificó después por los Reales Decretos-leyes 13/2021 y 30/2021.</p>
+          <a class="src" href="https://www.boe.es/boe/dias/2021/03/30/pdfs/BOE-A-2021-4908.pdf" target="_blank" rel="noopener">Oficial: BOE-A-2021-4908, 30 mar 2021</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-89.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-14-PL-89 (18 de marzo de 2021), 18 mar 2021</a>
+          <a class="src" href="https://www.que.es/2021/03/18/congreso-aprueba-ley-nueva-normalidad-pandemia/" target="_blank" rel="noopener">Qué!, el Congreso aprueba definitivamente la ley de nueva normalidad, 18 mar 2021</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>4 may 2021</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 8/2021, medidas urgentes en el orden sanitario, social y jurisdiccional tras el estado de alarma</h3>
+      <p class="plain">Al acabar el estado de alarma, fija controles sanitarios a los viajeros que llegan a España y permite recurrir ante el Tribunal Supremo las decisiones judiciales sobre las restricciones sanitarias de las comunidades.</p>
+      <div class="vote" role="img" aria-label="189 a favor, 100 en contra, 60 abstenciones"><span class="lbl">20 may 2021 · Convalidado</span><div class="bar"><span class="y" style="width:54.15%">189 a favor</span><span class="n" style="width:28.65%">100 en contra</span><span class="a" style="width:17.19%">60</span></div></div>
+      <p class="limit">La prensa dio 188 votos a favor; el Diario de Sesiones dice 189. No consta qué grupos votaron en contra ni si la tramitación como proyecto de ley terminó en una ley.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>BOE núm. 107, de 5 de mayo de 2021 (BOE-A-2021-7351). Los pasajeros internacionales deben rellenar un formulario sanitario y presentar un código QR. Crea un recurso de casación urgente ante el Tribunal Supremo contra los autos que autorizan o rechazan medidas sanitarias que limitan derechos fundamentales. Permite a sanitarios jubilados trabajar en la sanidad pública sin perder la pensión hasta el 31 de diciembre de 2021. Incluye también medidas sociales (suministros, desahucios, comunidades de propietarios). Convalidado el 20 de mayo de 2021 (BOE-A-2021-8807): 189 a favor, 100 en contra y 60 abstenciones. Se acordó tramitarlo como proyecto de ley por urgencia (345 a favor, 4 abstenciones).</p>
+          <a class="src" href="https://www.boe.es/buscar/doc.php?id=BOE-A-2021-7351" target="_blank" rel="noopener">Oficial: BOE-A-2021-7351, 5 may 2021</a>
+          <a class="src" href="https://boe.es//boe/dias/2021/05/27/pdfs/BOE-A-2021-8807.pdf" target="_blank" rel="noopener">Oficial: BOE-A-2021-8807, acuerdo de convalidación, 27 may 2021</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-104.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-14-PL-104 (20 de mayo de 2021), 20 may 2021</a>
+          <a class="src" href="https://elderecho.com/el-congreso-convalida-el-real-decreto-ley-de-medidas-urgentes-a-aplicar-tras-el-fin-del-estado-de-alarma-que-se-tramitara-como-proyecto-de-ley" target="_blank" rel="noopener">El Derecho, el Congreso convalida el RDL de medidas tras el fin del estado de alarma, 21 may 2021</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>24 jun 2021</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 13/2021, fin de la mascarilla obligatoria al aire libre</h3>
+      <p class="plain">La mascarilla deja de ser obligatoria al aire libre si se puede mantener 1,5 metros de distancia con quien no convive contigo. Sigue siendo obligatoria en interiores públicos y en el transporte.</p>
+      <div class="vote" role="img" aria-label="180 a favor, 90 en contra, 78 abstenciones"><span class="lbl">21 jul 2021 · Convalidado</span><div class="bar"><span class="y" style="width:51.72%">180 a favor</span><span class="n" style="width:25.86%">90 en contra</span><span class="a" style="width:22.41%">78</span></div></div>
+      <p class="limit">No consta qué grupos votaron en contra. La fecha exacta de entrada en vigor no se ha leído en el BOE.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>BOE núm. 151, de 25 de junio de 2021 (BOE-A-2021-10585). Modifica el artículo 6 de la Ley 2/2021. Mantiene la mascarilla al aire libre en aglomeraciones sin distancia y en eventos multitudinarios. Modifica también el Real Decreto-ley 26/2020 sobre el acceso a terminales de aeropuerto. Convalidado el 21 de julio de 2021 (BOE-A-2021-12604): 180 a favor, 90 en contra y 78 abstenciones. La tramitación como proyecto de ley se rechazó (145 a favor, 194 en contra, 9 abstenciones).</p>
+          <a class="src" href="https://www.boe.es/boe/dias/2021/06/25/pdfs/BOE-A-2021-10585.pdf" target="_blank" rel="noopener">Oficial: BOE-A-2021-10585, 25 jun 2021</a>
+          <a class="src" href="https://BOE.ES/boe/dias/2021/07/28/pdfs/BOE-A-2021-12604.pdf" target="_blank" rel="noopener">Oficial: BOE-A-2021-12604, acuerdo de convalidación, 28 jul 2021</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-117.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-14-PL-117 (21 de julio de 2021), 21 jul 2021</a>
+          <a class="src" href="https://elderecho.com/el-congreso-convalida-el-real-decreto-ley-que-elimina-el-uso-obligatorio-de-mascarillas-en-la-via-publica-y-en-espacios-al-aire-libre" target="_blank" rel="noopener">El Derecho, el Congreso convalida el RDL que elimina la mascarilla obligatoria al aire libre, 22 jul 2021</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>15 dic 2021</time><span class="badge of">Oficial</span></div>
+      <h3>Plan de Acción de Atención Primaria y Comunitaria 2022-2023</h3>
+      <p class="plain">El Ministerio y las comunidades acuerdan un plan para los centros de salud. Entre sus objetivos, bajar la temporalidad del personal de atención primaria por debajo del 8 % y crear la categoría de enfermera familiar y comunitaria.</p>
+      
+      <p class="limit">La nota de 2021 no da la cuantía total del plan. No consta cuánto se ejecutó ni si se cumplió el objetivo de temporalidad.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Aprobado en el pleno extraordinario del Consejo Interterritorial del SNS del 15 de diciembre de 2021. Tiene 13 objetivos, 12 puntos clave y 52 acciones previstas antes de 2023, con financiación finalista de los Presupuestos Generales del Estado y aportaciones de las comunidades. El 23 de mayo de 2023 el Consejo de Ministros aprobó cerca de 580 millones de euros para el Plan de Mejora de Infraestructuras de Atención Primaria (MINAP), parte de este plan, que se transfieren a las comunidades.</p>
+          <a class="src" href="https://www.sanidad.gob.es/en/gabinete/notasPrensa.do?id=5606" target="_blank" rel="noopener">Oficial: Ministerio de Sanidad, nota de prensa del CISNS, 15 dic 2021</a>
+          <a class="src" href="https://www.sanidad.gob.es/gabinete/notasPrensa.do?id=6119" target="_blank" rel="noopener">Oficial: Ministerio de Sanidad, nota de prensa del plan MINAP, 23 may 2023</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>23 dic 2021</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 30/2021, vuelve la mascarilla obligatoria al aire libre</h3>
+      <p class="plain">La mascarilla vuelve a ser obligatoria al aire libre desde los seis años, salvo en actividades en espacios naturales con distancia. Los médicos y enfermeras jubilados pueden seguir trabajando sin perder la pensión durante 2022.</p>
+      <div class="vote" role="img" aria-label="162 a favor, 153 en contra, 28 abstenciones"><span class="lbl">1 feb 2022 · Convalidado</span><div class="bar"><span class="y" style="width:47.23%">162 a favor</span><span class="n" style="width:44.61%">153 en contra</span><span class="a" style="width:8.16%">28</span></div></div>
+      <p>En contra: Ciudadanos, PP, Vox.</p>
+      <p class="limit">La prensa dio 155-149-26, que son solo los votos presenciales; el Diario de Sesiones suma los telemáticos (162-153-28). Los grupos en contra vienen de una sola fuente de prensa. No consta en esta ficha el real decreto que retiró después la mascarilla al aire libre.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>BOE núm. 307, de 23 de diciembre de 2021 (BOE-A-2021-21307). En vigor el 24 de diciembre de 2021. Modifica el artículo 6 de la Ley 2/2021 y permite al Gobierno cambiar la obligación por real decreto, oído el Consejo Interterritorial. Permite contratar especialistas con título de fuera de la UE bajo supervisión. Incluye también un pago único a los perceptores de pensiones no contributivas de 2021. Convalidado el 1 de febrero de 2022 (BOE-A-2022-1856): 162 a favor, 153 en contra y 28 abstenciones. Se acordó tramitarlo como proyecto de ley por urgencia (331 a favor, 4 en contra, 8 abstenciones).</p>
+          <a class="src" href="https://www.boe.es/buscar/doc.php?id=BOE-A-2021-21307" target="_blank" rel="noopener">Oficial: BOE-A-2021-21307, 23 dic 2021</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-154.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-14-PL-154 (1 de febrero de 2022), 1 feb 2022</a>
+          <a class="src" href="https://www.redaccionmedica.com/politica/20220201/si-del-congreso-mantener-las-mascarillas-obligatorias-en-el-exterior/174178_0.html" target="_blank" rel="noopener">Redacción Médica, sí del Congreso a mantener las mascarillas obligatorias en el exterior, 1 feb 2022</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg">
+    <summary><span class="yy">2023</span><span class="yn">1 hecho</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>28 feb 2023</time><span class="badge of">Oficial</span></div>
+      <h3>Ley Orgánica 1/2023, reforma de la ley de salud sexual y reproductiva y del aborto</h3>
+      <p class="plain">Las mujeres de 16 y 17 años pueden abortar sin permiso de sus padres y desaparecen los tres días de reflexión. Los anticonceptivos hormonales se dan gratis en la sanidad pública y la menstruación incapacitante por una patología diagnosticada da derecho a baja.</p>
+      <div class="vote" role="img" aria-label="185 a favor, 154 en contra, 3 abstenciones"><span class="lbl">16 feb 2023 · Aprobado</span><div class="bar"><span class="y" style="width:54.09%">185 a favor</span><span class="n" style="width:45.03%">154 en contra</span><span class="a" style="width:0.88%"></span></div></div>
+      <p>En contra: PP, Vox.</p>
+      <p class="limit">Recuento oficial. Que votaron en contra PP y Vox y que se abstuvo el PDeCAT lo dice una sola fuente de prensa; no consta si otros grupos votaron en contra.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>BOE núm. 51, de 1 de marzo de 2023 (BOE-A-2023-5364). En vigor el 2 de marzo de 2023, salvo varias disposiciones finales, a los tres meses. Modifica la Ley Orgánica 2/2010. Las interrupciones del embarazo se harán en centros públicos o privados acreditados, y las administraciones deben garantizarlas en la red pública o vinculada. Crea un registro de profesionales objetores de conciencia en cada comunidad y en el INGESA. Votación de conjunto en el Congreso el 16 de febrero de 2023: 185 a favor, 154 en contra y 3 abstenciones (Diario de Sesiones).</p>
+          <a class="src" href="https://www.boe.es/buscar/doc.php?id=BOE-A-2023-5364" target="_blank" rel="noopener">Oficial: BOE-A-2023-5364, 1 mar 2023</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-245.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-14-PL-245 (16 de febrero de 2023), 16 feb 2023</a>
+          <a class="src" href="https://rtvc.es/aprobada-la-reforma-de-la-ley-del-aborto/" target="_blank" rel="noopener">RTVC, aprobada la reforma de la ley del aborto, 16 feb 2023</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg">
+    <summary><span class="yy">2024</span><span class="yn">1 hecho</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>30 oct 2024</time><span class="badge of">Oficial</span></div>
+      <h3>Ley 3/2024, para mejorar la calidad de vida de personas con ELA y otras enfermedades de alta complejidad y curso irreversible</h3>
+      <p class="plain">Las personas con ELA tienen reconocido el grado I de dependencia desde el diagnóstico y un procedimiento urgente para la discapacidad, con resolución en un máximo de tres meses.</p>
+      <div class="vote" role="img" aria-label="344 a favor, 0 en contra"><span class="lbl">10 oct 2024 · Aprobado</span><div class="bar"><span class="y" style="width:100.00%">344 a favor</span><span class="n" style="width:0.00%">0 en contra</span></div></div>
+      <p class="limit">El acta no recoge votos en contra ni abstenciones en la votación final. La votación de las enmiendas de Vox viene de una sola fuente de prensa. No consta cuántas personas han recibido las ayudas.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>BOE núm. 263, de 31 de octubre de 2024 (BOE-A-2024-22438). En vigor el 1 de noviembre de 2024. Modifica la Ley 16/2003, la Ley General de la Seguridad Social y la normativa del bono social eléctrico. Sus beneficios no son retroactivos. Votación de conjunto del dictamen en el Pleno del Congreso el 10 de octubre de 2024: 344 votos emitidos, 344 a favor (acta del Pleno). Antes, el 20 de junio de 2024, el Pleno rechazó las enmiendas de totalidad de texto alternativo de Vox a las tres proposiciones de ley sobre la ELA (del PP, del PSOE y de Junts), con unos 32-33 votos a favor y 315-317 en contra, según una fuente de prensa. Su financiación se reguló en el Real Decreto-ley 11/2025 (ver ese hecho).</p>
+          <a class="src" href="https://www.boe.es/eli/es/l/2024/10/30/3" target="_blank" rel="noopener">Oficial: BOE-A-2024-22438, 31 oct 2024</a>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20241010.pdf" target="_blank" rel="noopener">Oficial: Congreso, acta del Pleno del 10 de octubre de 2024, 10 oct 2024</a>
+          <a class="src" href="https://www.elindependiente.com/espana/2024/10/10/el-congreso-aprueba-por-unanimidad-la-ley-de-la-ela-despues-de-dos-anos-de-retraso/" target="_blank" rel="noopener">El Independiente, el Congreso aprueba la ley ELA, 10 oct 2024</a>
+          <a class="src" href="https://www.redaccionmedica.com/politica/20240620/el-congreso-tumba-el-bloqueo-de-vox-las-leyes-ela-pp-psoe-junts/231282_0.html" target="_blank" rel="noopener">Redacción Médica, el Congreso tumba las enmiendas de Vox a las leyes ELA, 20 jun 2024</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg">
+    <summary><span class="yy">2025</span><span class="yn">2 hechos</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>28 jul 2025</time><span class="badge of">Oficial</span></div>
+      <h3>Ley 7/2025, por la que se crea la Agencia Estatal de Salud Pública</h3>
+      <p class="plain">Crea un organismo estatal que vigila la salud de la población, coordina la respuesta ante crisis sanitarias y presenta cada año un informe a las Cortes.</p>
+      
+      <p class="limit">El segundo proyecto no tuvo votación de conjunto en el Pleno; las votaciones del 22 de julio fueron sobre enmiendas del Senado. Los pasos en comisión y Senado vienen de una sola fuente de prensa cada uno.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>BOE núm. 181, de 29 de julio de 2025 (BOE-A-2025-15652). En vigor el 30 de julio de 2025. La Agencia está adscrita al Ministerio de Sanidad, con personalidad jurídica y autonomía de gestión. Entre sus funciones: vigilancia en salud pública, coordinación de la preparación y respuesta ante emergencias, evaluación de riesgos de biocidas y sustancias químicas, y colaboración con las comunidades autónomas. Modifica la Ley 33/2011, General de Salud Pública, para incluir el principio de «Una sola salud». Es el segundo proyecto, tras el rechazo del primero el 20 de marzo de 2025. Según la prensa, la Comisión de Sanidad lo aprobó el 19 de junio de 2025 (19 a favor, 18 en contra) y el Senado el 17 de julio. El 22 de julio de 2025 el Pleno del Congreso votó las enmiendas del Senado por separado: aprobó tres (por ejemplo, 298 a favor, 50 en contra y 1 abstención en una nueva disposición adicional) y rechazó dos (171-177-1 y 172-177), según el acta. No hubo una única votación final de conjunto.</p>
+          <a class="src" href="https://www.boe.es/boe/dias/2025/07/29/pdfs/BOE-A-2025-15652.pdf" target="_blank" rel="noopener">Oficial: BOE-A-2025-15652, 29 jul 2025</a>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20250722.pdf" target="_blank" rel="noopener">Oficial: Congreso, acta del Pleno del 22 de julio de 2025, 22 jul 2025</a>
+          <a class="src" href="https://es.ara.cat/sociedad/salud/luz-verde-minima-agencia-estatal-salud-publica_1_5417160.html" target="_blank" rel="noopener">Ara, luz verde a la Agencia Estatal de Salud Pública en comisión, 19 jun 2025</a>
+          <a class="src" href="https://www.redaccionmedica.com/politica/20250722/la-agencia-de-salud-publica-ve-la-luz-finalmente-tras-una-ardua-negociacion/247676_0.html" target="_blank" rel="noopener">Redacción Médica, la Agencia de Salud Pública ve la luz, 22 jul 2025</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>21 oct 2025</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 11/2025, financiación de la ley ELA y refuerzo de la dependencia</h3>
+      <p class="plain">Pone medidas y dinero para cumplir la ley ELA de 2024 y reforzar el sistema de dependencia.</p>
+      <div class="vote" role="img" aria-label="346 a favor, 0 en contra"><span class="lbl">19 nov 2025 · Convalidado</span><div class="bar"><span class="y" style="width:100.00%">346 a favor</span><span class="n" style="width:0.00%">0 en contra</span></div></div>
+      <p class="limit">No se ha leído el texto del decreto en el BOE (solo su título y fecha, por el acuerdo de convalidación). No consta la cuantía en esta ficha ni cuánto se ha ejecutado.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto-ley 11/2025, de 21 de octubre, por el que se establecen medidas para reforzar el Sistema para la Autonomía y Atención a la Dependencia y dar cumplimiento a la Ley 3/2024. BOE núm. 254, de 22 de octubre de 2025. Convalidado el 19 de noviembre de 2025 (BOE-A-2025-23614): 346 votos emitidos, 346 a favor (acta del Pleno). La tramitación como proyecto de ley por urgencia se aprobó con 345 votos a favor de 345.</p>
+          <a class="src" href="https://www.boe.es/boe/dias/2025/11/22/pdfs/BOE-A-2025-23614.pdf" target="_blank" rel="noopener">Oficial: BOE-A-2025-23614, acuerdo de convalidación, 22 nov 2025</a>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20251119.pdf" target="_blank" rel="noopener">Oficial: Congreso, acta del Pleno del 19 de noviembre de 2025, 19 nov 2025</a>
+          <a class="src" href="https://www.vozpopuli.com/espana/politica/el-congreso-avala-por-unanimidad-el-decreto-que-dota-de-fondos-la-ley-ela.html" target="_blank" rel="noopener">Vozpópuli, el Congreso avala por unanimidad el decreto que dota de fondos la ley ELA, 19 nov 2025</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg" open>
+    <summary><span class="yy">2026</span><span class="yn">3 hechos</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>11 mar 2026</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto 180/2026, sobre el reconocimiento del derecho a la atención sanitaria de personas extranjeras sin residencia legal</h3>
+      <p class="plain">Fija qué documentos hay que presentar para acceder a la sanidad pública sin residencia legal. Al pedirlo se recibe un documento provisional para ser atendido mientras se resuelve.</p>
+      
+      <p class="limit">Es un real decreto del Gobierno; no pasa por el Congreso. El 26 de marzo de 2026 el Congreso votó en contra de una moción de Vox que pedía derogarlo (una fuente de prensa, sin recuento). Una moción no es una norma, por eso no figura como hecho propio.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>BOE núm. 63, de 12 de marzo de 2026 (BOE-A-2026-5714). En vigor el 13 de marzo de 2026. Desarrolla el artículo 3 ter de la Ley 16/2003, introducido por el RDL 7/2018. Requiere una declaración responsable, documento de identidad y prueba de residencia habitual (en general, el padrón, con alternativas). La resolución debe dictarse en tres meses; si no, se entiende estimada. Para entrar en la lista de espera de trasplantes exige dos años de residencia de forma transitoria. Amplía la atención a españoles de origen residentes en el exterior que se desplazan temporalmente a España.</p>
+          <a class="src" href="https://www.boe.es/eli/es/rd/2026/03/11/180" target="_blank" rel="noopener">Oficial: BOE-A-2026-5714, 12 mar 2026</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>12 may 2026</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 11/2026, por el que se modifica la aportación de los usuarios en la prestación farmacéutica ambulatoria</h3>
+      <p class="plain">Cambia lo que se paga en la farmacia por los medicamentos con receta. Las personas en activo pasan de tres a seis tramos según su renta y los pensionistas de tres a cuatro, con nuevos topes mensuales.</p>
+      <div class="vote" role="img" aria-label="164 a favor, 33 en contra, 149 abstenciones"><span class="lbl">28 may 2026 · Convalidado</span><div class="bar"><span class="y" style="width:47.40%">164 a favor</span><span class="n" style="width:9.54%">33 en contra</span><span class="a" style="width:43.06%">149</span></div></div>
+      <p>En contra: Vox.</p>
+      <p class="limit">Recuento cotejado con el acta del Pleno. Que el PP se abstuvo y Vox votó en contra lo dicen dos fuentes de prensa.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>BOE núm. 116, de 13 de mayo de 2026 (BOE-A-2026-10324). En vigor el 14 de mayo de 2026. Modifica el artículo 102 del texto refundido de la Ley de garantías y uso racional de los medicamentos (RDLeg 1/2015). Introduce topes mensuales para personas en activo con rentas por debajo de 35.000 euros y un tope intermedio para pensionistas entre 18.000 y 60.000 euros. Vincula la exención de los pensionistas al complemento por mínimos, con una disposición transitoria para quienes ya estaban exentos. Convalidado el 28 de mayo de 2026 (BOE-A-2026-11625): 346 votos emitidos, 164 a favor, 33 en contra y 149 abstenciones, según el acta del Pleno. La tramitación como proyecto de ley por urgencia se aprobó con 347 votos a favor de 347.</p>
+          <a class="src" href="https://www.boe.es/buscar/doc.php?id=BOE-A-2026-10324" target="_blank" rel="noopener">Oficial: BOE-A-2026-10324, 13 may 2026</a>
+          <a class="src" href="https://www.boe.es/buscar/doc.php?id=BOE-A-2026-11625" target="_blank" rel="noopener">Oficial: BOE-A-2026-11625, acuerdo de convalidación, 30 may 2026</a>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20260528.pdf" target="_blank" rel="noopener">Oficial: Congreso, acta del Pleno del 28 de mayo de 2026, 28 may 2026</a>
+          <a class="src" href="https://maldita.es/desinfo/20260529/el-pp-salva-el-decreto-del-copago-farmaceutico-del-gobierno-que-permitira-que-un-inmigrante-ilegal-pague-menos-que-un-espanol-con-renta-baja/" target="_blank" rel="noopener">Maldita.es, votación del decreto del copago, 29 may 2026</a>
+          <a class="src" href="https://www.diarioestrategia.cl/texto-diario/mostrar/5898591/congreso-convalida-reforma-copago-farmaceutico" target="_blank" rel="noopener">Diario Estrategia (Europa Press), el Congreso convalida la reforma del copago, 28 may 2026</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>29 jul 2026</time><span class="badge of">Oficial</span></div>
+      <h3>Ley 3/2026, de modificación de normas sobre el programa de cribado neonatal del SNS</h3>
+      <p class="plain">La prueba del talón a los recién nacidos (21 enfermedades en la cartera común) se evaluará al menos una vez al año para ampliarla, y no se podrán quitar pruebas salvo que cambie la evidencia.</p>
+      
+      <p class="limit">No hubo una votación final única en el Pleno: el texto pasó por comisión y las enmiendas del Senado se votaron por separado. No se han leído las demás votaciones de enmiendas del 23 de julio.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>BOE núm. 186, de 31 de julio de 2026 (BOE-A-2026-16654). En vigor el 1 de agosto de 2026. Nace de una proposición de ley del Grupo Socialista, admitida a trámite el 27 de noviembre de 2025 con 307 votos a favor, 7 en contra y 33 abstenciones (acta del Pleno). Obliga al Ministerio a publicar un informe técnico anual del programa y a fijar protocolos comunes con las comunidades. Modifica también la ley de medicamentos para que los acuerdos de financiación y precios de medicamentos sean confidenciales, y obliga a las comunidades a enviar cada mes datos de consumo y precios. El 23 de julio de 2026 el Pleno votó las enmiendas del Senado; en una de ellas, 185 a favor, 0 en contra y 163 abstenciones (PP, Vox, ERC y Junts a favor; PSOE, Sumar, EH Bildu y PNV abstención, según el registro de votaciones).</p>
+          <a class="src" href="https://www.boe.es/buscar/doc.php?id=BOE-A-2026-16654" target="_blank" rel="noopener">Oficial: BOE-A-2026-16654, 31 jul 2026</a>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20251127.pdf" target="_blank" rel="noopener">Oficial: Congreso, acta del Pleno del 27 de noviembre de 2025, 27 nov 2025</a>
+          <a class="src" href="https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion193/20260723/Votacion018/VOT_20260723211932.pdf" target="_blank" rel="noopener">Oficial: Congreso, votación 18 de la sesión 193 (23 de julio de 2026), 23 jul 2026</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-199.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-15-PL-199 (23 de julio de 2026), 23 jul 2026</a>
+          <a class="src" href="https://www.redaccionmedica.com/politica/20251127/el-cribado-neonatal-sin-desigualdades-logra-su-primer-ok-del-congreso/253890_0.html" target="_blank" rel="noopener">Redacción Médica, el cribado neonatal sin desigualdades logra su primer sí del Congreso, 27 nov 2025</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+  </section>
+
+  <section aria-labelledby="h-b">
+    <h2 id="h-b">Qué intentó y no salió<span class="count">10</span></h2>
+    <p class="lede">Solo se cuenta lo que pasó, sin juzgar a nadie. Los motivos de cada grupo se añadirán como cita literal del Diario de Sesiones.</p>
+    <details class="yg">
+    <summary><span class="yy">2021</span><span class="yn">2 hechos</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>11 may 2021</time><span class="badge of">Oficial</span></div>
+      <h3>Proposición de ley de la Junta General de Asturias de universalización de la asistencia sanitaria pública, rechazada</h3>
+      <p class="plain">El Congreso no admitió a trámite una ley del Parlamento asturiano para reconocer por ley la sanidad pública gratuita a todas las personas residentes en España.</p>
+      <div class="vote" role="img" aria-label="42 a favor, 259 en contra, 38 abstenciones"><span class="lbl">11 may 2021 · Rechazado</span><div class="bar"><span class="y" style="width:12.39%">42 a favor</span><span class="n" style="width:76.40%">259 en contra</span><span class="a" style="width:11.21%">38</span></div></div>
+      <p>En contra: Foro Asturias, PP, PSOE, Vox.</p>
+      <p class="limit">Recuento oficial. Los grupos en contra vienen de una sola fuente de prensa.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Toma en consideración rechazada en el Pleno el 11 de mayo de 2021: 42 a favor, 259 en contra y 38 abstenciones (Diario de Sesiones). Según una fuente de prensa, votaron en contra PSOE, PP, Vox y Foro Asturias, y se abstuvo el PNV.</p>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-99.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-14-PL-99 (11 de mayo de 2021), 11 may 2021</a>
+          <a class="src" href="https://www.que.es/2021/05/11/congreso-ley-sanidad-parlamento-asturiano/" target="_blank" rel="noopener">Qué!, el Congreso rechaza tramitar la ley de sanidad universal del Parlamento asturiano, 11 may 2021</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>28 sep 2021</time><span class="badge of">Oficial</span></div>
+      <h3>Proposición de ley general de salud mental, admitida a trámite</h3>
+      <p class="plain">El Congreso admitió a trámite una ley de salud mental propuesta por Unidas Podemos. No consta que llegara a aprobarse.</p>
+      <div class="vote" role="img" aria-label="194 a favor, 10 en contra, 141 abstenciones"><span class="lbl">28 sep 2021 · Admitido a trámite</span><div class="bar"><span class="y" style="width:56.23%">194 a favor</span><span class="n" style="width:2.90%">10 en contra</span><span class="a" style="width:40.87%">141</span></div></div>
+      <p class="limit">La prensa contó solo los votos presenciales (96 a favor). No consta qué grupos votaron en contra. No se ha comprobado qué pasó con la proposición después; no figura una ley de salud mental en el BOE de esta ficha.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Proposición de ley del Grupo Confederal de Unidas Podemos-En Comú Podem-Galicia en Común, General de Salud Mental. Toma en consideración aprobada el 28 de septiembre de 2021: 194 a favor, 10 en contra y 141 abstenciones (Diario de Sesiones). Según una fuente de prensa, apoyaron PSOE, Más País, EH Bildu, PRC y Ciudadanos, y se abstuvieron, entre otros, PP y PDeCAT.</p>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-126.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-14-PL-126 (28 de septiembre de 2021), 28 sep 2021</a>
+          <a class="src" href="https://www.redaccionmedica.com/politica/20210928/el-congreso-inicia-la-tramitacion-de-ley-salud-mental-podemos/167769_0.html" target="_blank" rel="noopener">Redacción Médica, el Congreso inicia la tramitación de la ley de salud mental de Podemos, 28 sep 2021</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg">
+    <summary><span class="yy">2022</span><span class="yn">2 hechos</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>28 abr 2022</time><span class="badge of">Oficial</span></div>
+      <h3>Proposición de ley del PP sobre publicidad de prestaciones y actividades sanitarias, rechazada</h3>
+      <p class="plain">El Congreso no admitió a trámite una ley del PP para regular la publicidad de servicios sanitarios.</p>
+      <div class="vote" role="img" aria-label="120 a favor, 159 en contra, 70 abstenciones"><span class="lbl">28 abr 2022 · Rechazado</span><div class="bar"><span class="y" style="width:34.38%">120 a favor</span><span class="n" style="width:45.56%">159 en contra</span><span class="a" style="width:20.06%">70</span></div></div>
+      <p class="limit">La prensa dio 118 a favor y 150 en contra (solo votos presenciales). No consta el voto de cada grupo.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Proposición de ley del Grupo Popular relativa a la publicidad de prestaciones y actividades sanitarias. Toma en consideración rechazada el 28 de abril de 2022: 120 a favor, 159 en contra y 70 abstenciones (Diario de Sesiones).</p>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-181.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-14-PL-181 (28 de abril de 2022), 28 abr 2022</a>
+          <a class="src" href="https://www.redaccionmedica.com/politica/20220428/el-congreso-tumba-la-ley-para-regular-publicidad-sanitaria/185746_0.html" target="_blank" rel="noopener">Redacción Médica, el Congreso tumba la ley para regular la publicidad sanitaria, 28 abr 2022</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>22 sep 2022</time><span class="badge of">Oficial</span></div>
+      <h3>Proyecto de ley de equidad, universalidad y cohesión del SNS: rechazadas las enmiendas de totalidad</h3>
+      <p class="plain">El Congreso rechazó devolver al Gobierno su proyecto de ley de equidad del Sistema Nacional de Salud, que siguió su tramitación. No consta que llegara a aprobarse en esa legislatura.</p>
+      <div class="vote" role="img" aria-label="64 a favor, 191 en contra, 88 abstenciones"><span class="lbl">22 sep 2022 · Votación sobre las enmiendas de totalidad: rechazadas, el texto sigue adelante</span><div class="bar"><span class="y" style="width:18.66%">64 a favor</span><span class="n" style="width:55.69%">191 en contra</span><span class="a" style="width:25.66%">88</span></div></div>
+      <p class="limit">No se ha comprobado en el registro qué pasó con el proyecto de 2022 tras la disolución de 2023. El proyecto de 2024 no tuvo votación en el Pleno que conste: una fuente de prensa de julio de 2025 indica que el plazo de enmiendas de totalidad se había ampliado más de 40 veces.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Debate de totalidad del Proyecto de ley por la que se modifican diversas normas para consolidar la equidad, universalidad y cohesión del SNS. Las enmiendas de devolución las defendieron Ciudadanos y Vox. Se rechazaron el 22 de septiembre de 2022: 64 votos a favor de las enmiendas, 191 en contra y 88 abstenciones (Diario de Sesiones). El 18 de junio de 2024 el Consejo de Ministros aprobó un nuevo proyecto de ley de equidad y cohesión del SNS.</p>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-210.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-14-PL-210 (22 de septiembre de 2022), 22 sep 2022</a>
+          <a class="src" href="https://www.sanidad.gob.es/gabinete/notasPrensa.do?id=6456" target="_blank" rel="noopener">Oficial: Ministerio de Sanidad, el Consejo de Ministros aprueba el proyecto de ley de equidad y cohesión del SNS, 18 jun 2024</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg">
+    <summary><span class="yy">2024</span><span class="yn">1 hecho</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>10 dic 2024</time><span class="badge of">Oficial</span></div>
+      <h3>Proposición de ley del PSOE sobre el derecho a otorgar instrucciones previas, rechazada</h3>
+      <p class="plain">El Congreso no admitió a trámite una ley del PSOE sobre el testamento vital (instrucciones previas), relacionada con los cuidados paliativos y la eutanasia.</p>
+      <div class="vote" role="img" aria-label="162 a favor, 180 en contra, 1 abstenciones"><span class="lbl">10 dic 2024 · Rechazado</span><div class="bar"><span class="y" style="width:47.23%">162 a favor</span><span class="n" style="width:52.48%">180 en contra</span><span class="a" style="width:0.29%"></span></div></div>
+      <p>En contra: Junts, PNV, PP, Vox.</p>
+      <p class="limit">Recuento oficial; los grupos en contra vienen del titular de una sola fuente de prensa.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Proposición de ley del Grupo Socialista sobre el derecho a otorgar instrucciones previas (expediente 122/000133). Toma en consideración rechazada el 10 de diciembre de 2024: 343 votos emitidos, 162 a favor, 180 en contra y 1 abstención (acta del Pleno). Según una fuente de prensa, votaron en contra PP, Vox, Junts y PNV.</p>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20241210.pdf" target="_blank" rel="noopener">Oficial: Congreso, acta del Pleno del 10 de diciembre de 2024, 10 dic 2024</a>
+          <a class="src" href="https://www.elindependiente.com/espana/2024/12/10/junts-y-pnv-se-unen-a-pp-y-vox-y-tumban-la-ley-del-psoe-sobre-cuidados-paliativos-y-eutanasia/" target="_blank" rel="noopener">El Independiente, Junts y PNV se unen a PP y Vox y tumban la ley del PSOE sobre cuidados paliativos y eutanasia, 10 dic 2024</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg">
+    <summary><span class="yy">2025</span><span class="yn">2 hechos</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>11 feb 2025</time><span class="badge of">Oficial</span></div>
+      <h3>Proposición de ley del PP relativa a la violencia en el ámbito sanitario, rechazada</h3>
+      <p class="plain">El Congreso no admitió a trámite, por dos votos de diferencia, una ley del PP sobre las agresiones a profesionales sanitarios.</p>
+      <div class="vote" role="img" aria-label="171 a favor, 173 en contra"><span class="lbl">11 feb 2025 · Rechazado</span><div class="bar"><span class="y" style="width:49.71%">171 a favor</span><span class="n" style="width:50.29%">173 en contra</span></div></div>
+      <p class="limit">El acta no recoge abstenciones. Una fuente de prensa sitúa en contra a PNV, EH Bildu y ERC, sin dar el voto de los demás grupos; por eso no se listan grupos.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Proposición de ley del Grupo Popular relativa a la violencia en el ámbito sanitario (expediente 122/000141). Toma en consideración rechazada el 11 de febrero de 2025: 344 votos emitidos, 171 a favor y 173 en contra (acta del Pleno).</p>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20250211.pdf" target="_blank" rel="noopener">Oficial: Congreso, acta del Pleno del 11 de febrero de 2025, 11 feb 2025</a>
+          <a class="src" href="https://www.diarioestrategia.cl/texto-diario/mostrar/5177654/congreso-rechaza-tramitar-ley-mejorar-proteccion-sanitarios-ante-agresiones" target="_blank" rel="noopener">Diario Estrategia (Europa Press), el Congreso rechaza tramitar la ley para mejorar la protección de los sanitarios ante las agresiones, 11 feb 2025</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>20 mar 2025</time><span class="badge of">Oficial</span></div>
+      <h3>Primer proyecto de ley de la Agencia Estatal de Salud Pública, rechazado en el Pleno</h3>
+      <p class="plain">El Congreso votó en contra del proyecto para crear una agencia estatal de salud pública. El Gobierno presentó después un segundo proyecto, que se aprobó en julio de 2025.</p>
+      <div class="vote" role="img" aria-label="167 a favor, 176 en contra, 2 abstenciones"><span class="lbl">20 mar 2025 · Rechazado</span><div class="bar"><span class="y" style="width:48.41%">167 a favor</span><span class="n" style="width:51.01%">176 en contra</span><span class="a" style="width:0.58%"></span></div></div>
+      <p>En contra: Junts, PP, Vox.</p>
+      <p class="limit">Recuento cotejado con el acta del Pleno. Los grupos en contra vienen de prensa. Una fuente indica que una diputada del PSOE se equivocó al votar.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>El Pleno rechazó el dictamen del proyecto de ley el 20 de marzo de 2025: 345 votos emitidos, 167 a favor, 176 en contra y 2 abstenciones (acta del Pleno). Antes se votaron y rechazaron enmiendas del Grupo Mixto (BNG), de Vox y la enmienda 61 del PP (169 a favor, 175 en contra, 1 abstención). Según la prensa, votaron en contra PP, Junts y Vox. Ver el hecho de la Ley 7/2025.</p>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20250320.pdf" target="_blank" rel="noopener">Oficial: Congreso, acta del Pleno del 20 de marzo de 2025, 20 mar 2025</a>
+          <a class="src" href="https://theobjective.com/espana/politica/2025-03-20/congreso-tumba-agencia-salud-publica/" target="_blank" rel="noopener">The Objective, el Congreso tumba la Agencia de Salud Pública, 20 mar 2025</a>
+          <a class="src" href="https://www.eldebate.com/espana/20250320/congreso-tumba-agencia-estatal-salud-publica-gobierno-votos-contra-pp-vox-junts_280717.html" target="_blank" rel="noopener">El Debate, el Congreso tumba la Agencia Estatal de Salud Pública, 20 mar 2025</a>
+          <a class="src" href="https://www.elindependiente.com/espana/2025/03/20/nuevo-reves-para-el-gobierno-el-congreso-rechaza-la-agencia-de-salud-publica/amp/" target="_blank" rel="noopener">El Independiente, el Congreso rechaza la Agencia de Salud Pública, 20 mar 2025</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg" open>
+    <summary><span class="yy">2026</span><span class="yn">3 hechos</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>21 abr 2026</time><span class="badge of">Oficial</span></div>
+      <h3>Proposición de ley del PSOE sobre la crioconservación de óvulos, admitida a trámite</h3>
+      <p class="plain">El Congreso admitió a trámite una ley para que una mujer pueda decidir destruir sus óvulos congelados sin necesitar un informe médico favorable. No consta que se aprobara antes de la disolución de las Cortes.</p>
+      <div class="vote" role="img" aria-label="306 a favor, 33 en contra, 8 abstenciones"><span class="lbl">21 abr 2026 · Admitido a trámite</span><div class="bar"><span class="y" style="width:88.18%">306 a favor</span><span class="n" style="width:9.51%">33 en contra</span><span class="a" style="width:2.31%"></span></div></div>
+      <p class="limit">No consta el voto de cada grupo. No se ha comprobado su estado a la disolución del 6 de octubre de 2026.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Proposición de ley del Grupo Socialista de modificación de la regulación sobre la crioconservación de ovocitos. Toma en consideración aprobada el 21 de abril de 2026: 347 votos emitidos, 306 a favor, 33 en contra y 8 abstenciones (acta del Pleno). Según la prensa, también encarga al Ministerio revisar en 12 meses la ley de reproducción humana asistida de 2006.</p>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20260421.pdf" target="_blank" rel="noopener">Oficial: Congreso, acta del Pleno del 21 de abril de 2026, 21 abr 2026</a>
+          <a class="src" href="https://www.redaccionmedica.com/politica/20260421/luz-verde-en-el-congreso-flexibilizar-la-congelacion-de-ovulos/262648_0.html" target="_blank" rel="noopener">Redacción Médica, luz verde en el Congreso a flexibilizar la congelación de óvulos, 21 abr 2026</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>11 jun 2026</time><span class="badge of">Oficial</span></div>
+      <h3>Proposición de ley del Parlamento de Cataluña sobre normas procesales y el derecho a morir dignamente, admitida a trámite</h3>
+      <p class="plain">El Congreso admitió a trámite una ley del Parlamento catalán que cambia normas de los juicios relacionados con la eutanasia. No consta que se aprobara antes de la disolución de las Cortes.</p>
+      <div class="vote" role="img" aria-label="178 a favor, 169 en contra"><span class="lbl">11 jun 2026 · Admitido a trámite</span><div class="bar"><span class="y" style="width:51.30%">178 a favor</span><span class="n" style="width:48.70%">169 en contra</span></div></div>
+      <p class="limit">No consta el voto de cada grupo ni el contenido detallado de la proposición. Una fuente de prensa la atribuyó al PSOE; el acta la atribuye al Parlamento de Cataluña.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Proposición de ley del Parlamento de Cataluña de modificación de algunas disposiciones normativas procesales con relación al derecho de morir dignamente (expediente 125/000014). Toma en consideración aprobada el 11 de junio de 2026: 347 votos emitidos, 178 a favor y 169 en contra (acta del Pleno). En el debate se habló de la Ley Orgánica 3/2021 de eutanasia.</p>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20260611.pdf" target="_blank" rel="noopener">Oficial: Congreso, acta del Pleno del 11 de junio de 2026, 11 jun 2026</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>10 sep 2026</time><span class="badge of">Oficial</span></div>
+      <h3>Proposición de ley del PSOE para reconocer como profesiones sanitarias la de biólogo y la de trabajador social, admitida a trámite</h3>
+      <p class="plain">El Congreso admitió a trámite una ley para que biólogos y trabajadores sociales sean profesiones sanitarias. Las Cortes se disolvieron un mes después.</p>
+      <div class="vote" role="img" aria-label="165 a favor, 32 en contra, 148 abstenciones"><span class="lbl">10 sep 2026 · Admitido a trámite</span><div class="bar"><span class="y" style="width:47.83%">165 a favor</span><span class="n" style="width:9.28%">32 en contra</span><span class="a" style="width:42.90%">148</span></div></div>
+      <p>En contra: Vox.</p>
+      <p class="limit">El documento de votación no dice en palabras el resultado; con más votos a favor que en contra, la toma en consideración sale aprobada. Un diputado del Grupo Mixto también votó en contra.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Proposición de ley del Grupo Socialista sobre el reconocimiento de la profesión de biólogo y trabajador social como profesión sanitaria. Toma en consideración votada el 10 de septiembre de 2026: 345 presentes, 165 a favor, 32 en contra y 148 abstenciones. Por grupos, según el registro de votaciones: PSOE, Sumar, ERC, EH Bildu y 8 del Mixto a favor; Vox (31) y 1 del Mixto en contra; PP, Junts y PNV abstención.</p>
+          <a class="src" href="https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion196/20260910/Votacion016/VOT_20260910180632.pdf" target="_blank" rel="noopener">Oficial: Congreso, votación 16 de la sesión 196 (10 de septiembre de 2026), 10 sep 2026</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+  </section>
+
+  <section aria-labelledby="h-c">
+    <h2 id="h-c">Qué dicen las cifras oficiales</h2>
+    <p class="lede">Se enseñan para ver la escala, no para repartir culpas.</p>
+    <div class="chart">
+      <h3>Gasto sanitario público consolidado</h3>
+      <div id="c1"></div>
+      <p class="cap">Gasto de todas las administraciones públicas en sanidad, en euros corrientes (sin descontar la inflación), consolidado para no contar dos veces las transferencias entre administraciones. Fuente: Estadística de Gasto Sanitario Público del Ministerio de Sanidad. 2023 y 2024 son cifras provisionales. En 2024, 95.243 millones correspondieron al sector Comunidades Autónomas y 1.138 millones a la Administración Central.</p>
+      <details>
+        <summary>Fuentes</summary>
+        <div class="in">
+          <a class="src" href="https://www.sanidad.gob.es/estadEstudios/estadisticas/inforRecopilaciones/gastoSanitario2005/tablasEstEGSP/egspGastoReal.pdf" target="_blank" rel="noopener">Oficial: Ministerio de Sanidad, EGSP, tablas de gasto, serie 2002-2024 (miles de euros)</a>
+          <a class="src" href="https://www.sanidad.gob.es/estadEstudios/estadisticas/inforRecopilaciones/gastoSanitario2005/tablasEstEGSP/Principales_resultados.pdf" target="_blank" rel="noopener">Oficial: Ministerio de Sanidad, EGSP 2024, principales resultados (2020-2024), edición de abril de 2026</a>
+          <a class="src" href="https://www.sanidad.gob.es/gabinete/notasPrensa.do?id=6908" target="_blank" rel="noopener">Oficial: Ministerio de Sanidad, nota de prensa del gasto sanitario público 2024, 13 may 2026</a>
+        </div>
+      </details>
+    </div>
+    <div class="chart">
+      <h3>Espera media para una operación (días), a diciembre de cada año</h3>
+      <div id="c2"></div>
+      <p class="cap">Tiempo medio de espera de los pacientes pendientes de una operación no urgente en el Sistema Nacional de Salud, a 31 de diciembre. Fuente: SISLE-SNS, Ministerio de Sanidad, con datos que envían las comunidades. Es un indicador del conjunto del sistema, no del Estado: las listas de espera las gestionan las comunidades autónomas. Se toma el valor publicado en el informe de cada diciembre. El de 2025 es el rectificado (122 días; el informe inicial decía 121, corregido por los datos de Castilla-La Mancha).</p>
+      <details>
+        <summary>Fuentes</summary>
+        <div class="in">
+          <a class="src" href="https://mirror.mscbs.gob.es/estadEstudios/estadisticas/inforRecopilaciones/docs/LLEE_SNS_IndicadoresResumen_Diciembre2018.pdf" target="_blank" rel="noopener">Oficial: SISLE-SNS, indicadores a diciembre de 2018</a>
+          <a class="src" href="https://mirror.mscbs.gob.es/estadEstudios/estadisticas/inforRecopilaciones/docs/LISTAS_PUBLICACION_dic19.pdf" target="_blank" rel="noopener">Oficial: SISLE-SNS, diciembre de 2019</a>
+          <a class="src" href="https://www.sanidad.gob.es/estadEstudios/estadisticas/inforRecopilaciones/docs/LISTAS_PUBLICACION_dic_2020.pdf" target="_blank" rel="noopener">Oficial: SISLE-SNS, diciembre de 2020</a>
+          <a class="src" href="https://mirror.mscbs.gob.es/estadEstudios/estadisticas/inforRecopilaciones/docs/LISTAS_PUBLICACION_dic21.pdf" target="_blank" rel="noopener">Oficial: SISLE-SNS, diciembre de 2021</a>
+          <a class="src" href="https://www.sanidad.gob.es/estadEstudios/estadisticas/inforRecopilaciones/docs/LISTAS_PUBLICACION_dic_2022.pdf" target="_blank" rel="noopener">Oficial: SISLE-SNS, diciembre de 2022</a>
+          <a class="src" href="https://vsf-iwsold-pre-portal.sanidad.gob.es/estadEstudios/estadisticas/inforRecopilaciones/docs/LISTAS_PUBLICACION_dic2023.pdf" target="_blank" rel="noopener">Oficial: SISLE-SNS, diciembre de 2023</a>
+          <a class="src" href="https://vsf-iwsold-pro-01.mscbs.gob.es/estadEstudios/estadisticas/inforRecopilaciones/docs/Nota_Resumen_SISLE__dic_24.pdf" target="_blank" rel="noopener">Oficial: SISLE-SNS, nota resumen diciembre de 2024</a>
+          <a class="src" href="https://www.sanidad.gob.es/estadEstudios/estadisticas/inforRecopilaciones/docs/LISTAS%5FPUBLICACION%5FDic%5F2025.pdf" target="_blank" rel="noopener">Oficial: SISLE-SNS, diciembre de 2025</a>
+          <a class="src" href="https://www.sanidad.gob.es/eu/estadEstudios/estadisticas/inforRecopilaciones/docs/Nota_Aclaratoria_Rectificacion_Dic_2025.pdf" target="_blank" rel="noopener">Oficial: SISLE-SNS, nota aclaratoria de rectificación diciembre de 2025</a>
+        </div>
+      </details>
+    </div>
+    <div class="limit"><p>Qué no dicen estas cifras: qué las causó ni qué parte corresponde al Estado, a las comunidades o a los ayuntamientos.</p><ul class="nolist"><li>No se ha encontrado ningún real decreto-ley sanitario derogado por el Congreso entre 2018 y 2026. Los decretos-ley derogados que aparecieron en la búsqueda (RDL 7/2025, 16/2025, 2/2026, 9/2024) no tenían la sanidad como materia principal. No se ha revisado el registro completo de votaciones.</li><li>Los estados de alarma de 2020 y 2021 no figuran como hechos: son normas de orden público, no sanitarias. Tampoco el Real Decreto-ley 22/2020 (Fondo COVID-19 para las comunidades), que es un decreto de financiación y no se ha revisado.</li><li>Quedaron pendientes al disolverse las Cortes, sin votación en el Pleno que conste: el proyecto de ley de equidad y cohesión del SNS (Consejo de Ministros, 18 de junio de 2024), el de gestión pública e integridad del SNS (12 de mayo de 2026, asignado a la Comisión de Sanidad con competencia legislativa plena), el de medicamentos y productos sanitarios y el de control del tabaco (21 de julio de 2026) y el del nuevo Estatuto Marco del personal sanitario (1 de septiembre de 2026). No entran como hechos porque no hubo votación en el Pleno; la búsqueda no fue exhaustiva.</li><li>Los reales decretos de nuevas especialidades sanitarias y el real decreto que retiró la mascarilla al aire libre no se han incluido: son reales decretos ordinarios.</li><li>Qué votó cada grupo viene casi siempre de prensa; el registro del Congreso solo se ha leído por grupos en dos votaciones de 2026.</li><li>No consta cuánto se ha ejecutado de los planes y fondos estatales (atención primaria, ELA, vacunación).</li><li>El gasto de 2023 y 2024 es provisional y puede cambiar.</li></ul></div>
+  </section>
+
+  <footer class="foot">
+    <p><b>Estado de la verificación.</b> Todas las normas (BOE) y los dos indicadores (Ministerio de Sanidad) tienen fuente oficial. Los recuentos de votos están cotejados con el Diario de Sesiones o las actas del Pleno del Congreso, salvo las enmiendas de Vox a las leyes ELA (una fuente de prensa). Al cotejarlos se corrigieron cifras de prensa que solo contaban votos presenciales (RDL 21/2020, RDL 8/2021, RDL 30/2021, ley de salud mental, publicidad sanitaria). Qué grupos votaron en contra viene de prensa, salvo en las votaciones de 2026 leídas en el registro de votaciones. La Estrategia de vacunación y el Plan de Atención Primaria tienen fuente oficial del Gobierno. Consulta: 11 de noviembre de 2026. Que Pedro Sánchez preside el Gobierno desde junio de 2018 es de dominio público.</p>
+    <p>Última revisión: 11 de noviembre de 2026. ¿Un dato está mal? <a href="metodologia.html#correcciones">Dínoslo</a>. Cómo se ha hecho: <a href="metodologia.html">metodología</a>.</p>
+  </footer>
+</main>
+
+<script>
+(function(){
+  var SPECS=[{"id": "c1", "u": "millones", "dec": 0, "t": "Gasto sanitario público consolidado", "s": [{"l": "2018", "v": 71117, "c": false}, {"l": "2019", "v": 74988, "c": false}, {"l": "2020", "v": 83634, "c": false}, {"l": "2021", "v": 87935, "c": false}, {"l": "2022", "v": 91958, "c": false}, {"l": "2023", "v": 97632, "c": false}, {"l": "2024", "v": 101739, "c": false}]}, {"id": "c2", "u": "días", "dec": 0, "t": "Espera media para una operación (días), a diciembre de cada año", "s": [{"l": "2018", "v": 129, "c": false}, {"l": "2019", "v": 121, "c": false}, {"l": "2020", "v": 155, "c": false}, {"l": "2021", "v": 123, "c": false}, {"l": "2022", "v": 120, "c": false}, {"l": "2023", "v": 128, "c": false}, {"l": "2024", "v": 126, "c": false}, {"l": "2025", "v": 122, "c": false}]}];
+  function num(v,dec){var s=Math.abs(v).toFixed(dec).split('.');s[0]=s[0].replace(/\B(?=(\d{3})+(?!\d))/g,'.');return (v<0?'−':'')+s.join(',')}
+  function fmt(v,u,dec){var n=num(v,dec);if(!u)return n;return u==='%'?n+' %':n+' '+u}
+  SPECS.forEach(function(sp){
+    var vals=sp.s.filter(function(d){return d.v!=null}).map(function(d){return d.v});
+    var mn=Math.min(0,Math.min.apply(null,vals)), mx=Math.max(0,Math.max.apply(null,vals));
+    var W=360,LB=58,VL=86,RH=25,BH=15,pw=W-LB-VL-(mn<0?VL*0.6:0),H=sp.s.length*RH+2;
+    var span=(mx-mn)||1, x0=LB+(mn<0?VL*0.6:0)+(-mn/span)*pw;
+    var s='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+sp.t+': '+sp.s.map(function(d){return d.l+' '+(d.v==null?'sin dato':fmt(d.v,sp.u,sp.dec))}).join(', ')+'">';
+    sp.s.forEach(function(d,i){
+      var y=i*RH+2;
+      s+='<text x="0" y="'+(y+12)+'" font-size="12" font-family="IBM Plex Mono, monospace" fill="var(--ink-2)">'+d.l+'</text>';
+      if(d.v==null){s+='<text x="'+(x0+4)+'" y="'+(y+12)+'" font-size="12" font-style="italic" font-family="Source Sans 3, system-ui, sans-serif" fill="var(--ink-2)">sin dato</text>';return}
+      var w=Math.max(2,Math.abs(d.v)/span*pw), x=d.v<0?x0-w:x0;
+      s+='<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+BH+'" fill="'+(d.c?'var(--alt)':'var(--accent)')+'" rx="2"/>';
+      var tx=d.v<0?x-6:x+w+6, an=d.v<0?'end':'start';
+      s+='<text x="'+tx+'" y="'+(y+12)+'" text-anchor="'+an+'" font-size="12" font-weight="600" font-family="IBM Plex Mono, monospace" fill="var(--ink)">'+fmt(d.v,sp.u,sp.dec)+'</text>';
+    });
+    s+='<line x1="'+x0+'" x2="'+x0+'" y1="0" y2="'+H+'" stroke="var(--ink-2)" stroke-width="1"/></svg>';
+    document.getElementById(sp.id).innerHTML=s;
+  });
+})();
+</script>

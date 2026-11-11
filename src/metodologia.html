@@ -1,0 +1,200 @@
+<title>Quién decide, metodología</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,500..800&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Layout: documento de una columna, con índice corto arriba. Mismo sistema de tokens que las demás páginas. */
+:root{
+  --paper:#EDF0F2;
+  --card:#FFFFFF;
+  --ink:#121B23;
+  --ink-2:#4B5967;
+  --rule:#CBD3DA;
+  --accent:#0B6E63;
+  --on-accent:#FFFFFF;
+  --accent-soft:#D6ECE8;
+  --note-bg:#FFF2CF;
+  --note-ink:#6B4700;
+  --f-display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E151B; --card:#16212A; --ink:#E7EDF1; --ink-2:#9FB0BD; --rule:#2A3946;
+    --accent:#4DC2B1; --on-accent:#07201C; --accent-soft:#143A38;
+    --note-bg:#3A2F10; --note-ink:#F0C96A;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E151B; --card:#16212A; --ink:#E7EDF1; --ink-2:#9FB0BD; --rule:#2A3946;
+  --accent:#4DC2B1; --on-accent:#07201C; --accent-soft:#143A38;
+  --note-bg:#3A2F10; --note-ink:#F0C96A;
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.55}
+h1,h2,h3,p,ul,ol{margin:0}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+a{color:var(--accent)}
+.app{max-width:680px;margin-inline:auto;padding-inline:16px;padding-block:20px 56px;display:flex;flex-direction:column;gap:32px}
+.top{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.brand{font-family:var(--f-display);font-size:1.1rem;font-weight:800;font-variation-settings:"wdth" 112;color:var(--ink);text-decoration:none}
+.tag{font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;border:1px solid var(--ink-2);color:var(--ink-2);padding:2px 8px;border-radius:3px;white-space:nowrap}
+.head{display:flex;flex-direction:column;gap:10px;border-top:2px solid var(--ink);padding-top:14px}
+.head h1{font-size:2.1rem;font-weight:800;font-variation-settings:"wdth" 108;line-height:1.08}
+.kicker{font-family:var(--f-mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2)}
+.lede{color:var(--ink-2)}
+.toc{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.95rem}
+section{display:flex;flex-direction:column;gap:12px;scroll-margin-top:16px}
+section>h2{font-size:1.45rem;font-weight:700;font-variation-settings:"wdth" 105;line-height:1.2}
+ul,ol{padding-left:22px;display:flex;flex-direction:column;gap:6px}
+li::marker{color:var(--ink-2)}
+.k{font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-2)}
+.note{background:var(--note-bg);color:var(--note-ink);font-size:.95rem;padding:10px 12px;border-radius:3px}
+.box{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--rule);border-radius:6px;background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:.93rem}
+th,td{text-align:left;padding:8px 12px;border-top:1px solid var(--rule);vertical-align:top}
+thead th{border-top:0;font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);font-weight:500}
+td.n{font-family:var(--f-mono);font-variant-numeric:tabular-nums;text-align:center;white-space:nowrap}
+td.n b{display:inline-block;min-width:1.6em;padding:1px 0;border-radius:3px}
+td.n b.w3{background:var(--accent);color:var(--on-accent)}
+td.base{color:var(--ink-2);font-size:.88rem}
+.bm{display:none}
+@media (max-width:560px){table{min-width:0}td.base,th.base{display:none}.bm{display:block;color:var(--ink-2);font-size:.82rem;margin-top:4px;line-height:1.35}td.n{padding-inline:6px}}
+.badges{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 12px;align-items:baseline}
+.badge{font-family:var(--f-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;padding:2px 7px;border-radius:3px;border:1px solid var(--ink-2);color:var(--ink-2);white-space:nowrap;justify-self:start}
+.badge.of{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.log{list-style:none;padding:0;gap:10px}
+.log li{display:grid;grid-template-columns:96px minmax(0,1fr);gap:4px 12px}
+.log time{font-family:var(--f-mono);font-size:.82rem;color:var(--ink-2);padding-top:2px}
+.contact{font-family:var(--f-mono);font-size:.95rem;background:var(--card);border:1px solid var(--rule);border-radius:4px;padding:8px 12px;align-self:flex-start;overflow-wrap:anywhere;user-select:all}
+.foot{border-top:1px solid var(--rule);padding-top:14px;font-size:.9rem;color:var(--ink-2)}
+</style>
+
+<main class="app">
+  <header class="top">
+    <a class="brand" href="index.html">Quién decide</a>
+    <span class="tag">Beta</span>
+  </header>
+
+  <div class="head">
+    <p class="kicker">Metodología</p>
+    <h1>Cómo está hecho y quién lo hace</h1>
+    <p class="lede">Esta página explica de dónde sale cada cosa que ves en Quién decide, qué queda fuera y cómo pedir una corrección.</p>
+    <nav class="toc" aria-label="En esta página">
+      <a href="#que-es">Qué es</a><a href="#reglas">Reglas</a><a href="#pesos">Pesos</a><a href="#hechos">Qué entra</a><a href="#verificacion">Verificación</a><a href="#privacidad">Privacidad</a><a href="#quien">Quién</a><a href="#correcciones">Correcciones</a><a href="#cambios">Cambios</a>
+    </nav>
+  </div>
+
+  <section id="que-es" aria-labelledby="h1">
+    <h2 id="h1">Qué es</h2>
+    <p>Una herramienta para ver qué nivel de gobierno (el Estado, tu comunidad o tu ayuntamiento) decide sobre lo que más te preocupa, y qué ha hecho ese gobierno en los últimos años, con hechos que puedes comprobar.</p>
+    <p>Mucha gente vota en las generales pensando en la vivienda, la sanidad o la educación. Buena parte de esas decisiones se toman en las comunidades y los ayuntamientos, que se eligen en otras elecciones. La herramienta enseña ese reparto.</p>
+    <div class="box">
+      <span class="k">Qué no es</span>
+      <ul>
+        <li>No recomienda a quién votar ni calcula con qué partido coincides.</li>
+        <li>No es una encuesta. No recoge ni publica lo que responde la gente.</li>
+        <li>No puntúa a gobiernos ni a partidos.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="reglas" aria-labelledby="h2">
+    <h2 id="h2">Reglas</h2>
+    <ol>
+      <li><b>Solo hechos con fuente y fecha.</b> Cada dato enlaza a su fuente. Si no hay fuente, no se publica.</li>
+      <li><b>Sin notas, sin ranking y sin culpas.</b> Las cifras se enseñan a escala y sin decir qué las causó.</li>
+      <li><b>El mismo formato para todos.</b> Los mismos indicadores, el mismo espacio y el mismo orden (alfabético o por fecha) para cualquier partido o gobierno. Los indicadores se eligen antes de mirar los datos.</li>
+      <li><b>Tres cosas separadas:</b> lo que se aprobó, lo que se intentó y no salió, y cómo evolucionaron los indicadores oficiales.</li>
+      <li><b>Lo que no sabemos, lo decimos.</b> Cada ficha tiene un apartado con lo que no consta y un pie con el estado de la verificación.</li>
+      <li><b>No resumimos los motivos de los partidos con palabras nuestras.</b> Cuando los incluyamos, será como cita literal del Diario de Sesiones del Congreso, con el mismo espacio para todos.</li>
+    </ol>
+  </section>
+
+  <section id="pesos" aria-labelledby="h3">
+    <h2 id="h3">Cómo se fijan los pesos</h2>
+    <p>Para cada problema, cada nivel de gobierno tiene un peso de 0 a 3: <b>0</b> no interviene, <b>1</b> margen pequeño, <b>2</b> tiene peso, <b>3</b> decide la mayor parte. Es una lectura del reparto de competencias, no una medida exacta.</p>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Problema</th><th>Estado</th><th>Comunidad</th><th>Ayto.</th><th class="base">Base</th></tr></thead>
+        <tbody>
+          <tr><td>Vivienda<small class="bm">CE art. 148.1.3; Ley 12/2023; Ley 7/1985 art. 25 (suelo y licencias)</small></td><td class="n"><b>2</b></td><td class="n"><b class="w3">3</b></td><td class="n"><b>2</b></td><td class="base">CE art. 148.1.3; Ley 12/2023; Ley 7/1985 art. 25 (suelo y licencias)</td></tr>
+          <tr><td>Sanidad<small class="bm">Transferida a las comunidades en 2002; Ley 16/2003. En Ceuta y Melilla la gestiona el Estado (INGESA)</small></td><td class="n"><b>2</b></td><td class="n"><b class="w3">3</b></td><td class="n"><b>1</b></td><td class="base">Transferida a las comunidades en 2002; Ley 16/2003. En Ceuta y Melilla la gestiona el Estado (INGESA)</td></tr>
+          <tr><td>Empleo y salarios<small class="bm">Estatuto de los Trabajadores y salario mínimo; servicios de empleo autonómicos</small></td><td class="n"><b class="w3">3</b></td><td class="n"><b>2</b></td><td class="n"><b>1</b></td><td class="base">Estatuto de los Trabajadores y salario mínimo; servicios de empleo autonómicos</td></tr>
+          <tr><td>Economía y coste de vida<small class="bm">Presupuestos Generales; impuestos cedidos; IBI. País Vasco y Navarra tienen hacienda propia</small></td><td class="n"><b class="w3">3</b></td><td class="n"><b>1</b></td><td class="n"><b>1</b></td><td class="base">Presupuestos Generales; impuestos cedidos; IBI. País Vasco y Navarra tienen hacienda propia</td></tr>
+          <tr><td>Inmigración<small class="bm">CE art. 149.1.2 (extranjería); integración y acogida de menores en las comunidades</small></td><td class="n"><b class="w3">3</b></td><td class="n"><b>2</b></td><td class="n"><b>1</b></td><td class="base">CE art. 149.1.2 (extranjería); integración y acogida de menores en las comunidades</td></tr>
+          <tr><td>Pensiones<small class="bm">CE art. 149.1.17</small></td><td class="n"><b class="w3">3</b></td><td class="n"><b>0</b></td><td class="n"><b>0</b></td><td class="base">CE art. 149.1.17</td></tr>
+          <tr><td>Educación<small class="bm">LOMLOE; gestión transferida; mantenimiento de colegios y escuelas 0-3 municipales. En Ceuta y Melilla, el Ministerio</small></td><td class="n"><b>2</b></td><td class="n"><b class="w3">3</b></td><td class="n"><b>1</b></td><td class="base">LOMLOE; gestión transferida; mantenimiento de colegios y escuelas 0-3 municipales. En Ceuta y Melilla, el Ministerio</td></tr>
+          <tr><td>Corrupción<small class="bm">Código Penal; Ley 9/2017 de contratos; cada administración contrata y controla su gasto</small></td><td class="n"><b>2</b></td><td class="n"><b>2</b></td><td class="n"><b>2</b></td><td class="base">Código Penal; Ley 9/2017 de contratos; cada administración contrata y controla su gasto</td></tr>
+          <tr><td>Seguridad ciudadana<small class="bm">CE art. 149.1.29; policía propia en Cataluña, País Vasco, Navarra y Canarias; Policía Local</small></td><td class="n"><b class="w3">3</b></td><td class="n"><b>1</b></td><td class="n"><b>2</b></td><td class="base">CE art. 149.1.29; policía propia en Cataluña, País Vasco, Navarra y Canarias; Policía Local</td></tr>
+          <tr><td>Clima y energía<small class="bm">Ley 7/2021; ordenación del territorio; residuos y movilidad municipales</small></td><td class="n"><b>2</b></td><td class="n"><b>2</b></td><td class="n"><b>2</b></td><td class="base">Ley 7/2021; ordenación del territorio; residuos y movilidad municipales</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Estos pesos los ha fijado una persona sin formación jurídica a partir de la Constitución y las leyes citadas. Si eres jurista y crees que alguno está mal, nos ayudas mucho diciéndonoslo.</p>
+    <p>La lista de diez problemas sigue las categorías del barómetro del <a href="https://www.cis.es/" target="_blank" rel="noopener">CIS</a>. Las fechas de las próximas autonómicas y municipales (23 de mayo de 2027 donde toca) salen del calendario electoral vigente.</p>
+  </section>
+
+  <section id="hechos" aria-labelledby="h4">
+    <h2 id="h4">Qué entra en las fichas de hechos</h2>
+    <p>Para que la selección no dependa de nuestro criterio, en cada tema entran todos estos, sin excepción:</p>
+    <ul>
+      <li>Toda ley, real decreto-ley o real decreto sobre la materia publicado en el BOE en el periodo.</li>
+      <li>Toda votación en el Pleno del Congreso sobre esa materia (convalidaciones, tomas en consideración, enmiendas a la totalidad), salga o no salga.</li>
+      <li>Los reales decretos que fijan cada año el dato clave del tema: salario mínimo, revalorización de las pensiones y umbrales de las becas.</li>
+      <li>Los planes con nombre propio del tema, como el Plan Estatal de Vivienda.</li>
+      <li>Los indicadores oficiales elegidos de antemano para el tema, con la serie completa del periodo.</li>
+    </ul>
+    <p>No entran declaraciones, anuncios sin una norma o una licitación detrás, ni propuestas que no se llegaron a votar. Cada hecho se atribuye al gobierno que estaba en el cargo en su fecha.</p>
+    <p class="note">Las fichas de vivienda e inmigración se hicieron antes de fijar este criterio y aún no se han repasado con él. En las demás se ha aplicado sin límite de número, pero la revisión del registro de votaciones del Congreso no ha sido exhaustiva y puede faltar alguna proposición de ley. Los recuentos que salen de la prensa están marcados. Cuando una misma norma trata varios temas, aparece en todas sus fichas.</p>
+  </section>
+
+  <section id="verificacion" aria-labelledby="h5">
+    <h2 id="h5">Cómo se verifica</h2>
+    <p>Cada hecho lleva una etiqueta con la calidad de su fuente:</p>
+    <div class="badges">
+      <span class="badge of">Oficial</span><span>Comprobado en la web del organismo que lo publica: BOE, Congreso, INE, ministerios.</span>
+      <span class="badge">Prensa · 2 fuentes</span><span>Dos medios distintos dan el mismo dato. Falta la fuente oficial.</span>
+      <span class="badge">Resumen de terceros</span><span>Un despacho, una consultora o una organización resume la norma. Falta leer el texto en el BOE.</span>
+      <span class="badge">Una sola fuente</span><span>Lo dice un solo medio. Se publica marcado, y lo intentamos confirmar.</span>
+    </div>
+    <p>Cuando una cifra la calculamos nosotros, como un acumulado de varios años, lo decimos junto a la cifra. Cuando un organismo revisa sus datos después de publicarlos, contamos qué versión usamos y por qué.</p>
+  </section>
+
+  <section id="privacidad" aria-labelledby="h6">
+    <h2 id="h6">Privacidad</h2>
+    <p>Lo que eliges en la herramienta (comunidad, municipio, preocupaciones) se queda en tu navegador. No se envía a ningún servidor, no se guarda y no usamos cookies.</p>
+    <p>Si en algún momento contamos visitas, será solo con contadores agregados, sin identificadores, y lo diremos aquí. Nunca publicaremos qué preocupa a quienes la usan: parecería una encuesta, y la ley electoral prohíbe publicar sondeos en los cinco días anteriores a la votación.</p>
+  </section>
+
+  <section id="quien" aria-labelledby="h7">
+    <h2 id="h7">Quién lo hace</h2>
+    <p>{{AUTOR}}</p>
+    <p>El código y los datos son públicos{{REPO_FRASE}}. Cualquiera puede revisar de dónde sale cada cifra y rehacer las fichas.</p>
+  </section>
+
+  <section id="correcciones" aria-labelledby="h8">
+    <h2 id="h8">Correcciones y réplica</h2>
+    <p>Si un dato está mal, falta una norma o una votación, o un peso te parece equivocado, escríbenos con el enlace a la fuente:</p>
+    <p class="contact">{{CONTACTO}}</p>
+    <p>Corregimos lo que esté mal y lo anotamos en el registro de cambios de abajo, con fecha. Cualquier partido o gobierno que aparezca en una ficha puede pedir una réplica, que se publicará con el mismo espacio que el hecho al que responde.</p>
+  </section>
+
+  <section id="cambios" aria-labelledby="h9">
+    <h2 id="h9">Registro de cambios</h2>
+    <ul class="log">
+      <li><time>11 nov 2026</time><span>Se quita el límite de hechos por ficha y se aplica el criterio completo a los ocho temas generados desde datos: de 64 a 191 hechos. Recuentos de votos cotejados con el registro del Congreso donde fue posible. Seguridad completa su tasa de criminalidad (los años calculados por nosotros van en otro color) y economía toma todo el IPC del INE.</span></li>
+      <li><time>11 nov 2026</time><span>Fichas nuevas de sanidad, empleo y salarios, economía, pensiones, educación, corrupción, seguridad ciudadana y clima (Estado, 2018 a 2026). Sanidad y educación llevan un aviso porque las gestionan sobre todo las comunidades.</span></li>
+      <li><time>11 nov 2026</time><span>Primera versión pública: herramienta de diez problemas, fichas de vivienda e inmigración (Estado, 2018 a 2026) y esta página. Cifras de los resúmenes contrastadas con La Moncloa, el INE y el informe de Interior. Se retira la pregunta sobre ingresos.</span></li>
+    </ul>
+  </section>
+
+  <footer class="foot">
+    <p><a href="index.html">Volver a Quién decide</a></p>
+  </footer>
+</main>

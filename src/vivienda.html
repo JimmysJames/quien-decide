@@ -1,0 +1,430 @@
+<title>Vivienda, hechos del Estado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,500..800&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Layout: resumen en lenguaje llano, línea de tiempo de ocho años como hilo, cada hecho con una frase clara y el detalle técnico plegado. Las series largas van en filas horizontales para leerse bien en el móvil. */
+:root{
+  --paper:#EDF0F2;
+  --card:#FFFFFF;
+  --ink:#121B23;
+  --ink-2:#4B5967;
+  --rule:#CBD3DA;
+  --accent:#0B6E63;
+  --on-accent:#FFFFFF;
+  --accent-soft:#D6ECE8;
+  --alt:#5D6D7B;
+  --alt2:#B8C4CE;
+  --note-bg:#FFF2CF;
+  --note-ink:#6B4700;
+  --f-display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E151B; --card:#16212A; --ink:#E7EDF1; --ink-2:#9FB0BD; --rule:#2A3946;
+    --accent:#4DC2B1; --on-accent:#07201C; --accent-soft:#143A38; --alt:#6F8394; --alt2:#3E5160;
+    --note-bg:#3A2F10; --note-ink:#F0C96A;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E151B; --card:#16212A; --ink:#E7EDF1; --ink-2:#9FB0BD; --rule:#2A3946;
+  --accent:#4DC2B1; --on-accent:#07201C; --accent-soft:#143A38; --alt:#6F8394; --alt2:#3E5160;
+  --note-bg:#3A2F10; --note-ink:#F0C96A;
+  color-scheme: dark;
+}
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.5}
+h1,h2,h3,p,ul,ol,dl,dd{margin:0}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+a{color:var(--accent)}
+
+.app{max-width:680px;margin-inline:auto;padding-inline:16px;padding-block:20px 56px;display:flex;flex-direction:column;gap:32px}
+
+.top{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.brand{font-family:var(--f-display);font-size:1.1rem;font-weight:800;font-variation-settings:"wdth" 112;color:var(--ink);text-decoration:none}
+.tag{font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;border:1px solid var(--ink-2);color:var(--ink-2);padding:2px 8px;border-radius:3px;white-space:nowrap}
+
+.head{display:flex;flex-direction:column;gap:10px;border-top:2px solid var(--ink);padding-top:14px}
+.head h1{font-size:2.1rem;font-weight:800;font-variation-settings:"wdth" 108;line-height:1.08}
+.kicker{font-family:var(--f-mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2)}
+.k{font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-2)}
+
+.sum{background:var(--ink);color:var(--paper);border-radius:6px;padding:6px 18px;display:flex;flex-direction:column}
+.sum .row{display:grid;grid-template-columns:minmax(0,1fr);gap:4px;padding-block:14px;border-top:1px solid color-mix(in srgb, var(--paper) 25%, transparent)}
+.sum .row:first-child{border-top:0}
+.sum .k{color:var(--paper);opacity:.7}
+.sum p{font-size:1.08rem;line-height:1.4}
+.sum b{font-weight:700;font-variant-numeric:tabular-nums}
+.sum .gap p{opacity:.9}
+
+section{display:flex;flex-direction:column;gap:14px}
+section>h2{font-size:1.45rem;font-weight:700;font-variation-settings:"wdth" 105;line-height:1.2}
+.lede{color:var(--ink-2)}
+
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.88rem;color:var(--ink-2)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.dot{width:12px;height:12px;border-radius:50%;border:2px solid var(--accent);background:var(--accent);flex:none;display:inline-block}
+.dot.no{background:transparent;border-color:var(--alt)}
+.tl{list-style:none;padding:0;margin:0;display:flex;flex-direction:column}
+.tl li{display:grid;grid-template-columns:84px 20px minmax(0,1fr);gap:0 8px;padding-bottom:18px;position:relative}
+.tl li:last-child{padding-bottom:0}
+.tl time{font-family:var(--f-mono);font-size:.8rem;color:var(--ink-2);padding-top:3px;font-variant-numeric:tabular-nums}
+.tl .mk{position:relative;display:flex;justify-content:center;padding-top:5px}
+.tl .mk::after{content:"";position:absolute;top:22px;bottom:-18px;width:2px;background:var(--rule)}
+.tl li:last-child .mk::after{display:none}
+.tl .t{font-weight:600;line-height:1.3}
+.tl .s{color:var(--ink-2);font-size:.95rem}
+
+.fact{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:16px;display:flex;flex-direction:column;gap:10px}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}
+.meta time{font-family:var(--f-mono);font-size:.8rem;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.badge{font-family:var(--f-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;padding:2px 7px;border-radius:3px;border:1px solid var(--ink-2);color:var(--ink-2)}
+.badge.of{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.fact h3{font-size:1.2rem;font-weight:700;line-height:1.25}
+.plain{font-size:1.05rem}
+.fact p{margin:0}
+.num{font-variant-numeric:tabular-nums}
+details{border-top:1px solid var(--rule);padding-top:10px}
+summary{cursor:pointer;font-family:var(--f-mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);padding-block:4px}
+details[open] summary{margin-bottom:8px}
+details .in{display:flex;flex-direction:column;gap:8px;font-size:.96rem}
+.src{font-size:.88rem;overflow-wrap:anywhere}
+.limit{background:var(--note-bg);color:var(--note-ink);font-size:.92rem;padding:8px 10px;border-radius:3px}
+
+.split{display:flex;flex-direction:column;gap:6px}
+.stack{display:flex;height:38px;border-radius:3px;overflow:hidden;font-family:var(--f-mono);font-size:.82rem;font-variant-numeric:tabular-nums}
+.stack span{display:flex;align-items:center;padding-inline:8px;white-space:nowrap;overflow:hidden}
+.s1{background:var(--accent);color:var(--on-accent)}
+.s2{background:var(--alt);color:var(--paper)}
+.s3{background:var(--alt2);color:var(--ink)}
+.flow{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:8px;align-items:stretch}
+.flow .bx{border:1px solid var(--rule);border-radius:4px;padding:10px 12px;display:flex;flex-direction:column;gap:2px;background:var(--paper)}
+.flow .bx b{font-family:var(--f-display)}
+.flow .ar{display:grid;place-items:center;font-family:var(--f-mono);color:var(--ink-2)}
+@media (max-width:480px){.flow{grid-template-columns:minmax(0,1fr)}.flow .ar{transform:rotate(90deg);padding-block:2px}}
+
+.vote{display:flex;flex-direction:column;gap:6px}
+.bar{display:flex;height:36px;border-radius:3px;overflow:hidden;font-family:var(--f-mono);font-size:.82rem;font-variant-numeric:tabular-nums}
+.bar span{display:flex;align-items:center;padding-inline:8px;white-space:nowrap}
+.bar .y{background:var(--accent);color:var(--on-accent)}
+.bar .n{background:var(--alt);color:var(--paper);justify-content:flex-end}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--rule);border-radius:6px}
+table{border-collapse:collapse;width:100%;min-width:340px;font-size:.95rem}
+th,td{text-align:left;padding:7px 12px;border-top:1px solid var(--rule)}
+thead th{border-top:0;font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);font-weight:500}
+td.y{font-weight:600}
+td.n{color:var(--ink-2)}
+
+.chart{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.chart h3{font-size:1.1rem;font-weight:700}
+.chart svg{width:100%;height:auto;display:block;max-width:100%}
+.cap{font-size:.9rem;color:var(--ink-2)}
+.bigs{display:flex;flex-wrap:wrap;gap:8px 28px}
+.big{display:flex;flex-direction:column;gap:0}
+.big b{font-family:var(--f-display);font-size:2.4rem;font-weight:800;font-variation-settings:"wdth" 108;font-variant-numeric:tabular-nums;line-height:1.1}
+.big span{color:var(--ink-2);font-size:.92rem}
+
+.foot{border-top:1px solid var(--rule);padding-top:14px;display:flex;flex-direction:column;gap:8px;font-size:.9rem;color:var(--ink-2)}
+</style>
+
+<main class="app">
+  <header class="top">
+    <a class="brand" href="index.html">Quién decide</a>
+    <span class="tag">Beta</span>
+  </header>
+
+  <div class="head">
+    <p class="kicker">Gobierno central y Cortes · 2018 a 2026</p>
+    <h1>Vivienda: qué ha hecho el Estado</h1>
+    <p class="lede">Ocho años con Pedro Sánchez como presidente del Gobierno, desde junio de 2018.</p>
+  </div>
+
+  <div class="sum" aria-label="Resumen">
+    <div class="row">
+      <span class="k">Lo que se aprobó</span>
+      <p>Contratos de alquiler de 5 o 7 años (2019), un Bono Alquiler Joven de <b>250 euros al mes</b> (2022), un tope del 2 % a la subida de rentas (2022 y 2023), la Ley de Vivienda (2023) y un plan de <b>7.000 millones de euros</b> (2026).</p>
+    </div>
+    <div class="row">
+      <span class="k">Lo que no salió</span>
+      <p>El Congreso rechazó decretos de vivienda del Gobierno al menos dos veces: en enero de 2019 y el 2 de octubre de 2026, cuando los dos decretos cayeron por <b>172 a 178</b> y <b>166 a 184</b>.</p>
+    </div>
+    <div class="row">
+      <span class="k">Lo que dicen los precios</span>
+      <p>Comprar cuesta un <b>12,2 %</b> más que hace un año y un <b>69 %</b> más que en 2018. El alquiler subió de media entre un <b>0,9 %</b> y un <b>3,5 %</b> al año entre 2018 y 2024.</p>
+    </div>
+    <div class="row gap">
+      <span class="k">Lo que esta página no sabe</span>
+      <p>Cuántas viviendas se han entregado y cuánto de la subida se debe a cada decisión. Los datos no lo dicen.</p>
+    </div>
+  </div>
+
+  <section aria-labelledby="h-tl">
+    <h2 id="h-tl">Qué pasó y cuándo</h2>
+    <div class="legend"><span><i class="dot"></i>Aprobado</span><span><i class="dot no"></i>No salió</span></div>
+    <ol class="tl">
+      <li><time>22 ene 2019</time><span class="mk"><i class="dot no"></i></span><div><p class="t">El Congreso tumba el decreto de vivienda de 2018</p><p class="s">No obtuvo mayoría para convalidarse.</p></div></li>
+      <li><time>1 mar 2019</time><span class="mk"><i class="dot"></i></span><div><p class="t">Nuevo decreto de alquiler</p><p class="s">Contratos de 5 o 7 años. Convalidado el 3 de abril.</p></div></li>
+      <li><time>18 ene 2022</time><span class="mk"><i class="dot"></i></span><div><p class="t">Plan Estatal 2022-2025 y Bono Alquiler Joven</p><p class="s">250 euros al mes durante dos años.</p></div></li>
+      <li><time>29 mar 2022</time><span class="mk"><i class="dot"></i></span><div><p class="t">Tope del 2 % a la subida del alquiler</p><p class="s">Se prorrogó para todo 2023.</p></div></li>
+      <li><time>25 may 2023</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley de vivienda</p><p class="s">Da a las comunidades una herramienta para declarar zonas tensionadas.</p></div></li>
+      <li><time>30 ene 2026</time><span class="mk"><i class="dot"></i></span><div><p class="t">CASA 47 anuncia 2.800 viviendas</p><p class="s">Se suman a las 1.664 licitadas en 2025.</p></div></li>
+      <li><time>21 abr 2026</time><span class="mk"><i class="dot"></i></span><div><p class="t">Plan Estatal de Vivienda 2026-2030</p><p class="s">7.000 millones, entre el Estado y las comunidades.</p></div></li>
+      <li><time>2 jun 2026</time><span class="mk"><i class="dot"></i></span><div><p class="t">260 millones más para CASA 47</p><p class="s">Según la prensa: 22 proyectos nuevos con 1.629 viviendas.</p></div></li>
+      <li><time>2 oct 2026</time><span class="mk"><i class="dot no"></i></span><div><p class="t">El Congreso rechaza los dos decretos</p><p class="s">172 a 178 y 166 a 184.</p></div></li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="h-a">
+    <h2 id="h-a">Qué ha aprobado el Estado</h2>
+
+    <article class="fact">
+      <div class="meta"><time>1 mar 2019</time><span class="badge">Resumen de terceros</span></div>
+      <h3>Decreto-ley 7/2019 de vivienda y alquiler</h3>
+      <p class="plain">Alarga la duración mínima de los contratos de alquiler a cinco años, o siete si el dueño es una empresa, y limita las garantías extra que puede pedir el propietario.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>En vigor desde el 6 de marzo de 2019 y convalidado por el Congreso el 3 de abril. Sustituye al decreto-ley 21/2018, que no se convalidó. Tras el plazo pactado, el contrato se prorroga obligatoriamente por anualidades hasta tres años más. La fianza no se actualiza durante 5 o 7 años y las garantías adicionales no pueden pasar de dos mensualidades. La actualización anual de la renta no puede superar el IPC. Los gastos de gestión inmobiliaria y de formalización corren a cargo del arrendador si es persona jurídica. La junta de propietarios puede limitar los pisos turísticos con tres quintas partes. Los ayuntamientos pueden bonificar el IBI hasta el 95 % en alquileres de renta limitada.</p>
+          <a class="src" href="https://www.notariosyregistradores.com/web/normas/destacadas/resumen-real-decreto-ley-7-2019-de-1-de-marzo-de-medidas-urgentes-en-materia-de-vivienda-y-alquiler/" target="_blank" rel="noopener">Notarios y Registradores, resumen (una sola fuente)</a>
+        </div>
+      </details>
+    </article>
+
+    <article class="fact">
+      <div class="meta"><time>18 ene 2022</time><span class="badge">Resumen de terceros</span></div>
+      <h3>Plan Estatal 2022-2025 y Bono Alquiler Joven</h3>
+      <p class="plain">Una ayuda de 250 euros al mes durante dos años para jóvenes de hasta 35 años que alquilan, en todas las comunidades salvo País Vasco y Navarra.</p>
+      <p class="limit">La fuente no da el importe total del plan. Esta versión tampoco recoge cuántas ayudas se concedieron.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto 42/2022, de 18 de enero, en vigor desde el 20 de enero y con efectos desde el 1 de enero de 2022. Los ingresos de la unidad de convivencia tienen que ser inferiores a 3 veces el IPREM y, en general, no se puede ser propietario de una vivienda en España. El plan incluye 13 programas de ayuda. El Ministerio transfiere los fondos a las comunidades y ciudades autónomas.</p>
+          <a class="src" href="https://noticias.juridicas.com/legislacion-destacada/normativa/16884-real-decreto-42-2022:-ayudas-al-alquiler-joven-y-al-acceso-a-la-vivienda/" target="_blank" rel="noopener">Noticias Jurídicas (una sola fuente)</a>
+        </div>
+      </details>
+    </article>
+
+    <article class="fact">
+      <div class="meta"><time>29 mar 2022</time><span class="badge">Resumen de terceros</span></div>
+      <h3>Tope del 2 % a la subida anual del alquiler</h3>
+      <p class="plain">Limita al 2 % lo que puede subir cada año la renta de un contrato de alquiler. Se prorrogó para todo 2023.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>El límite nace en el Real Decreto-ley 6/2022, de 29 de marzo, y lo prorroga el Real Decreto-ley 20/2022, de 27 de diciembre, hasta el 31 de diciembre de 2023. Ese segundo decreto también permitió prorrogar seis meses, a petición del inquilino, los contratos que vencían entre el 28 de diciembre de 2022 y el 30 de junio de 2023. Después de 2023, la fuente remite a la Ley de Vivienda para el límite de 2024 (3 %).</p>
+          <a class="src" href="https://www.ocu.org/fincas-y-casas/gestion/alquiler/analisis-gratis/2022/12/prorroga-medidas-alquiler-2023" target="_blank" rel="noopener">OCU, dic 2022 (una sola fuente)</a>
+        </div>
+      </details>
+    </article>
+
+    <article class="fact">
+      <div class="meta"><time>25 may 2023</time><span class="badge">Resumen de terceros</span></div>
+      <h3>Ley 12/2023 por el derecho a la vivienda</h3>
+      <p class="plain">El Estado crea la herramienta, pero no la aplica él. La aplica cada comunidad, que decide dónde.</p>
+      <div class="flow">
+        <div class="bx"><span class="k">Estado</span><b>Crea la herramienta</b><span>Ley 12/2023</span></div>
+        <div class="ar" aria-hidden="true">→</div>
+        <div class="bx"><span class="k">Comunidad</span><b>Decide dónde se aplica</b><span>Cataluña: 302 municipios (jul 2026)</span></div>
+      </div>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Publicada en el BOE núm. 124 el 25 de mayo de 2023 y en vigor desde el 26 de mayo, salvo las normas fiscales, que empezaron el 1 de enero de 2024. Crea la declaración de zonas de mercado residencial tensionado (art. 18), obliga a los grandes tenedores a dar información en esas zonas (art. 19) y recoge una limitación extraordinaria de la actualización anual de la renta (disposición final sexta).</p>
+          <p>En julio de 2026 Cataluña prorrogó un año la declaración: 118 municipios la renovaron, 22 salieron, 53 entraron y el total pasó de 271 a 302.</p>
+          <a class="src" href="https://www.csif.es/es/noticia/portada/canarias/articulo/27174" target="_blank" rel="noopener">CSIF, resumen de la ley</a>
+          <a class="src" href="https://www.ultimahora.es/noticias/comunidades/2026/07/28/2678719/catalunya-prorroga-ano-declaracion-zona-vivienda-tensionada-llega-302-municipios.html" target="_blank" rel="noopener">Última Hora, 28 jul 2026 (prensa)</a>
+        </div>
+      </details>
+    </article>
+
+    <article class="fact">
+      <div class="meta"><time>30 ene 2026</time><span class="badge of">Oficial</span><span class="badge">Prensa</span></div>
+      <h3>CASA 47, la empresa pública de vivienda</h3>
+      <p class="plain">Busca y construye viviendas para alquilarlas a precio asequible. Hay 1.664 viviendas licitadas en 2025 y 2.800 más anunciadas para 2026. Cuántas están ya entregadas no consta aquí.</p>
+      <p class="limit">Licitar o planificar no es lo mismo que terminar.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>La ministra de Vivienda anunció que licitaría en el primer trimestre de 2026 la construcción de <span class="num">2.800</span> viviendas de alquiler asequible, además de las <span class="num">1.664</span> licitadas durante 2025. Según la prensa, el 2 de junio de 2026 el Gobierno aprobó otros 260 millones de euros (<span class="num">2.080</span> millones acumulados) para 22 proyectos nuevos con <span class="num">1.629</span> viviendas.</p>
+          <a class="src" href="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/vivienda-agenda-urbana/paginas/2026/300126-isabel-rodriguez-licitacion-casa47.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, 30 ene 2026</a>
+          <a class="src" href="https://www.elespanol.com/invertia/observatorios/vivienda/20260602/gobierno-aprueba-nueva-inyeccion-millones-casa-construir-viviendas-asequibles/1003744270484_0.html" target="_blank" rel="noopener">Cifras de junio: El Español, 2 jun 2026 (una sola fuente)</a>
+        </div>
+      </details>
+    </article>
+
+    <article class="fact">
+      <div class="meta"><time>21 abr 2026</time><span class="badge of">Oficial</span></div>
+      <h3>Plan Estatal de Vivienda 2026-2030</h3>
+      <p class="plain">Es el dinero que el Estado y las comunidades ponen juntos durante cinco años. El Estado pone seis de cada diez euros.</p>
+      <div class="split">
+        <span class="k">Quién lo paga</span>
+        <div class="stack" role="img" aria-label="Estado 60 por ciento, comunidades 40 por ciento"><span class="s1" style="width:60%">Estado 60 %</span><span class="s2" style="width:40%">Comunidades 40 %</span></div>
+      </div>
+      <p><span class="k">En qué se gasta</span><br>Al menos el 40 % va a ampliar el parque de vivienda pública, que queda protegida de forma permanente.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Aprobado por el Consejo de Ministros el 21 de abril de 2026 con <span class="num">7.000 millones de euros</span>, el triple que el plan anterior. El Gobierno aporta el 60 % y las comunidades el 40 %; sobre esos porcentajes, unos 4.200 y 2.800 millones (cálculo propio). La prensa reparte el resto del gasto en un 30 % para rehabilitación y un 30 % para otras ayudas; la nota oficial no da esas cifras.</p>
+          <a class="src" href="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/vivienda-agenda-urbana/paginas/2026/210426-vivienda-asequible-espana-eu.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, 21 abr 2026 (7.000 millones, el triple, al menos 40 % a vivienda pública)</a>
+          <a class="src" href="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/vivienda-agenda-urbana/Paginas/2026/280426-reparto-plan-estatal-vivienda.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, 28 abr 2026 (60 % Estado, 40 % comunidades)</a>
+          <a class="src" href="https://www.legaltoday.com/actualidad-juridica/noticias-de-derecho/el-consejo-de-ministros-apruebael-nuevo-plan-estatal-de-vivienda-2026-04-21/" target="_blank" rel="noopener">LegalToday, 21 abr 2026 (reparto 40/30/30)</a>
+        </div>
+      </details>
+    </article>
+  </section>
+
+  <section aria-labelledby="h-b">
+    <h2 id="h-b">Qué intentó y no salió</h2>
+    <p class="lede">En lo que he podido verificar, en estos ocho años el Congreso ha rechazado decretos de vivienda del Gobierno en dos ocasiones. No he revisado el registro completo de votaciones. Solo se cuenta lo que pasó, sin juzgar a nadie.</p>
+
+    <article class="fact">
+      <div class="meta"><time>22 ene 2019</time><span class="badge">Prensa · 2 fuentes</span></div>
+      <h3>Decreto-ley 21/2018: alquiler y desahucios</h3>
+      <p class="plain">Un decreto de diciembre de 2018 con cambios en la ley de alquileres, los desahucios, los pisos turísticos y el IBI de las viviendas vacías no obtuvo mayoría en el Congreso y quedó derogado.</p>
+      <p>A favor: PSOE, PNV y parte del Grupo Mixto. En contra: PP, Ciudadanos, Unidos Podemos y ERC.</p>
+      <p class="limit">Las fuentes no dan el recuento de votos.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Los contratos firmados entre el 19 de diciembre de 2018 y el 22 de enero de 2019 siguieron sujetos a ese decreto. El Gobierno aprobó otro el 1 de marzo de 2019 (ver arriba). El reparto de grupos sale de un titular de elDiario.es y del texto de Que.es; el texto no cita a ERC.</p>
+          <a class="src" href="https://www.que.es/2019/01/22/el-congreso-inflige-el-primer-reves-a-un-decreto-del-gobierno-y-tumba-el-de-vivienda-y-alquiler/" target="_blank" rel="noopener">Que.es, 22 ene 2019</a>
+          <a class="src" href="https://www.eldiario.es/economia/pp-ciudadanos-unidos-podemos-erc_1_1740829.html" target="_blank" rel="noopener">elDiario.es, 22 ene 2019 (titular)</a>
+          <a class="src" href="https://blog.sepin.es/2019/01/anulacion-real-decreto-ley-21-2018-arrendamientos-urbanos/" target="_blank" rel="noopener">Sepín, ene 2019 (contenido del decreto)</a>
+        </div>
+      </details>
+    </article>
+
+    <article class="fact">
+      <div class="meta"><time>2 oct 2026</time><span class="badge">Prensa · 2 fuentes</span></div>
+      <h3>Decreto 1: desahucios y prórroga de contratos</h3>
+      <p class="plain">Un paquete con protección ante desahucios de personas vulnerables y prórroga de contratos de alquiler, entre otras medidas.</p>
+      <div class="vote" role="img" aria-label="Decreto 1: 172 votos a favor y 178 en contra, de 350">
+        <div class="bar"><span class="y" style="width:49.14%">172 a favor</span><span class="n" style="width:50.86%">178 en contra</span></div>
+      </div>
+      <p>En contra: Junts, PP, UPN y Vox.</p>
+    </article>
+
+    <article class="fact">
+      <div class="meta"><time>2 oct 2026</time><span class="badge">Prensa · 2 fuentes</span></div>
+      <h3>Decreto 2: renovación automática de contratos</h3>
+      <p class="plain">Que los contratos de alquiler se renueven automáticamente.</p>
+      <div class="vote" role="img" aria-label="Decreto 2: 166 votos a favor y 184 en contra, de 350">
+        <div class="bar"><span class="y" style="width:47.43%">166 a favor</span><span class="n" style="width:52.57%">184 en contra</span></div>
+      </div>
+      <p>En contra: Coalición Canaria, Junts, PNV, PP, UPN y Vox.</p>
+      <details>
+        <summary>Voto de cada grupo y fuentes</summary>
+        <div class="in">
+          <div class="tbl-wrap">
+            <table>
+              <thead><tr><th>Grupo</th><th>Decreto 1</th><th>Decreto 2</th></tr></thead>
+              <tbody>
+                <tr><td>BNG</td><td class="y">A favor</td><td class="y">A favor</td></tr>
+                <tr><td>Coalición Canaria</td><td class="y">A favor</td><td class="n">En contra</td></tr>
+                <tr><td>EH Bildu</td><td class="y">A favor</td><td class="y">A favor</td></tr>
+                <tr><td>ERC</td><td class="y">A favor</td><td class="y">A favor</td></tr>
+                <tr><td>Junts</td><td class="n">En contra</td><td class="n">En contra</td></tr>
+                <tr><td>PNV</td><td class="y">A favor</td><td class="n">En contra</td></tr>
+                <tr><td>Podemos</td><td class="y">A favor</td><td class="y">A favor</td></tr>
+                <tr><td>PP</td><td class="n">En contra</td><td class="n">En contra</td></tr>
+                <tr><td>PSOE</td><td class="y">A favor</td><td class="y">A favor</td></tr>
+                <tr><td>Sumar</td><td class="y">A favor</td><td class="y">A favor</td></tr>
+                <tr><td>UPN</td><td class="n">En contra</td><td class="n">En contra</td></tr>
+                <tr><td>Vox</td><td class="n">En contra</td><td class="n">En contra</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Orden alfabético. No se detalla el voto individual. Uno de los dos era el Real Decreto-ley 26/2026, de 29 de septiembre; su derogación se publicó en el BOE el mismo 2 de octubre. El recuento de votos sale de la prensa: falta cotejarlo con el registro de votaciones del Congreso.</p>
+          <a class="src" href="https://www.fiscal-impuestos.com/node/41914" target="_blank" rel="noopener">Fiscal Impuestos: derogación del RDL 26/2026 (resolución del Congreso en el BOE de 2 oct 2026)</a>
+          <a class="src" href="https://diariodeavisos.elespanol.com/2026/10/congreso-tumba-decretos-vivienda-gobierno/" target="_blank" rel="noopener">Diario de Avisos, 2 oct 2026</a>
+          <a class="src" href="https://rtvc.es/congreso-vota-decretos-vivienda-2-octubre-2026/" target="_blank" rel="noopener">RTVC, 2 oct 2026</a>
+        </div>
+      </details>
+    </article>
+
+    <p class="limit">Falta en esta versión: los motivos que dio cada grupo, con cita textual y el mismo espacio para todos. No se resumen porque resumir ya sería elegir qué destacar.</p>
+  </section>
+
+  <section aria-labelledby="h-c">
+    <h2 id="h-c">Qué ha pasado con los precios</h2>
+    <p class="lede">Son cifras oficiales del INE. Se enseñan para ver la escala, no para repartir culpas.</p>
+
+    <div class="chart">
+      <h3>Comprar una vivienda</h3>
+      <div class="bigs">
+        <div class="big"><b>+69,4 %</b><span>del 2.º trimestre de 2018 al de 2026</span></div>
+        <div class="big"><b>+41,2 %</b><span>en los últimos cuatro años</span></div>
+      </div>
+      <div id="c1"></div>
+      <p class="cap">Variación anual en el segundo trimestre de cada año. Los acumulados los calculo yo componiendo las tasas anuales, porque el INE no los publica. Pueden variar una décima por redondeo.</p>
+      <details>
+        <summary>Fuentes</summary>
+        <div class="in">
+          <a class="src" href="https://www.ine.es/daco/daco42/ipv/ipv0218.pdf" target="_blank" rel="noopener">INE, 2.º trim. 2018 (7 sep 2018)</a>
+          <a class="src" href="https://www.ine.es/daco/daco42/ipv/ipv0219.pdf" target="_blank" rel="noopener">INE, 2.º trim. 2019 (6 sep 2019)</a>
+          <a class="src" href="https://www.ine.es/daco/daco42/ipv/ipv0220.pdf" target="_blank" rel="noopener">INE, 2.º trim. 2020 (8 sep 2020)</a>
+          <a class="src" href="https://www.ine.es/daco/daco42/ipv/ipv0221.pdf" target="_blank" rel="noopener">INE, 2.º trim. 2021 (8 sep 2021)</a>
+          <a class="src" href="https://www.ine.es/daco/daco42/ipv/ipv0222.pdf" target="_blank" rel="noopener">INE, 2.º trim. 2022 (8 sep 2022)</a>
+          <a class="src" href="https://www.ine.es/daco/daco42/ipv/ipv0223.pdf" target="_blank" rel="noopener">INE, 2.º trim. 2023 (7 sep 2023)</a>
+          <a class="src" href="https://www.ine.es/dyngs/Prensa/IPV2T24.htm" target="_blank" rel="noopener">INE, 2.º trim. 2024 (5 sep 2024)</a>
+          <a class="src" href="https://ine.es/dyngs/Prensa/IPV2T25.htm?print=1" target="_blank" rel="noopener">INE, 2.º trim. 2025 (5 sep 2025)</a>
+          <a class="src" href="https://www.ine.es/dyngs/Prensa/IPV2T26.htm" target="_blank" rel="noopener">INE, 2.º trim. 2026 (7 sep 2026)</a>
+        </div>
+      </details>
+    </div>
+
+    <div class="chart">
+      <h3>Alquilar, de media</h3>
+      <div id="c2"></div>
+      <p class="cap">Variación anual del Índice de Precios de Vivienda en Alquiler, todos los contratos. Entre 2018 y 2024 se movió entre el 0,9 % y el 3,5 %. En 2024, los contratos nuevos subieron un 8,8 % y los que ya existían un 2,8 %.</p>
+      <details>
+        <summary>Fuentes</summary>
+        <div class="in">
+          <p>La serie coincide en las tres notas del INE que la recogen. El dato más reciente es de 2024 y se publicó el 11 de mayo de 2026. Aún no hay cifra oficial de 2025 ni de 2026.</p>
+          <a class="src" href="https://ine.es/dyngs/Prensa/IPVA2022.htm" target="_blank" rel="noopener">INE, IPVA 2022 (9 may 2024)</a>
+          <a class="src" href="https://www.ine.es/dyngs/Prensa/IPVA2023.htm" target="_blank" rel="noopener">INE, IPVA 2023 (13 may 2025)</a>
+          <a class="src" href="https://ine.es/dyngs/Prensa/IPVA2024.htm" target="_blank" rel="noopener">INE, IPVA 2024 (11 may 2026)</a>
+        </div>
+      </details>
+    </div>
+
+    <p class="limit">Qué no dicen estas cifras: qué las causó, cómo se comparan con los salarios o con otros países y qué parte corresponde al Estado, a las comunidades o a los ayuntamientos.</p>
+  </section>
+
+  <footer class="foot">
+    <p><b>Estado de la verificación.</b> Con fuente oficial: todas las cifras de precios (notas de prensa del INE, la serie de alquiler coincide en tres notas), el Plan Estatal 2026-2030 (La Moncloa) y las cifras de CASA 47 de enero (La Moncloa). Con dos fuentes de prensa: las votaciones del 2 de octubre de 2026. El resto procede de una sola fuente y está marcado. Que Pedro Sánchez preside el Gobierno desde junio de 2018 es de dominio público.</p>
+    <p>Última revisión: 11 de noviembre de 2026. ¿Un dato está mal? <a href="metodologia.html#correcciones">Dínoslo</a>. Cómo se ha hecho: <a href="metodologia.html">metodología</a>.</p>
+  </footer>
+</main>
+
+<script>
+(function(){
+  function fp(v){return v.toFixed(1).replace('.',',')+' %'}
+  function hrows(el, data, max, fmt, unit){
+    var W=360, LB=40, VL=64, RH=25, BH=15, pw=W-LB-VL, H=data.length*RH+2;
+    var s='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+unit+': '+data.map(function(d){return d.l+' '+fmt(d.v)}).join(', ')+'">';
+    data.forEach(function(d,i){
+      var y=i*RH+2, w=Math.max(2,(d.v/max)*pw);
+      s+='<text x="0" y="'+(y+12)+'" font-size="12" font-family="IBM Plex Mono, monospace" fill="var(--ink-2)">'+d.l+'</text>';
+      s+='<rect x="'+LB+'" y="'+y+'" width="'+w+'" height="'+BH+'" fill="'+(d.alt?'var(--alt)':'var(--accent)')+'" rx="2"/>';
+      s+='<text x="'+(LB+w+6)+'" y="'+(y+12)+'" font-size="12" font-weight="600" font-family="IBM Plex Mono, monospace" fill="var(--ink)">'+fmt(d.v)+'</text>';
+    });
+    s+='<line x1="'+LB+'" x2="'+LB+'" y1="0" y2="'+H+'" stroke="var(--ink-2)" stroke-width="1"/>';
+    s+='</svg>';
+    document.getElementById(el).innerHTML=s;
+  }
+  hrows('c1',[
+    {l:'2018',v:6.8},{l:'2019',v:5.3},{l:'2020',v:2.1},{l:'2021',v:3.3},{l:'2022',v:8.0},
+    {l:'2023',v:3.6},{l:'2024',v:7.8},{l:'2025',v:12.7},{l:'2026',v:12.2}
+  ],14,fp,'Variación anual del precio de la vivienda en el segundo trimestre');
+  hrows('c2',[
+    {l:'2018',v:2.6},{l:'2019',v:3.5},{l:'2020',v:0.9},{l:'2021',v:1.6},
+    {l:'2022',v:2.7},{l:'2023',v:2.6},{l:'2024',v:3.5}
+  ],4,fp,'Variación anual del alquiler');
+})();
+</script>

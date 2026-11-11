@@ -1,0 +1,722 @@
+<title>Pensiones, hechos del Estado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,500..800&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Layout: resumen en lenguaje llano, línea de tiempo de ocho años como hilo, cada hecho con una frase clara y el detalle técnico plegado. Las series largas van en filas horizontales para leerse bien en el móvil. */
+:root{
+  --paper:#EDF0F2;
+  --card:#FFFFFF;
+  --ink:#121B23;
+  --ink-2:#4B5967;
+  --rule:#CBD3DA;
+  --accent:#0B6E63;
+  --on-accent:#FFFFFF;
+  --accent-soft:#D6ECE8;
+  --alt:#5D6D7B;
+  --alt2:#B8C4CE;
+  --note-bg:#FFF2CF;
+  --note-ink:#6B4700;
+  --f-display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E151B; --card:#16212A; --ink:#E7EDF1; --ink-2:#9FB0BD; --rule:#2A3946;
+    --accent:#4DC2B1; --on-accent:#07201C; --accent-soft:#143A38; --alt:#6F8394; --alt2:#3E5160;
+    --note-bg:#3A2F10; --note-ink:#F0C96A;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E151B; --card:#16212A; --ink:#E7EDF1; --ink-2:#9FB0BD; --rule:#2A3946;
+  --accent:#4DC2B1; --on-accent:#07201C; --accent-soft:#143A38; --alt:#6F8394; --alt2:#3E5160;
+  --note-bg:#3A2F10; --note-ink:#F0C96A;
+  color-scheme: dark;
+}
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.5}
+h1,h2,h3,p,ul,ol,dl,dd{margin:0}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+a{color:var(--accent)}
+
+.app{max-width:680px;margin-inline:auto;padding-inline:16px;padding-block:20px 56px;display:flex;flex-direction:column;gap:32px}
+
+.top{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.brand{font-family:var(--f-display);font-size:1.1rem;font-weight:800;font-variation-settings:"wdth" 112;color:var(--ink);text-decoration:none}
+.tag{font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;border:1px solid var(--ink-2);color:var(--ink-2);padding:2px 8px;border-radius:3px;white-space:nowrap}
+
+.head{display:flex;flex-direction:column;gap:10px;border-top:2px solid var(--ink);padding-top:14px}
+.head h1{font-size:2.1rem;font-weight:800;font-variation-settings:"wdth" 108;line-height:1.08}
+.kicker{font-family:var(--f-mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2)}
+.k{font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-2)}
+
+.sum{background:var(--ink);color:var(--paper);border-radius:6px;padding:6px 18px;display:flex;flex-direction:column}
+.sum .row{display:grid;grid-template-columns:minmax(0,1fr);gap:4px;padding-block:14px;border-top:1px solid color-mix(in srgb, var(--paper) 25%, transparent)}
+.sum .row:first-child{border-top:0}
+.sum .k{color:var(--paper);opacity:.7}
+.sum p{font-size:1.08rem;line-height:1.4}
+.sum b{font-weight:700;font-variant-numeric:tabular-nums}
+.sum .gap p{opacity:.9}
+
+section{display:flex;flex-direction:column;gap:14px}
+section>h2{font-size:1.45rem;font-weight:700;font-variation-settings:"wdth" 105;line-height:1.2}
+.lede{color:var(--ink-2)}
+
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.88rem;color:var(--ink-2)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.dot{width:12px;height:12px;border-radius:50%;border:2px solid var(--accent);background:var(--accent);flex:none;display:inline-block}
+.dot.no{background:transparent;border-color:var(--alt)}
+.tl{list-style:none;padding:0;margin:0;display:flex;flex-direction:column}
+.tl li{display:grid;grid-template-columns:84px 20px minmax(0,1fr);gap:0 8px;padding-bottom:18px;position:relative}
+.tl li:last-child{padding-bottom:0}
+.tl time{font-family:var(--f-mono);font-size:.8rem;color:var(--ink-2);padding-top:3px;font-variant-numeric:tabular-nums}
+.tl .mk{position:relative;display:flex;justify-content:center;padding-top:5px}
+.tl .mk::after{content:"";position:absolute;top:22px;bottom:-18px;width:2px;background:var(--rule)}
+.tl li:last-child .mk::after{display:none}
+.tl .t{font-weight:600;line-height:1.3}
+.tl .s{color:var(--ink-2);font-size:.95rem}
+
+.fact{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:16px;display:flex;flex-direction:column;gap:10px}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}
+.meta time{font-family:var(--f-mono);font-size:.8rem;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.badge{font-family:var(--f-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;padding:2px 7px;border-radius:3px;border:1px solid var(--ink-2);color:var(--ink-2)}
+.badge.of{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.fact h3{font-size:1.2rem;font-weight:700;line-height:1.25}
+.plain{font-size:1.05rem}
+.fact p{margin:0}
+.num{font-variant-numeric:tabular-nums}
+details{border-top:1px solid var(--rule);padding-top:10px}
+summary{cursor:pointer;font-family:var(--f-mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);padding-block:4px}
+details[open] summary{margin-bottom:8px}
+details .in{display:flex;flex-direction:column;gap:8px;font-size:.96rem}
+.src{font-size:.88rem;overflow-wrap:anywhere}
+.limit{background:var(--note-bg);color:var(--note-ink);font-size:.92rem;padding:8px 10px;border-radius:3px}
+
+.split{display:flex;flex-direction:column;gap:6px}
+.stack{display:flex;height:38px;border-radius:3px;overflow:hidden;font-family:var(--f-mono);font-size:.82rem;font-variant-numeric:tabular-nums}
+.stack span{display:flex;align-items:center;padding-inline:8px;white-space:nowrap;overflow:hidden}
+.s1{background:var(--accent);color:var(--on-accent)}
+.s2{background:var(--alt);color:var(--paper)}
+.s3{background:var(--alt2);color:var(--ink)}
+.flow{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:8px;align-items:stretch}
+.flow .bx{border:1px solid var(--rule);border-radius:4px;padding:10px 12px;display:flex;flex-direction:column;gap:2px;background:var(--paper)}
+.flow .bx b{font-family:var(--f-display)}
+.flow .ar{display:grid;place-items:center;font-family:var(--f-mono);color:var(--ink-2)}
+@media (max-width:480px){.flow{grid-template-columns:minmax(0,1fr)}.flow .ar{transform:rotate(90deg);padding-block:2px}}
+
+.vote{display:flex;flex-direction:column;gap:6px}
+.bar{display:flex;height:36px;border-radius:3px;overflow:hidden;font-family:var(--f-mono);font-size:.82rem;font-variant-numeric:tabular-nums}
+.bar span{display:flex;align-items:center;padding-inline:8px;white-space:nowrap}
+.bar .y{background:var(--accent);color:var(--on-accent)}
+.bar .n{background:var(--alt);color:var(--paper);justify-content:flex-end}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--rule);border-radius:6px}
+table{border-collapse:collapse;width:100%;min-width:340px;font-size:.95rem}
+th,td{text-align:left;padding:7px 12px;border-top:1px solid var(--rule)}
+thead th{border-top:0;font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);font-weight:500}
+td.y{font-weight:600}
+td.n{color:var(--ink-2)}
+
+.chart{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.chart h3{font-size:1.1rem;font-weight:700}
+.chart svg{width:100%;height:auto;display:block;max-width:100%}
+.cap{font-size:.9rem;color:var(--ink-2)}
+.bigs{display:flex;flex-wrap:wrap;gap:8px 28px}
+.big{display:flex;flex-direction:column;gap:0}
+.big b{font-family:var(--f-display);font-size:2.4rem;font-weight:800;font-variation-settings:"wdth" 108;font-variant-numeric:tabular-nums;line-height:1.1}
+.big span{color:var(--ink-2);font-size:.92rem}
+
+.foot{border-top:1px solid var(--rule);padding-top:14px;display:flex;flex-direction:column;gap:8px;font-size:.9rem;color:var(--ink-2)}
+</style>
+<style>
+.aviso{background:var(--accent-soft);border-left:4px solid var(--accent);border-radius:4px;padding:12px 14px;display:flex;flex-direction:column;gap:4px}
+.aviso b{font-family:var(--f-display)}
+.nada{color:var(--ink-2)}
+.nolist{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:4px}
+.vote .lbl{font-family:var(--f-mono);font-size:.78rem;color:var(--ink-2)}
+.bar .a{background:var(--alt2);color:var(--ink);justify-content:center;padding-inline:0}
+details.yg{border-top:0;padding-top:0}
+details.yg>summary{display:flex;align-items:baseline;gap:10px;border-bottom:2px solid var(--ink);padding-block:8px 4px;color:var(--ink);text-transform:none;letter-spacing:0;list-style-position:inside}
+details.yg>summary .yy{font-family:var(--f-display);font-size:1.25rem;font-weight:800;font-variation-settings:"wdth" 108}
+details.yg>summary .yn{font-family:var(--f-mono);font-size:.72rem;color:var(--ink-2);text-transform:uppercase;letter-spacing:.06em}
+details.yg[open]>summary{margin-bottom:12px}
+details.yg>summary{cursor:pointer;list-style:none}
+details.yg>summary::-webkit-details-marker{display:none}
+details.yg>summary::before{content:"+";font-family:var(--f-mono);font-size:1rem;color:var(--accent);width:14px;flex:none}
+details.yg[open]>summary::before{content:"−"}
+.ygi{display:flex;flex-direction:column;gap:14px}
+.tl.compact li{padding-bottom:10px}
+.tl.compact .t{font-weight:500;font-size:.95rem}
+.keys{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.88rem;color:var(--ink-2)}
+.keys i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px}
+.count{font-family:var(--f-mono);font-size:.74rem;font-weight:400;color:var(--ink-2);text-transform:uppercase;letter-spacing:.06em;margin-left:8px}
+</style>
+
+<main class="app">
+  <header class="top">
+    <a class="brand" href="index.html">Quién decide</a>
+    <span class="tag">Beta</span>
+  </header>
+
+  <div class="head">
+    <p class="kicker">Gobierno central y Cortes · 2018 a 2026</p>
+    <h1>Pensiones: qué ha hecho el Estado</h1>
+    <p class="lede">Ocho años con Pedro Sánchez como presidente del Gobierno, desde junio de 2018.</p>
+  </div>
+
+  <div class="sum" aria-label="Resumen">
+    <div class="row">
+      <span class="k">Lo que se aprobó</span>
+      <p>Subida de las pensiones cada año (entre 0,9 % y 8,5 %), ligada a la inflación desde la Ley 21/2021. Ingreso mínimo vital (2020, ley en 2021) y complemento por hijos contra la brecha de género (2021). Cotización de autónomos por ingresos reales (2022), reforma de cotizaciones y cálculo de la pensión (2023) y compatibilidad entre pensión y trabajo (2024 y 2026).</p>
+    </div>
+    <div class="row">
+      <span class="k">Lo que no salió</span>
+      <p>El Congreso derogó dos decretos ómnibus que incluían la subida anual: en enero de 2025 y en enero de 2026. En los dos casos, un decreto posterior con la subida se convalidó. En septiembre de 2026 el Congreso admitió a trámite quitar el recorte por jubilación anticipada con 40 años cotizados, pero no llegó a ser ley.</p>
+    </div>
+    <div class="row">
+      <span class="k">Lo que dicen las cifras</span>
+      <p>La pensión media de jubilación pasó de 1.074,83 euros al mes en enero de 2018 a 1.563,60 en enero de 2026, en euros corrientes. Las pensiones contributivas pasaron de 9,57 a 10,45 millones. La mayor subida anual fue la de 2023: 8,5 %.</p>
+    </div>
+    <div class="row gap">
+      <span class="k">Lo que esta página no sabe</span>
+      <p>Qué grupos votaron en contra o se abstuvieron en varias votaciones (a menudo solo lo da una fuente de prensa) y el recuento final de la ley de mutualistas de 2026.</p>
+    </div>
+  </div>
+
+  <section aria-labelledby="h-tl">
+    <h2 id="h-tl">Qué pasó y cuándo</h2>
+    <div class="legend"><span><i class="dot"></i>Aprobado</span><span><i class="dot no"></i>No salió</span></div>
+    <ol class="tl compact">
+      <li><time>28 dic 2018</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 28/2018, revalorización de 2019</p><p class="s"></p></div></li>
+      <li><time>1 mar 2019</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley 3/2019, orfandad por violencia contra la mujer</p><p class="s"></p></div></li>
+      <li><time>14 ene 2020</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 1/2020, revalorización de 2020</p><p class="s"></p></div></li>
+      <li><time>29 may 2020</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 20/2020, ingreso mínimo vital</p><p class="s"></p></div></li>
+      <li><time>26 ene 2021</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto 46/2021, revalorización de 2021</p><p class="s"></p></div></li>
+      <li><time>2 feb 2021</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 3/2021, complemento de brecha de género</p><p class="s"></p></div></li>
+      <li><time>20 dic 2021</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley 19/2021, ingreso mínimo vital</p><p class="s"></p></div></li>
+      <li><time>28 dic 2021</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley 21/2021, de garantía del poder adquisitivo de las pensiones</p><p class="s"></p></div></li>
+      <li><time>25 ene 2022</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto 65/2022, revalorización de 2022</p><p class="s"></p></div></li>
+      <li><time>30 jun 2022</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley 12/2022, planes de pensiones de empleo</p><p class="s"></p></div></li>
+      <li><time>26 jul 2022</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 13/2022, cotización de autónomos por ingresos reales</p><p class="s"></p></div></li>
+      <li><time>27 dic 2022</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto 1058/2022, revalorización de 2023</p><p class="s"></p></div></li>
+      <li><time>16 mar 2023</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 2/2023, reforma de pensiones</p><p class="s"></p></div></li>
+      <li><time>27 dic 2023</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 8/2023, decreto ómnibus con la revalorización de 2024</p><p class="s"></p></div></li>
+      <li><time>23 dic 2024</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 11/2024, compatibilidad de pensión y trabajo</p><p class="s"></p></div></li>
+      <li><time>22 ene 2025</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Real Decreto-ley 9/2024, decreto ómnibus con la revalorización de 2025</p><p class="s">Derogado: no se convalidó</p></div></li>
+      <li><time>28 ene 2025</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 1/2025, revalorización de 2025 (sustituto)</p><p class="s"></p></div></li>
+      <li><time>27 ene 2026</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Real Decreto-ley 16/2025, decreto ómnibus con la revalorización de 2026</p><p class="s">Derogado: no se convalidó</p></div></li>
+      <li><time>3 feb 2026</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 3/2026, revalorización de las pensiones de 2026</p><p class="s"></p></div></li>
+      <li><time>27 may 2026</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto 416/2026, jubilación flexible</p><p class="s"></p></div></li>
+      <li><time>29 jul 2026</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley 2/2026, pasarela de mutualistas al régimen de autónomos</p><p class="s"></p></div></li>
+      <li><time>22 sep 2026</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proposición de ley de jubilación sin penalización (toma en consideración)</p><p class="s">Admitido a trámite</p></div></li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="h-a">
+    <h2 id="h-a">Qué ha aprobado el Estado<span class="count">19</span></h2>
+    <details class="yg">
+    <summary><span class="yy">2018</span><span class="yn">1 hecho</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>28 dic 2018</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 28/2018, revalorización de 2019</h3>
+      <p class="plain">Las pensiones contributivas suben un 1,6 % en 2019 y se paga una cantidad única por la diferencia de 2018. Los autónomos pasan a cotizar obligatoriamente por accidente de trabajo y por cese de actividad.</p>
+      <div class="vote" role="img" aria-label="181 a favor, 1 en contra, 164 abstenciones"><span class="lbl">22 ene 2019 · Convalidado</span><div class="bar"><span class="y" style="width:52.31%">181 a favor</span><span class="n" style="width:0.29%">1 en contra</span><span class="a" style="width:47.40%">164</span></div></div>
+      <p class="limit">Qué grupos se abstuvieron y quién votó en contra. Si la tramitación como proyecto de ley terminó antes de la disolución de 2019.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto-ley 28/2018, de 28 de diciembre, para la revalorización de las pensiones públicas y otras medidas urgentes en materia social, laboral y de empleo. BOE núm. 314, de 29 de diciembre de 2018 (BOE-A-2018-17992). Pensiones contributivas de Seguridad Social y Clases Pasivas: +1,6 % en 2019; paga única por la diferencia con el 1,7 % de 2018. Base máxima de cotización: 4.070,10 euros al mes. Autónomos: cobertura obligatoria de contingencias profesionales y cese de actividad desde el 1 de enero de 2019; base mínima de 944,40 euros. Convalidado el 22 de enero de 2019 (Resolución BOE-A-2019-1057): 181 a favor (con 1 telemático), 1 en contra, 164 abstenciones. Se acordó tramitarlo como proyecto de ley por urgencia (344 a favor, 1 en contra, 2 abstenciones).</p>
+          <a class="src" href="https://www.boe.es/eli/es/rdl/2018/12/28/28" target="_blank" rel="noopener">Oficial: BOE-A-2018-17992, 29 dic 2018</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L12/CONG/DS/PL/DSCD-12-PL-175.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-12-PL-175, 22 ene 2019</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg">
+    <summary><span class="yy">2019</span><span class="yn">1 hecho</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>1 mar 2019</time><span class="badge of">Oficial</span></div>
+      <h3>Ley 3/2019, orfandad por violencia contra la mujer</h3>
+      <p class="plain">Los hijos e hijas de mujeres asesinadas por violencia contra la mujer pueden cobrar una prestación o un incremento de su pensión de orfandad, aunque la madre no tuviera cotización suficiente.</p>
+      
+      <p class="limit">No hemos encontrado una votación en el Pleno del Congreso con su recuento.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Ley 3/2019, de 1 de marzo, de mejora de la situación de orfandad de las hijas e hijos de víctimas de violencia de género y otras formas de violencia contra la mujer. BOE núm. 53, de 2 de marzo de 2019 (BOE-A-2019-2975); en vigor el 3 de marzo de 2019. Crea una prestación de orfandad (art. 224 LGSS) del 70 % de la base reguladora cuando los ingresos por miembro de la familia no superan el 75 % del SMI; eleva la pensión de orfandad en esos casos; hace compatible la pensión con rentas del trabajo. Se financia con los Presupuestos Generales del Estado.</p>
+          <a class="src" href="https://www.boe.es/eli/es/l/2019/03/01/3" target="_blank" rel="noopener">Oficial: BOE-A-2019-2975, 2 mar 2019</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg">
+    <summary><span class="yy">2020</span><span class="yn">2 hechos</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>14 ene 2020</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 1/2020, revalorización de 2020</h3>
+      <p class="plain">Las pensiones contributivas suben un 0,9 % en 2020, con efectos desde el 1 de enero.</p>
+      <p class="vote"><span class="lbl">4 feb 2020 · Convalidado · las fuentes no dan el recuento</span></p>
+      <p class="limit">El sumario no da votos en contra. Qué grupos se abstuvieron.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto-ley 1/2020, de 14 de enero, por el que se establece la revalorización y mantenimiento de las pensiones y prestaciones públicas del sistema de Seguridad Social. BOE núm. 13, de 15 de enero de 2020 (BOE-A-2020-501). Art. 1.2: las pensiones se incrementan un 0,9 %; efectos económicos desde el 1 de enero de 2020. Convalidado el 4 de febrero de 2020 (Resolución de esa fecha): 289 a favor (con 3 telemáticos) y 49 abstenciones. No se tramitó como proyecto de ley.</p>
+          <a class="src" href="https://www.boe.es/eli/es/rdl/2020/01/14/1" target="_blank" rel="noopener">Oficial: BOE-A-2020-501, 15 ene 2020</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-6.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-14-PL-6, 4 feb 2020</a>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXIV/tramit_pleno04022020_5.pdf" target="_blank" rel="noopener">Oficial: Congreso, resultado del Pleno de 4 feb 2020, 4 feb 2020</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>29 may 2020</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 20/2020, ingreso mínimo vital</h3>
+      <p class="plain">Se crea el ingreso mínimo vital, una prestación de la Seguridad Social para hogares con ingresos bajos. No exige haber cotizado.</p>
+      <p class="vote"><span class="lbl">10 jun 2020 · Convalidado · las fuentes no dan el recuento</span></p>
+      <p class="limit">El sumario del Diario de Sesiones da 297 a favor y 52 abstenciones; no da cifra de votos en contra. No hemos verificado con fuente abierta qué grupos se abstuvieron.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto-ley 20/2020, de 29 de mayo, por el que se establece el ingreso mínimo vital. BOE núm. 154, de 1 de junio de 2020 (BOE-A-2020-5493); en vigor ese mismo día. El artículo 2.2 lo define como prestación económica de la Seguridad Social en su modalidad no contributiva. Sustituido desde el 1 de enero de 2022 por la Ley 19/2021, de 20 de diciembre. Convalidado por el Congreso el 10 de junio de 2020.</p>
+          <a class="src" href="https://www.boe.es/buscar/act.php?id=BOE-A-2020-5493" target="_blank" rel="noopener">Oficial: BOE-A-2020-5493, 1 jun 2020</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-27.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-14-PL-27, 10 jun 2020</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg">
+    <summary><span class="yy">2021</span><span class="yn">4 hechos</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>26 ene 2021</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto 46/2021, revalorización de 2021</h3>
+      <p class="plain">Las pensiones contributivas suben un 0,9 % en 2021 y las no contributivas un 1,8 %.</p>
+      
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto 46/2021, de 26 de enero, sobre revalorización de las pensiones del sistema de la Seguridad Social, de las pensiones de Clases Pasivas y de otras prestaciones sociales públicas para el ejercicio 2021. BOE núm. 23, de 27 de enero de 2021 (BOE-A-2021-1135). Desarrolla la subida del 0,9 % fijada en la Ley 11/2020, de Presupuestos Generales del Estado para 2021. No contributivas: +1,8 %. Efectos económicos desde el 1 de enero de 2021. Al ser real decreto, no pasa por el Congreso.</p>
+          <a class="src" href="https://www.boe.es/eli/es/rd/2021/01/26/46" target="_blank" rel="noopener">Oficial: BOE-A-2021-1135, 27 ene 2021</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>2 feb 2021</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 3/2021, complemento de brecha de género</h3>
+      <p class="plain">El complemento de maternidad de las pensiones se sustituye por un complemento por cada hijo para reducir la brecha de género. Algunos hombres también pueden cobrarlo. Se amplía el acceso al ingreso mínimo vital.</p>
+      <div class="vote" role="img" aria-label="168 a favor, 164 en contra, 16 abstenciones"><span class="lbl">18 feb 2021 · Convalidado</span><div class="bar"><span class="y" style="width:48.28%">168 a favor</span><span class="n" style="width:47.13%">164 en contra</span><span class="a" style="width:4.60%"></span></div></div>
+      <p>En contra: Ciudadanos, CUP, PNV, PP, UPN, Vox.</p>
+      <p class="limit">Los grupos en contra (y la abstención de ERC y EH Bildu) solo los da una fuente de prensa.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto-ley 3/2021, de 2 de febrero, por el que se adoptan medidas para la reducción de la brecha de género y otras materias en los ámbitos de la Seguridad Social y económico. BOE núm. 29, de 3 de febrero de 2021 (BOE-A-2021-1529). Nuevo art. 60 LGSS: complemento de pensiones contributivas para la reducción de la brecha de género, por hijo o hija, para pensiones de jubilación, incapacidad permanente y viudedad; cuantía fijada en la Ley de Presupuestos, con tope de cuatro hijos; se mantiene mientras la brecha en jubilación supere el 5 %. Modifica el ingreso mínimo vital (personas en servicios residenciales, convivencia, mediadores sociales). Convalidado el 18 de febrero de 2021 (Resolución BOE-A-2021-2842): 168 a favor, 164 en contra, 16 abstenciones.</p>
+          <a class="src" href="https://www.boe.es/eli/es/rdl/2021/02/02/3" target="_blank" rel="noopener">Oficial: BOE-A-2021-1529, 3 feb 2021</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-80.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-14-PL-80, 18 feb 2021</a>
+          <a class="src" href="https://www.moncloa.com/2021/02/18/gobierno-complemento-maternidad-626386/" target="_blank" rel="noopener">Moncloa.com, 18 feb 2021, 18 feb 2021</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>20 dic 2021</time><span class="badge of">Oficial</span></div>
+      <h3>Ley 19/2021, ingreso mínimo vital</h3>
+      <p class="plain">El ingreso mínimo vital pasa a ser ley. Se añade un complemento por hijo de 50 a 100 euros al mes y se facilita el acceso a jóvenes y a hogares recién formados.</p>
+      <div class="vote" role="img" aria-label="169 a favor, 98 en contra, 63 abstenciones"><span class="lbl">16 dic 2021 · Aprobado</span><div class="bar"><span class="y" style="width:51.21%">169 a favor</span><span class="n" style="width:29.70%">98 en contra</span><span class="a" style="width:19.09%">63</span></div></div>
+      <p class="limit">El recuento es el de la votación de las enmiendas del Senado que da el sumario; no hemos leído si hubo varias votaciones separadas. Qué grupos votaron en contra.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Ley 19/2021, de 20 de diciembre, por la que se establece el ingreso mínimo vital. BOE núm. 304, de 21 de diciembre de 2021 (BOE-A-2021-21007); en vigor el 1 de enero de 2022. Sustituye la regulación del Real Decreto-ley 20/2020. Complemento de ayuda para la infancia: 100 euros al mes por menor de 0 a 3 años, 70 de 3 a 6 y 50 de 6 a 18. Reduce de 12 a 6 meses la antigüedad exigida a la unidad de convivencia; complemento del 22 % por discapacidad igual o superior al 65 %. El Senado introdujo enmiendas; el Pleno del Congreso las votó el 16 de diciembre de 2021 (el sumario recoge 169 a favor, 98 en contra y 63 abstenciones).</p>
+          <a class="src" href="https://www.boe.es/eli/es/l/2021/12/20/19" target="_blank" rel="noopener">Oficial: BOE-A-2021-21007, 21 dic 2021</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-147.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-14-PL-147, 16 dic 2021</a>
+          <a class="src" href="https://revista.seg-social.es/2021/12/16/el-congreso-de-los-diputados-aprueba-definitivamente-la-ley-del-ingreso-minimo-vital/" target="_blank" rel="noopener">Oficial: Revista de la Seguridad Social, 16 dic 2021, 16 dic 2021</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>28 dic 2021</time><span class="badge of">Oficial</span></div>
+      <h3>Ley 21/2021, de garantía del poder adquisitivo de las pensiones</h3>
+      <p class="plain">Las pensiones contributivas suben cada enero según la inflación media del año anterior. Si la inflación es negativa, no bajan.</p>
+      <div class="vote" role="img" aria-label="176 a favor, 148 en contra, 6 abstenciones"><span class="lbl">2 dic 2021 · Aprobado</span><div class="bar"><span class="y" style="width:53.33%">176 a favor</span><span class="n" style="width:44.85%">148 en contra</span><span class="a" style="width:1.82%"></span></div></div>
+      <p>En contra: EH Bildu, PP, Vox.</p>
+      <p class="limit">El recuento sale del Diario de Sesiones. Los grupos en contra salen de prensa: PP y EH Bildu en dos fuentes; Vox solo en una (la otra no dice cómo votó).</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Ley 21/2021, de 28 de diciembre, de garantía del poder adquisitivo de las pensiones y de otras medidas de refuerzo de la sostenibilidad financiera y social del sistema público de pensiones. BOE núm. 312, de 29 de diciembre de 2021 (BOE-A-2021-21652); en vigor el 1 de enero de 2022. Nueva redacción del art. 58 LGSS: revalorización con el valor medio de las tasas interanuales del IPC de los doce meses previos a diciembre. Deroga el factor de sostenibilidad de la Ley 23/2013 y lo sustituye por un mecanismo de equidad intergeneracional (preámbulo). Revisa coeficientes de jubilación anticipada y regula la jubilación demorada (4 % por año, pago único o combinación). Tramitación: el 30 de septiembre de 2021 el Pleno rechazó la enmienda a la totalidad de devolución del Grupo Popular (143 a favor, 194 en contra, 11 abstenciones). El 2 de diciembre de 2021 el Pleno del Congreso aprobó el dictamen (176 a favor, 148 en contra, 6 abstenciones). El Senado lo aprobó definitivamente el 22 de diciembre de 2021 (151 a favor, 108 en contra, 3 abstenciones, según prensa).</p>
+          <a class="src" href="https://www.boe.es/buscar/act.php?id=BOE-A-2021-21652" target="_blank" rel="noopener">Oficial: BOE-A-2021-21652, 29 dic 2021</a>
+          <a class="src" href="https://revista.seg-social.es/2021/12/02/el-congreso-aprueba-el-proyecto-de-ley-que-garantiza-el-poder-adquisitivo-de-las-pensiones/" target="_blank" rel="noopener">Oficial: Revista de la Seguridad Social, 2 dic 2021, 2 dic 2021</a>
+          <a class="src" href="https://theobjective.com/economia/2021-12-02/el-congreso-aprueba-la-reforma-de-las-pensiones-que-volveran-a-subir-conforme-al-ipc-e-incluyen-el-polemico-ascenso-de-las-cotizaciones-sociales/" target="_blank" rel="noopener">The Objective, 2 dic 2021, 2 dic 2021</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-144.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-14-PL-144, 2 dic 2021</a>
+          <a class="src" href="https://www.congreso.es/webpublica/opendata/votaciones/Leg14/Sesion122/20210930/Votacion006/VOT_20210930150726.pdf" target="_blank" rel="noopener">Oficial: Congreso, votación de 30 sep 2021 (enmienda a la totalidad), 30 sep 2021</a>
+          <a class="src" href="https://www.elindependiente.com/economia/2021/12/02/el-congreso-aprueba-la-primera-reforma-de-pensiones-que-las-vuelve-a-subir-con-el-ipc/amp/" target="_blank" rel="noopener">El Independiente, 2 dic 2021, 2 dic 2021</a>
+          <a class="src" href="https://www.publico.es/economia/senado-aprueba-definitivamente-ley-revaloriza-pensiones-ipc.html" target="_blank" rel="noopener">Público, 22 dic 2021, 22 dic 2021</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg">
+    <summary><span class="yy">2022</span><span class="yn">4 hechos</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>25 ene 2022</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto 65/2022, revalorización de 2022</h3>
+      <p class="plain">Las pensiones contributivas suben un 2,5 % en 2022, la inflación media del año anterior. Las no contributivas suben un 3 %.</p>
+      
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto 65/2022, de 25 de enero, sobre actualización de las pensiones del sistema de la Seguridad Social, de las pensiones de Clases Pasivas y de otras prestaciones sociales públicas para el ejercicio 2022. BOE núm. 22, de 26 de enero de 2022 (BOE-A-2022-1189). Art. 3.1: +2,5 %, igual a la media de las tasas interanuales del IPC de diciembre de 2020 a noviembre de 2021 (primer año con la regla de la Ley 21/2021; porcentaje fijado en la Ley 22/2021 de Presupuestos para 2022). No contributivas: +3 %, 5.899,60 euros al año. Efectos desde el 1 de enero de 2022. Real decreto: no pasa por el Congreso.</p>
+          <a class="src" href="https://www.boe.es/eli/es/rd/2022/01/25/65" target="_blank" rel="noopener">Oficial: BOE-A-2022-1189, 26 ene 2022</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>30 jun 2022</time><span class="badge of">Oficial</span></div>
+      <h3>Ley 12/2022, planes de pensiones de empleo</h3>
+      <p class="plain">Se crean fondos de pensiones de empleo de promoción pública y planes simplificados para empresas y autónomos. La desgravación de los planes individuales baja a 1.500 euros al año y la de los planes de empresa puede llegar a 8.500.</p>
+      <div class="vote" role="img" aria-label="172 a favor, 164 en contra, 6 abstenciones"><span class="lbl">9 jun 2022 · Aprobado</span><div class="bar"><span class="y" style="width:50.29%">172 a favor</span><span class="n" style="width:47.95%">164 en contra</span><span class="a" style="width:1.75%"></span></div></div>
+      <p class="limit">Qué grupos votaron en contra en el Congreso: la prensa leída solo lo da para el Senado (PP, Vox, Junts y ERC) y nombra la abstención de EH Bildu.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Ley 12/2022, de 30 de junio, de regulación para el impulso de los planes de pensiones de empleo. BOE núm. 157, de 1 de julio de 2022 (BOE-A-2022-10852); en vigor el 2 de julio de 2022 (límites de aportación desde 2023). Fondos de pensiones de empleo de promoción pública abiertos; planes de empleo simplificados (convenios sectoriales, administraciones, autónomos); deducción del 10 % en el Impuesto sobre Sociedades y reducción de cuota de Seguridad Social por contribuciones empresariales. Tramitación: el 24 de marzo de 2022 el Pleno rechazó la enmienda a la totalidad de devolución del Grupo Plural (25 a favor, 316 en contra). El 9 de junio de 2022 el Congreso aprobó el dictamen (172 a favor, 164 en contra, 6 abstenciones). El Senado lo aprobó sin cambios el 22 de junio de 2022.</p>
+          <a class="src" href="https://www.boe.es/eli/es/l/2022/06/30/12" target="_blank" rel="noopener">Oficial: BOE-A-2022-10852, 1 jul 2022</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-193.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-14-PL-193, 9 jun 2022</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-172.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-14-PL-172, 24 mar 2022</a>
+          <a class="src" href="https://www.publico.es/economia/aprobada-definitivamente-ley-planes-pensiones-empleo.html" target="_blank" rel="noopener">Público, 22 jun 2022, 22 jun 2022</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>26 jul 2022</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 13/2022, cotización de autónomos por ingresos reales</h3>
+      <p class="plain">Desde 2023 los autónomos cotizan según sus ingresos reales, por tramos, y no según la base que elijan. Se amplían los casos en que pueden cobrar la prestación por cese de actividad.</p>
+      <div class="vote" role="img" aria-label="260 a favor, 64 en contra, 25 abstenciones"><span class="lbl">25 ago 2022 · Convalidado</span><div class="bar"><span class="y" style="width:74.50%">260 a favor</span><span class="n" style="width:18.34%">64 en contra</span><span class="a" style="width:7.16%">25</span></div></div>
+      <p>En contra: Ciudadanos, Vox.</p>
+      <p class="limit">Los grupos en contra solo los da una fuente de prensa (dice que Vox y Ciudadanos rechazaron el decreto y que EH Bildu y BNG se abstuvieron). Si la tramitación como proyecto de ley terminó en una ley.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto-ley 13/2022, de 26 de julio, por el que se establece un nuevo sistema de cotización para los trabajadores por cuenta propia o autónomos y se mejora la protección por cese de actividad. BOE núm. 179, de 27 de julio de 2022 (BOE-A-2022-12482); en vigor el 1 de enero de 2023. Base provisional según previsión de rendimientos netos, regularizada después con los datos de Hacienda; tabla general y tabla reducida por tramos; despliegue gradual de 2023 a 2031 y sistema definitivo desde 2032. Convalidado el 25 de agosto de 2022 (Resolución BOE-A-2022-14220): 260 a favor, 64 en contra, 25 abstenciones. Se acordó tramitarlo como proyecto de ley por urgencia (348 a favor, 1 en contra).</p>
+          <a class="src" href="https://www.boe.es/eli/es/rdl/2022/07/26/13" target="_blank" rel="noopener">Oficial: BOE-A-2022-12482, 27 jul 2022</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-204.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-14-PL-204, 25 ago 2022</a>
+          <a class="src" href="https://valenciaplaza.com/valenciaplaza/el-congreso-convalida-el-nuevo-sistema-de-cotizacion-por-ingresos-reales-para-autonomos" target="_blank" rel="noopener">Valencia Plaza, 25 ago 2022, 25 ago 2022</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>27 dic 2022</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto 1058/2022, revalorización de 2023</h3>
+      <p class="plain">Las pensiones contributivas suben un 8,5 % en 2023, también las mínimas y las de Clases Pasivas.</p>
+      
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto 1058/2022, de 27 de diciembre, sobre revalorización de las pensiones del sistema de la Seguridad Social, de las pensiones de Clases Pasivas y de otras prestaciones sociales públicas para el ejercicio 2023. BOE núm. 311, de 28 de diciembre de 2022 (BOE-A-2022-22694). +8,5 % para pensiones contributivas, cuantías mínimas y Clases Pasivas, según la Ley 31/2022 de Presupuestos para 2023. No contributivas: 6.402,20 euros al año. Efectos desde el 1 de enero de 2023. Real decreto: no pasa por el Congreso.</p>
+          <a class="src" href="https://www.boe.es/eli/es/rd/2022/12/27/1058" target="_blank" rel="noopener">Oficial: BOE-A-2022-22694, 28 dic 2022</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg">
+    <summary><span class="yy">2023</span><span class="yn">2 hechos</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>16 mar 2023</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 2/2023, reforma de pensiones</h3>
+      <p class="plain">Sube la cotización que va a la hucha de las pensiones y la de los sueldos más altos. Cambia cómo se calcula la pensión: se elige la opción más favorable entre dos.</p>
+      <div class="vote" role="img" aria-label="179 a favor, 104 en contra, 61 abstenciones"><span class="lbl">30 mar 2023 · Convalidado</span><div class="bar"><span class="y" style="width:52.03%">179 a favor</span><span class="n" style="width:30.23%">104 en contra</span><span class="a" style="width:17.73%">61</span></div></div>
+      <p>En contra: Ciudadanos, PP.</p>
+      <p class="limit">Los grupos en contra (PP y Ciudadanos) solo los nombra una fuente de prensa. Porcentaje del MEI año a año en 2023: no lo hemos leído en el BOE.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto-ley 2/2023, de 16 de marzo, de medidas urgentes para ampliar los derechos de los pensionistas, reducir la brecha de género y establecer un nuevo marco de sostenibilidad del sistema público de pensiones. BOE núm. 65, de 17 de marzo de 2023 (BOE-A-2023-6967); en vigor el 1 de abril de 2023, con partes aplicables desde 2024 y 2025. Mecanismo de Equidad Intergeneracional: cotización finalista para el Fondo de Reserva que crece una décima al año desde 2024 hasta 1,2 puntos en 2029, aplicable hasta 2050. Subida gradual de la base máxima y de la pensión máxima; nueva cuota de solidaridad sobre salarios por encima de la base máxima. Periodo de cómputo: durante 20 años, el más favorable entre los últimos 25 años o los últimos 29 descartando los 24 peores meses. Pensiones mínimas y no contributivas por encima del IPC hasta 2027. Convalidado el 30 de marzo de 2023 y tramitado como proyecto de ley.</p>
+          <a class="src" href="https://boe.es/buscar/act.php?id=BOE-A-2023-6967" target="_blank" rel="noopener">Oficial: BOE-A-2023-6967, 17 mar 2023</a>
+          <a class="src" href="https://www.inclusion.gob.es/w/el-congreso-de-los-diputados-convalida-el-real-decreto-ley-que-culmina-la-modernizacion-del-sistema-de-pensiones" target="_blank" rel="noopener">Oficial: Ministerio de Inclusión, 30 mar 2023, 30 mar 2023</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-259.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-14-PL-259, 30 mar 2023</a>
+          <a class="src" href="https://www.lamarea.com/2023/03/30/el-congreso-avala-la-reforma-de-las-pensiones" target="_blank" rel="noopener">La Marea, 30 mar 2023, 30 mar 2023</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>27 dic 2023</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 8/2023, decreto ómnibus con la revalorización de 2024</h3>
+      <p class="plain">Las pensiones contributivas suben un 3,8 % en 2024; las mínimas, las no contributivas y el ingreso mínimo vital, un 6,9 %. El decreto incluía otras medidas económicas.</p>
+      <div class="vote" role="img" aria-label="172 a favor, 171 en contra, 7 abstenciones"><span class="lbl">10 ene 2024 · Convalidado</span><div class="bar"><span class="y" style="width:49.14%">172 a favor</span><span class="n" style="width:48.86%">171 en contra</span><span class="a" style="width:2.00%"></span></div></div>
+      <p>En contra: PP, UPN, Vox.</p>
+      <p class="limit">No hemos leído en el BOE el artículo concreto del decreto con el 3,8 %; el dato sale de La Moncloa. Los grupos en contra (y la abstención de Junts) solo los da una fuente de prensa.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto-ley 8/2023, de 27 de diciembre, por el que se adoptan medidas para afrontar las consecuencias económicas y sociales derivadas de los conflictos en Ucrania y Oriente Próximo, así como para paliar los efectos de la sequía. BOE núm. 310, de 28 de diciembre de 2023 (BOE-A-2023-26452). Según La Moncloa, recoge la revalorización de 2024 mientras no haya Presupuestos: +3,8 % contributivas; +6,9 % mínimas, no contributivas e ingreso mínimo vital. Convalidado el 10 de enero de 2024 (Resolución BOE-A-2024-666). Una primera votación terminó en empate (171-171); en la repetición: 172 a favor, 171 en contra, 7 abstenciones.</p>
+          <a class="src" href="https://www.boe.es/eli/es/rdl/2023/12/27/8" target="_blank" rel="noopener">Oficial: BOE-A-2023-26452, 28 dic 2023</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-16.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-15-PL-16, 10 ene 2024</a>
+          <a class="src" href="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/inclusion/Paginas/2024/subida-pensiones-2024.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, subida de las pensiones 2024, 10 ene 2024</a>
+          <a class="src" href="https://www.moncloa.com/2024/01/10/el-gobierno-salva-2376439/" target="_blank" rel="noopener">Moncloa.com, 10 ene 2024, 10 ene 2024</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg">
+    <summary><span class="yy">2024</span><span class="yn">1 hecho</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>23 dic 2024</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 11/2024, compatibilidad de pensión y trabajo</h3>
+      <p class="plain">Es más fácil cobrar parte de la pensión y seguir trabajando. Cambian la jubilación activa, la parcial y la demorada.</p>
+      <div class="vote" role="img" aria-label="298 a favor, 51 en contra"><span class="lbl">22 ene 2025 · Convalidado</span><div class="bar"><span class="y" style="width:85.39%">298 a favor</span><span class="n" style="width:14.61%">51 en contra</span></div></div>
+      <p class="limit">Qué grupos votaron en contra; el sumario no da abstenciones.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto-ley 11/2024, de 23 de diciembre, para la mejora de la compatibilidad de la pensión de jubilación con el trabajo. BOE núm. 309, de 24 de diciembre de 2024. Jubilación activa: deja de exigirse carrera completa y el porcentaje de pensión sube con cada año trabajado, hasta el 100 % a partir de cinco años. Jubilación parcial: acceso hasta tres años antes de la edad legal, con contrato de relevo; reducción máxima de jornada del 75 %. Jubilación demorada: desde el segundo año, el incremento se aplica cada seis meses. Convalidado el 22 de enero de 2025.</p>
+          <a class="src" href="https://www.boe.es/boe/dias/2025/01/23/pdfs/BOE-A-2025-1138.pdf" target="_blank" rel="noopener">Oficial: BOE-A-2025-1138 (convalidación), 23 ene 2025</a>
+          <a class="src" href="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/inclusion/paginas/2025/220125-congreso-compatibilidad-jubilacion-trabajo.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, 22 ene 2025, 22 ene 2025</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-92.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-15-PL-92, 22 ene 2025</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg">
+    <summary><span class="yy">2025</span><span class="yn">1 hecho</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>28 ene 2025</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 1/2025, revalorización de 2025 (sustituto)</h3>
+      <p class="plain">Nuevo decreto con la subida de las pensiones de 2025: 2,8 % las contributivas. El Congreso lo convalida.</p>
+      <div class="vote" role="img" aria-label="315 a favor, 33 en contra, 1 abstenciones"><span class="lbl">12 feb 2025 · Convalidado</span><div class="bar"><span class="y" style="width:90.26%">315 a favor</span><span class="n" style="width:9.46%">33 en contra</span><span class="a" style="width:0.29%"></span></div></div>
+      <p>En contra: Vox.</p>
+      <p class="limit">El grupo en contra (Vox) lo nombra una fuente de prensa; la misma atribuye la abstención a UPN.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto-ley 1/2025, de 28 de enero, por el que se aprueban medidas urgentes en materia económica, de transporte, de Seguridad Social, y para hacer frente a situaciones de vulnerabilidad. BOE núm. 25, de 29 de enero de 2025. Revalorización del 2,8 % de las pensiones contributivas y de Clases Pasivas. Convalidado el 12 de febrero de 2025 (BOE-A-2025-2867).</p>
+          <a class="src" href="https://www.boe.es/boe/dias/2025/02/15/pdfs/BOE-A-2025-2867.pdf" target="_blank" rel="noopener">Oficial: BOE-A-2025-2867 (convalidación), 15 feb 2025</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-95.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-15-PL-95, 12 feb 2025</a>
+          <a class="src" href="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/inclusion/Paginas/2024/subida-pensiones-2025.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, subida de las pensiones 2025, 28 ene 2025</a>
+          <a class="src" href="https://www.menorca.info/actualidad/nacional/2025/02/12/2324949/congreso-convalida-subida-pensiones-unica-oposicion-vox.html" target="_blank" rel="noopener">Menorca.info, 12 feb 2025, 12 feb 2025</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg" open>
+    <summary><span class="yy">2026</span><span class="yn">3 hechos</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>3 feb 2026</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 3/2026, revalorización de las pensiones de 2026</h3>
+      <p class="plain">Decreto solo de pensiones: las contributivas suben un 2,7 % en 2026, las mínimas más del 7 % y las no contributivas y el ingreso mínimo vital un 11,4 %. El Congreso lo convalida.</p>
+      <div class="vote" role="img" aria-label="317 a favor, 33 en contra"><span class="lbl">26 feb 2026 · Convalidado</span><div class="bar"><span class="y" style="width:90.57%">317 a favor</span><span class="n" style="width:9.43%">33 en contra</span></div></div>
+      <p>En contra: Vox.</p>
+      <p class="limit">El grupo en contra (Vox) lo nombra una fuente de prensa. No hemos abierto el fichero de votación nominal de la convalidación.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto-ley 3/2026, de 3 de febrero, para la revalorización de las pensiones públicas y otras medidas urgentes en materia de Seguridad Social. BOE núm. 31, de 4 de febrero de 2026. Contributivas 2,7 %; mínimas más del 7 % (11,4 % con cónyuge a cargo y viudedad con cargas familiares); no contributivas e IMV 11,4 %; SOVI 7,07 %. Más de 10,4 millones de pensiones contributivas y 736.800 de Clases Pasivas. Convalidado el 26 de febrero de 2026 (BOE-A-2026-4668) y tramitado como proyecto de ley por urgencia (349 a favor). El mismo día se derogó el Real Decreto-ley 2/2026, de vulnerabilidad social, sin medidas de pensiones en su título.</p>
+          <a class="src" href="https://www.boe.es/boe/dias/2026/02/28/pdfs/BOE-A-2026-4668.pdf" target="_blank" rel="noopener">Oficial: BOE-A-2026-4668 (convalidación), 28 feb 2026</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-170.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-15-PL-170, 26 feb 2026</a>
+          <a class="src" href="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/inclusion/Paginas/2026/260226-convalidacion-revalorizacion-pensiones.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, 26 feb 2026, 26 feb 2026</a>
+          <a class="src" href="https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion164/20260226/Votacion024/VOT_20260226153402.pdf" target="_blank" rel="noopener">Oficial: Congreso, votación de tramitación como proyecto de ley, 26 feb 2026</a>
+          <a class="src" href="https://www.diarimes.com/es/actualidad/260226/congreso-aprueba-aumento-2-7-pensiones-50-euros-mensuales_210681.html" target="_blank" rel="noopener">Diari Més, 26 feb 2026, 26 feb 2026</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>27 may 2026</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto 416/2026, jubilación flexible</h3>
+      <p class="plain">Regula cómo compatibilizar la pensión con un trabajo a tiempo parcial o por cuenta propia. La pensión se reduce según la jornada.</p>
+      
+      <p class="limit">Real decreto del Gobierno; no pasa por votación en el Congreso.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto 416/2026, de 27 de mayo, por el que se regula el régimen jurídico de la jubilación flexible y otros aspectos comunes a las modalidades de compatibilidad de la pensión contributiva de jubilación con el trabajo y se modifica el régimen de la jubilación demorada. BOE núm. 130, de 28 de mayo de 2026 (BOE-A-2026-11474). Desarrolla la disposición adicional segunda del Real Decreto-ley 11/2024. Jornada entre el 33 % y el 80 %; pensión reducida en proporción, con posible incremento del 15 % o 25 % si la actividad empieza al menos seis meses después de jubilarse; por cuenta propia, la pensión queda en el 25 %. Entra en vigor a los tres meses de su publicación.</p>
+          <a class="src" href="https://www.boe.es/boe/dias/2026/05/28/pdfs/BOE-A-2026-11474.pdf" target="_blank" rel="noopener">Oficial: BOE-A-2026-11474, 28 may 2026</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>29 jul 2026</time><span class="badge of">Oficial</span></div>
+      <h3>Ley 2/2026, pasarela de mutualistas al régimen de autónomos</h3>
+      <p class="plain">Los profesionales que cotizan en mutualidades (como abogados) pueden pasar lo ahorrado allí a la Seguridad Social y convertirlo en tiempo cotizado como autónomos. Quedan fuera quienes ya cobran una pensión, salvo la de viudedad.</p>
+      <p class="vote"><span class="lbl">23 jul 2026 · Aprobado · las fuentes no dan el recuento</span></p>
+      <p class="limit">Recuento de la votación final: el acta recoge votaciones separadas de las enmiendas del Senado (una de ellas, 348 a favor) y no una votación de conjunto. Recuento de la enmienda a la totalidad de Vox de junio de 2025.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Ley 2/2026, de 29 de julio, por la que se modifica el texto refundido de la Ley General de la Seguridad Social en relación con las mutualidades alternativas (disposiciones adicionales 18.ª y 19.ª). BOE núm. 186, de 31 de julio de 2026 (BOE-A-2026-16653); en vigor el 1 de agosto de 2026. Origen: proposición de ley del Grupo Socialista. Pasarela voluntaria: los derechos acumulados en la mutualidad se transfieren a la Tesorería y se convierten en periodos cotizados en el RETA (base mínima por un coeficiente de 0,67 a 0,87); la transferencia está exenta de tributos y el alta en el RETA es obligatoria e irreversible. El Gobierno debe aprobar el reglamento en tres meses. El 19 de junio de 2025 el Pleno rechazó una enmienda a la totalidad con texto alternativo de Vox (según prensa; sin recuento leído). El Pleno del Congreso aprobó el texto final el 23 de julio de 2026.</p>
+          <a class="src" href="https://www.boe.es/buscar/doc.php?id=BOE-A-2026-16653" target="_blank" rel="noopener">Oficial: BOE-A-2026-16653, 31 jul 2026</a>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20260723.pdf" target="_blank" rel="noopener">Oficial: Acta del Pleno del Congreso, 23 jul 2026, 23 jul 2026</a>
+          <a class="src" href="https://web.icam.es/el-boletin-oficial-del-estado-publica-la-aprobacion-definitiva-de-la-pasarela-al-reta/" target="_blank" rel="noopener">ICAM, publicación en el BOE, 31 jul 2026</a>
+          <a class="src" href="https://www.bolsamania.com/noticias/economia/economia--el-congreso-rechaza-la-propuesta-de-vox-para-no-obligar-a-los-colegiados-mutualistas-a-pasarse-al-reta--20059696.html" target="_blank" rel="noopener">Bolsamanía, 19 jun 2025, 19 jun 2025</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+  </section>
+
+  <section aria-labelledby="h-b">
+    <h2 id="h-b">Qué intentó y no salió<span class="count">3</span></h2>
+    <p class="lede">Solo se cuenta lo que pasó, sin juzgar a nadie. Los motivos de cada grupo se añadirán como cita literal del Diario de Sesiones.</p>
+    <article class="fact">
+      <div class="meta"><time>22 ene 2025</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 9/2024, decreto ómnibus con la revalorización de 2025</h3>
+      <p class="plain">El Congreso no convalida el decreto que subía las pensiones en 2025 junto con otras medidas. La subida de enero ya se había pagado; el Gobierno aprueba otro decreto.</p>
+      <div class="vote" role="img" aria-label="171 a favor, 177 en contra, 1 abstenciones"><span class="lbl">22 ene 2025 · Derogado: no se convalidó</span><div class="bar"><span class="y" style="width:49.00%">171 a favor</span><span class="n" style="width:50.72%">177 en contra</span><span class="a" style="width:0.29%"></span></div></div>
+      <p>En contra: Junts, PP, Vox.</p>
+      <p class="limit">Los grupos en contra solo los nombra una fuente de prensa.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto-ley 9/2024, de 23 de diciembre, por el que se adoptan medidas urgentes en materia económica, tributaria, de transporte, y de Seguridad Social, y se prorrogan determinadas medidas para hacer frente a situaciones de vulnerabilidad social. BOE núm. 309, de 24 de diciembre de 2024. Incluía la revalorización del 2,8 % de las pensiones contributivas. Derogado el 22 de enero de 2025 (Resolución publicada en el BOE núm. 20, de 23 de enero de 2025, BOE-A-2025-1136). La nómina de enero de 2025 ya incorporaba la subida.</p>
+          <a class="src" href="https://boe.es/boe/dias/2025/01/23/pdfs/BOE-A-2025-1136.pdf" target="_blank" rel="noopener">Oficial: BOE-A-2025-1136, 23 ene 2025</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-92.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-15-PL-92, 22 ene 2025</a>
+          <a class="src" href="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/inclusion/paginas/2025/280125-seguridad-social-pensiones-enero.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, nómina de enero de 2025, 28 ene 2025</a>
+          <a class="src" href="https://www.elsaltodiario.com/gobierno-coalicion/derecha-parlamentaria-tumba-decreto-escudo-social-legislatura-vuelve-zozobrar" target="_blank" rel="noopener">El Salto, 22 ene 2025, 22 ene 2025</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>27 ene 2026</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 16/2025, decreto ómnibus con la revalorización de 2026</h3>
+      <p class="plain">El Congreso no convalida el decreto que subía las pensiones en 2026 junto con otras medidas. El Gobierno aprueba otro decreto solo de pensiones.</p>
+      <div class="vote" role="img" aria-label="171 a favor, 178 en contra"><span class="lbl">27 ene 2026 · Derogado: no se convalidó</span><div class="bar"><span class="y" style="width:49.00%">171 a favor</span><span class="n" style="width:51.00%">178 en contra</span></div></div>
+      <p>En contra: Junts, PP, Vox.</p>
+      <p class="limit">El acta no da abstenciones. Los grupos en contra solo los nombra una fuente de prensa. No hemos leído la resolución de derogación en el BOE.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto-ley 16/2025, de 23 de diciembre, por el que se prorrogan determinadas medidas para hacer frente a situaciones de vulnerabilidad social, y se adoptan medidas urgentes en materia tributaria y de Seguridad Social (expediente 130/000030). Incluía la revalorización del 2,7 % de las contributivas, 7 % de las mínimas y 11,4 % de las no contributivas y el ingreso mínimo vital. Votos emitidos: 349. Derogado el 27 de enero de 2026. La nómina de enero de 2026 ya incorporaba la subida.</p>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20260127.pdf" target="_blank" rel="noopener">Oficial: Acta del Pleno del Congreso, 27 ene 2026, 27 ene 2026</a>
+          <a class="src" href="https://revista.seg-social.es/-/la-pension-media-del-sistema-de-seguridad-social-se-situa-en-1.363-4-euros-al-mes-en-enero-de-2026-un-4-5-mas-alta-que-hace-un-a%C3%B1o" target="_blank" rel="noopener">Oficial: Revista de la Seguridad Social, nómina de enero de 2026, 27 ene 2026</a>
+          <a class="src" href="https://www.eldiario.es/politica/pp-vox-junts-tumban-subida-pensiones-prorroga-escudo-social_1_12938910.amp.html" target="_blank" rel="noopener">elDiario.es, 27 ene 2026, 27 ene 2026</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>22 sep 2026</time><span class="badge of">Oficial</span></div>
+      <h3>Proposición de ley de jubilación sin penalización (toma en consideración)</h3>
+      <p class="plain">El Congreso admite a trámite quitar el recorte de la pensión a quien se jubila antes de tiempo con 40 años cotizados. No llegó a ser ley antes de la disolución de las Cortes.</p>
+      <div class="vote" role="img" aria-label="178 a favor, 33 en contra, 136 abstenciones"><span class="lbl">22 sep 2026 · Admitido a trámite</span><div class="bar"><span class="y" style="width:51.30%">178 a favor</span><span class="n" style="width:9.51%">33 en contra</span><span class="a" style="width:39.19%">136</span></div></div>
+      <p class="limit">Qué grupos votaron en contra y cuáles se abstuvieron en la toma en consideración.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Proposición de Ley de jubilación sin penalización, del Grupo Parlamentario Mixto (presentada por Podemos), expediente 122/000105, BOCG Serie B núm. 117-1, de 31 de mayo de 2024. Propone eliminar los coeficientes reductores de la jubilación anticipada con 40 años cotizados (arts. 207 y 208 LGSS) y permitir el recálculo de pensiones ya reconocidas. Tomada en consideración el 22 de septiembre de 2026: 347 votos emitidos, 178 a favor, 33 en contra, 136 abstenciones. Antes, el 11 de junio de 2026, una enmienda de Podemos con el mismo fin a otra ley fue rechazada con votos en contra de PP y PSOE (según prensa). Las Cortes se disolvieron el 6 de octubre de 2026.</p>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-117-1.PDF" target="_blank" rel="noopener">Oficial: BOCG-15-B-117-1, 31 may 2024</a>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20260922.pdf" target="_blank" rel="noopener">Oficial: Acta del Pleno del Congreso, 22 sep 2026, 22 sep 2026</a>
+          <a class="src" href="https://www.que.es/2026/06/12/pp-psoe-tumban-reforma-jubilacion-anticipada/" target="_blank" rel="noopener">Qué!, 12 jun 2026, 12 jun 2026</a>
+        </div>
+      </details>
+    </article>
+  </section>
+
+  <section aria-labelledby="h-c">
+    <h2 id="h-c">Qué dicen las cifras oficiales</h2>
+    <p class="lede">Se enseñan para ver la escala, no para repartir culpas.</p>
+    <div class="chart">
+      <h3>Revalorización general de las pensiones contributivas (%)</h3>
+      <div id="c1"></div>
+      <p class="cap">Subida general aprobada para cada año. Las mínimas y no contributivas suben más algunos años. 2018: se aplicó un 1,6 % y después se completó hasta el 1,7 % con una paga única (RDL de 28 dic 2018). 2020: se aplicó en la nómina de febrero (RDL 1/2020). Desde 2022, según la Ley 21/2021 (IPC medio).</p>
+      <details>
+        <summary>Fuentes</summary>
+        <div class="in">
+          <a class="src" href="https://www.lamoncloa.gob.es/consejodeministros/paginas/enlaces/281218-enlacepensiones.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, Consejo de Ministros 28 dic 2018 (2018 y 2019), 28 dic 2018</a>
+          <a class="src" href="https://www.inclusion.gob.es/w/la-nomina-de-pensiones-contributivas-se-situa-en-9.872-3-millones-de-euros-en-febrero" target="_blank" rel="noopener">Oficial: Ministerio de Inclusión, nómina de febrero de 2020, 25 feb 2020</a>
+          <a class="src" href="https://revista.seg-social.es/2021/01/26/la-nomina-de-las-pensiones-contributivas-de-enero-se-situa-en-10-08770-millones-de-euros/" target="_blank" rel="noopener">Oficial: Revista de la Seguridad Social, nómina de enero de 2021, 26 ene 2021</a>
+          <a class="src" href="https://revista.seg-social.es/-/nomina-pensiones-enero-2022" target="_blank" rel="noopener">Oficial: Revista de la Seguridad Social, nómina de enero de 2022, 25 ene 2022</a>
+          <a class="src" href="https://revista.seg-social.es/-/20230124-pensiones" target="_blank" rel="noopener">Oficial: Revista de la Seguridad Social, nómina de enero de 2023, 24 ene 2023</a>
+          <a class="src" href="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/inclusion/Paginas/2023/141223-subida-pensiones-contributivas-2024.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, 14 dic 2023, 14 dic 2023</a>
+          <a class="src" href="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/inclusion/Paginas/2024/subida-pensiones-2025.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, subida de las pensiones 2025, 28 ene 2025</a>
+          <a class="src" href="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/inclusion/Paginas/2026/260226-convalidacion-revalorizacion-pensiones.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, 26 feb 2026, 26 feb 2026</a>
+        </div>
+      </details>
+    </div>
+    <div class="chart">
+      <h3>Pensión media de jubilación, euros al mes</h3>
+      <div id="c2"></div>
+      <p class="cap">Nómina de pensiones contributivas de enero de cada año, conjunto del sistema. Euros corrientes, sin descontar la inflación. La nómina de enero de 2020 no incluía aún la revalorización de ese año (se aplicó en febrero). Las de 2023 a 2026 sí la incluían. 2025 se publicó redondeado (1.498).</p>
+      <details>
+        <summary>Fuentes</summary>
+        <div class="in">
+          <a class="src" href="https://revista.seg-social.es/2018/01/26/la-nomina-de-pensiones-supera-los-8-905-millones" target="_blank" rel="noopener">Oficial: Revista de la Seguridad Social, nómina de enero de 2018, 26 ene 2018</a>
+          <a class="src" href="https://revista.seg-social.es/2019/01/25/la-nomina-de-pensiones-contributivas-asciende-a-9-53552-millones-de-euros-en-enero" target="_blank" rel="noopener">Oficial: Revista de la Seguridad Social, nómina de enero de 2019, 25 ene 2019</a>
+          <a class="src" href="https://lamoncloa.gob.es/serviciosdeprensa/notasprensa/inclusion/Documents/2020/280120-Datos pensiones Enero 2020.pdf" target="_blank" rel="noopener">Oficial: La Moncloa, datos de pensiones de enero de 2020 (PDF), 28 ene 2020</a>
+          <a class="src" href="https://revista.seg-social.es/2021/01/26/la-nomina-de-las-pensiones-contributivas-de-enero-se-situa-en-10-08770-millones-de-euros/" target="_blank" rel="noopener">Oficial: Revista de la Seguridad Social, nómina de enero de 2021, 26 ene 2021</a>
+          <a class="src" href="https://revista.seg-social.es/-/nomina-pensiones-enero-2022" target="_blank" rel="noopener">Oficial: Revista de la Seguridad Social, nómina de enero de 2022, 25 ene 2022</a>
+          <a class="src" href="https://revista.seg-social.es/-/20230124-pensiones" target="_blank" rel="noopener">Oficial: Revista de la Seguridad Social, nómina de enero de 2023, 24 ene 2023</a>
+          <a class="src" href="https://revista.seg-social.es/-/gasto-en-pensiones-enero-2024" target="_blank" rel="noopener">Oficial: Revista de la Seguridad Social, nómina de enero de 2024, 26 ene 2024</a>
+          <a class="src" href="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/inclusion/paginas/2025/280125-seguridad-social-pensiones-enero.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, nómina de enero de 2025, 28 ene 2025</a>
+          <a class="src" href="https://revista.seg-social.es/-/la-pension-media-del-sistema-de-seguridad-social-se-situa-en-1.363-4-euros-al-mes-en-enero-de-2026-un-4-5-mas-alta-que-hace-un-a%C3%B1o" target="_blank" rel="noopener">Oficial: Revista de la Seguridad Social, nómina de enero de 2026, 27 ene 2026</a>
+        </div>
+      </details>
+    </div>
+    <div class="chart">
+      <h3>Número de pensiones contributivas, millones</h3>
+      <div id="c3"></div>
+      <p class="cap">Pensiones contributivas abonadas en la nómina de enero de cada año. Cuenta pensiones, no personas: una persona puede cobrar más de una (en enero de 2026, 10,45 millones de pensiones para más de 9,4 millones de personas). No incluye no contributivas ni Clases Pasivas.</p>
+      <details>
+        <summary>Fuentes</summary>
+        <div class="in">
+          <a class="src" href="https://revista.seg-social.es/2018/01/26/la-nomina-de-pensiones-supera-los-8-905-millones" target="_blank" rel="noopener">Oficial: Revista de la Seguridad Social, enero de 2018: 9.572.422, 26 ene 2018</a>
+          <a class="src" href="https://revista.seg-social.es/2019/01/25/la-nomina-de-pensiones-contributivas-asciende-a-9-53552-millones-de-euros-en-enero" target="_blank" rel="noopener">Oficial: Revista de la Seguridad Social, enero de 2019: 9.695.870, 25 ene 2019</a>
+          <a class="src" href="https://lamoncloa.gob.es/serviciosdeprensa/notasprensa/inclusion/Documents/2020/280120-Datos pensiones Enero 2020.pdf" target="_blank" rel="noopener">Oficial: La Moncloa, enero de 2020: 9.801.016, 28 ene 2020</a>
+          <a class="src" href="https://revista.seg-social.es/2021/01/26/la-nomina-de-las-pensiones-contributivas-de-enero-se-situa-en-10-08770-millones-de-euros/" target="_blank" rel="noopener">Oficial: Revista de la Seguridad Social, enero de 2021: 9.811.124, 26 ene 2021</a>
+          <a class="src" href="https://revista.seg-social.es/-/nomina-pensiones-enero-2022" target="_blank" rel="noopener">Oficial: Revista de la Seguridad Social, enero de 2022: 9.922.051, 25 ene 2022</a>
+          <a class="src" href="https://revista.seg-social.es/-/20230124-pensiones" target="_blank" rel="noopener">Oficial: Revista de la Seguridad Social, enero de 2023: 10.009.149, 24 ene 2023</a>
+          <a class="src" href="https://revista.seg-social.es/-/gasto-en-pensiones-enero-2024" target="_blank" rel="noopener">Oficial: Revista de la Seguridad Social, enero de 2024: 10.132.479, 26 ene 2024</a>
+          <a class="src" href="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/inclusion/paginas/2025/280125-seguridad-social-pensiones-enero.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, enero de 2025: 10.294.786, 28 ene 2025</a>
+          <a class="src" href="https://revista.seg-social.es/-/la-pension-media-del-sistema-de-seguridad-social-se-situa-en-1.363-4-euros-al-mes-en-enero-de-2026-un-4-5-mas-alta-que-hace-un-a%C3%B1o" target="_blank" rel="noopener">Oficial: Revista de la Seguridad Social, enero de 2026: 10.452.674, 27 ene 2026</a>
+        </div>
+      </details>
+    </div>
+    <div class="limit"><p>Qué no dicen estas cifras: qué las causó ni qué parte corresponde al Estado, a las comunidades o a los ayuntamientos.</p><ul class="nolist"><li>Grupos en contra y abstenciones: en varias votaciones solo los da una fuente de prensa; en otras (RDL 28/2018, RDL 1/2020, Ley 19/2021, Ley 12/2022, toma en consideración de 2026) no los hemos leído.</li><li>Qué grupos votaron en contra en el RDL 11/2024 y qué grupos se abstuvieron en el RDL 20/2020.</li><li>Abstenciones en la derogación del RDL 16/2025 y en la convalidación del RDL 3/2026: las fuentes oficiales leídas no las dan.</li><li>Recuento de la votación final de la Ley 2/2026 (mutualistas): el acta da votaciones separadas de enmiendas del Senado.</li><li>Ley 3/2019 (orfandad): no hemos encontrado votación en el Pleno del Congreso.</li><li>Porcentaje del Mecanismo de Equidad Intergeneracional en 2023 (Ley 21/2021 fijaba un tipo que el RDL 2/2023 derogó); no lo hemos leído en el BOE.</li><li>Si la nómina de enero de 2018 y de 2019 incluía ya la revalorización de ese año: las fuentes no lo dicen.</li><li>No se incluyen como hechos separados normas en las que las pensiones no son el tema principal (por ejemplo, RDL 28/2020 y 30/2020, que tocaron el ingreso mínimo vital) ni reglamentos como el Real Decreto 240/2026 sobre el incentivo al empleo del ingreso mínimo vital.</li><li>No se ha revisado el registro completo de votaciones del Congreso; puede haber otras tomas en consideración o enmiendas a la totalidad sobre pensiones que no constan.</li></ul></div>
+  </section>
+
+  <footer class="foot">
+    <p><b>Estado de la verificación.</b> Todas las normas, fechas e indicadores salen de fuente oficial (BOE, Diario de Sesiones o actas del Congreso, La Moncloa, Ministerio de Inclusión, Revista de la Seguridad Social). Los recuentos de votos salen del Diario de Sesiones, las actas o los ficheros de votaciones del Congreso; el de la ley de mutualistas de 2026 no consta. Los grupos que votaron en contra salen de prensa: en la Ley 21/2021 de dos fuentes; en el resto, de una sola. Consulta: 11 de noviembre de 2026. Que Pedro Sánchez preside el Gobierno desde junio de 2018 es de dominio público.</p>
+    <p>Última revisión: 11 de noviembre de 2026. ¿Un dato está mal? <a href="metodologia.html#correcciones">Dínoslo</a>. Cómo se ha hecho: <a href="metodologia.html">metodología</a>.</p>
+  </footer>
+</main>
+
+<script>
+(function(){
+  var SPECS=[{"id": "c1", "u": "%", "dec": 1, "t": "Revalorización general de las pensiones contributivas (%)", "s": [{"l": "2018", "v": 1.6, "c": false}, {"l": "2019", "v": 1.6, "c": false}, {"l": "2020", "v": 0.9, "c": false}, {"l": "2021", "v": 0.9, "c": false}, {"l": "2022", "v": 2.5, "c": false}, {"l": "2023", "v": 8.5, "c": false}, {"l": "2024", "v": 3.8, "c": false}, {"l": "2025", "v": 2.8, "c": false}, {"l": "2026", "v": 2.7, "c": false}]}, {"id": "c2", "u": "€", "dec": 2, "t": "Pensión media de jubilación, euros al mes", "s": [{"l": "2018", "v": 1074.83, "c": false}, {"l": "2019", "v": 1129.66, "c": false}, {"l": "2020", "v": 1144.61, "c": false}, {"l": "2021", "v": 1182.07, "c": false}, {"l": "2022", "v": 1245.9, "c": false}, {"l": "2023", "v": 1368.3, "c": false}, {"l": "2024", "v": 1434.9, "c": false}, {"l": "2025", "v": 1498, "c": false}, {"l": "2026", "v": 1563.6, "c": false}]}, {"id": "c3", "u": "millones", "dec": 2, "t": "Número de pensiones contributivas, millones", "s": [{"l": "2018", "v": 9.57, "c": false}, {"l": "2019", "v": 9.7, "c": false}, {"l": "2020", "v": 9.8, "c": false}, {"l": "2021", "v": 9.81, "c": false}, {"l": "2022", "v": 9.92, "c": false}, {"l": "2023", "v": 10.01, "c": false}, {"l": "2024", "v": 10.13, "c": false}, {"l": "2025", "v": 10.29, "c": false}, {"l": "2026", "v": 10.45, "c": false}]}];
+  function num(v,dec){var s=Math.abs(v).toFixed(dec).split('.');s[0]=s[0].replace(/\B(?=(\d{3})+(?!\d))/g,'.');return (v<0?'−':'')+s.join(',')}
+  function fmt(v,u,dec){var n=num(v,dec);if(!u)return n;return u==='%'?n+' %':n+' '+u}
+  SPECS.forEach(function(sp){
+    var vals=sp.s.filter(function(d){return d.v!=null}).map(function(d){return d.v});
+    var mn=Math.min(0,Math.min.apply(null,vals)), mx=Math.max(0,Math.max.apply(null,vals));
+    var W=360,LB=58,VL=86,RH=25,BH=15,pw=W-LB-VL-(mn<0?VL*0.6:0),H=sp.s.length*RH+2;
+    var span=(mx-mn)||1, x0=LB+(mn<0?VL*0.6:0)+(-mn/span)*pw;
+    var s='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+sp.t+': '+sp.s.map(function(d){return d.l+' '+(d.v==null?'sin dato':fmt(d.v,sp.u,sp.dec))}).join(', ')+'">';
+    sp.s.forEach(function(d,i){
+      var y=i*RH+2;
+      s+='<text x="0" y="'+(y+12)+'" font-size="12" font-family="IBM Plex Mono, monospace" fill="var(--ink-2)">'+d.l+'</text>';
+      if(d.v==null){s+='<text x="'+(x0+4)+'" y="'+(y+12)+'" font-size="12" font-style="italic" font-family="Source Sans 3, system-ui, sans-serif" fill="var(--ink-2)">sin dato</text>';return}
+      var w=Math.max(2,Math.abs(d.v)/span*pw), x=d.v<0?x0-w:x0;
+      s+='<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+BH+'" fill="'+(d.c?'var(--alt)':'var(--accent)')+'" rx="2"/>';
+      var tx=d.v<0?x-6:x+w+6, an=d.v<0?'end':'start';
+      s+='<text x="'+tx+'" y="'+(y+12)+'" text-anchor="'+an+'" font-size="12" font-weight="600" font-family="IBM Plex Mono, monospace" fill="var(--ink)">'+fmt(d.v,sp.u,sp.dec)+'</text>';
+    });
+    s+='<line x1="'+x0+'" x2="'+x0+'" y1="0" y2="'+H+'" stroke="var(--ink-2)" stroke-width="1"/></svg>';
+    document.getElementById(sp.id).innerHTML=s;
+  });
+})();
+</script>

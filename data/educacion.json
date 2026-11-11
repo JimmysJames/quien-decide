@@ -1,0 +1,858 @@
+{
+  "tema": "educacion",
+  "nombre": "Educación",
+  "titulo": "Educación: qué ha hecho el Estado",
+  "aviso_competencia": "Los colegios, institutos y universidades públicas los gestionan las comunidades autónomas, con su profesorado y parte del currículo. Esta ficha solo recoge lo que ha hecho el Estado.",
+  "resumen": {
+    "aprobado": "Ley que revierte los recortes de 2012 en ratios y horas lectivas (2019); nueva ley de educación, LOMLOE (2020), y sus currículos mínimos (2022); ley de FP (2022); ley de universidades, LOSU (2023); y cada curso, un real decreto con los umbrales de las becas.",
+    "no_salio": "La ley para bajar las ratios por aula y las horas de clase del profesorado superó el debate de totalidad en junio de 2026, pero decayó con la disolución de las Cortes. En septiembre de 2025 el Congreso rechazó, por 177 votos contra 170, tramitar una ley del PP sobre alumnado con necesidades educativas especiales.",
+    "cifras": "El abandono temprano de la educación bajó del 17,9 % en 2018 al 12,8 % en 2025. El presupuesto de becas del Ministerio pasó de 1.462 millones de euros en el curso 2018-2019 a 2.559 millones en el 2026-2027.",
+    "no_sabe": "No consta una norma estatal de gratuidad de 0 a 3 años; la propuesta admitida a trámite en 2021 no llegó a ley. Algunos recuentos y votos por grupo salen solo de la prensa."
+  },
+  "hechos": [
+    {
+      "id": "edu-becas-umbrales-cursos",
+      "tipo": "aprobado",
+      "fecha": "2018-07-27",
+      "titulo": "Reales decretos de umbrales y cuantías de becas, cursos 2018-2019 a 2026-2027",
+      "frase_llana": "Cada curso, un real decreto fija cuánto puede ganar una familia para tener beca del Ministerio. El umbral más bajo para una familia de tres pasó de 10.606 € en 2018-2019 a 17.685 € desde 2024-2025.",
+      "detalle": "Umbral 1 de renta (convocatoria general, enseñanzas postobligatorias), familia de 3 y de 4 miembros, extremo inferior y superior del intervalo. 2018-2019: Real Decreto 951/2018, de 27 de julio (BOE núm. 185, de 1 de agosto de 2018): 10.606-11.143 € y 13.909-14.613 €. 2019-2020: Real Decreto 430/2019, de 12 de julio (BOE núm. 167, de 13 de julio de 2019): mismos importes. 2020-2021: Real Decreto 688/2020, de 21 de julio (BOE núm. 199, de 22 de julio de 2020): 16.843-17.742 € y 21.054-22.177 €. 2021-2022: Real Decreto 471/2021, de 29 de junio (BOE núm. 155, de 30 de junio de 2021): mismos importes. 2022-2023: Real Decreto 154/2022, de 22 de febrero (hecho propio en esta ficha): mismos importes. 2023-2024: Real Decreto 117/2023, de 21 de febrero (BOE núm. 45, de 22 de febrero de 2023): mismos importes. 2024-2025: Real Decreto 201/2024, de 27 de febrero (BOE núm. 52, de 28 de febrero de 2024): 17.685-18.629 € y 22.107-23.286 €. 2025-2026: Real Decreto 163/2025, de 4 de marzo (BOE núm. 55, de 5 de marzo de 2025): mismos importes. 2026-2027: Real Decreto 179/2026, de 11 de marzo (BOE núm. 63, de 12 de marzo de 2026): mismos importes. Dentro del intervalo, la beca se reparte al 50 % entre el Ministerio y la comunidad convocante.",
+      "votacion": null,
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2018-10941 (RD 951/2018)",
+          "url": "https://www.boe.es/eli/es/rd/2018/07/27/951",
+          "tipo": "oficial",
+          "fecha": "2018-08-01"
+        },
+        {
+          "nombre": "BOE-A-2019-10359 (RD 430/2019)",
+          "url": "https://www.boe.es/eli/es/rd/2019/07/12/430",
+          "tipo": "oficial",
+          "fecha": "2019-07-13"
+        },
+        {
+          "nombre": "BOE-A-2020-8297 (RD 688/2020)",
+          "url": "https://www.boe.es/eli/es/rd/2020/07/21/688",
+          "tipo": "oficial",
+          "fecha": "2020-07-22"
+        },
+        {
+          "nombre": "BOE-A-2021-10823 (RD 471/2021)",
+          "url": "https://www.boe.es/eli/es/rd/2021/06/29/471",
+          "tipo": "oficial",
+          "fecha": "2021-06-30"
+        },
+        {
+          "nombre": "BOE-A-2023-4652 (RD 117/2023)",
+          "url": "https://www.boe.es/eli/es/rd/2023/02/21/117",
+          "tipo": "oficial",
+          "fecha": "2023-02-22"
+        },
+        {
+          "nombre": "BOE-A-2024-3787 (RD 201/2024)",
+          "url": "https://www.boe.es/eli/es/rd/2024/02/27/201",
+          "tipo": "oficial",
+          "fecha": "2024-02-28"
+        },
+        {
+          "nombre": "BOE-A-2025-4320 (RD 163/2025)",
+          "url": "https://www.boe.es/eli/es/rd/2025/03/04/163",
+          "tipo": "oficial",
+          "fecha": "2025-03-05"
+        },
+        {
+          "nombre": "BOE-A-2026-5713 (RD 179/2026), texto consolidado",
+          "url": "https://boe.es/buscar/pdf/2026/BOE-A-2026-5713-consolidado.pdf",
+          "tipo": "oficial",
+          "fecha": "2026-03-12"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "Solo se recoge el umbral 1; no las cuantías de cada curso ni los umbrales 2 y 3."
+    },
+    {
+      "id": "edu-2019-ley-4-docencia",
+      "tipo": "aprobado",
+      "fecha": "2019-03-07",
+      "titulo": "Ley 4/2019, de mejora de las condiciones de la docencia (ratios y horas lectivas)",
+      "frase_llana": "Quita la posibilidad de subir un 20 % el número de alumnos por aula y el mínimo de horas de clase del profesorado que fijó un decreto de 2012. Las sustituciones de profesores dejan de esperar diez días.",
+      "detalle": "Ley 4/2019, de 7 de marzo, de mejora de las condiciones para el desempeño de la docencia y la enseñanza en el ámbito de la educación no universitaria. BOE núm. 58, de 8 de marzo de 2019. Deroga los artículos 2, 3 y 4 del Real Decreto-ley 14/2012. Recomienda como máximo 23 horas lectivas semanales en infantil, primaria y educación especial y 18 en el resto, y quita el mínimo de 25 y 20 horas. Las comunidades deben poner los recursos para no superar las ratios máximas de la LOE. Elimina la espera de diez días lectivos para nombrar un interino de sustitución. Ratios y jornada, desde el curso 2019-2020. Proyecto del Gobierno aprobado por el Consejo de Ministros el 14 de septiembre de 2018. El Congreso lo aprobó el 13 de diciembre de 2018 y votó las enmiendas del Senado el 21 de febrero de 2019; según La Moncloa, con el apoyo de todos los grupos salvo PP y Ciudadanos.",
+      "votacion": {
+        "fecha": "2019-02-21",
+        "a_favor": null,
+        "en_contra": null,
+        "abstenciones": null,
+        "grupos_en_contra": [],
+        "resultado": "aprobado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2019-3307",
+          "url": "https://www.boe.es/eli/es/l/2019/03/07/4",
+          "tipo": "oficial",
+          "fecha": "2019-03-08"
+        },
+        {
+          "nombre": "La Moncloa, nota de 21-02-2019",
+          "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/educacion/Paginas/2019/210219-educacion.aspx",
+          "tipo": "oficial",
+          "fecha": "2019-02-21"
+        },
+        {
+          "nombre": "La Moncloa, nota de 13-12-2018",
+          "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/educacion/Paginas/2018/131218-educacion.aspx",
+          "tipo": "oficial",
+          "fecha": "2018-12-13"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No consta el recuento de votos en el Congreso ni qué votó cada grupo; la nota oficial solo dice que PP y Ciudadanos no apoyaron la ley."
+    },
+    {
+      "id": "edu-2019-plan-estrategico-fp",
+      "tipo": "aprobado",
+      "fecha": "2019-11-22",
+      "titulo": "I Plan Estratégico de Formación Profesional del Sistema Educativo 2019-2022",
+      "frase_llana": "Plan del Gobierno para renovar los títulos de FP, ordenar la oferta por territorios y abrir la FP a distancia, entre otras medidas.",
+      "detalle": "Acuerdo del Consejo de Ministros de 22 de noviembre de 2019. Cinco ejes. Renueva el catálogo de títulos (digitalización, industria 4.0, transición ecológica); crea un mapa de la FP para ajustar la oferta a cada territorio y sector; abre FP modular a distancia a través del CIDEAD; extiende las Aulas Mentor a 3.000 núcleos rurales; y crea un procedimiento para acreditar competencias básicas de adultos. La nota no da presupuesto.",
+      "votacion": null,
+      "fuentes": [
+        {
+          "nombre": "La Moncloa, Consejo de Ministros 22-11-2019",
+          "url": "https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/221119-fp.aspx",
+          "tipo": "oficial",
+          "fecha": "2019-11-22"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No consta el presupuesto ni el grado de ejecución del plan."
+    },
+    {
+      "id": "edu-2020-rdl-31",
+      "tipo": "aprobado",
+      "fecha": "2020-09-29",
+      "titulo": "Real Decreto-ley 31/2020, medidas urgentes en educación no universitaria (pandemia)",
+      "frase_llana": "Durante la pandemia, permite cambiar los criterios para pasar de curso y titular, suprime las evaluaciones finales de primaria y ESO, y deja contratar profesorado interino sin el máster si faltan candidatos.",
+      "detalle": "Real Decreto-ley 31/2020, de 29 de septiembre, por el que se adoptan medidas urgentes en el ámbito de la educación no universitaria. BOE núm. 259, de 30 de septiembre de 2020. Las medidas duran mientras las autoridades no den por terminadas las circunstancias de la pandemia. Permite nombrar interinos sin el máster de formación pedagógica cuando se agoten las listas; los estándares de aprendizaje pasan a ser orientativos; las administraciones pueden modificar criterios de evaluación, promoción y titulación; se suprimen las evaluaciones finales de etapa de primaria y ESO; cuentan como lectivos los días con atención presencial o a distancia; en FP se puede reducir o sustituir la formación en empresas. Convalidado el 15 de octubre de 2020 (Resolución publicada como BOE-A-2020-12692). En la misma sesión se rechazó tramitarlo como proyecto de ley: 157 a favor, 176 en contra y 15 abstenciones.",
+      "votacion": {
+        "fecha": "2020-10-15",
+        "a_favor": 187,
+        "en_contra": 154,
+        "abstenciones": 7,
+        "grupos_en_contra": [],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2020-11417",
+          "url": "https://www.boe.es/eli/es/rdl/2020/09/29/31",
+          "tipo": "oficial",
+          "fecha": "2020-09-30"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, Pleno núm. 50 (DSCD-14-PL-53)",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-53.PDF",
+          "tipo": "oficial",
+          "fecha": "2020-10-15"
+        },
+        {
+          "nombre": "La Moncloa, nota de 15-10-2020",
+          "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/educacion/paginas/2020/15102020_educac-on.aspx",
+          "tipo": "oficial",
+          "fecha": "2020-10-15"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No consta qué votó cada grupo."
+    },
+    {
+      "id": "edu-2020-lomloe",
+      "tipo": "aprobado",
+      "fecha": "2020-12-29",
+      "titulo": "Ley Orgánica 3/2020, LOMLOE (reforma de la ley de educación)",
+      "frase_llana": "Cambia la ley de educación de 2006 y deja atrás buena parte de la de 2013. Repetir curso pasa a ser excepcional y vuelven la diversificación curricular y la FP de grado básico.",
+      "detalle": "Ley Orgánica 3/2020, de 29 de diciembre, por la que se modifica la Ley Orgánica 2/2006, de Educación. BOE núm. 340, de 30 de diciembre de 2020. En primaria la repetición es excepcional y solo una vez en la etapa; en la ESO, como máximo dos veces en la etapa obligatoria. El Gobierno fija las enseñanzas mínimas: 50 % del horario en comunidades con lengua cooficial y 60 % en las demás. Añade Educación en Valores cívicos y éticos, evaluaciones de diagnóstico en 4.º de primaria y 2.º de ESO, y permite obtener el título de Bachillerato con una materia suspensa en ciertas condiciones. Votación de conjunto en el Congreso el 19 de noviembre de 2020: 177 a favor, 148 en contra y 17 abstenciones, con voto presencial y telemático (Diario de Sesiones). El Senado la aprobó sin cambios el 23 de diciembre de 2020 con 142 votos a favor, 112 en contra y 9 abstenciones (una sola fuente de prensa). El 17 de junio de 2020 el Congreso había rechazado tres enmiendas a la totalidad de PP, Vox y Ciudadanos.",
+      "votacion": {
+        "fecha": "2020-11-19",
+        "a_favor": 177,
+        "en_contra": 148,
+        "abstenciones": 17,
+        "grupos_en_contra": [
+          "Ciudadanos",
+          "Coalición Canaria",
+          "PP",
+          "PRC",
+          "UPN",
+          "Vox"
+        ],
+        "resultado": "aprobado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2020-17264",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2020-17264",
+          "tipo": "oficial",
+          "fecha": "2020-12-30"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, Pleno núm. 61 (DSCD-14-PL-64)",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-64.PDF",
+          "tipo": "oficial",
+          "fecha": "2020-11-19"
+        },
+        {
+          "nombre": "El Independiente",
+          "url": "https://www.elindependiente.com/espana/2020/11/19/el-congreso-aprueba-la-ley-celaa-con-el-apoyo-de-erc-y-pnv-y-el-rechazo-de-toda-la-oposicion/amp/",
+          "tipo": "prensa",
+          "fecha": "2020-11-19"
+        },
+        {
+          "nombre": "The Objective",
+          "url": "https://theobjective.com/espana/2020-11-19/el-pleno-del-congreso-aprueba-la-ley-celaa/",
+          "tipo": "prensa",
+          "fecha": "2020-11-19"
+        },
+        {
+          "nombre": "EWTN News / ACI Prensa (votación del Senado)",
+          "url": "https://www.ewtnnews.com/es/mundo/espana/senado-de-espana-aprueba-polemica-ley-de-educacion-conocida-como-ley-celaa",
+          "tipo": "prensa",
+          "fecha": "2020-12-23"
+        },
+        {
+          "nombre": "Moncloa.com (enmiendas a la totalidad)",
+          "url": "https://www.moncloa.com/2020/06/17/congreso-rechaza-devolver-ley-celaa-217361/",
+          "tipo": "prensa",
+          "fecha": "2020-06-17"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "Recuento del Congreso cotejado con el Diario de Sesiones; la lista de grupos en contra sale de dos medios, que no coinciden del todo (aquí solo van los que citan ambos). El recuento del Senado sale de un solo medio. No consta el recuento de las enmiendas a la totalidad."
+    },
+    {
+      "id": "edu-2021-pl-gratuidad-0-3",
+      "tipo": "votado",
+      "fecha": "2021-12-14",
+      "titulo": "Proposición de ley del Parlamento de Andalucía sobre gratuidad de 0 a 3 años, admitida a trámite",
+      "frase_llana": "El Congreso aceptó estudiar una propuesta del Parlamento de Andalucía para que la educación de 0 a 3 años sea gratuita y universal. No consta que llegara a ser ley.",
+      "detalle": "Proposición de Ley relativa al reconocimiento de la gratuidad y universalidad del primer ciclo de la educación infantil, presentada por el Parlamento de Andalucía (BOCG, Congreso, serie B, núm. 180-1, de 30 de agosto de 2021). Toma en consideración en el Pleno del 14 de diciembre de 2021: 310 votos a favor y 27 abstenciones; el Diario de Sesiones no recoge votos en contra. La Mesa la envió a la Comisión de Educación y Formación Profesional con competencia legislativa plena y abrió plazo de enmiendas hasta el 14 de febrero de 2022. Según la prensa, se abstuvieron Más País-Equo, PNV y ERC.",
+      "votacion": {
+        "fecha": "2021-12-14",
+        "a_favor": 310,
+        "en_contra": 0,
+        "abstenciones": 27,
+        "grupos_en_contra": [],
+        "resultado": "tomado_en_consideracion"
+      },
+      "fuentes": [
+        {
+          "nombre": "Diario de Sesiones del Congreso, Pleno núm. 139 (DSCD-14-PL-145)",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-145.PDF",
+          "tipo": "oficial",
+          "fecha": "2021-12-14"
+        },
+        {
+          "nombre": "BOCG-14-B-180-3",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/BOCG/B/BOCG-14-B-180-3.PDF",
+          "tipo": "oficial",
+          "fecha": "2021-12-27"
+        },
+        {
+          "nombre": "Moncloa.com",
+          "url": "https://www.moncloa.com/2021/12/14/congreso-lomloe-gratuidad-educacion-infantil-1144284/",
+          "tipo": "prensa",
+          "fecha": "2021-12-14"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No se ha localizado el final de la tramitación; no consta ninguna ley aprobada con ese contenido, y lo previsible es que decayera con la disolución de 2023, pero no se ha cotejado con el expediente."
+    },
+    {
+      "id": "edu-2022-ensenanzas-minimas",
+      "tipo": "aprobado",
+      "fecha": "2022-02-01",
+      "titulo": "Reales decretos de enseñanzas mínimas de la LOMLOE (infantil, primaria, ESO y Bachillerato)",
+      "frase_llana": "El Gobierno fija la parte común del currículo en toda España para infantil, primaria, ESO y Bachillerato. Cada comunidad completa el resto.",
+      "detalle": "Real Decreto 95/2022, de 1 de febrero, ordenación y enseñanzas mínimas de la Educación Infantil (BOE núm. 28, de 2 de febrero de 2022, BOE-A-2022-1654). Real Decreto 157/2022, de 1 de marzo, de la Educación Primaria (BOE núm. 52, de 2 de marzo de 2022, BOE-A-2022-3296). Real Decreto 217/2022, de 29 de marzo, de la Educación Secundaria Obligatoria (BOE núm. 76, de 30 de marzo de 2022, BOE-A-2022-4975). Real Decreto 243/2022, de 5 de abril, del Bachillerato (BOE núm. 82, de 6 de abril de 2022, BOE-A-2022-5521). Desarrollan la LOMLOE, que reserva al Estado el 50 % del horario en comunidades con lengua cooficial y el 60 % en las demás.",
+      "votacion": null,
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2022-1654 (RD 95/2022)",
+          "url": "https://www.boe.es/eli/es/rd/2022/02/01/95",
+          "tipo": "oficial",
+          "fecha": "2022-02-02"
+        },
+        {
+          "nombre": "BOE-A-2022-3296 (RD 157/2022)",
+          "url": "https://www.boe.es/eli/es/rd/2022/03/01/157",
+          "tipo": "oficial",
+          "fecha": "2022-03-02"
+        },
+        {
+          "nombre": "BOE-A-2022-4975 (RD 217/2022)",
+          "url": "https://www.boe.es/eli/es/rd/2022/03/29/217",
+          "tipo": "oficial",
+          "fecha": "2022-03-30"
+        },
+        {
+          "nombre": "BOE-A-2022-5521 (RD 243/2022)",
+          "url": "https://www.boe.es/eli/es/rd/2022/04/05/243",
+          "tipo": "oficial",
+          "fecha": "2022-04-06"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No se resume el contenido de cada currículo. No se incluyen otros reales decretos de desarrollo de la LOMLOE (evaluación, títulos de FP, acceso a la universidad)."
+    },
+    {
+      "id": "edu-2022-becas-umbrales",
+      "tipo": "aprobado",
+      "fecha": "2022-02-22",
+      "titulo": "Real Decreto 154/2022, umbrales y cuantías de las becas del curso 2022-2023",
+      "frase_llana": "Fija cuánto puede ganar una familia para tener beca del Ministerio y cuánto se cobra en el curso 2022-2023. Cada curso se aprueba un real decreto parecido.",
+      "detalle": "Real Decreto 154/2022, de 22 de febrero, que establece los umbrales de renta y patrimonio familiar y las cuantías de las becas para el curso 2022-2023 y modifica parcialmente el Real Decreto 1721/2007. BOE núm. 46, de 23 de febrero de 2022. Umbral 1 de renta (intervalo): 8.422-8.871 € para 1 miembro, 12.632-13.306 € para 2, 16.843-17.742 € para 3 y 21.054-22.177 € para 4. Cuantía fija ligada a la renta: 1.700 €; ligada a la residencia: 1.600 €; beca básica: 300 € (350 € en Grado Básico). Presupuesto de la convocatoria: 2.134 millones de euros. El Real Decreto-ley 14/2022 añadió después un complemento de 100 € al mes de septiembre a diciembre de 2022 para los becarios de este curso (ver su ficha). Como referencia, para el curso 2018-2019 el umbral 1 de una familia de tres miembros era de 10.606 € y la cuantía fija mínima, 1.600 €.",
+      "votacion": null,
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2022-2852",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2022-2852",
+          "tipo": "oficial",
+          "fecha": "2022-02-23"
+        },
+        {
+          "nombre": "Ministerio de Ciencia, Innovación y Universidades, nota de 22-02-2022",
+          "url": "https://www.ciencia.gob.es/Noticias/2022/Febrero/gobierno-adelanta-convocatoria-becas.html",
+          "tipo": "oficial",
+          "fecha": "2022-02-22"
+        },
+        {
+          "nombre": "La Moncloa, Consejo de Ministros 27-07-2018 (umbrales 2018-2019)",
+          "url": "https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/270718enlace-ayudas.aspx",
+          "tipo": "oficial",
+          "fecha": "2018-07-27"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "Los reales decretos de los demás cursos van agrupados en otro hecho de esta ficha."
+    },
+    {
+      "id": "edu-2022-convivencia-universitaria",
+      "tipo": "aprobado",
+      "fecha": "2022-02-24",
+      "titulo": "Ley 3/2022, de convivencia universitaria",
+      "frase_llana": "Sustituye el reglamento de disciplina académica de 1954. Fija qué faltas pueden cometer los estudiantes universitarios y sus sanciones, y obliga a ofrecer mediación.",
+      "detalle": "Ley 3/2022, de 24 de febrero, de convivencia universitaria. BOE núm. 48, de 25 de febrero de 2022; en vigor desde el 26 de febrero. Deroga el Reglamento de Disciplina Académica de 1954. Clasifica las faltas de los estudiantes en muy graves, graves y leves, con sanciones desde la expulsión temporal hasta la amonestación privada. Cada universidad debe tener mediación y una Comisión de Convivencia paritaria. En el Congreso la aprobó la comisión con competencia legislativa plena (18 de noviembre de 2021, 20 votos a favor y 15 en contra según la prensa), sin votación en el Pleno. El Senado la aprobó definitivamente el 16 de febrero de 2022 con 152 votos a favor, 108 en contra y 4 abstenciones (una sola fuente de prensa); en contra, PP, UPN, Vox y Ciudadanos según esa fuente.",
+      "votacion": null,
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2022-2978",
+          "url": "https://www.boe.es/eli/es/l/2022/02/24/3",
+          "tipo": "oficial",
+          "fecha": "2022-02-25"
+        },
+        {
+          "nombre": "The Objective (comisión del Congreso)",
+          "url": "https://theobjective.com/espana/2021-11-18/el-congreso-aprueba-la-ley-de-convivencia-universitaria-con-la-negativa-de-los-rectores-y-alumnos/",
+          "tipo": "prensa",
+          "fecha": "2021-11-18"
+        },
+        {
+          "nombre": "Valencia Plaza (votación del Senado)",
+          "url": "https://valenciaplaza.com/valenciaplaza/el-senado-aprueba-de-manera-definitiva-la-ley-de-convivencia-universitaria-con-los-votos-en-contra-de-vox-pp-y-upn",
+          "tipo": "prensa",
+          "fecha": "2022-02-16"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No hubo votación final en el Pleno del Congreso. Los recuentos de la comisión y del Senado salen de un medio cada uno, sin cotejar con el registro oficial."
+    },
+    {
+      "id": "edu-2022-ley-fp",
+      "tipo": "aprobado",
+      "fecha": "2022-03-31",
+      "titulo": "Ley Orgánica 3/2022, de Formación Profesional",
+      "frase_llana": "Une en un solo sistema la FP de los institutos y la formación para el empleo. Toda la FP pasa a tener una parte en la empresa.",
+      "detalle": "Ley Orgánica 3/2022, de 31 de marzo, de ordenación e integración de la Formación Profesional. BOE núm. 78, de 1 de abril de 2022. Crea un sistema único de FP con grados A a E; regula el carácter dual de toda la FP, con al menos un 25 % de la formación en la empresa según el preámbulo; y abre de forma permanente la acreditación de competencias por experiencia laboral. Votación de conjunto en el Pleno del Congreso el 16 de diciembre de 2021, antes de su paso por el Senado: 180 a favor, 88 en contra y 75 abstenciones, con voto presencial y telemático (Diario de Sesiones).",
+      "votacion": {
+        "fecha": "2021-12-16",
+        "a_favor": 180,
+        "en_contra": 88,
+        "abstenciones": 75,
+        "grupos_en_contra": [
+          "PP"
+        ],
+        "resultado": "aprobado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2022-5139",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2022-5139",
+          "tipo": "oficial",
+          "fecha": "2022-04-01"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, Pleno núm. 141 (DSCD-14-PL-147)",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-147.PDF",
+          "tipo": "oficial",
+          "fecha": "2021-12-16"
+        },
+        {
+          "nombre": "RTVC",
+          "url": "https://rtvc.es/el-congreso-aprobara-hoy-por-mayoria-absoluta-la-ley-de-formacion-profesional/",
+          "tipo": "prensa",
+          "fecha": "2021-12-16"
+        },
+        {
+          "nombre": "Menorca.info",
+          "url": "https://www.menorca.info/actualidad/nacional/2021/12/16/1679691/congreso-aprueba-nueva-ley-fp.html",
+          "tipo": "prensa",
+          "fecha": "2021-12-16"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No consta si el texto volvió al Congreso tras el Senado ni el recuento de esa última votación. El recuento de diciembre de 2021 está cotejado con el Diario de Sesiones; el grupo en contra sale de la prensa."
+    },
+    {
+      "id": "edu-2022-rdl-14-becas",
+      "tipo": "aprobado",
+      "fecha": "2022-08-01",
+      "titulo": "Real Decreto-ley 14/2022, complemento de las becas y ahorro energético",
+      "frase_llana": "Los becarios del Ministerio del curso 2022-2023 cobran 100 € más al mes de septiembre a diciembre de 2022. El mismo decreto incluye medidas de transporte y de ahorro de energía.",
+      "detalle": "Real Decreto-ley 14/2022, de 1 de agosto, de medidas de sostenibilidad económica en el ámbito del transporte, en materia de becas y ayudas al estudio, así como de medidas de ahorro, eficiencia energética y de reducción de la dependencia energética del gas natural. BOE núm. 184, de 2 de agosto de 2022. Título IV: complemento de 100 € al mes durante cuatro meses (400 € en total) para los beneficiarios de las becas de carácter general de enseñanzas postobligatorias y de las ayudas al alumnado con necesidad específica de apoyo educativo del curso 2022-2023. Convalidado el 25 de agosto de 2022 (187 a favor, 161 en contra, 1 abstención); el Pleno acordó tramitarlo como proyecto de ley por urgencia (342 a favor, 6 en contra, 1 abstención). Según la prensa, votaron en contra de la convalidación PP, Vox, Ciudadanos, Junts, CUP y Foro Asturias, y el BNG se abstuvo.",
+      "votacion": {
+        "fecha": "2022-08-25",
+        "a_favor": 187,
+        "en_contra": 161,
+        "abstenciones": 1,
+        "grupos_en_contra": [
+          "Ciudadanos",
+          "CUP",
+          "Foro Asturias",
+          "Junts",
+          "PP",
+          "Vox"
+        ],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2022-12925",
+          "url": "https://www.boe.es/eli/es/rdl/2022/08/01/14",
+          "tipo": "oficial",
+          "fecha": "2022-08-02"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, Pleno núm. 196 (DSCD-14-PL-204)",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-204.PDF",
+          "tipo": "oficial",
+          "fecha": "2022-08-25"
+        },
+        {
+          "nombre": "Energías Renovables",
+          "url": "https://www.energias-renovables.com/panorama/el-congreso-aprueba-con-holgura-el-decreto-20220825",
+          "tipo": "prensa",
+          "fecha": "2022-08-25"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "La lista de grupos en contra sale de un solo medio. No consta en qué quedó la tramitación como proyecto de ley."
+    },
+    {
+      "id": "edu-2023-losu",
+      "tipo": "aprobado",
+      "fecha": "2023-03-22",
+      "titulo": "Ley Orgánica 2/2023, del Sistema Universitario (LOSU)",
+      "frase_llana": "Sustituye la ley de universidades de 2001. Limita los contratos temporales del profesorado de la universidad pública al 8 % y fija como objetivo un gasto público del 1 % del PIB.",
+      "detalle": "Ley Orgánica 2/2023, de 22 de marzo, del Sistema Universitario. BOE núm. 70, de 23 de marzo de 2023. Deroga la Ley Orgánica 6/2001 de Universidades y el Real Decreto-ley 14/2012. Baja el máximo de profesorado temporal en universidades públicas del 40 % al 8 %; reduce la carrera académica de cuatro a tres niveles; incluye el estatuto del estudiantado y reconoce la beca como derecho subjetivo; las comunidades deben congelar o bajar los precios públicos. El Congreso votó las enmiendas del Senado y aprobó el texto final el 9 de marzo de 2023.",
+      "votacion": {
+        "fecha": "2023-03-09",
+        "a_favor": 182,
+        "en_contra": 157,
+        "abstenciones": 8,
+        "grupos_en_contra": [
+          "BNG",
+          "Ciudadanos",
+          "Foro Asturias",
+          "PP",
+          "Vox"
+        ],
+        "resultado": "aprobado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2023-7500",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2023-7500",
+          "tipo": "oficial",
+          "fecha": "2023-03-23"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, Pleno núm. 242 (DSCD-14-PL-251)",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-251.PDF",
+          "tipo": "oficial",
+          "fecha": "2023-03-09"
+        },
+        {
+          "nombre": "La Moncloa, nota de 09-03-2023",
+          "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/universidades/paginas/2023/090323-aprobacion-congreso-losu.aspx",
+          "tipo": "oficial",
+          "fecha": "2023-03-09"
+        },
+        {
+          "nombre": "Onda Vasca",
+          "url": "https://www.ondavasca.com/el-congreso-aprueba-la-nueva-ley-de-universidades-con-el-rechazo-de-la-derecha/",
+          "tipo": "prensa",
+          "fecha": "2023-03-09"
+        },
+        {
+          "nombre": "Diari de Tarragona",
+          "url": "https://www.diaridetarragona.com/internacional/185065/aprueban-la-ley-de-universidades-jd14062182.html",
+          "tipo": "prensa",
+          "fecha": "2023-03-09"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "Recuento cotejado con el Diario de Sesiones (182 a favor, 157 en contra, 8 abstenciones). Los grupos en contra salen de dos medios, que no coinciden del todo; aquí solo van los que citan ambos."
+    },
+    {
+      "id": "edu-2023-artisticas-decae",
+      "tipo": "no_salio",
+      "fecha": "2023-05-30",
+      "titulo": "Primer proyecto de ley de enseñanzas artísticas, decaído",
+      "frase_llana": "El primer proyecto de ley de enseñanzas artísticas no llegó a aprobarse: decayó al disolverse las Cortes por las elecciones de julio de 2023. El Gobierno lo volvió a aprobar en enero de 2024.",
+      "detalle": "El Consejo de Ministros aprobó el proyecto en segunda lectura el 11 de abril de 2023 y pidió su tramitación urgente. Decayó con la disolución de las Cortes (Real Decreto 400/2023, de 29 de mayo, publicado en el BOE el 30 de mayo de 2023). El Consejo de Ministros lo aprobó de nuevo el 16 de enero de 2024; es la actual Ley 1/2024.",
+      "votacion": null,
+      "fuentes": [
+        {
+          "nombre": "Moncloa.com",
+          "url": "https://www.moncloa.com/2024/01/16/gobierno-aprobar-ley-equipara-ensenanzas-2384401/",
+          "tipo": "prensa",
+          "fecha": "2024-01-16"
+        },
+        {
+          "nombre": "Real Decreto 400/2023, disolución de las Cortes",
+          "url": "https://www.boe.es/eli/es/rd/2023/05/29/400",
+          "tipo": "oficial",
+          "fecha": "2023-05-30"
+        }
+      ],
+      "verificacion": "una_fuente",
+      "no_sabemos": "Que el proyecto decayó por la disolución lo dice un solo medio; no se ha cotejado con el expediente del Congreso."
+    },
+    {
+      "id": "edu-2024-ensenanzas-artisticas",
+      "tipo": "aprobado",
+      "fecha": "2024-06-07",
+      "titulo": "Ley 1/2024, de enseñanzas artísticas superiores",
+      "frase_llana": "Los estudios superiores de música, danza, arte dramático, diseño y otras enseñanzas artísticas pasan a dar títulos de grado y máster con el mismo nivel que los universitarios.",
+      "detalle": "Ley 1/2024, de 7 de junio, por la que se regulan las enseñanzas artísticas superiores y se establece la organización y equivalencias de las enseñanzas artísticas profesionales. BOE núm. 139, de 8 de junio de 2024. Organiza las enseñanzas en grado y máster; el grado se integra en el MECES al mismo nivel que el universitario; el doctorado se organiza mediante acuerdos con universidades. Votación en el Congreso el 14 de marzo de 2024; tras el Senado, el Congreso votó una a una las enmiendas del Senado el 23 de mayo de 2024 (26 votaciones, sin votación de conjunto por no ser ley orgánica), y la ley quedó aprobada.",
+      "votacion": {
+        "fecha": "2024-03-14",
+        "a_favor": 175,
+        "en_contra": 32,
+        "abstenciones": 139,
+        "grupos_en_contra": [
+          "Vox"
+        ],
+        "resultado": "aprobado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2024-11613",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2024-11613",
+          "tipo": "oficial",
+          "fecha": "2024-06-08"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, Pleno 14-03-2024 (DSCD-15-PL-31)",
+          "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-31.PDF",
+          "tipo": "oficial",
+          "fecha": "2024-03-14"
+        },
+        {
+          "nombre": "Acta del Pleno del Congreso, 23-05-2024 (enmiendas del Senado)",
+          "url": "https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20240523.pdf",
+          "tipo": "oficial",
+          "fecha": "2024-05-23"
+        },
+        {
+          "nombre": "Público",
+          "url": "https://www.publico.es/sociedad/congreso-aprueba-ley-ensenanzas-artisticas-superiores-mayoria.html",
+          "tipo": "prensa",
+          "fecha": "2024-03-14"
+        },
+        {
+          "nombre": "Onda Vasca",
+          "url": "https://www.ondavasca.com/el-congreso-aprueba-la-ley-de-ensenanzas-artisticas-la-primera-de-la-legislatura/",
+          "tipo": "prensa",
+          "fecha": "2024-05-23"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El recuento de marzo de 2024 está cotejado con el Diario de Sesiones; no da el total de votos emitidos (175+32+139 = 346). El grupo en contra sale de un solo medio."
+    },
+    {
+      "id": "edu-2025-pl-nee-pp",
+      "tipo": "no_salio",
+      "fecha": "2025-09-09",
+      "titulo": "Proposición de ley del PP sobre escolarización del alumnado con necesidades educativas especiales, rechazada",
+      "frase_llana": "El Congreso rechazó tramitar una propuesta del PP sobre la escolarización del alumnado con necesidades educativas especiales y los centros de educación especial.",
+      "detalle": "Proposición de Ley relativa a la escolarización del alumnado con necesidades educativas especiales (orgánica), del Grupo Parlamentario Popular. Según su defensora en el Pleno, buscaba garantizar que las familias puedan elegir modelo educativo, incluida la educación especial; cambiar la disposición adicional cuarta de la LOMLOE sobre los centros de educación especial; ampliar la permanencia en esos centros más allá de los 21 años; y permitir a este alumnado obtener el título de ESO. Toma en consideración rechazada en el Pleno del 9 de septiembre de 2025: votos emitidos, 347; 170 a favor y 177 en contra. En el debate, Vox anunció su apoyo y PNV y EH Bildu su voto en contra.",
+      "votacion": {
+        "fecha": "2025-09-09",
+        "a_favor": 170,
+        "en_contra": 177,
+        "abstenciones": 0,
+        "grupos_en_contra": [],
+        "resultado": "rechazado"
+      },
+      "fuentes": [
+        {
+          "nombre": "Acta del Pleno del Congreso, 09-09-2025",
+          "url": "https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20250909.pdf",
+          "tipo": "oficial",
+          "fecha": "2025-09-09"
+        },
+        {
+          "nombre": "BOCG-15-B-222-2",
+          "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-222-2.PDF",
+          "tipo": "oficial",
+          "fecha": "2025-09"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El acta no da abstenciones (170 + 177 = 347 emitidos, así que no hubo). No consta el voto de cada grupo; solo lo anunciado en el debate por Vox, PNV y EH Bildu."
+    },
+    {
+      "id": "edu-2026-ley-ratios",
+      "tipo": "no_salio",
+      "fecha": "2026-06-18",
+      "titulo": "Proyecto de ley de ratios y jornada lectiva del profesorado, decaído",
+      "frase_llana": "El proyecto para bajar el número de alumnos por aula y las horas de clase del profesorado superó el debate de totalidad, pero decayó al disolverse las Cortes el 6 de octubre de 2026.",
+      "detalle": "Proyecto de ley de modificación de la Ley 4/2019, de 7 de marzo. Preveía un máximo de 22 alumnos por aula en primaria y 25 en ESO en centros sostenidos con fondos públicos, y 23 horas lectivas semanales en infantil, primaria y educación especial y 18 en el resto, con aplicación gradual del curso 2027-2028 al 2031-2032. El alumnado con necesidades educativas especiales contaría como dos plazas. El 18 de junio de 2026 el Congreso rechazó las enmiendas a la totalidad de PNV y Junts: votos emitidos, 347; 11 a favor de las enmiendas, 329 en contra y 7 abstenciones (acta del Pleno). Los datos de la votación se refieren a las enmiendas, no a la ley. Las enmiendas a la totalidad las presentaron Junts y PNV.",
+      "votacion": {
+        "fecha": "2026-06-18",
+        "a_favor": 11,
+        "en_contra": 329,
+        "abstenciones": 7,
+        "grupos_en_contra": [],
+        "resultado": "enmienda_rechazada"
+      },
+      "fuentes": [
+        {
+          "nombre": "La Moncloa, nota de 18-06-2026",
+          "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/educacion-fp-deportes/Paginas/2026/180626-tolon-congreso-ley-ratios-jornada.aspx",
+          "tipo": "oficial",
+          "fecha": "2026-06-18"
+        },
+        {
+          "nombre": "Acta del Pleno del Congreso, 18-06-2026",
+          "url": "https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20260618.pdf",
+          "tipo": "oficial",
+          "fecha": "2026-06-18"
+        },
+        {
+          "nombre": "El Cronista",
+          "url": "https://www.cronista.com/espana/actualidad-es/confirmado-en-el-congreso-avanza-la-ley-que-reducira-la-cantidad-de-alumnos-por-aula-y-la-jornada-de-los-docentes/",
+          "tipo": "prensa",
+          "fecha": "2026-06-18"
+        },
+        {
+          "nombre": "CSIF",
+          "url": "https://www.csif.es/es/articulo/aragon/educacion/97874",
+          "tipo": "terceros",
+          "fecha": "2026-10-05"
+        },
+        {
+          "nombre": "Diario de León (EFE)",
+          "url": "https://www.diariodeleon.es/cultura/261014/2100184/decretos-bajar-ratios-infantil-frenar-fp-privada-siguen-aire.html",
+          "tipo": "prensa",
+          "fecha": "2026-10-14"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "En esta votación, 'a favor' y 'en contra' se refieren a las enmiendas de totalidad, no a la ley. No consta un recuento por grupos."
+    }
+  ],
+  "indicadores": [
+    {
+      "id": "abandono-temprano",
+      "titulo": "Abandono temprano de la educación y la formación (%)",
+      "unidad": "%",
+      "decimales": 1,
+      "nota": "Porcentaje de jóvenes de 18 a 24 años que no han terminado la segunda etapa de secundaria (Bachillerato o FP de grado medio) y no siguen ningún estudio o formación. Media anual de la EPA (INE), explotación del Ministerio de Educación.",
+      "calculo_propio": false,
+      "serie": [
+        {
+          "periodo": "2018",
+          "valor": 17.9
+        },
+        {
+          "periodo": "2019",
+          "valor": 17.3
+        },
+        {
+          "periodo": "2020",
+          "valor": 16.0
+        },
+        {
+          "periodo": "2021",
+          "valor": 13.3
+        },
+        {
+          "periodo": "2022",
+          "valor": 13.9
+        },
+        {
+          "periodo": "2023",
+          "valor": 13.7
+        },
+        {
+          "periodo": "2024",
+          "valor": 13.0
+        },
+        {
+          "periodo": "2025",
+          "valor": 12.8
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Ministerio de Educación, Sistema estatal de indicadores de la educación 2022 (2018-2021)",
+          "url": "https://educacionfpydeportes.gob.es/inee/dam/jcr:c536a9ae-1592-4854-bfe0-b0441db0bc9f/r3.pdf",
+          "tipo": "oficial",
+          "fecha": "2022"
+        },
+        {
+          "nombre": "Ministerio de Educación, Sistema estatal de indicadores de la educación 2023 (2018-2022)",
+          "url": "https://educacionfpydeportes.gob.es/inee/dam/jcr:7d3c11ad-f96b-4625-80ce-7b1522dec1b2/r3.pdf",
+          "tipo": "oficial",
+          "fecha": "2023"
+        },
+        {
+          "nombre": "Ministerio de Educación, tabla 1.3.6 abandono 2025 (2022-2025)",
+          "url": "https://www.educacionfpydeportes.gob.es/dam/jcr:b410eba9-18b7-44d5-b6ad-f1c69069d75e/1-3-6-tabla-1-abandono-nivel-de-formaci-n-2025.pdf",
+          "tipo": "oficial",
+          "fecha": "2026"
+        },
+        {
+          "nombre": "La Moncloa, nota de 28-01-2026 (12,8 % en 2025)",
+          "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/educacion-fp-deportes/paginas/2026/280126-abandono-educativo-minimo-historico.aspx",
+          "tipo": "oficial",
+          "fecha": "2026-01-28"
+        }
+      ]
+    },
+    {
+      "id": "presupuesto-becas",
+      "titulo": "Presupuesto de becas y ayudas al estudio del Ministerio, millones de euros",
+      "unidad": "millones",
+      "decimales": 0,
+      "nota": "Importe anunciado al aprobar el real decreto de umbrales de cada curso. El periodo es el año de inicio del curso (2018 = curso 2018-2019). Son cifras presupuestadas, no gasto ejecutado. 2019: presupuesto inicial de 1.470 millones; la nota añade unos 40 millones más sin dar la cifra final. 2018: la nota de 2018 da 1.462 millones; la nota de 2026 cita 1.399 millones para 2018.",
+      "calculo_propio": false,
+      "serie": [
+        {
+          "periodo": "2018",
+          "valor": 1462
+        },
+        {
+          "periodo": "2019",
+          "valor": 1470
+        },
+        {
+          "periodo": "2020",
+          "valor": 1900
+        },
+        {
+          "periodo": "2021",
+          "valor": 2038
+        },
+        {
+          "periodo": "2022",
+          "valor": 2134
+        },
+        {
+          "periodo": "2023",
+          "valor": 2520
+        },
+        {
+          "periodo": "2024",
+          "valor": 2535
+        },
+        {
+          "periodo": "2025",
+          "valor": 2544
+        },
+        {
+          "periodo": "2026",
+          "valor": 2559
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "La Moncloa, Consejo de Ministros 27-07-2018 (curso 2018-2019)",
+          "url": "https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/270718enlace-ayudas.aspx",
+          "tipo": "oficial",
+          "fecha": "2018-07-27"
+        },
+        {
+          "nombre": "La Moncloa, Consejo de Ministros 12-07-2019 (curso 2019-2020)",
+          "url": "https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/120719-enlacebecas.aspx",
+          "tipo": "oficial",
+          "fecha": "2019-07-12"
+        },
+        {
+          "nombre": "La Moncloa, Consejo de Ministros 21-07-2020 (curso 2020-2021)",
+          "url": "https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/210720-enlace-becas.aspx",
+          "tipo": "oficial",
+          "fecha": "2020-07-21"
+        },
+        {
+          "nombre": "La Moncloa, Consejo de Ministros 29-06-2021 (curso 2021-2022)",
+          "url": "https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/290621-enlace-becas.aspx",
+          "tipo": "oficial",
+          "fecha": "2021-06-29"
+        },
+        {
+          "nombre": "Ministerio de Ciencia, Innovación y Universidades, 22-02-2022 (curso 2022-2023)",
+          "url": "https://www.ciencia.gob.es/Noticias/2022/Febrero/gobierno-adelanta-convocatoria-becas.html",
+          "tipo": "oficial",
+          "fecha": "2022-02-22"
+        },
+        {
+          "nombre": "La Moncloa, Consejo de Ministros 21-02-2023 (curso 2023-2024)",
+          "url": "https://www.lamoncloa.gob.es/consejodeministros/resumenes/Paginas/2023/210223-rp-cministros.aspx",
+          "tipo": "oficial",
+          "fecha": "2023-02-21"
+        },
+        {
+          "nombre": "Ministerio de Ciencia, Innovación y Universidades, 27-02-2024 (curso 2024-2025)",
+          "url": "https://www.ciencia.gob.es/Noticias/2024/febrero/Gobierno-renta-becas.html",
+          "tipo": "oficial",
+          "fecha": "2024-02-27"
+        },
+        {
+          "nombre": "La Moncloa, Consejo de Ministros 04-03-2025 (curso 2025-2026)",
+          "url": "https://www.lamoncloa.gob.es/consejodeministros/resumenes/Paginas/2025/040325-rueda-de-prensa-ministros.aspx",
+          "tipo": "oficial",
+          "fecha": "2025-03-04"
+        },
+        {
+          "nombre": "La Moncloa, Consejo de Ministros 10-03-2026 (curso 2026-2027)",
+          "url": "https://www.lamoncloa.gob.es/consejodeministros/resumenes/paginas/2026/100326-rueda-prensa-ministros.aspx",
+          "tipo": "oficial",
+          "fecha": "2026-03-10"
+        }
+      ]
+    }
+  ],
+  "no_sabe": [
+    "No se ha encontrado una norma estatal de gratuidad de la educación de 0 a 3 años. La proposición del Parlamento de Andalucía admitida en 2021 no consta como aprobada. En marzo de 2026 se anunció un programa de escolarización de 0 a 3 años para familias vulnerables, sin norma localizada.",
+    "Los decretos de ratios de 0 a 3 años y de FP en línea seguían sin aprobar en octubre de 2026.",
+    "No se han incluido otros reales decretos de desarrollo de la LOMLOE, la ley de FP o la LOSU (evaluación, títulos, acceso a la universidad, creación de universidades).",
+    "No se ha revisado el registro completo de tomas en consideración y enmiendas a la totalidad del Congreso; puede faltar alguna votación. No constan los recuentos de las enmiendas a la totalidad de la LOMLOE, la ley de FP o la LOSU.",
+    "No se han revisado otros planes del Consejo de Ministros (por ejemplo, el Plan de Modernización de la FP de 2020 o el programa Código Escuela 4.0) para ver si se aprobaron como acuerdo.",
+    "Las cifras de becas son presupuestadas, no gasto ejecutado. Para 2018 hay dos cifras oficiales distintas (1.462 y 1.399 millones).",
+    "No se ha encontrado ninguna norma de educación derogada o no convalidada en el periodo."
+  ],
+  "pie_verificacion": "Todas las normas están cotejadas con el BOE. Los recuentos del Congreso de la LOMLOE, la ley de FP, la LOSU, la ley de enseñanzas artísticas, los decretos-ley 31/2020 y 14/2022, la gratuidad de 0 a 3 años, la ley del PP sobre educación especial y la ley de ratios están cotejados con el Diario de Sesiones o el acta del Pleno. La Ley 4/2019 no tiene recuento localizado. Las listas de grupos en contra salen de la prensa (dos medios en LOMLOE, FP y LOSU; uno en el resto), igual que las votaciones del Senado y de la comisión en la ley de convivencia universitaria. Que el primer proyecto de enseñanzas artísticas decayó en 2023 lo dice un solo medio. Consulta: 11 de noviembre de 2026."
+}

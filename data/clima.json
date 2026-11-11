@@ -1,0 +1,1513 @@
+{
+  "tema": "clima",
+  "nombre": "Clima, energía y medio ambiente",
+  "titulo": "Clima, energía y medio ambiente: qué ha hecho el Estado",
+  "aviso_competencia": "",
+  "resumen": {
+    "aprobado": "Se suprimieron los cargos al autoconsumo eléctrico (2018), se aprobaron el plan de energía y clima 2021-2030 (2021) y su actualización (2024), la Ley de cambio climático (2021), la Ley de residuos (2022), la personalidad jurídica del Mar Menor (2022) y un gravamen a las grandes energéticas para 2023 y 2024. Entre 2021 y 2024 una serie de decretos-ley bajó el IVA y otros impuestos de la luz y el gas, subió el bono social y topó el precio del gas para la electricidad («excepción ibérica», 2022-2023); en 2026 se volvió a bajar el IVA de la luz y se decidió suprimir el impuesto a la producción eléctrica desde 2028.",
+    "no_salio": "El Congreso derogó en enero de 2025 el decreto que prorrogaba el gravamen a las energéticas y un decreto con el bono social (que se aprobó de nuevo en febrero), en julio de 2025 el decreto de refuerzo del sistema eléctrico tras el apagón, y en enero y febrero de 2026 dos decretos que prorrogaban el bono social y ayudas al coche eléctrico y al autoconsumo. La ley del PP para frenar el cierre nuclear se admitió a trámite en 2025 pero no consta que se aprobara, y en noviembre de 2025 no salió por un voto una enmienda con ese fin.",
+    "cifras": "Las emisiones brutas pasaron de 332,8 millones de toneladas de CO2 equivalente en 2018 (avance) a 267,7 en 2024; el avance de 2025 da 270,7. Las renovables generaron el 38,5 % de la electricidad en 2018 y el 55,5 % en 2025.",
+    "no_sabe": "Faltan los recuentos de algunas convalidaciones y de las leyes, y no se ha comprobado la Ley de Movilidad Sostenible ni el RDL 5/2023."
+  },
+  "hechos": [
+    {
+      "id": "cli-2018-rdl-15-autoconsumo",
+      "tipo": "aprobado",
+      "fecha": "2018-10-05",
+      "titulo": "Real Decreto-ley 15/2018, de medidas urgentes para la transición energética y la protección de los consumidores",
+      "frase_llana": "Reconoce el derecho a producir y consumir la propia electricidad sin cargos, lo que suprime el llamado «impuesto al sol». También exonera durante seis meses del impuesto a la producción eléctrica.",
+      "detalle": "Real Decreto-ley 15/2018, de 5 de octubre. BOE núm. 242, de 6 de octubre de 2018 (BOE-A-2018-13593). En vigor el 7 de octubre de 2018. El título II reconoce el derecho a autoconsumir energía eléctrica sin cargos. Exonera del Impuesto sobre el valor de la producción de la energía eléctrica durante seis meses y crea una exención en el Impuesto sobre Hidrocarburos para productos destinados a producir electricidad. Convalidado por el Congreso el 18 de octubre de 2018 (Resolución publicada como BOE-A-2018-14695), que acordó tramitarlo como proyecto de ley por urgencia (según prensa).",
+      "votacion": {
+        "fecha": "2018-10-18",
+        "a_favor": 180,
+        "en_contra": 2,
+        "abstenciones": 160,
+        "grupos_en_contra": [],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2018-13593",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-13593",
+          "tipo": "oficial",
+          "fecha": "2018-10-06"
+        },
+        {
+          "nombre": "BOE-A-2018-14695, Resolución de convalidación",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2018-14695",
+          "tipo": "oficial",
+          "fecha": "2018-10-26"
+        },
+        {
+          "nombre": "Legal Today",
+          "url": "https://www.legaltoday.com/opinion/blogs/transversal/blog-political-intelligence/el-congreso-convalida-la-reforma-para-la-transicion-energetica-2018-10-19/",
+          "tipo": "prensa",
+          "fecha": "2018-10-19"
+        },
+        {
+          "nombre": "Energías Renovables",
+          "url": "https://www.energias-renovables.com/panorama/el-congreso-aprueba-la-tramitacion-por-via-20181018",
+          "tipo": "prensa",
+          "fecha": "2018-10-18"
+        },
+        {
+          "nombre": "Público",
+          "url": "https://www.publico.es/economia/congreso-convalida-medidas-gobierno-abaratar-luz.html",
+          "tipo": "prensa",
+          "fecha": "2018-10-18"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El recuento procede de prensa: 180 a favor, 2 en contra y 160 abstenciones en dos fuentes (Público y Energías Renovables); no se ha consultado el Diario de Sesiones. Otra fuente de prensa publicó «278 a favor», cifra imposible con 350 escaños. Según prensa, PP, Ciudadanos y Foro Asturias se abstuvieron; no consta quién votó en contra."
+    },
+    {
+      "id": "cli-2018-ley-9-evaluacion-ambiental",
+      "tipo": "aprobado",
+      "fecha": "2018-12-05",
+      "titulo": "Ley 9/2018, de evaluación ambiental, montes y comercio de derechos de emisión",
+      "frase_llana": "Obliga a que los estudios de impacto ambiental de los proyectos analicen su vulnerabilidad ante accidentes graves y catástrofes, y refuerza la consulta al público. Ajusta también las sanciones del comercio de derechos de emisión.",
+      "detalle": "Ley 9/2018, de 5 de diciembre, por la que se modifica la Ley 21/2013, de evaluación ambiental, la Ley 21/2015, que modifica la Ley de Montes, y la Ley 1/2005, del comercio de derechos de emisión de gases de efecto invernadero. BOE núm. 294, de 6 de diciembre de 2018 (BOE-A-2018-16674). Transpone la Directiva 2014/52/UE: el estudio de impacto ambiental debe analizar la vulnerabilidad del proyecto ante accidentes graves o catástrofes; se refuerzan las consultas a administraciones y público y la protección de la Red Natura 2000. Modifica los artículos 30 y 36 y añade el 35 bis de la Ley 1/2005 (régimen sancionador y planes de seguimiento de operadores aéreos).",
+      "votacion": null,
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2018-16674",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16674",
+          "tipo": "oficial",
+          "fecha": "2018-12-06"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No se ha consultado el recuento de la votación en las Cortes."
+    },
+    {
+      "id": "cli-2019-rdl-1-cnmc",
+      "tipo": "aprobado",
+      "fecha": "2019-01-11",
+      "titulo": "Real Decreto-ley 1/2019, competencias de la CNMC en electricidad y gas",
+      "frase_llana": "Pasa a la Comisión Nacional de los Mercados y la Competencia (CNMC) la fijación de los peajes de las redes de luz y gas y de la retribución de las actividades reguladas, para ajustarse a las directivas europeas.",
+      "detalle": "Real Decreto-ley 1/2019, de 11 de enero, de medidas urgentes para adecuar las competencias de la CNMC a las exigencias derivadas del derecho comunitario en relación con las Directivas 2009/72/CE y 2009/73/CE (mercado interior de la electricidad y del gas natural). BOE núm. 11, de 12 de enero de 2019 (BOE-A-2019-315). Asigna a la CNMC las metodologías de peajes de acceso, la retribución de las actividades reguladas, las condiciones de acceso y conexión y reglas de los mercados organizados; el Ministerio puede fijar orientaciones de política energética. Modifica las leyes 3/2013, 24/2013, 34/1998 y 18/2014. Responde a un dictamen motivado de la Comisión Europea de septiembre de 2016. Convalidado por el Congreso el 13 de febrero de 2019 (BOE-A-2019-2365).",
+      "votacion": {
+        "fecha": "2019-02-13",
+        "a_favor": null,
+        "en_contra": null,
+        "abstenciones": null,
+        "grupos_en_contra": [],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2019-315",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2019-315",
+          "tipo": "oficial",
+          "fecha": "2019-01-12"
+        },
+        {
+          "nombre": "BOE-A-2019-2365, Resolución de convalidación",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2019-2365",
+          "tipo": "oficial",
+          "fecha": "2019-02-13"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No consta el recuento de votos de la convalidación."
+    },
+    {
+      "id": "cli-2019-rdl-17-renovables-termicas",
+      "tipo": "aprobado",
+      "fecha": "2019-11-22",
+      "titulo": "Real Decreto-ley 17/2019, rentabilidad de las renovables y cierre de centrales térmicas",
+      "frase_llana": "Fija la rentabilidad que cobran las renovables, la cogeneración y los residuos con retribución regulada para 2020-2025 en el 7,09 %. En las zonas donde cierran centrales térmicas, permite priorizar en el acceso a la red y al agua a nuevos proyectos renovables con beneficios sociales y ambientales.",
+      "detalle": "Real Decreto-ley 17/2019, de 22 de noviembre, por el que se adoptan medidas urgentes para la necesaria adaptación de parámetros retributivos que afectan al sistema eléctrico y por el que se da respuesta al proceso de cese de actividad de centrales térmicas de generación. BOE núm. 282, de 23 de noviembre de 2019 (BOE-A-2019-16862), en vigor el 24 de noviembre de 2019. Rentabilidad razonable del segundo periodo regulatorio (2020-2025): 7,09 %. Las instalaciones anteriores al Real Decreto-ley 9/2013 pueden mantener 12 años el 7,398 % si renuncian a arbitrajes, pleitos e indemnizaciones. Tasa de retribución financiera de la producción en los sistemas no peninsulares: 5,58 %. Criterios sociales y ambientales para el acceso a la red y nuevas concesiones de agua en nudos de centrales que cierran. Convalidado el 27 de noviembre de 2019 (BOCG, Congreso, serie D, núm. 79); según prensa, por la Diputación Permanente.",
+      "votacion": {
+        "fecha": "2019-11-27",
+        "a_favor": null,
+        "en_contra": null,
+        "abstenciones": null,
+        "grupos_en_contra": [],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2019-16862",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2019-16862",
+          "tipo": "oficial",
+          "fecha": "2019-11-23"
+        },
+        {
+          "nombre": "BOCG Congreso, serie D, núm. 79",
+          "url": "https://www.congreso.es/public_oficiales/L13/CONG/BOCG/D/BOCG-13-D-79.PDF",
+          "tipo": "oficial",
+          "fecha": "2019-11-27"
+        },
+        {
+          "nombre": "El Derecho",
+          "url": "https://elderecho.com/convalidado-real-decreto-ley-medidas-urgentes-impulsar-una-transicion-energetica-justa",
+          "tipo": "prensa",
+          "fecha": "2019-11-29"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No consta el recuento de votos de la convalidación."
+    },
+    {
+      "id": "cli-2020-rdl-23-energia",
+      "tipo": "aprobado",
+      "fecha": "2020-06-23",
+      "titulo": "Real Decreto-ley 23/2020, medidas en materia de energía para la reactivación económica",
+      "frase_llana": "Pone plazos a los proyectos que tienen reservado acceso a la red eléctrica: si no avanzan, pierden el permiso. Crea subastas de renovables con precio fijo a largo plazo y reconoce el almacenamiento y las comunidades de energías renovables.",
+      "detalle": "Real Decreto-ley 23/2020, de 23 de junio, por el que se aprueban medidas en materia de energía y en otros ámbitos para la reactivación económica. BOE núm. 175, de 24 de junio de 2020 (BOE-A-2020-6621). Art. 1: hitos administrativos con plazos para los permisos de acceso y conexión; si no se cumplen, el permiso caduca. Art. 2: nuevo marco retributivo de renovables por subasta, basado en un precio fijo a largo plazo por la energía. Incorpora el almacenamiento, la hibridación, las comunidades de energías renovables y los agregadores independientes. Convalidado por el Congreso el 15 de julio de 2020 (BOE-A-2020-8094).",
+      "votacion": {
+        "fecha": "2020-07-15",
+        "a_favor": 188,
+        "en_contra": 1,
+        "abstenciones": 158,
+        "grupos_en_contra": [
+          "Foro Asturias"
+        ],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2020-6621",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-6621",
+          "tipo": "oficial",
+          "fecha": "2020-06-24"
+        },
+        {
+          "nombre": "BOE-A-2020-8094, Resolución de convalidación",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2020-8094",
+          "tipo": "oficial",
+          "fecha": "2020-07-15"
+        },
+        {
+          "nombre": "Energías Renovables",
+          "url": "https://www.energias-renovables.com/panorama/el-congreso-dice-si-al-real-decreto-20200715",
+          "tipo": "prensa",
+          "fecha": "2020-07-15"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "La convalidación es oficial; el recuento procede de una sola fuente de prensa, que sitúa a PP, Vox y Ciudadanos en la abstención y a Foro Asturias en contra."
+    },
+    {
+      "id": "cli-2021-pniec-2021-2030",
+      "tipo": "aprobado",
+      "fecha": "2021-03-16",
+      "titulo": "Plan Nacional Integrado de Energía y Clima (PNIEC) 2021-2030",
+      "frase_llana": "El Gobierno aprueba el plan que fija los objetivos de energía y clima hasta 2030, entre ellos un 42 % de renovables en el uso final de energía.",
+      "detalle": "Aprobado por Acuerdo del Consejo de Ministros de 16 de marzo de 2021 y publicado por Resolución de 25 de marzo de 2021, conjunta de la Dirección General de Política Energética y Minas y la Oficina Española de Cambio Climático. BOE núm. 77, de 31 de marzo de 2021 (BOE-A-2021-5106). Objetivos 2030 citados en el texto: 42 % de renovables sobre la energía final y 39,5 % de mejora de la eficiencia energética. No es una norma con rango de ley y no se vota en las Cortes.",
+      "votacion": null,
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2021-5106",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2021-5106",
+          "tipo": "oficial",
+          "fecha": "2021-03-31"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": ""
+    },
+    {
+      "id": "cli-2021-ley-cambio-climatico",
+      "tipo": "aprobado",
+      "fecha": "2021-05-20",
+      "titulo": "Ley 7/2021, de cambio climático y transición energética",
+      "frase_llana": "Primera ley de clima de España. Fija para 2030 un recorte de emisiones de al menos el 23 % respecto a 1990 y la neutralidad climática antes de 2050. Prohíbe nuevos permisos de búsqueda y extracción de hidrocarburos y fija que los turismos nuevos no emitan CO2 a más tardar en 2040.",
+      "detalle": "Ley 7/2021, de 20 de mayo. BOE núm. 121, de 21 de mayo de 2021 (BOE-A-2021-8447). En vigor el día siguiente a su publicación (disposición final decimoquinta). Objetivos 2030 (art. 3.1): al menos 23 % menos de emisiones respecto a 1990, 42 % de renovables en el consumo de energía final, 74 % de generación eléctrica renovable y 39,5 % menos de consumo de energía primaria. Art. 3.2: neutralidad climática antes de 2050 y sistema eléctrico basado solo en renovables. Art. 9: no se otorgan nuevas autorizaciones de exploración, permisos de investigación ni concesiones de hidrocarburos. Art. 14.2: turismos y comerciales ligeros nuevos con 0 g CO2/km a más tardar en 2040. Tramitación: aprobada por la Comisión para la Transición Ecológica con competencia legislativa plena; el Pleno del Congreso votó las enmiendas del Senado el 13 de mayo de 2021. Según prensa, Vox votó en contra y PP y Más País-Verdes Equo se abstuvieron.",
+      "votacion": null,
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2021-8447",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2021-8447",
+          "tipo": "oficial",
+          "fecha": "2021-05-21"
+        },
+        {
+          "nombre": "Congreso, votación 16 de la sesión 97 (enmiendas del Senado)",
+          "url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg14/Sesion097/20210513/Votacion016/VOT_20210513163055.pdf",
+          "tipo": "oficial",
+          "fecha": "2021-05-13"
+        },
+        {
+          "nombre": "Qué!",
+          "url": "https://www.que.es/2021/05/13/congreso-aprueba-ley-climatica-espana/",
+          "tipo": "prensa",
+          "fecha": "2021-05-13"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "Al ser ley ordinaria no hubo una votación de conjunto final: el 13 de mayo de 2021 se votaron por separado las enmiendas del Senado, con recuentos distintos (una de ellas, 191 a favor, 98 en contra y 57 abstenciones). Por eso no se da un recuento único."
+    },
+    {
+      "id": "cli-2021-rdl-12-iva-luz",
+      "tipo": "aprobado",
+      "fecha": "2021-06-24",
+      "titulo": "Real Decreto-ley 12/2021, rebaja del IVA de la luz al 10 % y suspensión del impuesto a la producción eléctrica",
+      "frase_llana": "Baja el IVA de la factura de la luz del 21 % al 10 % hasta final de 2021 para potencias de hasta 10 kW cuando el precio mayorista supere 45 euros por megavatio hora, y para hogares con bono social en situación severa. Suspende el impuesto del 7 % a la producción eléctrica en el tercer trimestre de 2021.",
+      "detalle": "Real Decreto-ley 12/2021, de 24 de junio, por el que se adoptan medidas urgentes en el ámbito de la fiscalidad energética y en materia de generación de energía, y sobre gestión del canon de regulación y de la tarifa de utilización del agua. BOE núm. 151, de 25 de junio de 2021 (BOE-A-2021-10584), en vigor el 26 de junio. Art. 1: IVA del 10 % hasta el 31 de diciembre de 2021 para potencia contratada inferior a 10 kW si el precio medio del mercado del mes anterior supera 45 €/MWh, y para perceptores del bono social vulnerables severos. Art. 2: la base del Impuesto sobre el valor de la producción de energía eléctrica de 2021 excluye la electricidad del tercer trimestre. Convalidado el 21 de julio de 2021 (BOE-A-2021-12603). El RDL 29/2021 prorrogó la rebaja del IVA hasta el 30 de abril de 2022.",
+      "votacion": {
+        "fecha": "2021-07-21",
+        "a_favor": 193,
+        "en_contra": 3,
+        "abstenciones": 152,
+        "grupos_en_contra": [],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2021-10584",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-10584",
+          "tipo": "oficial",
+          "fecha": "2021-06-25"
+        },
+        {
+          "nombre": "BOE-A-2021-12603, Resolución de convalidación",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2021-12603",
+          "tipo": "oficial",
+          "fecha": "2021-07-21"
+        },
+        {
+          "nombre": "Eseficiencia",
+          "url": "https://www.eseficiencia.es/2021/07/23/luz-verde-congreso-rebaja-iva-recibo-luz-21-10-hasta-final-ano",
+          "tipo": "prensa",
+          "fecha": "2021-07-23"
+        },
+        {
+          "nombre": "Smartgrids Info",
+          "url": "https://www.smartgridsinfo.es/2021/07/23/congreso-convalida-rebaja-iva-factura-electrica-10-hasta-diciembre-2021",
+          "tipo": "prensa",
+          "fecha": "2021-07-23"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "La convalidación es oficial; el recuento procede de dos fuentes de prensa, que no detallan el voto por grupos. No se ha consultado el Diario de Sesiones."
+    },
+    {
+      "id": "cli-2021-rdl-17-gas",
+      "tipo": "aprobado",
+      "fecha": "2021-09-14",
+      "titulo": "Real Decreto-ley 17/2021, medidas por la subida del gas en la luz y el gas",
+      "frase_llana": "Baja el impuesto especial sobre la electricidad del 5,11 % al 0,5 % hasta final de 2021 y amplía la suspensión del impuesto a la producción eléctrica. Recorta hasta marzo de 2022 parte de lo que cobran las centrales que no emiten CO2 por el alza del gas, y crea un suministro mínimo vital para hogares con bono social que no pueden pagar.",
+      "detalle": "Real Decreto-ley 17/2021, de 14 de septiembre, de medidas urgentes para mitigar el impacto de la escalada de precios del gas natural en los mercados minoristas de gas y electricidad. BOE núm. 221, de 15 de septiembre de 2021 (BOE-A-2021-14974). Impuesto especial sobre la electricidad: del 5,11269632 % al 0,5 % hasta el 31 de diciembre de 2021. Impuesto sobre el valor de la producción de energía eléctrica: suspensión ampliada a todo el segundo semestre de 2021. Minoración hasta el 31 de marzo de 2022 de la retribución de centrales peninsulares no emisoras inframarginales de 10 MW o más, por el precio del gas. Subastas de energía a plazo. Art. 1: suministro mínimo vital de seis meses para perceptores del bono social en impago. Convalidado el 14 de octubre de 2021; la tramitación como proyecto de ley fue rechazada (161 a favor, 182 en contra, 2 abstenciones).",
+      "votacion": {
+        "fecha": "2021-10-14",
+        "a_favor": 182,
+        "en_contra": 150,
+        "abstenciones": 13,
+        "grupos_en_contra": [],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2021-14974",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-14974",
+          "tipo": "oficial",
+          "fecha": "2021-09-15"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, Pleno, núm. 130",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-130.PDF",
+          "tipo": "oficial",
+          "fecha": "2021-10-14"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No consta en las fuentes consultadas qué grupos votaron en contra."
+    },
+    {
+      "id": "cli-2021-rdl-23-bono-social",
+      "tipo": "aprobado",
+      "fecha": "2021-10-26",
+      "titulo": "Real Decreto-ley 23/2021, subida de los descuentos del bono social y transparencia en los mercados de luz y gas",
+      "frase_llana": "Sube los descuentos del bono social eléctrico al 60 % para hogares vulnerables y al 70 % para vulnerables severos hasta marzo de 2022. Obliga a las comercializadoras a avisar con un mes de antelación de las subidas de precio.",
+      "detalle": "Real Decreto-ley 23/2021, de 26 de octubre, de medidas urgentes en materia de energía para la protección de los consumidores y la introducción de transparencia en los mercados mayorista y minorista de electricidad y gas natural. BOE núm. 257, de 27 de octubre de 2021 (BOE-A-2021-17458), en vigor el 28 de octubre. Art. 1: descuentos del bono social del 60 % y 70 % hasta el 31 de marzo de 2022. Bono social térmico: ayuda mínima de 35 € en 2021 y 100 millones más de dotación. Arts. 4 y 5: comunicación mensual a la CNMC de contratos a plazo; preaviso de un mes y comparativa de precios en las revisiones de contratos de luz y gas. Convalidado el 25 de noviembre de 2021 (BOE-A-2021-20003); no se tramitó como proyecto de ley.",
+      "votacion": {
+        "fecha": "2021-11-25",
+        "a_favor": null,
+        "en_contra": null,
+        "abstenciones": null,
+        "grupos_en_contra": [],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2021-17458",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17458",
+          "tipo": "oficial",
+          "fecha": "2021-10-27"
+        },
+        {
+          "nombre": "BOE-A-2021-20003, Resolución de convalidación",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2021-20003",
+          "tipo": "oficial",
+          "fecha": "2021-11-25"
+        },
+        {
+          "nombre": "Congreso, resultados del Pleno de 23-25 nov 2021",
+          "url": "https://www.congreso.es/docu/tramit/LegXIV/tramit_pleno22112021_132.pdf",
+          "tipo": "oficial",
+          "fecha": "2021-11-25"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No consta el recuento: la votación fue telemática y el Diario de Sesiones consultado no recoge las cifras."
+    },
+    {
+      "id": "cli-2021-rdl-29-autoconsumo",
+      "tipo": "aprobado",
+      "fecha": "2021-12-21",
+      "titulo": "Real Decreto-ley 29/2021, movilidad eléctrica, autoconsumo y renovables",
+      "frase_llana": "Obliga a instalar puntos de recarga en gasolineras grandes y en aparcamientos de más de 20 plazas, y permite el autoconsumo compartido entre vecinos a menos de 500 metros. Prorroga hasta abril de 2022 el IVA del 10 % de la luz y los descuentos del bono social.",
+      "detalle": "Real Decreto-ley 29/2021, de 21 de diciembre, por el que se adoptan medidas urgentes en el ámbito energético para el fomento de la movilidad eléctrica, el autoconsumo y el despliegue de energías renovables. BOE núm. 305, de 22 de diciembre de 2021 (BOE-A-2021-21096). Puntos de recarga obligatorios en estaciones de servicio según volumen de ventas y en aparcamientos de más de 20 plazas antes del 1 de enero de 2023; declaración responsable en lugar de licencia. Autoconsumo colectivo a través de red hasta 500 metros; sin garantías económicas por debajo de 100 kW. Amplía nueve meses los hitos de los proyectos renovables del RDL 23/2020. Prorroga hasta el 30 de abril de 2022 el IVA del 10 % de la luz y los descuentos del bono social, y suspende el impuesto a la producción eléctrica en el primer trimestre de 2022. Convalidado el 25 de enero de 2022 y tramitado como proyecto de ley (341 a favor, 4 en contra, 2 abstenciones).",
+      "votacion": {
+        "fecha": "2022-01-25",
+        "a_favor": 197,
+        "en_contra": 3,
+        "abstenciones": 147,
+        "grupos_en_contra": [],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2021-21096",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-21096",
+          "tipo": "oficial",
+          "fecha": "2021-12-22"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, Pleno, núm. 153",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-153.PDF",
+          "tipo": "oficial",
+          "fecha": "2022-01-25"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No consta en las fuentes consultadas qué grupos votaron en contra."
+    },
+    {
+      "id": "cli-2022-rdl-6-ucrania",
+      "tipo": "aprobado",
+      "fecha": "2022-03-29",
+      "titulo": "Real Decreto-ley 6/2022, Plan Nacional de respuesta a la guerra en Ucrania",
+      "frase_llana": "Crea una bonificación temporal al precio de los carburantes, rebaja un 80 % los peajes eléctricos de la industria que más electricidad consume y da ayudas a la industria intensiva en gas. Agiliza la tramitación de parques eólicos y solares y el autoconsumo.",
+      "detalle": "Real Decreto-ley 6/2022, de 29 de marzo, por el que se adoptan medidas urgentes en el marco del Plan Nacional de respuesta a las consecuencias económicas y sociales de la guerra en Ucrania. BOE núm. 76, de 30 de marzo de 2022 (BOE-A-2022-4972). Medidas energéticas: reducción del 80 % de los peajes de acceso para consumidores electrointensivos en 2022; 125 millones de euros en ayudas a la industria gasintensiva; actualización de la retribución de renovables, cogeneración y residuos; procedimiento simplificado de evaluación ambiental para ciertos proyectos eólicos y solares; liberación de capacidad de red para autoconsumo; bonificación extraordinaria y temporal del precio final de determinados productos energéticos. Incluye también medidas no energéticas. Convalidado el 28 de abril de 2022 y tramitado como proyecto de ley (342 a favor, 2 en contra, 1 abstención).",
+      "votacion": {
+        "fecha": "2022-04-28",
+        "a_favor": 176,
+        "en_contra": 172,
+        "abstenciones": 1,
+        "grupos_en_contra": [],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2022-4972",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-4972",
+          "tipo": "oficial",
+          "fecha": "2022-03-30"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, Pleno, núm. 181",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-181.PDF",
+          "tipo": "oficial",
+          "fecha": "2022-04-28"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El importe de la bonificación de carburantes no figura en la parte del texto consultada. No consta en las fuentes consultadas qué grupos votaron en contra."
+    },
+    {
+      "id": "cli-2022-ley-residuos",
+      "tipo": "aprobado",
+      "fecha": "2022-04-08",
+      "titulo": "Ley 7/2022, de residuos y suelos contaminados para una economía circular",
+      "frase_llana": "Obliga a recoger por separado los restos orgánicos, los textiles, el aceite de cocina usado y otros residuos. Crea un impuesto de 0,45 euros por kilo de plástico no reciclado en envases no reutilizables y otro al depósito de residuos en vertedero e incineración.",
+      "detalle": "Ley 7/2022, de 8 de abril. BOE núm. 85, de 9 de abril de 2022 (BOE-A-2022-5809). En vigor el 10 de abril de 2022; el título VII (impuestos) desde el 1 de enero de 2023. Impuesto especial sobre envases de plástico no reutilizables: 0,45 €/kg de plástico no reciclado. Impuesto sobre el depósito de residuos en vertederos, la incineración y la coincineración, cuyo rendimiento se atribuye transitoriamente a las comunidades autónomas. Prohíbe, entre otros, cubiertos y platos de plástico de un solo uso y las microesferas añadidas intencionadamente.",
+      "votacion": null,
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2022-5809",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2022-5809",
+          "tipo": "oficial",
+          "fecha": "2022-04-09"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No se ha consultado el recuento de la votación final en las Cortes."
+    },
+    {
+      "id": "cli-2022-excepcion-iberica",
+      "tipo": "aprobado",
+      "fecha": "2022-05-13",
+      "titulo": "Real Decreto-ley 10/2022, mecanismo temporal de ajuste del precio del gas para la electricidad («excepción ibérica»)",
+      "frase_llana": "Pone un precio de referencia al gas usado para producir electricidad, empezando en 40 euros por megavatio hora, para bajar el precio mayorista de la luz durante un año.",
+      "detalle": "Real Decreto-ley 10/2022, de 13 de mayo, por el que se establece con carácter temporal un mecanismo de ajuste de costes de producción para la reducción del precio de la electricidad en el mercado mayorista. BOE núm. 115, de 14 de mayo de 2022 (BOE-A-2022-7843). Se aplica 12 meses desde la fecha que fije una orden tras la autorización de la Comisión Europea y no más allá del 31 de mayo de 2023. Precio de referencia del gas: 40 €/MWh los seis primeros meses, con subidas de 5 €/MWh al mes hasta 70 €/MWh. Convalidado por el Congreso el 9 de junio de 2022 (BOE-A-2022-10042).",
+      "votacion": {
+        "fecha": "2022-06-09",
+        "a_favor": null,
+        "en_contra": null,
+        "abstenciones": null,
+        "grupos_en_contra": [
+          "Foro Asturias",
+          "Nueva Canarias"
+        ],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2022-7843",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2022-7843",
+          "tipo": "oficial",
+          "fecha": "2022-05-14"
+        },
+        {
+          "nombre": "BOE-A-2022-10042, Resolución de convalidación",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2022-10042",
+          "tipo": "oficial",
+          "fecha": "2022-06-17"
+        },
+        {
+          "nombre": "Valencia Plaza",
+          "url": "https://valenciaplaza.com/congreso-avala-ley-tope-gas-abstencion-pp-vox",
+          "tipo": "prensa",
+          "fecha": "2022-06-09"
+        },
+        {
+          "nombre": "Orain",
+          "url": "https://orain.eus/es/politica/2022/06/09/el-congreso-avala-decreto-ley-del-tope-al-gas-con-abstencion-de-pp-y-vox/",
+          "tipo": "prensa",
+          "fecha": "2022-06-09"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No consta el recuento de votos. Según dos fuentes de prensa, PP y Vox se abstuvieron y Foro Asturias y Nueva Canarias votaron en contra. No consta la fecha exacta de inicio de aplicación ni sus prórrogas posteriores."
+    },
+    {
+      "id": "cli-2022-rdl-11-prorroga",
+      "tipo": "aprobado",
+      "fecha": "2022-06-25",
+      "titulo": "Real Decreto-ley 11/2022, IVA de la luz al 5 % y prórroga de medidas energéticas",
+      "frase_llana": "Baja el IVA de la luz del 10 % al 5 % hasta final de 2022 y mantiene hasta esa fecha el impuesto especial sobre la electricidad en el 0,5 %, la suspensión del impuesto a la producción eléctrica, los descuentos del bono social y la bonificación de los carburantes.",
+      "detalle": "Real Decreto-ley 11/2022, de 25 de junio, por el que se adoptan y prorrogan determinadas medidas para responder a las consecuencias económicas y sociales de la guerra en Ucrania y para hacer frente a situaciones de vulnerabilidad social y económica. BOE núm. 152, de 26 de junio de 2022 (BOE-A-2022-10557). Hasta el 31 de diciembre de 2022: IVA del 5 % en el suministro eléctrico (antes 10 %); impuesto especial sobre la electricidad al 0,5 %; bono social con descuentos del 60 % y 70 %; bonificación de carburantes (excluida la navegación de recreo). Suspensión del impuesto a la producción eléctrica en el segundo semestre de 2022. Incluye también medidas no energéticas. Convalidado el 14 de julio de 2022 y tramitado como proyecto de ley (337 a favor, 2 en contra, 7 abstenciones).",
+      "votacion": {
+        "fecha": "2022-07-14",
+        "a_favor": 186,
+        "en_contra": 51,
+        "abstenciones": 108,
+        "grupos_en_contra": [],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2022-10557",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-10557",
+          "tipo": "oficial",
+          "fecha": "2022-06-26"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, Pleno, núm. 202",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-202.PDF",
+          "tipo": "oficial",
+          "fecha": "2022-07-14"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No consta en las fuentes consultadas qué grupos votaron en contra."
+    },
+    {
+      "id": "cli-2022-rdl-14-ahorro-energetico",
+      "tipo": "aprobado",
+      "fecha": "2022-08-01",
+      "titulo": "Real Decreto-ley 14/2022, ahorro y eficiencia energética",
+      "frase_llana": "Limita la calefacción a 19 grados y el aire acondicionado a 27 en edificios públicos, comercios y otros locales hasta noviembre de 2023, y obliga a cierres automáticos de puertas. Incluye también trenes de Cercanías y Media Distancia gratuitos con abono y ayudas a becas.",
+      "detalle": "Real Decreto-ley 14/2022, de 1 de agosto, de medidas de sostenibilidad económica en el ámbito del transporte, en materia de becas y ayudas al estudio, así como de medidas de ahorro, eficiencia energética y de reducción de la dependencia energética del gas natural. BOE núm. 184, de 2 de agosto de 2022 (BOE-A-2022-12925). Medidas del RITE hasta el 1 de noviembre de 2023: calefacción máxima 19 ºC y refrigeración mínima 27 ºC, cierre automático de puertas, carteles informativos e inspecciones de eficiencia adelantadas. Según prensa, también apagado de escaparates y edificios públicos desocupados a partir de las 22:00. Convalidado el 25 de agosto de 2022 y tramitado como proyecto de ley (342 a favor, 6 en contra, 1 abstención). Según prensa, votaron en contra PP, Vox, Ciudadanos, Junts, CUP y Foro Asturias, y se abstuvo el BNG.",
+      "votacion": {
+        "fecha": "2022-08-25",
+        "a_favor": 187,
+        "en_contra": 161,
+        "abstenciones": 1,
+        "grupos_en_contra": [
+          "Ciudadanos",
+          "CUP",
+          "Foro Asturias",
+          "Junts",
+          "PP",
+          "Vox"
+        ],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2022-12925",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-12925",
+          "tipo": "oficial",
+          "fecha": "2022-08-02"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, Pleno, núm. 204",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-204.PDF",
+          "tipo": "oficial",
+          "fecha": "2022-08-25"
+        },
+        {
+          "nombre": "Energías Renovables",
+          "url": "https://www.energias-renovables.com/panorama/el-congreso-aprueba-con-holgura-el-decreto-20220825",
+          "tipo": "prensa",
+          "fecha": "2022-08-25"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El recuento es oficial; los grupos en contra y el apagado de escaparates proceden de una sola fuente de prensa."
+    },
+    {
+      "id": "cli-2022-rdl-17-iva-gas",
+      "tipo": "aprobado",
+      "fecha": "2022-09-20",
+      "titulo": "Real Decreto-ley 17/2022, IVA del gas al 5 % y medidas de energía",
+      "frase_llana": "Baja el IVA del gas natural, los pellets, las briquetas y la leña del 21 % al 5 % entre octubre y diciembre de 2022. Permite a las plantas de cogeneración acogerse al tope del gas.",
+      "detalle": "Real Decreto-ley 17/2022, de 20 de septiembre, por el que se adoptan medidas urgentes en el ámbito de la energía, en la aplicación del régimen retributivo a las instalaciones de cogeneración y se reduce temporalmente el tipo del IVA aplicable a las entregas de determinados combustibles. BOE núm. 227, de 21 de septiembre de 2022 (BOE-A-2022-15354), en vigor el 22 de septiembre. Arts. 5 y 6: IVA del 5 % del 1 de octubre al 31 de diciembre de 2022 para gas natural, briquetas, pellets y leña. Art. 1: la cogeneración puede renunciar a su régimen retributivo y acogerse al mecanismo del RDL 10/2022. Servicio de respuesta activa de la demanda desde el 1 de noviembre de 2022. Convalidado el 27 de octubre de 2022 (BOE-A-2022-18038); no se tramitó como proyecto de ley.",
+      "votacion": {
+        "fecha": "2022-10-27",
+        "a_favor": 284,
+        "en_contra": 0,
+        "abstenciones": null,
+        "grupos_en_contra": [],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2022-15354",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-15354",
+          "tipo": "oficial",
+          "fecha": "2022-09-21"
+        },
+        {
+          "nombre": "BOE-A-2022-18038, Resolución de convalidación",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2022-18038",
+          "tipo": "oficial",
+          "fecha": "2022-10-27"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, Pleno, núm. 219",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-219.PDF",
+          "tipo": "oficial",
+          "fecha": "2022-10-27"
+        },
+        {
+          "nombre": "El Derecho",
+          "url": "https://elderecho.com/convalidado-real-decreto-ley-medidas-energia",
+          "tipo": "prensa",
+          "fecha": "2022-10-28"
+        },
+        {
+          "nombre": "The Objective",
+          "url": "https://theobjective.com/economia/2022-10-27/iva-gas-rebaja-congreso/",
+          "tipo": "prensa",
+          "fecha": "2022-10-27"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "La convalidación es oficial. Los 284 votos a favor proceden de una fuente de prensa y la ausencia de votos en contra de otra; no consta el número de abstenciones. La lectura del sumario del Diario de Sesiones dio la misma cifra (167 a favor, 178 en contra, 3 abstenciones) para la convalidación y para la tramitación por urgencia, lo que no cuadra con una convalidación aprobada; esa cifra corresponde con seguridad a la tramitación, que se rechazó. Según prensa, se abstuvieron Vox, EH Bildu, Junts, CUP y BNG."
+    },
+    {
+      "id": "cli-2022-ley-19-mar-menor",
+      "tipo": "aprobado",
+      "fecha": "2022-09-30",
+      "titulo": "Ley 19/2022, personalidad jurídica del Mar Menor y su cuenca",
+      "frase_llana": "Reconoce a la laguna del Mar Menor y su cuenca como sujeto de derechos: a existir, a ser protegida, conservada y restaurada. Cualquier persona puede acudir a los tribunales en su nombre. Nace de una iniciativa legislativa popular.",
+      "detalle": "Ley 19/2022, de 30 de septiembre, para el reconocimiento de personalidad jurídica a la laguna del Mar Menor y su cuenca. BOE núm. 237, de 3 de octubre de 2022 (BOE-A-2022-16019), en vigor ese día. Procede de una iniciativa legislativa popular. Art. 2: derechos a existir y evolucionar naturalmente, a la protección, a la conservación y a la restauración. Art. 3: «Tutoría del Mar Menor» con un Comité de Representantes (3 del Estado, 3 de la comunidad autónoma y 7 ciudadanos), una Comisión de Seguimiento y un Comité Científico. Art. 6: cualquier persona puede demandar en nombre del ecosistema. El Tribunal Constitucional desestimó el recurso 8583/2022 contra la ley (Sentencia 142/2024). El Real Decreto 90/2025 regula sus órganos.",
+      "votacion": null,
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2022-16019",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-16019",
+          "tipo": "oficial",
+          "fecha": "2022-10-03"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No se ha consultado el recuento de las votaciones en el Congreso y el Senado."
+    },
+    {
+      "id": "cli-2022-rdl-18-mas-seguridad",
+      "tipo": "aprobado",
+      "fecha": "2022-10-18",
+      "titulo": "Real Decreto-ley 18/2022, Plan «Más seguridad para tu energía» y bono social",
+      "frase_llana": "Sube los descuentos del bono social eléctrico y los prorroga hasta final de 2023, y crea un descuento del 40 % para hogares trabajadores con ingresos algo por encima del bono social. Permite a las comunidades de vecinos con calefacción central acogerse a la tarifa regulada del gas.",
+      "detalle": "Real Decreto-ley 18/2022, de 18 de octubre, por el que se aprueban medidas de refuerzo de la protección de los consumidores de energía y de contribución a la reducción del consumo de gas natural en aplicación del «Plan + seguridad para tu energía (+SE)», y otras medidas en materia de retribuciones del sector público y de protección de trabajadores agrarios eventuales afectados por la sequía. BOE núm. 251, de 19 de octubre de 2022 (BOE-A-2022-17040). Bono social: descuentos más altos hasta el 31 de diciembre de 2023 y límite de energía con descuento un 15 % mayor; nuevo colectivo con descuento del 40 % hasta final de 2023. Bono social térmico: ayuda mínima de 40 € y 225 millones adicionales en 2022. Tarifa de último recurso de gas para comunidades con calefacción central. Autoconsumo a través de red hasta 1.000 metros en cubiertas. Deducción en el IRPF por obras de eficiencia ampliada un año. Incluye una subida adicional del 1,5 % del sueldo público en 2022. Convalidado el 3 de noviembre de 2022 y tramitado como proyecto de ley (334 a favor, 6 en contra, 1 abstención).",
+      "votacion": {
+        "fecha": "2022-11-03",
+        "a_favor": 282,
+        "en_contra": 0,
+        "abstenciones": 59,
+        "grupos_en_contra": [],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2022-17040",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-17040",
+          "tipo": "oficial",
+          "fecha": "2022-10-19"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, Pleno, núm. 221",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-221.PDF",
+          "tipo": "oficial",
+          "fecha": "2022-11-03"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": ""
+    },
+    {
+      "id": "cli-2022-ley-38-gravamen-energetico",
+      "tipo": "aprobado",
+      "fecha": "2022-12-27",
+      "titulo": "Ley 38/2022, gravamen temporal energético (y de la banca)",
+      "frase_llana": "Las grandes empresas energéticas pagan en 2023 y 2024 un 1,2 % de lo que facturan en España, sin poder repercutirlo a los clientes. La misma ley crea un gravamen a la banca y un impuesto temporal a las grandes fortunas.",
+      "detalle": "Ley 38/2022, de 27 de diciembre, para el establecimiento de gravámenes temporales energético y de entidades de crédito y establecimientos financieros de crédito y por la que se crea el impuesto temporal de solidaridad de las grandes fortunas. BOE núm. 311, de 28 de diciembre de 2022 (BOE-A-2022-22684). Art. 1: prestación del 1,2 % del importe neto de la cifra de negocios en España del año anterior, para operadores principales de los sectores energéticos según la CNMC y empresas con al menos el 75 % de su facturación en crudo, gas, carbón o refino; exentas las de menos de 1.000 millones de euros de facturación en 2019. Se devenga el 1 de enero de 2023 y de 2024. No deducible ni repercutible. Art. 2: gravamen del 4,8 % a la banca. Art. 3: impuesto de solidaridad de las grandes fortunas. Para 2025, el RDL 10/2024 intentó prorrogar el gravamen energético y fue derogado (ver hecho propio).",
+      "votacion": null,
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2022-22684",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22684",
+          "tipo": "oficial",
+          "fecha": "2022-12-28"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No se ha consultado el recuento de la votación final en las Cortes."
+    },
+    {
+      "id": "cli-2022-rdl-20-prorroga",
+      "tipo": "aprobado",
+      "fecha": "2022-12-27",
+      "titulo": "Real Decreto-ley 20/2022, prórroga de las rebajas de la luz y el gas en 2023",
+      "frase_llana": "Mantiene durante 2023 el IVA del 5 % del gas y de parte de la luz, el impuesto especial sobre la electricidad en el 0,5 %, la suspensión del impuesto a la producción eléctrica y la prohibición de cortar luz, gas y agua a hogares vulnerables.",
+      "detalle": "Real Decreto-ley 20/2022, de 27 de diciembre, de medidas de respuesta a las consecuencias económicas y sociales de la Guerra de Ucrania y de apoyo a la reconstrucción de la isla de La Palma y a otras situaciones de vulnerabilidad. BOE núm. 311, de 28 de diciembre de 2022 (BOE-A-2022-22685). Hasta el 31 de diciembre de 2023: IVA del 5 % del gas natural, pellets y leña y de determinados suministros eléctricos; impuesto especial sobre la electricidad al 0,5 %; suspensión del impuesto a la producción eléctrica; prohibición de cortes de suministro a consumidores vulnerables. Precio máximo de la bombona de butano hasta el 30 de junio de 2023 y ayuda de 20 céntimos por litro de gasóleo agrícola. Incluye también medidas no energéticas. Convalidado el 24 de enero de 2023 y tramitado como proyecto de ley (345 a favor, 1 abstención).",
+      "votacion": {
+        "fecha": "2023-01-24",
+        "a_favor": 175,
+        "en_contra": 7,
+        "abstenciones": 164,
+        "grupos_en_contra": [],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2022-22685",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22685",
+          "tipo": "oficial",
+          "fecha": "2022-12-28"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, Pleno, núm. 239",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-239.PDF",
+          "tipo": "oficial",
+          "fecha": "2023-01-24"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No consta en las fuentes consultadas qué grupos votaron en contra."
+    },
+    {
+      "id": "cli-2023-rdl-3-prorroga-iberica",
+      "tipo": "aprobado",
+      "fecha": "2023-03-28",
+      "titulo": "Real Decreto-ley 3/2023, prórroga de la «excepción ibérica» hasta final de 2023",
+      "frase_llana": "Alarga hasta el 31 de diciembre de 2023 el tope al precio del gas usado para producir electricidad, con un precio de referencia que sube cada mes de 45 a 65 euros por megavatio hora.",
+      "detalle": "Real Decreto-ley 3/2023, de 28 de marzo, de prórroga del mecanismo de ajuste de costes de producción para la reducción del precio de la electricidad en el mercado mayorista regulado en el Real Decreto-ley 10/2022. BOE núm. 75, de 29 de marzo de 2023 (BOE-A-2023-7937), en vigor el 30 de marzo. Nuevo art. 1.2 del RDL 10/2022: aplicación hasta el 31 de diciembre de 2023. Precio de referencia del gas de 45 €/MWh en enero de 2023 a 65 €/MWh en diciembre de 2023. Convalidado el 20 de abril de 2023 (BOE-A-2023-9954); la tramitación por urgencia se rechazó (161 a favor, 182 en contra, 3 abstenciones).",
+      "votacion": {
+        "fecha": "2023-04-20",
+        "a_favor": 197,
+        "en_contra": 1,
+        "abstenciones": 148,
+        "grupos_en_contra": [],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2023-7937",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-7937",
+          "tipo": "oficial",
+          "fecha": "2023-03-29"
+        },
+        {
+          "nombre": "BOE-A-2023-9954, Resolución de convalidación",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2023-9954",
+          "tipo": "oficial",
+          "fecha": "2023-04-20"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, Pleno, núm. 262",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-262.PDF",
+          "tipo": "oficial",
+          "fecha": "2023-04-20"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No consta en las fuentes consultadas quién votó en contra."
+    },
+    {
+      "id": "cli-2023-rdl-4-sequia",
+      "tipo": "aprobado",
+      "fecha": "2023-05-11",
+      "titulo": "Real Decreto-ley 4/2023, medidas agrarias y de aguas por la sequía",
+      "frase_llana": "Da poderes extraordinarios a las confederaciones hidrográficas para reducir o reordenar el uso del agua durante la sequía, regula la reutilización de aguas regeneradas y sustituye el bombeo de agua subterránea en Doñana para abastecer Matalascañas.",
+      "detalle": "Real Decreto-ley 4/2023, de 11 de mayo, por el que se adoptan medidas urgentes en materia agraria y de aguas en respuesta a la sequía y al agravamiento de las condiciones del sector primario derivado del conflicto bélico en Ucrania y de las condiciones climatológicas, entre otras materias. BOE núm. 113, de 12 de mayo de 2023 (BOE-A-2023-11187). Facultades extraordinarias para las confederaciones hidrográficas (reducir suministros, cambiar prioridades de uso, suspender títulos); régimen sancionador reforzado; nuevo capítulo de la Ley de Aguas sobre reutilización de aguas regeneradas; cambios en el canon de control de vertidos y el canon de regulación; agua superficial para Matalascañas en lugar de bombeo en Doñana; obras de abastecimiento de Sevilla. Incluye ayudas agrarias y otras medidas. Convalidado por la Diputación Permanente del Congreso el 7 de junio de 2023; no se tramitó como proyecto de ley.",
+      "votacion": {
+        "fecha": "2023-06-07",
+        "a_favor": null,
+        "en_contra": null,
+        "abstenciones": null,
+        "grupos_en_contra": [],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2023-11187",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-11187",
+          "tipo": "oficial",
+          "fecha": "2023-05-12"
+        },
+        {
+          "nombre": "Congreso, Diputación Permanente, sesión 11, resultados",
+          "url": "https://www.congreso.es/docu/tramit/LegXIV/tramit_pleno07062023_DP11.pdf",
+          "tipo": "oficial",
+          "fecha": "2023-06-07"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No consta el recuento de votos de la Diputación Permanente."
+    },
+    {
+      "id": "cli-2023-rdl-8-prorroga",
+      "tipo": "aprobado",
+      "fecha": "2023-12-27",
+      "titulo": "Real Decreto-ley 8/2023, retirada gradual de las rebajas de la luz y el gas en 2024",
+      "frase_llana": "El IVA de la luz pasa al 10 % durante 2024 y el del gas al 10 % hasta marzo. El impuesto especial sobre la electricidad y el impuesto a la producción eléctrica vuelven poco a poco. Los descuentos del bono social siguen hasta junio de 2024.",
+      "detalle": "Real Decreto-ley 8/2023, de 27 de diciembre, por el que se adoptan medidas para afrontar las consecuencias económicas y sociales derivadas de los conflictos en Ucrania y Oriente Próximo, así como para paliar los efectos de la sequía. BOE núm. 310, de 28 de diciembre de 2023 (BOE-A-2023-26452). IVA de la electricidad al 10 % del 1 de enero al 31 de diciembre de 2024; IVA del gas natural al 10 % hasta el 31 de marzo de 2024. Impuesto especial sobre la electricidad: 2,5 % en el primer trimestre y 3,8 % en el segundo. Impuesto a la producción eléctrica: la base de 2024 excluye la mitad de la retribución del primer trimestre y una cuarta parte de la del segundo. Bono social y su extensión a hogares trabajadores de bajos ingresos hasta el 30 de junio de 2024. Incluye también medidas no energéticas. Convalidado el 10 de enero de 2024 en segunda votación por llamamiento, tras un primer empate a 171. Según prensa, votaron en contra PP, Vox y UPN y se abstuvo Junts.",
+      "votacion": {
+        "fecha": "2024-01-10",
+        "a_favor": 172,
+        "en_contra": 171,
+        "abstenciones": 7,
+        "grupos_en_contra": [
+          "PP",
+          "UPN",
+          "Vox"
+        ],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2023-26452",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-26452",
+          "tipo": "oficial",
+          "fecha": "2023-12-28"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, Pleno, núm. 16",
+          "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-16.PDF",
+          "tipo": "oficial",
+          "fecha": "2024-01-10"
+        },
+        {
+          "nombre": "Energías Renovables",
+          "url": "https://www.energias-renovables.com/panorama/la-abstencion-de-junts-da-via-libre-20240812",
+          "tipo": "prensa",
+          "fecha": "2024-01-11"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El recuento es oficial; los grupos en contra proceden de una sola fuente de prensa."
+    },
+    {
+      "id": "cli-2024-rdl-4-prorroga",
+      "tipo": "aprobado",
+      "fecha": "2024-06-26",
+      "titulo": "Real Decreto-ley 4/2024, prórroga del bono social y de la protección frente a cortes",
+      "frase_llana": "Deja los descuentos del bono social eléctrico de forma permanente un 10 % por encima de los originales, con una bajada gradual hasta julio de 2025. Prorroga la prohibición de cortar luz, gas y agua a hogares vulnerables.",
+      "detalle": "Real Decreto-ley 4/2024, de 26 de junio, por el que se prorrogan determinadas medidas para afrontar las consecuencias económicas y sociales derivadas de los conflictos en Ucrania y Oriente Próximo y se adoptan medidas urgentes en materia fiscal, energética y social. BOE núm. 155, de 27 de junio de 2024 (BOE-A-2024-12944). Bono social: descuentos permanentes un 10 % superiores a los originales y senda decreciente hasta el régimen permanente desde el 1 de julio de 2025. Prórroga de la garantía de suministro de agua y energía a consumidores vulnerables. Mecanismo de apoyo a la industria electrointensiva hasta el 31 de diciembre de 2024. Su parte fiscal se centra en el IVA de los alimentos. Convalidado el 23 de julio de 2024; la tramitación por urgencia se aprobó con 349 votos a favor.",
+      "votacion": {
+        "fecha": "2024-07-23",
+        "a_favor": 178,
+        "en_contra": 33,
+        "abstenciones": 138,
+        "grupos_en_contra": [],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2024-12944",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2024-12944",
+          "tipo": "oficial",
+          "fecha": "2024-06-27"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, Pleno, núm. 58",
+          "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-58.PDF",
+          "tipo": "oficial",
+          "fecha": "2024-07-23"
+        },
+        {
+          "nombre": "Smartgrids Info",
+          "url": "https://www.smartgridsinfo.es/2024/07/25/congreso-convalida-real-decreto-ley-prorrogar-varias-medidas-materia-energetica",
+          "tipo": "prensa",
+          "fecha": "2024-07-25"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No consta en las fuentes consultadas qué grupos votaron en contra ni la fecha final de la prórroga de la protección frente a cortes."
+    },
+    {
+      "id": "cli-2024-pniec-actualizacion",
+      "tipo": "aprobado",
+      "fecha": "2024-09-24",
+      "titulo": "Real Decreto 986/2024, actualización del PNIEC 2023-2030",
+      "frase_llana": "El Gobierno sube los objetivos para 2030: 32 % menos de emisiones que en 1990 y un 81 % de la electricidad de origen renovable.",
+      "detalle": "Real Decreto 986/2024, de 24 de septiembre, por el que se aprueba la actualización del Plan Nacional Integrado de Energía y Clima 2023-2030. BOE núm. 232, de 25 de septiembre de 2024 (BOE-A-2024-19278). Se dicta en aplicación del art. 4.1 de la Ley 7/2021. Objetivos 2030 según el MITECO: 32 % de reducción de gases de efecto invernadero respecto a 1990, 48 % de renovables en el consumo final de energía, 81 % de generación eléctrica renovable y 43 % de eficiencia energética. Es un real decreto, no una norma con rango de ley; no se vota en las Cortes.",
+      "votacion": null,
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2024-19278",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2024-19278",
+          "tipo": "oficial",
+          "fecha": "2024-09-25"
+        },
+        {
+          "nombre": "MITECO, nota de prensa",
+          "url": "https://www.miteco.gob.es/es/prensa/ultimas-noticias/2024/septiembre/el-gobierno-aprueba-la-actualizacion-del-plan-nacional-integrado.html",
+          "tipo": "oficial",
+          "fecha": "2024-09-24"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": ""
+    },
+    {
+      "id": "cli-2025-rdl-9-2024-derogado",
+      "tipo": "no_salio",
+      "fecha": "2024-12-23",
+      "titulo": "Real Decreto-ley 9/2024, decreto «ómnibus» con prórroga del bono social, derogado",
+      "frase_llana": "Prorrogaba durante 2025 los descuentos extraordinarios del bono social, la prohibición de cortar luz, gas y agua a hogares vulnerables, el apoyo a la industria electrointensiva y deducciones por eficiencia energética y coche eléctrico, junto a otras medidas no energéticas. El Congreso no lo convalidó.",
+      "detalle": "Real Decreto-ley 9/2024, de 23 de diciembre, por el que se adoptan medidas urgentes en materia económica, tributaria, de transporte, y de Seguridad Social, y se prorrogan determinadas medidas para hacer frente a situaciones de vulnerabilidad social. BOE núm. 309, de 24 de diciembre de 2024 (BOE-A-2024-26915). Energía: senda decreciente del bono social hasta el régimen permanente desde el 1 de enero de 2026; garantía de suministro a vulnerables y mecanismo electrointensivo hasta el 31 de diciembre de 2025; un año más de deducciones por obras de eficiencia energética y por vehículos eléctricos y puntos de recarga. Incluía la revalorización de las pensiones y ayudas al transporte. Derogado por el Congreso el 22 de enero de 2025. Las medidas energéticas volvieron a aprobarse en el RDL 1/2025.",
+      "votacion": {
+        "fecha": "2025-01-22",
+        "a_favor": 171,
+        "en_contra": 177,
+        "abstenciones": 1,
+        "grupos_en_contra": [
+          "Junts",
+          "PP",
+          "Vox"
+        ],
+        "resultado": "derogado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2024-26915",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2024-26915",
+          "tipo": "oficial",
+          "fecha": "2024-12-24"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, Pleno, núm. 92",
+          "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-92.PDF",
+          "tipo": "oficial",
+          "fecha": "2025-01-22"
+        },
+        {
+          "nombre": "Energías Renovables",
+          "url": "https://www.energias-renovables.com/panorama/asi-ha-sido-el-no-de-pp-20250123",
+          "tipo": "prensa",
+          "fecha": "2025-01-23"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El recuento es oficial; los grupos en contra proceden de una sola fuente de prensa."
+    },
+    {
+      "id": "cli-2025-rdl-10-2024-gravamen-derogado",
+      "tipo": "no_salio",
+      "fecha": "2024-12-23",
+      "titulo": "Real Decreto-ley 10/2024, gravamen temporal energético para 2025, derogado",
+      "frase_llana": "Prorrogaba en 2025 el pago del 1,2 % de la facturación de las grandes energéticas, con rebajas si invertían en transición ecológica. El Congreso no lo convalidó y no se cobró en 2025.",
+      "detalle": "Real Decreto-ley 10/2024, de 23 de diciembre, para el establecimiento de un gravamen temporal energético durante el año 2025. BOE núm. 309, de 24 de diciembre de 2024 (BOE-A-2024-26916). Prestación del 1,2 % de la cifra de negocios de 2024 en España para operadores principales de los sectores energéticos; exentas las empresas con menos de 1.000 millones de facturación en 2019. Minoración por inversiones estratégicas en transición ecológica, con un máximo del 60 % de la prestación. Derogado por el Congreso el 22 de enero de 2025 (BOE-A-2025-1137). Según prensa, votaron en contra PP, Vox, Junts, PNV y UPN.",
+      "votacion": {
+        "fecha": "2025-01-22",
+        "a_favor": 165,
+        "en_contra": 183,
+        "abstenciones": 1,
+        "grupos_en_contra": [
+          "Junts",
+          "PNV",
+          "PP",
+          "UPN",
+          "Vox"
+        ],
+        "resultado": "derogado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2024-26916",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2024-26916",
+          "tipo": "oficial",
+          "fecha": "2024-12-24"
+        },
+        {
+          "nombre": "BOE-A-2025-1137, Resolución de derogación",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-1137",
+          "tipo": "oficial",
+          "fecha": "2025-01-23"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, Pleno, núm. 92",
+          "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-92.PDF",
+          "tipo": "oficial",
+          "fecha": "2025-01-22"
+        },
+        {
+          "nombre": "Bolsamanía",
+          "url": "https://www.bolsamania.com/noticias_amp/politica/congreso-rechaza-decreto-gravamen-empresas-energeticas--18614236.html",
+          "tipo": "prensa",
+          "fecha": "2025-01-22"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El recuento es oficial; los grupos en contra proceden de una sola fuente de prensa."
+    },
+    {
+      "id": "cli-2025-rdl-1-omnibus",
+      "tipo": "aprobado",
+      "fecha": "2025-01-28",
+      "titulo": "Real Decreto-ley 1/2025, nuevo decreto con prórroga del bono social y de la protección frente a cortes",
+      "frase_llana": "Vuelve a aprobar, tras la derogación del decreto anterior, los descuentos extraordinarios del bono social con bajada gradual hasta 2026 y la prohibición de cortar luz, gas y agua a hogares vulnerables hasta final de 2025.",
+      "detalle": "Real Decreto-ley 1/2025, de 28 de enero, por el que se aprueban medidas urgentes en materia económica, de transporte, de Seguridad Social, y para hacer frente a situaciones de vulnerabilidad. BOE núm. 25, de 29 de enero de 2025 (BOE-A-2025-1560). Bono social: valores extraordinarios con senda decreciente y régimen permanente desde el 1 de enero de 2026. Garantía de suministro de agua y energía a consumidores vulnerables hasta el 31 de diciembre de 2025. Incluye la revalorización de las pensiones y ayudas al transporte. Convalidado el 12 de febrero de 2025; la tramitación por urgencia se aprobó (347 a favor, 1 en contra). Según prensa, votó en contra Vox y se abstuvo UPN.",
+      "votacion": {
+        "fecha": "2025-02-12",
+        "a_favor": 315,
+        "en_contra": 33,
+        "abstenciones": 1,
+        "grupos_en_contra": [
+          "Vox"
+        ],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2025-1560",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-1560",
+          "tipo": "oficial",
+          "fecha": "2025-01-29"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, Pleno, núm. 95",
+          "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-95.PDF",
+          "tipo": "oficial",
+          "fecha": "2025-02-12"
+        },
+        {
+          "nombre": "Menorca.info",
+          "url": "https://www.menorca.info/actualidad/nacional/2025/02/12/2324949/congreso-convalida-subida-pensiones-unica-oposicion-vox.html",
+          "tipo": "prensa",
+          "fecha": "2025-02-12"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El recuento es oficial; el grupo en contra procede de una sola fuente de prensa. No se ha comprobado si este decreto incluía la prórroga del apoyo a la industria electrointensiva y de las deducciones fiscales."
+    },
+    {
+      "id": "cli-2025-pl-nuclear",
+      "tipo": "votado",
+      "fecha": "2025-06-17",
+      "titulo": "Proposición de Ley del PP sobre la aportación de la energía nuclear, tomada en consideración",
+      "frase_llana": "El Congreso acepta debatir una ley del PP para frenar el cierre de las centrales nucleares. Es el primer paso; no es una ley aprobada.",
+      "detalle": "Proposición de Ley para garantizar la aportación de la energía nuclear en la descarbonización del sistema energético, del Grupo Parlamentario Popular (expediente 122/000179), publicada el 11 de abril de 2025 (BOCG, serie B, núm. 206-1). Tomada en consideración por el Pleno el 17 de junio de 2025: según el acta, 344 votos emitidos, 171 a favor, 166 en contra y 7 abstenciones (BOCG, serie B, núm. 206-2). El 24 de junio de 2025 la Mesa la envió a la Comisión para la Transición Ecológica y el Reto Demográfico con competencia legislativa plena y abrió un plazo de enmiendas que terminaba el 15 de septiembre de 2025 (BOCG, serie B, núm. 206-3, de 27 de junio de 2025). No consta ninguna publicación posterior ni que se aprobara como ley antes de la disolución de las Cortes el 6 de octubre de 2026. Contexto: el calendario de cese de las centrales nucleares entre 2027 y 2035 figura en el Séptimo Plan General de Residuos Radiactivos, aprobado por el Consejo de Ministros el 27 de diciembre de 2023, no en una norma con rango de ley. El 13 de noviembre de 2025, durante la votación de las enmiendas del Senado a la Ley de Movilidad Sostenible, no salió una enmienda del PP que eliminaba los calendarios de cese de Almaraz, Ascó I y Cofrentes fijados por órdenes ministeriales: 171 votos a favor, 172 en contra y 7 abstenciones de Junts, según prensa.",
+      "votacion": {
+        "fecha": "2025-06-17",
+        "a_favor": 171,
+        "en_contra": 166,
+        "abstenciones": 7,
+        "grupos_en_contra": [],
+        "resultado": "tomado_en_consideracion"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOCG Congreso, serie B, núm. 206-2",
+          "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-206-2.PDF",
+          "tipo": "oficial",
+          "fecha": "2025-06-23"
+        },
+        {
+          "nombre": "Congreso, resultados del Pleno de 17 de junio de 2025",
+          "url": "https://www.congreso.es/docu/tramit/LegXV/tramit_pleno20250617_119.pdf",
+          "tipo": "oficial",
+          "fecha": "2025-06-17"
+        },
+        {
+          "nombre": "Acta del Pleno del Congreso, 17 jun 2025",
+          "url": "https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20250617.pdf",
+          "tipo": "oficial",
+          "fecha": "2025-06-17"
+        },
+        {
+          "nombre": "BOCG Congreso, serie B, núm. 206-3",
+          "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-206-3.PDF",
+          "tipo": "oficial",
+          "fecha": "2025-06-27"
+        },
+        {
+          "nombre": "MITECO, Séptimo Plan General de Residuos Radiactivos",
+          "url": "https://www.miteco.gob.es/es/prensa/ultimas-noticias/2023/12/el-gobierno-aprueba-el-septimo-plan-general-de-residuos-radiacti.html",
+          "tipo": "oficial",
+          "fecha": "2023-12-27"
+        },
+        {
+          "nombre": "Vozpópuli (toma en consideración)",
+          "url": "https://www.vozpopuli.com/espana/politica/el-congreso-da-luz-verde-a-la-ley-del-pp-para-prolongar-la-vida-util-de-las-nucleares-.html",
+          "tipo": "prensa",
+          "fecha": "2025-06-17"
+        },
+        {
+          "nombre": "ESdiario",
+          "url": "https://www.esdiario.com/economia/250618/161410/congreso-da-luz-verde-ley-pp-prorrogar-nucleares.html",
+          "tipo": "prensa",
+          "fecha": "2025-06-18"
+        },
+        {
+          "nombre": "Vozpópuli (enmienda de noviembre de 2025)",
+          "url": "https://www.vozpopuli.com/espana/politica/la-abstencion-de-junts-impide-la-prorroga-de-las-nucleares.html",
+          "tipo": "prensa",
+          "fecha": "2025-11-13"
+        },
+        {
+          "nombre": "Energías Renovables (enmienda de noviembre de 2025)",
+          "url": "https://www.energias-renovables.com/panorama/portazo-del-congreso-a-la-pretensi-n-20251113",
+          "tipo": "prensa",
+          "fecha": "2025-11-13"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El recuento de junio de 2025 es el del acta del Pleno. La prensa sitúa a PSOE y Sumar entre los votos en contra y a Junts en la abstención, sin dar la lista completa. El recuento de la enmienda de noviembre de 2025 procede de una sola fuente de prensa: el acta de ese día enumera las votaciones por número de disposición y no permite identificar cuál era la enmienda nuclear. No consta en qué estado exacto quedó la proposición en la comisión al disolverse las Cortes."
+    },
+    {
+      "id": "cli-2025-rdl-7-sistema-electrico",
+      "tipo": "no_salio",
+      "fecha": "2025-06-24",
+      "titulo": "Real Decreto-ley 7/2025, de refuerzo del sistema eléctrico, derogado",
+      "frase_llana": "Tras el apagón del 28 de abril de 2025, el Gobierno aprobó medidas para reforzar la red eléctrica, el almacenamiento y el autoconsumo. El Congreso no lo convalidó y quedó derogado.",
+      "detalle": "Real Decreto-ley 7/2025, de 24 de junio, por el que se aprueban medidas urgentes para el refuerzo del sistema eléctrico. BOE núm. 152, de 25 de junio de 2025 (BOE-A-2025-12857), en vigor ese día. Según prensa, incluía más supervisión del sistema, control de tensión, almacenamiento y baterías, autoconsumo, agregador de demanda, más funciones para la CNMC y ayudas a la industria electrointensiva. Derogado por acuerdo del Congreso de 22 de julio de 2025 (BOE-A-2025-15313).",
+      "votacion": {
+        "fecha": "2025-07-22",
+        "a_favor": 165,
+        "en_contra": 183,
+        "abstenciones": 0,
+        "grupos_en_contra": [
+          "BNG",
+          "Junts",
+          "Podemos",
+          "PP",
+          "Vox"
+        ],
+        "resultado": "derogado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2025-12857",
+          "url": "https://www.boe.es/eli/es/rdl/2025/06/24/7/con",
+          "tipo": "oficial",
+          "fecha": "2025-06-25"
+        },
+        {
+          "nombre": "BOE-A-2025-15313, Resolución de derogación",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-15313",
+          "tipo": "oficial",
+          "fecha": "2025-07-24"
+        },
+        {
+          "nombre": "Acta del Pleno del Congreso, 22 jul 2025",
+          "url": "https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20250722.pdf",
+          "tipo": "oficial",
+          "fecha": "2025-07-22"
+        },
+        {
+          "nombre": "Energías Renovables",
+          "url": "https://www.energias-renovables.com/panorama/pp-vox-y-junts-reeditan-alianza-para-20250722",
+          "tipo": "prensa",
+          "fecha": "2025-07-22"
+        },
+        {
+          "nombre": "Orain",
+          "url": "https://orain.eus/es/politica/2025/07/22/el-congreso-tumbara-esta-tarde-el-decreto-antiapagones/",
+          "tipo": "prensa",
+          "fecha": "2025-07-22"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El recuento es el del acta del Pleno: 348 votos emitidos, 165 a favor y 183 en contra, sin abstenciones. Los grupos en contra proceden de prensa; según una fuente también votó en contra un diputado de Sumar. El contenido detallado del decreto se ha tomado de prensa."
+    },
+    {
+      "id": "cli-2026-rdl-16-2025-derogado",
+      "tipo": "no_salio",
+      "fecha": "2025-12-23",
+      "titulo": "Real Decreto-ley 16/2025, con prórroga del bono social eléctrico y ayudas al coche eléctrico y al autoconsumo, derogado",
+      "frase_llana": "El decreto prorrogaba los descuentos del bono social eléctrico y deducciones fiscales por comprar un coche eléctrico o instalar autoconsumo, entre otras medidas no energéticas. El Congreso no lo convalidó y quedó derogado.",
+      "detalle": "Real Decreto-ley 16/2025, de 23 de diciembre, por el que se prorrogan determinadas medidas para hacer frente a situaciones de vulnerabilidad social, y se adoptan medidas urgentes en materia tributaria y de Seguridad Social. BOE núm. 309, de 24 de diciembre de 2025. Según prensa, prorrogaba el bono social eléctrico hasta el 31 de diciembre de 2026 (descuentos del 42,5 % y 57,5 %), la deducción del 15 % por compra de vehículo eléctrico nuevo e incentivos fiscales al autoconsumo y a las renovables. Derogado por acuerdo del Congreso de 27 de enero de 2026 (BOE-A-2026-2024): según el acta, 349 votos emitidos, 171 a favor y 178 en contra. El Gobierno aprobó después el Real Decreto-ley 2/2026, con medidas similares, que también fue derogado (ver hecho propio).",
+      "votacion": {
+        "fecha": "2026-01-27",
+        "a_favor": 171,
+        "en_contra": 178,
+        "abstenciones": 0,
+        "grupos_en_contra": [
+          "Junts",
+          "PP",
+          "Vox"
+        ],
+        "resultado": "derogado"
+      },
+      "fuentes": [
+        {
+          "nombre": "Acta del Pleno del Congreso, 27 ene 2026",
+          "url": "https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20260127.pdf",
+          "tipo": "oficial",
+          "fecha": "2026-01-27"
+        },
+        {
+          "nombre": "BOE-A-2026-2024, Resolución de derogación del RDL 16/2025",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-2024",
+          "tipo": "oficial",
+          "fecha": "2026-01-28"
+        },
+        {
+          "nombre": "Energías Renovables (RDL 16/2025)",
+          "url": "https://www.renewableenergymagazine.com/panorama/pp-vox-y-junts-reeditan-alianza-para-20260127/",
+          "tipo": "prensa",
+          "fecha": "2026-01-27"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "La derogación y el recuento son oficiales (acta del Pleno). El contenido energético procede de una sola fuente de prensa. Los grupos en contra proceden de prensa; una fuente añade a UPN. El decreto incluía también medidas fiscales, laborales y sociales ajenas a la energía."
+    },
+    {
+      "id": "cli-2026-rdl-2-2026-derogado",
+      "tipo": "no_salio",
+      "fecha": "2026-02-03",
+      "titulo": "Real Decreto-ley 2/2026, segundo intento de prórroga del bono social y ayudas al autoconsumo, derogado",
+      "frase_llana": "Tras la derogación del RDL 16/2025, el Gobierno aprobó otro decreto con medidas parecidas, entre ellas el bono social eléctrico y ayudas fiscales al coche eléctrico y al autoconsumo. El Congreso tampoco lo convalidó.",
+      "detalle": "Real Decreto-ley 2/2026, de 3 de febrero (BOE-A-2026-2547), con medidas similares a las del RDL 16/2025, según prensa. Derogado por el Congreso el 26 de febrero de 2026 (BOE-A-2026-4667): según el acta, 350 votos emitidos, 172 a favor, 177 en contra y 1 abstención. Según prensa, votaron en contra PP, Vox y Junts. El bono social extraordinario de 2026 se aprobó después en el RDL 7/2026.",
+      "votacion": {
+        "fecha": "2026-02-26",
+        "a_favor": 172,
+        "en_contra": 177,
+        "abstenciones": 1,
+        "grupos_en_contra": [
+          "Junts",
+          "PP",
+          "Vox"
+        ],
+        "resultado": "derogado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2026-2547",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-2547",
+          "tipo": "oficial",
+          "fecha": null
+        },
+        {
+          "nombre": "BOE-A-2026-4667, Resolución de derogación",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-4667",
+          "tipo": "oficial",
+          "fecha": "2026-02-28"
+        },
+        {
+          "nombre": "Acta del Pleno del Congreso, 26 feb 2026",
+          "url": "https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20260226.pdf",
+          "tipo": "oficial",
+          "fecha": "2026-02-26"
+        },
+        {
+          "nombre": "Energías Renovables",
+          "url": "https://www.energias-renovables.com/autoconsumo/pp-vox-y-junts-vuelven-a-tumbar-20260227",
+          "tipo": "prensa",
+          "fecha": "2026-02-27"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "La derogación y el recuento son oficiales. El contenido energético y los grupos en contra proceden de una sola fuente de prensa; no se ha leído el texto del decreto en el BOE. La fecha de publicación en el BOE no se ha comprobado."
+    },
+    {
+      "id": "cli-2026-rdl-7-oriente-medio",
+      "tipo": "aprobado",
+      "fecha": "2026-03-20",
+      "titulo": "Real Decreto-ley 7/2026, Plan Integral de Respuesta a la Crisis en Oriente Medio",
+      "frase_llana": "Baja del 21 % al 10 % el IVA de la luz, el gas y los carburantes hasta junio de 2026, y el impuesto especial sobre la electricidad al 0,5 %. Prorroga todo 2026 el bono social extraordinario y la prohibición de cortar luz, gas y agua a hogares vulnerables, y amplía el autoconsumo compartido a 5 kilómetros.",
+      "detalle": "Real Decreto-ley 7/2026, de 20 de marzo, por el que se aprueba el Plan Integral de Respuesta a la Crisis en Oriente Medio. BOE núm. 71, de 21 de marzo de 2026 (BOE-A-2026-6544). Hasta el 30 de junio de 2026: IVA del 10 % para la electricidad con potencia de hasta 10 kW, gas natural, briquetas, pellets, leña y carburantes; impuesto especial sobre la electricidad al 0,5 %; las rebajas de junio dependían de la evolución del IPC. Reducción del Impuesto sobre Hidrocarburos de gasóleo y gasolinas hasta el mínimo europeo. Impuesto a la producción eléctrica: la base de 2026 excluye el 10 % de la retribución del primer trimestre y toda la del segundo. Bono social: descuentos extraordinarios del 1 de enero al 31 de diciembre de 2026, con senda decreciente. Garantía de suministro a vulnerables hasta el 31 de diciembre de 2026. Autoconsumo colectivo hasta 5 km y figura del gestor de autoconsumo. Convalidado el 26 de marzo de 2026; la tramitación por urgencia se aprobó con 346 votos a favor. Según prensa, votó en contra Vox y se abstuvieron PP y Podemos.",
+      "votacion": {
+        "fecha": "2026-03-26",
+        "a_favor": 175,
+        "en_contra": 33,
+        "abstenciones": 141,
+        "grupos_en_contra": [
+          "Vox"
+        ],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2026-6544",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-6544",
+          "tipo": "oficial",
+          "fecha": "2026-03-21"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, Pleno, núm. 176",
+          "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-176.PDF",
+          "tipo": "oficial",
+          "fecha": "2026-03-26"
+        },
+        {
+          "nombre": "Bolsamanía",
+          "url": "https://www.bolsamania.com/noticias_amp/economia/economia-amp-el-congreso-convalida-el-decreto-de-ayudas-fiscales-por-la-guerra-en-iran-con-solo-vox-en-contra--22184058.html",
+          "tipo": "prensa",
+          "fecha": "2026-03-26"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El recuento es oficial; el reparto por grupos procede de prensa."
+    },
+    {
+      "id": "cli-2026-rdl-18-impuesto-produccion",
+      "tipo": "aprobado",
+      "fecha": "2026-06-29",
+      "titulo": "Real Decreto-ley 18/2026, retirada gradual de las rebajas y supresión del impuesto a la producción eléctrica",
+      "frase_llana": "Retira poco a poco entre julio y septiembre de 2026 la rebaja de los carburantes, con una salvaguarda si los precios suben. Baja el impuesto del 7 % a la producción eléctrica: 3,5 % en 2027 y 0 % desde 2028.",
+      "detalle": "Real Decreto-ley 18/2026, de 29 de junio, por el que se adoptan determinadas medidas en el marco del Plan Integral de Respuesta a la Crisis en Oriente Medio. BOE núm. 158, de 30 de junio de 2026 (BOE-A-2026-14112), en vigor el 1 de julio. Impuesto sobre el valor de la producción de energía eléctrica: en 2026 se excluye de la base el 30 % de la retribución del tercer trimestre y el 40 % del cuarto; tipo del 3,5 % en 2027 y del 0 % desde 2028. Impuesto sobre Hidrocarburos: rebaja de 15, 10 y 5 céntimos por litro en julio, agosto y septiembre, que sube si el IPC de esos productos supera en más de un 15 % el del año anterior. La rebaja del IVA y del impuesto especial sobre la electricidad del RDL 7/2026 no se aplicó en junio; se prevé su vuelta en agosto y septiembre si empeoran los precios. Deroga el capítulo V del título I del RDL 6/2022. Convalidado el 23 de julio de 2026 y tramitado como proyecto de ley por urgencia (344 a favor). En contra votaron 32 diputados de Vox y 1 del Grupo Mixto; se abstuvieron 136 del PP y 4 del Grupo Mixto.",
+      "votacion": {
+        "fecha": "2026-07-23",
+        "a_favor": 175,
+        "en_contra": 33,
+        "abstenciones": 140,
+        "grupos_en_contra": [
+          "Vox"
+        ],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2026-14112",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-14112",
+          "tipo": "oficial",
+          "fecha": "2026-06-30"
+        },
+        {
+          "nombre": "Congreso, votación 6 de la sesión 193",
+          "url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion193/20260723/Votacion006/VOT_20260723211929.pdf",
+          "tipo": "oficial",
+          "fecha": "2026-07-23"
+        },
+        {
+          "nombre": "Congreso, votación 7 de la sesión 193 (tramitación)",
+          "url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion193/20260723/Votacion007/VOT_20260723211929.pdf",
+          "tipo": "oficial",
+          "fecha": "2026-07-23"
+        },
+        {
+          "nombre": "Energías Renovables",
+          "url": "https://www.energias-renovables.com/panorama/gobierno-y-socios-eliminan-el-impuesto-sobre-20260724",
+          "tipo": "prensa",
+          "fecha": "2026-07-24"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "La prensa habla de un tipo de en torno al 5 % para los dos últimos trimestres de 2026; el BOE lo expresa como exclusión parcial de la base."
+    }
+  ],
+  "indicadores": [
+    {
+      "id": "emisiones-gei",
+      "titulo": "Emisiones brutas de gases de efecto invernadero, millones de toneladas de CO2 equivalente",
+      "unidad": "MtCO2eq",
+      "decimales": 1,
+      "nota": "Emisiones brutas, sin el sector de usos de la tierra y bosques. 2018, 2019 y 2020 son avances publicados por el MITECO el año siguiente, sin revisar. 2021 a 2024 proceden del Inventario Nacional, edición 1990-2024 (enero de 2026), que revisa toda la serie; esa edición no publica en su resumen los años 2018-2020, por lo que los dos tramos no son del todo comparables (por ejemplo, el avance de 2021 daba 288,6). 2025 es el avance del MITECO de 2026. Cifras en kt convertidas a millones y redondeadas a un decimal.",
+      "calculo_propio": false,
+      "serie": [
+        {
+          "periodo": "2018",
+          "valor": 332.8
+        },
+        {
+          "periodo": "2019",
+          "valor": 313.5
+        },
+        {
+          "periodo": "2020",
+          "valor": 271.5
+        },
+        {
+          "periodo": "2021",
+          "valor": 288.5
+        },
+        {
+          "periodo": "2022",
+          "valor": 292.4
+        },
+        {
+          "periodo": "2023",
+          "valor": 270.0
+        },
+        {
+          "periodo": "2024",
+          "valor": 267.7
+        },
+        {
+          "periodo": "2025",
+          "valor": 270.7
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "MITECO, avance de emisiones GEI 2018",
+          "url": "https://www.miteco.gob.es/es/prensa/190610npavanceemisionesco22018_tcm30-497590.pdf",
+          "tipo": "oficial",
+          "fecha": "2019-06-10"
+        },
+        {
+          "nombre": "MITECO, avance del Inventario GEI 2019",
+          "url": "https://www.miteco.gob.es/es/prensa/200708avancedelinventariodeemisionesgei_tcm30-510415.pdf",
+          "tipo": "oficial",
+          "fecha": "2020-07-08"
+        },
+        {
+          "nombre": "Smartgrids Info, sobre el avance MITECO 2020",
+          "url": "https://www.smartgridsinfo.es/2021/07/05/emisiones-gases-efecto-invernadero-descienden-primera-vez-espana-respecto-ano-1990",
+          "tipo": "prensa",
+          "fecha": "2021-07-05"
+        },
+        {
+          "nombre": "MITECO, Inventario Nacional GEI, informe resumen edición 1990-2024",
+          "url": "https://www.miteco.gob.es/content/dam/miteco/es/calidad-y-evaluacion-ambiental/temas/sistema-espanol-de-inventario-sei-/inventario-gases-efecto-invernadero/resumen-Inventario-GEI-2026.pdf",
+          "tipo": "oficial",
+          "fecha": "2026-01"
+        },
+        {
+          "nombre": "MITECO, avance del Inventario GEI 2025",
+          "url": "https://www.miteco.gob.es/content/dam/miteco/es/calidad-y-evaluacion-ambiental/temas/sistema-espanol-de-inventario-sei-/Nota-Avance-GEI-2025.pdf",
+          "tipo": "oficial",
+          "fecha": "2026"
+        }
+      ]
+    },
+    {
+      "id": "renovables-generacion",
+      "titulo": "Generación eléctrica renovable, % del total",
+      "unidad": "%",
+      "decimales": 1,
+      "nota": "Porcentaje de la generación eléctrica nacional producido con renovables, según Red Eléctrica. 2018: informe anual definitivo (el avance de febrero de 2019 daba 40,1 %). 2019 y 2021: avance del informe. 2020: Red Eléctrica solo da la cifra redondeada (44 %). 2022: Red Eléctrica dice «superaron el 42 %»; el 42,2 % lo recoge la prensa citando a Red Eléctrica. 2023, 2024 y 2025: Informe del sistema eléctrico. En 2025, con autoconsumo, la cuota sería del 56,6 %.",
+      "calculo_propio": false,
+      "serie": [
+        {
+          "periodo": "2018",
+          "valor": 38.5
+        },
+        {
+          "periodo": "2019",
+          "valor": 37.5
+        },
+        {
+          "periodo": "2020",
+          "valor": 44.0
+        },
+        {
+          "periodo": "2021",
+          "valor": 46.7
+        },
+        {
+          "periodo": "2022",
+          "valor": 42.2
+        },
+        {
+          "periodo": "2023",
+          "valor": 50.3
+        },
+        {
+          "periodo": "2024",
+          "valor": 56.8
+        },
+        {
+          "periodo": "2025",
+          "valor": 55.5
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "REE, El sistema eléctrico español 2018",
+          "url": "https://www.ree.es/sites/default/files/11_PUBLICACIONES/Documentos/InformesSistemaElectrico/2018/inf_sis_elec_ree_2018.pdf",
+          "tipo": "oficial",
+          "fecha": "2019"
+        },
+        {
+          "nombre": "REE, avance del sistema eléctrico 2019",
+          "url": "https://www.ree.es/sites/default/files/Nota_de_Prensa_Avance_del_Sistema_Electrico_2019_Nacional_y_Peninsular.pdf",
+          "tipo": "oficial",
+          "fecha": "2020-03-12"
+        },
+        {
+          "nombre": "Redeia, Informe Renovables 2020",
+          "url": "https://redeia.com/sites/default/files/paragraph/2021/06/file/210624_NP_Informe%20Renovables_2020.pdf",
+          "tipo": "oficial",
+          "fecha": "2021-06-24"
+        },
+        {
+          "nombre": "REE, avance del sistema eléctrico 2021",
+          "url": "https://www.ree.es/sites/default/files/paragraph/2022/03/file/NP_Avance_Informe%20Sistema%20Electrico_2021_Nacional.pdf",
+          "tipo": "oficial",
+          "fecha": "2022-03-18"
+        },
+        {
+          "nombre": "REE, Informe del sistema eléctrico 2022",
+          "url": "https://www.ree.es/sites/default/files/paragraph/2023/03/file/230323_NP_ISE.pdf",
+          "tipo": "oficial",
+          "fecha": "2023-03-23"
+        },
+        {
+          "nombre": "Energías Renovables, sobre el informe de REE 2022",
+          "url": "https://www.energias-renovables.com/panorama/las-renovables-son-cada-vez-mas-protagonistas-20230323",
+          "tipo": "prensa",
+          "fecha": "2023-03-23"
+        },
+        {
+          "nombre": "REE, Informe del sistema eléctrico 2023",
+          "url": "https://ree.es/sites/default/files/2024-06/2103_NP_ISE_Nacional_def.pdf",
+          "tipo": "oficial",
+          "fecha": "2024-03-21"
+        },
+        {
+          "nombre": "REE, Informe del sistema eléctrico 2024",
+          "url": "https://ree.es/sites/default/files/2025-03/1803_ISE_Nacional_1.pdf",
+          "tipo": "oficial",
+          "fecha": "2025-03-18"
+        },
+        {
+          "nombre": "REE, Informe del sistema eléctrico 2025 (nota Comunidad de Madrid)",
+          "url": "https://www.ree.es/sites/default/files/07_SALA_PRENSA/Documentos/2026/np-madrid.pdf",
+          "tipo": "oficial",
+          "fecha": "2026-03-11"
+        }
+      ]
+    }
+  ],
+  "no_sabe": [
+    "Recuento oficial de votos de la convalidación de la «excepción ibérica» (9 de junio de 2022) y de las votaciones finales de las leyes 9/2018, 7/2021, 7/2022, 19/2022 y 38/2022.",
+    "Recuento de las convalidaciones de los RDL 1/2019, 17/2019, 23/2021 y 4/2023; y número de abstenciones del RDL 17/2022, cuya lectura del Diario de Sesiones no cuadró.",
+    "Recuento oficial de la enmienda nuclear del 13 de noviembre de 2025: el acta enumera las votaciones sin identificar el tema.",
+    "Número, fecha y contenido de la Ley de Movilidad Sostenible y del Real Decreto-ley 5/2023 (prórroga de medidas en 2023): no se han podido comprobar.",
+    "Otras proposiciones de ley sobre energía o medio ambiente votadas en el Pleno: solo se ha revisado la del PP sobre energía nuclear.",
+    "Serie oficial revisada de emisiones 2018-2020 en la edición 2026 del Inventario; se usan los avances de cada año.",
+    "Si hubo alguna norma con rango de ley sobre el calendario de cierre nuclear: solo consta en el Plan de Residuos Radiactivos y en órdenes ministeriales."
+  ],
+  "pie_verificacion": "Todas las normas, sus fechas y contenidos principales están comprobados en el BOE, salvo el contenido del RDL 2/2026 y parte del de los RDL 7/2025 y 16/2025, que procede de prensa. Los recuentos de las convalidaciones y derogaciones de los RDL 17/2021, 29/2021, 6/2022, 11/2022, 14/2022, 18/2022, 20/2022, 3/2023, 8/2023, 4/2024, 9/2024, 10/2024, 1/2025, 7/2025, 16/2025, 2/2026, 7/2026 y 18/2026 y la toma en consideración de la ley nuclear proceden del Diario de Sesiones, las actas o los ficheros de votación del Congreso. Los recuentos de los RDL 15/2018 y 12/2021 proceden de dos fuentes de prensa; los del RDL 23/2020, el RDL 17/2022 y la enmienda nuclear de noviembre de 2025, de una. Los grupos que votaron en contra proceden casi siempre de prensa. En los indicadores, el dato de emisiones de 2020 y el 42,2 % de renovables de 2022 proceden de prensa que cita a la fuente oficial."
+}

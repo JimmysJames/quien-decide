@@ -1,0 +1,746 @@
+{
+  "tema": "seguridad",
+  "nombre": "Seguridad ciudadana",
+  "titulo": "Seguridad ciudadana: qué ha hecho el Estado",
+  "aviso_competencia": "",
+  "resumen": {
+    "aprobado": "Penas más altas por imprudencia al volante (2019 y 2022), ley de protección de la infancia frente a la violencia (2021), ley del «solo sí es sí» (2022) y su reforma (2023), y ley de multirreincidencia (2026).",
+    "no_salio": "La reforma de la Ley de Seguridad Ciudadana se rechazó en comisión en 2023; otra, admitida en 2024, decayó con la disolución en 2026. El Congreso rechazó leyes de PP y Vox contra la ocupación de viviendas en 2021 y 2022, y admitió una del PP en 2026 que no llegó a aprobarse.",
+    "cifras": "Infracciones penales conocidas: 2.131.118 en 2018, 1.773.366 en 2020 y 2.474.156 en 2025. Por cada 1.000 habitantes: 41,4 en 2021 y 50,4 en 2025 (este, suma propia de las tasas que publica Interior). Las cifras dependen también de las denuncias y de cambios de método.",
+    "no_sabe": "La tasa de 2018, 2019, 2020 y 2023 es cálculo propio: Interior no la publica en los balances consultados. Faltan recuentos oficiales de varias votaciones."
+  },
+  "hechos": [
+    {
+      "id": "seg-2019-imprudencia-trafico",
+      "tipo": "aprobado",
+      "fecha": "2019-03-01",
+      "titulo": "Ley Orgánica 2/2019, imprudencia al volante y abandono del lugar del accidente",
+      "frase_llana": "Sube las penas por matar o herir por imprudencia conduciendo. Es delito irse del lugar de un accidente con muertos o heridos graves.",
+      "detalle": "Ley Orgánica 2/2019, de 1 de marzo, de modificación del Código Penal en materia de imprudencia en la conducción de vehículos a motor o ciclomotor y sanción del abandono del lugar del accidente. BOE núm. 53, de 2 de marzo de 2019 (BOE-A-2019-2973). En vigor el 3 de marzo de 2019. Modifica los artículos 142, 152 y 382 del Código Penal y añade los artículos 142 bis, 152 bis y 382 bis (abandono del lugar del accidente: de 6 meses a 4 años de prisión si el accidente fue por imprudencia). Aprobación definitiva en el Pleno del Senado el 20 de febrero de 2019, sin enmiendas, por lo que no volvió al Congreso.",
+      "votacion": {
+        "fecha": "2019-02-20",
+        "a_favor": 222,
+        "en_contra": 17,
+        "abstenciones": null,
+        "grupos_en_contra": [
+          "Unidos Podemos"
+        ],
+        "resultado": "aprobado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2019-2973",
+          "url": "https://www.boe.es/eli/es/lo/2019/03/01/2",
+          "tipo": "oficial",
+          "fecha": "2019-03-02"
+        },
+        {
+          "nombre": "Última Hora: el Senado da luz verde a la reforma del Código Penal por imprudencias al volante",
+          "url": "https://www.ultimahora.es/noticias/nacional/2019/02/20/1059751/senado-luz-verde-reforma-del-codigo-penal-para-endurecer-penas-por-imprudencias-volante.html",
+          "tipo": "prensa",
+          "fecha": "2019-02-20"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El recuento del Senado (222-17) y que votó en contra Unidos Podemos salen de un solo medio. No consta el número de abstenciones."
+    },
+    {
+      "id": "seg-2021-okupacion-pp-rechazada",
+      "tipo": "no_salio",
+      "fecha": "2021-02-16",
+      "titulo": "Proposición de ley del PP contra la ocupación ilegal: rechazada (2021)",
+      "frase_llana": "El Congreso no admitió a trámite una ley del PP para volver a castigar con cárcel la ocupación de viviendas y desalojar en 48 horas.",
+      "detalle": "Proposición de Ley Orgánica del Grupo Popular contra la ocupación ilegal, debatida en el Pleno del Congreso el 16 de febrero de 2021 (toma en consideración). Proponía penas de uno a tres años de prisión por usurpación, desalojo policial en un máximo de 48 horas, modificar el artículo 245 del Código Penal, que las comunidades de propietarios pudieran intervenir en el proceso y prohibir el empadronamiento de los ocupantes. Según la prensa, votaron en contra PSOE y Unidas Podemos, entre otros, y a favor Foro Asturias y PRC.",
+      "votacion": {
+        "fecha": "2021-02-16",
+        "a_favor": null,
+        "en_contra": null,
+        "abstenciones": null,
+        "grupos_en_contra": [],
+        "resultado": "rechazado"
+      },
+      "fuentes": [
+        {
+          "nombre": "Última Hora: el Congreso rechaza la ley anti okupas que proponía el PP",
+          "url": "https://www.ultimahora.es/noticias/nacional/2021/02/16/1239161/congreso-rechaza-ley-anti-okupas-proponia-pp.html",
+          "tipo": "prensa",
+          "fecha": "2021-02-16"
+        },
+        {
+          "nombre": "Qué!: PSOE, Podemos e independentistas rechazan en el Congreso la ley anti okupas",
+          "url": "https://www.que.es/2021/02/16/psoe-podemos-rechazan-ley-anti-okupas/",
+          "tipo": "prensa",
+          "fecha": "2021-02-16"
+        }
+      ],
+      "verificacion": "dos_fuentes",
+      "no_sabemos": "El recuento. Ninguno de los dos medios da cifras y no hemos podido abrir el acta del Pleno."
+    },
+    {
+      "id": "seg-2021-datos-penales",
+      "tipo": "aprobado",
+      "fecha": "2021-05-26",
+      "titulo": "Ley Orgánica 7/2021, protección de datos tratados por policía y justicia penal",
+      "frase_llana": "Fija cómo pueden usar y guardar la policía, los fiscales y los jueces los datos personales en la investigación de delitos, y qué derechos tiene la persona sobre esos datos.",
+      "detalle": "Ley Orgánica 7/2021, de 26 de mayo, de protección de datos personales tratados para fines de prevención, detección, investigación y enjuiciamiento de infracciones penales y de ejecución de sanciones penales. BOE núm. 126, de 27 de mayo de 2021 (BOE-A-2021-8806). Transpone la Directiva (UE) 2016/680. Plazo general máximo de conservación de veinte años, con revisión al menos cada tres; derechos de acceso, rectificación, supresión y limitación, que pueden restringirse para proteger investigaciones; notificación de brechas en 72 horas.",
+      "votacion": null,
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2021-8806",
+          "url": "https://www.boe.es/eli/es/lo/2021/05/26/7",
+          "tipo": "oficial",
+          "fecha": "2021-05-27"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El recuento de la votación final y la fecha de entrada en vigor no los hemos leído."
+    },
+    {
+      "id": "seg-2021-lopivi",
+      "tipo": "aprobado",
+      "fecha": "2021-06-04",
+      "titulo": "Ley Orgánica 8/2021, protección de la infancia y la adolescencia frente a la violencia",
+      "frase_llana": "Obliga a todos, y más a los profesionales, a avisar si sospechan violencia contra un menor. Cambia plazos de prescripción de delitos contra menores y la forma de tomar declaración a menores de 14 años.",
+      "detalle": "Ley Orgánica 8/2021, de 4 de junio. BOE núm. 134, de 5 de junio de 2021 (BOE-A-2021-9347). Entra en vigor a los veinte días de su publicación, con algunas disposiciones diferidas. Modifica, entre otros, el Código Penal (prescripción en delitos contra menores; el perdón no extingue la acción penal si la víctima es menor de 18 años), el Código Civil y la Ley de Enjuiciamiento Criminal (prueba preconstituida para testigos menores de 14 años).",
+      "votacion": {
+        "fecha": "2021-05-20",
+        "a_favor": null,
+        "en_contra": null,
+        "abstenciones": null,
+        "grupos_en_contra": [
+          "Vox"
+        ],
+        "resultado": "aprobado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2021-9347",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2021-9347",
+          "tipo": "oficial",
+          "fecha": "2021-06-05"
+        },
+        {
+          "nombre": "Ara: luz verde definitiva a la ley de infancia",
+          "url": "https://es.ara.cat/sociedad/luz-verde-definitiva-ley-proteccion-infancia-adolescencia_1_3991386.html",
+          "tipo": "prensa",
+          "fecha": "2021-05-20"
+        },
+        {
+          "nombre": "Onda Vasca: apoyo casi unánime del Congreso a la ley de infancia",
+          "url": "https://www.ondavasca.com/apoyo-casi-unanime-del-congreso-a-la-ley-de-infancia-excepto-vox-que-la-llama-ley-herodes/",
+          "tipo": "prensa",
+          "fecha": "2021-05-20"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El recuento de la votación final del 20 de mayo de 2021. Que Vox fue el único grupo en contra lo dicen dos medios, no el Diario de Sesiones."
+    },
+    {
+      "id": "seg-2022-huerfanos-violencia-genero",
+      "tipo": "aprobado",
+      "fecha": "2022-03-21",
+      "titulo": "Ley Orgánica 2/2022, protección de huérfanos de víctimas de violencia de género",
+      "frase_llana": "Los hijos de mujeres asesinadas por violencia de género pueden cobrar la prestación de orfandad aunque no cumplan los requisitos de cotización, y pagan menos impuestos al heredar.",
+      "detalle": "Ley Orgánica 2/2022, de 21 de marzo, de mejora de la protección de las personas huérfanas víctimas de la violencia de género. BOE núm. 69, de 22 de marzo de 2022 (BOE-A-2022-4516). En vigor el 23 de marzo de 2022. Modifica la Ley Orgánica del Poder Judicial (los Juzgados de Violencia sobre la Mujer conocen de la liquidación del régimen económico matrimonial), la Ley de Enjuiciamiento Civil, la Ley General de la Seguridad Social y Clases Pasivas (prestación de orfandad), y exime del impuesto de plusvalía municipal y del ITP determinadas transmisiones a estos huérfanos.",
+      "votacion": null,
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2022-4516",
+          "url": "https://www.boe.es/eli/es/lo/2022/03/21/2",
+          "tipo": "oficial",
+          "fecha": "2022-03-22"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El recuento de la votación final no lo hemos leído."
+    },
+    {
+      "id": "seg-2022-okupacion-vox-rechazada",
+      "tipo": "no_salio",
+      "fecha": "2022-04-28",
+      "titulo": "Proposición de ley de Vox para endurecer las penas por ocupación: rechazada",
+      "frase_llana": "El Congreso no admitió a trámite una ley de Vox para subir las penas por ocupar viviendas.",
+      "detalle": "Proposición de ley de Vox de reforma del Código Penal para endurecer las penas por ocupación ilegal de viviendas y dar más medios legales a las fuerzas de seguridad. Debatida en el Pleno del Congreso y votada el jueves 28 de abril de 2022 (toma en consideración); no obtuvo el apoyo necesario, según una nota de EFE.",
+      "votacion": {
+        "fecha": "2022-04-28",
+        "a_favor": null,
+        "en_contra": null,
+        "abstenciones": null,
+        "grupos_en_contra": [],
+        "resultado": "rechazado"
+      },
+      "fuentes": [
+        {
+          "nombre": "EFE en Vivir Ediciones: el Congreso rechaza tramitar la propuesta de Vox de endurecer las penas a los okupas",
+          "url": "https://vivirediciones.es/?p=116572",
+          "tipo": "prensa",
+          "fecha": "2022-04-28"
+        }
+      ],
+      "verificacion": "una_fuente",
+      "no_sabemos": "El recuento y cómo votó cada grupo."
+    },
+    {
+      "id": "seg-2022-libertad-sexual",
+      "tipo": "aprobado",
+      "fecha": "2022-09-06",
+      "titulo": "Ley Orgánica 10/2022, de garantía integral de la libertad sexual («solo sí es sí»)",
+      "frase_llana": "Todo acto sexual sin consentimiento pasa a ser agresión sexual: desaparece la distinción entre abuso y agresión. Añade derechos de asistencia y reparación para las víctimas.",
+      "detalle": "Ley Orgánica 10/2022, de 6 de septiembre. BOE núm. 215, de 7 de septiembre de 2022 (BOE-A-2022-14630). En vigor desde el 7 de octubre de 2022, salvo algunos plazos. La disposición final cuarta modifica el Código Penal: unifica abuso y agresión sexual, incluye la «sumisión química» y una agravante de género. Modifica también la Ley de Enjuiciamiento Criminal, el Estatuto de los Trabajadores y el Estatuto de la Víctima, entre otras.",
+      "votacion": {
+        "fecha": "2022-08-25",
+        "a_favor": 205,
+        "en_contra": 141,
+        "abstenciones": 3,
+        "grupos_en_contra": [
+          "PP",
+          "Vox"
+        ],
+        "resultado": "aprobado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2022-14630",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2022-14630",
+          "tipo": "oficial",
+          "fecha": "2022-09-07"
+        },
+        {
+          "nombre": "VilaWeb: les claus de la llei del «només sí és sí»",
+          "url": "https://www.vilaweb.cat/noticies/claus-llei-nomes-si-es-si-aprovada/",
+          "tipo": "prensa",
+          "fecha": "2022-08-25"
+        },
+        {
+          "nombre": "Qué!: el Congreso, sin PP y Vox, aprueba definitivamente la ley",
+          "url": "https://www.que.es/2022/08/25/congreso-sin-pp-vox-aprueba-definitivamente-ley-solo-si-es-si/",
+          "tipo": "prensa",
+          "fecha": "2022-08-25"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El recuento (205-141-3) sale de un medio; otro lo confirma solo en el titular. No lo hemos cotejado con el Diario de Sesiones. La CUP se abstuvo según Qué!."
+    },
+    {
+      "id": "seg-2022-imprudencia-menos-grave",
+      "tipo": "aprobado",
+      "fecha": "2022-09-13",
+      "titulo": "Ley Orgánica 11/2022, imprudencia menos grave al volante",
+      "frase_llana": "Si un conductor mata o hiere a alguien cometiendo una infracción grave de tráfico, ya no puede tratarse como imprudencia leve sin explicarlo. Amplía el delito de abandono del lugar del accidente a más tipos de lesiones.",
+      "detalle": "Ley Orgánica 11/2022, de 13 de septiembre, de modificación del Código Penal en materia de imprudencia en la conducción de vehículos a motor o ciclomotor. BOE núm. 221, de 14 de septiembre de 2022 (BOE-A-2022-14965). En vigor el 15 de septiembre de 2022. Modifica los artículos 142.2, 152.2 y 382 bis.1 del Código Penal: una infracción grave de tráfico determinante del resultado se considera al menos imprudencia menos grave, con motivación del juez; retirada del carné de 3 a 18 meses. La Administración debe comunicar al juez los accidentes con heridos o muertos. Aprobación definitiva en el Pleno del Senado el 7 de septiembre de 2022.",
+      "votacion": {
+        "fecha": "2022-09-07",
+        "a_favor": 144,
+        "en_contra": 4,
+        "abstenciones": 112,
+        "grupos_en_contra": [
+          "Vox"
+        ],
+        "resultado": "aprobado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2022-14965",
+          "url": "https://www.boe.es/eli/es/lo/2022/09/13/11",
+          "tipo": "oficial",
+          "fecha": "2022-09-14"
+        },
+        {
+          "nombre": "Última Hora: aprobada la ley que acaba con la impunidad al volante",
+          "url": "https://www.ultimahora.es/noticias/nacional/2022/09/07/1787671/trafico-espana-nueva-ley-acaba-impunidad-volante.html",
+          "tipo": "prensa",
+          "fecha": "2022-09-07"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El recuento del Senado (144-4-112), que Vox votó en contra y que PP y PNV se abstuvieron salen de un solo medio."
+    },
+    {
+      "id": "seg-2022-okupacion-pp-rechazada",
+      "tipo": "no_salio",
+      "fecha": "2022-11-29",
+      "titulo": "Proposición de ley del PP contra la ocupación ilegal: rechazada (2022)",
+      "frase_llana": "El Congreso no admitió a trámite una ley del PP para desalojar viviendas ocupadas en 24 horas y subir las penas por ocupación con violencia.",
+      "detalle": "Proposición de Ley Orgánica del Grupo Popular contra la ocupación ilegal y para la convivencia vecinal. Toma en consideración en el Pleno del Congreso el 29 de noviembre de 2022: 160 votos a favor y 178 en contra, según la prensa. Proponía desalojo en un máximo de 24 horas, penas de hasta tres años por usurpación con violencia o intimidación, legitimar a las comunidades de propietarios y prohibir el empadronamiento de los ocupantes. Según el mismo medio, votaron a favor PP, Ciudadanos, Vox y otros grupos menores, y el PNV se abstuvo.",
+      "votacion": {
+        "fecha": "2022-11-29",
+        "a_favor": 160,
+        "en_contra": 178,
+        "abstenciones": null,
+        "grupos_en_contra": [],
+        "resultado": "rechazado"
+      },
+      "fuentes": [
+        {
+          "nombre": "La Marea: el Congreso tumba la propuesta de ley antiocupación del PP",
+          "url": "https://lamarea.com/2022/11/29/el-congreso-tumba-la-propuesta-de-ley-antiocupacion-del-partido-popular",
+          "tipo": "prensa",
+          "fecha": "2022-11-29"
+        }
+      ],
+      "verificacion": "una_fuente",
+      "no_sabemos": "El recuento sale de un solo medio y no da el número de abstenciones. El medio nombra al PSOE en contra, pero no la lista completa de grupos."
+    },
+    {
+      "id": "seg-2023-mordaza-comision",
+      "tipo": "no_salio",
+      "fecha": "2023-03-14",
+      "titulo": "Reforma de la Ley de Seguridad Ciudadana: rechazada en la Comisión de Interior",
+      "frase_llana": "La reforma de la ley de 2015 (llamada «ley mordaza») se rechazó en la Comisión de Interior del Congreso por un voto. No llegó al Pleno y la ley siguió igual.",
+      "detalle": "Comisión de Interior, sesión núm. 36, 14 de marzo de 2023 (XIV legislatura). Proposición de Ley Orgánica de protección de la seguridad ciudadana, que reformaba la Ley Orgánica 4/2015. Votación del dictamen: 37 votos emitidos, 18 a favor, 19 en contra; el presidente declara «Queda rechazado el dictamen». Es una votación en comisión, no en el Pleno. Según la prensa, votaron a favor PSOE, Unidas Podemos y PNV.",
+      "votacion": {
+        "fecha": "2023-03-14",
+        "a_favor": 18,
+        "en_contra": 19,
+        "abstenciones": 0,
+        "grupos_en_contra": [
+          "Ciudadanos",
+          "EH Bildu",
+          "ERC",
+          "Junts",
+          "Navarra Suma",
+          "PP",
+          "Vox"
+        ],
+        "resultado": "rechazado"
+      },
+      "fuentes": [
+        {
+          "nombre": "Diario de Sesiones, Comisión de Interior, DSCD-14-CO-864",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/CO/DSCD-14-CO-864.PDF",
+          "tipo": "oficial",
+          "fecha": "2023-03-14"
+        },
+        {
+          "nombre": "Economist & Jurist: los 10 cambios de la reforma que no entrarán en vigor",
+          "url": "https://www.economistjurist.es/actualidad-juridica/legislacion/los-10-cambios-de-la-reforma-de-la-ley-mordaza-que-no-entraran-en-vigor",
+          "tipo": "prensa",
+          "fecha": "2023-03-15"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El recuento es oficial. La lista de grupos en contra sale de un solo medio."
+    },
+    {
+      "id": "seg-2023-reforma-libertad-sexual",
+      "tipo": "aprobado",
+      "fecha": "2023-04-27",
+      "titulo": "Ley Orgánica 4/2023, reforma de la ley del «solo sí es sí»",
+      "frase_llana": "Vuelve a distinguir, dentro de la agresión sexual, los casos con violencia o intimidación, con penas más altas para ellos.",
+      "detalle": "Ley Orgánica 4/2023, de 27 de abril. BOE núm. 101, de 28 de abril de 2023 (BOE-A-2023-10213). En vigor el 29 de abril de 2023. Modifica los artículos 132, 173, 178 a 181 y 189 bis del Código Penal, la Ley de Enjuiciamiento Criminal y la Ley Orgánica 5/2000 de responsabilidad penal de los menores. Nace de una proposición de ley del PSOE. En el Pleno del Congreso del 20 de abril de 2023 votaron en contra ERC, EH Bildu y Unidas Podemos, según la prensa; la votación recogida aquí es la final del Senado.",
+      "votacion": {
+        "fecha": "2023-04-26",
+        "a_favor": 231,
+        "en_contra": 19,
+        "abstenciones": 4,
+        "grupos_en_contra": [],
+        "resultado": "aprobado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2023-10213",
+          "url": "https://www.boe.es/eli/es/lo/2023/04/27/4",
+          "tipo": "oficial",
+          "fecha": "2023-04-28"
+        },
+        {
+          "nombre": "Menorca.info: el Senado aprueba definitivamente la reforma",
+          "url": "https://www.menorca.info/actualidad/nacional/2023/04/26/1925379/ley-del-solo-senado-aprobacion-final.html",
+          "tipo": "prensa",
+          "fecha": "2023-04-26"
+        },
+        {
+          "nombre": "Periódico de Ibiza: aprobada la reforma con el voto en contra de Podemos",
+          "url": "https://www.periodicodeibiza.es/noticias/nacional/2023/04/20/1921447/aprobada-reforma-ley-del-solo-voto-contra-podemos.html",
+          "tipo": "prensa",
+          "fecha": "2023-04-20"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El recuento del Senado sale de un solo medio y no nombra los grupos en contra. No consta el recuento del Pleno del Congreso del 20 de abril de 2023."
+    },
+    {
+      "id": "seg-2024-mordaza-decae",
+      "tipo": "no_salio",
+      "fecha": "2024-10-29",
+      "titulo": "Nueva reforma de la Ley de Seguridad Ciudadana: admitida a trámite en 2024, decae con la disolución",
+      "frase_llana": "El Congreso admitió a trámite en 2024 una ley para sustituir la Ley de Seguridad Ciudadana de 2015. No se llegó a aprobar y decayó al disolverse las Cortes.",
+      "detalle": "Proposición de ley presentada por PSOE, Sumar, ERC, EH Bildu, PNV y BNG para sustituir la Ley Orgánica 4/2015 por una Ley Orgánica de Protección de las Libertades y la Seguridad Ciudadana (expediente 122/000131). Toma en consideración en el Pleno el 29 de octubre de 2024: 346 votos emitidos, 176 a favor, 170 en contra (acta del Pleno). El 12 de diciembre de 2024 se rechazaron las enmiendas a la totalidad de PP y Vox (ver hecho propio). Con la disolución del 6 de octubre de 2026 decaen las iniciativas pendientes del Congreso; la prensa incluye esta reforma entre ellas.",
+      "votacion": {
+        "fecha": "2024-10-29",
+        "a_favor": 176,
+        "en_contra": 170,
+        "abstenciones": 0,
+        "grupos_en_contra": [
+          "PP",
+          "UPN",
+          "Vox"
+        ],
+        "resultado": "tomado_en_consideracion"
+      },
+      "fuentes": [
+        {
+          "nombre": "Acta del Pleno del Congreso, 29 de octubre de 2024 (ATCD_15_PL_20241029)",
+          "url": "https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20241029.pdf",
+          "tipo": "oficial",
+          "fecha": "2024-10-29"
+        },
+        {
+          "nombre": "The Objective: el Congreso admite la reforma de la ley mordaza",
+          "url": "https://theobjective.com/espana/politica/2024-10-29/reforma-ley-mordaza-congreso/",
+          "tipo": "prensa",
+          "fecha": "2024-10-29"
+        },
+        {
+          "nombre": "Onda Vasca: el Congreso debate las enmiendas a la totalidad",
+          "url": "https://www.ondavasca.com/el-congreso-debate-las-enmiendas-a-la-totalidad-de-pp-y-vox-a-la-reforma-de-la-ley-mordaza/",
+          "tipo": "prensa",
+          "fecha": "2024-12-12"
+        },
+        {
+          "nombre": "El Independiente: el Congreso inicia la reforma de la ley mordaza",
+          "url": "https://www.elindependiente.com/espana/2024/10/29/el-congreso-inicia-la-reforma-de-la-ley-mordaza-con-la-negativa-del-pp-y-vox-dan-a-bildu-la-proteccion-de-la-policia/amp/",
+          "tipo": "prensa",
+          "fecha": "2024-10-29"
+        },
+        {
+          "nombre": "Ara: todo lo que descarrila en el Congreso por las elecciones",
+          "url": "https://es.ara.cat/politica/descarrila-congreso-elecciones_1_5870195.html",
+          "tipo": "prensa",
+          "fecha": "2026-10-05"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El recuento es oficial (el acta no recoge abstenciones). Los grupos en contra salen de prensa. Que decae con la disolución lo dice un solo medio."
+    },
+    {
+      "id": "seg-2024-mordaza-enmiendas-totalidad",
+      "tipo": "votado",
+      "fecha": "2024-12-12",
+      "titulo": "Reforma de la Ley de Seguridad Ciudadana: rechazadas las enmiendas a la totalidad de PP y Vox",
+      "frase_llana": "El Congreso rechazó los textos alternativos de PP y Vox a la nueva ley de seguridad ciudadana, y la reforma siguió en trámite.",
+      "detalle": "Pleno del Congreso, 12 de diciembre de 2024. Enmiendas a la totalidad de texto alternativo a la Proposición de Ley Orgánica de Protección de las Libertades y la Seguridad Ciudadana (122/000131). Enmienda del Grupo Popular: 345 votos emitidos, 169 a favor, 176 en contra; rechazada. Enmienda de Vox: 346 emitidos, 33 a favor, 176 en contra, 137 abstenciones; rechazada. La votación registrada aquí es la del PP.",
+      "votacion": {
+        "fecha": "2024-12-12",
+        "a_favor": 169,
+        "en_contra": 176,
+        "abstenciones": 0,
+        "grupos_en_contra": [],
+        "resultado": "enmienda_rechazada"
+      },
+      "fuentes": [
+        {
+          "nombre": "Acta del Pleno del Congreso, 12 de diciembre de 2024 (ATCD_15_PL_20241212)",
+          "url": "https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20241212.pdf",
+          "tipo": "oficial",
+          "fecha": "2024-12-12"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El acta no recoge abstenciones en la enmienda del PP."
+    },
+    {
+      "id": "seg-2026-multirreincidencia",
+      "tipo": "aprobado",
+      "fecha": "2026-04-08",
+      "titulo": "Ley Orgánica 1/2026, en materia de multirreincidencia",
+      "frase_llana": "Quien acumula al menos tres condenas por hurto puede ir a prisión aunque lo robado valga menos de 400 euros. Agrava el robo de móviles y amplía las medidas cautelares.",
+      "detalle": "Ley Orgánica 1/2026, de 8 de abril. BOE núm. 87, de 9 de abril de 2026 (BOE-A-2026-7966). En vigor el 10 de abril de 2026. Modifica los artículos 22, 66, 80, 234, 235, 248, 250, 255 y 568 del Código Penal y los artículos 13, 105 y 544 bis de la Ley de Enjuiciamiento Criminal. Prevé al menos un juez de adscripción territorial por cada 100.000 habitantes en cada Tribunal Superior de Justicia en dos años. Nace de una proposición de ley de Junts. Votación de conjunto de las enmiendas del Senado en el Pleno del Congreso el 26 de marzo de 2026: 272 a favor, 71 en contra, 7 abstenciones.",
+      "votacion": {
+        "fecha": "2026-03-26",
+        "a_favor": 272,
+        "en_contra": 71,
+        "abstenciones": 7,
+        "grupos_en_contra": [
+          "Podemos",
+          "Sumar"
+        ],
+        "resultado": "aprobado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2026-7966",
+          "url": "https://www.boe.es/eli/es/lo/2026/04/08/1/con",
+          "tipo": "oficial",
+          "fecha": "2026-04-09"
+        },
+        {
+          "nombre": "Diario de Sesiones del Pleno, DSCD-15-PL-175",
+          "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-175.PDF",
+          "tipo": "oficial",
+          "fecha": "2026-03-26"
+        },
+        {
+          "nombre": "VilaWeb: el Congrés aprova definitivament la llei contra la multireincidència",
+          "url": "https://www.vilaweb.cat/noticies/congres-espanyol-aprova-definitivament-llei-contra-multireincidencia/",
+          "tipo": "prensa",
+          "fecha": "2026-03-26"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El recuento es oficial. Los grupos en contra (Podemos y Sumar) y la abstención de ERC salen de un solo medio."
+    },
+    {
+      "id": "seg-2026-okupacion-pp-admitida",
+      "tipo": "votado",
+      "fecha": "2026-05-19",
+      "titulo": "Proposición de ley del PP contra la ocupación ilegal: admitida a trámite (2026)",
+      "frase_llana": "El Congreso admitió a trámite una ley del PP para subir las penas por ocupación con violencia, acelerar la recuperación de viviendas e impedir que los ocupantes se empadronen. No llegó a aprobarse antes de la disolución.",
+      "detalle": "Proposición de Ley Orgánica del Grupo Popular contra la ocupación ilegal de inmuebles y para la convivencia vecinal y la protección de la seguridad de las personas y cosas en las comunidades de propietarios (expediente 122/000254). Toma en consideración en el Pleno del Congreso el 19 de mayo de 2026: 346 votos emitidos, 171 a favor, 164 en contra, 11 abstenciones; «Queda aprobada». Según la prensa, reforma el Código Penal (penas mayores por ocupación con violencia o intimidación), la Ley de Enjuiciamiento Criminal y Civil (recuperación rápida de la posesión), la Ley de Propiedad Horizontal y la de Bases de Régimen Local (sin empadronamiento).",
+      "votacion": {
+        "fecha": "2026-05-19",
+        "a_favor": 171,
+        "en_contra": 164,
+        "abstenciones": 11,
+        "grupos_en_contra": [],
+        "resultado": "tomado_en_consideracion"
+      },
+      "fuentes": [
+        {
+          "nombre": "Acta del Pleno del Congreso, 19 de mayo de 2026 (ATCD_15_PL_20260519)",
+          "url": "https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20260519.pdf",
+          "tipo": "oficial",
+          "fecha": "2026-05-19"
+        },
+        {
+          "nombre": "El Derecho: el Congreso aprueba comenzar a tramitar una proposición de ley orgánica contra la ocupación ilegal",
+          "url": "https://elderecho.com/el-congreso-aprueba-comenzar-a-tramitar-una-proposicion-de-ley-organica-contra-la-ocupacion-ilegal-de-inmuebles",
+          "tipo": "prensa",
+          "fecha": "2026-05-21"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "Qué grupos votaron en contra. No hemos confirmado con una fuente expresa que decayera con la disolución; no consta que se aprobara como ley."
+    }
+  ],
+  "indicadores": [
+    {
+      "id": "infracciones",
+      "titulo": "Infracciones penales conocidas, total anual",
+      "unidad": "infracciones",
+      "decimales": 0,
+      "nota": "Hechos conocidos por Policía Nacional, Guardia Civil, Mossos d'Esquadra, Ertzaintza, Policía Foral y las policías locales que dan datos al Sistema Estadístico de Criminalidad. El total suma criminalidad convencional y cibercriminalidad. Mide hechos registrados: depende también de cuánto se denuncia y de cambios de método. Se usa la cifra publicada al cerrar cada año. Fuente oficial leída: 2018 (balance del 4.º trimestre de 2019 y Anuario del INE 2020), 2019 (nota del 4.º trimestre de 2019), 2020 (balance del 4.º trimestre de 2020), 2021 (nota de La Moncloa), 2023 (balance del 4.º trimestre de 2023: 1.989.271 convencional + 470.388 ciber) y 2025 (balance del 4.º trimestre de 2025). 2022 y 2024 salen de prensa que cita el balance de cierre (2024 con dos medios); no pudimos abrir esos balances. Revisiones posteriores de Interior: 2019, de 2.201.859 a 2.199.475; 2022, de 2.325.358 a 2.323.075 (balance de 2023); 2024, de 2.456.413 a 2.454.206 (balance de 2025).",
+      "calculo_propio": false,
+      "serie": [
+        {
+          "periodo": "2018",
+          "valor": 2131118
+        },
+        {
+          "periodo": "2019",
+          "valor": 2201859
+        },
+        {
+          "periodo": "2020",
+          "valor": 1773366
+        },
+        {
+          "periodo": "2021",
+          "valor": 1960113
+        },
+        {
+          "periodo": "2022",
+          "valor": 2325358
+        },
+        {
+          "periodo": "2023",
+          "valor": 2459659
+        },
+        {
+          "periodo": "2024",
+          "valor": 2456413
+        },
+        {
+          "periodo": "2025",
+          "valor": 2474156
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Interior, Balance de Criminalidad 4.º trimestre 2019 (2018 y 2019)",
+          "url": "https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/dam/jcr:c29ae187-3d1a-4922-9aec-57a6b4432600/Balance%20de%20criminalidad%20cuarto%20trimestre%202019.pdf",
+          "tipo": "oficial",
+          "fecha": "2020"
+        },
+        {
+          "nombre": "Interior, nota de prensa del 4.º trimestre de 2019",
+          "url": "https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/dam/jcr:1575adad-8f29-4700-a166-c49326ffb067/nota_prensa_2019_4_trimestre.pdf",
+          "tipo": "oficial",
+          "fecha": "2020"
+        },
+        {
+          "nombre": "INE, Anuario Estadístico 2020, cap. 6 (hechos conocidos 2018)",
+          "url": "https://www.ine.es/prodyser/pubweb/anuario20/anu20_06justi.pdf",
+          "tipo": "oficial",
+          "fecha": "2020"
+        },
+        {
+          "nombre": "Interior, Balance de Criminalidad 4.º trimestre 2020",
+          "url": "https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/dam/jcr:e35f0e71-155f-4964-9042-c73327bc71ee/Balance%20de%20Criminalidad%20Cuarto%20Trimestre%202020.pdf",
+          "tipo": "oficial",
+          "fecha": "2021"
+        },
+        {
+          "nombre": "La Moncloa, nota de Interior sobre 2021",
+          "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/interior/Paginas/2022/210222-tasacriminalidad.aspx",
+          "tipo": "oficial",
+          "fecha": "2022-02-21"
+        },
+        {
+          "nombre": "Menorca.info, balance de 2022",
+          "url": "https://www.menorca.info/actualidad/nacional/2023/03/17/1901439/violaciones-subieron-2022-segun-balance-criminalidad-interior.html",
+          "tipo": "prensa",
+          "fecha": "2023-03-17"
+        },
+        {
+          "nombre": "Interior, Balance de Criminalidad 4.º trimestre 2023",
+          "url": "https://www.interior.gob.es/opencms/export/sites/default/.galleries/galeria-de-prensa/documentos-y-multimedia/balances-e-informes/2023/Balance-de-Criminalidad-Cuarto-Trimestre-2023.pdf",
+          "tipo": "oficial",
+          "fecha": "2024"
+        },
+        {
+          "nombre": "Escudo Digital, balance de 2024",
+          "url": "https://www.escudodigital.com/interior/ligera-bajada-criminalidad-2024-aumento-homicidios-violaciones.html",
+          "tipo": "prensa",
+          "fecha": "2025-02-07"
+        },
+        {
+          "nombre": "Infobae (Europa Press), balance de 2024",
+          "url": "https://www.infobae.com/espana/agencias/2025/02/07/la-criminalidad-cerro-en-2024-con-una-ligera-bajada-aunque-con-incrementos-en-homicidios-y-violaciones/",
+          "tipo": "prensa",
+          "fecha": "2025-02-07"
+        },
+        {
+          "nombre": "Interior, Balance de Criminalidad 4.º trimestre 2025",
+          "url": "https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/dam/jcr:7d3776cd-9ca4-4c02-8ca4-96b2571dbee4/Balance%20de%20Criminalidad%20Cuarto%20Trimestre%202025.pdf",
+          "tipo": "oficial",
+          "fecha": "2026"
+        }
+      ]
+    },
+    {
+      "id": "tasa_criminalidad",
+      "titulo": "Tasa de criminalidad, infracciones por cada 1.000 habitantes",
+      "unidad": "puntos",
+      "decimales": 1,
+      "nota": "Infracciones penales conocidas (convencional + ciber) por cada 1.000 habitantes. Años con tasa publicada por Interior: 2021 (41,4, nota de La Moncloa), 2022 (48,8, nota de Interior) y 2024 (50,6, media nacional citada por prensa; Interior la da separada: 41,0 convencional + 9,6 ciber). Años de CÁLCULO PROPIO: 2018, 2019, 2020 y 2023 = infracciones del indicador anterior / población a 1 de enero × 1.000. Población: 2018 46.722.980, 2019 47.026.208 y 2020 47.450.795 (INE, cifras oficiales del Padrón municipal, serie DPOP1); 2023 48.085.361 (INE, Estadística Continua de Población). 2025 es la suma de las dos tasas que publica Interior (40,4 convencional + 10,0 ciber = 50,4); con infracciones / población del INE a 1 de enero de 2025 (49.128.297, ECP) sale también 50,4. Control: el mismo cálculo da 41,4 en 2021, igual que el dato oficial, y 50,5 en 2024 (oficial 50,6). La Moncloa dijo en 2022 que la tasa había caído 4,3 puntos desde 2018, lo que daría 45,7 para 2018, frente a 45,6 calculado. El balance del 4.º trimestre de 2023 no publica tasa. Depende también de las denuncias y de cambios de método.",
+      "calculo_propio": true,
+      "serie": [
+        {
+          "periodo": "2018",
+          "valor": 45.6,
+          "calculado": true
+        },
+        {
+          "periodo": "2019",
+          "valor": 46.8,
+          "calculado": true
+        },
+        {
+          "periodo": "2020",
+          "valor": 37.4,
+          "calculado": true
+        },
+        {
+          "periodo": "2021",
+          "valor": 41.4
+        },
+        {
+          "periodo": "2022",
+          "valor": 48.8
+        },
+        {
+          "periodo": "2023",
+          "valor": 51.2,
+          "calculado": true
+        },
+        {
+          "periodo": "2024",
+          "valor": 50.6
+        },
+        {
+          "periodo": "2025",
+          "valor": 50.4,
+          "calculado": true
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "La Moncloa, nota de Interior sobre 2021",
+          "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/interior/Paginas/2022/210222-tasacriminalidad.aspx",
+          "tipo": "oficial",
+          "fecha": "2022-02-21"
+        },
+        {
+          "nombre": "Interior, «La tasa de criminalidad se sitúa en el 48,8 al cierre de 2022»",
+          "url": "https://www.interior.gob.es/opencms/es/detalle/articulo/La-tasa-de-criminalidad-se-situa-en-el-488-al-cierre-de-2022/",
+          "tipo": "oficial",
+          "fecha": "2023-03-17"
+        },
+        {
+          "nombre": "Menorca.info, balance de 2022",
+          "url": "https://www.menorca.info/actualidad/nacional/2023/03/17/1901439/violaciones-subieron-2022-segun-balance-criminalidad-interior.html",
+          "tipo": "prensa",
+          "fecha": "2023-03-17"
+        },
+        {
+          "nombre": "Nuevecuatrouno, balance de 2024 (media nacional 50,6)",
+          "url": "https://nuevecuatrouno.com/2025/02/07/rioja-rebaja-criminalidad-asesinatos-ministerio-interior/",
+          "tipo": "prensa",
+          "fecha": "2025-02-07"
+        },
+        {
+          "nombre": "Escudo Digital, balance de 2024 (41,0 convencional; 9,6 ciber)",
+          "url": "https://www.escudodigital.com/interior/ligera-bajada-criminalidad-2024-aumento-homicidios-violaciones.html",
+          "tipo": "prensa",
+          "fecha": "2025-02-07"
+        },
+        {
+          "nombre": "Interior, Balance de Criminalidad 4.º trimestre 2025 (40,4 convencional; 10,0 ciber)",
+          "url": "https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/dam/jcr:7d3776cd-9ca4-4c02-8ca4-96b2571dbee4/Balance%20de%20Criminalidad%20Cuarto%20Trimestre%202025.pdf",
+          "tipo": "oficial",
+          "fecha": "2026"
+        },
+        {
+          "nombre": "INE, cifras oficiales del Padrón municipal a 1 de enero, total nacional (serie DPOP1)",
+          "url": "https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/DPOP1?nult=10",
+          "tipo": "oficial",
+          "fecha": "2021"
+        },
+        {
+          "nombre": "INE, Estadística Continua de Población: población residente a 1 de enero (2022-2026)",
+          "url": "https://www.ine.es/htdocs/prensa/ecp_tabla.htm",
+          "tipo": "oficial",
+          "fecha": "2026"
+        },
+        {
+          "nombre": "Interior, Balance de Criminalidad 4.º trimestre 2023 (infracciones de 2023, sin tasa)",
+          "url": "https://www.interior.gob.es/opencms/export/sites/default/.galleries/galeria-de-prensa/documentos-y-multimedia/balances-e-informes/2023/Balance-de-Criminalidad-Cuarto-Trimestre-2023.pdf",
+          "tipo": "oficial",
+          "fecha": "2024"
+        },
+        {
+          "nombre": "Interior, nota de prensa del 4.º trimestre de 2019 (infracciones de 2018 y 2019)",
+          "url": "https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/dam/jcr:1575adad-8f29-4700-a166-c49326ffb067/nota_prensa_2019_4_trimestre.pdf",
+          "tipo": "oficial",
+          "fecha": "2020"
+        },
+        {
+          "nombre": "Interior, Balance de Criminalidad 4.º trimestre 2020 (infracciones de 2020)",
+          "url": "https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/dam/jcr:e35f0e71-155f-4964-9042-c73327bc71ee/Balance%20de%20Criminalidad%20Cuarto%20Trimestre%202020.pdf",
+          "tipo": "oficial",
+          "fecha": "2021"
+        }
+      ]
+    }
+  ],
+  "no_sabe": [
+    "Tasa de criminalidad de 2018, 2019, 2020 y 2023: no la hemos encontrado publicada; es cálculo propio con población del INE. La de 2025 es la suma propia de las tasas convencional y ciber.",
+    "Los balances del 4.º trimestre de 2018, 2021, 2022 y 2024 no se pudieron abrir; esas cifras salen del balance siguiente, de una nota oficial o de prensa.",
+    "Recuentos oficiales de las votaciones finales de 2019, 2021, 2022 y 2023, y de las proposiciones sobre ocupación de 2021, 2022 (dos) y sus grupos en contra.",
+    "Que la proposición del PP sobre ocupación admitida en 2026 decayera con la disolución no lo confirma una fuente expresa.",
+    "Ofertas de empleo público y equiparación salarial de Policía Nacional y Guardia Civil: no hemos encontrado una ley o real decreto-ley propio; no se incluyen.",
+    "No hemos podido hacer más búsquedas web en esta ampliación (límite agotado): pueden faltar otras proposiciones votadas en el Pleno."
+  ],
+  "pie_verificacion": "Con fuente oficial (BOE o actas y Diario de Sesiones del Congreso): las ocho leyes orgánicas, el rechazo en comisión de 2023, la toma en consideración y las enmiendas a la totalidad de la reforma de seguridad ciudadana de 2024, la admisión de la ley del PP sobre ocupación de 2026 y el recuento de la ley de multirreincidencia. Con dos fuentes de prensa: el rechazo de la ley del PP sobre ocupación de 2021 (sin recuento) y los grupos en contra de la ley de infancia. Con una sola fuente: recuentos finales de 2019, 2022 y 2023 (Senado), los rechazos de 2022 sobre ocupación, los grupos en contra de 2023 y 2026, y que la reforma de 2024 decae. Indicadores: infracciones de 2018-2021, 2023 y 2025 oficiales; 2022 y 2024 de prensa. Tasa: 2021 y 2022 oficiales, 2024 de prensa, 2018-2020, 2023 y 2025 cálculo propio. Consulta: 11 de noviembre de 2026."
+}

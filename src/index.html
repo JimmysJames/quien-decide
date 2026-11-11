@@ -1,0 +1,552 @@
+<title>Quién decide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,500..800&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Layout: una columna estrecha, como una papeleta. Tira electoral arriba, tres pasos reales (dónde, qué, quién) y un pie con las fuentes. */
+:root{
+  --paper:#EDF0F2;
+  --card:#FFFFFF;
+  --ink:#121B23;
+  --ink-2:#4B5967;
+  --rule:#CBD3DA;
+  --accent:#0B6E63;
+  --on-accent:#FFFFFF;
+  --accent-soft:#D6ECE8;
+  --note-bg:#FFF2CF;
+  --note-ink:#6B4700;
+  --f-display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E151B; --card:#16212A; --ink:#E7EDF1; --ink-2:#9FB0BD; --rule:#2A3946;
+    --accent:#4DC2B1; --on-accent:#07201C; --accent-soft:#143A38;
+    --note-bg:#3A2F10; --note-ink:#F0C96A;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E151B; --card:#16212A; --ink:#E7EDF1; --ink-2:#9FB0BD; --rule:#2A3946;
+  --accent:#4DC2B1; --on-accent:#07201C; --accent-soft:#143A38;
+  --note-bg:#3A2F10; --note-ink:#F0C96A;
+  color-scheme: dark;
+}
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.5}
+h1,h2,h3,p{margin:0}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+.app{max-width:640px;margin-inline:auto;padding-inline:16px;padding-block:20px 48px;display:flex;flex-direction:column;gap:20px}
+
+/* Cabecera */
+.top{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.brand{font-size:1.65rem;font-weight:800;font-stretch:112%;letter-spacing:-.01em;font-variation-settings:"wdth" 112}
+.tag{font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;border:1px solid var(--ink-2);color:var(--ink-2);padding:2px 8px;border-radius:3px;white-space:nowrap}
+.strip{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:center;border-block:2px solid var(--ink);padding-block:8px;font-family:var(--f-mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em}
+.strip span:last-child{color:var(--ink-2)}
+
+/* Pasos */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.steps button{width:100%;text-align:left;background:none;border:0;border-top:4px solid var(--rule);padding:8px 0 0;cursor:pointer;font-family:var(--f-mono);font-size:.74rem;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-2)}
+.steps button[aria-current="step"]{border-top-color:var(--accent);color:var(--ink);font-weight:500}
+.steps button:disabled{cursor:default;opacity:.55}
+
+/* Paneles */
+.panel{display:flex;flex-direction:column;gap:16px}
+.panel.in{animation:rise .25s ease-out}
+@keyframes rise{from{opacity:.0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){.panel.in{animation:none}}
+.panel h2{font-size:1.6rem;font-weight:700;font-variation-settings:"wdth" 105;line-height:1.15}
+.panel h2:focus{outline:none}
+.lead{color:var(--ink-2)}
+.ex{font-family:var(--f-mono);font-size:.78rem;background:var(--note-bg);color:var(--note-ink);padding:6px 10px;border-radius:3px;align-self:flex-start}
+
+/* Formulario */
+.field{display:flex;flex-direction:column;gap:6px}
+.field label,.field legend{font-weight:600}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend{padding:0;margin-bottom:6px}
+select,input[type="text"]{width:100%;background:var(--card);border:1px solid var(--rule);border-radius:4px;padding:11px 12px;min-height:46px}
+select{appearance:auto}
+.priv{font-size:.9rem;color:var(--ink-2)}
+
+.actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.btn{font-family:var(--f-display);font-weight:700;font-size:1rem;background:var(--accent);color:var(--on-accent);border:0;border-radius:4px;padding:12px 20px;min-height:46px;cursor:pointer}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn.ghost{background:none;color:var(--ink);border:1px solid var(--ink-2)}
+
+/* Elegir problemas */
+.count{font-family:var(--f-mono);font-size:.82rem;color:var(--ink-2)}
+.probs{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px}
+.prob{position:relative;text-align:left;background:var(--card);border:1px solid var(--rule);border-radius:4px;padding:12px 44px 12px 14px;cursor:pointer;display:flex;flex-direction:column;gap:2px;min-width:0}
+.prob b{font-family:var(--f-display);font-size:1.05rem;font-weight:700}
+.prob small{color:var(--ink-2);font-size:.9rem}
+.prob .box{position:absolute;right:12px;top:12px;width:24px;height:24px;border:2px solid var(--ink-2);border-radius:3px;display:grid;place-items:center;font-family:var(--f-mono);font-size:.85rem;font-weight:500}
+.prob[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.prob[aria-pressed="true"] .box{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.prob:disabled{opacity:.5;cursor:not-allowed}
+
+/* Resultado */
+.summary{background:var(--ink);color:var(--paper);border-radius:6px;padding:18px;display:flex;flex-direction:column;gap:8px}
+.summary h3{font-size:1.3rem;font-weight:700;line-height:1.25}
+.summary p{opacity:.9}
+.gov{background:var(--card);border:1px solid var(--rule);border-radius:6px;overflow:hidden}
+.gov h3{font-size:.78rem;font-family:var(--f-mono);text-transform:uppercase;letter-spacing:.07em;font-weight:500;color:var(--ink-2);padding:12px 14px 8px}
+.gov dl{margin:0}
+.gov .row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:2px 12px;padding:10px 14px;border-top:1px solid var(--rule)}
+.gov dt{font-weight:600}
+.gov dd{margin:0;color:var(--ink-2)}
+.gov .pend{font-style:italic}
+
+.res{background:var(--card);border:1px solid var(--rule);border-radius:6px;overflow:hidden}
+.res-h{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;padding:14px}
+.res-h .n{width:28px;height:28px;border-radius:3px;background:var(--ink);color:var(--paper);display:grid;place-items:center;font-family:var(--f-mono);font-size:.9rem;flex:none}
+.res-h h3{font-size:1.2rem;font-weight:700;flex:1 1 160px;min-width:0}
+.pill{font-family:var(--f-mono);font-size:.74rem;padding:3px 8px;border:1px solid var(--ink-2);border-radius:3px;white-space:nowrap}
+.pill.strong{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.lvl{padding:12px 14px;border-top:1px solid var(--rule);display:flex;flex-direction:column;gap:4px}
+.lvl.top{background:var(--accent-soft)}
+.lvl-h{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:4px 12px}
+.lvl-name{font-weight:700}
+.w{display:inline-flex;align-items:center;gap:6px;font-family:var(--f-mono);font-size:.74rem;color:var(--ink-2)}
+.sq{display:inline-flex;gap:3px}
+.sq i{width:11px;height:11px;border:1.5px solid var(--ink-2);border-radius:2px;display:block}
+.sq i.on{background:var(--accent);border-color:var(--accent)}
+.lvl p{margin:0}
+.ref{font-family:var(--f-mono);font-size:.74rem;color:var(--ink-2)}
+.here{font-family:var(--f-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.07em;color:var(--accent)}
+.you{padding:12px 14px;border-top:1px solid var(--rule);display:flex;flex-direction:column;gap:6px}
+.you p{margin:0}
+.you .k{font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-2)}
+.note{background:var(--note-bg);color:var(--note-ink);font-size:.92rem;padding:8px 10px;border-radius:3px}
+.ask q{quotes:none;font-weight:600}
+
+/* Enlace a las fichas de hechos */
+.more{display:block;border:1px solid var(--accent);border-radius:4px;padding:10px 12px;text-decoration:none;color:var(--ink);font-weight:600;background:var(--card)}
+.more .k{color:var(--accent)}
+.more.off{border-style:dashed;border-color:var(--rule);color:var(--ink-2);font-weight:400}
+.more.off .k{color:var(--ink-2)}
+
+/* Para compartir */
+.share{background:var(--ink);color:var(--paper);border-radius:6px;padding:18px;display:flex;flex-direction:column;gap:12px}
+.share h3{font-size:1.15rem;font-weight:700}
+.share p{opacity:.9}
+.share .btn{background:var(--paper);color:var(--ink)}
+.share .btn.ghost.light{background:none;color:var(--paper);border-color:var(--paper)}
+.share textarea,.panel>textarea{width:100%;min-height:130px;background:var(--card);color:var(--ink);border:1px solid var(--rule);border-radius:4px;padding:10px}
+
+/* Tarjeta para captura: cuadrada, titular grande, sin datos personales */
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.card{background:var(--ink);color:var(--paper);border-radius:8px;padding:22px 20px;display:flex;flex-direction:column;gap:14px;max-width:100%;align-self:stretch}
+.c-top{display:flex;justify-content:space-between;gap:10px;font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;opacity:.75}
+.c-top span:last-child{text-align:right;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.c-big{font-family:var(--f-display);font-weight:800;font-variation-settings:"wdth" 108;font-size:clamp(1.7rem,8.5vw,2.4rem);line-height:1.02;text-wrap:balance;font-variant-numeric:tabular-nums}
+.c-rest{font-family:var(--f-display);font-weight:600;font-size:clamp(1.15rem,5.5vw,1.5rem);line-height:1.15;color:var(--accent)}
+.c-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px}
+.c-list li{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px;align-items:center;padding:8px 10px;border-radius:4px;background:color-mix(in srgb, var(--paper) 10%, transparent)}
+.c-list .cn{font-family:var(--f-mono);font-size:.8rem;opacity:.7}
+.c-list .ct{font-weight:600;min-width:0;overflow-wrap:anywhere}
+.c-list .cw{font-family:var(--f-mono);font-size:.68rem;text-transform:uppercase;letter-spacing:.05em;padding:3px 7px;border-radius:3px;border:1px solid var(--paper);white-space:nowrap;opacity:.9}
+.c-list .cw.gen{background:var(--accent);border-color:var(--accent);color:var(--on-accent);opacity:1}
+.c-foot{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.78rem;opacity:.8}
+.c-leg{display:inline-flex;align-items:center;gap:6px}
+.c-leg i{width:10px;height:10px;border-radius:2px;border:1px solid var(--paper);display:inline-block}
+.c-leg i.gen{background:var(--accent);border-color:var(--accent)}
+
+.foot{font-size:.88rem;color:var(--ink-2);display:flex;flex-direction:column;gap:6px;border-top:1px solid var(--rule);padding-top:14px}
+.foot a{color:var(--accent)}
+</style>
+
+<main class="app">
+  <header class="top">
+    <h1 class="brand">Quién decide</h1>
+    <span class="tag">Beta</span>
+  </header>
+  <div class="strip"><span>Elecciones generales · 29 de noviembre</span><span>Campaña del 13 al 27</span></div>
+  <ol class="steps" id="steps"></ol>
+  <div id="view"></div>
+  <footer class="foot">
+    <p><b>Cómo leer esto.</b> Los pesos (de 0 a 3) son una lectura de la Constitución y los estatutos de autonomía, no una medida exacta. Cómo se han fijado, qué entra y qué no, y quién hace esto: <a href="metodologia.html">metodología</a>.</p>
+    <p>Fuentes: <a href="https://www.cis.es/" target="_blank" rel="noopener">CIS</a> (lista de problemas), <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229" target="_blank" rel="noopener">Constitución</a> (reparto de competencias). Partido que lidera cada gobierno autonómico revisado el 11 de noviembre de 2026.</p>
+    <p>¿Un dato está mal? <a href="metodologia.html#correcciones">Dínoslo</a>.</p>
+  </footer>
+</main>
+
+<script>
+(function(){
+  /* ---------- Datos ---------- */
+  var CCAA = [
+    {id:'andalucia', name:'Andalucía', party:'PP', v27:false},
+    {id:'aragon', name:'Aragón', party:'PP', v27:false},
+    {id:'asturias', name:'Principado de Asturias', party:'PSOE', v27:true},
+    {id:'baleares', name:'Illes Balears', party:'PP', v27:true},
+    {id:'canarias', name:'Canarias', party:'Coalición Canaria', v27:true, police:'la Policía Canaria, adscrita al Cuerpo'},
+    {id:'cantabria', name:'Cantabria', party:'PP', v27:true},
+    {id:'cyl', name:'Castilla y León', party:'PP', v27:false},
+    {id:'clm', name:'Castilla-La Mancha', party:'PSOE', v27:true},
+    {id:'cataluna', name:'Cataluña', party:'PSC', v27:false, police:'los Mossos d’Esquadra'},
+    {id:'valenciana', name:'Comunitat Valenciana', party:'PP', v27:true},
+    {id:'extremadura', name:'Extremadura', party:'PP', v27:false},
+    {id:'galicia', name:'Galicia', party:'PP', v27:false},
+    {id:'madrid', name:'Comunidad de Madrid', party:'PP', v27:true},
+    {id:'murcia', name:'Región de Murcia', party:'PP', v27:true},
+    {id:'navarra', name:'Navarra', party:'PSOE', v27:true, foral:true, police:'la Policía Foral'},
+    {id:'paisvasco', name:'País Vasco', party:'PNV', v27:false, foral:true, police:'la Ertzaintza'},
+    {id:'larioja', name:'La Rioja', party:'PP', v27:true},
+    {id:'ceuta', name:'Ceuta', party:'PP', v27:true, city:true},
+    {id:'melilla', name:'Melilla', party:'PP', v27:true, city:true}
+  ];
+  var collator = new Intl.Collator('es');
+  CCAA.sort(function(a,b){return collator.compare(a.name,b.name)});
+
+  var WL = ['No interviene','Margen pequeño','Tiene peso','Decide la mayor parte'];
+
+  var PROBS = [
+    {id:'vivienda', name:'Vivienda', desc:'Alquiler, compra y acceso a la primera casa',
+      hechos:{estado:'vivienda.html'},
+      lv:{
+        estado:{w:2, t:'Fija las reglas del alquiler, los impuestos de la vivienda y el dinero del Plan Estatal de Vivienda.', ref:'Ley 12/2023 de vivienda'},
+        ccaa:{w:3, t:'Tiene la competencia en vivienda: declara las zonas tensionadas, promueve vivienda protegida y reparte las ayudas.', ref:'CE art. 148.1.3'},
+        local:{w:2, t:'Controla el suelo y las licencias, así que decide cuánto y dónde se puede construir.', ref:'Ley 7/1985, art. 25'}
+      },
+      ask:'¿Qué hará con las zonas tensionadas y con la vivienda protegida en mi comunidad y en mi ciudad?'},
+    {id:'sanidad', name:'Sanidad', desc:'Listas de espera, atención primaria, urgencias',
+      hechos:{estado:'sanidad.html'},
+      lv:{
+        estado:{w:2, t:'Reparte la financiación general, regula los medicamentos y coordina el sistema.', ref:'Ley 16/2003 de cohesión y calidad'},
+        ccaa:{w:3, t:'Gestiona los hospitales, los centros de salud, el personal y las listas de espera.', ref:'Transferida a las comunidades en 2002'},
+        local:{w:1, t:'Tiene poco margen: salud pública local y algún centro municipal.', ref:''}
+      },
+      ask:'¿Cuánto va a invertir en atención primaria y qué plan concreto tiene para las listas de espera?',
+      extra:function(c){return c.city?['En Ceuta y Melilla la sanidad la gestiona directamente el Estado, a través del INGESA.']:[]}},
+    {id:'empleo', name:'Empleo y salarios', desc:'Paro, contratos temporales, salarios',
+      hechos:{estado:'empleo.html'},
+      lv:{
+        estado:{w:3, t:'Escribe la legislación laboral, fija el salario mínimo y las cotizaciones.', ref:'Estatuto de los Trabajadores'},
+        ccaa:{w:2, t:'Gestiona los servicios públicos de empleo y la formación para parados.', ref:''},
+        local:{w:1, t:'Tiene agencias de desarrollo local y planes de empleo propios, con poco presupuesto.', ref:''}
+      },
+      ask:'¿Qué cambiaría en los contratos y en el salario mínimo, y qué hará mi comunidad con la formación para parados?'},
+    {id:'economia', name:'Economía y coste de vida', desc:'Impuestos, precios, inflación',
+      hechos:{estado:'economia.html'},
+      lv:{
+        estado:{w:3, t:'Hace los Presupuestos, decide los impuestos principales y negocia con la UE. Los tipos de interés los fija el BCE.', ref:'Presupuestos Generales del Estado'},
+        ccaa:{w:1, t:'Gestiona impuestos cedidos como sucesiones, patrimonio y transmisiones, y su propio presupuesto.', ref:''},
+        local:{w:1, t:'Fija impuestos y tasas locales como el IBI o el de vehículos.', ref:''}
+      },
+      ask:'¿Qué impuesto subiría o bajaría, y qué gasto recortaría para pagarlo?',
+      extra:function(c){return c.foral?['En tu comunidad los principales impuestos los recauda la hacienda foral, no la Agencia Tributaria.']:[]}},
+    {id:'inmigracion', name:'Inmigración', desc:'Entrada, regularización, integración',
+      hechos:{estado:'inmigracion.html'},
+      lv:{
+        estado:{w:3, t:'Tiene la competencia exclusiva en extranjería, fronteras, asilo y nacionalidad.', ref:'CE art. 149.1.2'},
+        ccaa:{w:2, t:'Se ocupa de la integración: servicios sociales, educación y acogida de menores migrantes no acompañados.', ref:''},
+        local:{w:1, t:'Lleva el padrón, los servicios sociales y los programas de convivencia.', ref:''}
+      },
+      ask:'¿Qué cambiaría en las reglas de extranjería y con qué dinero apoyará a los municipios que reciben más gente?'},
+    {id:'pensiones', name:'Pensiones', desc:'Cuantía y futuro del sistema',
+      hechos:{estado:'pensiones.html'},
+      lv:{
+        estado:{w:3, t:'Decide la cuantía, la revalorización y la edad de jubilación. La Seguridad Social es competencia exclusiva del Estado.', ref:'CE art. 149.1.17'},
+        ccaa:{w:0, t:'No interviene en las pensiones contributivas. Algunas comunidades añaden ayudas propias.', ref:''},
+        local:{w:0, t:'No interviene.', ref:''}
+      },
+      ask:'¿Cómo se pagarán las pensiones dentro de 20 años: más cotizaciones, más impuestos o menos cuantía?'},
+    {id:'educacion', name:'Educación', desc:'Colegios, becas, universidad',
+      hechos:{estado:'educacion.html'},
+      lv:{
+        estado:{w:2, t:'Marca la ley básica, las becas generales y las titulaciones.', ref:'LOMLOE'},
+        ccaa:{w:3, t:'Gestiona colegios, institutos y universidades públicas, con las plantillas de profesores y parte del currículo.', ref:'Transferida a las comunidades'},
+        local:{w:1, t:'Mantiene los colegios de infantil y primaria y, en muchas ciudades, escuelas infantiles de 0 a 3 años.', ref:'Ley 7/1985, art. 25'}
+      },
+      ask:'¿Cuántos profesores y plazas nuevas propone, y quién las paga?',
+      extra:function(c){return c.city?['En Ceuta y Melilla la educación la gestiona directamente el Ministerio.']:[]}},
+    {id:'corrupcion', name:'Corrupción y calidad de la política', desc:'Transparencia, contratos, financiación de partidos',
+      hechos:{estado:'corrupcion.html'},
+      lv:{
+        estado:{w:2, t:'Escribe el Código Penal y las leyes de partidos y de contratos públicos. La Fiscalía actúa en todo el país.', ref:'Ley 9/2017 de contratos del sector público'},
+        ccaa:{w:2, t:'Contrata y controla su propio gasto, con oficinas antifraude y cámaras de cuentas en varias comunidades.', ref:''},
+        local:{w:2, t:'Contrata obras y servicios municipales y publica sus cuentas.', ref:''}
+      },
+      ask:'¿Qué medida de transparencia aplicará en su propio partido, y cuál cuando gobierne?'},
+    {id:'seguridad', name:'Seguridad ciudadana', desc:'Delincuencia y presencia policial',
+      hechos:{estado:'seguridad.html'},
+      lv:{
+        estado:{w:3, t:'Dirige la Policía Nacional y la Guardia Civil y escribe el Código Penal.', ref:'CE art. 149.1.29'},
+        ccaa:{w:1, t:'Solo cuatro comunidades tienen policía propia: Cataluña, País Vasco, Navarra y Canarias (adscrita).', ref:''},
+        local:{w:2, t:'La Policía Local lleva la seguridad urbana y el tráfico, y se coordina con el Estado en la Junta Local de Seguridad.', ref:'Ley 7/1985, art. 25'}
+      },
+      ask:'¿Cuántos agentes más habrá en mi zona y cómo se coordinarán con la policía local?',
+      extra:function(c){return [c.police?('En tu comunidad hay policía propia: '+c.police+'.'):'Tu comunidad no tiene policía autonómica propia.']}},
+    {id:'clima', name:'Clima, energía y medio ambiente', desc:'Energía, agua, residuos, movilidad',
+      hechos:{estado:'clima.html'},
+      lv:{
+        estado:{w:2, t:'Marca la política energética y las leyes básicas ambientales, y gestiona los ríos que cruzan varias comunidades.', ref:'Ley 7/2021 de cambio climático'},
+        ccaa:{w:2, t:'Autoriza muchas instalaciones renovables y ordena el territorio.', ref:''},
+        local:{w:2, t:'Gestiona los residuos, el transporte urbano y la movilidad.', ref:'Ley 7/1985, art. 25'}
+      },
+      ask:'¿Qué hará con las energías renovables en mi territorio y con el transporte público?'}
+  ];
+
+  /* ---------- Estado ---------- */
+  var S = {step:1, ccaa:'madrid', muni:'Getafe', picks:['vivienda','sanidad','empleo']};
+  var MAX = 3;
+  var SITE_URL = '{{SITE_URL}}'.indexOf('{{')===0 ? '' : '{{SITE_URL}}';
+
+  function esc(s){return String(s).replace(/[&<>"']/g,function(m){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]})}
+  function cc(){return CCAA.filter(function(c){return c.id===S.ccaa})[0]}
+  function ctx(){var c=cc(); return {c:c, who:c.city?'tu ciudad autónoma':'tu comunidad', foral:!!c.foral, city:!!c.city, police:c.police||''}}
+  function prob(id){return PROBS.filter(function(p){return p.id===id})[0]}
+  function muniName(){return S.muni.trim()||'tu municipio'}
+
+  function tops(p){
+    var w=[['estado',p.lv.estado.w],['ccaa',p.lv.ccaa.w],['local',p.lv.local.w]];
+    var m=Math.max.apply(null,w.map(function(x){return x[1]}));
+    var t=w.filter(function(x){return x[1]===m}).map(function(x){return x[0]});
+    return t;
+  }
+  function lead(p){var t=tops(p); return t.length===1?t[0]:'mixto'}
+  function verdict(p){
+    var w=p.lv.estado.w;
+    if(w>=3) return {t:'Las generales deciden casi todo', strong:true};
+    if(w===2) return {t:'Las generales deciden una parte', strong:false};
+    return {t:'Las generales deciden poco', strong:false};
+  }
+
+  /* ---------- Vistas ---------- */
+  function renderSteps(){
+    var labels=['1 · Dónde vives','2 · Qué te preocupa','3 · Quién decide'];
+    var html='';
+    for(var i=0;i<3;i++){
+      var n=i+1;
+      var dis=(n===3 && S.picks.length===0);
+      var cur=(S.step===n)||(S.step===4&&n===3);
+      html+='<li><button type="button" data-go="'+n+'"'+(cur?' aria-current="step"':'')+(dis?' disabled':'')+'>'+labels[i]+'</button></li>';
+    }
+    document.getElementById('steps').innerHTML=html;
+  }
+
+  function viewDonde(){
+    var opts=CCAA.map(function(c){return '<option value="'+c.id+'"'+(c.id===S.ccaa?' selected':'')+'>'+esc(c.name)+'</option>'}).join('');
+    return '<section class="panel in" aria-labelledby="h-donde">'+
+      '<h2 id="h-donde" tabindex="-1">¿Dónde vives?</h2>'+
+      '<p class="lead">Con esto vemos qué gobierno tiene cada competencia en tu caso.</p>'+
+      '<p class="ex">Valores de ejemplo. Cámbialos.</p>'+
+      '<div class="field"><label for="ccaa">Comunidad autónoma</label><select id="ccaa">'+opts+'</select></div>'+
+      '<div class="field"><label for="muni">Municipio</label><input id="muni" type="text" autocomplete="off" value="'+esc(S.muni)+'" placeholder="Por ejemplo, Getafe"></div>'+
+      '<p class="priv">Todo se queda en tu navegador. No se envía ni se guarda nada.</p>'+
+      '<div class="actions"><button type="button" class="btn" data-go="2">Continuar</button></div>'+
+    '</section>';
+  }
+
+  function viewQue(){
+    var full=S.picks.length>=MAX;
+    var cards=PROBS.map(function(p){
+      var idx=S.picks.indexOf(p.id);
+      var on=idx>-1;
+      var dis=(!on && full);
+      return '<button type="button" class="prob" data-pick="'+p.id+'" aria-pressed="'+on+'"'+(dis?' disabled':'')+'>'+
+        '<b>'+esc(p.name)+'</b><small>'+esc(p.desc)+'</small>'+
+        '<span class="box" aria-hidden="true">'+(on?(idx+1):'')+'</span></button>';
+    }).join('');
+    return '<section class="panel in" aria-labelledby="h-que">'+
+      '<h2 id="h-que" tabindex="-1">¿Qué te preocupa más?</h2>'+
+      '<p class="lead">Elige hasta tres, por orden de importancia para ti. El número es tu prioridad.</p>'+
+      '<p class="count" aria-live="polite">'+S.picks.length+' de '+MAX+(full?' · quita una para cambiar':'')+'</p>'+
+      '<div class="probs">'+cards+'</div>'+
+      '<div class="actions"><button type="button" class="btn ghost" data-go="1">Atrás</button>'+
+      '<button type="button" class="btn" data-go="3"'+(S.picks.length?'':' disabled')+'>Ver quién decide</button></div>'+
+    '</section>';
+  }
+
+  function sq(w){var h='<span class="sq" aria-hidden="true">';for(var i=1;i<=3;i++)h+='<i'+(i<=w?' class="on"':'')+'></i>';return h+'</span>'}
+
+  function levelRow(key,p,x,top){
+    var c=ctx();
+    var names={
+      estado:'Estado <span class="ref">· Cortes y Gobierno</span>',
+      ccaa:(c.city?'Tu ciudad autónoma':'Tu comunidad')+' <span class="ref">· '+esc(c.c.name)+'</span>',
+      local:'Tu ayuntamiento <span class="ref">· '+esc(muniName())+'</span>'
+    };
+    return '<div class="lvl'+(top?' top':'')+'">'+
+      '<div class="lvl-h"><span class="lvl-name">'+names[key]+'</span>'+
+      '<span class="w">'+sq(x.w)+WL[x.w]+'</span></div>'+
+      '<p>'+esc(x.t)+'</p>'+
+      (x.ref?'<span class="ref">'+esc(x.ref)+'</span>':'')+
+      (top?'<span class="here">Aquí se decide más</span>':'')+
+    '</div>';
+  }
+
+  function resultCard(p,i){
+    var c=ctx();
+    var t=tops(p);
+    var showTop=t.length<3;
+    var v=verdict(p);
+    var rows=['estado','ccaa','local'].map(function(k){return levelRow(k,p,p.lv[k],showTop && t.indexOf(k)>-1)}).join('');
+    var ex=p.extra?p.extra(c):[];
+    var notes=ex.map(function(n){return '<p class="note">'+esc(n)+'</p>'}).join('');
+    var hechos='';
+    if(p.hechos && p.hechos.estado){
+      hechos='<a class="more" href="'+p.hechos.estado+'"><span class="k">Hechos, no promesas</span><br>Qué ha hecho el Estado en '+esc(p.name.toLowerCase())+', 2018 a 2026 →</a>';
+    }else{
+      hechos='<p class="more off"><span class="k">Hechos, no promesas</span><br>La ficha de '+esc(p.name.toLowerCase())+' aún no está hecha.</p>';
+    }
+    return '<article class="res"><div class="res-h"><span class="n">'+(i+1)+'</span><h3>'+esc(p.name)+'</h3>'+
+      '<span class="pill'+(v.strong?' strong':'')+'">'+v.t+'</span></div>'+
+      rows+
+      '<div class="you">'+notes+
+        '<p class="ask"><span class="k">Pregunta que sirve para cualquier partido</span><br><q>'+esc(p.ask)+'</q></p>'+
+        hechos+
+      '</div></article>';
+  }
+
+  function summary(){
+    var picks=S.picks.map(prob), n=picks.length, c=ctx();
+    var a=0,b=0,l=0;
+    picks.forEach(function(p){var d=lead(p); if(d==='estado')a++; else if(d==='ccaa')b++; else if(d==='local')l++;});
+    var fuera=b+l;
+    var head;
+    if(fuera>0){
+      head=(n===1?'Para tu preocupación':(fuera===n?'Para las '+n+' preocupaciones':'Para '+fuera+' de tus '+n+' preocupaciones'))+', quien más decide no se elige en las generales.';
+    }else if(a>0){
+      head=(n===1?'Para tu preocupación':'Para '+a+' de tus '+n)+', quien más decide es el Gobierno del Estado. Eso sí se vota en las generales.';
+    }else{
+      head='Tus preocupaciones se reparten entre varios niveles. Ninguna depende de uno solo.';
+    }
+    var sub=[];
+    if(fuera>0 && a>0) sub.push((a===1?'Una sí depende':a+' sí dependen')+' del Gobierno que salga de las generales del 29 de noviembre.');
+    if(b>0) sub.push(c.c.v27?('Tu '+(c.city?'ciudad autónoma':'comunidad')+' elige su parlamento el 23 de mayo de 2027.'):'Tu comunidad no vota en mayo de 2027. Mira cuándo toca su próxima autonómica.');
+    if(l>0) sub.push('Tu ayuntamiento se elige el 23 de mayo de 2027.');
+    return '<div class="summary"><h3>'+head+'</h3>'+(sub.length?'<p>'+sub.join(' ')+'</p>':'')+'</div>';
+  }
+
+  function govBlock(){
+    var c=ctx();
+    return '<div class="gov"><h3>Quién gobierna donde vives</h3><dl>'+
+      '<div class="row"><dt>Estado</dt><dd>Gobierno liderado por el PSOE</dd></div>'+
+      '<div class="row"><dt>'+(c.city?'Ciudad autónoma':'Comunidad')+'</dt><dd>Gobierno liderado por '+esc(c.c.party)+'<br><span class="ref">'+esc(c.c.name)+'</span></dd></div>'+
+      '<div class="row"><dt>Ayuntamiento</dt><dd class="pend">Dato no incluido en la demo. En la versión real saldría de los resultados municipales y los pactos.<br><span class="ref">'+esc(muniName())+'</span></dd></div>'+
+    '</dl></div>';
+  }
+
+  function levelWord(p){
+    var d=lead(p);
+    if(d==='estado') return 'el Gobierno del Estado';
+    if(d==='ccaa') return ctx().who;
+    if(d==='local') return 'tu ayuntamiento';
+    return 'varios niveles';
+  }
+
+  function shareText(){
+    var lines=['Mis prioridades y quién tiene la llave de cada una:'];
+    S.picks.map(prob).forEach(function(p,i){lines.push((i+1)+'. '+p.name+': sobre todo '+levelWord(p))});
+    lines.push('¿Y las tuyas? '+(SITE_URL||'Quién decide'));
+    return lines.join('\n');
+  }
+
+  function shareBlock(){
+    return '<div class="share"><h3>Para compartir</h3>'+
+      '<p>Una tarjeta con tu resultado, pensada para hacer captura y reenviar por WhatsApp.</p>'+
+      '<div class="actions"><button type="button" class="btn" data-go="4">Ver la tarjeta</button>'+
+      '<button type="button" class="btn ghost light" id="copy">Copiar como texto</button></div>'+
+      '<textarea id="sharetxt" readonly hidden aria-label="Texto para copiar"></textarea></div>';
+  }
+
+  function cardHead(){
+    var picks=S.picks.map(prob), n=picks.length;
+    var fuera=picks.filter(function(p){var d=lead(p); return d==='ccaa'||d==='local'}).length;
+    var a=picks.filter(function(p){return lead(p)==='estado'}).length;
+    if(fuera>0){
+      if(n===1) return {big:'Lo que me preocupa', rest:'no se decide en las generales.'};
+      if(fuera===n) return {big:'Mis '+n+' preocupaciones', rest:'no se deciden en las generales.'};
+      return {big:fuera+' de mis '+n+' preocupaciones', rest:'no se deciden en las generales.'};
+    }
+    if(a>0){
+      if(n===1) return {big:'Lo que me preocupa', rest:'sí se decide en las generales.'};
+      return {big:'Mis '+n+' preocupaciones', rest:'sí se deciden en las generales.'};
+    }
+    return {big:'Mis preocupaciones', rest:'se reparten entre varios gobiernos.'};
+  }
+
+  function viewCard(){
+    var h=cardHead(), c=ctx();
+    var items=S.picks.map(prob).map(function(p,i){
+      var d=lead(p), who;
+      if(d==='estado') who='Gobierno del Estado';
+      else if(d==='ccaa') who=c.city?'Ciudad autónoma':'Comunidad autónoma';
+      else if(d==='local') who='Ayuntamiento';
+      else who='Varios gobiernos';
+      var gen=(d==='estado');
+      return '<li><span class="cn">'+(i+1)+'</span><span class="ct">'+esc(p.name)+'</span>'+
+        '<span class="cw'+(gen?' gen':'')+'">'+esc(who)+'</span></li>';
+    }).join('');
+    return '<section class="panel in" aria-labelledby="h-card">'+
+      '<h2 id="h-card" tabindex="-1" class="vh">Tarjeta para compartir</h2>'+
+      '<p class="lead">Haz una captura de la tarjeta y reenvíala. No lleva tu municipio.</p>'+
+      '<div class="card" id="card">'+
+        '<div class="c-top"><span>Quién decide</span><span>'+esc(c.c.name)+'</span></div>'+
+        '<p class="c-big">'+esc(h.big)+'</p>'+
+        '<p class="c-rest">'+esc(h.rest)+'</p>'+
+        '<ol class="c-list">'+items+'</ol>'+
+        '<div class="c-foot"><span class="c-leg"><i class="gen"></i>Se vota en las generales</span><span class="c-leg"><i></i>Se vota en autonómicas o municipales</span></div>'+
+      '</div>'+
+      '<div class="actions"><button type="button" class="btn" id="copy">Copiar como texto</button>'+
+      '<button type="button" class="btn ghost" data-go="3">Volver al resultado</button></div>'+
+      '<textarea id="sharetxt" readonly hidden aria-label="Texto para copiar"></textarea>'+
+    '</section>';
+  }
+
+  function viewQuien(){
+    var cards=S.picks.map(prob).map(resultCard).join('');
+    return '<section class="panel in" aria-labelledby="h-quien">'+
+      '<h2 id="h-quien" tabindex="-1">Quién tiene la llave</h2>'+
+      '<p class="lead">Para '+esc(muniName())+', '+esc(cc().name)+'.</p>'+
+      summary()+govBlock()+cards+shareBlock()+
+      '<div class="actions"><button type="button" class="btn ghost" data-go="2">Cambiar mis preocupaciones</button></div>'+
+    '</section>';
+  }
+
+  /* ---------- Render ---------- */
+  var view=document.getElementById('view');
+  function render(opts){
+    opts=opts||{};
+    renderSteps();
+    view.innerHTML = S.step===1?viewDonde():(S.step===2?viewQue():(S.step===4?viewCard():viewQuien()));
+    if(opts.focusPick){var b=view.querySelector('[data-pick="'+opts.focusPick+'"]'); if(b) b.focus({preventScroll:true});}
+    if(opts.scroll){window.scrollTo(0,0); var h=view.querySelector('h2'); if(h) h.focus({preventScroll:true});}
+  }
+
+  document.addEventListener('click',function(e){
+    var go=e.target.closest('[data-go]');
+    if(go && !go.disabled){S.step=parseInt(go.getAttribute('data-go'),10); render({scroll:true}); return;}
+    var pk=e.target.closest('[data-pick]');
+    if(pk && !pk.disabled){
+      var id=pk.getAttribute('data-pick'), i=S.picks.indexOf(id);
+      if(i>-1) S.picks.splice(i,1); else if(S.picks.length<MAX) S.picks.push(id);
+      render({focusPick:id}); return;
+    }
+    if(e.target.id==='copy'){
+      var txt=shareText(), btn=e.target;
+      var done=function(){btn.textContent='Copiado'; setTimeout(function(){btn.textContent='Copiar como texto'},1800)};
+      var fallback=function(){var ta=document.getElementById('sharetxt'); ta.value=txt; ta.hidden=false; ta.focus(); ta.select(); btn.textContent='Selecciona y copia';};
+      try{
+        if(navigator.clipboard && navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(done,fallback);}
+        else fallback();
+      }catch(err){fallback();}
+    }
+  });
+  document.addEventListener('change',function(e){
+    if(e.target.id==='ccaa') S.ccaa=e.target.value;
+  });
+  document.addEventListener('input',function(e){
+    if(e.target.id==='muni') S.muni=e.target.value;
+  });
+
+  render();
+})();
+</script>

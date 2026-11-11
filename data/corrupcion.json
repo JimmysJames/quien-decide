@@ -1,0 +1,685 @@
+{
+  "tema": "corrupcion",
+  "nombre": "Corrupción y calidad de la política",
+  "titulo": "Corrupción y calidad de la política: qué ha hecho el Estado",
+  "aviso_competencia": "",
+  "resumen": {
+    "aprobado": "Las empresas pasaron a responder penalmente por malversación (2019). Se reformó la malversación y se suprimió la sedición (2022). Se aprobó la ley que protege a quien denuncia infracciones (2023) y la ley de amnistía, que incluye la malversación ligada al proceso independentista sin enriquecimiento (2024). El Gobierno aprobó un Plan Estatal de Lucha contra la Corrupción (2025).",
+    "no_salio": "El Congreso rechazó tramitar leyes contra la corrupción o de protección de denunciantes de Ciudadanos (2020, 159 a favor y 178 en contra), Vox (2021, 150 a 192) y Sumar (2025, 170 a 176). La ley de lobbies y el proyecto de Ley Orgánica de Integridad Pública no llegaron a aprobarse antes de la disolución.",
+    "cifras": "España tenía 58 puntos sobre 100 en el Índice de Percepción de la Corrupción en 2018 (puesto 41) y 55 en 2025 (puesto 49). Su puntuación más alta del periodo fue 62, en 2019 y 2020.",
+    "no_sabe": "Esta ficha no recoge casos judiciales. Falta el recuento final de varias leyes y el voto por grupos de casi todas las votaciones."
+  },
+  "hechos": [
+    {
+      "id": "corr-2019-lo-1-codigo-penal",
+      "tipo": "aprobado",
+      "fecha": "2019-02-20",
+      "titulo": "Ley Orgánica 1/2019, reforma del Código Penal por directivas europeas",
+      "frase_llana": "Las empresas y otras personas jurídicas pueden responder penalmente por malversación. El cohecho se extiende a funcionarios de otros países, de la UE y de organizaciones internacionales.",
+      "detalle": "LO 1/2019, de 20 de febrero, que modifica el Código Penal para transponer directivas de la UE en materia financiera y de terrorismo, y abordar cuestiones internacionales. BOE núm. 45, de 21-02-2019 (BOE-A-2019-2363). En vigor el 13-03-2019. Añade el ordinal 5.º al art. 435 (personas jurídicas responsables de malversación, con multas según la pena de la persona física); reescribe el art. 427 (cohecho de funcionarios extranjeros, de la UE y de organizaciones internacionales); nuevo art. 435 bis sobre quién es funcionario público a estos efectos. El preámbulo dice que la malversación era el único tipo de la directiva de fraude a los intereses financieros de la UE que no admitía responsabilidad de personas jurídicas. La norma trata también abuso de mercado, terrorismo, protección del euro y tráfico de órganos.",
+      "votacion": null,
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2019-2363",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2019-2363",
+          "tipo": "oficial",
+          "fecha": "2019-02-21"
+        },
+        {
+          "nombre": "Legal Today: el Código Penal se adapta a la normativa europea en los ámbitos financieros y de terrorismo",
+          "url": "https://www.legaltoday.com/actualidad-juridica/noticias-de-derecho/el-codigo-penal-se-adapta-a-la-normativa-europea-en-los-ambitos-financieros-y-de-terrorismo-2019-02-21/",
+          "tipo": "prensa",
+          "fecha": "2019-02-21"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No se ha localizado el recuento de la votación final en el Congreso. La corrupción es uno de varios bloques de la norma, no el único."
+    },
+    {
+      "id": "corr-2020-rdl-3-contratacion",
+      "tipo": "aprobado",
+      "fecha": "2020-02-04",
+      "titulo": "Real Decreto-ley 3/2020, contratación pública en sectores especiales",
+      "frase_llana": "Fija las reglas de contratación de las empresas de agua, energía, transporte y servicios postales, y modifica la Ley 9/2017 de contratos. Incluye también cambios en seguros, planes de pensiones e impuestos.",
+      "detalle": "Real Decreto-ley 3/2020, de 4 de febrero, de medidas urgentes por el que se incorporan al ordenamiento jurídico español diversas directivas de la UE en el ámbito de la contratación pública en determinados sectores; de seguros privados; de planes y fondos de pensiones; del ámbito tributario y de litigios fiscales. BOE núm. 31, de 5-02-2020 (BOE-A-2020-1651). Modifica los arts. 118 y 331 y la disposición final 1.3 de la Ley 9/2017. Convalidado el 20-02-2020 (Resolución BOE-A-2020-2897) y tramitado como proyecto de ley por urgencia (335 a favor, 0 en contra, 4 abstenciones).",
+      "votacion": {
+        "fecha": "2020-02-20",
+        "a_favor": 185,
+        "en_contra": 136,
+        "abstenciones": 18,
+        "grupos_en_contra": [],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2020-1651",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-1651",
+          "tipo": "oficial",
+          "fecha": "2020-02-05"
+        },
+        {
+          "nombre": "BOE-A-2020-2897 (convalidación)",
+          "url": "https://www.boe.es/eli/es/res/2020/02/20/(2)",
+          "tipo": "oficial",
+          "fecha": "2020-02-29"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, Pleno núm. 11 (XIV)",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-11.PDF",
+          "tipo": "oficial",
+          "fecha": "2020-02-20"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No consta el voto por grupos. No consta si la tramitación como proyecto de ley terminó en una ley."
+    },
+    {
+      "id": "corr-2020-cs-anticorrupcion",
+      "tipo": "no_salio",
+      "fecha": "2020-06-17",
+      "titulo": "Proposición de Ley de medidas de lucha contra la corrupción (Ciudadanos)",
+      "frase_llana": "El Congreso rechaza empezar a tramitar una ley de Ciudadanos con medidas contra la corrupción y protección de denunciantes en el sector público.",
+      "detalle": "Proposición de Ley de medidas de lucha contra la corrupción (122/000009), del Grupo Parlamentario Ciudadanos. Toma en consideración rechazada en el Pleno del 17-06-2020 (BOCG Serie B núm. 35-2).",
+      "votacion": {
+        "fecha": "2020-06-17",
+        "a_favor": 159,
+        "en_contra": 178,
+        "abstenciones": 11,
+        "grupos_en_contra": [
+          "ERC",
+          "PNV",
+          "PSOE",
+          "Unidas Podemos"
+        ],
+        "resultado": "rechazado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOCG Congreso, Serie B, núm. 35-2",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/BOCG/B/BOCG-14-B-35-2.PDF",
+          "tipo": "oficial",
+          "fecha": "2020-06-24"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, Pleno núm. 30 (XIV)",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-30.PDF",
+          "tipo": "oficial",
+          "fecha": "2020-06-17"
+        },
+        {
+          "nombre": "Moncloa.com: el Congreso rechaza la ley de Ciudadanos contra la corrupción",
+          "url": "https://www.moncloa.com/2020/06/17/ley-de-ciudadanos-contra-la-corrupcion-217357/",
+          "tipo": "prensa",
+          "fecha": "2020-06-17"
+        },
+        {
+          "nombre": "Última Hora: PSOE y Podemos tumban la propuesta de Ciudadanos contra la corrupción",
+          "url": "https://www.ultimahora.es/noticias/nacional/2020/06/17/1174067/psoe-podemos-tumban-propuesta-ciudadanos-contra-corrupcion.html",
+          "tipo": "prensa",
+          "fecha": "2020-06-17"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El recuento es oficial. PSOE y Unidas Podemos en contra lo dicen dos medios; ERC y PNV, uno solo. Ciudadanos volvió a registrar una ley parecida en diciembre de 2020 (122/000116); no consta que se votara en el Pleno."
+    },
+    {
+      "id": "corr-2020-rdl-36-fondos",
+      "tipo": "aprobado",
+      "fecha": "2020-12-30",
+      "titulo": "Real Decreto-ley 36/2020, gestión del Plan de Recuperación",
+      "frase_llana": "Cambia normas de contratación pública, subvenciones y control para gestionar los fondos europeos de recuperación. Modifica tres artículos de la Ley 9/2017 de contratos.",
+      "detalle": "Real Decreto-ley 36/2020, de 30 de diciembre, por el que se aprueban medidas urgentes para la modernización de la Administración Pública y para la ejecución del Plan de Recuperación, Transformación y Resiliencia (BOE-A-2020-17340). Modifica los arts. 32.7.b), 45.1 y 208.2.a) de la Ley 9/2017. Convalidado el 28-01-2021 y tramitado como proyecto de ley por urgencia (346 a favor, 1 en contra, 1 abstención).",
+      "votacion": {
+        "fecha": "2021-01-28",
+        "a_favor": 170,
+        "en_contra": 126,
+        "abstenciones": 52,
+        "grupos_en_contra": [
+          "Ciudadanos",
+          "PP"
+        ],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2020-17340",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-17340",
+          "tipo": "oficial",
+          "fecha": "2020-12-31"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, Pleno núm. 74 (XIV)",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-74.PDF",
+          "tipo": "oficial",
+          "fecha": "2021-01-28"
+        },
+        {
+          "nombre": "El Salto: la abstención de Vox facilita la validación del decreto sobre los fondos europeos",
+          "url": "https://www.elsaltodiario.com/crisis-economica/plan-recuperacion-resiliencia-congreso-debate-futuro-economia-espanola-via-rapida",
+          "tipo": "prensa",
+          "fecha": "2021-01-28"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El recuento es oficial. Que PP y Ciudadanos votaron en contra y Vox se abstuvo lo dice una sola fuente de prensa. La contratación es uno de varios bloques de la norma. No consta si la tramitación como proyecto de ley terminó en una ley."
+    },
+    {
+      "id": "corr-2021-vox-denunciantes",
+      "tipo": "no_salio",
+      "fecha": "2021-06-22",
+      "titulo": "Proposición de Ley de protección integral de los denunciantes de corrupción (Vox)",
+      "frase_llana": "El Congreso rechaza empezar a tramitar una ley de Vox para proteger a quien denuncia casos de corrupción.",
+      "detalle": "Proposición de Ley de protección integral de los denunciantes de corrupción (122/000031), del Grupo Parlamentario VOX. Toma en consideración rechazada en el Pleno del 22-06-2021 (BOCG Serie B núm. 56-2).",
+      "votacion": {
+        "fecha": "2021-06-22",
+        "a_favor": 150,
+        "en_contra": 192,
+        "abstenciones": 3,
+        "grupos_en_contra": [],
+        "resultado": "rechazado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOCG Congreso, Serie B, núm. 56-2",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/BOCG/B/BOCG-14-B-56-2.PDF",
+          "tipo": "oficial",
+          "fecha": "2021-06-28"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, Pleno núm. 113 (XIV)",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-113.PDF",
+          "tipo": "oficial",
+          "fecha": "2021-06-22"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No consta el voto por grupos."
+    },
+    {
+      "id": "corr-2022-ley-14-transparencia",
+      "tipo": "aprobado",
+      "fecha": "2022-07-08",
+      "titulo": "Ley 14/2022, reforma de la Ley de transparencia (pymes en la contratación pública)",
+      "frase_llana": "Las administraciones deben publicar cada seis meses qué parte de los contratos públicos, en número y en valor, va a pequeñas y medianas empresas.",
+      "detalle": "Ley 14/2022, de 8 de julio, de modificación de la Ley 19/2013, de transparencia, acceso a la información pública y buen gobierno, con el fin de regular las estadísticas de las microempresas, pequeñas y medianas empresas (PYME) en la contratación pública. BOE núm. 164, de 9-07-2022 (BOE-A-2022-11392). En vigor el 29-07-2022. Modifica el art. 8.1.a) de la Ley 19/2013; publicación semestral a partir de un año desde la ley. Origen: proposición de ley del Grupo Socialista (122/000194), tomada en consideración el 1-02-2022. El 30-06-2022 el Congreso aprobó todas las enmiendas del Senado.",
+      "votacion": {
+        "fecha": "2022-02-01",
+        "a_favor": 288,
+        "en_contra": null,
+        "abstenciones": 55,
+        "grupos_en_contra": [],
+        "resultado": "tomado_en_consideracion"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2022-11392",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-11392",
+          "tipo": "oficial",
+          "fecha": "2022-07-09"
+        },
+        {
+          "nombre": "BOCG Congreso, Serie B, núm. 216-2",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/BOCG/B/BOCG-14-B-216-2.PDF",
+          "tipo": "oficial",
+          "fecha": "2022-02-07"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, Pleno núm. 154 (XIV)",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-154.PDF",
+          "tipo": "oficial",
+          "fecha": "2022-02-01"
+        },
+        {
+          "nombre": "Congreso, resultados del Pleno del 30-06-2022",
+          "url": "https://www.congreso.es/docu/tramit/LegXIV/tramit_pleno30062022_192.pdf",
+          "tipo": "oficial",
+          "fecha": "2022-06-30"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "La votación que se muestra es la toma en consideración: el Diario de Sesiones da 288 a favor y 55 abstenciones y no menciona votos en contra. No consta el recuento de la votación final (enmiendas del Senado, 30-06-2022) ni el voto por grupos. En la toma en consideración constan 288 votos a favor y 55 abstenciones; el Diario de Sesiones no da votos en contra."
+    },
+    {
+      "id": "corr-2022-lo-14-malversacion",
+      "tipo": "aprobado",
+      "fecha": "2022-12-22",
+      "titulo": "Ley Orgánica 14/2022: reforma de la malversación y supresión de la sedición",
+      "frase_llana": "Cambia las penas de la malversación según el uso que se dé al dinero público. Suprime el delito de sedición y reescribe el de desórdenes públicos.",
+      "detalle": "LO 14/2022, de 22 de diciembre. BOE núm. 307, de 23-12-2022 (BOE-A-2022-21800). En vigor el 12-01-2023. Malversación: apropiación (art. 432), 2 a 6 años de prisión, hasta 4-8 en casos agravados; uso temporal para fines privados (nuevo art. 432 bis), 6 meses a 3 años; desvío a otra finalidad pública (art. 433), 1 a 4 años si causa daño grave al servicio. Suprime los artículos 544 a 549 (sedición). Senado, 22-12-2022: 140 a favor, 118 en contra, 3 abstenciones (una fuente de prensa).",
+      "votacion": {
+        "fecha": "2022-12-15",
+        "a_favor": 184,
+        "en_contra": 64,
+        "abstenciones": 1,
+        "grupos_en_contra": [
+          "BNG",
+          "CC",
+          "CUP",
+          "Foro Asturias",
+          "Junts",
+          "Navarra Suma",
+          "PRC",
+          "Teruel Existe",
+          "Vox"
+        ],
+        "resultado": "aprobado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2022-21800",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-21800",
+          "tipo": "oficial",
+          "fecha": "2022-12-23"
+        },
+        {
+          "nombre": "Orain: el Congreso aprueba derogar la sedición y rebajar penas por malversación",
+          "url": "https://orain.eus/es/politica/2022/12/15/el-congreso-aprueba-derogar-sedicion-rebajar-penas-por-malversacion-y-modificar-tc/",
+          "tipo": "prensa",
+          "fecha": "2022-12-15"
+        },
+        {
+          "nombre": "Valencia Plaza: el Congreso aprueba la reforma que suprime la sedición y modifica la malversación",
+          "url": "https://valenciaplaza.com/congreso-aprueba-reforma-penal-suprime-sedicion",
+          "tipo": "prensa",
+          "fecha": "2022-12-15"
+        },
+        {
+          "nombre": "RTVC: aprobada la reforma sobre sedición y malversación (Senado)",
+          "url": "https://rtvc.es/aprobada-reforma-sobre-sedicion-y-rebaja-penas-por-malversacion/",
+          "tipo": "prensa",
+          "fecha": "2022-12-22"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "La norma consta en el BOE. El recuento del Congreso procede de dos medios de prensa; la lista de grupos en contra, de uno solo (Valencia Plaza), que añade que una diputada del PP votó en contra y que el resto del PP y Ciudadanos no votaron."
+    },
+    {
+      "id": "corr-2023-ley-2-informante",
+      "tipo": "aprobado",
+      "fecha": "2023-02-20",
+      "titulo": "Ley 2/2023, de protección de las personas que informen sobre infracciones y de lucha contra la corrupción",
+      "frase_llana": "Protege frente a represalias a quien informa de infracciones graves que conoce por su trabajo. Obliga a empresas de 50 o más trabajadores y al sector público a tener un canal interno de denuncias.",
+      "detalle": "Ley 2/2023, de 20 de febrero. BOE núm. 44, de 21-02-2023 (BOE-A-2023-4513). En vigor el 13-03-2023. Admite comunicaciones anónimas (art. 7.3). Acuse de recibo en 7 días naturales y respuesta en 3 meses, ampliable 3 más (art. 9). Crea el canal externo de la Autoridad Independiente de Protección del Informante, A.A.I. (título III). Transpone la directiva europea de protección de denunciantes.",
+      "votacion": {
+        "fecha": "2023-02-16",
+        "a_favor": null,
+        "en_contra": null,
+        "abstenciones": null,
+        "grupos_en_contra": [
+          "PP",
+          "Vox"
+        ],
+        "resultado": "aprobado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2023-4513",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-4513",
+          "tipo": "oficial",
+          "fecha": "2023-02-21"
+        },
+        {
+          "nombre": "Law & Trends: aprobada definitivamente la ley que protege a los denunciantes de corrupción",
+          "url": "https://www.lawandtrends.com/noticias/compliance/aprobada-definitivamente-la-ley-que-protege-a-los-denunciantes-de-corrupcion-1.html",
+          "tipo": "prensa",
+          "fecha": "2023-02-16"
+        },
+        {
+          "nombre": "Finreg360: el Congreso aprueba la ley que traspone la directiva whistleblowing",
+          "url": "https://finreg360.com/alerta/el-congreso-de-los-diputados-aprueba-la-ley-que-traspone-la-directiva-whistleblowing/",
+          "tipo": "terceros",
+          "fecha": "2023-02-16"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No consta el recuento de votos. El Diario de Sesiones solo dice que las enmiendas del Senado se aprobaron. Que PP y Vox votaron en contra lo dice una sola fuente de prensa."
+    },
+    {
+      "id": "corr-2024-lo-1-amnistia",
+      "tipo": "aprobado",
+      "fecha": "2024-06-10",
+      "titulo": "Ley Orgánica 1/2024, de amnistía",
+      "frase_llana": "Amnistía determinados actos vinculados al proceso independentista de Cataluña, entre ellos las consultas del 9 de noviembre de 2014 y del 1 de octubre de 2017. Incluye la malversación destinada a esos fines cuando no hubo propósito de enriquecimiento.",
+      "detalle": "Ley Orgánica 1/2024, de 10 de junio, de amnistía para la normalización institucional, política y social en Cataluña. BOE núm. 141, de 11-06-2024 (BOE-A-2024-11776). En vigor el 11-06-2024. Art. 1.1.a) y b): incluye los actos de malversación dirigidos a financiar, sufragar o facilitar las conductas descritas, «siempre que no haya existido propósito de enriquecimiento». Art. 1.4: aplicar fondos públicos a esos fines no se considera enriquecimiento si no hubo intención de obtener un beneficio personal de carácter patrimonial. Art. 2.e): excluye los delitos que afecten a los intereses financieros de la Unión Europea. El texto consolidado del BOE anota que el art. 1.1 fue objeto de las SSTC 137/2025 y 164/2025, que lo declaran inconstitucional con el alcance que fijan esas sentencias. Votación: el 30-05-2024 el Congreso levantó el veto del Senado y ratificó el texto (votación por llamamiento).",
+      "votacion": {
+        "fecha": "2024-05-30",
+        "a_favor": 177,
+        "en_contra": 172,
+        "abstenciones": 0,
+        "grupos_en_contra": [
+          "CC",
+          "PP",
+          "UPN",
+          "Vox"
+        ],
+        "resultado": "aprobado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2024-11776",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2024-11776",
+          "tipo": "oficial",
+          "fecha": "2024-06-11"
+        },
+        {
+          "nombre": "Acta del Pleno del Congreso, 30-05-2024",
+          "url": "https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20240530.pdf",
+          "tipo": "oficial",
+          "fecha": "2024-05-30"
+        },
+        {
+          "nombre": "elDiario.es / Canarias Ahora: Coalición Canaria vota en contra de la amnistía junto al PP y Vox",
+          "url": "https://www.eldiario.es/canariasahora/politica/coalicion-canaria-separa-socio-europeas-vota-amnistia-pp-vox_1_11408467.amp.html",
+          "tipo": "prensa",
+          "fecha": "2024-05-30"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "Entra en esta ficha porque la propia ley regula la malversación (art. 1). El recuento es oficial; la lista de grupos en contra viene de una sola fuente de prensa. No consta a cuántas personas se ha aplicado por malversación."
+    },
+    {
+      "id": "corr-2025-lobbies-totalidad",
+      "tipo": "votado",
+      "fecha": "2025-03-25",
+      "titulo": "Ley de grupos de interés (lobbies): el Congreso rechaza devolverla al Gobierno",
+      "frase_llana": "El proyecto crea un registro público y obligatorio de lobbies ante la Administración del Estado. Superó la enmienda de devolución, pero no llegó a aprobarse antes de la disolución.",
+      "detalle": "Proyecto de Ley de transparencia e integridad de las actividades de los grupos de interés (121/000046), BOCG 7-02-2025. Registro de Grupos de Interés gestionado por la Oficina de Conflictos de Intereses, código de conducta, huella normativa y régimen sancionador. El 25-03-2025 el Pleno rechazó la enmienda a la totalidad de devolución de Vox. Decae con la disolución de las Cortes (6-10-2026).",
+      "votacion": {
+        "fecha": "2025-03-25",
+        "a_favor": 32,
+        "en_contra": 177,
+        "abstenciones": 136,
+        "grupos_en_contra": [],
+        "resultado": "enmienda_rechazada"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOCG Congreso, Serie A, núm. 46-1",
+          "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-46-1.PDF",
+          "tipo": "oficial",
+          "fecha": "2025-02-07"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, Pleno núm. 106",
+          "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-106.PDF",
+          "tipo": "oficial",
+          "fecha": "2025-03-25"
+        },
+        {
+          "nombre": "Legal Today: con la disolución, la agenda anticorrupción decae",
+          "url": "https://www.legaltoday.com/sin-categoria/disolucion-de-las-cortes-la-agenda-anticorrupcion-decae-pero-el-reloj-europeo-sigue-corriendo-2026-10-12/",
+          "tipo": "prensa",
+          "fecha": "2026-10-12"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "La votación es sobre la enmienda de devolución, no sobre la ley: los votos a favor son a favor de devolverla. No consta el voto por grupos. Que la ley decae con la disolución lo dice una fuente de prensa."
+    },
+    {
+      "id": "corr-2025-plan-estatal",
+      "tipo": "aprobado",
+      "fecha": "2025-08-26",
+      "titulo": "Plan Estatal de Lucha contra la Corrupción",
+      "frase_llana": "El Gobierno aprueba un plan de 15 medidas. Incluye una agencia independiente de integridad, más control de la contratación pública y de las cuentas de los partidos.",
+      "detalle": "Aprobado por el Consejo de Ministros el 26-08-2025, elaborado con la OCDE. Medidas: Agencia Independiente de Integridad Pública; plataforma de contratación con big data e IA; ley de lobbies; auditoría obligatoria de partidos con más de 50.000 euros de financiación pública y publicidad de donaciones desde 2.500 euros; más protección a informantes; secciones especializadas en fiscalía y tribunales; decomiso sin condena previa. Es un plan del Gobierno, no una ley.",
+      "votacion": null,
+      "fuentes": [
+        {
+          "nombre": "La Moncloa: medidas del Plan Estatal de Lucha contra la Corrupción",
+          "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/presidencia/paginas/2025/medidas-plan-corrupcion-gobierno-espana.aspx",
+          "tipo": "oficial",
+          "fecha": "2025-08-27"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No consta cuántas medidas se habían ejecutado a la disolución."
+    },
+    {
+      "id": "corr-2025-oficina-prevencion",
+      "tipo": "no_salio",
+      "fecha": "2025-09-16",
+      "titulo": "Proposición de ley de creación de la Oficina de prevención de la corrupción",
+      "frase_llana": "El Congreso rechaza empezar a tramitar una ley de Sumar para crear una oficina estatal contra la corrupción.",
+      "detalle": "Proposición de Ley de creación de la Oficina de prevención de la corrupción (122/000086), del Grupo Plurinacional SUMAR. Toma en consideración rechazada en el Pleno del 16-09-2025.",
+      "votacion": {
+        "fecha": "2025-09-16",
+        "a_favor": 170,
+        "en_contra": 176,
+        "abstenciones": 1,
+        "grupos_en_contra": [
+          "Junts",
+          "PP",
+          "Vox"
+        ],
+        "resultado": "rechazado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOCG Congreso, Serie B, núm. 99-2",
+          "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-99-2.PDF",
+          "tipo": "oficial",
+          "fecha": "2025-09-16"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, Pleno núm. 136",
+          "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-136.PDF",
+          "tipo": "oficial",
+          "fecha": "2025-09-16"
+        },
+        {
+          "nombre": "Ara: PP, Vox y Junts tumban la creación de una agencia anticorrupción",
+          "url": "https://es.ara.cat/politica/tumba-pp-vox-congreso-creacion-agencia-anticorrupcion_1_5499230.html",
+          "tipo": "prensa",
+          "fecha": "2025-09-16"
+        },
+        {
+          "nombre": "El Independiente: Sumar fracasa al reabrir el debate contra la corrupción",
+          "url": "https://www.elindependiente.com/espana/2025/09/16/sumar-fracasa-al-reabrir-en-el-congreso-el-debate-contra-la-corrupcion-que-sigue-paralizado-en-el-gobierno/amp/",
+          "tipo": "prensa",
+          "fecha": "2025-09-16"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El recuento es oficial. Los grupos en contra los nombran dos medios de prensa."
+    },
+    {
+      "id": "corr-2026-integridad-publica",
+      "tipo": "no_salio",
+      "fecha": "2026-07-28",
+      "titulo": "Proyecto de Ley Orgánica de Integridad Pública",
+      "frase_llana": "El Gobierno lleva al Congreso una ley que crea una agencia independiente contra la corrupción y endurece penas. No llegó a votarse y decae con la disolución.",
+      "detalle": "Aprobado por el Consejo de Ministros el 28-07-2026. BOCG 11-09-2026 (121/000111), por urgencia; plazo de enmiendas hasta el 21-09-2026. Contenido: Agencia Independiente de Integridad Pública, con presidencia elegida por mayoría reforzada del Congreso; mapas de riesgo; registro público de prohibiciones de contratar; auditoría externa de partidos y publicidad de donaciones desde 2.500 euros (antes 25.000); prescripción de delitos de corrupción de 5 a 7 años; decomiso sin condena.",
+      "votacion": null,
+      "fuentes": [
+        {
+          "nombre": "La Moncloa: presentación del proyecto de Ley de Integridad Pública",
+          "url": "https://www.lamoncloa.gob.es/consejodeministros/resumenes/Documents/2026/280726-presentacion-proyecto-ley-integridad-publica.pdf",
+          "tipo": "oficial",
+          "fecha": "2026-07-28"
+        },
+        {
+          "nombre": "BOCG Congreso, Serie A, núm. 112-1",
+          "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/A/BOCG-15-A-112-1.PDF",
+          "tipo": "oficial",
+          "fecha": "2026-09-11"
+        },
+        {
+          "nombre": "Legal Today: con la disolución, la agenda anticorrupción decae",
+          "url": "https://www.legaltoday.com/sin-categoria/disolucion-de-las-cortes-la-agenda-anticorrupcion-decae-pero-el-reloj-europeo-sigue-corriendo-2026-10-12/",
+          "tipo": "prensa",
+          "fecha": "2026-10-12"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No consta ninguna votación en el Pleno. Que decae con la disolución lo dice una fuente de prensa, que cita el art. 207 del Reglamento del Congreso."
+    }
+  ],
+  "indicadores": [
+    {
+      "id": "ipc-puntuacion",
+      "titulo": "Índice de Percepción de la Corrupción de Transparencia Internacional, puntuación de España (0-100)",
+      "unidad": "puntos",
+      "decimales": 0,
+      "nota": "Encuesta de percepción de expertos y empresarios sobre la corrupción en el sector público, no una medida de casos. 0 = muy corrupto, 100 = muy limpio. Cada año corresponde a la edición publicada a comienzos del año siguiente. TI advierte de que un cambio de un punto no es estadísticamente significativo.",
+      "calculo_propio": false,
+      "serie": [
+        {
+          "periodo": "2018",
+          "valor": 58
+        },
+        {
+          "periodo": "2019",
+          "valor": 62
+        },
+        {
+          "periodo": "2020",
+          "valor": 62
+        },
+        {
+          "periodo": "2021",
+          "valor": 61
+        },
+        {
+          "periodo": "2022",
+          "valor": 60
+        },
+        {
+          "periodo": "2023",
+          "valor": 60
+        },
+        {
+          "periodo": "2024",
+          "valor": 56
+        },
+        {
+          "periodo": "2025",
+          "valor": 55
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Transparencia Internacional España, presentación IPC 2021 (datos 2018-2021)",
+          "url": "https://transparencia.org.es/wp-content/uploads/2022_01_20_PRESENTACION-IPC2021_DATOS-GENERALES_ESPAN%CC%83A_DMG2.pdf",
+          "tipo": "oficial",
+          "fecha": "2022-01-20"
+        },
+        {
+          "nombre": "Transparencia Internacional España, nota de prensa IPC 2022",
+          "url": "https://transparencia.org.es/wp-content/uploads/NdP-Transparencia-Internacional-IPC-2022.pdf",
+          "tipo": "oficial",
+          "fecha": null
+        },
+        {
+          "nombre": "El Cronista: IPC 2023",
+          "url": "https://www.cronista.com/espana/actualidad-es/aumento-la-corrupcion-en-espana-esto-es-lo-que-dice-el-ranking-de-transparencia-institucional",
+          "tipo": "prensa",
+          "fecha": null
+        },
+        {
+          "nombre": "Europa Press en Diario Estrategia: IPC 2025 y 2024",
+          "url": "https://www.diarioestrategia.cl/texto-diario/mostrar/5767714/espana-continua-empeorando-indice-percepcion-corrupcion-caer-otros-tres-puestos",
+          "tipo": "prensa",
+          "fecha": "2026-02-10"
+        },
+        {
+          "nombre": "Transparency International, ficha de España (2025)",
+          "url": "https://www.transparency.org/en/countries/spain",
+          "tipo": "oficial",
+          "fecha": null
+        }
+      ]
+    },
+    {
+      "id": "ipc-posicion",
+      "titulo": "Posición de España en ese índice",
+      "unidad": "puesto",
+      "decimales": 0,
+      "nota": "Puesto en la clasificación mundial (1 = mejor percepción). Hay empates: en 2018 España compartía los puestos 41-44. Se evalúan 180 países hasta 2024 y 182 en 2025, por lo que el puesto no es del todo comparable entre años.",
+      "calculo_propio": false,
+      "serie": [
+        {
+          "periodo": "2018",
+          "valor": 41
+        },
+        {
+          "periodo": "2019",
+          "valor": 30
+        },
+        {
+          "periodo": "2020",
+          "valor": 32
+        },
+        {
+          "periodo": "2021",
+          "valor": 34
+        },
+        {
+          "periodo": "2022",
+          "valor": 35
+        },
+        {
+          "periodo": "2023",
+          "valor": 36
+        },
+        {
+          "periodo": "2024",
+          "valor": 46
+        },
+        {
+          "periodo": "2025",
+          "valor": 49
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Transparencia Internacional España, presentación IPC 2021 (datos 2018-2021)",
+          "url": "https://transparencia.org.es/wp-content/uploads/2022_01_20_PRESENTACION-IPC2021_DATOS-GENERALES_ESPAN%CC%83A_DMG2.pdf",
+          "tipo": "oficial",
+          "fecha": "2022-01-20"
+        },
+        {
+          "nombre": "Transparencia Internacional España, análisis IPC 2018",
+          "url": "https://transparencia.org.es/wp-content/uploads/Documento-analisis-IPC2018.pdf",
+          "tipo": "oficial",
+          "fecha": null
+        },
+        {
+          "nombre": "Transparencia Internacional España, nota de prensa IPC 2022",
+          "url": "https://transparencia.org.es/wp-content/uploads/NdP-Transparencia-Internacional-IPC-2022.pdf",
+          "tipo": "oficial",
+          "fecha": null
+        },
+        {
+          "nombre": "El Cronista: IPC 2023",
+          "url": "https://www.cronista.com/espana/actualidad-es/aumento-la-corrupcion-en-espana-esto-es-lo-que-dice-el-ranking-de-transparencia-institucional",
+          "tipo": "prensa",
+          "fecha": null
+        },
+        {
+          "nombre": "Europa Press en Diario Estrategia: IPC 2025 y 2024",
+          "url": "https://www.diarioestrategia.cl/texto-diario/mostrar/5767714/espana-continua-empeorando-indice-percepcion-corrupcion-caer-otros-tres-puestos",
+          "tipo": "prensa",
+          "fecha": "2026-02-10"
+        },
+        {
+          "nombre": "Transparency International, ficha de España (2025)",
+          "url": "https://www.transparency.org/en/countries/spain",
+          "tipo": "oficial",
+          "fecha": null
+        }
+      ]
+    }
+  ],
+  "no_sabe": [
+    "Esta ficha no recoge casos judiciales, investigaciones ni imputaciones.",
+    "No consta el recuento de votos de la aprobación final de la Ley 2/2023.",
+    "No se ha podido confirmar la fecha de aprobación de una Estrategia Nacional Antifraude.",
+    "No consta el voto por grupos en la enmienda de devolución de la ley de lobbies.",
+    "No consta el grado de ejecución del Plan Estatal de Lucha contra la Corrupción.",
+    "No consta el recuento de la votación final de la LO 1/2019 ni de la Ley 14/2022.",
+    "Las leyes y decretos-leyes que solo tocan uno o dos artículos de la Ley 9/2017 dentro de otra materia (presupuestos, crecimiento empresarial, igualdad, etc.) no se recogen como hechos. Tampoco los reales decretos de desarrollo ni las órdenes que actualizan los umbrales de contratación.",
+    "No se recogen las reformas del Reglamento del Congreso sobre grupos de interés, porque no son leyes.",
+    "No se ha revisado el registro completo de votaciones del Pleno: puede haber proposiciones de ley sobre estos asuntos que no constan."
+  ],
+  "pie_verificacion": "Las normas y proyectos constan en el BOE, el BOCG o La Moncloa. Los recuentos de las votaciones de 2020, 2021, 2022 (toma en consideración), 2024 y 2025 salen del Diario de Sesiones o de las actas del Pleno. El recuento de la reforma penal de 2022 viene de dos medios de prensa. Los grupos que votaron en contra vienen casi siempre de prensa, a menudo de una sola fuente. El índice de percepción procede de Transparencia Internacional; los datos de 2023 y la posición de 2024 se toman de prensa que cita el informe."
+}

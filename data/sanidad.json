@@ -1,0 +1,1209 @@
+{
+  "tema": "sanidad",
+  "nombre": "Sanidad",
+  "titulo": "Sanidad: qué ha hecho el Estado",
+  "aviso_competencia": "La sanidad la gestionan las comunidades autónomas: hospitales, centros de salud, personal y listas de espera. Esta ficha solo recoge lo que ha hecho el Estado.",
+  "resumen": {
+    "aprobado": "Acceso a la sanidad pública por residencia (2018), decretos y ley de la COVID-19 con la mascarilla obligatoria (2020-2021), ley de eutanasia (2021), reforma de la ley del aborto (2023), ley ELA (2024), Agencia Estatal de Salud Pública (2025) y nuevo copago de medicamentos (2026).",
+    "no_salio": "El Congreso rechazó el primer proyecto de la Agencia Estatal de Salud Pública (20 de marzo de 2025, 167 a favor y 176 en contra) y no admitió a trámite cuatro proposiciones de ley: sanidad universal de Asturias (2021), publicidad sanitaria (2022), instrucciones previas (2024) y violencia contra sanitarios (2025, 171 a 173).",
+    "cifras": "El gasto sanitario público consolidado pasó de 71.117 millones de euros en 2018 a 101.739 millones en 2024 (dato provisional). La espera media para operarse era de 129 días en diciembre de 2018 y de 122 días en diciembre de 2025.",
+    "no_sabe": "Cuánto dinero de cada plan se ha ejecutado, el voto de cada grupo en varias votaciones y qué pasó con los proyectos de ley que quedaron pendientes al disolverse las Cortes."
+  },
+  "hechos": [
+    {
+      "id": "san-2018-rdl-7-acceso-universal",
+      "tipo": "aprobado",
+      "fecha": "2018-07-27",
+      "titulo": "Real Decreto-ley 7/2018, sobre el acceso universal al Sistema Nacional de Salud",
+      "frase_llana": "El derecho a la sanidad pública pasa a depender de residir en España, no de la situación administrativa. Incluye a personas extranjeras sin permiso de residencia, con condiciones.",
+      "detalle": "BOE núm. 183, de 30 de julio de 2018 (BOE-A-2018-10752). En vigor el 31 de julio de 2018. Modifica la Ley 16/2003, de cohesión y calidad del SNS. Las personas extranjeras no registradas ni autorizadas a residir tienen derecho a la atención con fondos públicos si no tienen otra cobertura ni un tercero obligado al pago. Las comunidades autónomas fijan el procedimiento para expedir el documento que acredita el derecho. Convalidado por el Congreso el 6 de septiembre de 2018 (BOE-A-2018-12574): 177 votos a favor (173 presenciales y 4 telemáticos), 133 en contra y 31 abstenciones, según el Diario de Sesiones. La tramitación por el procedimiento de urgencia se aprobó por 336 votos a favor, 4 en contra y 1 abstención.",
+      "votacion": {
+        "fecha": "2018-09-06",
+        "a_favor": 177,
+        "en_contra": 133,
+        "abstenciones": 31,
+        "grupos_en_contra": [
+          "PP"
+        ],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2018-10752",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2018-10752",
+          "tipo": "oficial",
+          "fecha": "2018-07-30"
+        },
+        {
+          "nombre": "BOE-A-2018-12574, acuerdo de convalidación",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2018-12574",
+          "tipo": "oficial",
+          "fecha": "2018-09-06"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, DSCD-12-PL-144 (6 de septiembre de 2018)",
+          "url": "https://www.congreso.es/public_oficiales/L12/CONG/DS/PL/DSCD-12-PL-144.PDF",
+          "tipo": "oficial",
+          "fecha": "2018-09-06"
+        },
+        {
+          "nombre": "El Derecho, convalidación del RDL de sanidad universal",
+          "url": "https://elderecho.com/convalidado-real-decreto-ley-sanidad-universal",
+          "tipo": "prensa",
+          "fecha": "2018-09-07"
+        },
+        {
+          "nombre": "Progressive Spain, votación de la sanidad universal",
+          "url": "https://progressivespain.com/?p=23449",
+          "tipo": "prensa",
+          "fecha": null
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El recuento está cotejado con el Diario de Sesiones. Que el PP votó en contra y Ciudadanos se abstuvo lo dice una sola fuente de prensa."
+    },
+    {
+      "id": "san-2020-rdl-21-covid",
+      "tipo": "aprobado",
+      "fecha": "2020-06-09",
+      "titulo": "Real Decreto-ley 21/2020, de medidas urgentes de prevención, contención y coordinación frente a la COVID-19",
+      "frase_llana": "Fija las normas para salir del estado de alarma: mascarilla obligatoria desde los seis años en espacios donde no se pueda mantener 1,5 metros de distancia, y medidas de prevención en trabajos, colegios, comercios y transporte.",
+      "detalle": "BOE núm. 163, de 10 de junio de 2020 (BOE-A-2020-5895). En vigor al día siguiente de su publicación. No llevar mascarilla se tipifica como infracción leve, con multa de hasta 100 euros. Convalidado el 25 de junio de 2020 (BOE-A-2020-6901): 265 votos a favor, 77 en contra y 5 abstenciones, según el Diario de Sesiones. Ese día el Congreso acordó tramitarlo como proyecto de ley por urgencia (337 a favor, 7 en contra, 2 abstenciones). Hoy figura en el BOE como disposición derogada. Ver el hecho de la Ley 2/2021, de igual título.",
+      "votacion": {
+        "fecha": "2020-06-25",
+        "a_favor": 265,
+        "en_contra": 77,
+        "abstenciones": 5,
+        "grupos_en_contra": [
+          "EH Bildu",
+          "ERC",
+          "Junts",
+          "Vox"
+        ],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2020-5895",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2020-5895",
+          "tipo": "oficial",
+          "fecha": "2020-06-10"
+        },
+        {
+          "nombre": "BOE-A-2020-6901, acuerdo de convalidación",
+          "url": "https://www.boe.es/boe/dias/2020/06/30/pdfs/BOE-A-2020-6901.pdf",
+          "tipo": "oficial",
+          "fecha": "2020-06-30"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, DSCD-14-PL-33 (25 de junio de 2020)",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-33.PDF",
+          "tipo": "oficial",
+          "fecha": "2020-06-25"
+        },
+        {
+          "nombre": "Congreso, resultado de la tramitación del Pleno del 25 de junio de 2020",
+          "url": "https://www.congreso.es/docu/tramit/LegXIV/tramit_pleno25062020_32.pdf",
+          "tipo": "oficial",
+          "fecha": "2020-06-25"
+        },
+        {
+          "nombre": "Redacción Médica, convalidación del decreto de nueva normalidad",
+          "url": "https://www.redaccionmedica.com/politica/20200625/covid-19-nueva-normalidad-el-congreso-convalida-decreto-del-gobierno/274622_0.html",
+          "tipo": "prensa",
+          "fecha": "2020-06-25"
+        },
+        {
+          "nombre": "Moncloa.com (medio privado), convalidación del decreto de nueva normalidad",
+          "url": "https://www.moncloa.com/2020/06/25/gobierno-logra-convalidar-decreto-nueva-normalidad-230706/",
+          "tipo": "prensa",
+          "fecha": "2020-06-25"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "Recuento cotejado con el Diario de Sesiones; corrige las cifras de prensa (una daba 70 votos en contra). Qué grupos votaron en contra viene de prensa, no del registro del Congreso."
+    },
+    {
+      "id": "san-2020-rdl-29-personal-sns",
+      "tipo": "aprobado",
+      "fecha": "2020-09-29",
+      "titulo": "Real Decreto-ley 29/2020, teletrabajo en las administraciones y personal del Sistema Nacional de Salud frente a la COVID-19",
+      "frase_llana": "Durante la pandemia, las comunidades pueden contratar a médicos sin el título de especialista reconocido en España y mover a personal sanitario a las unidades que más lo necesitan.",
+      "detalle": "BOE núm. 259, de 30 de septiembre de 2020 (BOE-A-2020-11415). En vigor el 1 de octubre de 2020. Permite a las comunidades y al INGESA contratar a quienes aprobaron el examen de formación sanitaria especializada 2019/2020 sin obtener plaza y a especialistas con título de fuera de la UE con informe favorable, por un máximo de doce meses prorrogables. Permite redistribuir al personal médico y de enfermería entre unidades, hospitales y atención primaria. Regula también el teletrabajo en las administraciones públicas. Convalidado el 15 de octubre de 2020 (BOE-A-2020-12690): 196 a favor, 141 en contra y 10 abstenciones. La tramitación como proyecto de ley se rechazó (158 a favor, 190 en contra).",
+      "votacion": {
+        "fecha": "2020-10-15",
+        "a_favor": 196,
+        "en_contra": 141,
+        "abstenciones": 10,
+        "grupos_en_contra": [],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2020-11415 (texto consolidado)",
+          "url": "https://www.boe.es/buscar/pdf/2020/BOE-A-2020-11415-consolidado.pdf",
+          "tipo": "oficial",
+          "fecha": "2020-09-30"
+        },
+        {
+          "nombre": "BOE-A-2020-12690, acuerdo de convalidación",
+          "url": "https://boe.es//boe/dias/2020/10/22/pdfs/BOE-A-2020-12690.pdf",
+          "tipo": "oficial",
+          "fecha": "2020-10-22"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, DSCD-14-PL-53 (15 de octubre de 2020)",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-53.PDF",
+          "tipo": "oficial",
+          "fecha": "2020-10-15"
+        },
+        {
+          "nombre": "Redacción Médica, el Congreso respalda el RDL para fichar médicos extracomunitarios sin MIR",
+          "url": "https://www.redaccionmedica.com/politica/20201015/el-congreso-respalda-el-rdl-para-fichar-medicos-extracomunitarios-sin-mir/267373_0.html",
+          "tipo": "prensa",
+          "fecha": "2020-10-15"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No consta qué grupos votaron en contra. No consta cuántas personas se contrataron con esta vía ni hasta cuándo se prorrogó."
+    },
+    {
+      "id": "san-2020-estrategia-vacunacion-covid",
+      "tipo": "aprobado",
+      "fecha": "2020-11-24",
+      "titulo": "Estrategia de Vacunación COVID-19 en España",
+      "frase_llana": "La vacuna contra la COVID-19 se pone de forma gratuita y voluntaria en la sanidad pública. Primero, residentes y personal de residencias de mayores y personas con gran dependencia.",
+      "detalle": "El ministro de Sanidad presentó la Estrategia al Consejo de Ministros el 24 de noviembre de 2020. Se elaboró por un acuerdo del Consejo Interterritorial del SNS de 9 de septiembre. Prevé tres etapas, con un suministro inicial de dosis muy limitado entre enero y marzo de 2021. Ese día el Consejo de Ministros autorizó la compra de más de 20 millones de dosis de Pfizer-BioNTech (20.873.941, la parte española de la compra conjunta de la UE). La vacunación la hacen los servicios de salud de las comunidades.",
+      "votacion": null,
+      "fuentes": [
+        {
+          "nombre": "La Moncloa, resumen del Consejo de Ministros del 24 de noviembre de 2020",
+          "url": "https://www.lamoncloa.gob.es/consejodeministros/resumenes/Paginas/2020/241120-cministros.aspx",
+          "tipo": "oficial",
+          "fecha": "2020-11-24"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "La fuente dice que la Estrategia se «presentó» al Consejo de Ministros, no que este la aprobara. No hay norma con rango de ley sobre vacunación en el periodo. No consta en esta ficha cuántas dosis se pusieron."
+    },
+    {
+      "id": "san-2021-lo-3-eutanasia",
+      "tipo": "aprobado",
+      "fecha": "2021-03-24",
+      "titulo": "Ley Orgánica 3/2021, de regulación de la eutanasia",
+      "frase_llana": "Una persona mayor de edad con una enfermedad grave e incurable, o un padecimiento grave, crónico e imposibilitante, puede pedir ayuda para morir. La prestación entra en la cartera común del Sistema Nacional de Salud.",
+      "detalle": "BOE núm. 72, de 25 de marzo de 2021 (BOE-A-2021-4628). En vigor el 25 de junio de 2021. Exige dos solicitudes por escrito separadas por un plazo mínimo y la consulta a un médico consultor. Crea una Comisión de Garantía y Evaluación en cada comunidad autónoma y en Ceuta y Melilla. Reconoce la objeción de conciencia de los profesionales sanitarios. Modifica el artículo 143 del Código Penal. Votación de conjunto en el Congreso el 18 de marzo de 2021, tras las enmiendas del Senado: 202 a favor, 141 en contra y 2 abstenciones, según el Diario de Sesiones. En contra PP, UPN y Vox, según dos fuentes de prensa.",
+      "votacion": {
+        "fecha": "2021-03-18",
+        "a_favor": 202,
+        "en_contra": 141,
+        "abstenciones": 2,
+        "grupos_en_contra": [
+          "PP",
+          "UPN",
+          "Vox"
+        ],
+        "resultado": "aprobado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2021-4628",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2021-4628",
+          "tipo": "oficial",
+          "fecha": "2021-03-25"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, DSCD-14-PL-89 (18 de marzo de 2021)",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-89.PDF",
+          "tipo": "oficial",
+          "fecha": "2021-03-18"
+        },
+        {
+          "nombre": "El Salto, aprobación definitiva de la ley de eutanasia",
+          "url": "https://www.elsaltodiario.com/eutanasia/aprobada-definitiva-ley-eutanasia",
+          "tipo": "prensa",
+          "fecha": "2021-03-18"
+        },
+        {
+          "nombre": "Bolsamanía (Europa Press), el Congreso aprueba la ley de eutanasia",
+          "url": "https://www.bolsamania.com/noticias_print/politica/congreso-aprueba-mayoria-absoluta-ley-eutanasia--7845627.html",
+          "tipo": "prensa",
+          "fecha": "2021-03-18"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "Recuento cotejado con el Diario de Sesiones. Los grupos en contra vienen de prensa; una de las fuentes añade a Foro Asturias. Cuántas personas han recibido la prestación no consta en esta ficha."
+    },
+    {
+      "id": "san-2021-ley-2-covid",
+      "tipo": "aprobado",
+      "fecha": "2021-03-29",
+      "titulo": "Ley 2/2021, de medidas urgentes de prevención, contención y coordinación frente a la COVID-19",
+      "frase_llana": "Pasa a ley la obligación de llevar mascarilla desde los seis años en la calle, al aire libre, en espacios cerrados públicos y en el transporte, con excepciones. No llevarla es una infracción leve con multa de hasta 100 euros.",
+      "detalle": "BOE núm. 76, de 30 de marzo de 2021 (BOE-A-2021-4908). En vigor el 31 de marzo de 2021. Tiene el mismo título que el Real Decreto-ley 21/2020, que el Congreso acordó tramitar como proyecto de ley el 25 de junio de 2020. Excepciones a la mascarilla: enfermedades respiratorias, discapacidad, deporte individual al aire libre, entre otras. El 18 de marzo de 2021 el Pleno votó las enmiendas del Senado en tres bloques; el bloque principal se aprobó con 199 votos a favor, 91 en contra y 57 abstenciones. Otras dos enmiendas (contratos de investigación y visado de la triple terapia de la EPOC) se aprobaron por separado. Se modificó después por los Reales Decretos-leyes 13/2021 y 30/2021.",
+      "votacion": {
+        "fecha": "2021-03-18",
+        "a_favor": 199,
+        "en_contra": 91,
+        "abstenciones": 57,
+        "grupos_en_contra": [],
+        "resultado": "aprobado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2021-4908",
+          "url": "https://www.boe.es/boe/dias/2021/03/30/pdfs/BOE-A-2021-4908.pdf",
+          "tipo": "oficial",
+          "fecha": "2021-03-30"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, DSCD-14-PL-89 (18 de marzo de 2021)",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-89.PDF",
+          "tipo": "oficial",
+          "fecha": "2021-03-18"
+        },
+        {
+          "nombre": "Qué!, el Congreso aprueba definitivamente la ley de nueva normalidad",
+          "url": "https://www.que.es/2021/03/18/congreso-aprueba-ley-nueva-normalidad-pandemia/",
+          "tipo": "prensa",
+          "fecha": "2021-03-18"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "La votación recogida es la del bloque principal de enmiendas del Senado; no hubo votación de conjunto. No consta qué grupos votaron en contra. El texto del BOE leído no menciona el RDL 21/2020; la relación se deduce del acuerdo de tramitarlo como proyecto de ley y del título idéntico."
+    },
+    {
+      "id": "san-2021-rdl-8-fin-alarma",
+      "tipo": "aprobado",
+      "fecha": "2021-05-04",
+      "titulo": "Real Decreto-ley 8/2021, medidas urgentes en el orden sanitario, social y jurisdiccional tras el estado de alarma",
+      "frase_llana": "Al acabar el estado de alarma, fija controles sanitarios a los viajeros que llegan a España y permite recurrir ante el Tribunal Supremo las decisiones judiciales sobre las restricciones sanitarias de las comunidades.",
+      "detalle": "BOE núm. 107, de 5 de mayo de 2021 (BOE-A-2021-7351). Los pasajeros internacionales deben rellenar un formulario sanitario y presentar un código QR. Crea un recurso de casación urgente ante el Tribunal Supremo contra los autos que autorizan o rechazan medidas sanitarias que limitan derechos fundamentales. Permite a sanitarios jubilados trabajar en la sanidad pública sin perder la pensión hasta el 31 de diciembre de 2021. Incluye también medidas sociales (suministros, desahucios, comunidades de propietarios). Convalidado el 20 de mayo de 2021 (BOE-A-2021-8807): 189 a favor, 100 en contra y 60 abstenciones. Se acordó tramitarlo como proyecto de ley por urgencia (345 a favor, 4 abstenciones).",
+      "votacion": {
+        "fecha": "2021-05-20",
+        "a_favor": 189,
+        "en_contra": 100,
+        "abstenciones": 60,
+        "grupos_en_contra": [],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2021-7351",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2021-7351",
+          "tipo": "oficial",
+          "fecha": "2021-05-05"
+        },
+        {
+          "nombre": "BOE-A-2021-8807, acuerdo de convalidación",
+          "url": "https://boe.es//boe/dias/2021/05/27/pdfs/BOE-A-2021-8807.pdf",
+          "tipo": "oficial",
+          "fecha": "2021-05-27"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, DSCD-14-PL-104 (20 de mayo de 2021)",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-104.PDF",
+          "tipo": "oficial",
+          "fecha": "2021-05-20"
+        },
+        {
+          "nombre": "El Derecho, el Congreso convalida el RDL de medidas tras el fin del estado de alarma",
+          "url": "https://elderecho.com/el-congreso-convalida-el-real-decreto-ley-de-medidas-urgentes-a-aplicar-tras-el-fin-del-estado-de-alarma-que-se-tramitara-como-proyecto-de-ley",
+          "tipo": "prensa",
+          "fecha": "2021-05-21"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "La prensa dio 188 votos a favor; el Diario de Sesiones dice 189. No consta qué grupos votaron en contra ni si la tramitación como proyecto de ley terminó en una ley."
+    },
+    {
+      "id": "san-2021-pl-asturias-universalidad",
+      "tipo": "no_salio",
+      "fecha": "2021-05-11",
+      "titulo": "Proposición de ley de la Junta General de Asturias de universalización de la asistencia sanitaria pública, rechazada",
+      "frase_llana": "El Congreso no admitió a trámite una ley del Parlamento asturiano para reconocer por ley la sanidad pública gratuita a todas las personas residentes en España.",
+      "detalle": "Toma en consideración rechazada en el Pleno el 11 de mayo de 2021: 42 a favor, 259 en contra y 38 abstenciones (Diario de Sesiones). Según una fuente de prensa, votaron en contra PSOE, PP, Vox y Foro Asturias, y se abstuvo el PNV.",
+      "votacion": {
+        "fecha": "2021-05-11",
+        "a_favor": 42,
+        "en_contra": 259,
+        "abstenciones": 38,
+        "grupos_en_contra": [
+          "Foro Asturias",
+          "PP",
+          "PSOE",
+          "Vox"
+        ],
+        "resultado": "rechazado"
+      },
+      "fuentes": [
+        {
+          "nombre": "Diario de Sesiones del Congreso, DSCD-14-PL-99 (11 de mayo de 2021)",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-99.PDF",
+          "tipo": "oficial",
+          "fecha": "2021-05-11"
+        },
+        {
+          "nombre": "Qué!, el Congreso rechaza tramitar la ley de sanidad universal del Parlamento asturiano",
+          "url": "https://www.que.es/2021/05/11/congreso-ley-sanidad-parlamento-asturiano/",
+          "tipo": "prensa",
+          "fecha": "2021-05-11"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "Recuento oficial. Los grupos en contra vienen de una sola fuente de prensa."
+    },
+    {
+      "id": "san-2021-rdl-13-mascarillas",
+      "tipo": "aprobado",
+      "fecha": "2021-06-24",
+      "titulo": "Real Decreto-ley 13/2021, fin de la mascarilla obligatoria al aire libre",
+      "frase_llana": "La mascarilla deja de ser obligatoria al aire libre si se puede mantener 1,5 metros de distancia con quien no convive contigo. Sigue siendo obligatoria en interiores públicos y en el transporte.",
+      "detalle": "BOE núm. 151, de 25 de junio de 2021 (BOE-A-2021-10585). Modifica el artículo 6 de la Ley 2/2021. Mantiene la mascarilla al aire libre en aglomeraciones sin distancia y en eventos multitudinarios. Modifica también el Real Decreto-ley 26/2020 sobre el acceso a terminales de aeropuerto. Convalidado el 21 de julio de 2021 (BOE-A-2021-12604): 180 a favor, 90 en contra y 78 abstenciones. La tramitación como proyecto de ley se rechazó (145 a favor, 194 en contra, 9 abstenciones).",
+      "votacion": {
+        "fecha": "2021-07-21",
+        "a_favor": 180,
+        "en_contra": 90,
+        "abstenciones": 78,
+        "grupos_en_contra": [],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2021-10585",
+          "url": "https://www.boe.es/boe/dias/2021/06/25/pdfs/BOE-A-2021-10585.pdf",
+          "tipo": "oficial",
+          "fecha": "2021-06-25"
+        },
+        {
+          "nombre": "BOE-A-2021-12604, acuerdo de convalidación",
+          "url": "https://BOE.ES/boe/dias/2021/07/28/pdfs/BOE-A-2021-12604.pdf",
+          "tipo": "oficial",
+          "fecha": "2021-07-28"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, DSCD-14-PL-117 (21 de julio de 2021)",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-117.PDF",
+          "tipo": "oficial",
+          "fecha": "2021-07-21"
+        },
+        {
+          "nombre": "El Derecho, el Congreso convalida el RDL que elimina la mascarilla obligatoria al aire libre",
+          "url": "https://elderecho.com/el-congreso-convalida-el-real-decreto-ley-que-elimina-el-uso-obligatorio-de-mascarillas-en-la-via-publica-y-en-espacios-al-aire-libre",
+          "tipo": "prensa",
+          "fecha": "2021-07-22"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No consta qué grupos votaron en contra. La fecha exacta de entrada en vigor no se ha leído en el BOE."
+    },
+    {
+      "id": "san-2021-pl-salud-mental",
+      "tipo": "votado",
+      "fecha": "2021-09-28",
+      "titulo": "Proposición de ley general de salud mental, admitida a trámite",
+      "frase_llana": "El Congreso admitió a trámite una ley de salud mental propuesta por Unidas Podemos. No consta que llegara a aprobarse.",
+      "detalle": "Proposición de ley del Grupo Confederal de Unidas Podemos-En Comú Podem-Galicia en Común, General de Salud Mental. Toma en consideración aprobada el 28 de septiembre de 2021: 194 a favor, 10 en contra y 141 abstenciones (Diario de Sesiones). Según una fuente de prensa, apoyaron PSOE, Más País, EH Bildu, PRC y Ciudadanos, y se abstuvieron, entre otros, PP y PDeCAT.",
+      "votacion": {
+        "fecha": "2021-09-28",
+        "a_favor": 194,
+        "en_contra": 10,
+        "abstenciones": 141,
+        "grupos_en_contra": [],
+        "resultado": "tomado_en_consideracion"
+      },
+      "fuentes": [
+        {
+          "nombre": "Diario de Sesiones del Congreso, DSCD-14-PL-126 (28 de septiembre de 2021)",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-126.PDF",
+          "tipo": "oficial",
+          "fecha": "2021-09-28"
+        },
+        {
+          "nombre": "Redacción Médica, el Congreso inicia la tramitación de la ley de salud mental de Podemos",
+          "url": "https://www.redaccionmedica.com/politica/20210928/el-congreso-inicia-la-tramitacion-de-ley-salud-mental-podemos/167769_0.html",
+          "tipo": "prensa",
+          "fecha": "2021-09-28"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "La prensa contó solo los votos presenciales (96 a favor). No consta qué grupos votaron en contra. No se ha comprobado qué pasó con la proposición después; no figura una ley de salud mental en el BOE de esta ficha."
+    },
+    {
+      "id": "san-2021-plan-atencion-primaria",
+      "tipo": "aprobado",
+      "fecha": "2021-12-15",
+      "titulo": "Plan de Acción de Atención Primaria y Comunitaria 2022-2023",
+      "frase_llana": "El Ministerio y las comunidades acuerdan un plan para los centros de salud. Entre sus objetivos, bajar la temporalidad del personal de atención primaria por debajo del 8 % y crear la categoría de enfermera familiar y comunitaria.",
+      "detalle": "Aprobado en el pleno extraordinario del Consejo Interterritorial del SNS del 15 de diciembre de 2021. Tiene 13 objetivos, 12 puntos clave y 52 acciones previstas antes de 2023, con financiación finalista de los Presupuestos Generales del Estado y aportaciones de las comunidades. El 23 de mayo de 2023 el Consejo de Ministros aprobó cerca de 580 millones de euros para el Plan de Mejora de Infraestructuras de Atención Primaria (MINAP), parte de este plan, que se transfieren a las comunidades.",
+      "votacion": null,
+      "fuentes": [
+        {
+          "nombre": "Ministerio de Sanidad, nota de prensa del CISNS",
+          "url": "https://www.sanidad.gob.es/en/gabinete/notasPrensa.do?id=5606",
+          "tipo": "oficial",
+          "fecha": "2021-12-15"
+        },
+        {
+          "nombre": "Ministerio de Sanidad, nota de prensa del plan MINAP",
+          "url": "https://www.sanidad.gob.es/gabinete/notasPrensa.do?id=6119",
+          "tipo": "oficial",
+          "fecha": "2023-05-23"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "La nota de 2021 no da la cuantía total del plan. No consta cuánto se ejecutó ni si se cumplió el objetivo de temporalidad."
+    },
+    {
+      "id": "san-2021-rdl-30-mascarillas",
+      "tipo": "aprobado",
+      "fecha": "2021-12-23",
+      "titulo": "Real Decreto-ley 30/2021, vuelve la mascarilla obligatoria al aire libre",
+      "frase_llana": "La mascarilla vuelve a ser obligatoria al aire libre desde los seis años, salvo en actividades en espacios naturales con distancia. Los médicos y enfermeras jubilados pueden seguir trabajando sin perder la pensión durante 2022.",
+      "detalle": "BOE núm. 307, de 23 de diciembre de 2021 (BOE-A-2021-21307). En vigor el 24 de diciembre de 2021. Modifica el artículo 6 de la Ley 2/2021 y permite al Gobierno cambiar la obligación por real decreto, oído el Consejo Interterritorial. Permite contratar especialistas con título de fuera de la UE bajo supervisión. Incluye también un pago único a los perceptores de pensiones no contributivas de 2021. Convalidado el 1 de febrero de 2022 (BOE-A-2022-1856): 162 a favor, 153 en contra y 28 abstenciones. Se acordó tramitarlo como proyecto de ley por urgencia (331 a favor, 4 en contra, 8 abstenciones).",
+      "votacion": {
+        "fecha": "2022-02-01",
+        "a_favor": 162,
+        "en_contra": 153,
+        "abstenciones": 28,
+        "grupos_en_contra": [
+          "Ciudadanos",
+          "PP",
+          "Vox"
+        ],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2021-21307",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2021-21307",
+          "tipo": "oficial",
+          "fecha": "2021-12-23"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, DSCD-14-PL-154 (1 de febrero de 2022)",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-154.PDF",
+          "tipo": "oficial",
+          "fecha": "2022-02-01"
+        },
+        {
+          "nombre": "Redacción Médica, sí del Congreso a mantener las mascarillas obligatorias en el exterior",
+          "url": "https://www.redaccionmedica.com/politica/20220201/si-del-congreso-mantener-las-mascarillas-obligatorias-en-el-exterior/174178_0.html",
+          "tipo": "prensa",
+          "fecha": "2022-02-01"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "La prensa dio 155-149-26, que son solo los votos presenciales; el Diario de Sesiones suma los telemáticos (162-153-28). Los grupos en contra vienen de una sola fuente de prensa. No consta en esta ficha el real decreto que retiró después la mascarilla al aire libre."
+    },
+    {
+      "id": "san-2022-pl-publicidad-sanitaria",
+      "tipo": "no_salio",
+      "fecha": "2022-04-28",
+      "titulo": "Proposición de ley del PP sobre publicidad de prestaciones y actividades sanitarias, rechazada",
+      "frase_llana": "El Congreso no admitió a trámite una ley del PP para regular la publicidad de servicios sanitarios.",
+      "detalle": "Proposición de ley del Grupo Popular relativa a la publicidad de prestaciones y actividades sanitarias. Toma en consideración rechazada el 28 de abril de 2022: 120 a favor, 159 en contra y 70 abstenciones (Diario de Sesiones).",
+      "votacion": {
+        "fecha": "2022-04-28",
+        "a_favor": 120,
+        "en_contra": 159,
+        "abstenciones": 70,
+        "grupos_en_contra": [],
+        "resultado": "rechazado"
+      },
+      "fuentes": [
+        {
+          "nombre": "Diario de Sesiones del Congreso, DSCD-14-PL-181 (28 de abril de 2022)",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-181.PDF",
+          "tipo": "oficial",
+          "fecha": "2022-04-28"
+        },
+        {
+          "nombre": "Redacción Médica, el Congreso tumba la ley para regular la publicidad sanitaria",
+          "url": "https://www.redaccionmedica.com/politica/20220428/el-congreso-tumba-la-ley-para-regular-publicidad-sanitaria/185746_0.html",
+          "tipo": "prensa",
+          "fecha": "2022-04-28"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "La prensa dio 118 a favor y 150 en contra (solo votos presenciales). No consta el voto de cada grupo."
+    },
+    {
+      "id": "san-2022-equidad-totalidad",
+      "tipo": "votado",
+      "fecha": "2022-09-22",
+      "titulo": "Proyecto de ley de equidad, universalidad y cohesión del SNS: rechazadas las enmiendas de totalidad",
+      "frase_llana": "El Congreso rechazó devolver al Gobierno su proyecto de ley de equidad del Sistema Nacional de Salud, que siguió su tramitación. No consta que llegara a aprobarse en esa legislatura.",
+      "detalle": "Debate de totalidad del Proyecto de ley por la que se modifican diversas normas para consolidar la equidad, universalidad y cohesión del SNS. Las enmiendas de devolución las defendieron Ciudadanos y Vox. Se rechazaron el 22 de septiembre de 2022: 64 votos a favor de las enmiendas, 191 en contra y 88 abstenciones (Diario de Sesiones). El 18 de junio de 2024 el Consejo de Ministros aprobó un nuevo proyecto de ley de equidad y cohesión del SNS.",
+      "votacion": {
+        "fecha": "2022-09-22",
+        "a_favor": 64,
+        "en_contra": 191,
+        "abstenciones": 88,
+        "grupos_en_contra": [],
+        "resultado": "enmienda_rechazada"
+      },
+      "fuentes": [
+        {
+          "nombre": "Diario de Sesiones del Congreso, DSCD-14-PL-210 (22 de septiembre de 2022)",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-210.PDF",
+          "tipo": "oficial",
+          "fecha": "2022-09-22"
+        },
+        {
+          "nombre": "Ministerio de Sanidad, el Consejo de Ministros aprueba el proyecto de ley de equidad y cohesión del SNS",
+          "url": "https://www.sanidad.gob.es/gabinete/notasPrensa.do?id=6456",
+          "tipo": "oficial",
+          "fecha": "2024-06-18"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No se ha comprobado en el registro qué pasó con el proyecto de 2022 tras la disolución de 2023. El proyecto de 2024 no tuvo votación en el Pleno que conste: una fuente de prensa de julio de 2025 indica que el plazo de enmiendas de totalidad se había ampliado más de 40 veces."
+    },
+    {
+      "id": "san-2023-lo-1-salud-sexual",
+      "tipo": "aprobado",
+      "fecha": "2023-02-28",
+      "titulo": "Ley Orgánica 1/2023, reforma de la ley de salud sexual y reproductiva y del aborto",
+      "frase_llana": "Las mujeres de 16 y 17 años pueden abortar sin permiso de sus padres y desaparecen los tres días de reflexión. Los anticonceptivos hormonales se dan gratis en la sanidad pública y la menstruación incapacitante por una patología diagnosticada da derecho a baja.",
+      "detalle": "BOE núm. 51, de 1 de marzo de 2023 (BOE-A-2023-5364). En vigor el 2 de marzo de 2023, salvo varias disposiciones finales, a los tres meses. Modifica la Ley Orgánica 2/2010. Las interrupciones del embarazo se harán en centros públicos o privados acreditados, y las administraciones deben garantizarlas en la red pública o vinculada. Crea un registro de profesionales objetores de conciencia en cada comunidad y en el INGESA. Votación de conjunto en el Congreso el 16 de febrero de 2023: 185 a favor, 154 en contra y 3 abstenciones (Diario de Sesiones).",
+      "votacion": {
+        "fecha": "2023-02-16",
+        "a_favor": 185,
+        "en_contra": 154,
+        "abstenciones": 3,
+        "grupos_en_contra": [
+          "PP",
+          "Vox"
+        ],
+        "resultado": "aprobado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2023-5364",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2023-5364",
+          "tipo": "oficial",
+          "fecha": "2023-03-01"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, DSCD-14-PL-245 (16 de febrero de 2023)",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-245.PDF",
+          "tipo": "oficial",
+          "fecha": "2023-02-16"
+        },
+        {
+          "nombre": "RTVC, aprobada la reforma de la ley del aborto",
+          "url": "https://rtvc.es/aprobada-la-reforma-de-la-ley-del-aborto/",
+          "tipo": "prensa",
+          "fecha": "2023-02-16"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "Recuento oficial. Que votaron en contra PP y Vox y que se abstuvo el PDeCAT lo dice una sola fuente de prensa; no consta si otros grupos votaron en contra."
+    },
+    {
+      "id": "san-2024-ley-3-ela",
+      "tipo": "aprobado",
+      "fecha": "2024-10-30",
+      "titulo": "Ley 3/2024, para mejorar la calidad de vida de personas con ELA y otras enfermedades de alta complejidad y curso irreversible",
+      "frase_llana": "Las personas con ELA tienen reconocido el grado I de dependencia desde el diagnóstico y un procedimiento urgente para la discapacidad, con resolución en un máximo de tres meses.",
+      "detalle": "BOE núm. 263, de 31 de octubre de 2024 (BOE-A-2024-22438). En vigor el 1 de noviembre de 2024. Modifica la Ley 16/2003, la Ley General de la Seguridad Social y la normativa del bono social eléctrico. Sus beneficios no son retroactivos. Votación de conjunto del dictamen en el Pleno del Congreso el 10 de octubre de 2024: 344 votos emitidos, 344 a favor (acta del Pleno). Antes, el 20 de junio de 2024, el Pleno rechazó las enmiendas de totalidad de texto alternativo de Vox a las tres proposiciones de ley sobre la ELA (del PP, del PSOE y de Junts), con unos 32-33 votos a favor y 315-317 en contra, según una fuente de prensa. Su financiación se reguló en el Real Decreto-ley 11/2025 (ver ese hecho).",
+      "votacion": {
+        "fecha": "2024-10-10",
+        "a_favor": 344,
+        "en_contra": 0,
+        "abstenciones": 0,
+        "grupos_en_contra": [],
+        "resultado": "aprobado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2024-22438",
+          "url": "https://www.boe.es/eli/es/l/2024/10/30/3",
+          "tipo": "oficial",
+          "fecha": "2024-10-31"
+        },
+        {
+          "nombre": "Congreso, acta del Pleno del 10 de octubre de 2024",
+          "url": "https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20241010.pdf",
+          "tipo": "oficial",
+          "fecha": "2024-10-10"
+        },
+        {
+          "nombre": "El Independiente, el Congreso aprueba la ley ELA",
+          "url": "https://www.elindependiente.com/espana/2024/10/10/el-congreso-aprueba-por-unanimidad-la-ley-de-la-ela-despues-de-dos-anos-de-retraso/",
+          "tipo": "prensa",
+          "fecha": "2024-10-10"
+        },
+        {
+          "nombre": "Redacción Médica, el Congreso tumba las enmiendas de Vox a las leyes ELA",
+          "url": "https://www.redaccionmedica.com/politica/20240620/el-congreso-tumba-el-bloqueo-de-vox-las-leyes-ela-pp-psoe-junts/231282_0.html",
+          "tipo": "prensa",
+          "fecha": "2024-06-20"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El acta no recoge votos en contra ni abstenciones en la votación final. La votación de las enmiendas de Vox viene de una sola fuente de prensa. No consta cuántas personas han recibido las ayudas."
+    },
+    {
+      "id": "san-2024-pl-instrucciones-previas",
+      "tipo": "no_salio",
+      "fecha": "2024-12-10",
+      "titulo": "Proposición de ley del PSOE sobre el derecho a otorgar instrucciones previas, rechazada",
+      "frase_llana": "El Congreso no admitió a trámite una ley del PSOE sobre el testamento vital (instrucciones previas), relacionada con los cuidados paliativos y la eutanasia.",
+      "detalle": "Proposición de ley del Grupo Socialista sobre el derecho a otorgar instrucciones previas (expediente 122/000133). Toma en consideración rechazada el 10 de diciembre de 2024: 343 votos emitidos, 162 a favor, 180 en contra y 1 abstención (acta del Pleno). Según una fuente de prensa, votaron en contra PP, Vox, Junts y PNV.",
+      "votacion": {
+        "fecha": "2024-12-10",
+        "a_favor": 162,
+        "en_contra": 180,
+        "abstenciones": 1,
+        "grupos_en_contra": [
+          "Junts",
+          "PNV",
+          "PP",
+          "Vox"
+        ],
+        "resultado": "rechazado"
+      },
+      "fuentes": [
+        {
+          "nombre": "Congreso, acta del Pleno del 10 de diciembre de 2024",
+          "url": "https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20241210.pdf",
+          "tipo": "oficial",
+          "fecha": "2024-12-10"
+        },
+        {
+          "nombre": "El Independiente, Junts y PNV se unen a PP y Vox y tumban la ley del PSOE sobre cuidados paliativos y eutanasia",
+          "url": "https://www.elindependiente.com/espana/2024/12/10/junts-y-pnv-se-unen-a-pp-y-vox-y-tumban-la-ley-del-psoe-sobre-cuidados-paliativos-y-eutanasia/",
+          "tipo": "prensa",
+          "fecha": "2024-12-10"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "Recuento oficial; los grupos en contra vienen del titular de una sola fuente de prensa."
+    },
+    {
+      "id": "san-2025-pl-violencia-sanitaria",
+      "tipo": "no_salio",
+      "fecha": "2025-02-11",
+      "titulo": "Proposición de ley del PP relativa a la violencia en el ámbito sanitario, rechazada",
+      "frase_llana": "El Congreso no admitió a trámite, por dos votos de diferencia, una ley del PP sobre las agresiones a profesionales sanitarios.",
+      "detalle": "Proposición de ley del Grupo Popular relativa a la violencia en el ámbito sanitario (expediente 122/000141). Toma en consideración rechazada el 11 de febrero de 2025: 344 votos emitidos, 171 a favor y 173 en contra (acta del Pleno).",
+      "votacion": {
+        "fecha": "2025-02-11",
+        "a_favor": 171,
+        "en_contra": 173,
+        "abstenciones": 0,
+        "grupos_en_contra": [],
+        "resultado": "rechazado"
+      },
+      "fuentes": [
+        {
+          "nombre": "Congreso, acta del Pleno del 11 de febrero de 2025",
+          "url": "https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20250211.pdf",
+          "tipo": "oficial",
+          "fecha": "2025-02-11"
+        },
+        {
+          "nombre": "Diario Estrategia (Europa Press), el Congreso rechaza tramitar la ley para mejorar la protección de los sanitarios ante las agresiones",
+          "url": "https://www.diarioestrategia.cl/texto-diario/mostrar/5177654/congreso-rechaza-tramitar-ley-mejorar-proteccion-sanitarios-ante-agresiones",
+          "tipo": "prensa",
+          "fecha": "2025-02-11"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El acta no recoge abstenciones. Una fuente de prensa sitúa en contra a PNV, EH Bildu y ERC, sin dar el voto de los demás grupos; por eso no se listan grupos."
+    },
+    {
+      "id": "san-2025-aesap-rechazada",
+      "tipo": "no_salio",
+      "fecha": "2025-03-20",
+      "titulo": "Primer proyecto de ley de la Agencia Estatal de Salud Pública, rechazado en el Pleno",
+      "frase_llana": "El Congreso votó en contra del proyecto para crear una agencia estatal de salud pública. El Gobierno presentó después un segundo proyecto, que se aprobó en julio de 2025.",
+      "detalle": "El Pleno rechazó el dictamen del proyecto de ley el 20 de marzo de 2025: 345 votos emitidos, 167 a favor, 176 en contra y 2 abstenciones (acta del Pleno). Antes se votaron y rechazaron enmiendas del Grupo Mixto (BNG), de Vox y la enmienda 61 del PP (169 a favor, 175 en contra, 1 abstención). Según la prensa, votaron en contra PP, Junts y Vox. Ver el hecho de la Ley 7/2025.",
+      "votacion": {
+        "fecha": "2025-03-20",
+        "a_favor": 167,
+        "en_contra": 176,
+        "abstenciones": 2,
+        "grupos_en_contra": [
+          "Junts",
+          "PP",
+          "Vox"
+        ],
+        "resultado": "rechazado"
+      },
+      "fuentes": [
+        {
+          "nombre": "Congreso, acta del Pleno del 20 de marzo de 2025",
+          "url": "https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20250320.pdf",
+          "tipo": "oficial",
+          "fecha": "2025-03-20"
+        },
+        {
+          "nombre": "The Objective, el Congreso tumba la Agencia de Salud Pública",
+          "url": "https://theobjective.com/espana/politica/2025-03-20/congreso-tumba-agencia-salud-publica/",
+          "tipo": "prensa",
+          "fecha": "2025-03-20"
+        },
+        {
+          "nombre": "El Debate, el Congreso tumba la Agencia Estatal de Salud Pública",
+          "url": "https://www.eldebate.com/espana/20250320/congreso-tumba-agencia-estatal-salud-publica-gobierno-votos-contra-pp-vox-junts_280717.html",
+          "tipo": "prensa",
+          "fecha": "2025-03-20"
+        },
+        {
+          "nombre": "El Independiente, el Congreso rechaza la Agencia de Salud Pública",
+          "url": "https://www.elindependiente.com/espana/2025/03/20/nuevo-reves-para-el-gobierno-el-congreso-rechaza-la-agencia-de-salud-publica/amp/",
+          "tipo": "prensa",
+          "fecha": "2025-03-20"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "Recuento cotejado con el acta del Pleno. Los grupos en contra vienen de prensa. Una fuente indica que una diputada del PSOE se equivocó al votar."
+    },
+    {
+      "id": "san-2025-ley-7-aesap",
+      "tipo": "aprobado",
+      "fecha": "2025-07-28",
+      "titulo": "Ley 7/2025, por la que se crea la Agencia Estatal de Salud Pública",
+      "frase_llana": "Crea un organismo estatal que vigila la salud de la población, coordina la respuesta ante crisis sanitarias y presenta cada año un informe a las Cortes.",
+      "detalle": "BOE núm. 181, de 29 de julio de 2025 (BOE-A-2025-15652). En vigor el 30 de julio de 2025. La Agencia está adscrita al Ministerio de Sanidad, con personalidad jurídica y autonomía de gestión. Entre sus funciones: vigilancia en salud pública, coordinación de la preparación y respuesta ante emergencias, evaluación de riesgos de biocidas y sustancias químicas, y colaboración con las comunidades autónomas. Modifica la Ley 33/2011, General de Salud Pública, para incluir el principio de «Una sola salud». Es el segundo proyecto, tras el rechazo del primero el 20 de marzo de 2025. Según la prensa, la Comisión de Sanidad lo aprobó el 19 de junio de 2025 (19 a favor, 18 en contra) y el Senado el 17 de julio. El 22 de julio de 2025 el Pleno del Congreso votó las enmiendas del Senado por separado: aprobó tres (por ejemplo, 298 a favor, 50 en contra y 1 abstención en una nueva disposición adicional) y rechazó dos (171-177-1 y 172-177), según el acta. No hubo una única votación final de conjunto.",
+      "votacion": null,
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2025-15652",
+          "url": "https://www.boe.es/boe/dias/2025/07/29/pdfs/BOE-A-2025-15652.pdf",
+          "tipo": "oficial",
+          "fecha": "2025-07-29"
+        },
+        {
+          "nombre": "Congreso, acta del Pleno del 22 de julio de 2025",
+          "url": "https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20250722.pdf",
+          "tipo": "oficial",
+          "fecha": "2025-07-22"
+        },
+        {
+          "nombre": "Ara, luz verde a la Agencia Estatal de Salud Pública en comisión",
+          "url": "https://es.ara.cat/sociedad/salud/luz-verde-minima-agencia-estatal-salud-publica_1_5417160.html",
+          "tipo": "prensa",
+          "fecha": "2025-06-19"
+        },
+        {
+          "nombre": "Redacción Médica, la Agencia de Salud Pública ve la luz",
+          "url": "https://www.redaccionmedica.com/politica/20250722/la-agencia-de-salud-publica-ve-la-luz-finalmente-tras-una-ardua-negociacion/247676_0.html",
+          "tipo": "prensa",
+          "fecha": "2025-07-22"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El segundo proyecto no tuvo votación de conjunto en el Pleno; las votaciones del 22 de julio fueron sobre enmiendas del Senado. Los pasos en comisión y Senado vienen de una sola fuente de prensa cada uno."
+    },
+    {
+      "id": "san-2025-rdl-11-ela-financiacion",
+      "tipo": "aprobado",
+      "fecha": "2025-10-21",
+      "titulo": "Real Decreto-ley 11/2025, financiación de la ley ELA y refuerzo de la dependencia",
+      "frase_llana": "Pone medidas y dinero para cumplir la ley ELA de 2024 y reforzar el sistema de dependencia.",
+      "detalle": "Real Decreto-ley 11/2025, de 21 de octubre, por el que se establecen medidas para reforzar el Sistema para la Autonomía y Atención a la Dependencia y dar cumplimiento a la Ley 3/2024. BOE núm. 254, de 22 de octubre de 2025. Convalidado el 19 de noviembre de 2025 (BOE-A-2025-23614): 346 votos emitidos, 346 a favor (acta del Pleno). La tramitación como proyecto de ley por urgencia se aprobó con 345 votos a favor de 345.",
+      "votacion": {
+        "fecha": "2025-11-19",
+        "a_favor": 346,
+        "en_contra": 0,
+        "abstenciones": 0,
+        "grupos_en_contra": [],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2025-23614, acuerdo de convalidación",
+          "url": "https://www.boe.es/boe/dias/2025/11/22/pdfs/BOE-A-2025-23614.pdf",
+          "tipo": "oficial",
+          "fecha": "2025-11-22"
+        },
+        {
+          "nombre": "Congreso, acta del Pleno del 19 de noviembre de 2025",
+          "url": "https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20251119.pdf",
+          "tipo": "oficial",
+          "fecha": "2025-11-19"
+        },
+        {
+          "nombre": "Vozpópuli, el Congreso avala por unanimidad el decreto que dota de fondos la ley ELA",
+          "url": "https://www.vozpopuli.com/espana/politica/el-congreso-avala-por-unanimidad-el-decreto-que-dota-de-fondos-la-ley-ela.html",
+          "tipo": "prensa",
+          "fecha": "2025-11-19"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No se ha leído el texto del decreto en el BOE (solo su título y fecha, por el acuerdo de convalidación). No consta la cuantía en esta ficha ni cuánto se ha ejecutado."
+    },
+    {
+      "id": "san-2026-rd-180-atencion-extranjeros",
+      "tipo": "aprobado",
+      "fecha": "2026-03-11",
+      "titulo": "Real Decreto 180/2026, sobre el reconocimiento del derecho a la atención sanitaria de personas extranjeras sin residencia legal",
+      "frase_llana": "Fija qué documentos hay que presentar para acceder a la sanidad pública sin residencia legal. Al pedirlo se recibe un documento provisional para ser atendido mientras se resuelve.",
+      "detalle": "BOE núm. 63, de 12 de marzo de 2026 (BOE-A-2026-5714). En vigor el 13 de marzo de 2026. Desarrolla el artículo 3 ter de la Ley 16/2003, introducido por el RDL 7/2018. Requiere una declaración responsable, documento de identidad y prueba de residencia habitual (en general, el padrón, con alternativas). La resolución debe dictarse en tres meses; si no, se entiende estimada. Para entrar en la lista de espera de trasplantes exige dos años de residencia de forma transitoria. Amplía la atención a españoles de origen residentes en el exterior que se desplazan temporalmente a España.",
+      "votacion": null,
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2026-5714",
+          "url": "https://www.boe.es/eli/es/rd/2026/03/11/180",
+          "tipo": "oficial",
+          "fecha": "2026-03-12"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "Es un real decreto del Gobierno; no pasa por el Congreso. El 26 de marzo de 2026 el Congreso votó en contra de una moción de Vox que pedía derogarlo (una fuente de prensa, sin recuento). Una moción no es una norma, por eso no figura como hecho propio."
+    },
+    {
+      "id": "san-2026-pl-crioconservacion-ovocitos",
+      "tipo": "votado",
+      "fecha": "2026-04-21",
+      "titulo": "Proposición de ley del PSOE sobre la crioconservación de óvulos, admitida a trámite",
+      "frase_llana": "El Congreso admitió a trámite una ley para que una mujer pueda decidir destruir sus óvulos congelados sin necesitar un informe médico favorable. No consta que se aprobara antes de la disolución de las Cortes.",
+      "detalle": "Proposición de ley del Grupo Socialista de modificación de la regulación sobre la crioconservación de ovocitos. Toma en consideración aprobada el 21 de abril de 2026: 347 votos emitidos, 306 a favor, 33 en contra y 8 abstenciones (acta del Pleno). Según la prensa, también encarga al Ministerio revisar en 12 meses la ley de reproducción humana asistida de 2006.",
+      "votacion": {
+        "fecha": "2026-04-21",
+        "a_favor": 306,
+        "en_contra": 33,
+        "abstenciones": 8,
+        "grupos_en_contra": [],
+        "resultado": "tomado_en_consideracion"
+      },
+      "fuentes": [
+        {
+          "nombre": "Congreso, acta del Pleno del 21 de abril de 2026",
+          "url": "https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20260421.pdf",
+          "tipo": "oficial",
+          "fecha": "2026-04-21"
+        },
+        {
+          "nombre": "Redacción Médica, luz verde en el Congreso a flexibilizar la congelación de óvulos",
+          "url": "https://www.redaccionmedica.com/politica/20260421/luz-verde-en-el-congreso-flexibilizar-la-congelacion-de-ovulos/262648_0.html",
+          "tipo": "prensa",
+          "fecha": "2026-04-21"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No consta el voto de cada grupo. No se ha comprobado su estado a la disolución del 6 de octubre de 2026."
+    },
+    {
+      "id": "san-2026-rdl-11-copago",
+      "tipo": "aprobado",
+      "fecha": "2026-05-12",
+      "titulo": "Real Decreto-ley 11/2026, por el que se modifica la aportación de los usuarios en la prestación farmacéutica ambulatoria",
+      "frase_llana": "Cambia lo que se paga en la farmacia por los medicamentos con receta. Las personas en activo pasan de tres a seis tramos según su renta y los pensionistas de tres a cuatro, con nuevos topes mensuales.",
+      "detalle": "BOE núm. 116, de 13 de mayo de 2026 (BOE-A-2026-10324). En vigor el 14 de mayo de 2026. Modifica el artículo 102 del texto refundido de la Ley de garantías y uso racional de los medicamentos (RDLeg 1/2015). Introduce topes mensuales para personas en activo con rentas por debajo de 35.000 euros y un tope intermedio para pensionistas entre 18.000 y 60.000 euros. Vincula la exención de los pensionistas al complemento por mínimos, con una disposición transitoria para quienes ya estaban exentos. Convalidado el 28 de mayo de 2026 (BOE-A-2026-11625): 346 votos emitidos, 164 a favor, 33 en contra y 149 abstenciones, según el acta del Pleno. La tramitación como proyecto de ley por urgencia se aprobó con 347 votos a favor de 347.",
+      "votacion": {
+        "fecha": "2026-05-28",
+        "a_favor": 164,
+        "en_contra": 33,
+        "abstenciones": 149,
+        "grupos_en_contra": [
+          "Vox"
+        ],
+        "resultado": "convalidado"
+      },
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2026-10324",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-10324",
+          "tipo": "oficial",
+          "fecha": "2026-05-13"
+        },
+        {
+          "nombre": "BOE-A-2026-11625, acuerdo de convalidación",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-11625",
+          "tipo": "oficial",
+          "fecha": "2026-05-30"
+        },
+        {
+          "nombre": "Congreso, acta del Pleno del 28 de mayo de 2026",
+          "url": "https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20260528.pdf",
+          "tipo": "oficial",
+          "fecha": "2026-05-28"
+        },
+        {
+          "nombre": "Maldita.es, votación del decreto del copago",
+          "url": "https://maldita.es/desinfo/20260529/el-pp-salva-el-decreto-del-copago-farmaceutico-del-gobierno-que-permitira-que-un-inmigrante-ilegal-pague-menos-que-un-espanol-con-renta-baja/",
+          "tipo": "prensa",
+          "fecha": "2026-05-29"
+        },
+        {
+          "nombre": "Diario Estrategia (Europa Press), el Congreso convalida la reforma del copago",
+          "url": "https://www.diarioestrategia.cl/texto-diario/mostrar/5898591/congreso-convalida-reforma-copago-farmaceutico",
+          "tipo": "prensa",
+          "fecha": "2026-05-28"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "Recuento cotejado con el acta del Pleno. Que el PP se abstuvo y Vox votó en contra lo dicen dos fuentes de prensa."
+    },
+    {
+      "id": "san-2026-pl-morir-dignamente-cataluna",
+      "tipo": "votado",
+      "fecha": "2026-06-11",
+      "titulo": "Proposición de ley del Parlamento de Cataluña sobre normas procesales y el derecho a morir dignamente, admitida a trámite",
+      "frase_llana": "El Congreso admitió a trámite una ley del Parlamento catalán que cambia normas de los juicios relacionados con la eutanasia. No consta que se aprobara antes de la disolución de las Cortes.",
+      "detalle": "Proposición de ley del Parlamento de Cataluña de modificación de algunas disposiciones normativas procesales con relación al derecho de morir dignamente (expediente 125/000014). Toma en consideración aprobada el 11 de junio de 2026: 347 votos emitidos, 178 a favor y 169 en contra (acta del Pleno). En el debate se habló de la Ley Orgánica 3/2021 de eutanasia.",
+      "votacion": {
+        "fecha": "2026-06-11",
+        "a_favor": 178,
+        "en_contra": 169,
+        "abstenciones": 0,
+        "grupos_en_contra": [],
+        "resultado": "tomado_en_consideracion"
+      },
+      "fuentes": [
+        {
+          "nombre": "Congreso, acta del Pleno del 11 de junio de 2026",
+          "url": "https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20260611.pdf",
+          "tipo": "oficial",
+          "fecha": "2026-06-11"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No consta el voto de cada grupo ni el contenido detallado de la proposición. Una fuente de prensa la atribuyó al PSOE; el acta la atribuye al Parlamento de Cataluña."
+    },
+    {
+      "id": "san-2026-ley-3-cribado-neonatal",
+      "tipo": "aprobado",
+      "fecha": "2026-07-29",
+      "titulo": "Ley 3/2026, de modificación de normas sobre el programa de cribado neonatal del SNS",
+      "frase_llana": "La prueba del talón a los recién nacidos (21 enfermedades en la cartera común) se evaluará al menos una vez al año para ampliarla, y no se podrán quitar pruebas salvo que cambie la evidencia.",
+      "detalle": "BOE núm. 186, de 31 de julio de 2026 (BOE-A-2026-16654). En vigor el 1 de agosto de 2026. Nace de una proposición de ley del Grupo Socialista, admitida a trámite el 27 de noviembre de 2025 con 307 votos a favor, 7 en contra y 33 abstenciones (acta del Pleno). Obliga al Ministerio a publicar un informe técnico anual del programa y a fijar protocolos comunes con las comunidades. Modifica también la ley de medicamentos para que los acuerdos de financiación y precios de medicamentos sean confidenciales, y obliga a las comunidades a enviar cada mes datos de consumo y precios. El 23 de julio de 2026 el Pleno votó las enmiendas del Senado; en una de ellas, 185 a favor, 0 en contra y 163 abstenciones (PP, Vox, ERC y Junts a favor; PSOE, Sumar, EH Bildu y PNV abstención, según el registro de votaciones).",
+      "votacion": null,
+      "fuentes": [
+        {
+          "nombre": "BOE-A-2026-16654",
+          "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-16654",
+          "tipo": "oficial",
+          "fecha": "2026-07-31"
+        },
+        {
+          "nombre": "Congreso, acta del Pleno del 27 de noviembre de 2025",
+          "url": "https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20251127.pdf",
+          "tipo": "oficial",
+          "fecha": "2025-11-27"
+        },
+        {
+          "nombre": "Congreso, votación 18 de la sesión 193 (23 de julio de 2026)",
+          "url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion193/20260723/Votacion018/VOT_20260723211932.pdf",
+          "tipo": "oficial",
+          "fecha": "2026-07-23"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, DSCD-15-PL-199 (23 de julio de 2026)",
+          "url": "https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-199.PDF",
+          "tipo": "oficial",
+          "fecha": "2026-07-23"
+        },
+        {
+          "nombre": "Redacción Médica, el cribado neonatal sin desigualdades logra su primer sí del Congreso",
+          "url": "https://www.redaccionmedica.com/politica/20251127/el-cribado-neonatal-sin-desigualdades-logra-su-primer-ok-del-congreso/253890_0.html",
+          "tipo": "prensa",
+          "fecha": "2025-11-27"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "No hubo una votación final única en el Pleno: el texto pasó por comisión y las enmiendas del Senado se votaron por separado. No se han leído las demás votaciones de enmiendas del 23 de julio."
+    },
+    {
+      "id": "san-2026-pl-profesiones-sanitarias",
+      "tipo": "votado",
+      "fecha": "2026-09-10",
+      "titulo": "Proposición de ley del PSOE para reconocer como profesiones sanitarias la de biólogo y la de trabajador social, admitida a trámite",
+      "frase_llana": "El Congreso admitió a trámite una ley para que biólogos y trabajadores sociales sean profesiones sanitarias. Las Cortes se disolvieron un mes después.",
+      "detalle": "Proposición de ley del Grupo Socialista sobre el reconocimiento de la profesión de biólogo y trabajador social como profesión sanitaria. Toma en consideración votada el 10 de septiembre de 2026: 345 presentes, 165 a favor, 32 en contra y 148 abstenciones. Por grupos, según el registro de votaciones: PSOE, Sumar, ERC, EH Bildu y 8 del Mixto a favor; Vox (31) y 1 del Mixto en contra; PP, Junts y PNV abstención.",
+      "votacion": {
+        "fecha": "2026-09-10",
+        "a_favor": 165,
+        "en_contra": 32,
+        "abstenciones": 148,
+        "grupos_en_contra": [
+          "Vox"
+        ],
+        "resultado": "tomado_en_consideracion"
+      },
+      "fuentes": [
+        {
+          "nombre": "Congreso, votación 16 de la sesión 196 (10 de septiembre de 2026)",
+          "url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion196/20260910/Votacion016/VOT_20260910180632.pdf",
+          "tipo": "oficial",
+          "fecha": "2026-09-10"
+        }
+      ],
+      "verificacion": "oficial",
+      "no_sabemos": "El documento de votación no dice en palabras el resultado; con más votos a favor que en contra, la toma en consideración sale aprobada. Un diputado del Grupo Mixto también votó en contra."
+    }
+  ],
+  "indicadores": [
+    {
+      "id": "gasto-sanitario-publico",
+      "titulo": "Gasto sanitario público consolidado",
+      "unidad": "millones",
+      "decimales": 0,
+      "nota": "Gasto de todas las administraciones públicas en sanidad, en euros corrientes (sin descontar la inflación), consolidado para no contar dos veces las transferencias entre administraciones. Fuente: Estadística de Gasto Sanitario Público del Ministerio de Sanidad. 2023 y 2024 son cifras provisionales. En 2024, 95.243 millones correspondieron al sector Comunidades Autónomas y 1.138 millones a la Administración Central.",
+      "calculo_propio": false,
+      "serie": [
+        {
+          "periodo": "2018",
+          "valor": 71117
+        },
+        {
+          "periodo": "2019",
+          "valor": 74988
+        },
+        {
+          "periodo": "2020",
+          "valor": 83634
+        },
+        {
+          "periodo": "2021",
+          "valor": 87935
+        },
+        {
+          "periodo": "2022",
+          "valor": 91958
+        },
+        {
+          "periodo": "2023",
+          "valor": 97632
+        },
+        {
+          "periodo": "2024",
+          "valor": 101739
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Ministerio de Sanidad, EGSP, tablas de gasto, serie 2002-2024 (miles de euros)",
+          "url": "https://www.sanidad.gob.es/estadEstudios/estadisticas/inforRecopilaciones/gastoSanitario2005/tablasEstEGSP/egspGastoReal.pdf",
+          "tipo": "oficial",
+          "fecha": null
+        },
+        {
+          "nombre": "Ministerio de Sanidad, EGSP 2024, principales resultados (2020-2024), edición de abril de 2026",
+          "url": "https://www.sanidad.gob.es/estadEstudios/estadisticas/inforRecopilaciones/gastoSanitario2005/tablasEstEGSP/Principales_resultados.pdf",
+          "tipo": "oficial",
+          "fecha": null
+        },
+        {
+          "nombre": "Ministerio de Sanidad, nota de prensa del gasto sanitario público 2024",
+          "url": "https://www.sanidad.gob.es/gabinete/notasPrensa.do?id=6908",
+          "tipo": "oficial",
+          "fecha": "2026-05-13"
+        }
+      ]
+    },
+    {
+      "id": "espera-quirurgica",
+      "titulo": "Espera media para una operación (días), a diciembre de cada año",
+      "unidad": "días",
+      "decimales": 0,
+      "nota": "Tiempo medio de espera de los pacientes pendientes de una operación no urgente en el Sistema Nacional de Salud, a 31 de diciembre. Fuente: SISLE-SNS, Ministerio de Sanidad, con datos que envían las comunidades. Es un indicador del conjunto del sistema, no del Estado: las listas de espera las gestionan las comunidades autónomas. Se toma el valor publicado en el informe de cada diciembre. El de 2025 es el rectificado (122 días; el informe inicial decía 121, corregido por los datos de Castilla-La Mancha).",
+      "calculo_propio": false,
+      "serie": [
+        {
+          "periodo": "2018",
+          "valor": 129
+        },
+        {
+          "periodo": "2019",
+          "valor": 121
+        },
+        {
+          "periodo": "2020",
+          "valor": 155
+        },
+        {
+          "periodo": "2021",
+          "valor": 123
+        },
+        {
+          "periodo": "2022",
+          "valor": 120
+        },
+        {
+          "periodo": "2023",
+          "valor": 128
+        },
+        {
+          "periodo": "2024",
+          "valor": 126
+        },
+        {
+          "periodo": "2025",
+          "valor": 122
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "SISLE-SNS, indicadores a diciembre de 2018",
+          "url": "https://mirror.mscbs.gob.es/estadEstudios/estadisticas/inforRecopilaciones/docs/LLEE_SNS_IndicadoresResumen_Diciembre2018.pdf",
+          "tipo": "oficial",
+          "fecha": null
+        },
+        {
+          "nombre": "SISLE-SNS, diciembre de 2019",
+          "url": "https://mirror.mscbs.gob.es/estadEstudios/estadisticas/inforRecopilaciones/docs/LISTAS_PUBLICACION_dic19.pdf",
+          "tipo": "oficial",
+          "fecha": null
+        },
+        {
+          "nombre": "SISLE-SNS, diciembre de 2020",
+          "url": "https://www.sanidad.gob.es/estadEstudios/estadisticas/inforRecopilaciones/docs/LISTAS_PUBLICACION_dic_2020.pdf",
+          "tipo": "oficial",
+          "fecha": null
+        },
+        {
+          "nombre": "SISLE-SNS, diciembre de 2021",
+          "url": "https://mirror.mscbs.gob.es/estadEstudios/estadisticas/inforRecopilaciones/docs/LISTAS_PUBLICACION_dic21.pdf",
+          "tipo": "oficial",
+          "fecha": null
+        },
+        {
+          "nombre": "SISLE-SNS, diciembre de 2022",
+          "url": "https://www.sanidad.gob.es/estadEstudios/estadisticas/inforRecopilaciones/docs/LISTAS_PUBLICACION_dic_2022.pdf",
+          "tipo": "oficial",
+          "fecha": null
+        },
+        {
+          "nombre": "SISLE-SNS, diciembre de 2023",
+          "url": "https://vsf-iwsold-pre-portal.sanidad.gob.es/estadEstudios/estadisticas/inforRecopilaciones/docs/LISTAS_PUBLICACION_dic2023.pdf",
+          "tipo": "oficial",
+          "fecha": null
+        },
+        {
+          "nombre": "SISLE-SNS, nota resumen diciembre de 2024",
+          "url": "https://vsf-iwsold-pro-01.mscbs.gob.es/estadEstudios/estadisticas/inforRecopilaciones/docs/Nota_Resumen_SISLE__dic_24.pdf",
+          "tipo": "oficial",
+          "fecha": null
+        },
+        {
+          "nombre": "SISLE-SNS, diciembre de 2025",
+          "url": "https://www.sanidad.gob.es/estadEstudios/estadisticas/inforRecopilaciones/docs/LISTAS%5FPUBLICACION%5FDic%5F2025.pdf",
+          "tipo": "oficial",
+          "fecha": null
+        },
+        {
+          "nombre": "SISLE-SNS, nota aclaratoria de rectificación diciembre de 2025",
+          "url": "https://www.sanidad.gob.es/eu/estadEstudios/estadisticas/inforRecopilaciones/docs/Nota_Aclaratoria_Rectificacion_Dic_2025.pdf",
+          "tipo": "oficial",
+          "fecha": null
+        }
+      ]
+    }
+  ],
+  "no_sabe": [
+    "No se ha encontrado ningún real decreto-ley sanitario derogado por el Congreso entre 2018 y 2026. Los decretos-ley derogados que aparecieron en la búsqueda (RDL 7/2025, 16/2025, 2/2026, 9/2024) no tenían la sanidad como materia principal. No se ha revisado el registro completo de votaciones.",
+    "Los estados de alarma de 2020 y 2021 no figuran como hechos: son normas de orden público, no sanitarias. Tampoco el Real Decreto-ley 22/2020 (Fondo COVID-19 para las comunidades), que es un decreto de financiación y no se ha revisado.",
+    "Quedaron pendientes al disolverse las Cortes, sin votación en el Pleno que conste: el proyecto de ley de equidad y cohesión del SNS (Consejo de Ministros, 18 de junio de 2024), el de gestión pública e integridad del SNS (12 de mayo de 2026, asignado a la Comisión de Sanidad con competencia legislativa plena), el de medicamentos y productos sanitarios y el de control del tabaco (21 de julio de 2026) y el del nuevo Estatuto Marco del personal sanitario (1 de septiembre de 2026). No entran como hechos porque no hubo votación en el Pleno; la búsqueda no fue exhaustiva.",
+    "Los reales decretos de nuevas especialidades sanitarias y el real decreto que retiró la mascarilla al aire libre no se han incluido: son reales decretos ordinarios.",
+    "Qué votó cada grupo viene casi siempre de prensa; el registro del Congreso solo se ha leído por grupos en dos votaciones de 2026.",
+    "No consta cuánto se ha ejecutado de los planes y fondos estatales (atención primaria, ELA, vacunación).",
+    "El gasto de 2023 y 2024 es provisional y puede cambiar."
+  ],
+  "pie_verificacion": "Todas las normas (BOE) y los dos indicadores (Ministerio de Sanidad) tienen fuente oficial. Los recuentos de votos están cotejados con el Diario de Sesiones o las actas del Pleno del Congreso, salvo las enmiendas de Vox a las leyes ELA (una fuente de prensa). Al cotejarlos se corrigieron cifras de prensa que solo contaban votos presenciales (RDL 21/2020, RDL 8/2021, RDL 30/2021, ley de salud mental, publicidad sanitaria). Qué grupos votaron en contra viene de prensa, salvo en las votaciones de 2026 leídas en el registro de votaciones. La Estrategia de vacunación y el Plan de Atención Primaria tienen fuente oficial del Gobierno. Consulta: 11 de noviembre de 2026."
+}

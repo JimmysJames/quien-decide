@@ -1,0 +1,595 @@
+<title>Educación, hechos del Estado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,500..800&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Layout: resumen en lenguaje llano, línea de tiempo de ocho años como hilo, cada hecho con una frase clara y el detalle técnico plegado. Las series largas van en filas horizontales para leerse bien en el móvil. */
+:root{
+  --paper:#EDF0F2;
+  --card:#FFFFFF;
+  --ink:#121B23;
+  --ink-2:#4B5967;
+  --rule:#CBD3DA;
+  --accent:#0B6E63;
+  --on-accent:#FFFFFF;
+  --accent-soft:#D6ECE8;
+  --alt:#5D6D7B;
+  --alt2:#B8C4CE;
+  --note-bg:#FFF2CF;
+  --note-ink:#6B4700;
+  --f-display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E151B; --card:#16212A; --ink:#E7EDF1; --ink-2:#9FB0BD; --rule:#2A3946;
+    --accent:#4DC2B1; --on-accent:#07201C; --accent-soft:#143A38; --alt:#6F8394; --alt2:#3E5160;
+    --note-bg:#3A2F10; --note-ink:#F0C96A;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E151B; --card:#16212A; --ink:#E7EDF1; --ink-2:#9FB0BD; --rule:#2A3946;
+  --accent:#4DC2B1; --on-accent:#07201C; --accent-soft:#143A38; --alt:#6F8394; --alt2:#3E5160;
+  --note-bg:#3A2F10; --note-ink:#F0C96A;
+  color-scheme: dark;
+}
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.5}
+h1,h2,h3,p,ul,ol,dl,dd{margin:0}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+a{color:var(--accent)}
+
+.app{max-width:680px;margin-inline:auto;padding-inline:16px;padding-block:20px 56px;display:flex;flex-direction:column;gap:32px}
+
+.top{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.brand{font-family:var(--f-display);font-size:1.1rem;font-weight:800;font-variation-settings:"wdth" 112;color:var(--ink);text-decoration:none}
+.tag{font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;border:1px solid var(--ink-2);color:var(--ink-2);padding:2px 8px;border-radius:3px;white-space:nowrap}
+
+.head{display:flex;flex-direction:column;gap:10px;border-top:2px solid var(--ink);padding-top:14px}
+.head h1{font-size:2.1rem;font-weight:800;font-variation-settings:"wdth" 108;line-height:1.08}
+.kicker{font-family:var(--f-mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2)}
+.k{font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-2)}
+
+.sum{background:var(--ink);color:var(--paper);border-radius:6px;padding:6px 18px;display:flex;flex-direction:column}
+.sum .row{display:grid;grid-template-columns:minmax(0,1fr);gap:4px;padding-block:14px;border-top:1px solid color-mix(in srgb, var(--paper) 25%, transparent)}
+.sum .row:first-child{border-top:0}
+.sum .k{color:var(--paper);opacity:.7}
+.sum p{font-size:1.08rem;line-height:1.4}
+.sum b{font-weight:700;font-variant-numeric:tabular-nums}
+.sum .gap p{opacity:.9}
+
+section{display:flex;flex-direction:column;gap:14px}
+section>h2{font-size:1.45rem;font-weight:700;font-variation-settings:"wdth" 105;line-height:1.2}
+.lede{color:var(--ink-2)}
+
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.88rem;color:var(--ink-2)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.dot{width:12px;height:12px;border-radius:50%;border:2px solid var(--accent);background:var(--accent);flex:none;display:inline-block}
+.dot.no{background:transparent;border-color:var(--alt)}
+.tl{list-style:none;padding:0;margin:0;display:flex;flex-direction:column}
+.tl li{display:grid;grid-template-columns:84px 20px minmax(0,1fr);gap:0 8px;padding-bottom:18px;position:relative}
+.tl li:last-child{padding-bottom:0}
+.tl time{font-family:var(--f-mono);font-size:.8rem;color:var(--ink-2);padding-top:3px;font-variant-numeric:tabular-nums}
+.tl .mk{position:relative;display:flex;justify-content:center;padding-top:5px}
+.tl .mk::after{content:"";position:absolute;top:22px;bottom:-18px;width:2px;background:var(--rule)}
+.tl li:last-child .mk::after{display:none}
+.tl .t{font-weight:600;line-height:1.3}
+.tl .s{color:var(--ink-2);font-size:.95rem}
+
+.fact{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:16px;display:flex;flex-direction:column;gap:10px}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}
+.meta time{font-family:var(--f-mono);font-size:.8rem;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.badge{font-family:var(--f-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;padding:2px 7px;border-radius:3px;border:1px solid var(--ink-2);color:var(--ink-2)}
+.badge.of{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.fact h3{font-size:1.2rem;font-weight:700;line-height:1.25}
+.plain{font-size:1.05rem}
+.fact p{margin:0}
+.num{font-variant-numeric:tabular-nums}
+details{border-top:1px solid var(--rule);padding-top:10px}
+summary{cursor:pointer;font-family:var(--f-mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);padding-block:4px}
+details[open] summary{margin-bottom:8px}
+details .in{display:flex;flex-direction:column;gap:8px;font-size:.96rem}
+.src{font-size:.88rem;overflow-wrap:anywhere}
+.limit{background:var(--note-bg);color:var(--note-ink);font-size:.92rem;padding:8px 10px;border-radius:3px}
+
+.split{display:flex;flex-direction:column;gap:6px}
+.stack{display:flex;height:38px;border-radius:3px;overflow:hidden;font-family:var(--f-mono);font-size:.82rem;font-variant-numeric:tabular-nums}
+.stack span{display:flex;align-items:center;padding-inline:8px;white-space:nowrap;overflow:hidden}
+.s1{background:var(--accent);color:var(--on-accent)}
+.s2{background:var(--alt);color:var(--paper)}
+.s3{background:var(--alt2);color:var(--ink)}
+.flow{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:8px;align-items:stretch}
+.flow .bx{border:1px solid var(--rule);border-radius:4px;padding:10px 12px;display:flex;flex-direction:column;gap:2px;background:var(--paper)}
+.flow .bx b{font-family:var(--f-display)}
+.flow .ar{display:grid;place-items:center;font-family:var(--f-mono);color:var(--ink-2)}
+@media (max-width:480px){.flow{grid-template-columns:minmax(0,1fr)}.flow .ar{transform:rotate(90deg);padding-block:2px}}
+
+.vote{display:flex;flex-direction:column;gap:6px}
+.bar{display:flex;height:36px;border-radius:3px;overflow:hidden;font-family:var(--f-mono);font-size:.82rem;font-variant-numeric:tabular-nums}
+.bar span{display:flex;align-items:center;padding-inline:8px;white-space:nowrap}
+.bar .y{background:var(--accent);color:var(--on-accent)}
+.bar .n{background:var(--alt);color:var(--paper);justify-content:flex-end}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--rule);border-radius:6px}
+table{border-collapse:collapse;width:100%;min-width:340px;font-size:.95rem}
+th,td{text-align:left;padding:7px 12px;border-top:1px solid var(--rule)}
+thead th{border-top:0;font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);font-weight:500}
+td.y{font-weight:600}
+td.n{color:var(--ink-2)}
+
+.chart{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.chart h3{font-size:1.1rem;font-weight:700}
+.chart svg{width:100%;height:auto;display:block;max-width:100%}
+.cap{font-size:.9rem;color:var(--ink-2)}
+.bigs{display:flex;flex-wrap:wrap;gap:8px 28px}
+.big{display:flex;flex-direction:column;gap:0}
+.big b{font-family:var(--f-display);font-size:2.4rem;font-weight:800;font-variation-settings:"wdth" 108;font-variant-numeric:tabular-nums;line-height:1.1}
+.big span{color:var(--ink-2);font-size:.92rem}
+
+.foot{border-top:1px solid var(--rule);padding-top:14px;display:flex;flex-direction:column;gap:8px;font-size:.9rem;color:var(--ink-2)}
+</style>
+<style>
+.aviso{background:var(--accent-soft);border-left:4px solid var(--accent);border-radius:4px;padding:12px 14px;display:flex;flex-direction:column;gap:4px}
+.aviso b{font-family:var(--f-display)}
+.nada{color:var(--ink-2)}
+.nolist{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:4px}
+.vote .lbl{font-family:var(--f-mono);font-size:.78rem;color:var(--ink-2)}
+.bar .a{background:var(--alt2);color:var(--ink);justify-content:center;padding-inline:0}
+details.yg{border-top:0;padding-top:0}
+details.yg>summary{display:flex;align-items:baseline;gap:10px;border-bottom:2px solid var(--ink);padding-block:8px 4px;color:var(--ink);text-transform:none;letter-spacing:0;list-style-position:inside}
+details.yg>summary .yy{font-family:var(--f-display);font-size:1.25rem;font-weight:800;font-variation-settings:"wdth" 108}
+details.yg>summary .yn{font-family:var(--f-mono);font-size:.72rem;color:var(--ink-2);text-transform:uppercase;letter-spacing:.06em}
+details.yg[open]>summary{margin-bottom:12px}
+details.yg>summary{cursor:pointer;list-style:none}
+details.yg>summary::-webkit-details-marker{display:none}
+details.yg>summary::before{content:"+";font-family:var(--f-mono);font-size:1rem;color:var(--accent);width:14px;flex:none}
+details.yg[open]>summary::before{content:"−"}
+.ygi{display:flex;flex-direction:column;gap:14px}
+.tl.compact li{padding-bottom:10px}
+.tl.compact .t{font-weight:500;font-size:.95rem}
+.keys{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.88rem;color:var(--ink-2)}
+.keys i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px}
+.count{font-family:var(--f-mono);font-size:.74rem;font-weight:400;color:var(--ink-2);text-transform:uppercase;letter-spacing:.06em;margin-left:8px}
+</style>
+
+<main class="app">
+  <header class="top">
+    <a class="brand" href="index.html">Quién decide</a>
+    <span class="tag">Beta</span>
+  </header>
+
+  <div class="head">
+    <p class="kicker">Gobierno central y Cortes · 2018 a 2026</p>
+    <h1>Educación: qué ha hecho el Estado</h1>
+    <p class="lede">Ocho años con Pedro Sánchez como presidente del Gobierno, desde junio de 2018.</p>
+  </div>
+
+  <div class="aviso"><b>Aquí quien más decide es tu comunidad</b><p>Los colegios, institutos y universidades públicas los gestionan las comunidades autónomas, con su profesorado y parte del currículo. Esta ficha solo recoge lo que ha hecho el Estado.</p></div>
+
+  <div class="sum" aria-label="Resumen">
+    <div class="row">
+      <span class="k">Lo que se aprobó</span>
+      <p>Ley que revierte los recortes de 2012 en ratios y horas lectivas (2019); nueva ley de educación, LOMLOE (2020), y sus currículos mínimos (2022); ley de FP (2022); ley de universidades, LOSU (2023); y cada curso, un real decreto con los umbrales de las becas.</p>
+    </div>
+    <div class="row">
+      <span class="k">Lo que no salió</span>
+      <p>La ley para bajar las ratios por aula y las horas de clase del profesorado superó el debate de totalidad en junio de 2026, pero decayó con la disolución de las Cortes. En septiembre de 2025 el Congreso rechazó, por 177 votos contra 170, tramitar una ley del PP sobre alumnado con necesidades educativas especiales.</p>
+    </div>
+    <div class="row">
+      <span class="k">Lo que dicen las cifras</span>
+      <p>El abandono temprano de la educación bajó del 17,9 % en 2018 al 12,8 % en 2025. El presupuesto de becas del Ministerio pasó de 1.462 millones de euros en el curso 2018-2019 a 2.559 millones en el 2026-2027.</p>
+    </div>
+    <div class="row gap">
+      <span class="k">Lo que esta página no sabe</span>
+      <p>No consta una norma estatal de gratuidad de 0 a 3 años; la propuesta admitida a trámite en 2021 no llegó a ley. Algunos recuentos y votos por grupo salen solo de la prensa.</p>
+    </div>
+  </div>
+
+  <section aria-labelledby="h-tl">
+    <h2 id="h-tl">Qué pasó y cuándo</h2>
+    <div class="legend"><span><i class="dot"></i>Aprobado</span><span><i class="dot no"></i>No salió</span></div>
+    <ol class="tl compact">
+      <li><time>27 jul 2018</time><span class="mk"><i class="dot"></i></span><div><p class="t">Reales decretos de umbrales y cuantías de becas, cursos 2018-2019 a 2026-2027</p><p class="s"></p></div></li>
+      <li><time>7 mar 2019</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley 4/2019, de mejora de las condiciones de la docencia (ratios y horas lectivas)</p><p class="s"></p></div></li>
+      <li><time>22 nov 2019</time><span class="mk"><i class="dot"></i></span><div><p class="t">I Plan Estratégico de Formación Profesional del Sistema Educativo 2019-2022</p><p class="s"></p></div></li>
+      <li><time>29 sep 2020</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 31/2020, medidas urgentes en educación no universitaria (pandemia)</p><p class="s"></p></div></li>
+      <li><time>29 dic 2020</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley Orgánica 3/2020, LOMLOE (reforma de la ley de educación)</p><p class="s"></p></div></li>
+      <li><time>14 dic 2021</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proposición de ley del Parlamento de Andalucía sobre gratuidad de 0 a 3 años, admitida a trámite</p><p class="s">Admitido a trámite</p></div></li>
+      <li><time>1 feb 2022</time><span class="mk"><i class="dot"></i></span><div><p class="t">Reales decretos de enseñanzas mínimas de la LOMLOE (infantil, primaria, ESO y Bachillerato)</p><p class="s"></p></div></li>
+      <li><time>22 feb 2022</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto 154/2022, umbrales y cuantías de las becas del curso 2022-2023</p><p class="s"></p></div></li>
+      <li><time>24 feb 2022</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley 3/2022, de convivencia universitaria</p><p class="s"></p></div></li>
+      <li><time>31 mar 2022</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley Orgánica 3/2022, de Formación Profesional</p><p class="s"></p></div></li>
+      <li><time>1 ago 2022</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 14/2022, complemento de las becas y ahorro energético</p><p class="s"></p></div></li>
+      <li><time>22 mar 2023</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley Orgánica 2/2023, del Sistema Universitario (LOSU)</p><p class="s"></p></div></li>
+      <li><time>30 may 2023</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Primer proyecto de ley de enseñanzas artísticas, decaído</p><p class="s"></p></div></li>
+      <li><time>7 jun 2024</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley 1/2024, de enseñanzas artísticas superiores</p><p class="s"></p></div></li>
+      <li><time>9 sep 2025</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proposición de ley del PP sobre escolarización del alumnado con necesidades educativas especiales, rechazada</p><p class="s">Rechazado</p></div></li>
+      <li><time>18 jun 2026</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proyecto de ley de ratios y jornada lectiva del profesorado, decaído</p><p class="s">Votación sobre las enmiendas de totalidad: rechazadas, el texto sigue adelante</p></div></li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="h-a">
+    <h2 id="h-a">Qué ha aprobado el Estado<span class="count">12</span></h2>
+    <details class="yg">
+    <summary><span class="yy">2018</span><span class="yn">1 hecho</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>27 jul 2018</time><span class="badge of">Oficial</span></div>
+      <h3>Reales decretos de umbrales y cuantías de becas, cursos 2018-2019 a 2026-2027</h3>
+      <p class="plain">Cada curso, un real decreto fija cuánto puede ganar una familia para tener beca del Ministerio. El umbral más bajo para una familia de tres pasó de 10.606 € en 2018-2019 a 17.685 € desde 2024-2025.</p>
+      
+      <p class="limit">Solo se recoge el umbral 1; no las cuantías de cada curso ni los umbrales 2 y 3.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Umbral 1 de renta (convocatoria general, enseñanzas postobligatorias), familia de 3 y de 4 miembros, extremo inferior y superior del intervalo. 2018-2019: Real Decreto 951/2018, de 27 de julio (BOE núm. 185, de 1 de agosto de 2018): 10.606-11.143 € y 13.909-14.613 €. 2019-2020: Real Decreto 430/2019, de 12 de julio (BOE núm. 167, de 13 de julio de 2019): mismos importes. 2020-2021: Real Decreto 688/2020, de 21 de julio (BOE núm. 199, de 22 de julio de 2020): 16.843-17.742 € y 21.054-22.177 €. 2021-2022: Real Decreto 471/2021, de 29 de junio (BOE núm. 155, de 30 de junio de 2021): mismos importes. 2022-2023: Real Decreto 154/2022, de 22 de febrero (hecho propio en esta ficha): mismos importes. 2023-2024: Real Decreto 117/2023, de 21 de febrero (BOE núm. 45, de 22 de febrero de 2023): mismos importes. 2024-2025: Real Decreto 201/2024, de 27 de febrero (BOE núm. 52, de 28 de febrero de 2024): 17.685-18.629 € y 22.107-23.286 €. 2025-2026: Real Decreto 163/2025, de 4 de marzo (BOE núm. 55, de 5 de marzo de 2025): mismos importes. 2026-2027: Real Decreto 179/2026, de 11 de marzo (BOE núm. 63, de 12 de marzo de 2026): mismos importes. Dentro del intervalo, la beca se reparte al 50 % entre el Ministerio y la comunidad convocante.</p>
+          <a class="src" href="https://www.boe.es/eli/es/rd/2018/07/27/951" target="_blank" rel="noopener">Oficial: BOE-A-2018-10941 (RD 951/2018), 1 ago 2018</a>
+          <a class="src" href="https://www.boe.es/eli/es/rd/2019/07/12/430" target="_blank" rel="noopener">Oficial: BOE-A-2019-10359 (RD 430/2019), 13 jul 2019</a>
+          <a class="src" href="https://www.boe.es/eli/es/rd/2020/07/21/688" target="_blank" rel="noopener">Oficial: BOE-A-2020-8297 (RD 688/2020), 22 jul 2020</a>
+          <a class="src" href="https://www.boe.es/eli/es/rd/2021/06/29/471" target="_blank" rel="noopener">Oficial: BOE-A-2021-10823 (RD 471/2021), 30 jun 2021</a>
+          <a class="src" href="https://www.boe.es/eli/es/rd/2023/02/21/117" target="_blank" rel="noopener">Oficial: BOE-A-2023-4652 (RD 117/2023), 22 feb 2023</a>
+          <a class="src" href="https://www.boe.es/eli/es/rd/2024/02/27/201" target="_blank" rel="noopener">Oficial: BOE-A-2024-3787 (RD 201/2024), 28 feb 2024</a>
+          <a class="src" href="https://www.boe.es/eli/es/rd/2025/03/04/163" target="_blank" rel="noopener">Oficial: BOE-A-2025-4320 (RD 163/2025), 5 mar 2025</a>
+          <a class="src" href="https://boe.es/buscar/pdf/2026/BOE-A-2026-5713-consolidado.pdf" target="_blank" rel="noopener">Oficial: BOE-A-2026-5713 (RD 179/2026), texto consolidado, 12 mar 2026</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg">
+    <summary><span class="yy">2019</span><span class="yn">2 hechos</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>7 mar 2019</time><span class="badge of">Oficial</span></div>
+      <h3>Ley 4/2019, de mejora de las condiciones de la docencia (ratios y horas lectivas)</h3>
+      <p class="plain">Quita la posibilidad de subir un 20 % el número de alumnos por aula y el mínimo de horas de clase del profesorado que fijó un decreto de 2012. Las sustituciones de profesores dejan de esperar diez días.</p>
+      <p class="vote"><span class="lbl">21 feb 2019 · Aprobado · las fuentes no dan el recuento</span></p>
+      <p class="limit">No consta el recuento de votos en el Congreso ni qué votó cada grupo; la nota oficial solo dice que PP y Ciudadanos no apoyaron la ley.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Ley 4/2019, de 7 de marzo, de mejora de las condiciones para el desempeño de la docencia y la enseñanza en el ámbito de la educación no universitaria. BOE núm. 58, de 8 de marzo de 2019. Deroga los artículos 2, 3 y 4 del Real Decreto-ley 14/2012. Recomienda como máximo 23 horas lectivas semanales en infantil, primaria y educación especial y 18 en el resto, y quita el mínimo de 25 y 20 horas. Las comunidades deben poner los recursos para no superar las ratios máximas de la LOE. Elimina la espera de diez días lectivos para nombrar un interino de sustitución. Ratios y jornada, desde el curso 2019-2020. Proyecto del Gobierno aprobado por el Consejo de Ministros el 14 de septiembre de 2018. El Congreso lo aprobó el 13 de diciembre de 2018 y votó las enmiendas del Senado el 21 de febrero de 2019; según La Moncloa, con el apoyo de todos los grupos salvo PP y Ciudadanos.</p>
+          <a class="src" href="https://www.boe.es/eli/es/l/2019/03/07/4" target="_blank" rel="noopener">Oficial: BOE-A-2019-3307, 8 mar 2019</a>
+          <a class="src" href="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/educacion/Paginas/2019/210219-educacion.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, nota de 21-02-2019, 21 feb 2019</a>
+          <a class="src" href="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/educacion/Paginas/2018/131218-educacion.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, nota de 13-12-2018, 13 dic 2018</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>22 nov 2019</time><span class="badge of">Oficial</span></div>
+      <h3>I Plan Estratégico de Formación Profesional del Sistema Educativo 2019-2022</h3>
+      <p class="plain">Plan del Gobierno para renovar los títulos de FP, ordenar la oferta por territorios y abrir la FP a distancia, entre otras medidas.</p>
+      
+      <p class="limit">No consta el presupuesto ni el grado de ejecución del plan.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Acuerdo del Consejo de Ministros de 22 de noviembre de 2019. Cinco ejes. Renueva el catálogo de títulos (digitalización, industria 4.0, transición ecológica); crea un mapa de la FP para ajustar la oferta a cada territorio y sector; abre FP modular a distancia a través del CIDEAD; extiende las Aulas Mentor a 3.000 núcleos rurales; y crea un procedimiento para acreditar competencias básicas de adultos. La nota no da presupuesto.</p>
+          <a class="src" href="https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/221119-fp.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, Consejo de Ministros 22-11-2019, 22 nov 2019</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg">
+    <summary><span class="yy">2020</span><span class="yn">2 hechos</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>29 sep 2020</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 31/2020, medidas urgentes en educación no universitaria (pandemia)</h3>
+      <p class="plain">Durante la pandemia, permite cambiar los criterios para pasar de curso y titular, suprime las evaluaciones finales de primaria y ESO, y deja contratar profesorado interino sin el máster si faltan candidatos.</p>
+      <div class="vote" role="img" aria-label="187 a favor, 154 en contra, 7 abstenciones"><span class="lbl">15 oct 2020 · Convalidado</span><div class="bar"><span class="y" style="width:53.74%">187 a favor</span><span class="n" style="width:44.25%">154 en contra</span><span class="a" style="width:2.01%"></span></div></div>
+      <p class="limit">No consta qué votó cada grupo.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto-ley 31/2020, de 29 de septiembre, por el que se adoptan medidas urgentes en el ámbito de la educación no universitaria. BOE núm. 259, de 30 de septiembre de 2020. Las medidas duran mientras las autoridades no den por terminadas las circunstancias de la pandemia. Permite nombrar interinos sin el máster de formación pedagógica cuando se agoten las listas; los estándares de aprendizaje pasan a ser orientativos; las administraciones pueden modificar criterios de evaluación, promoción y titulación; se suprimen las evaluaciones finales de etapa de primaria y ESO; cuentan como lectivos los días con atención presencial o a distancia; en FP se puede reducir o sustituir la formación en empresas. Convalidado el 15 de octubre de 2020 (Resolución publicada como BOE-A-2020-12692). En la misma sesión se rechazó tramitarlo como proyecto de ley: 157 a favor, 176 en contra y 15 abstenciones.</p>
+          <a class="src" href="https://www.boe.es/eli/es/rdl/2020/09/29/31" target="_blank" rel="noopener">Oficial: BOE-A-2020-11417, 30 sep 2020</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-53.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, Pleno núm. 50 (DSCD-14-PL-53), 15 oct 2020</a>
+          <a class="src" href="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/educacion/paginas/2020/15102020_educac-on.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, nota de 15-10-2020, 15 oct 2020</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>29 dic 2020</time><span class="badge of">Oficial</span></div>
+      <h3>Ley Orgánica 3/2020, LOMLOE (reforma de la ley de educación)</h3>
+      <p class="plain">Cambia la ley de educación de 2006 y deja atrás buena parte de la de 2013. Repetir curso pasa a ser excepcional y vuelven la diversificación curricular y la FP de grado básico.</p>
+      <div class="vote" role="img" aria-label="177 a favor, 148 en contra, 17 abstenciones"><span class="lbl">19 nov 2020 · Aprobado</span><div class="bar"><span class="y" style="width:51.75%">177 a favor</span><span class="n" style="width:43.27%">148 en contra</span><span class="a" style="width:4.97%"></span></div></div>
+      <p>En contra: Ciudadanos, Coalición Canaria, PP, PRC, UPN, Vox.</p>
+      <p class="limit">Recuento del Congreso cotejado con el Diario de Sesiones; la lista de grupos en contra sale de dos medios, que no coinciden del todo (aquí solo van los que citan ambos). El recuento del Senado sale de un solo medio. No consta el recuento de las enmiendas a la totalidad.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Ley Orgánica 3/2020, de 29 de diciembre, por la que se modifica la Ley Orgánica 2/2006, de Educación. BOE núm. 340, de 30 de diciembre de 2020. En primaria la repetición es excepcional y solo una vez en la etapa; en la ESO, como máximo dos veces en la etapa obligatoria. El Gobierno fija las enseñanzas mínimas: 50 % del horario en comunidades con lengua cooficial y 60 % en las demás. Añade Educación en Valores cívicos y éticos, evaluaciones de diagnóstico en 4.º de primaria y 2.º de ESO, y permite obtener el título de Bachillerato con una materia suspensa en ciertas condiciones. Votación de conjunto en el Congreso el 19 de noviembre de 2020: 177 a favor, 148 en contra y 17 abstenciones, con voto presencial y telemático (Diario de Sesiones). El Senado la aprobó sin cambios el 23 de diciembre de 2020 con 142 votos a favor, 112 en contra y 9 abstenciones (una sola fuente de prensa). El 17 de junio de 2020 el Congreso había rechazado tres enmiendas a la totalidad de PP, Vox y Ciudadanos.</p>
+          <a class="src" href="https://www.boe.es/buscar/doc.php?id=BOE-A-2020-17264" target="_blank" rel="noopener">Oficial: BOE-A-2020-17264, 30 dic 2020</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-64.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, Pleno núm. 61 (DSCD-14-PL-64), 19 nov 2020</a>
+          <a class="src" href="https://www.elindependiente.com/espana/2020/11/19/el-congreso-aprueba-la-ley-celaa-con-el-apoyo-de-erc-y-pnv-y-el-rechazo-de-toda-la-oposicion/amp/" target="_blank" rel="noopener">El Independiente, 19 nov 2020</a>
+          <a class="src" href="https://theobjective.com/espana/2020-11-19/el-pleno-del-congreso-aprueba-la-ley-celaa/" target="_blank" rel="noopener">The Objective, 19 nov 2020</a>
+          <a class="src" href="https://www.ewtnnews.com/es/mundo/espana/senado-de-espana-aprueba-polemica-ley-de-educacion-conocida-como-ley-celaa" target="_blank" rel="noopener">EWTN News / ACI Prensa (votación del Senado), 23 dic 2020</a>
+          <a class="src" href="https://www.moncloa.com/2020/06/17/congreso-rechaza-devolver-ley-celaa-217361/" target="_blank" rel="noopener">Moncloa.com (enmiendas a la totalidad), 17 jun 2020</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg">
+    <summary><span class="yy">2022</span><span class="yn">5 hechos</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>1 feb 2022</time><span class="badge of">Oficial</span></div>
+      <h3>Reales decretos de enseñanzas mínimas de la LOMLOE (infantil, primaria, ESO y Bachillerato)</h3>
+      <p class="plain">El Gobierno fija la parte común del currículo en toda España para infantil, primaria, ESO y Bachillerato. Cada comunidad completa el resto.</p>
+      
+      <p class="limit">No se resume el contenido de cada currículo. No se incluyen otros reales decretos de desarrollo de la LOMLOE (evaluación, títulos de FP, acceso a la universidad).</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto 95/2022, de 1 de febrero, ordenación y enseñanzas mínimas de la Educación Infantil (BOE núm. 28, de 2 de febrero de 2022, BOE-A-2022-1654). Real Decreto 157/2022, de 1 de marzo, de la Educación Primaria (BOE núm. 52, de 2 de marzo de 2022, BOE-A-2022-3296). Real Decreto 217/2022, de 29 de marzo, de la Educación Secundaria Obligatoria (BOE núm. 76, de 30 de marzo de 2022, BOE-A-2022-4975). Real Decreto 243/2022, de 5 de abril, del Bachillerato (BOE núm. 82, de 6 de abril de 2022, BOE-A-2022-5521). Desarrollan la LOMLOE, que reserva al Estado el 50 % del horario en comunidades con lengua cooficial y el 60 % en las demás.</p>
+          <a class="src" href="https://www.boe.es/eli/es/rd/2022/02/01/95" target="_blank" rel="noopener">Oficial: BOE-A-2022-1654 (RD 95/2022), 2 feb 2022</a>
+          <a class="src" href="https://www.boe.es/eli/es/rd/2022/03/01/157" target="_blank" rel="noopener">Oficial: BOE-A-2022-3296 (RD 157/2022), 2 mar 2022</a>
+          <a class="src" href="https://www.boe.es/eli/es/rd/2022/03/29/217" target="_blank" rel="noopener">Oficial: BOE-A-2022-4975 (RD 217/2022), 30 mar 2022</a>
+          <a class="src" href="https://www.boe.es/eli/es/rd/2022/04/05/243" target="_blank" rel="noopener">Oficial: BOE-A-2022-5521 (RD 243/2022), 6 abr 2022</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>22 feb 2022</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto 154/2022, umbrales y cuantías de las becas del curso 2022-2023</h3>
+      <p class="plain">Fija cuánto puede ganar una familia para tener beca del Ministerio y cuánto se cobra en el curso 2022-2023. Cada curso se aprueba un real decreto parecido.</p>
+      
+      <p class="limit">Los reales decretos de los demás cursos van agrupados en otro hecho de esta ficha.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto 154/2022, de 22 de febrero, que establece los umbrales de renta y patrimonio familiar y las cuantías de las becas para el curso 2022-2023 y modifica parcialmente el Real Decreto 1721/2007. BOE núm. 46, de 23 de febrero de 2022. Umbral 1 de renta (intervalo): 8.422-8.871 € para 1 miembro, 12.632-13.306 € para 2, 16.843-17.742 € para 3 y 21.054-22.177 € para 4. Cuantía fija ligada a la renta: 1.700 €; ligada a la residencia: 1.600 €; beca básica: 300 € (350 € en Grado Básico). Presupuesto de la convocatoria: 2.134 millones de euros. El Real Decreto-ley 14/2022 añadió después un complemento de 100 € al mes de septiembre a diciembre de 2022 para los becarios de este curso (ver su ficha). Como referencia, para el curso 2018-2019 el umbral 1 de una familia de tres miembros era de 10.606 € y la cuantía fija mínima, 1.600 €.</p>
+          <a class="src" href="https://www.boe.es/buscar/doc.php?id=BOE-A-2022-2852" target="_blank" rel="noopener">Oficial: BOE-A-2022-2852, 23 feb 2022</a>
+          <a class="src" href="https://www.ciencia.gob.es/Noticias/2022/Febrero/gobierno-adelanta-convocatoria-becas.html" target="_blank" rel="noopener">Oficial: Ministerio de Ciencia, Innovación y Universidades, nota de 22-02-2022, 22 feb 2022</a>
+          <a class="src" href="https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/270718enlace-ayudas.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, Consejo de Ministros 27-07-2018 (umbrales 2018-2019), 27 jul 2018</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>24 feb 2022</time><span class="badge of">Oficial</span></div>
+      <h3>Ley 3/2022, de convivencia universitaria</h3>
+      <p class="plain">Sustituye el reglamento de disciplina académica de 1954. Fija qué faltas pueden cometer los estudiantes universitarios y sus sanciones, y obliga a ofrecer mediación.</p>
+      
+      <p class="limit">No hubo votación final en el Pleno del Congreso. Los recuentos de la comisión y del Senado salen de un medio cada uno, sin cotejar con el registro oficial.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Ley 3/2022, de 24 de febrero, de convivencia universitaria. BOE núm. 48, de 25 de febrero de 2022; en vigor desde el 26 de febrero. Deroga el Reglamento de Disciplina Académica de 1954. Clasifica las faltas de los estudiantes en muy graves, graves y leves, con sanciones desde la expulsión temporal hasta la amonestación privada. Cada universidad debe tener mediación y una Comisión de Convivencia paritaria. En el Congreso la aprobó la comisión con competencia legislativa plena (18 de noviembre de 2021, 20 votos a favor y 15 en contra según la prensa), sin votación en el Pleno. El Senado la aprobó definitivamente el 16 de febrero de 2022 con 152 votos a favor, 108 en contra y 4 abstenciones (una sola fuente de prensa); en contra, PP, UPN, Vox y Ciudadanos según esa fuente.</p>
+          <a class="src" href="https://www.boe.es/eli/es/l/2022/02/24/3" target="_blank" rel="noopener">Oficial: BOE-A-2022-2978, 25 feb 2022</a>
+          <a class="src" href="https://theobjective.com/espana/2021-11-18/el-congreso-aprueba-la-ley-de-convivencia-universitaria-con-la-negativa-de-los-rectores-y-alumnos/" target="_blank" rel="noopener">The Objective (comisión del Congreso), 18 nov 2021</a>
+          <a class="src" href="https://valenciaplaza.com/valenciaplaza/el-senado-aprueba-de-manera-definitiva-la-ley-de-convivencia-universitaria-con-los-votos-en-contra-de-vox-pp-y-upn" target="_blank" rel="noopener">Valencia Plaza (votación del Senado), 16 feb 2022</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>31 mar 2022</time><span class="badge of">Oficial</span></div>
+      <h3>Ley Orgánica 3/2022, de Formación Profesional</h3>
+      <p class="plain">Une en un solo sistema la FP de los institutos y la formación para el empleo. Toda la FP pasa a tener una parte en la empresa.</p>
+      <div class="vote" role="img" aria-label="180 a favor, 88 en contra, 75 abstenciones"><span class="lbl">16 dic 2021 · Aprobado</span><div class="bar"><span class="y" style="width:52.48%">180 a favor</span><span class="n" style="width:25.66%">88 en contra</span><span class="a" style="width:21.87%">75</span></div></div>
+      <p>En contra: PP.</p>
+      <p class="limit">No consta si el texto volvió al Congreso tras el Senado ni el recuento de esa última votación. El recuento de diciembre de 2021 está cotejado con el Diario de Sesiones; el grupo en contra sale de la prensa.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Ley Orgánica 3/2022, de 31 de marzo, de ordenación e integración de la Formación Profesional. BOE núm. 78, de 1 de abril de 2022. Crea un sistema único de FP con grados A a E; regula el carácter dual de toda la FP, con al menos un 25 % de la formación en la empresa según el preámbulo; y abre de forma permanente la acreditación de competencias por experiencia laboral. Votación de conjunto en el Pleno del Congreso el 16 de diciembre de 2021, antes de su paso por el Senado: 180 a favor, 88 en contra y 75 abstenciones, con voto presencial y telemático (Diario de Sesiones).</p>
+          <a class="src" href="https://www.boe.es/buscar/doc.php?id=BOE-A-2022-5139" target="_blank" rel="noopener">Oficial: BOE-A-2022-5139, 1 abr 2022</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-147.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, Pleno núm. 141 (DSCD-14-PL-147), 16 dic 2021</a>
+          <a class="src" href="https://rtvc.es/el-congreso-aprobara-hoy-por-mayoria-absoluta-la-ley-de-formacion-profesional/" target="_blank" rel="noopener">RTVC, 16 dic 2021</a>
+          <a class="src" href="https://www.menorca.info/actualidad/nacional/2021/12/16/1679691/congreso-aprueba-nueva-ley-fp.html" target="_blank" rel="noopener">Menorca.info, 16 dic 2021</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>1 ago 2022</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 14/2022, complemento de las becas y ahorro energético</h3>
+      <p class="plain">Los becarios del Ministerio del curso 2022-2023 cobran 100 € más al mes de septiembre a diciembre de 2022. El mismo decreto incluye medidas de transporte y de ahorro de energía.</p>
+      <div class="vote" role="img" aria-label="187 a favor, 161 en contra, 1 abstenciones"><span class="lbl">25 ago 2022 · Convalidado</span><div class="bar"><span class="y" style="width:53.58%">187 a favor</span><span class="n" style="width:46.13%">161 en contra</span><span class="a" style="width:0.29%"></span></div></div>
+      <p>En contra: Ciudadanos, CUP, Foro Asturias, Junts, PP, Vox.</p>
+      <p class="limit">La lista de grupos en contra sale de un solo medio. No consta en qué quedó la tramitación como proyecto de ley.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto-ley 14/2022, de 1 de agosto, de medidas de sostenibilidad económica en el ámbito del transporte, en materia de becas y ayudas al estudio, así como de medidas de ahorro, eficiencia energética y de reducción de la dependencia energética del gas natural. BOE núm. 184, de 2 de agosto de 2022. Título IV: complemento de 100 € al mes durante cuatro meses (400 € en total) para los beneficiarios de las becas de carácter general de enseñanzas postobligatorias y de las ayudas al alumnado con necesidad específica de apoyo educativo del curso 2022-2023. Convalidado el 25 de agosto de 2022 (187 a favor, 161 en contra, 1 abstención); el Pleno acordó tramitarlo como proyecto de ley por urgencia (342 a favor, 6 en contra, 1 abstención). Según la prensa, votaron en contra de la convalidación PP, Vox, Ciudadanos, Junts, CUP y Foro Asturias, y el BNG se abstuvo.</p>
+          <a class="src" href="https://www.boe.es/eli/es/rdl/2022/08/01/14" target="_blank" rel="noopener">Oficial: BOE-A-2022-12925, 2 ago 2022</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-204.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, Pleno núm. 196 (DSCD-14-PL-204), 25 ago 2022</a>
+          <a class="src" href="https://www.energias-renovables.com/panorama/el-congreso-aprueba-con-holgura-el-decreto-20220825" target="_blank" rel="noopener">Energías Renovables, 25 ago 2022</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg">
+    <summary><span class="yy">2023</span><span class="yn">1 hecho</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>22 mar 2023</time><span class="badge of">Oficial</span></div>
+      <h3>Ley Orgánica 2/2023, del Sistema Universitario (LOSU)</h3>
+      <p class="plain">Sustituye la ley de universidades de 2001. Limita los contratos temporales del profesorado de la universidad pública al 8 % y fija como objetivo un gasto público del 1 % del PIB.</p>
+      <div class="vote" role="img" aria-label="182 a favor, 157 en contra, 8 abstenciones"><span class="lbl">9 mar 2023 · Aprobado</span><div class="bar"><span class="y" style="width:52.45%">182 a favor</span><span class="n" style="width:45.24%">157 en contra</span><span class="a" style="width:2.31%"></span></div></div>
+      <p>En contra: BNG, Ciudadanos, Foro Asturias, PP, Vox.</p>
+      <p class="limit">Recuento cotejado con el Diario de Sesiones (182 a favor, 157 en contra, 8 abstenciones). Los grupos en contra salen de dos medios, que no coinciden del todo; aquí solo van los que citan ambos.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Ley Orgánica 2/2023, de 22 de marzo, del Sistema Universitario. BOE núm. 70, de 23 de marzo de 2023. Deroga la Ley Orgánica 6/2001 de Universidades y el Real Decreto-ley 14/2012. Baja el máximo de profesorado temporal en universidades públicas del 40 % al 8 %; reduce la carrera académica de cuatro a tres niveles; incluye el estatuto del estudiantado y reconoce la beca como derecho subjetivo; las comunidades deben congelar o bajar los precios públicos. El Congreso votó las enmiendas del Senado y aprobó el texto final el 9 de marzo de 2023.</p>
+          <a class="src" href="https://www.boe.es/buscar/doc.php?id=BOE-A-2023-7500" target="_blank" rel="noopener">Oficial: BOE-A-2023-7500, 23 mar 2023</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-251.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, Pleno núm. 242 (DSCD-14-PL-251), 9 mar 2023</a>
+          <a class="src" href="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/universidades/paginas/2023/090323-aprobacion-congreso-losu.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, nota de 09-03-2023, 9 mar 2023</a>
+          <a class="src" href="https://www.ondavasca.com/el-congreso-aprueba-la-nueva-ley-de-universidades-con-el-rechazo-de-la-derecha/" target="_blank" rel="noopener">Onda Vasca, 9 mar 2023</a>
+          <a class="src" href="https://www.diaridetarragona.com/internacional/185065/aprueban-la-ley-de-universidades-jd14062182.html" target="_blank" rel="noopener">Diari de Tarragona, 9 mar 2023</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg" open>
+    <summary><span class="yy">2024</span><span class="yn">1 hecho</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>7 jun 2024</time><span class="badge of">Oficial</span></div>
+      <h3>Ley 1/2024, de enseñanzas artísticas superiores</h3>
+      <p class="plain">Los estudios superiores de música, danza, arte dramático, diseño y otras enseñanzas artísticas pasan a dar títulos de grado y máster con el mismo nivel que los universitarios.</p>
+      <div class="vote" role="img" aria-label="175 a favor, 32 en contra, 139 abstenciones"><span class="lbl">14 mar 2024 · Aprobado</span><div class="bar"><span class="y" style="width:50.58%">175 a favor</span><span class="n" style="width:9.25%">32 en contra</span><span class="a" style="width:40.17%">139</span></div></div>
+      <p>En contra: Vox.</p>
+      <p class="limit">El recuento de marzo de 2024 está cotejado con el Diario de Sesiones; no da el total de votos emitidos (175+32+139 = 346). El grupo en contra sale de un solo medio.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Ley 1/2024, de 7 de junio, por la que se regulan las enseñanzas artísticas superiores y se establece la organización y equivalencias de las enseñanzas artísticas profesionales. BOE núm. 139, de 8 de junio de 2024. Organiza las enseñanzas en grado y máster; el grado se integra en el MECES al mismo nivel que el universitario; el doctorado se organiza mediante acuerdos con universidades. Votación en el Congreso el 14 de marzo de 2024; tras el Senado, el Congreso votó una a una las enmiendas del Senado el 23 de mayo de 2024 (26 votaciones, sin votación de conjunto por no ser ley orgánica), y la ley quedó aprobada.</p>
+          <a class="src" href="https://www.boe.es/buscar/doc.php?id=BOE-A-2024-11613" target="_blank" rel="noopener">Oficial: BOE-A-2024-11613, 8 jun 2024</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-31.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, Pleno 14-03-2024 (DSCD-15-PL-31), 14 mar 2024</a>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20240523.pdf" target="_blank" rel="noopener">Oficial: Acta del Pleno del Congreso, 23-05-2024 (enmiendas del Senado), 23 may 2024</a>
+          <a class="src" href="https://www.publico.es/sociedad/congreso-aprueba-ley-ensenanzas-artisticas-superiores-mayoria.html" target="_blank" rel="noopener">Público, 14 mar 2024</a>
+          <a class="src" href="https://www.ondavasca.com/el-congreso-aprueba-la-ley-de-ensenanzas-artisticas-la-primera-de-la-legislatura/" target="_blank" rel="noopener">Onda Vasca, 23 may 2024</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+  </section>
+
+  <section aria-labelledby="h-b">
+    <h2 id="h-b">Qué intentó y no salió<span class="count">4</span></h2>
+    <p class="lede">Solo se cuenta lo que pasó, sin juzgar a nadie. Los motivos de cada grupo se añadirán como cita literal del Diario de Sesiones.</p>
+    <article class="fact">
+      <div class="meta"><time>14 dic 2021</time><span class="badge of">Oficial</span></div>
+      <h3>Proposición de ley del Parlamento de Andalucía sobre gratuidad de 0 a 3 años, admitida a trámite</h3>
+      <p class="plain">El Congreso aceptó estudiar una propuesta del Parlamento de Andalucía para que la educación de 0 a 3 años sea gratuita y universal. No consta que llegara a ser ley.</p>
+      <div class="vote" role="img" aria-label="310 a favor, 0 en contra, 27 abstenciones"><span class="lbl">14 dic 2021 · Admitido a trámite</span><div class="bar"><span class="y" style="width:91.99%">310 a favor</span><span class="n" style="width:0.00%">0 en contra</span><span class="a" style="width:8.01%">27</span></div></div>
+      <p class="limit">No se ha localizado el final de la tramitación; no consta ninguna ley aprobada con ese contenido, y lo previsible es que decayera con la disolución de 2023, pero no se ha cotejado con el expediente.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Proposición de Ley relativa al reconocimiento de la gratuidad y universalidad del primer ciclo de la educación infantil, presentada por el Parlamento de Andalucía (BOCG, Congreso, serie B, núm. 180-1, de 30 de agosto de 2021). Toma en consideración en el Pleno del 14 de diciembre de 2021: 310 votos a favor y 27 abstenciones; el Diario de Sesiones no recoge votos en contra. La Mesa la envió a la Comisión de Educación y Formación Profesional con competencia legislativa plena y abrió plazo de enmiendas hasta el 14 de febrero de 2022. Según la prensa, se abstuvieron Más País-Equo, PNV y ERC.</p>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-145.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, Pleno núm. 139 (DSCD-14-PL-145), 14 dic 2021</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/BOCG/B/BOCG-14-B-180-3.PDF" target="_blank" rel="noopener">Oficial: BOCG-14-B-180-3, 27 dic 2021</a>
+          <a class="src" href="https://www.moncloa.com/2021/12/14/congreso-lomloe-gratuidad-educacion-infantil-1144284/" target="_blank" rel="noopener">Moncloa.com, 14 dic 2021</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>30 may 2023</time><span class="badge">Una sola fuente</span></div>
+      <h3>Primer proyecto de ley de enseñanzas artísticas, decaído</h3>
+      <p class="plain">El primer proyecto de ley de enseñanzas artísticas no llegó a aprobarse: decayó al disolverse las Cortes por las elecciones de julio de 2023. El Gobierno lo volvió a aprobar en enero de 2024.</p>
+      
+      <p class="limit">Que el proyecto decayó por la disolución lo dice un solo medio; no se ha cotejado con el expediente del Congreso.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>El Consejo de Ministros aprobó el proyecto en segunda lectura el 11 de abril de 2023 y pidió su tramitación urgente. Decayó con la disolución de las Cortes (Real Decreto 400/2023, de 29 de mayo, publicado en el BOE el 30 de mayo de 2023). El Consejo de Ministros lo aprobó de nuevo el 16 de enero de 2024; es la actual Ley 1/2024.</p>
+          <a class="src" href="https://www.moncloa.com/2024/01/16/gobierno-aprobar-ley-equipara-ensenanzas-2384401/" target="_blank" rel="noopener">Moncloa.com, 16 ene 2024</a>
+          <a class="src" href="https://www.boe.es/eli/es/rd/2023/05/29/400" target="_blank" rel="noopener">Oficial: Real Decreto 400/2023, disolución de las Cortes, 30 may 2023</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>9 sep 2025</time><span class="badge of">Oficial</span></div>
+      <h3>Proposición de ley del PP sobre escolarización del alumnado con necesidades educativas especiales, rechazada</h3>
+      <p class="plain">El Congreso rechazó tramitar una propuesta del PP sobre la escolarización del alumnado con necesidades educativas especiales y los centros de educación especial.</p>
+      <div class="vote" role="img" aria-label="170 a favor, 177 en contra"><span class="lbl">9 sep 2025 · Rechazado</span><div class="bar"><span class="y" style="width:48.99%">170 a favor</span><span class="n" style="width:51.01%">177 en contra</span></div></div>
+      <p class="limit">El acta no da abstenciones (170 + 177 = 347 emitidos, así que no hubo). No consta el voto de cada grupo; solo lo anunciado en el debate por Vox, PNV y EH Bildu.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Proposición de Ley relativa a la escolarización del alumnado con necesidades educativas especiales (orgánica), del Grupo Parlamentario Popular. Según su defensora en el Pleno, buscaba garantizar que las familias puedan elegir modelo educativo, incluida la educación especial; cambiar la disposición adicional cuarta de la LOMLOE sobre los centros de educación especial; ampliar la permanencia en esos centros más allá de los 21 años; y permitir a este alumnado obtener el título de ESO. Toma en consideración rechazada en el Pleno del 9 de septiembre de 2025: votos emitidos, 347; 170 a favor y 177 en contra. En el debate, Vox anunció su apoyo y PNV y EH Bildu su voto en contra.</p>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20250909.pdf" target="_blank" rel="noopener">Oficial: Acta del Pleno del Congreso, 09-09-2025, 9 sep 2025</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-222-2.PDF" target="_blank" rel="noopener">Oficial: BOCG-15-B-222-2, sep 2025</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>18 jun 2026</time><span class="badge of">Oficial</span></div>
+      <h3>Proyecto de ley de ratios y jornada lectiva del profesorado, decaído</h3>
+      <p class="plain">El proyecto para bajar el número de alumnos por aula y las horas de clase del profesorado superó el debate de totalidad, pero decayó al disolverse las Cortes el 6 de octubre de 2026.</p>
+      <div class="vote" role="img" aria-label="11 a favor, 329 en contra, 7 abstenciones"><span class="lbl">18 jun 2026 · Votación sobre las enmiendas de totalidad: rechazadas, el texto sigue adelante</span><div class="bar"><span class="y" style="width:3.17%">11 a favor</span><span class="n" style="width:94.81%">329 en contra</span><span class="a" style="width:2.02%"></span></div></div>
+      <p class="limit">En esta votación, &#x27;a favor&#x27; y &#x27;en contra&#x27; se refieren a las enmiendas de totalidad, no a la ley. No consta un recuento por grupos.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Proyecto de ley de modificación de la Ley 4/2019, de 7 de marzo. Preveía un máximo de 22 alumnos por aula en primaria y 25 en ESO en centros sostenidos con fondos públicos, y 23 horas lectivas semanales en infantil, primaria y educación especial y 18 en el resto, con aplicación gradual del curso 2027-2028 al 2031-2032. El alumnado con necesidades educativas especiales contaría como dos plazas. El 18 de junio de 2026 el Congreso rechazó las enmiendas a la totalidad de PNV y Junts: votos emitidos, 347; 11 a favor de las enmiendas, 329 en contra y 7 abstenciones (acta del Pleno). Los datos de la votación se refieren a las enmiendas, no a la ley. Las enmiendas a la totalidad las presentaron Junts y PNV.</p>
+          <a class="src" href="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/educacion-fp-deportes/Paginas/2026/180626-tolon-congreso-ley-ratios-jornada.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, nota de 18-06-2026, 18 jun 2026</a>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20260618.pdf" target="_blank" rel="noopener">Oficial: Acta del Pleno del Congreso, 18-06-2026, 18 jun 2026</a>
+          <a class="src" href="https://www.cronista.com/espana/actualidad-es/confirmado-en-el-congreso-avanza-la-ley-que-reducira-la-cantidad-de-alumnos-por-aula-y-la-jornada-de-los-docentes/" target="_blank" rel="noopener">El Cronista, 18 jun 2026</a>
+          <a class="src" href="https://www.csif.es/es/articulo/aragon/educacion/97874" target="_blank" rel="noopener">CSIF, 5 oct 2026</a>
+          <a class="src" href="https://www.diariodeleon.es/cultura/261014/2100184/decretos-bajar-ratios-infantil-frenar-fp-privada-siguen-aire.html" target="_blank" rel="noopener">Diario de León (EFE), 14 oct 2026</a>
+        </div>
+      </details>
+    </article>
+  </section>
+
+  <section aria-labelledby="h-c">
+    <h2 id="h-c">Qué dicen las cifras oficiales</h2>
+    <p class="lede">Se enseñan para ver la escala, no para repartir culpas.</p>
+    <div class="chart">
+      <h3>Abandono temprano de la educación y la formación (%)</h3>
+      <div id="c1"></div>
+      <p class="cap">Porcentaje de jóvenes de 18 a 24 años que no han terminado la segunda etapa de secundaria (Bachillerato o FP de grado medio) y no siguen ningún estudio o formación. Media anual de la EPA (INE), explotación del Ministerio de Educación.</p>
+      <details>
+        <summary>Fuentes</summary>
+        <div class="in">
+          <a class="src" href="https://educacionfpydeportes.gob.es/inee/dam/jcr:c536a9ae-1592-4854-bfe0-b0441db0bc9f/r3.pdf" target="_blank" rel="noopener">Oficial: Ministerio de Educación, Sistema estatal de indicadores de la educación 2022 (2018-2021), 2022</a>
+          <a class="src" href="https://educacionfpydeportes.gob.es/inee/dam/jcr:7d3c11ad-f96b-4625-80ce-7b1522dec1b2/r3.pdf" target="_blank" rel="noopener">Oficial: Ministerio de Educación, Sistema estatal de indicadores de la educación 2023 (2018-2022), 2023</a>
+          <a class="src" href="https://www.educacionfpydeportes.gob.es/dam/jcr:b410eba9-18b7-44d5-b6ad-f1c69069d75e/1-3-6-tabla-1-abandono-nivel-de-formaci-n-2025.pdf" target="_blank" rel="noopener">Oficial: Ministerio de Educación, tabla 1.3.6 abandono 2025 (2022-2025), 2026</a>
+          <a class="src" href="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/educacion-fp-deportes/paginas/2026/280126-abandono-educativo-minimo-historico.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, nota de 28-01-2026 (12,8 % en 2025), 28 ene 2026</a>
+        </div>
+      </details>
+    </div>
+    <div class="chart">
+      <h3>Presupuesto de becas y ayudas al estudio del Ministerio, millones de euros</h3>
+      <div id="c2"></div>
+      <p class="cap">Importe anunciado al aprobar el real decreto de umbrales de cada curso. El periodo es el año de inicio del curso (2018 = curso 2018-2019). Son cifras presupuestadas, no gasto ejecutado. 2019: presupuesto inicial de 1.470 millones; la nota añade unos 40 millones más sin dar la cifra final. 2018: la nota de 2018 da 1.462 millones; la nota de 2026 cita 1.399 millones para 2018.</p>
+      <details>
+        <summary>Fuentes</summary>
+        <div class="in">
+          <a class="src" href="https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/270718enlace-ayudas.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, Consejo de Ministros 27-07-2018 (curso 2018-2019), 27 jul 2018</a>
+          <a class="src" href="https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/120719-enlacebecas.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, Consejo de Ministros 12-07-2019 (curso 2019-2020), 12 jul 2019</a>
+          <a class="src" href="https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/210720-enlace-becas.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, Consejo de Ministros 21-07-2020 (curso 2020-2021), 21 jul 2020</a>
+          <a class="src" href="https://www.lamoncloa.gob.es/consejodeministros/Paginas/enlaces/290621-enlace-becas.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, Consejo de Ministros 29-06-2021 (curso 2021-2022), 29 jun 2021</a>
+          <a class="src" href="https://www.ciencia.gob.es/Noticias/2022/Febrero/gobierno-adelanta-convocatoria-becas.html" target="_blank" rel="noopener">Oficial: Ministerio de Ciencia, Innovación y Universidades, 22-02-2022 (curso 2022-2023), 22 feb 2022</a>
+          <a class="src" href="https://www.lamoncloa.gob.es/consejodeministros/resumenes/Paginas/2023/210223-rp-cministros.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, Consejo de Ministros 21-02-2023 (curso 2023-2024), 21 feb 2023</a>
+          <a class="src" href="https://www.ciencia.gob.es/Noticias/2024/febrero/Gobierno-renta-becas.html" target="_blank" rel="noopener">Oficial: Ministerio de Ciencia, Innovación y Universidades, 27-02-2024 (curso 2024-2025), 27 feb 2024</a>
+          <a class="src" href="https://www.lamoncloa.gob.es/consejodeministros/resumenes/Paginas/2025/040325-rueda-de-prensa-ministros.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, Consejo de Ministros 04-03-2025 (curso 2025-2026), 4 mar 2025</a>
+          <a class="src" href="https://www.lamoncloa.gob.es/consejodeministros/resumenes/paginas/2026/100326-rueda-prensa-ministros.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, Consejo de Ministros 10-03-2026 (curso 2026-2027), 10 mar 2026</a>
+        </div>
+      </details>
+    </div>
+    <div class="limit"><p>Qué no dicen estas cifras: qué las causó ni qué parte corresponde al Estado, a las comunidades o a los ayuntamientos.</p><ul class="nolist"><li>No se ha encontrado una norma estatal de gratuidad de la educación de 0 a 3 años. La proposición del Parlamento de Andalucía admitida en 2021 no consta como aprobada. En marzo de 2026 se anunció un programa de escolarización de 0 a 3 años para familias vulnerables, sin norma localizada.</li><li>Los decretos de ratios de 0 a 3 años y de FP en línea seguían sin aprobar en octubre de 2026.</li><li>No se han incluido otros reales decretos de desarrollo de la LOMLOE, la ley de FP o la LOSU (evaluación, títulos, acceso a la universidad, creación de universidades).</li><li>No se ha revisado el registro completo de tomas en consideración y enmiendas a la totalidad del Congreso; puede faltar alguna votación. No constan los recuentos de las enmiendas a la totalidad de la LOMLOE, la ley de FP o la LOSU.</li><li>No se han revisado otros planes del Consejo de Ministros (por ejemplo, el Plan de Modernización de la FP de 2020 o el programa Código Escuela 4.0) para ver si se aprobaron como acuerdo.</li><li>Las cifras de becas son presupuestadas, no gasto ejecutado. Para 2018 hay dos cifras oficiales distintas (1.462 y 1.399 millones).</li><li>No se ha encontrado ninguna norma de educación derogada o no convalidada en el periodo.</li></ul></div>
+  </section>
+
+  <footer class="foot">
+    <p><b>Estado de la verificación.</b> Todas las normas están cotejadas con el BOE. Los recuentos del Congreso de la LOMLOE, la ley de FP, la LOSU, la ley de enseñanzas artísticas, los decretos-ley 31/2020 y 14/2022, la gratuidad de 0 a 3 años, la ley del PP sobre educación especial y la ley de ratios están cotejados con el Diario de Sesiones o el acta del Pleno. La Ley 4/2019 no tiene recuento localizado. Las listas de grupos en contra salen de la prensa (dos medios en LOMLOE, FP y LOSU; uno en el resto), igual que las votaciones del Senado y de la comisión en la ley de convivencia universitaria. Que el primer proyecto de enseñanzas artísticas decayó en 2023 lo dice un solo medio. Consulta: 11 de noviembre de 2026. Que Pedro Sánchez preside el Gobierno desde junio de 2018 es de dominio público.</p>
+    <p>Última revisión: 11 de noviembre de 2026. ¿Un dato está mal? <a href="metodologia.html#correcciones">Dínoslo</a>. Cómo se ha hecho: <a href="metodologia.html">metodología</a>.</p>
+  </footer>
+</main>
+
+<script>
+(function(){
+  var SPECS=[{"id": "c1", "u": "%", "dec": 1, "t": "Abandono temprano de la educación y la formación (%)", "s": [{"l": "2018", "v": 17.9, "c": false}, {"l": "2019", "v": 17.3, "c": false}, {"l": "2020", "v": 16.0, "c": false}, {"l": "2021", "v": 13.3, "c": false}, {"l": "2022", "v": 13.9, "c": false}, {"l": "2023", "v": 13.7, "c": false}, {"l": "2024", "v": 13.0, "c": false}, {"l": "2025", "v": 12.8, "c": false}]}, {"id": "c2", "u": "millones", "dec": 0, "t": "Presupuesto de becas y ayudas al estudio del Ministerio, millones de euros", "s": [{"l": "2018", "v": 1462, "c": false}, {"l": "2019", "v": 1470, "c": false}, {"l": "2020", "v": 1900, "c": false}, {"l": "2021", "v": 2038, "c": false}, {"l": "2022", "v": 2134, "c": false}, {"l": "2023", "v": 2520, "c": false}, {"l": "2024", "v": 2535, "c": false}, {"l": "2025", "v": 2544, "c": false}, {"l": "2026", "v": 2559, "c": false}]}];
+  function num(v,dec){var s=Math.abs(v).toFixed(dec).split('.');s[0]=s[0].replace(/\B(?=(\d{3})+(?!\d))/g,'.');return (v<0?'−':'')+s.join(',')}
+  function fmt(v,u,dec){var n=num(v,dec);if(!u)return n;return u==='%'?n+' %':n+' '+u}
+  SPECS.forEach(function(sp){
+    var vals=sp.s.filter(function(d){return d.v!=null}).map(function(d){return d.v});
+    var mn=Math.min(0,Math.min.apply(null,vals)), mx=Math.max(0,Math.max.apply(null,vals));
+    var W=360,LB=58,VL=86,RH=25,BH=15,pw=W-LB-VL-(mn<0?VL*0.6:0),H=sp.s.length*RH+2;
+    var span=(mx-mn)||1, x0=LB+(mn<0?VL*0.6:0)+(-mn/span)*pw;
+    var s='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+sp.t+': '+sp.s.map(function(d){return d.l+' '+(d.v==null?'sin dato':fmt(d.v,sp.u,sp.dec))}).join(', ')+'">';
+    sp.s.forEach(function(d,i){
+      var y=i*RH+2;
+      s+='<text x="0" y="'+(y+12)+'" font-size="12" font-family="IBM Plex Mono, monospace" fill="var(--ink-2)">'+d.l+'</text>';
+      if(d.v==null){s+='<text x="'+(x0+4)+'" y="'+(y+12)+'" font-size="12" font-style="italic" font-family="Source Sans 3, system-ui, sans-serif" fill="var(--ink-2)">sin dato</text>';return}
+      var w=Math.max(2,Math.abs(d.v)/span*pw), x=d.v<0?x0-w:x0;
+      s+='<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+BH+'" fill="'+(d.c?'var(--alt)':'var(--accent)')+'" rx="2"/>';
+      var tx=d.v<0?x-6:x+w+6, an=d.v<0?'end':'start';
+      s+='<text x="'+tx+'" y="'+(y+12)+'" text-anchor="'+an+'" font-size="12" font-weight="600" font-family="IBM Plex Mono, monospace" fill="var(--ink)">'+fmt(d.v,sp.u,sp.dec)+'</text>';
+    });
+    s+='<line x1="'+x0+'" x2="'+x0+'" y1="0" y2="'+H+'" stroke="var(--ink-2)" stroke-width="1"/></svg>';
+    document.getElementById(sp.id).innerHTML=s;
+  });
+})();
+</script>

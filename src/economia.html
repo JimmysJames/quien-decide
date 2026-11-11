@@ -1,0 +1,830 @@
+<title>Economía y coste de vida, hechos del Estado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,500..800&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Layout: resumen en lenguaje llano, línea de tiempo de ocho años como hilo, cada hecho con una frase clara y el detalle técnico plegado. Las series largas van en filas horizontales para leerse bien en el móvil. */
+:root{
+  --paper:#EDF0F2;
+  --card:#FFFFFF;
+  --ink:#121B23;
+  --ink-2:#4B5967;
+  --rule:#CBD3DA;
+  --accent:#0B6E63;
+  --on-accent:#FFFFFF;
+  --accent-soft:#D6ECE8;
+  --alt:#5D6D7B;
+  --alt2:#B8C4CE;
+  --note-bg:#FFF2CF;
+  --note-ink:#6B4700;
+  --f-display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E151B; --card:#16212A; --ink:#E7EDF1; --ink-2:#9FB0BD; --rule:#2A3946;
+    --accent:#4DC2B1; --on-accent:#07201C; --accent-soft:#143A38; --alt:#6F8394; --alt2:#3E5160;
+    --note-bg:#3A2F10; --note-ink:#F0C96A;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E151B; --card:#16212A; --ink:#E7EDF1; --ink-2:#9FB0BD; --rule:#2A3946;
+  --accent:#4DC2B1; --on-accent:#07201C; --accent-soft:#143A38; --alt:#6F8394; --alt2:#3E5160;
+  --note-bg:#3A2F10; --note-ink:#F0C96A;
+  color-scheme: dark;
+}
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.5}
+h1,h2,h3,p,ul,ol,dl,dd{margin:0}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+a{color:var(--accent)}
+
+.app{max-width:680px;margin-inline:auto;padding-inline:16px;padding-block:20px 56px;display:flex;flex-direction:column;gap:32px}
+
+.top{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.brand{font-family:var(--f-display);font-size:1.1rem;font-weight:800;font-variation-settings:"wdth" 112;color:var(--ink);text-decoration:none}
+.tag{font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;border:1px solid var(--ink-2);color:var(--ink-2);padding:2px 8px;border-radius:3px;white-space:nowrap}
+
+.head{display:flex;flex-direction:column;gap:10px;border-top:2px solid var(--ink);padding-top:14px}
+.head h1{font-size:2.1rem;font-weight:800;font-variation-settings:"wdth" 108;line-height:1.08}
+.kicker{font-family:var(--f-mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2)}
+.k{font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-2)}
+
+.sum{background:var(--ink);color:var(--paper);border-radius:6px;padding:6px 18px;display:flex;flex-direction:column}
+.sum .row{display:grid;grid-template-columns:minmax(0,1fr);gap:4px;padding-block:14px;border-top:1px solid color-mix(in srgb, var(--paper) 25%, transparent)}
+.sum .row:first-child{border-top:0}
+.sum .k{color:var(--paper);opacity:.7}
+.sum p{font-size:1.08rem;line-height:1.4}
+.sum b{font-weight:700;font-variant-numeric:tabular-nums}
+.sum .gap p{opacity:.9}
+
+section{display:flex;flex-direction:column;gap:14px}
+section>h2{font-size:1.45rem;font-weight:700;font-variation-settings:"wdth" 105;line-height:1.2}
+.lede{color:var(--ink-2)}
+
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.88rem;color:var(--ink-2)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.dot{width:12px;height:12px;border-radius:50%;border:2px solid var(--accent);background:var(--accent);flex:none;display:inline-block}
+.dot.no{background:transparent;border-color:var(--alt)}
+.tl{list-style:none;padding:0;margin:0;display:flex;flex-direction:column}
+.tl li{display:grid;grid-template-columns:84px 20px minmax(0,1fr);gap:0 8px;padding-bottom:18px;position:relative}
+.tl li:last-child{padding-bottom:0}
+.tl time{font-family:var(--f-mono);font-size:.8rem;color:var(--ink-2);padding-top:3px;font-variant-numeric:tabular-nums}
+.tl .mk{position:relative;display:flex;justify-content:center;padding-top:5px}
+.tl .mk::after{content:"";position:absolute;top:22px;bottom:-18px;width:2px;background:var(--rule)}
+.tl li:last-child .mk::after{display:none}
+.tl .t{font-weight:600;line-height:1.3}
+.tl .s{color:var(--ink-2);font-size:.95rem}
+
+.fact{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:16px;display:flex;flex-direction:column;gap:10px}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}
+.meta time{font-family:var(--f-mono);font-size:.8rem;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.badge{font-family:var(--f-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;padding:2px 7px;border-radius:3px;border:1px solid var(--ink-2);color:var(--ink-2)}
+.badge.of{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.fact h3{font-size:1.2rem;font-weight:700;line-height:1.25}
+.plain{font-size:1.05rem}
+.fact p{margin:0}
+.num{font-variant-numeric:tabular-nums}
+details{border-top:1px solid var(--rule);padding-top:10px}
+summary{cursor:pointer;font-family:var(--f-mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);padding-block:4px}
+details[open] summary{margin-bottom:8px}
+details .in{display:flex;flex-direction:column;gap:8px;font-size:.96rem}
+.src{font-size:.88rem;overflow-wrap:anywhere}
+.limit{background:var(--note-bg);color:var(--note-ink);font-size:.92rem;padding:8px 10px;border-radius:3px}
+
+.split{display:flex;flex-direction:column;gap:6px}
+.stack{display:flex;height:38px;border-radius:3px;overflow:hidden;font-family:var(--f-mono);font-size:.82rem;font-variant-numeric:tabular-nums}
+.stack span{display:flex;align-items:center;padding-inline:8px;white-space:nowrap;overflow:hidden}
+.s1{background:var(--accent);color:var(--on-accent)}
+.s2{background:var(--alt);color:var(--paper)}
+.s3{background:var(--alt2);color:var(--ink)}
+.flow{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:8px;align-items:stretch}
+.flow .bx{border:1px solid var(--rule);border-radius:4px;padding:10px 12px;display:flex;flex-direction:column;gap:2px;background:var(--paper)}
+.flow .bx b{font-family:var(--f-display)}
+.flow .ar{display:grid;place-items:center;font-family:var(--f-mono);color:var(--ink-2)}
+@media (max-width:480px){.flow{grid-template-columns:minmax(0,1fr)}.flow .ar{transform:rotate(90deg);padding-block:2px}}
+
+.vote{display:flex;flex-direction:column;gap:6px}
+.bar{display:flex;height:36px;border-radius:3px;overflow:hidden;font-family:var(--f-mono);font-size:.82rem;font-variant-numeric:tabular-nums}
+.bar span{display:flex;align-items:center;padding-inline:8px;white-space:nowrap}
+.bar .y{background:var(--accent);color:var(--on-accent)}
+.bar .n{background:var(--alt);color:var(--paper);justify-content:flex-end}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--rule);border-radius:6px}
+table{border-collapse:collapse;width:100%;min-width:340px;font-size:.95rem}
+th,td{text-align:left;padding:7px 12px;border-top:1px solid var(--rule)}
+thead th{border-top:0;font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);font-weight:500}
+td.y{font-weight:600}
+td.n{color:var(--ink-2)}
+
+.chart{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.chart h3{font-size:1.1rem;font-weight:700}
+.chart svg{width:100%;height:auto;display:block;max-width:100%}
+.cap{font-size:.9rem;color:var(--ink-2)}
+.bigs{display:flex;flex-wrap:wrap;gap:8px 28px}
+.big{display:flex;flex-direction:column;gap:0}
+.big b{font-family:var(--f-display);font-size:2.4rem;font-weight:800;font-variation-settings:"wdth" 108;font-variant-numeric:tabular-nums;line-height:1.1}
+.big span{color:var(--ink-2);font-size:.92rem}
+
+.foot{border-top:1px solid var(--rule);padding-top:14px;display:flex;flex-direction:column;gap:8px;font-size:.9rem;color:var(--ink-2)}
+</style>
+<style>
+.aviso{background:var(--accent-soft);border-left:4px solid var(--accent);border-radius:4px;padding:12px 14px;display:flex;flex-direction:column;gap:4px}
+.aviso b{font-family:var(--f-display)}
+.nada{color:var(--ink-2)}
+.nolist{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:4px}
+.vote .lbl{font-family:var(--f-mono);font-size:.78rem;color:var(--ink-2)}
+.bar .a{background:var(--alt2);color:var(--ink);justify-content:center;padding-inline:0}
+details.yg{border-top:0;padding-top:0}
+details.yg>summary{display:flex;align-items:baseline;gap:10px;border-bottom:2px solid var(--ink);padding-block:8px 4px;color:var(--ink);text-transform:none;letter-spacing:0;list-style-position:inside}
+details.yg>summary .yy{font-family:var(--f-display);font-size:1.25rem;font-weight:800;font-variation-settings:"wdth" 108}
+details.yg>summary .yn{font-family:var(--f-mono);font-size:.72rem;color:var(--ink-2);text-transform:uppercase;letter-spacing:.06em}
+details.yg[open]>summary{margin-bottom:12px}
+details.yg>summary{cursor:pointer;list-style:none}
+details.yg>summary::-webkit-details-marker{display:none}
+details.yg>summary::before{content:"+";font-family:var(--f-mono);font-size:1rem;color:var(--accent);width:14px;flex:none}
+details.yg[open]>summary::before{content:"−"}
+.ygi{display:flex;flex-direction:column;gap:14px}
+.tl.compact li{padding-bottom:10px}
+.tl.compact .t{font-weight:500;font-size:.95rem}
+.keys{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.88rem;color:var(--ink-2)}
+.keys i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px}
+.count{font-family:var(--f-mono);font-size:.74rem;font-weight:400;color:var(--ink-2);text-transform:uppercase;letter-spacing:.06em;margin-left:8px}
+</style>
+
+<main class="app">
+  <header class="top">
+    <a class="brand" href="index.html">Quién decide</a>
+    <span class="tag">Beta</span>
+  </header>
+
+  <div class="head">
+    <p class="kicker">Gobierno central y Cortes · 2018 a 2026</p>
+    <h1>Economía y coste de vida: qué ha hecho el Estado</h1>
+    <p class="lede">Ocho años con Pedro Sánchez como presidente del Gobierno, desde junio de 2018.</p>
+  </div>
+
+  <div class="sum" aria-label="Resumen">
+    <div class="row">
+      <span class="k">Lo que se aprobó</span>
+      <p>Las Cortes aprobaron los Presupuestos de 2018, 2021, 2022 y 2023. Se crearon impuestos a servicios digitales y a transacciones financieras (2020), gravámenes temporales a energéticas y banca y un impuesto a grandes fortunas (2022) y un impuesto mínimo del 15 % a grandes empresas (2024). Por la guerra de Ucrania hubo un descuento de 20 céntimos en el carburante (2022) e IVA del 0 % en alimentos básicos (2023-2024), y por la crisis en Oriente Medio el IVA de carburantes, luz y gas bajó al 10 % de marzo a junio de 2026.</p>
+    </div>
+    <div class="row">
+      <span class="k">Lo que no salió</span>
+      <p>El Congreso devolvió los Presupuestos de 2019 y no se presentaron los de 2024, 2025 y 2026: siguen prorrogados los de 2023. El Congreso rechazó la senda de déficit en 2018, 2024, 2025 y dos veces en 2026, y el Senado la vetó en 2018 y 2024. También derogó el decreto ómnibus 9/2024 y el del gravamen energético (enero de 2025) y el decreto 2/2026 (febrero de 2026).</p>
+    </div>
+    <div class="row">
+      <span class="k">Lo que dicen las cifras</span>
+      <p>Según el INE, el IPC subió de media un 8,4 % en 2022 y un 2,7 % en 2025. El PIB cayó un 10,9 % en 2020 y creció un 2,6 % en 2025. La deuda pública pasó del 99,8 % del PIB en 2018 al 100,5 % en 2025.</p>
+    </div>
+    <div class="row gap">
+      <span class="k">Lo que esta página no sabe</span>
+      <p>No consta el recuento oficial de varias votaciones (aprobación final de Presupuestos, leyes fiscales de 2020 y 2021, convalidaciones de 2018, 2021 y 2023). La no presentación de Presupuestos consta solo en prensa.</p>
+    </div>
+  </div>
+
+  <section aria-labelledby="h-tl">
+    <h2 id="h-tl">Qué pasó y cuándo</h2>
+    <div class="legend"><span><i class="dot"></i>Aprobado</span><span><i class="dot no"></i>No salió</span></div>
+    <ol class="tl compact">
+      <li><time>3 jul 2018</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley 6/2018, Presupuestos Generales del Estado para 2018</p><p class="s"></p></div></li>
+      <li><time>27 jul 2018</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Senda de déficit 2019-2021: rechazada en el Congreso y vetada en el Senado</p><p class="s">Rechazado</p></div></li>
+      <li><time>8 nov 2018</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 17/2018, impuesto de las hipotecas a cargo del banco</p><p class="s"></p></div></li>
+      <li><time>13 feb 2019</time><span class="mk"><i class="dot no"></i></span><div><p class="t">El Congreso devuelve el proyecto de Presupuestos de 2019</p><p class="s">Votación sobre las enmiendas de totalidad: aprobadas, el texto vuelve al Gobierno</p></div></li>
+      <li><time>15 oct 2020</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley 4/2020, impuesto sobre determinados servicios digitales («tasa Google»)</p><p class="s"></p></div></li>
+      <li><time>15 oct 2020</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley 5/2020, impuesto sobre las transacciones financieras («tasa Tobin»)</p><p class="s"></p></div></li>
+      <li><time>30 dic 2020</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley 11/2020, Presupuestos Generales del Estado para 2021</p><p class="s"></p></div></li>
+      <li><time>24 jun 2021</time><span class="mk"><i class="dot"></i></span><div><p class="t">Rebajas de impuestos en la factura de la luz y el gas, 2021-2024 (Reales Decretos-leyes 12/2021, 11/2022 y 8/2023)</p><p class="s"></p></div></li>
+      <li><time>9 jul 2021</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley 11/2021, de prevención y lucha contra el fraude fiscal</p><p class="s"></p></div></li>
+      <li><time>28 dic 2021</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley 22/2021, Presupuestos Generales del Estado para 2022</p><p class="s"></p></div></li>
+      <li><time>29 mar 2022</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 6/2022, plan de respuesta a la guerra en Ucrania</p><p class="s"></p></div></li>
+      <li><time>25 jun 2022</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 11/2022, prórroga de las medidas por la guerra en Ucrania</p><p class="s"></p></div></li>
+      <li><time>23 dic 2022</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley 31/2022, Presupuestos Generales del Estado para 2023</p><p class="s"></p></div></li>
+      <li><time>27 dic 2022</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley 38/2022, gravámenes temporales a energéticas y banca e impuesto de solidaridad de las grandes fortunas</p><p class="s"></p></div></li>
+      <li><time>27 dic 2022</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 20/2022, IVA del 0 % en alimentos básicos</p><p class="s"></p></div></li>
+      <li><time>28 jun 2023</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 5/2023, prórroga del IVA de alimentos y otras medidas</p><p class="s"></p></div></li>
+      <li><time>27 dic 2023</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 8/2023, prórroga de medidas por los conflictos en Ucrania y Oriente Próximo</p><p class="s"></p></div></li>
+      <li><time>29 feb 2024</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Senda de déficit 2024-2026: aprobada dos veces en el Congreso y rechazada dos veces en el Senado</p><p class="s"></p></div></li>
+      <li><time>26 jun 2024</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 4/2024, prórroga de medidas por los conflictos en Ucrania y Oriente Próximo</p><p class="s"></p></div></li>
+      <li><time>23 jul 2024</time><span class="mk"><i class="dot no"></i></span><div><p class="t">El Congreso rechaza la senda de déficit 2025-2027</p><p class="s">Rechazado</p></div></li>
+      <li><time>20 dic 2024</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley 7/2024, impuesto mínimo global, impuesto a la banca y a los cigarrillos electrónicos</p><p class="s"></p></div></li>
+      <li><time>22 ene 2025</time><span class="mk"><i class="dot no"></i></span><div><p class="t">El Congreso deroga el Real Decreto-ley 9/2024 (decreto ómnibus) y el 10/2024 (gravamen energético)</p><p class="s">Derogado: no se convalidó</p></div></li>
+      <li><time>30 sep 2025</time><span class="mk"><i class="dot no"></i></span><div><p class="t">No se presentan los Presupuestos de 2024, 2025 ni 2026</p><p class="s"></p></div></li>
+      <li><time>27 nov 2025</time><span class="mk"><i class="dot no"></i></span><div><p class="t">El Congreso rechaza la senda de déficit 2026-2028</p><p class="s">Rechazado</p></div></li>
+      <li><time>26 feb 2026</time><span class="mk"><i class="dot no"></i></span><div><p class="t">El Congreso deroga el Real Decreto-ley 2/2026, decreto ómnibus fiscal y de vulnerabilidad</p><p class="s">Derogado: no se convalidó</p></div></li>
+      <li><time>20 mar 2026</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 7/2026, Plan Integral de Respuesta a la Crisis en Oriente Medio</p><p class="s"></p></div></li>
+      <li><time>29 jun 2026</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 18/2026, retirada gradual de las rebajas por la crisis en Oriente Medio</p><p class="s"></p></div></li>
+      <li><time>23 jul 2026</time><span class="mk"><i class="dot no"></i></span><div><p class="t">El Congreso rechaza dos veces la senda de déficit 2027-2029</p><p class="s">Rechazado</p></div></li>
+      <li><time>23 jul 2026</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proyecto de Ley Orgánica de condonación de deuda autonómica: supera el debate de totalidad</p><p class="s">Votación sobre las enmiendas de totalidad: rechazadas, el texto sigue adelante</p></div></li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="h-a">
+    <h2 id="h-a">Qué ha aprobado el Estado<span class="count">19</span></h2>
+    <details class="yg">
+    <summary><span class="yy">2018</span><span class="yn">2 hechos</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>3 jul 2018</time><span class="badge of">Oficial</span></div>
+      <h3>Ley 6/2018, Presupuestos Generales del Estado para 2018</h3>
+      <p class="plain">Entran en vigor los Presupuestos de 2018, elaborados por el Gobierno anterior y ejecutados por el nuevo Gobierno.</p>
+      
+      <p class="limit">No consta el recuento de votos de la aprobación final.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Proyecto publicado en el BOCG el 9 de abril de 2018. El Congreso dio la aprobación final el 28 de junio de 2018, tras votar las enmiendas del Senado (se votaron 46 y salieron 32). Ley 6/2018, de 3 de julio, BOE núm. 161, de 4 de julio de 2018 (BOE-A-2018-9268). Diseñados por el Gobierno de Mariano Rajoy y asumidos por el de Pedro Sánchez, según Público.</p>
+          <a class="src" href="https://www.boe.es/eli/es/l/2018/07/03/6" target="_blank" rel="noopener">Oficial: BOE-A-2018-9268, 4 jul 2018</a>
+          <a class="src" href="https://www.congreso.es/es/cem/pge2018" target="_blank" rel="noopener">Oficial: Congreso, tramitación PGE 2018, 6 jul 2018</a>
+          <a class="src" href="https://www.publico.es/politica/presupuestos-2018-quedan-aprobados-definitivamente.html" target="_blank" rel="noopener">Público, «Los Presupuestos de 2018 quedan aprobados definitivamente», 28 jun 2018</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>8 nov 2018</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 17/2018, impuesto de las hipotecas a cargo del banco</h3>
+      <p class="plain">Desde noviembre de 2018, el impuesto de actos jurídicos documentados de una hipoteca lo paga el banco que presta el dinero, no quien la firma para comprar.</p>
+      <p class="vote"><span class="lbl">22 nov 2018 · Convalidado · las fuentes no dan el recuento</span></p>
+      <p class="limit">No consta el recuento de la convalidación.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto-ley 17/2018, de 8 de noviembre, por el que se modifica el Texto refundido de la Ley del Impuesto sobre Transmisiones Patrimoniales y Actos Jurídicos Documentados. BOE núm. 271, de 9 de noviembre de 2018 (BOE-A-2018-15344). En las escrituras de préstamo con garantía hipotecaria «se considerará sujeto pasivo al prestamista». Convalidado por el Congreso (Resolución de 22 de noviembre de 2018, BOE-A-2018-16338, según la ficha del BOE).</p>
+          <a class="src" href="https://www.boe.es/eli/es/rdl/2018/11/08/17" target="_blank" rel="noopener">Oficial: BOE-A-2018-15344, 9 nov 2018</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg">
+    <summary><span class="yy">2020</span><span class="yn">3 hechos</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>15 oct 2020</time><span class="badge of">Oficial</span></div>
+      <h3>Ley 4/2020, impuesto sobre determinados servicios digitales («tasa Google»)</h3>
+      <p class="plain">Las grandes empresas digitales pagan un 3 % sobre los ingresos de publicidad en línea, intermediación y venta de datos obtenidos en España, desde enero de 2021.</p>
+      
+      <p class="limit">No consta el recuento de las votaciones en el Congreso y el Senado.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Ley 4/2020, de 15 de octubre, del Impuesto sobre Determinados Servicios Digitales. BOE núm. 274, de 16 de octubre de 2020 (BOE-A-2020-12355). En vigor el 16 de enero de 2021. Tipo del 3 % sobre los ingresos por los servicios gravados. Se aplica a entidades con cifra de negocios superior a 750 millones de euros y más de 3 millones de ingresos por servicios digitales en España en el año anterior.</p>
+          <a class="src" href="https://www.boe.es/eli/es/l/2020/10/15/4" target="_blank" rel="noopener">Oficial: BOE-A-2020-12355, 16 oct 2020</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>15 oct 2020</time><span class="badge of">Oficial</span></div>
+      <h3>Ley 5/2020, impuesto sobre las transacciones financieras («tasa Tobin»)</h3>
+      <p class="plain">La compra de acciones de empresas españolas cotizadas de más de 1.000 millones de euros de capitalización paga un 0,2 %, desde enero de 2021.</p>
+      
+      <p class="limit">No consta el recuento de las votaciones en el Congreso y el Senado.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Ley 5/2020, de 15 de octubre, del Impuesto sobre las Transacciones Financieras. BOE núm. 274, de 16 de octubre de 2020 (BOE-A-2020-12356). En vigor el 16 de enero de 2021. Tipo del 0,2 % sobre adquisiciones onerosas de acciones de sociedades españolas admitidas a negociación con capitalización bursátil superior a 1.000 millones de euros a 1 de diciembre del año anterior. Exenciones para emisiones primarias, creación de mercado y operaciones intragrupo, entre otras.</p>
+          <a class="src" href="https://www.boe.es/eli/es/l/2020/10/15/5" target="_blank" rel="noopener">Oficial: BOE-A-2020-12356, 16 oct 2020</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>30 dic 2020</time><span class="badge of">Oficial</span></div>
+      <h3>Ley 11/2020, Presupuestos Generales del Estado para 2021</h3>
+      <p class="plain">Se aprueban los Presupuestos de 2021, los primeros del Gobierno de coalición.</p>
+      
+      <p class="limit">No consta el recuento de votos de la aprobación en el Congreso ni en el Senado.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>El 12 de noviembre de 2020 el Congreso rechazó las enmiendas a la totalidad (198 votos en contra de ellas). El 3 de diciembre de 2020 el Congreso aprobó el texto con el apoyo de PSOE, Unidas Podemos, ERC, PNV, Bildu, PDeCAT, Más País, Nueva Canarias, Compromís, Teruel Existe y PRC, según Hacienda. El Senado lo aprobó de forma definitiva el 22 de diciembre de 2020. Ley 11/2020, de 30 de diciembre, BOE núm. 341, de 31 de diciembre de 2020 (BOE-A-2020-17339).</p>
+          <a class="src" href="https://www.boe.es/eli/es/l/2020/12/30/11" target="_blank" rel="noopener">Oficial: BOE-A-2020-17339, 31 dic 2020</a>
+          <a class="src" href="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/hacienda/Paginas/2020/221220-senadopge.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, «El Senado aprueba de forma definitiva los Presupuestos Generales de 2021», 22 dic 2020</a>
+          <a class="src" href="https://www.hacienda.gob.es:443/Documentacion/Publico/GabineteMinistro/Notas%20Prensa/2020/S.E.%20PRESUPUESTOS%20Y%20GASTOS/03-12-20%20NP%20Votación%20Congreso%20PGE%202021.pdf" target="_blank" rel="noopener">Oficial: Ministerio de Hacienda, nota de prensa votación en el Congreso PGE 2021, 3 dic 2020</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg">
+    <summary><span class="yy">2021</span><span class="yn">3 hechos</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>24 jun 2021</time><span class="badge of">Oficial</span></div>
+      <h3>Rebajas de impuestos en la factura de la luz y el gas, 2021-2024 (Reales Decretos-leyes 12/2021, 11/2022 y 8/2023)</h3>
+      <p class="plain">Entre junio de 2021 y diciembre de 2024 el IVA de la luz bajó del 21 % al 10 % y después al 5 %, y se rebajaron otros impuestos de la electricidad. En 2024 el IVA de la luz volvió al 10 %.</p>
+      
+      <p class="limit">No hemos revisado los decretos intermedios (por ejemplo, los de finales de 2021 y de 2022) ni el recuento de la convalidación del Real Decreto-ley 12/2021. Las votaciones del 11/2022 y del 8/2023 están en sus propios hechos.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto-ley 12/2021, de 24 de junio (BOE núm. 151, de 25 de junio de 2021, BOE-A-2021-10584): IVA del 10 % para consumidores con menos de 10 kW cuando el precio mayorista supere 45 €/MWh, y para perceptores del bono social en situación de vulnerabilidad severa, hasta el 31 de diciembre de 2021; suspende el impuesto sobre el valor de la producción de energía eléctrica en el tercer trimestre de 2021. Real Decreto-ley 11/2022 (BOE-A-2022-10557): IVA de la electricidad del 5 % hasta el 31 de diciembre de 2022. Real Decreto-ley 8/2023 (BOE-A-2023-26452): IVA de la electricidad del 10 % durante 2024; del gas natural, 10 % hasta el 31 de marzo de 2024; impuesto especial sobre la electricidad del 2,5 % en el primer trimestre de 2024 y del 3,8 % en el segundo. Las prórrogas intermedias no se han revisado una a una.</p>
+          <a class="src" href="https://www.boe.es/eli/es/rdl/2021/06/24/12" target="_blank" rel="noopener">Oficial: BOE-A-2021-10584, 25 jun 2021</a>
+          <a class="src" href="https://www.boe.es/eli/es/rdl/2022/06/25/11" target="_blank" rel="noopener">Oficial: BOE-A-2022-10557, 26 jun 2022</a>
+          <a class="src" href="https://www.boe.es/eli/es/rdl/2023/12/27/8" target="_blank" rel="noopener">Oficial: BOE-A-2023-26452, 28 dic 2023</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>9 jul 2021</time><span class="badge of">Oficial</span></div>
+      <h3>Ley 11/2021, de prevención y lucha contra el fraude fiscal</h3>
+      <p class="plain">El límite para pagar en efectivo entre empresas y profesionales baja de 2.500 a 1.000 euros. La lista pública de deudores con Hacienda incluye a quien deba más de 600.000 euros.</p>
+      
+      <p class="limit">No consta el recuento de las votaciones ni la fecha de entrada en vigor de cada medida.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Ley 11/2021, de 9 de julio, de medidas de prevención y lucha contra el fraude fiscal. BOE núm. 164, de 10 de julio de 2021 (BOE-A-2021-11473). Límite de pagos en efectivo de 1.000 euros (10.000 para personas con domicilio fiscal fuera de España). Umbral de la lista de deudores tributarios en 600.000 euros, incluidos responsables solidarios. Prohíbe los mecanismos extraordinarios de regularización fiscal que reduzcan la deuda. Reducción de sanciones por actas con acuerdo del 65 % y por pronto pago del 40 %. Transpone la Directiva ATAD en el Impuesto sobre Sociedades.</p>
+          <a class="src" href="https://www.boe.es/eli/es/l/2021/07/09/11" target="_blank" rel="noopener">Oficial: BOE-A-2021-11473, 10 jul 2021</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>28 dic 2021</time><span class="badge of">Oficial</span></div>
+      <h3>Ley 22/2021, Presupuestos Generales del Estado para 2022</h3>
+      <p class="plain">Se aprueban los Presupuestos de 2022.</p>
+      
+      <p class="limit">No consta cuántos votos hubo en contra ni abstenciones.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>El Congreso aprobó el proyecto el 25 de noviembre de 2021 con 188 votos a favor (PSOE, Unidas Podemos, ERC, PNV, Bildu, Más País, PRC, Teruel Existe, Nueva Canarias y PDeCAT), según Bolsamanía. Votaron en contra PP, Ciudadanos, UPN, Coalición Canaria y Foro Asturias. El Congreso dio la aprobación definitiva el 28 de diciembre de 2021, al ratificar una enmienda del Senado. Ley 22/2021, de 28 de diciembre, BOE núm. 312, de 29 de diciembre de 2021 (BOE-A-2021-21653).</p>
+          <a class="src" href="https://www.boe.es/eli/es/l/2021/12/28/22" target="_blank" rel="noopener">Oficial: BOE-A-2021-21653, 29 dic 2021</a>
+          <a class="src" href="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/hacienda/Paginas/2022/281221-aprobados_pge.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, tramitación PGE 2022, 28 dic 2021</a>
+          <a class="src" href="https://www.bolsamania.com/noticias_amp/politica/congreso-aprueba-presupuestos-2022--8683688.html" target="_blank" rel="noopener">Bolsamanía, «El Congreso aprueba los Presupuestos de 2022, con 188 votos a favor», 25 nov 2021</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg">
+    <summary><span class="yy">2022</span><span class="yn">5 hechos</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>29 mar 2022</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 6/2022, plan de respuesta a la guerra en Ucrania</h3>
+      <p class="plain">Descuento de 20 céntimos por litro de carburante desde el 1 de abril de 2022, junto con otras medidas por la subida de precios.</p>
+      <div class="vote" role="img" aria-label="176 a favor, 172 en contra, 1 abstenciones"><span class="lbl">28 abr 2022 · Convalidado</span><div class="bar"><span class="y" style="width:50.43%">176 a favor</span><span class="n" style="width:49.28%">172 en contra</span><span class="a" style="width:0.29%"></span></div></div>
+      <p>En contra: Ciudadanos, CUP, ERC, Foro Asturias, Junts, Navarra Suma, PP, Vox.</p>
+      <p class="limit">El importe de 20 céntimos y el recuento de votos constan en prensa, no en el BOE leído. La lista completa de grupos en contra viene de una sola fuente (El Independiente); RTVC nombra a PP y ERC. El Real Decreto-ley 11/2022 la prorrogó hasta el 31 de diciembre de 2022.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto-ley 6/2022, de 29 de marzo, BOE núm. 76, de 30 de marzo de 2022 (BOE-A-2022-4972). Su capítulo VI crea una bonificación extraordinaria y temporal en el precio de determinados productos energéticos. Según RTVC, son 20 céntimos por litro: 15 los paga el Estado y 5 las petroleras. Convalidado por el Congreso el 28 de abril de 2022 (BOE-A-2022-7312).</p>
+          <a class="src" href="https://www.boe.es/eli/es/rdl/2022/03/29/6" target="_blank" rel="noopener">Oficial: BOE-A-2022-4972, 30 mar 2022</a>
+          <a class="src" href="https://boe.es/boe/dias/2022/05/05/pdfs/BOE-A-2022-7312.pdf" target="_blank" rel="noopener">Oficial: BOE-A-2022-7312, convalidación, 5 may 2022</a>
+          <a class="src" href="https://www.elindependiente.com/espana/2022/04/28/el-congreso-convalida-el-decreto-anticrisis-de-sanchez-por-la-minima-y-gracias-a-bildu/amp/" target="_blank" rel="noopener">El Independiente, «El Congreso convalida el decreto anticrisis por la mínima», 28 abr 2022</a>
+          <a class="src" href="https://rtvc.es/el-gobierno-salva-el-decreto-anticrisis-con-el-apoyo-de-bildu-y-el-voto-en-contra-de-erc-y-pp/" target="_blank" rel="noopener">RTVC, «El Gobierno salva el decreto anticrisis», 28 abr 2022</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>25 jun 2022</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 11/2022, prórroga de las medidas por la guerra en Ucrania</h3>
+      <p class="plain">Se mantiene hasta final de 2022 el descuento de 20 céntimos en el carburante, el IVA de la luz baja al 5 % y hay un pago único de 200 euros para personas con ingresos bajos. El transporte público multiviaje se abarata un 30 % desde septiembre.</p>
+      <div class="vote" role="img" aria-label="186 a favor, 51 en contra, 108 abstenciones"><span class="lbl">14 jul 2022 · Convalidado</span><div class="bar"><span class="y" style="width:53.91%">186 a favor</span><span class="n" style="width:14.78%">51 en contra</span><span class="a" style="width:31.30%">108</span></div></div>
+      <p class="limit">No hemos leído qué grupos votaron en contra o se abstuvieron.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto-ley 11/2022, de 25 de junio. BOE núm. 152, de 26 de junio de 2022 (BOE-A-2022-10557). Bonificación de carburantes hasta el 31 de diciembre de 2022; IVA de la electricidad del 5 % hasta esa fecha; ayuda de 200 euros para personas de bajos ingresos y patrimonio (solicitud hasta el 30 de septiembre de 2022); subvención del 30 % de los abonos y títulos multiviaje del 1 de septiembre al 31 de diciembre de 2022; subida extraordinaria del 15 % de las pensiones no contributivas y del ingreso mínimo vital hasta diciembre de 2022; prórroga del límite a la actualización de alquileres. Convalidado el 14 de julio de 2022 (Resolución del Congreso, BOE-A-2022-12011). Recuento según el Diario de Sesiones: 186 a favor, 51 en contra y 108 abstenciones (345 emitidos, con voto telemático).</p>
+          <a class="src" href="https://www.boe.es/eli/es/rdl/2022/06/25/11" target="_blank" rel="noopener">Oficial: BOE-A-2022-10557, 26 jun 2022</a>
+          <a class="src" href="https://boe.es//boe/dias/2022/07/20/pdfs/BOE-A-2022-12011.pdf" target="_blank" rel="noopener">Oficial: BOE-A-2022-12011, convalidación, 20 jul 2022</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-202.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-14-PL-202, 14 jul 2022</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>23 dic 2022</time><span class="badge of">Oficial</span></div>
+      <h3>Ley 31/2022, Presupuestos Generales del Estado para 2023</h3>
+      <p class="plain">Se aprueban los Presupuestos de 2023. Son los últimos aprobados: se han prorrogado desde entonces y no se presentaron Presupuestos para 2026.</p>
+      
+      <p class="limit">No consta el recuento de la votación final en el Senado. La no presentación de los Presupuestos de 2026 consta solo en prensa.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>El Congreso los aprobó el 24 de noviembre de 2022 con 187 votos a favor y 160 en contra; se abstuvo el BNG. Votaron en contra PP, Vox, Ciudadanos, Junts, CUP, Foro Asturias, Teruel Existe y tres diputados sin partido, según El Independiente (se votó por secciones). El Senado los aprobó sin cambios; la nota del Gobierno es del 20 de diciembre de 2022. Ley 31/2022, de 23 de diciembre, BOE núm. 308, de 24 de diciembre de 2022 (BOE-A-2022-22128). En marzo de 2026 los Presupuestos de 2026 no se habían presentado y los de 2023 llevaban tres prórrogas. Las votaciones de la senda de estabilidad figuran en hechos aparte.</p>
+          <a class="src" href="https://www.boe.es/eli/es/l/2022/12/23/31" target="_blank" rel="noopener">Oficial: BOE-A-2022-22128, 24 dic 2022</a>
+          <a class="src" href="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/hacienda/Paginas/2022/201222-aprobacion-definitiva-pge-2023.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, tramitación PGE 2023, 20 dic 2022</a>
+          <a class="src" href="https://www.elindependiente.com/espana/2022/11/24/el-congreso-valida-los-ultimos-pge-del-gobierno-y-los-remitira-al-senado/amp/" target="_blank" rel="noopener">El Independiente, «El Congreso valida los últimos PGE del Gobierno», 24 nov 2022</a>
+          <a class="src" href="https://www.menorca.info/actualidad/nacional/2026/03/18/2591545/montero-insiste-presentara-presupuestos-pero-concreta-cuando.html" target="_blank" rel="noopener">Menorca.info, «Montero insiste en que presentará los presupuestos, pero no concreta cuándo», 18 mar 2026</a>
+          <a class="src" href="https://www.elindependiente.com/espana/2026/07/23/el-gobierno-salva-el-primer-tramite-de-la-quita-de-la-deuda-pero-naufraga-de-nuevo-en-la-senda-de-deficit-por-culpa-de-junts/amp/" target="_blank" rel="noopener">El Independiente, senda de déficit rechazada (23 de julio de 2026), 23 jul 2026</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>27 dic 2022</time><span class="badge of">Oficial</span></div>
+      <h3>Ley 38/2022, gravámenes temporales a energéticas y banca e impuesto de solidaridad de las grandes fortunas</h3>
+      <p class="plain">Las grandes energéticas y los grandes bancos pagan un gravamen temporal en 2023 y 2024. Los patrimonios de más de 3 millones de euros pagan un impuesto temporal nuevo.</p>
+      
+      <p class="limit">No hemos verificado el recuento de votos en las Cortes ni las prórrogas o cambios posteriores de estas figuras.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Ley 38/2022, de 27 de diciembre, BOE núm. 311, de 28 de diciembre de 2022 (BOE-A-2022-22684). Gravamen energético del 1,2 % sobre la cifra de negocios (exentas las empresas con menos de 1.000 millones en 2019). Gravamen a entidades de crédito del 4,8 % sobre margen de intereses y comisiones (entidades con al menos 800 millones en 2019). Impuesto Temporal de Solidaridad de las Grandes Fortunas, complementario del de Patrimonio, para patrimonios netos de más de 3.000.000 de euros, con tipos del 1,7 %, 2,1 % y 3,5 %, durante dos ejercicios.</p>
+          <a class="src" href="https://www.boe.es/eli/es/l/2022/12/27/38" target="_blank" rel="noopener">Oficial: BOE-A-2022-22684, 28 dic 2022</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>27 dic 2022</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 20/2022, IVA del 0 % en alimentos básicos</h3>
+      <p class="plain">Desde el 1 de enero de 2023, el pan, la leche, los huevos, la fruta, la verdura y otros alimentos básicos pasan del 4 % al 0 % de IVA, y el aceite y la pasta del 10 % al 5 %.</p>
+      <div class="vote" role="img" aria-label="175 a favor, 7 en contra, 164 abstenciones"><span class="lbl">24 ene 2023 · Convalidado</span><div class="bar"><span class="y" style="width:50.58%">175 a favor</span><span class="n" style="width:2.02%">7 en contra</span><span class="a" style="width:47.40%">164</span></div></div>
+      <p class="limit">No sabemos qué grupos votaron en contra o se abstuvieron. Las prórrogas posteriores están en hechos propios.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto-ley 20/2022, de 27 de diciembre, BOE núm. 311, de 28 de diciembre de 2022 (BOE-A-2022-22685). Rebaja temporal del 1 de enero al 30 de junio de 2023, sujeta a la evolución de la inflación subyacente. Incluye además un cheque de 200 euros para personas con ingresos inferiores a 27.000 euros al año y descuentos en el transporte público. Convalidado por el Congreso el 24 de enero de 2023. Recuento según el Diario de Sesiones: 346 emitidos, 175 a favor, 7 en contra y 164 abstenciones.</p>
+          <a class="src" href="https://www.boe.es/eli/es/rdl/2022/12/27/20" target="_blank" rel="noopener">Oficial: BOE-A-2022-22685, 28 dic 2022</a>
+          <a class="src" href="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/mpresidencia14/Paginas/2023/240123-convalidacion-decreto-ley-respuesta-guerra.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, «El Gobierno logra la convalidación del tercer Real Decreto-ley de respuesta al impacto de la guerra en Ucrania», 24 ene 2023</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-239.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, DSCD-14-PL-239, 24 ene 2023</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg">
+    <summary><span class="yy">2023</span><span class="yn">2 hechos</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>28 jun 2023</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 5/2023, prórroga del IVA de alimentos y otras medidas</h3>
+      <p class="plain">El IVA del 0 % en pan, huevos, fruta y verdura y del 5 % en aceite y pasta sigue hasta final de 2023. Se mantienen descuentos de al menos el 50 % en el transporte público.</p>
+      <p class="vote"><span class="lbl">26 jul 2023 · Convalidado · las fuentes no dan el recuento</span></p>
+      <p class="limit">No consta el recuento de la votación en la Diputación Permanente. La resolución de convalidación del BOE la citamos por su referencia; no la hemos abierto.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto-ley 5/2023, de 28 de junio. BOE núm. 154, de 29 de junio de 2023 (BOE-A-2023-15135). Prórroga en el segundo semestre de 2023 de las rebajas del IVA de alimentos, sujeta a la inflación subyacente; ayudas para descuentos de al menos el 50 % en transporte colectivo de julio a diciembre de 2023; ayuda al gasóleo profesional; suspensión de desahucios de personas vulnerables hasta el 31 de diciembre de 2023; también incluye permisos laborales de la directiva de conciliación y medidas para La Palma. Según La Moncloa, séptimo paquete anticrisis, con 3.800 millones adicionales. Convalidado el 26 de julio de 2023 por la Diputación Permanente del Congreso, con las Cortes disueltas (Resolución, BOE-A-2023-17381).</p>
+          <a class="src" href="https://www.boe.es/eli/es/rdl/2023/06/28/5" target="_blank" rel="noopener">Oficial: BOE-A-2023-15135, 29 jun 2023</a>
+          <a class="src" href="https://boe.gob.es/boe/dias/2023/07/28/pdfs/BOE-A-2023-17381.pdf" target="_blank" rel="noopener">Oficial: BOE-A-2023-17381, convalidación, 28 jul 2023</a>
+          <a class="src" href="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/mpresidencia14/paginas/2023/260723-convalidaci-n-real-decreto-ley-anticrisis.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, convalidación del Real Decreto-ley anticrisis, 26 jul 2023</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>27 dic 2023</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 8/2023, prórroga de medidas por los conflictos en Ucrania y Oriente Próximo</h3>
+      <p class="plain">El IVA del 0 % en alimentos básicos y del 5 % en aceite y pasta sigue hasta junio de 2024. El IVA de la luz sube del 5 % al 10 % en 2024 y se suspenden las comisiones por amortizar antes una hipoteca variable.</p>
+      <div class="vote" role="img" aria-label="172 a favor, 171 en contra, 7 abstenciones"><span class="lbl">10 ene 2024 · Convalidado</span><div class="bar"><span class="y" style="width:49.14%">172 a favor</span><span class="n" style="width:48.86%">171 en contra</span><span class="a" style="width:2.00%"></span></div></div>
+      <p class="limit">No hemos leído qué grupos votaron en contra.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto-ley 8/2023, de 27 de diciembre. BOE núm. 310, de 28 de diciembre de 2023 (BOE-A-2023-26452). IVA de alimentos básicos al 0 % y de aceites y pastas al 5 % hasta el 30 de junio de 2024; IVA de la electricidad al 10 % en 2024; gas natural al 10 % hasta el 31 de marzo de 2024; mínimo exento de 700.000 euros en el impuesto de grandes fortunas para todos los contribuyentes; prórroga del bono social y del precio máximo del butano hasta el 30 de junio de 2024; suspensión hasta el 31 de diciembre de 2024 de las comisiones por amortización anticipada de hipotecas a tipo variable. Convalidado el 10 de enero de 2024. La primera votación telemática empató (171-171) y se repitió por llamamiento: 350 emitidos, 172 a favor, 171 en contra y 7 abstenciones. Según El Salto, se abstuvieron los siete diputados de Junts.</p>
+          <a class="src" href="https://www.boe.es/eli/es/rdl/2023/12/27/8" target="_blank" rel="noopener">Oficial: BOE-A-2023-26452, 28 dic 2023</a>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20240110.pdf" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, Pleno de 10 de enero de 2024, 10 ene 2024</a>
+          <a class="src" href="https://www.elsaltodiario.com/partidos-politicos/congreso-aprueba-dos-decretos-gobierno-podemos-tumba-subsidios" target="_blank" rel="noopener">El Salto, «El Gobierno salva por la mínima dos decretos», 10 ene 2024</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg">
+    <summary><span class="yy">2024</span><span class="yn">2 hechos</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>26 jun 2024</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 4/2024, prórroga de medidas por los conflictos en Ucrania y Oriente Próximo</h3>
+      <p class="plain">Se prorrogan en el segundo semestre de 2024 medidas por los conflictos de Ucrania y Oriente Próximo, entre ellas las rebajas del IVA de los alimentos básicos.</p>
+      <div class="vote" role="img" aria-label="178 a favor, 33 en contra, 138 abstenciones"><span class="lbl">23 jul 2024 · Convalidado</span><div class="bar"><span class="y" style="width:51.00%">178 a favor</span><span class="n" style="width:9.46%">33 en contra</span><span class="a" style="width:39.54%">138</span></div></div>
+      <p class="limit">No hemos podido abrir el texto del decreto en el BOE: la prórroga del IVA de alimentos consta en el titular de una fuente especializada y los tipos y plazos concretos no están verificados aquí. No sabemos qué grupos votaron en contra o se abstuvieron.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto-ley 4/2024, de 26 de junio, por el que se prorrogan determinadas medidas para afrontar las consecuencias económicas y sociales derivadas de los conflictos en Ucrania y Oriente Próximo y se adoptan medidas urgentes en materia fiscal, energética y social. Publicado en el BOE el 27 de junio de 2024. Convalidado en sesión extraordinaria del 23 de julio de 2024 (BOE-A-2024-15348): 349 emitidos, 178 a favor, 33 en contra y 138 abstenciones, según el Diario de Sesiones.</p>
+          <a class="src" href="https://boe.es/boe/dias/2024/07/25/pdfs/BOE-A-2024-15348.pdf" target="_blank" rel="noopener">Oficial: BOE-A-2024-15348, convalidación, 25 jul 2024</a>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20240723.pdf" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, Pleno de 23 de julio de 2024, 23 jul 2024</a>
+          <a class="src" href="https://www.fiscal-impuestos.com/node/37021" target="_blank" rel="noopener">Fiscal-impuestos.com, «El Gobierno prorroga las rebajas del IVA en los alimentos básicos y rebaja el IRPF en materia de retenciones» (titular), 26 jun 2024</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>20 dic 2024</time><span class="badge of">Oficial</span></div>
+      <h3>Ley 7/2024, impuesto mínimo global, impuesto a la banca y a los cigarrillos electrónicos</h3>
+      <p class="plain">Los grandes grupos empresariales tributan al menos un 15 %. Los bancos pagan un impuesto nuevo sobre intereses y comisiones, que sustituye al gravamen temporal, y se crea un impuesto a los líquidos de cigarrillos electrónicos.</p>
+      <div class="vote" role="img" aria-label="178 a favor, 171 en contra"><span class="lbl">21 nov 2024 · Aprobado</span><div class="bar"><span class="y" style="width:51.00%">178 a favor</span><span class="n" style="width:49.00%">171 en contra</span></div></div>
+      <p class="limit">El recuento es de la votación del 21 de noviembre (una fuente de prensa); no consta el de la votación final del 19 de diciembre. No hemos verificado los tipos del impuesto a la banca.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Ley 7/2024, de 20 de diciembre, por la que se establecen un Impuesto Complementario para garantizar un nivel mínimo global de imposición para los grupos multinacionales y los grupos nacionales de gran magnitud, un Impuesto sobre el margen de intereses y comisiones de determinadas entidades financieras y un Impuesto sobre los líquidos para cigarrillos electrónicos y otros productos relacionados con el tabaco, y se modifican otras normas tributarias. BOE núm. 307, de 21 de diciembre de 2024 (BOE-A-2024-26694). Impuesto complementario: transpone la Directiva (UE) 2022/2523, tipo mínimo del 15 % para grupos con 750 millones de cifra de negocios. El Congreso aprobó el texto el 21 de noviembre de 2024 con 178 votos a favor y 171 en contra (Menorca.info); incluía también una subida del IRPF para rentas del capital de más de 300.000 euros y una bajada del impuesto de sociedades para pymes. En la votación final del 19 de diciembre de 2024 se aprobó una enmienda de PP, Vox, Junts y PNV que derogó el gravamen temporal a las energéticas, según EFE en Infobae.</p>
+          <a class="src" href="https://www.boe.es/eli/es/l/2024/12/20/7" target="_blank" rel="noopener">Oficial: BOE-A-2024-26694, 21 dic 2024</a>
+          <a class="src" href="https://www.menorca.info/actualidad/nacional/2024/11/21/2279661/impuestos-espana-congreso-aprueba-paquete-fiscal-impuestos-banca-tabaco.html" target="_blank" rel="noopener">Menorca.info, «El Congreso aprueba el paquete fiscal del Gobierno», 21 nov 2024</a>
+          <a class="src" href="https://www.infobae.com/espana/agencias/2024/12/19/el-gobierno-salva-su-paquete-fiscal-aunque-no-evita-la-derogacion-del-impuesto-energetico/" target="_blank" rel="noopener">Infobae (EFE), «El Gobierno salva su paquete fiscal aunque no evita la derogación del impuesto energético», 19 dic 2024</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg" open>
+    <summary><span class="yy">2026</span><span class="yn">2 hechos</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>20 mar 2026</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 7/2026, Plan Integral de Respuesta a la Crisis en Oriente Medio</h3>
+      <p class="plain">De marzo a junio de 2026 el IVA de los carburantes, la luz y el gas baja del 21 % al 10 % y el impuesto de la gasolina y el gasóleo baja al mínimo de la UE. Transportistas, agricultores y pescadores reciben 20 céntimos por litro de gasóleo.</p>
+      <div class="vote" role="img" aria-label="175 a favor, 33 en contra, 141 abstenciones"><span class="lbl">26 mar 2026 · Convalidado</span><div class="bar"><span class="y" style="width:50.14%">175 a favor</span><span class="n" style="width:9.46%">33 en contra</span><span class="a" style="width:40.40%">141</span></div></div>
+      <p>En contra: Vox.</p>
+      <p class="limit">El recuento consta en una fuente de prensa (El Español); no hemos podido abrir el acta del Pleno. El grupo en contra lo confirman dos fuentes.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto-ley 7/2026, de 20 de marzo, por el que se aprueba el Plan Integral de Respuesta a la Crisis en Oriente Medio. BOE núm. 71, de 21 de marzo de 2026 (BOE-A-2026-6544). IVA del 10 % en carburantes, electricidad (hasta 10 kW), gas natural, pellets y leña hasta el 30 de junio de 2026; impuesto sobre hidrocarburos de gasóleo y gasolina al mínimo de la Directiva 2003/96/CE; impuesto especial sobre la electricidad del 5,11 % al 0,5 % hasta el 30 de junio; rebaja del impuesto a la producción eléctrica en 2026. Las rebajas de junio dependían de la evolución de los precios. Según Bolsamanía, también ayuda de 20 céntimos por litro de gasóleo profesional, congelación del butano, prohibición de despidos objetivos por la crisis en empresas con ayudas y control de márgenes por la CNMC; 80 medidas y 5.000 millones. Convalidado el 26 de marzo de 2026 con 175 votos a favor, 33 en contra y 141 abstenciones (El Español); en contra solo Vox, abstención de PP y Podemos (Bolsamanía y Orain).</p>
+          <a class="src" href="https://www.boe.es/eli/es/rdl/2026/03/20/7" target="_blank" rel="noopener">Oficial: BOE-A-2026-6544, 21 mar 2026</a>
+          <a class="src" href="https://www.elespanol.com/espana/politica/20260326/congreso-aprueba-decreto-anticrisis-rebajas-fiscales-voto-junts-abstencion-pp/1003744185173_0.html" target="_blank" rel="noopener">El Español, «El Congreso aprueba el decreto anticrisis», 26 mar 2026</a>
+          <a class="src" href="https://www.bolsamania.com/noticias_amp/economia/economia-amp-el-congreso-convalida-el-decreto-de-ayudas-fiscales-por-la-guerra-en-iran-con-solo-vox-en-contra--22184058.html" target="_blank" rel="noopener">Bolsamanía, «El Congreso convalida el decreto de ayudas fiscales por la guerra en Irán, con sólo Vox en contra», 26 mar 2026</a>
+          <a class="src" href="https://orain.eus/es/politica/2026/03/26/convalidado-congreso-decreto-medidas-consecuencias-guerra-iran/" target="_blank" rel="noopener">Orain, «Convalidado en el Congreso el decreto de medidas por la guerra de Irán», 26 mar 2026</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>29 jun 2026</time><span class="badge of">Oficial</span></div>
+      <h3>Real Decreto-ley 18/2026, retirada gradual de las rebajas por la crisis en Oriente Medio</h3>
+      <p class="plain">Desde julio de 2026 la luz y el gas vuelven al IVA del 21 %. El impuesto de la gasolina y el gasóleo baja 15 céntimos en julio, 10 en agosto y 5 en septiembre, y en octubre vuelve a su nivel.</p>
+      <div class="vote" role="img" aria-label="175 a favor, 33 en contra, 140 abstenciones"><span class="lbl">23 jul 2026 · Convalidado</span><div class="bar"><span class="y" style="width:50.29%">175 a favor</span><span class="n" style="width:9.48%">33 en contra</span><span class="a" style="width:40.23%">140</span></div></div>
+      <p class="limit">No hemos leído qué grupos votaron en contra o se abstuvieron. Que la tramitación como proyecto de ley decayera con la disolución es una deducción de las reglas de las Cortes, no lo hemos leído para esta norma.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto-ley 18/2026, de 29 de junio, por el que se adoptan determinadas medidas en el marco del Plan Integral de Respuesta a la Crisis en Oriente Medio. BOE núm. 158, de 30 de junio de 2026 (BOE-A-2026-14112). Rebaja del impuesto sobre hidrocarburos de 15, 10 y 5 céntimos por litro en julio, agosto y septiembre, ampliable si el IPC de los carburantes sube más de un 15 % interanual; fin del IVA reducido y de la rebaja del impuesto especial sobre la electricidad el 30 de junio, con cláusula para recuperarlos si suben los precios; ayuda a transportistas por carretera; seguimiento de márgenes por la CNMC hasta el 31 de diciembre de 2026; impuesto sobre el valor de la producción de energía eléctrica del 3,5 % en 2027 y 0 % desde 2028. Convalidado el 23 de julio de 2026: 348 emitidos, 175 a favor, 33 en contra y 140 abstenciones. Se tramita como proyecto de ley por urgencia (344 a favor). La tramitación decae con la disolución de las Cortes.</p>
+          <a class="src" href="https://www.boe.es/boe/dias/2026/06/30/pdfs/BOE-A-2026-14112.pdf" target="_blank" rel="noopener">Oficial: BOE-A-2026-14112, 30 jun 2026</a>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20260723.pdf" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, Pleno de 23 de julio de 2026, 23 jul 2026</a>
+          <a class="src" href="https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion193/20260723/Votacion007/VOT_20260723211929.pdf" target="_blank" rel="noopener">Oficial: Congreso, votación de tramitación como proyecto de ley (Sesión 193, votación 7), 23 jul 2026</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+  </section>
+
+  <section aria-labelledby="h-b">
+    <h2 id="h-b">Qué intentó y no salió<span class="count">10</span></h2>
+    <p class="lede">Solo se cuenta lo que pasó, sin juzgar a nadie. Los motivos de cada grupo se añadirán como cita literal del Diario de Sesiones.</p>
+    <details class="yg">
+    <summary><span class="yy">2018</span><span class="yn">1 hecho</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>27 jul 2018</time><span class="badge">Prensa · 2 fuentes</span></div>
+      <h3>Senda de déficit 2019-2021: rechazada en el Congreso y vetada en el Senado</h3>
+      <p class="plain">El Congreso rechazó en julio de 2018 los objetivos de déficit del nuevo Gobierno. En diciembre los aprobó, pero el Senado los vetó y siguieron los anteriores.</p>
+      <div class="vote" role="img" aria-label="88 a favor, 173 en contra, 86 abstenciones"><span class="lbl">27 jul 2018 · Rechazado</span><div class="bar"><span class="y" style="width:25.36%">88 a favor</span><span class="n" style="width:49.86%">173 en contra</span><span class="a" style="width:24.78%">86</span></div></div>
+      <p>En contra: Bildu, Ciudadanos, Coalición Canaria, Foro Asturias, PP, UPN.</p>
+      <p class="limit">El recuento de julio sale de una fuente (Alicante Plaza); Catalan News confirma el rechazo y los grupos PP y Ciudadanos en contra. No consta el recuento de la aprobación de diciembre en el Congreso. No hemos leído el Diario de Sesiones.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>27 de julio de 2018: el Congreso rechazó los objetivos de estabilidad (déficit del 1,8 % del PIB en 2019, 1,1 % en 2020 y 0,4 % en 2021) con 88 votos a favor (PSOE y PNV), 173 en contra (PP, Ciudadanos, UPN, Bildu, Foro Asturias, Coalición Canaria y un diputado de Unidos Podemos) y 86 abstenciones (Unidos Podemos, ERC, PDeCAT y Compromís), según Alicante Plaza. Diciembre de 2018: el Gobierno los volvió a presentar; el Congreso los aprobó con el apoyo de PSOE, Unidos Podemos, Compromís, PNV, PDeCAT y ERC (Legal Today), y el Senado los rechazó el 27 de diciembre con 150 votos en contra, 97 a favor y 1 abstención (Orain). Es la primera vez que el Senado usó esa capacidad de veto, introducida en 2012, según Orain.</p>
+          <a class="src" href="https://alicanteplaza.es/alicanteplaza/ElCongresorechazalosobjetivosdedficitpropuestosporelGobiernodeSnchez" target="_blank" rel="noopener">Alicante Plaza, «El Congreso rechaza los objetivos de déficit propuestos por el Gobierno de Sánchez», 27 jul 2018</a>
+          <a class="src" href="https://www.catalannews.com/politics/item/first-parliamentary-setback-for-new-spanish-government" target="_blank" rel="noopener">Catalan News, «First parliamentary setback for new Spanish government», 27 jul 2018</a>
+          <a class="src" href="https://www.legaltoday.com/opinion/blogs/transversal/blog-political-intelligence/el-congreso-aprueba-el-techo-del-gasto-del-gobierno-2018-12-21/" target="_blank" rel="noopener">Legal Today, «El Congreso aprueba el techo del gasto del Gobierno», 21 dic 2018</a>
+          <a class="src" href="https://orain.eus/es/politica/2018/12/27/el-pp-veta-senado-senda-deficit-gobierno-pedro-sanchez/" target="_blank" rel="noopener">Orain, «El PP veta en el Senado la senda de déficit», 27 dic 2018</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg">
+    <summary><span class="yy">2019</span><span class="yn">1 hecho</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>13 feb 2019</time><span class="badge">Prensa · 2 fuentes</span></div>
+      <h3>El Congreso devuelve el proyecto de Presupuestos de 2019</h3>
+      <p class="plain">El Congreso aprobó las enmiendas a la totalidad y el proyecto de Presupuestos de 2019 volvió al Gobierno. No hubo Presupuestos nuevos para 2019.</p>
+      <div class="vote" role="img" aria-label="191 a favor, 158 en contra, 1 abstenciones"><span class="lbl">13 feb 2019 · Votación sobre las enmiendas de totalidad: aprobadas, el texto vuelve al Gobierno</span><div class="bar"><span class="y" style="width:54.57%">191 a favor</span><span class="n" style="width:45.14%">158 en contra</span><span class="a" style="width:0.29%"></span></div></div>
+      <p class="limit">No hemos leído el Diario de Sesiones del Congreso.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Debate de totalidad los días 12 y 13 de febrero de 2019. Las enmiendas de devolución salieron con 191 votos a favor, 158 en contra y 1 abstención. Presentaron enmiendas PP, Ciudadanos, ERC, PDeCAT, Coalición Canaria y Foro Asturias.</p>
+          <a class="src" href="https://www.laboral-social.com/node/20571" target="_blank" rel="noopener">Laboral-Social, «El Pleno aprueba la devolución al Gobierno del proyecto de PGE», 14 feb 2019</a>
+          <a class="src" href="https://www.ultimahora.es/noticias/nacional/2019/02/13/1057969/congreso-tumba-presupuestos-sentencia-legislatura-sanchez.html" target="_blank" rel="noopener">Última Hora, «El Congreso tumba los Presupuestos», 13 feb 2019</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg">
+    <summary><span class="yy">2024</span><span class="yn">2 hechos</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>29 feb 2024</time><span class="badge of">Oficial</span></div>
+      <h3>Senda de déficit 2024-2026: aprobada dos veces en el Congreso y rechazada dos veces en el Senado</h3>
+      <p class="plain">El Congreso aprobó los objetivos de déficit para 2024-2026, pero el Senado los rechazó dos veces. Hacienda aplicó los objetivos enviados antes a Bruselas.</p>
+      
+      <p class="limit">El recuento del Congreso de 29 de febrero y el segundo rechazo del Senado constan solo en prensa (una fuente cada uno). No consta la fecha exacta ni el recuento de las votaciones del Senado.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Objetivos de déficit del conjunto de las Administraciones: 3,0 % del PIB en 2024, 2,7 % en 2025 y 2,5 % en 2026 (Hacienda). Aprobados por el Consejo de Ministros el 12 de diciembre de 2023; respaldados por el Congreso el 10 de enero de 2024; rechazados por el Senado el 7 de febrero de 2024; aprobados de nuevo por el Gobierno el 13 de febrero. El Congreso los aprobó el 29 de febrero de 2024 con 176 votos a favor (PSOE, Sumar, PNV, ERC, EH Bildu, Junts, CC, BNG y Podemos) y 171 en contra (PP, Vox y UPN), según Redacción Médica. El Senado los rechazó por segunda vez a primeros de marzo de 2024. Según Hacienda, se aplicaron los objetivos del Programa de Estabilidad de abril de 2023.</p>
+          <a class="src" href="https://www.hacienda.gob.es/Documentacion/Publico/GabineteMinistro/Notas%20Prensa/2024/CONSEJO-MINISTROS/13-02-24-NP-Segunda-aprobacion-objetivos-de-estabilidad.pdf" target="_blank" rel="noopener">Oficial: Ministerio de Hacienda, nota de 13 de febrero de 2024, 13 feb 2024</a>
+          <a class="src" href="https://www.redaccionmedica.com/politica/20240229/el-congreso-aprueba-los-objetivos-de-deficit-con-mas-margen-para-sanidad/217768_0.html" target="_blank" rel="noopener">Redacción Médica, «El Congreso aprueba los objetivos de déficit», 29 feb 2024</a>
+          <a class="src" href="https://www.redaccionmedica.com/politica/20240306/el-senado-tumba-la-senda-fiscal-del-ejecutivo-con-mas-margen-en-sanidad/219378_0.amp.html" target="_blank" rel="noopener">Redacción Médica, «El Senado tumba la senda fiscal del Ejecutivo», 6 mar 2024</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>23 jul 2024</time><span class="badge of">Oficial</span></div>
+      <h3>El Congreso rechaza la senda de déficit 2025-2027</h3>
+      <p class="plain">El Congreso no aprobó los objetivos de déficit y deuda para 2025-2027, paso previo a los Presupuestos de 2025.</p>
+      <div class="vote" role="img" aria-label="171 a favor, 178 en contra"><span class="lbl">23 jul 2024 · Rechazado</span><div class="bar"><span class="y" style="width:49.00%">171 a favor</span><span class="n" style="width:51.00%">178 en contra</span></div></div>
+      <p class="limit">El acta no menciona abstenciones (El Independiente dice que no hubo). No hemos leído el voto de cada grupo.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Votación en el Pleno del 23 de julio de 2024 sobre los objetivos de estabilidad presupuestaria y de deuda pública: 349 emitidos, 171 a favor y 178 en contra, según el Diario de Sesiones. Junts anunció su voto en contra, según El Independiente.</p>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20240723.pdf" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, Pleno de 23 de julio de 2024, 23 jul 2024</a>
+          <a class="src" href="https://www.elindependiente.com/espana/2024/07/23/junts-tumba-la-senda-de-estabilidad-del-gobierno/amp/" target="_blank" rel="noopener">El Independiente, «Junts tumba la senda de estabilidad del Gobierno», 23 jul 2024</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg">
+    <summary><span class="yy">2025</span><span class="yn">3 hechos</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>22 ene 2025</time><span class="badge of">Oficial</span></div>
+      <h3>El Congreso deroga el Real Decreto-ley 9/2024 (decreto ómnibus) y el 10/2024 (gravamen energético)</h3>
+      <p class="plain">El Congreso no convalidó el decreto que subía las pensiones un 2,8 % para 2025 y mantenía ayudas al transporte, entre otras medidas. Tampoco convalidó el gravamen a las energéticas para 2025.</p>
+      <div class="vote" role="img" aria-label="171 a favor, 177 en contra, 1 abstenciones"><span class="lbl">22 ene 2025 · Derogado: no se convalidó</span><div class="bar"><span class="y" style="width:49.00%">171 a favor</span><span class="n" style="width:50.72%">177 en contra</span><span class="a" style="width:0.29%"></span></div></div>
+      <p>En contra: Junts, PP, Vox.</p>
+      <p class="limit">La derogación consta en el Congreso; el recuento de votos solo en prensa (una fuente para cada decreto). No consta cuántos votos sumó la abstención en el 9/2024. No hemos verificado qué medidas se aprobaron después por otras normas.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto-ley 9/2024, de 23 de diciembre, BOE núm. 309, de 24 de diciembre de 2024 (BOE-A-2024-26915). Incluía la revalorización de pensiones del 2,8 %, nuevas ayudas al transporte público desde julio de 2025, la suspensión de desahucios hasta finales de 2025 y medidas tributarias. El Congreso lo derogó el 22 de enero de 2025 con 177 votos en contra y 171 a favor; UPN se abstuvo. El mismo día derogó el Real Decreto-ley 10/2024, que prorrogaba un gravamen temporal a las energéticas para 2025: 183 en contra, 165 a favor y 1 abstención (en contra PP, Vox, Junts, PNV y UPN, según Bolsamanía).</p>
+          <a class="src" href="https://www.boe.es/eli/es/rdl/2024/12/23/9" target="_blank" rel="noopener">Oficial: BOE-A-2024-26915, 24 dic 2024</a>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXV/tramit_pleno20250122_89.pdf" target="_blank" rel="noopener">Oficial: Congreso, orden del día del Pleno de 22 de enero de 2025, 22 ene 2025</a>
+          <a class="src" href="https://valenciaplaza.com/pp-vox-junts-derogan-decreto-subida-pensiones-ayudas-transporte-dana" target="_blank" rel="noopener">Valencia Plaza, «PP, Vox y Junts derogan el decreto de la subida de pensiones», 22 ene 2025</a>
+          <a class="src" href="https://www.bolsamania.com/noticias/politica/congreso-rechaza-decreto-gravamen-empresas-energeticas--18614236.html" target="_blank" rel="noopener">Bolsamanía, «El Congreso rechaza el decreto sobre el gravamen a las empresas energéticas», 22 ene 2025</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>30 sep 2025</time><span class="badge">Prensa · 2 fuentes</span></div>
+      <h3>No se presentan los Presupuestos de 2024, 2025 ni 2026</h3>
+      <p class="plain">El Gobierno no llevó al Congreso los Presupuestos de 2024, 2025 ni 2026. Siguen en vigor, prorrogados, los de 2023.</p>
+      
+      <p class="limit">No hay un acto oficial de renuncia: la no presentación consta en prensa. No hemos verificado si el Gobierno aprobó un acuerdo formal de prórroga.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>13 de marzo de 2024: el Gobierno renuncia a presentar los Presupuestos de 2024 tras el adelanto de las elecciones catalanas y se centra en los de 2025 (Valencia Plaza, con fuentes de La Moncloa). 30 de septiembre de 2025: según Euronews, por tercer año el proyecto no se presentó antes del 30 de septiembre, plazo que fija el artículo 134.3 de la Constitución, y siguen vigentes las cuentas de 2023. En marzo de 2026 los Presupuestos de 2026 seguían sin presentarse (Menorca.info). Si no hay Presupuestos aprobados el 1 de enero, se prorrogan los del año anterior (artículo 134.4 de la Constitución).</p>
+          <a class="src" href="https://valenciaplaza.com/el-gobierno-renuncia-a-presentar-presupuestos-para-2024-tras-el-adelanto-electoral-en-cataluna" target="_blank" rel="noopener">Valencia Plaza, «El Gobierno renuncia a presentar Presupuestos para 2024», 13 mar 2024</a>
+          <a class="src" href="https://es.euronews.com/2025/09/30/el-gobierno-incumple-por-tercer-ano-consecutivo-el-plazo-para-presentar-los-presupuestos-d" target="_blank" rel="noopener">Euronews, «El Gobierno incumple por tercer año consecutivo el plazo para presentar los Presupuestos», 30 sep 2025</a>
+          <a class="src" href="https://www.menorca.info/actualidad/nacional/2026/03/18/2591545/montero-insiste-presentara-presupuestos-pero-concreta-cuando.html" target="_blank" rel="noopener">Menorca.info, «Montero insiste en que presentará los presupuestos, pero no concreta cuándo», 18 mar 2026</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>27 nov 2025</time><span class="badge of">Oficial</span></div>
+      <h3>El Congreso rechaza la senda de déficit 2026-2028</h3>
+      <p class="plain">El Congreso no aprobó los objetivos de déficit y deuda para 2026-2028. Las comunidades autónomas tuvieron que cuadrar sus cuentas sin el margen de déficit propuesto.</p>
+      <div class="vote" role="img" aria-label="164 a favor, 178 en contra, 5 abstenciones"><span class="lbl">27 nov 2025 · Rechazado</span><div class="bar"><span class="y" style="width:47.26%">164 a favor</span><span class="n" style="width:51.30%">178 en contra</span><span class="a" style="width:1.44%"></span></div></div>
+      <p>En contra: Junts, PP, UPN, Vox.</p>
+      <p class="limit">Los grupos en contra los nombra una fuente de prensa.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Votación del 27 de noviembre de 2025: 347 emitidos, 164 a favor, 178 en contra y 5 abstenciones, según el Diario de Sesiones. En contra PP, Vox, Junts y UPN; se abstuvieron Podemos y la diputada de Compromís Àgueda Micó, según Menorca.info. Según el Gobierno, las comunidades pierden 5.485 millones de margen y deben registrar equilibrio presupuestario; el Gobierno sostuvo que el rechazo no impedía presentar los Presupuestos de 2026.</p>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20251127.pdf" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, Pleno de 27 de noviembre de 2025, 27 nov 2025</a>
+          <a class="src" href="https://www.menorca.info/actualidad/nacional/2025/11/27/2520485/congreso-rechaza-senda-estabilidad-obliga-gobierno-presentarla-nuevo.html" target="_blank" rel="noopener">Menorca.info, «El Congreso rechaza la senda de estabilidad y obliga al Gobierno a presentarla de nuevo», 27 nov 2025</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+    <details class="yg" open>
+    <summary><span class="yy">2026</span><span class="yn">3 hechos</span></summary>
+    <div class="ygi">
+    <article class="fact">
+      <div class="meta"><time>26 feb 2026</time><span class="badge of">Oficial</span></div>
+      <h3>El Congreso deroga el Real Decreto-ley 2/2026, decreto ómnibus fiscal y de vulnerabilidad</h3>
+      <p class="plain">El Congreso no convalidó el decreto que prorrogaba deducciones fiscales, el régimen de módulos de autónomos, el bono social eléctrico y la suspensión de desahucios. Era el segundo intento tras el 16/2025, también derogado.</p>
+      <div class="vote" role="img" aria-label="172 a favor, 177 en contra, 1 abstenciones"><span class="lbl">26 feb 2026 · Derogado: no se convalidó</span><div class="bar"><span class="y" style="width:49.14%">172 a favor</span><span class="n" style="width:50.57%">177 en contra</span><span class="a" style="width:0.29%"></span></div></div>
+      <p class="limit">El recuento procede de una fuente (Primera Lectura). No hemos leído qué grupos votaron en contra en esta ficha (la ficha de clima cita prensa: PP, Vox y Junts).</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Real Decreto-ley 2/2026, de 3 de febrero, por el que se adoptan medidas urgentes para hacer frente a situaciones de vulnerabilidad social, en materia tributaria y relativas a los recursos de los sistemas de financiación territorial. BOE núm. 31, de 4 de febrero de 2026. Contenido, según Primera Lectura: límites del régimen de módulos (estimación objetiva) del IRPF y del régimen simplificado del IVA; prórroga hasta el 31 de diciembre de 2026 de deducciones por eficiencia energética y vehículo eléctrico; prórroga del bono social eléctrico y de la suspensión de desahucios de hogares vulnerables. Sustituía en parte al Real Decreto-ley 16/2025, derogado el 27 de enero de 2026 (ver fichas de pensiones y clima). Derogado el 26 de febrero de 2026 (Resolución del Congreso, BOE-A-2026-4667) con 172 votos a favor, 177 en contra y 1 abstención.</p>
+          <a class="src" href="https://www.boe.es/boe/dias/2026/02/28/pdfs/BOE-A-2026-4667.pdf" target="_blank" rel="noopener">Oficial: BOE-A-2026-4667, derogación, 28 feb 2026</a>
+          <a class="src" href="https://primeralecturaediciones.com/en-tramitacion/archivo/el-congreso-de-los-diputados-no-convalida-el-real-decreto-ley-2-2026-de-3-de-febrero/" target="_blank" rel="noopener">Primera Lectura, «El Congreso no convalida el Real Decreto-ley 2/2026», 26 feb 2026</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>23 jul 2026</time><span class="badge of">Oficial</span></div>
+      <h3>El Congreso rechaza dos veces la senda de déficit 2027-2029</h3>
+      <p class="plain">El Congreso no aprobó en julio de 2026 los objetivos de déficit para 2027-2029, ni en la primera votación ni en la segunda. Era el paso previo a los Presupuestos de 2027.</p>
+      <div class="vote" role="img" aria-label="166 a favor, 176 en contra, 5 abstenciones"><span class="lbl">23 jul 2026 · Rechazado</span><div class="bar"><span class="y" style="width:47.84%">166 a favor</span><span class="n" style="width:50.72%">176 en contra</span><span class="a" style="width:1.44%"></span></div></div>
+      <p>En contra: Junts, PP, UPN, Vox.</p>
+      <p class="limit">Los grupos de cada voto los da una fuente de prensa. El Español no precisa el año del objetivo del 1,8 %.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Primera votación, 14 de julio de 2026: 350 emitidos, 167 a favor, 178 en contra y 5 abstenciones. Segunda votación, 23 de julio de 2026, junto al límite de gasto no financiero de 2027: 347 emitidos, 166 a favor, 176 en contra y 5 abstenciones (Diario de Sesiones). Según El Independiente, en la segunda votaron en contra PP, Vox, Junts y UPN; a favor PSOE, Sumar, PNV, EH Bildu, ERC, BNG y Coalición Canaria; se abstuvieron los cuatro diputados de Podemos y Àgueda Micó (Compromís). Según El Español, la senda fijaba un déficit del 1,8 % del PIB el año siguiente, 1,6 % en 2028 y 1,5 % en 2029.</p>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20260714.pdf" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, Pleno de 14 de julio de 2026, 14 jul 2026</a>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20260723.pdf" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, Pleno de 23 de julio de 2026, 23 jul 2026</a>
+          <a class="src" href="https://www.elindependiente.com/espana/2026/07/23/el-gobierno-salva-el-primer-tramite-de-la-quita-de-la-deuda-pero-naufraga-de-nuevo-en-la-senda-de-deficit-por-culpa-de-junts/amp/" target="_blank" rel="noopener">El Independiente, senda de déficit rechazada (23 de julio de 2026), 23 jul 2026</a>
+          <a class="src" href="https://www.elespanol.com/espana/politica/20260714/congreso-tumba-senda-estabilidad-votos-pp-vox-junts-evidencia-minoria-sanchez/1003744320915_0.html" target="_blank" rel="noopener">El Español, «El Congreso tumba la senda de estabilidad», 14 jul 2026</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>23 jul 2026</time><span class="badge of">Oficial</span></div>
+      <h3>Proyecto de Ley Orgánica de condonación de deuda autonómica: supera el debate de totalidad</h3>
+      <p class="plain">El Congreso rechazó devolver al Gobierno la ley para que el Estado asuma parte de la deuda de las comunidades autónomas de régimen común. No llegó a aprobarse antes de la disolución.</p>
+      <div class="vote" role="img" aria-label="170 a favor, 178 en contra"><span class="lbl">23 jul 2026 · Votación sobre las enmiendas de totalidad: rechazadas, el texto sigue adelante</span><div class="bar"><span class="y" style="width:48.85%">170 a favor</span><span class="n" style="width:51.15%">178 en contra</span></div></div>
+      <p class="limit">El importe de 83.000 millones procede de prensa. No hemos verificado el estado del proyecto a la disolución (6 de octubre de 2026); suponemos que decae.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Proyecto de Ley Orgánica de medidas excepcionales de sostenibilidad financiera para las comunidades autónomas de régimen común. Según El Independiente, prevé condonar más de 83.000 millones de euros de deuda. Enmiendas a la totalidad de Vox y del PP votadas el 23 de julio de 2026: 348 emitidos, 170 a favor de las enmiendas y 178 en contra; no salieron y el proyecto siguió su tramitación.</p>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20260723.pdf" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, Pleno de 23 de julio de 2026, 23 jul 2026</a>
+          <a class="src" href="https://www.elindependiente.com/espana/2026/07/23/el-gobierno-salva-el-primer-tramite-de-la-quita-de-la-deuda-pero-naufraga-de-nuevo-en-la-senda-de-deficit-por-culpa-de-junts/amp/" target="_blank" rel="noopener">El Independiente, quita de la deuda (23 de julio de 2026), 23 jul 2026</a>
+        </div>
+      </details>
+    </article>
+    </div>
+    </details>
+  </section>
+
+  <section aria-labelledby="h-c">
+    <h2 id="h-c">Qué dicen las cifras oficiales</h2>
+    <p class="lede">Se enseñan para ver la escala, no para repartir culpas.</p>
+    <div class="chart">
+      <h3>IPC, variación media anual (%)</h3>
+      <div id="c1"></div>
+      <p class="cap">Variación de la media anual del Índice de Precios de Consumo general (INE) frente a la del año anterior; no es la tasa de diciembre. Todos los años salen de la serie oficial del INE «Nacional. Índice general. Variación anual» de las medias anuales (tabla 50934, serie IPC278295), consultada a través del servicio de datos del INE. Las notas de prensa del IPC de diciembre del INE no publican la media anual, solo la tasa de diciembre. El índice cambió de base en 2021 (base 2021 = 100). La inflación depende también de la política monetaria del Banco Central Europeo y de los precios de la energía, no solo de las decisiones del Gobierno.</p>
+      <details>
+        <summary>Fuentes</summary>
+        <div class="in">
+          <a class="src" href="https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/IPC278295?nult=10" target="_blank" rel="noopener">Oficial: INE, IPC base 2021, medias anuales: serie «Nacional. Índice general. Variación anual» (IPC278295), 2016-2025, 15 ene 2026</a>
+          <a class="src" href="https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/50934?nult=10" target="_blank" rel="noopener">Oficial: INE, IPC, tabla 50934 «Índices nacionales: general y de grupos ECOICOP. Medias anuales», 15 ene 2026</a>
+          <a class="src" href="https://ine.es/prodyser/espa_cifras/2019/22/" target="_blank" rel="noopener">Oficial: INE, España en cifras 2019 (dato 2018: «La tasa media del IPC general en 2018 es de 1,7%»), 2019</a>
+          <a class="src" href="https://www.ine.es/dyngs/Prensa/IPC1225.htm" target="_blank" rel="noopener">Oficial: INE, nota de prensa IPC diciembre 2025 (tasa de diciembre 2,9 %, sin media anual), 15 ene 2026</a>
+        </div>
+      </details>
+    </div>
+    <div class="chart">
+      <h3>PIB, crecimiento anual en volumen (%)</h3>
+      <div id="c2"></div>
+      <p class="cap">Variación anual del PIB en volumen, Contabilidad Nacional Anual del INE. 2018-2020: serie de la Revisión Estadística 2024 (nota de 18 de septiembre de 2024). 2021-2025: nota de 18 de septiembre de 2026; en ella 2023 pasa a definitivo, 2024 es provisional y 2025 es estimación de avance, y pueden revisarse. 2021 y 2022 de esa nota solo aparecen en su gráfico (6,7 % y 6,4 %; la nota de 2024 daba 6,2 % para 2022). Todos los años tienen fuente oficial abierta.</p>
+      <details>
+        <summary>Fuentes</summary>
+        <div class="in">
+          <a class="src" href="https://www.ine.es/dyngs/Prensa/CNA2023.htm" target="_blank" rel="noopener">Oficial: INE, Contabilidad Nacional Anual, Revisión Estadística 2024 (serie 1995-2023), 18 sep 2024</a>
+          <a class="src" href="https://ine.es/dyngs/Prensa/CNA2025.htm" target="_blank" rel="noopener">Oficial: INE, Contabilidad Nacional Anual, serie actualizada 2025, 18 sep 2026</a>
+        </div>
+      </details>
+    </div>
+    <div class="chart">
+      <h3>Deuda pública, % del PIB a final de año</h3>
+      <div id="c3"></div>
+      <p class="cap">Deuda de las Administraciones Públicas según el Protocolo de Déficit Excesivo, en porcentaje del PIB, según la notificación enviada a la Comisión Europea a finales de septiembre de 2026 (Banco de España, Boletín Estadístico, cuadro 2.9). Incorpora el PIB revisado; por eso puede diferir de notas anteriores (el Banco de España dio 100,7 % para 2025 en marzo de 2026). Todos los años (2018-2025) tienen fuente oficial abierta (cuadro 2.9 del Banco de España, leído en noviembre de 2026).</p>
+      <details>
+        <summary>Fuentes</summary>
+        <div class="in">
+          <a class="src" href="https://www.bde.es/webbde/es/estadis/infoest/a0209.pdf" target="_blank" rel="noopener">Oficial: Banco de España, Boletín Estadístico, cuadro 2.9 Déficit y deuda de las AAPP, 30 sep 2026</a>
+          <a class="src" href="https://www.bde.es/wbe/es/noticias-eventos/actualidad-banco-espana/notas-banco-espana/deuda-aapp-2025t4.html" target="_blank" rel="noopener">Oficial: Banco de España, nota deuda AAPP cierre de 2025, 31 mar 2026</a>
+        </div>
+      </details>
+    </div>
+    <div class="limit"><p>Qué no dicen estas cifras: qué las causó ni qué parte corresponde al Estado, a las comunidades o a los ayuntamientos.</p><ul class="nolist"><li>Recuento oficial de votos de la aprobación final de los Presupuestos de 2018, 2021, 2022 y 2023, y de las Leyes 4/2020, 5/2020, 11/2021 y 38/2022.</li><li>Recuento de las convalidaciones de los Reales Decretos-leyes 17/2018, 12/2021 y 5/2023, y acta oficial de la convalidación del 7/2026 (solo prensa).</li><li>Qué grupos votaron en contra o se abstuvieron en varias convalidaciones (11/2022, 20/2022, 8/2023, 4/2024, 18/2026).</li><li>Texto del Real Decreto-ley 4/2024 (no pudimos abrirlo en el BOE) y tipos del impuesto a la banca de la Ley 7/2024.</li><li>Decretos anticrisis intermedios no revisados uno a uno (finales de 2021 y de 2022) y decretos económicos de la COVID-19 no incluidos.</li><li>La no presentación de los Presupuestos de 2024, 2025 y 2026 consta solo en prensa; no hay acto oficial de renuncia.</li><li>Estado final del proyecto de condonación de deuda autonómica a la disolución de las Cortes.</li></ul></div>
+  </section>
+
+  <footer class="foot">
+    <p><b>Estado de la verificación.</b> Las normas tienen fuente oficial (BOE). Los recuentos de las sendas de déficit de 2024, 2025 y 2026, de la condonación de deuda y de las convalidaciones de los Reales Decretos-leyes 11/2022, 20/2022, 8/2023, 4/2024 y 18/2026 salen del Diario de Sesiones del Congreso. Con dos fuentes de prensa: el rechazo de los Presupuestos de 2019, la senda de 2018, la no presentación de Presupuestos desde 2024 y la convalidación del decreto de carburantes de 2022. Con una: los recuentos de la derogación del decreto ómnibus, del gravamen energético y del 2/2026, de la convalidación del 7/2026 y de la Ley 7/2024. El IPC (todos los años), el PIB (INE) y la deuda (Banco de España) son oficiales. Que Pedro Sánchez preside el Gobierno desde junio de 2018 es de dominio público.</p>
+    <p>Última revisión: 11 de noviembre de 2026. ¿Un dato está mal? <a href="metodologia.html#correcciones">Dínoslo</a>. Cómo se ha hecho: <a href="metodologia.html">metodología</a>.</p>
+  </footer>
+</main>
+
+<script>
+(function(){
+  var SPECS=[{"id": "c1", "u": "%", "dec": 1, "t": "IPC, variación media anual (%)", "s": [{"l": "2018", "v": 1.7, "c": false}, {"l": "2019", "v": 0.7, "c": false}, {"l": "2020", "v": -0.3, "c": false}, {"l": "2021", "v": 3.1, "c": false}, {"l": "2022", "v": 8.4, "c": false}, {"l": "2023", "v": 3.5, "c": false}, {"l": "2024", "v": 2.8, "c": false}, {"l": "2025", "v": 2.7, "c": false}]}, {"id": "c2", "u": "%", "dec": 1, "t": "PIB, crecimiento anual en volumen (%)", "s": [{"l": "2018", "v": 2.4, "c": false}, {"l": "2019", "v": 2.0, "c": false}, {"l": "2020", "v": -10.9, "c": false}, {"l": "2021", "v": 6.7, "c": false}, {"l": "2022", "v": 6.4, "c": false}, {"l": "2023", "v": 2.4, "c": false}, {"l": "2024", "v": 3.7, "c": false}, {"l": "2025", "v": 2.6, "c": false}]}, {"id": "c3", "u": "%", "dec": 1, "t": "Deuda pública, % del PIB a final de año", "s": [{"l": "2018", "v": 99.8, "c": false}, {"l": "2019", "v": 97.7, "c": false}, {"l": "2020", "v": 119.3, "c": false}, {"l": "2021", "v": 115.7, "c": false}, {"l": "2022", "v": 109.3, "c": false}, {"l": "2023", "v": 105.3, "c": false}, {"l": "2024", "v": 101.4, "c": false}, {"l": "2025", "v": 100.5, "c": false}]}];
+  function num(v,dec){var s=Math.abs(v).toFixed(dec).split('.');s[0]=s[0].replace(/\B(?=(\d{3})+(?!\d))/g,'.');return (v<0?'−':'')+s.join(',')}
+  function fmt(v,u,dec){var n=num(v,dec);if(!u)return n;return u==='%'?n+' %':n+' '+u}
+  SPECS.forEach(function(sp){
+    var vals=sp.s.filter(function(d){return d.v!=null}).map(function(d){return d.v});
+    var mn=Math.min(0,Math.min.apply(null,vals)), mx=Math.max(0,Math.max.apply(null,vals));
+    var W=360,LB=58,VL=86,RH=25,BH=15,pw=W-LB-VL-(mn<0?VL*0.6:0),H=sp.s.length*RH+2;
+    var span=(mx-mn)||1, x0=LB+(mn<0?VL*0.6:0)+(-mn/span)*pw;
+    var s='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+sp.t+': '+sp.s.map(function(d){return d.l+' '+(d.v==null?'sin dato':fmt(d.v,sp.u,sp.dec))}).join(', ')+'">';
+    sp.s.forEach(function(d,i){
+      var y=i*RH+2;
+      s+='<text x="0" y="'+(y+12)+'" font-size="12" font-family="IBM Plex Mono, monospace" fill="var(--ink-2)">'+d.l+'</text>';
+      if(d.v==null){s+='<text x="'+(x0+4)+'" y="'+(y+12)+'" font-size="12" font-style="italic" font-family="Source Sans 3, system-ui, sans-serif" fill="var(--ink-2)">sin dato</text>';return}
+      var w=Math.max(2,Math.abs(d.v)/span*pw), x=d.v<0?x0-w:x0;
+      s+='<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+BH+'" fill="'+(d.c?'var(--alt)':'var(--accent)')+'" rx="2"/>';
+      var tx=d.v<0?x-6:x+w+6, an=d.v<0?'end':'start';
+      s+='<text x="'+tx+'" y="'+(y+12)+'" text-anchor="'+an+'" font-size="12" font-weight="600" font-family="IBM Plex Mono, monospace" fill="var(--ink)">'+fmt(d.v,sp.u,sp.dec)+'</text>';
+    });
+    s+='<line x1="'+x0+'" x2="'+x0+'" y1="0" y2="'+H+'" stroke="var(--ink-2)" stroke-width="1"/></svg>';
+    document.getElementById(sp.id).innerHTML=s;
+  });
+})();
+</script>

@@ -1,0 +1,21 @@
+{
+  "site_url": "https://jimmysjames.github.io/quien-decide",
+  "repo_url": "https://github.com/JimmysJames/quien-decide",
+  "contacto": "",
+  "autor": "Lo hace una persona a título particular, ingeniero de software en Madrid, como proyecto personal. No recibe financiación de partidos, empresas ni instituciones y no tiene relación con ninguna candidatura.",
+  "descripcion": "¿Lo que te preocupa se decide en las generales? Mira qué gobierno tiene la llave de cada problema y qué ha hecho, con hechos y fuentes.",
+  "artifact_urls": {
+    "index.html": "https://claude.ai/artifact/5Ctp8BZ1buXrddS8fiCg5g",
+    "vivienda.html": "https://claude.ai/artifact/EH4FcAvBYnkumkXkDRof6j",
+    "inmigracion.html": "https://claude.ai/artifact/2zdR69cQ8bnti4YFV8MEno",
+    "metodologia.html": "https://claude.ai/artifact/CeV2pZKeeiB1QByzrdRrdM",
+    "sanidad.html": "https://claude.ai/artifact/HGLD5HE8Pn2Mxyo8MV7FFT",
+    "empleo.html": "https://claude.ai/artifact/KrtHFEwknHfpbhpmjwMfZg",
+    "economia.html": "https://claude.ai/artifact/XW32G3kisSDeXi6h1BTM7t",
+    "pensiones.html": "https://claude.ai/artifact/W4cH2C28Nshz1AfBZR5Zto",
+    "educacion.html": "https://claude.ai/artifact/366yRzeqwUQJWbXaiV3Djj",
+    "corrupcion.html": "https://claude.ai/artifact/XVZDbmiUSjqi9kT5UJiQP6",
+    "seguridad.html": "https://claude.ai/artifact/J6kNzaYxpJH2JQMXfrp46B",
+    "clima.html": "https://claude.ai/artifact/WizhkTY8R58q9Lj2BgkdQv"
+  }
+}

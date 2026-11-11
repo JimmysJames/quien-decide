@@ -1,0 +1,532 @@
+<title>Seguridad ciudadana, hechos del Estado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,500..800&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Layout: resumen en lenguaje llano, línea de tiempo de ocho años como hilo, cada hecho con una frase clara y el detalle técnico plegado. Las series largas van en filas horizontales para leerse bien en el móvil. */
+:root{
+  --paper:#EDF0F2;
+  --card:#FFFFFF;
+  --ink:#121B23;
+  --ink-2:#4B5967;
+  --rule:#CBD3DA;
+  --accent:#0B6E63;
+  --on-accent:#FFFFFF;
+  --accent-soft:#D6ECE8;
+  --alt:#5D6D7B;
+  --alt2:#B8C4CE;
+  --note-bg:#FFF2CF;
+  --note-ink:#6B4700;
+  --f-display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E151B; --card:#16212A; --ink:#E7EDF1; --ink-2:#9FB0BD; --rule:#2A3946;
+    --accent:#4DC2B1; --on-accent:#07201C; --accent-soft:#143A38; --alt:#6F8394; --alt2:#3E5160;
+    --note-bg:#3A2F10; --note-ink:#F0C96A;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E151B; --card:#16212A; --ink:#E7EDF1; --ink-2:#9FB0BD; --rule:#2A3946;
+  --accent:#4DC2B1; --on-accent:#07201C; --accent-soft:#143A38; --alt:#6F8394; --alt2:#3E5160;
+  --note-bg:#3A2F10; --note-ink:#F0C96A;
+  color-scheme: dark;
+}
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.5}
+h1,h2,h3,p,ul,ol,dl,dd{margin:0}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+a{color:var(--accent)}
+
+.app{max-width:680px;margin-inline:auto;padding-inline:16px;padding-block:20px 56px;display:flex;flex-direction:column;gap:32px}
+
+.top{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.brand{font-family:var(--f-display);font-size:1.1rem;font-weight:800;font-variation-settings:"wdth" 112;color:var(--ink);text-decoration:none}
+.tag{font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;border:1px solid var(--ink-2);color:var(--ink-2);padding:2px 8px;border-radius:3px;white-space:nowrap}
+
+.head{display:flex;flex-direction:column;gap:10px;border-top:2px solid var(--ink);padding-top:14px}
+.head h1{font-size:2.1rem;font-weight:800;font-variation-settings:"wdth" 108;line-height:1.08}
+.kicker{font-family:var(--f-mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2)}
+.k{font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-2)}
+
+.sum{background:var(--ink);color:var(--paper);border-radius:6px;padding:6px 18px;display:flex;flex-direction:column}
+.sum .row{display:grid;grid-template-columns:minmax(0,1fr);gap:4px;padding-block:14px;border-top:1px solid color-mix(in srgb, var(--paper) 25%, transparent)}
+.sum .row:first-child{border-top:0}
+.sum .k{color:var(--paper);opacity:.7}
+.sum p{font-size:1.08rem;line-height:1.4}
+.sum b{font-weight:700;font-variant-numeric:tabular-nums}
+.sum .gap p{opacity:.9}
+
+section{display:flex;flex-direction:column;gap:14px}
+section>h2{font-size:1.45rem;font-weight:700;font-variation-settings:"wdth" 105;line-height:1.2}
+.lede{color:var(--ink-2)}
+
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.88rem;color:var(--ink-2)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.dot{width:12px;height:12px;border-radius:50%;border:2px solid var(--accent);background:var(--accent);flex:none;display:inline-block}
+.dot.no{background:transparent;border-color:var(--alt)}
+.tl{list-style:none;padding:0;margin:0;display:flex;flex-direction:column}
+.tl li{display:grid;grid-template-columns:84px 20px minmax(0,1fr);gap:0 8px;padding-bottom:18px;position:relative}
+.tl li:last-child{padding-bottom:0}
+.tl time{font-family:var(--f-mono);font-size:.8rem;color:var(--ink-2);padding-top:3px;font-variant-numeric:tabular-nums}
+.tl .mk{position:relative;display:flex;justify-content:center;padding-top:5px}
+.tl .mk::after{content:"";position:absolute;top:22px;bottom:-18px;width:2px;background:var(--rule)}
+.tl li:last-child .mk::after{display:none}
+.tl .t{font-weight:600;line-height:1.3}
+.tl .s{color:var(--ink-2);font-size:.95rem}
+
+.fact{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:16px;display:flex;flex-direction:column;gap:10px}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}
+.meta time{font-family:var(--f-mono);font-size:.8rem;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.badge{font-family:var(--f-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;padding:2px 7px;border-radius:3px;border:1px solid var(--ink-2);color:var(--ink-2)}
+.badge.of{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.fact h3{font-size:1.2rem;font-weight:700;line-height:1.25}
+.plain{font-size:1.05rem}
+.fact p{margin:0}
+.num{font-variant-numeric:tabular-nums}
+details{border-top:1px solid var(--rule);padding-top:10px}
+summary{cursor:pointer;font-family:var(--f-mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);padding-block:4px}
+details[open] summary{margin-bottom:8px}
+details .in{display:flex;flex-direction:column;gap:8px;font-size:.96rem}
+.src{font-size:.88rem;overflow-wrap:anywhere}
+.limit{background:var(--note-bg);color:var(--note-ink);font-size:.92rem;padding:8px 10px;border-radius:3px}
+
+.split{display:flex;flex-direction:column;gap:6px}
+.stack{display:flex;height:38px;border-radius:3px;overflow:hidden;font-family:var(--f-mono);font-size:.82rem;font-variant-numeric:tabular-nums}
+.stack span{display:flex;align-items:center;padding-inline:8px;white-space:nowrap;overflow:hidden}
+.s1{background:var(--accent);color:var(--on-accent)}
+.s2{background:var(--alt);color:var(--paper)}
+.s3{background:var(--alt2);color:var(--ink)}
+.flow{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:8px;align-items:stretch}
+.flow .bx{border:1px solid var(--rule);border-radius:4px;padding:10px 12px;display:flex;flex-direction:column;gap:2px;background:var(--paper)}
+.flow .bx b{font-family:var(--f-display)}
+.flow .ar{display:grid;place-items:center;font-family:var(--f-mono);color:var(--ink-2)}
+@media (max-width:480px){.flow{grid-template-columns:minmax(0,1fr)}.flow .ar{transform:rotate(90deg);padding-block:2px}}
+
+.vote{display:flex;flex-direction:column;gap:6px}
+.bar{display:flex;height:36px;border-radius:3px;overflow:hidden;font-family:var(--f-mono);font-size:.82rem;font-variant-numeric:tabular-nums}
+.bar span{display:flex;align-items:center;padding-inline:8px;white-space:nowrap}
+.bar .y{background:var(--accent);color:var(--on-accent)}
+.bar .n{background:var(--alt);color:var(--paper);justify-content:flex-end}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--rule);border-radius:6px}
+table{border-collapse:collapse;width:100%;min-width:340px;font-size:.95rem}
+th,td{text-align:left;padding:7px 12px;border-top:1px solid var(--rule)}
+thead th{border-top:0;font-family:var(--f-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2);font-weight:500}
+td.y{font-weight:600}
+td.n{color:var(--ink-2)}
+
+.chart{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.chart h3{font-size:1.1rem;font-weight:700}
+.chart svg{width:100%;height:auto;display:block;max-width:100%}
+.cap{font-size:.9rem;color:var(--ink-2)}
+.bigs{display:flex;flex-wrap:wrap;gap:8px 28px}
+.big{display:flex;flex-direction:column;gap:0}
+.big b{font-family:var(--f-display);font-size:2.4rem;font-weight:800;font-variation-settings:"wdth" 108;font-variant-numeric:tabular-nums;line-height:1.1}
+.big span{color:var(--ink-2);font-size:.92rem}
+
+.foot{border-top:1px solid var(--rule);padding-top:14px;display:flex;flex-direction:column;gap:8px;font-size:.9rem;color:var(--ink-2)}
+</style>
+<style>
+.aviso{background:var(--accent-soft);border-left:4px solid var(--accent);border-radius:4px;padding:12px 14px;display:flex;flex-direction:column;gap:4px}
+.aviso b{font-family:var(--f-display)}
+.nada{color:var(--ink-2)}
+.nolist{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:4px}
+.vote .lbl{font-family:var(--f-mono);font-size:.78rem;color:var(--ink-2)}
+.bar .a{background:var(--alt2);color:var(--ink);justify-content:center;padding-inline:0}
+details.yg{border-top:0;padding-top:0}
+details.yg>summary{display:flex;align-items:baseline;gap:10px;border-bottom:2px solid var(--ink);padding-block:8px 4px;color:var(--ink);text-transform:none;letter-spacing:0;list-style-position:inside}
+details.yg>summary .yy{font-family:var(--f-display);font-size:1.25rem;font-weight:800;font-variation-settings:"wdth" 108}
+details.yg>summary .yn{font-family:var(--f-mono);font-size:.72rem;color:var(--ink-2);text-transform:uppercase;letter-spacing:.06em}
+details.yg[open]>summary{margin-bottom:12px}
+details.yg>summary{cursor:pointer;list-style:none}
+details.yg>summary::-webkit-details-marker{display:none}
+details.yg>summary::before{content:"+";font-family:var(--f-mono);font-size:1rem;color:var(--accent);width:14px;flex:none}
+details.yg[open]>summary::before{content:"−"}
+.ygi{display:flex;flex-direction:column;gap:14px}
+.tl.compact li{padding-bottom:10px}
+.tl.compact .t{font-weight:500;font-size:.95rem}
+.keys{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.88rem;color:var(--ink-2)}
+.keys i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px}
+.count{font-family:var(--f-mono);font-size:.74rem;font-weight:400;color:var(--ink-2);text-transform:uppercase;letter-spacing:.06em;margin-left:8px}
+</style>
+
+<main class="app">
+  <header class="top">
+    <a class="brand" href="index.html">Quién decide</a>
+    <span class="tag">Beta</span>
+  </header>
+
+  <div class="head">
+    <p class="kicker">Gobierno central y Cortes · 2018 a 2026</p>
+    <h1>Seguridad ciudadana: qué ha hecho el Estado</h1>
+    <p class="lede">Ocho años con Pedro Sánchez como presidente del Gobierno, desde junio de 2018.</p>
+  </div>
+
+  <div class="sum" aria-label="Resumen">
+    <div class="row">
+      <span class="k">Lo que se aprobó</span>
+      <p>Penas más altas por imprudencia al volante (2019 y 2022), ley de protección de la infancia frente a la violencia (2021), ley del «solo sí es sí» (2022) y su reforma (2023), y ley de multirreincidencia (2026).</p>
+    </div>
+    <div class="row">
+      <span class="k">Lo que no salió</span>
+      <p>La reforma de la Ley de Seguridad Ciudadana se rechazó en comisión en 2023; otra, admitida en 2024, decayó con la disolución en 2026. El Congreso rechazó leyes de PP y Vox contra la ocupación de viviendas en 2021 y 2022, y admitió una del PP en 2026 que no llegó a aprobarse.</p>
+    </div>
+    <div class="row">
+      <span class="k">Lo que dicen las cifras</span>
+      <p>Infracciones penales conocidas: 2.131.118 en 2018, 1.773.366 en 2020 y 2.474.156 en 2025. Por cada 1.000 habitantes: 41,4 en 2021 y 50,4 en 2025 (este, suma propia de las tasas que publica Interior). Las cifras dependen también de las denuncias y de cambios de método.</p>
+    </div>
+    <div class="row gap">
+      <span class="k">Lo que esta página no sabe</span>
+      <p>La tasa de 2018, 2019, 2020 y 2023 es cálculo propio: Interior no la publica en los balances consultados. Faltan recuentos oficiales de varias votaciones.</p>
+    </div>
+  </div>
+
+  <section aria-labelledby="h-tl">
+    <h2 id="h-tl">Qué pasó y cuándo</h2>
+    <div class="legend"><span><i class="dot"></i>Aprobado</span><span><i class="dot no"></i>No salió</span></div>
+    <ol class="tl compact">
+      <li><time>1 mar 2019</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley Orgánica 2/2019, imprudencia al volante y abandono del lugar del accidente</p><p class="s"></p></div></li>
+      <li><time>16 feb 2021</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proposición de ley del PP contra la ocupación ilegal: rechazada (2021)</p><p class="s">Rechazado</p></div></li>
+      <li><time>26 may 2021</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley Orgánica 7/2021, protección de datos tratados por policía y justicia penal</p><p class="s"></p></div></li>
+      <li><time>4 jun 2021</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley Orgánica 8/2021, protección de la infancia y la adolescencia frente a la violencia</p><p class="s"></p></div></li>
+      <li><time>21 mar 2022</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley Orgánica 2/2022, protección de huérfanos de víctimas de violencia de género</p><p class="s"></p></div></li>
+      <li><time>28 abr 2022</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proposición de ley de Vox para endurecer las penas por ocupación: rechazada</p><p class="s">Rechazado</p></div></li>
+      <li><time>6 sep 2022</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley Orgánica 10/2022, de garantía integral de la libertad sexual («solo sí es sí»)</p><p class="s"></p></div></li>
+      <li><time>13 sep 2022</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley Orgánica 11/2022, imprudencia menos grave al volante</p><p class="s"></p></div></li>
+      <li><time>29 nov 2022</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proposición de ley del PP contra la ocupación ilegal: rechazada (2022)</p><p class="s">Rechazado</p></div></li>
+      <li><time>14 mar 2023</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Reforma de la Ley de Seguridad Ciudadana: rechazada en la Comisión de Interior</p><p class="s">Rechazado</p></div></li>
+      <li><time>27 abr 2023</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley Orgánica 4/2023, reforma de la ley del «solo sí es sí»</p><p class="s"></p></div></li>
+      <li><time>29 oct 2024</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Nueva reforma de la Ley de Seguridad Ciudadana: admitida a trámite en 2024, decae con la disolución</p><p class="s">Admitido a trámite</p></div></li>
+      <li><time>12 dic 2024</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Reforma de la Ley de Seguridad Ciudadana: rechazadas las enmiendas a la totalidad de PP y Vox</p><p class="s">Votación sobre las enmiendas de totalidad: rechazadas, el texto sigue adelante</p></div></li>
+      <li><time>8 abr 2026</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley Orgánica 1/2026, en materia de multirreincidencia</p><p class="s"></p></div></li>
+      <li><time>19 may 2026</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proposición de ley del PP contra la ocupación ilegal: admitida a trámite (2026)</p><p class="s">Admitido a trámite</p></div></li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="h-a">
+    <h2 id="h-a">Qué ha aprobado el Estado<span class="count">8</span></h2>
+    <article class="fact">
+      <div class="meta"><time>1 mar 2019</time><span class="badge of">Oficial</span></div>
+      <h3>Ley Orgánica 2/2019, imprudencia al volante y abandono del lugar del accidente</h3>
+      <p class="plain">Sube las penas por matar o herir por imprudencia conduciendo. Es delito irse del lugar de un accidente con muertos o heridos graves.</p>
+      <div class="vote" role="img" aria-label="222 a favor, 17 en contra"><span class="lbl">20 feb 2019 · Aprobado</span><div class="bar"><span class="y" style="width:92.89%">222 a favor</span><span class="n" style="width:7.11%">17 en contra</span></div></div>
+      <p>En contra: Unidos Podemos.</p>
+      <p class="limit">El recuento del Senado (222-17) y que votó en contra Unidos Podemos salen de un solo medio. No consta el número de abstenciones.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Ley Orgánica 2/2019, de 1 de marzo, de modificación del Código Penal en materia de imprudencia en la conducción de vehículos a motor o ciclomotor y sanción del abandono del lugar del accidente. BOE núm. 53, de 2 de marzo de 2019 (BOE-A-2019-2973). En vigor el 3 de marzo de 2019. Modifica los artículos 142, 152 y 382 del Código Penal y añade los artículos 142 bis, 152 bis y 382 bis (abandono del lugar del accidente: de 6 meses a 4 años de prisión si el accidente fue por imprudencia). Aprobación definitiva en el Pleno del Senado el 20 de febrero de 2019, sin enmiendas, por lo que no volvió al Congreso.</p>
+          <a class="src" href="https://www.boe.es/eli/es/lo/2019/03/01/2" target="_blank" rel="noopener">Oficial: BOE-A-2019-2973, 2 mar 2019</a>
+          <a class="src" href="https://www.ultimahora.es/noticias/nacional/2019/02/20/1059751/senado-luz-verde-reforma-del-codigo-penal-para-endurecer-penas-por-imprudencias-volante.html" target="_blank" rel="noopener">Última Hora: el Senado da luz verde a la reforma del Código Penal por imprudencias al volante, 20 feb 2019</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>26 may 2021</time><span class="badge of">Oficial</span></div>
+      <h3>Ley Orgánica 7/2021, protección de datos tratados por policía y justicia penal</h3>
+      <p class="plain">Fija cómo pueden usar y guardar la policía, los fiscales y los jueces los datos personales en la investigación de delitos, y qué derechos tiene la persona sobre esos datos.</p>
+      
+      <p class="limit">El recuento de la votación final y la fecha de entrada en vigor no los hemos leído.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Ley Orgánica 7/2021, de 26 de mayo, de protección de datos personales tratados para fines de prevención, detección, investigación y enjuiciamiento de infracciones penales y de ejecución de sanciones penales. BOE núm. 126, de 27 de mayo de 2021 (BOE-A-2021-8806). Transpone la Directiva (UE) 2016/680. Plazo general máximo de conservación de veinte años, con revisión al menos cada tres; derechos de acceso, rectificación, supresión y limitación, que pueden restringirse para proteger investigaciones; notificación de brechas en 72 horas.</p>
+          <a class="src" href="https://www.boe.es/eli/es/lo/2021/05/26/7" target="_blank" rel="noopener">Oficial: BOE-A-2021-8806, 27 may 2021</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>4 jun 2021</time><span class="badge of">Oficial</span></div>
+      <h3>Ley Orgánica 8/2021, protección de la infancia y la adolescencia frente a la violencia</h3>
+      <p class="plain">Obliga a todos, y más a los profesionales, a avisar si sospechan violencia contra un menor. Cambia plazos de prescripción de delitos contra menores y la forma de tomar declaración a menores de 14 años.</p>
+      <p class="vote"><span class="lbl">20 may 2021 · Aprobado · las fuentes no dan el recuento</span></p>
+      <p>En contra: Vox.</p>
+      <p class="limit">El recuento de la votación final del 20 de mayo de 2021. Que Vox fue el único grupo en contra lo dicen dos medios, no el Diario de Sesiones.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Ley Orgánica 8/2021, de 4 de junio. BOE núm. 134, de 5 de junio de 2021 (BOE-A-2021-9347). Entra en vigor a los veinte días de su publicación, con algunas disposiciones diferidas. Modifica, entre otros, el Código Penal (prescripción en delitos contra menores; el perdón no extingue la acción penal si la víctima es menor de 18 años), el Código Civil y la Ley de Enjuiciamiento Criminal (prueba preconstituida para testigos menores de 14 años).</p>
+          <a class="src" href="https://www.boe.es/buscar/doc.php?id=BOE-A-2021-9347" target="_blank" rel="noopener">Oficial: BOE-A-2021-9347, 5 jun 2021</a>
+          <a class="src" href="https://es.ara.cat/sociedad/luz-verde-definitiva-ley-proteccion-infancia-adolescencia_1_3991386.html" target="_blank" rel="noopener">Ara: luz verde definitiva a la ley de infancia, 20 may 2021</a>
+          <a class="src" href="https://www.ondavasca.com/apoyo-casi-unanime-del-congreso-a-la-ley-de-infancia-excepto-vox-que-la-llama-ley-herodes/" target="_blank" rel="noopener">Onda Vasca: apoyo casi unánime del Congreso a la ley de infancia, 20 may 2021</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>21 mar 2022</time><span class="badge of">Oficial</span></div>
+      <h3>Ley Orgánica 2/2022, protección de huérfanos de víctimas de violencia de género</h3>
+      <p class="plain">Los hijos de mujeres asesinadas por violencia de género pueden cobrar la prestación de orfandad aunque no cumplan los requisitos de cotización, y pagan menos impuestos al heredar.</p>
+      
+      <p class="limit">El recuento de la votación final no lo hemos leído.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Ley Orgánica 2/2022, de 21 de marzo, de mejora de la protección de las personas huérfanas víctimas de la violencia de género. BOE núm. 69, de 22 de marzo de 2022 (BOE-A-2022-4516). En vigor el 23 de marzo de 2022. Modifica la Ley Orgánica del Poder Judicial (los Juzgados de Violencia sobre la Mujer conocen de la liquidación del régimen económico matrimonial), la Ley de Enjuiciamiento Civil, la Ley General de la Seguridad Social y Clases Pasivas (prestación de orfandad), y exime del impuesto de plusvalía municipal y del ITP determinadas transmisiones a estos huérfanos.</p>
+          <a class="src" href="https://www.boe.es/eli/es/lo/2022/03/21/2" target="_blank" rel="noopener">Oficial: BOE-A-2022-4516, 22 mar 2022</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>6 sep 2022</time><span class="badge of">Oficial</span></div>
+      <h3>Ley Orgánica 10/2022, de garantía integral de la libertad sexual («solo sí es sí»)</h3>
+      <p class="plain">Todo acto sexual sin consentimiento pasa a ser agresión sexual: desaparece la distinción entre abuso y agresión. Añade derechos de asistencia y reparación para las víctimas.</p>
+      <div class="vote" role="img" aria-label="205 a favor, 141 en contra, 3 abstenciones"><span class="lbl">25 ago 2022 · Aprobado</span><div class="bar"><span class="y" style="width:58.74%">205 a favor</span><span class="n" style="width:40.40%">141 en contra</span><span class="a" style="width:0.86%"></span></div></div>
+      <p>En contra: PP, Vox.</p>
+      <p class="limit">El recuento (205-141-3) sale de un medio; otro lo confirma solo en el titular. No lo hemos cotejado con el Diario de Sesiones. La CUP se abstuvo según Qué!.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Ley Orgánica 10/2022, de 6 de septiembre. BOE núm. 215, de 7 de septiembre de 2022 (BOE-A-2022-14630). En vigor desde el 7 de octubre de 2022, salvo algunos plazos. La disposición final cuarta modifica el Código Penal: unifica abuso y agresión sexual, incluye la «sumisión química» y una agravante de género. Modifica también la Ley de Enjuiciamiento Criminal, el Estatuto de los Trabajadores y el Estatuto de la Víctima, entre otras.</p>
+          <a class="src" href="https://www.boe.es/buscar/doc.php?id=BOE-A-2022-14630" target="_blank" rel="noopener">Oficial: BOE-A-2022-14630, 7 sep 2022</a>
+          <a class="src" href="https://www.vilaweb.cat/noticies/claus-llei-nomes-si-es-si-aprovada/" target="_blank" rel="noopener">VilaWeb: les claus de la llei del «només sí és sí», 25 ago 2022</a>
+          <a class="src" href="https://www.que.es/2022/08/25/congreso-sin-pp-vox-aprueba-definitivamente-ley-solo-si-es-si/" target="_blank" rel="noopener">Qué!: el Congreso, sin PP y Vox, aprueba definitivamente la ley, 25 ago 2022</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>13 sep 2022</time><span class="badge of">Oficial</span></div>
+      <h3>Ley Orgánica 11/2022, imprudencia menos grave al volante</h3>
+      <p class="plain">Si un conductor mata o hiere a alguien cometiendo una infracción grave de tráfico, ya no puede tratarse como imprudencia leve sin explicarlo. Amplía el delito de abandono del lugar del accidente a más tipos de lesiones.</p>
+      <div class="vote" role="img" aria-label="144 a favor, 4 en contra, 112 abstenciones"><span class="lbl">7 sep 2022 · Aprobado</span><div class="bar"><span class="y" style="width:55.38%">144 a favor</span><span class="n" style="width:1.54%">4 en contra</span><span class="a" style="width:43.08%">112</span></div></div>
+      <p>En contra: Vox.</p>
+      <p class="limit">El recuento del Senado (144-4-112), que Vox votó en contra y que PP y PNV se abstuvieron salen de un solo medio.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Ley Orgánica 11/2022, de 13 de septiembre, de modificación del Código Penal en materia de imprudencia en la conducción de vehículos a motor o ciclomotor. BOE núm. 221, de 14 de septiembre de 2022 (BOE-A-2022-14965). En vigor el 15 de septiembre de 2022. Modifica los artículos 142.2, 152.2 y 382 bis.1 del Código Penal: una infracción grave de tráfico determinante del resultado se considera al menos imprudencia menos grave, con motivación del juez; retirada del carné de 3 a 18 meses. La Administración debe comunicar al juez los accidentes con heridos o muertos. Aprobación definitiva en el Pleno del Senado el 7 de septiembre de 2022.</p>
+          <a class="src" href="https://www.boe.es/eli/es/lo/2022/09/13/11" target="_blank" rel="noopener">Oficial: BOE-A-2022-14965, 14 sep 2022</a>
+          <a class="src" href="https://www.ultimahora.es/noticias/nacional/2022/09/07/1787671/trafico-espana-nueva-ley-acaba-impunidad-volante.html" target="_blank" rel="noopener">Última Hora: aprobada la ley que acaba con la impunidad al volante, 7 sep 2022</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>27 abr 2023</time><span class="badge of">Oficial</span></div>
+      <h3>Ley Orgánica 4/2023, reforma de la ley del «solo sí es sí»</h3>
+      <p class="plain">Vuelve a distinguir, dentro de la agresión sexual, los casos con violencia o intimidación, con penas más altas para ellos.</p>
+      <div class="vote" role="img" aria-label="231 a favor, 19 en contra, 4 abstenciones"><span class="lbl">26 abr 2023 · Aprobado</span><div class="bar"><span class="y" style="width:90.94%">231 a favor</span><span class="n" style="width:7.48%">19 en contra</span><span class="a" style="width:1.57%"></span></div></div>
+      <p class="limit">El recuento del Senado sale de un solo medio y no nombra los grupos en contra. No consta el recuento del Pleno del Congreso del 20 de abril de 2023.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Ley Orgánica 4/2023, de 27 de abril. BOE núm. 101, de 28 de abril de 2023 (BOE-A-2023-10213). En vigor el 29 de abril de 2023. Modifica los artículos 132, 173, 178 a 181 y 189 bis del Código Penal, la Ley de Enjuiciamiento Criminal y la Ley Orgánica 5/2000 de responsabilidad penal de los menores. Nace de una proposición de ley del PSOE. En el Pleno del Congreso del 20 de abril de 2023 votaron en contra ERC, EH Bildu y Unidas Podemos, según la prensa; la votación recogida aquí es la final del Senado.</p>
+          <a class="src" href="https://www.boe.es/eli/es/lo/2023/04/27/4" target="_blank" rel="noopener">Oficial: BOE-A-2023-10213, 28 abr 2023</a>
+          <a class="src" href="https://www.menorca.info/actualidad/nacional/2023/04/26/1925379/ley-del-solo-senado-aprobacion-final.html" target="_blank" rel="noopener">Menorca.info: el Senado aprueba definitivamente la reforma, 26 abr 2023</a>
+          <a class="src" href="https://www.periodicodeibiza.es/noticias/nacional/2023/04/20/1921447/aprobada-reforma-ley-del-solo-voto-contra-podemos.html" target="_blank" rel="noopener">Periódico de Ibiza: aprobada la reforma con el voto en contra de Podemos, 20 abr 2023</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>8 abr 2026</time><span class="badge of">Oficial</span></div>
+      <h3>Ley Orgánica 1/2026, en materia de multirreincidencia</h3>
+      <p class="plain">Quien acumula al menos tres condenas por hurto puede ir a prisión aunque lo robado valga menos de 400 euros. Agrava el robo de móviles y amplía las medidas cautelares.</p>
+      <div class="vote" role="img" aria-label="272 a favor, 71 en contra, 7 abstenciones"><span class="lbl">26 mar 2026 · Aprobado</span><div class="bar"><span class="y" style="width:77.71%">272 a favor</span><span class="n" style="width:20.29%">71 en contra</span><span class="a" style="width:2.00%"></span></div></div>
+      <p>En contra: Podemos, Sumar.</p>
+      <p class="limit">El recuento es oficial. Los grupos en contra (Podemos y Sumar) y la abstención de ERC salen de un solo medio.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Ley Orgánica 1/2026, de 8 de abril. BOE núm. 87, de 9 de abril de 2026 (BOE-A-2026-7966). En vigor el 10 de abril de 2026. Modifica los artículos 22, 66, 80, 234, 235, 248, 250, 255 y 568 del Código Penal y los artículos 13, 105 y 544 bis de la Ley de Enjuiciamiento Criminal. Prevé al menos un juez de adscripción territorial por cada 100.000 habitantes en cada Tribunal Superior de Justicia en dos años. Nace de una proposición de ley de Junts. Votación de conjunto de las enmiendas del Senado en el Pleno del Congreso el 26 de marzo de 2026: 272 a favor, 71 en contra, 7 abstenciones.</p>
+          <a class="src" href="https://www.boe.es/eli/es/lo/2026/04/08/1/con" target="_blank" rel="noopener">Oficial: BOE-A-2026-7966, 9 abr 2026</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-175.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Pleno, DSCD-15-PL-175, 26 mar 2026</a>
+          <a class="src" href="https://www.vilaweb.cat/noticies/congres-espanyol-aprova-definitivament-llei-contra-multireincidencia/" target="_blank" rel="noopener">VilaWeb: el Congrés aprova definitivament la llei contra la multireincidència, 26 mar 2026</a>
+        </div>
+      </details>
+    </article>
+  </section>
+
+  <section aria-labelledby="h-b">
+    <h2 id="h-b">Qué intentó y no salió<span class="count">7</span></h2>
+    <p class="lede">Solo se cuenta lo que pasó, sin juzgar a nadie. Los motivos de cada grupo se añadirán como cita literal del Diario de Sesiones.</p>
+    <article class="fact">
+      <div class="meta"><time>16 feb 2021</time><span class="badge">Prensa · 2 fuentes</span></div>
+      <h3>Proposición de ley del PP contra la ocupación ilegal: rechazada (2021)</h3>
+      <p class="plain">El Congreso no admitió a trámite una ley del PP para volver a castigar con cárcel la ocupación de viviendas y desalojar en 48 horas.</p>
+      <p class="vote"><span class="lbl">16 feb 2021 · Rechazado · las fuentes no dan el recuento</span></p>
+      <p class="limit">El recuento. Ninguno de los dos medios da cifras y no hemos podido abrir el acta del Pleno.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Proposición de Ley Orgánica del Grupo Popular contra la ocupación ilegal, debatida en el Pleno del Congreso el 16 de febrero de 2021 (toma en consideración). Proponía penas de uno a tres años de prisión por usurpación, desalojo policial en un máximo de 48 horas, modificar el artículo 245 del Código Penal, que las comunidades de propietarios pudieran intervenir en el proceso y prohibir el empadronamiento de los ocupantes. Según la prensa, votaron en contra PSOE y Unidas Podemos, entre otros, y a favor Foro Asturias y PRC.</p>
+          <a class="src" href="https://www.ultimahora.es/noticias/nacional/2021/02/16/1239161/congreso-rechaza-ley-anti-okupas-proponia-pp.html" target="_blank" rel="noopener">Última Hora: el Congreso rechaza la ley anti okupas que proponía el PP, 16 feb 2021</a>
+          <a class="src" href="https://www.que.es/2021/02/16/psoe-podemos-rechazan-ley-anti-okupas/" target="_blank" rel="noopener">Qué!: PSOE, Podemos e independentistas rechazan en el Congreso la ley anti okupas, 16 feb 2021</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>28 abr 2022</time><span class="badge">Una sola fuente</span></div>
+      <h3>Proposición de ley de Vox para endurecer las penas por ocupación: rechazada</h3>
+      <p class="plain">El Congreso no admitió a trámite una ley de Vox para subir las penas por ocupar viviendas.</p>
+      <p class="vote"><span class="lbl">28 abr 2022 · Rechazado · las fuentes no dan el recuento</span></p>
+      <p class="limit">El recuento y cómo votó cada grupo.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Proposición de ley de Vox de reforma del Código Penal para endurecer las penas por ocupación ilegal de viviendas y dar más medios legales a las fuerzas de seguridad. Debatida en el Pleno del Congreso y votada el jueves 28 de abril de 2022 (toma en consideración); no obtuvo el apoyo necesario, según una nota de EFE.</p>
+          <a class="src" href="https://vivirediciones.es/?p=116572" target="_blank" rel="noopener">EFE en Vivir Ediciones: el Congreso rechaza tramitar la propuesta de Vox de endurecer las penas a los okupas, 28 abr 2022</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>29 nov 2022</time><span class="badge">Una sola fuente</span></div>
+      <h3>Proposición de ley del PP contra la ocupación ilegal: rechazada (2022)</h3>
+      <p class="plain">El Congreso no admitió a trámite una ley del PP para desalojar viviendas ocupadas en 24 horas y subir las penas por ocupación con violencia.</p>
+      <div class="vote" role="img" aria-label="160 a favor, 178 en contra"><span class="lbl">29 nov 2022 · Rechazado</span><div class="bar"><span class="y" style="width:47.34%">160 a favor</span><span class="n" style="width:52.66%">178 en contra</span></div></div>
+      <p class="limit">El recuento sale de un solo medio y no da el número de abstenciones. El medio nombra al PSOE en contra, pero no la lista completa de grupos.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Proposición de Ley Orgánica del Grupo Popular contra la ocupación ilegal y para la convivencia vecinal. Toma en consideración en el Pleno del Congreso el 29 de noviembre de 2022: 160 votos a favor y 178 en contra, según la prensa. Proponía desalojo en un máximo de 24 horas, penas de hasta tres años por usurpación con violencia o intimidación, legitimar a las comunidades de propietarios y prohibir el empadronamiento de los ocupantes. Según el mismo medio, votaron a favor PP, Ciudadanos, Vox y otros grupos menores, y el PNV se abstuvo.</p>
+          <a class="src" href="https://lamarea.com/2022/11/29/el-congreso-tumba-la-propuesta-de-ley-antiocupacion-del-partido-popular" target="_blank" rel="noopener">La Marea: el Congreso tumba la propuesta de ley antiocupación del PP, 29 nov 2022</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>14 mar 2023</time><span class="badge of">Oficial</span></div>
+      <h3>Reforma de la Ley de Seguridad Ciudadana: rechazada en la Comisión de Interior</h3>
+      <p class="plain">La reforma de la ley de 2015 (llamada «ley mordaza») se rechazó en la Comisión de Interior del Congreso por un voto. No llegó al Pleno y la ley siguió igual.</p>
+      <div class="vote" role="img" aria-label="18 a favor, 19 en contra"><span class="lbl">14 mar 2023 · Rechazado</span><div class="bar"><span class="y" style="width:48.65%">18 a favor</span><span class="n" style="width:51.35%">19 en contra</span></div></div>
+      <p>En contra: Ciudadanos, EH Bildu, ERC, Junts, Navarra Suma, PP, Vox.</p>
+      <p class="limit">El recuento es oficial. La lista de grupos en contra sale de un solo medio.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Comisión de Interior, sesión núm. 36, 14 de marzo de 2023 (XIV legislatura). Proposición de Ley Orgánica de protección de la seguridad ciudadana, que reformaba la Ley Orgánica 4/2015. Votación del dictamen: 37 votos emitidos, 18 a favor, 19 en contra; el presidente declara «Queda rechazado el dictamen». Es una votación en comisión, no en el Pleno. Según la prensa, votaron a favor PSOE, Unidas Podemos y PNV.</p>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/CO/DSCD-14-CO-864.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones, Comisión de Interior, DSCD-14-CO-864, 14 mar 2023</a>
+          <a class="src" href="https://www.economistjurist.es/actualidad-juridica/legislacion/los-10-cambios-de-la-reforma-de-la-ley-mordaza-que-no-entraran-en-vigor" target="_blank" rel="noopener">Economist &amp; Jurist: los 10 cambios de la reforma que no entrarán en vigor, 15 mar 2023</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>29 oct 2024</time><span class="badge of">Oficial</span></div>
+      <h3>Nueva reforma de la Ley de Seguridad Ciudadana: admitida a trámite en 2024, decae con la disolución</h3>
+      <p class="plain">El Congreso admitió a trámite en 2024 una ley para sustituir la Ley de Seguridad Ciudadana de 2015. No se llegó a aprobar y decayó al disolverse las Cortes.</p>
+      <div class="vote" role="img" aria-label="176 a favor, 170 en contra"><span class="lbl">29 oct 2024 · Admitido a trámite</span><div class="bar"><span class="y" style="width:50.87%">176 a favor</span><span class="n" style="width:49.13%">170 en contra</span></div></div>
+      <p>En contra: PP, UPN, Vox.</p>
+      <p class="limit">El recuento es oficial (el acta no recoge abstenciones). Los grupos en contra salen de prensa. Que decae con la disolución lo dice un solo medio.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Proposición de ley presentada por PSOE, Sumar, ERC, EH Bildu, PNV y BNG para sustituir la Ley Orgánica 4/2015 por una Ley Orgánica de Protección de las Libertades y la Seguridad Ciudadana (expediente 122/000131). Toma en consideración en el Pleno el 29 de octubre de 2024: 346 votos emitidos, 176 a favor, 170 en contra (acta del Pleno). El 12 de diciembre de 2024 se rechazaron las enmiendas a la totalidad de PP y Vox (ver hecho propio). Con la disolución del 6 de octubre de 2026 decaen las iniciativas pendientes del Congreso; la prensa incluye esta reforma entre ellas.</p>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20241029.pdf" target="_blank" rel="noopener">Oficial: Acta del Pleno del Congreso, 29 de octubre de 2024 (ATCD_15_PL_20241029), 29 oct 2024</a>
+          <a class="src" href="https://theobjective.com/espana/politica/2024-10-29/reforma-ley-mordaza-congreso/" target="_blank" rel="noopener">The Objective: el Congreso admite la reforma de la ley mordaza, 29 oct 2024</a>
+          <a class="src" href="https://www.ondavasca.com/el-congreso-debate-las-enmiendas-a-la-totalidad-de-pp-y-vox-a-la-reforma-de-la-ley-mordaza/" target="_blank" rel="noopener">Onda Vasca: el Congreso debate las enmiendas a la totalidad, 12 dic 2024</a>
+          <a class="src" href="https://www.elindependiente.com/espana/2024/10/29/el-congreso-inicia-la-reforma-de-la-ley-mordaza-con-la-negativa-del-pp-y-vox-dan-a-bildu-la-proteccion-de-la-policia/amp/" target="_blank" rel="noopener">El Independiente: el Congreso inicia la reforma de la ley mordaza, 29 oct 2024</a>
+          <a class="src" href="https://es.ara.cat/politica/descarrila-congreso-elecciones_1_5870195.html" target="_blank" rel="noopener">Ara: todo lo que descarrila en el Congreso por las elecciones, 5 oct 2026</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>12 dic 2024</time><span class="badge of">Oficial</span></div>
+      <h3>Reforma de la Ley de Seguridad Ciudadana: rechazadas las enmiendas a la totalidad de PP y Vox</h3>
+      <p class="plain">El Congreso rechazó los textos alternativos de PP y Vox a la nueva ley de seguridad ciudadana, y la reforma siguió en trámite.</p>
+      <div class="vote" role="img" aria-label="169 a favor, 176 en contra"><span class="lbl">12 dic 2024 · Votación sobre las enmiendas de totalidad: rechazadas, el texto sigue adelante</span><div class="bar"><span class="y" style="width:48.99%">169 a favor</span><span class="n" style="width:51.01%">176 en contra</span></div></div>
+      <p class="limit">El acta no recoge abstenciones en la enmienda del PP.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Pleno del Congreso, 12 de diciembre de 2024. Enmiendas a la totalidad de texto alternativo a la Proposición de Ley Orgánica de Protección de las Libertades y la Seguridad Ciudadana (122/000131). Enmienda del Grupo Popular: 345 votos emitidos, 169 a favor, 176 en contra; rechazada. Enmienda de Vox: 346 emitidos, 33 a favor, 176 en contra, 137 abstenciones; rechazada. La votación registrada aquí es la del PP.</p>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20241212.pdf" target="_blank" rel="noopener">Oficial: Acta del Pleno del Congreso, 12 de diciembre de 2024 (ATCD_15_PL_20241212), 12 dic 2024</a>
+        </div>
+      </details>
+    </article>
+    <article class="fact">
+      <div class="meta"><time>19 may 2026</time><span class="badge of">Oficial</span></div>
+      <h3>Proposición de ley del PP contra la ocupación ilegal: admitida a trámite (2026)</h3>
+      <p class="plain">El Congreso admitió a trámite una ley del PP para subir las penas por ocupación con violencia, acelerar la recuperación de viviendas e impedir que los ocupantes se empadronen. No llegó a aprobarse antes de la disolución.</p>
+      <div class="vote" role="img" aria-label="171 a favor, 164 en contra, 11 abstenciones"><span class="lbl">19 may 2026 · Admitido a trámite</span><div class="bar"><span class="y" style="width:49.42%">171 a favor</span><span class="n" style="width:47.40%">164 en contra</span><span class="a" style="width:3.18%"></span></div></div>
+      <p class="limit">Qué grupos votaron en contra. No hemos confirmado con una fuente expresa que decayera con la disolución; no consta que se aprobara como ley.</p>
+      <details>
+        <summary>Detalle y fuentes</summary>
+        <div class="in">
+          <p>Proposición de Ley Orgánica del Grupo Popular contra la ocupación ilegal de inmuebles y para la convivencia vecinal y la protección de la seguridad de las personas y cosas en las comunidades de propietarios (expediente 122/000254). Toma en consideración en el Pleno del Congreso el 19 de mayo de 2026: 346 votos emitidos, 171 a favor, 164 en contra, 11 abstenciones; «Queda aprobada». Según la prensa, reforma el Código Penal (penas mayores por ocupación con violencia o intimidación), la Ley de Enjuiciamiento Criminal y Civil (recuperación rápida de la posesión), la Ley de Propiedad Horizontal y la de Bases de Régimen Local (sin empadronamiento).</p>
+          <a class="src" href="https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20260519.pdf" target="_blank" rel="noopener">Oficial: Acta del Pleno del Congreso, 19 de mayo de 2026 (ATCD_15_PL_20260519), 19 may 2026</a>
+          <a class="src" href="https://elderecho.com/el-congreso-aprueba-comenzar-a-tramitar-una-proposicion-de-ley-organica-contra-la-ocupacion-ilegal-de-inmuebles" target="_blank" rel="noopener">El Derecho: el Congreso aprueba comenzar a tramitar una proposición de ley orgánica contra la ocupación ilegal, 21 may 2026</a>
+        </div>
+      </details>
+    </article>
+  </section>
+
+  <section aria-labelledby="h-c">
+    <h2 id="h-c">Qué dicen las cifras oficiales</h2>
+    <p class="lede">Se enseñan para ver la escala, no para repartir culpas.</p>
+    <div class="chart">
+      <h3>Infracciones penales conocidas, total anual</h3>
+      <div id="c1"></div>
+      <p class="cap">Hechos conocidos por Policía Nacional, Guardia Civil, Mossos d&#x27;Esquadra, Ertzaintza, Policía Foral y las policías locales que dan datos al Sistema Estadístico de Criminalidad. El total suma criminalidad convencional y cibercriminalidad. Mide hechos registrados: depende también de cuánto se denuncia y de cambios de método. Se usa la cifra publicada al cerrar cada año. Fuente oficial leída: 2018 (balance del 4.º trimestre de 2019 y Anuario del INE 2020), 2019 (nota del 4.º trimestre de 2019), 2020 (balance del 4.º trimestre de 2020), 2021 (nota de La Moncloa), 2023 (balance del 4.º trimestre de 2023: 1.989.271 convencional + 470.388 ciber) y 2025 (balance del 4.º trimestre de 2025). 2022 y 2024 salen de prensa que cita el balance de cierre (2024 con dos medios); no pudimos abrir esos balances. Revisiones posteriores de Interior: 2019, de 2.201.859 a 2.199.475; 2022, de 2.325.358 a 2.323.075 (balance de 2023); 2024, de 2.456.413 a 2.454.206 (balance de 2025).</p>
+      <details>
+        <summary>Fuentes</summary>
+        <div class="in">
+          <a class="src" href="https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/dam/jcr:c29ae187-3d1a-4922-9aec-57a6b4432600/Balance%20de%20criminalidad%20cuarto%20trimestre%202019.pdf" target="_blank" rel="noopener">Oficial: Interior, Balance de Criminalidad 4.º trimestre 2019 (2018 y 2019), 2020</a>
+          <a class="src" href="https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/dam/jcr:1575adad-8f29-4700-a166-c49326ffb067/nota_prensa_2019_4_trimestre.pdf" target="_blank" rel="noopener">Oficial: Interior, nota de prensa del 4.º trimestre de 2019, 2020</a>
+          <a class="src" href="https://www.ine.es/prodyser/pubweb/anuario20/anu20_06justi.pdf" target="_blank" rel="noopener">Oficial: INE, Anuario Estadístico 2020, cap. 6 (hechos conocidos 2018), 2020</a>
+          <a class="src" href="https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/dam/jcr:e35f0e71-155f-4964-9042-c73327bc71ee/Balance%20de%20Criminalidad%20Cuarto%20Trimestre%202020.pdf" target="_blank" rel="noopener">Oficial: Interior, Balance de Criminalidad 4.º trimestre 2020, 2021</a>
+          <a class="src" href="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/interior/Paginas/2022/210222-tasacriminalidad.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, nota de Interior sobre 2021, 21 feb 2022</a>
+          <a class="src" href="https://www.menorca.info/actualidad/nacional/2023/03/17/1901439/violaciones-subieron-2022-segun-balance-criminalidad-interior.html" target="_blank" rel="noopener">Menorca.info, balance de 2022, 17 mar 2023</a>
+          <a class="src" href="https://www.interior.gob.es/opencms/export/sites/default/.galleries/galeria-de-prensa/documentos-y-multimedia/balances-e-informes/2023/Balance-de-Criminalidad-Cuarto-Trimestre-2023.pdf" target="_blank" rel="noopener">Oficial: Interior, Balance de Criminalidad 4.º trimestre 2023, 2024</a>
+          <a class="src" href="https://www.escudodigital.com/interior/ligera-bajada-criminalidad-2024-aumento-homicidios-violaciones.html" target="_blank" rel="noopener">Escudo Digital, balance de 2024, 7 feb 2025</a>
+          <a class="src" href="https://www.infobae.com/espana/agencias/2025/02/07/la-criminalidad-cerro-en-2024-con-una-ligera-bajada-aunque-con-incrementos-en-homicidios-y-violaciones/" target="_blank" rel="noopener">Infobae (Europa Press), balance de 2024, 7 feb 2025</a>
+          <a class="src" href="https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/dam/jcr:7d3776cd-9ca4-4c02-8ca4-96b2571dbee4/Balance%20de%20Criminalidad%20Cuarto%20Trimestre%202025.pdf" target="_blank" rel="noopener">Oficial: Interior, Balance de Criminalidad 4.º trimestre 2025, 2026</a>
+        </div>
+      </details>
+    </div>
+    <div class="chart">
+      <h3>Tasa de criminalidad, infracciones por cada 1.000 habitantes</h3>
+      <div id="c2"></div>
+      <div class="keys"><span><i style="background:var(--accent)"></i>Dato publicado</span><span><i style="background:var(--alt)"></i>Cálculo propio</span></div>
+      <p class="cap">Infracciones penales conocidas (convencional + ciber) por cada 1.000 habitantes. Años con tasa publicada por Interior: 2021 (41,4, nota de La Moncloa), 2022 (48,8, nota de Interior) y 2024 (50,6, media nacional citada por prensa; Interior la da separada: 41,0 convencional + 9,6 ciber). Años de CÁLCULO PROPIO: 2018, 2019, 2020 y 2023 = infracciones del indicador anterior / población a 1 de enero × 1.000. Población: 2018 46.722.980, 2019 47.026.208 y 2020 47.450.795 (INE, cifras oficiales del Padrón municipal, serie DPOP1); 2023 48.085.361 (INE, Estadística Continua de Población). 2025 es la suma de las dos tasas que publica Interior (40,4 convencional + 10,0 ciber = 50,4); con infracciones / población del INE a 1 de enero de 2025 (49.128.297, ECP) sale también 50,4. Control: el mismo cálculo da 41,4 en 2021, igual que el dato oficial, y 50,5 en 2024 (oficial 50,6). La Moncloa dijo en 2022 que la tasa había caído 4,3 puntos desde 2018, lo que daría 45,7 para 2018, frente a 45,6 calculado. El balance del 4.º trimestre de 2023 no publica tasa. Depende también de las denuncias y de cambios de método. Algunos valores los calculamos nosotros a partir de la fuente.</p>
+      <details>
+        <summary>Fuentes</summary>
+        <div class="in">
+          <a class="src" href="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/interior/Paginas/2022/210222-tasacriminalidad.aspx" target="_blank" rel="noopener">Oficial: La Moncloa, nota de Interior sobre 2021, 21 feb 2022</a>
+          <a class="src" href="https://www.interior.gob.es/opencms/es/detalle/articulo/La-tasa-de-criminalidad-se-situa-en-el-488-al-cierre-de-2022/" target="_blank" rel="noopener">Oficial: Interior, «La tasa de criminalidad se sitúa en el 48,8 al cierre de 2022», 17 mar 2023</a>
+          <a class="src" href="https://www.menorca.info/actualidad/nacional/2023/03/17/1901439/violaciones-subieron-2022-segun-balance-criminalidad-interior.html" target="_blank" rel="noopener">Menorca.info, balance de 2022, 17 mar 2023</a>
+          <a class="src" href="https://nuevecuatrouno.com/2025/02/07/rioja-rebaja-criminalidad-asesinatos-ministerio-interior/" target="_blank" rel="noopener">Nuevecuatrouno, balance de 2024 (media nacional 50,6), 7 feb 2025</a>
+          <a class="src" href="https://www.escudodigital.com/interior/ligera-bajada-criminalidad-2024-aumento-homicidios-violaciones.html" target="_blank" rel="noopener">Escudo Digital, balance de 2024 (41,0 convencional; 9,6 ciber), 7 feb 2025</a>
+          <a class="src" href="https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/dam/jcr:7d3776cd-9ca4-4c02-8ca4-96b2571dbee4/Balance%20de%20Criminalidad%20Cuarto%20Trimestre%202025.pdf" target="_blank" rel="noopener">Oficial: Interior, Balance de Criminalidad 4.º trimestre 2025 (40,4 convencional; 10,0 ciber), 2026</a>
+          <a class="src" href="https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/DPOP1?nult=10" target="_blank" rel="noopener">Oficial: INE, cifras oficiales del Padrón municipal a 1 de enero, total nacional (serie DPOP1), 2021</a>
+          <a class="src" href="https://www.ine.es/htdocs/prensa/ecp_tabla.htm" target="_blank" rel="noopener">Oficial: INE, Estadística Continua de Población: población residente a 1 de enero (2022-2026), 2026</a>
+          <a class="src" href="https://www.interior.gob.es/opencms/export/sites/default/.galleries/galeria-de-prensa/documentos-y-multimedia/balances-e-informes/2023/Balance-de-Criminalidad-Cuarto-Trimestre-2023.pdf" target="_blank" rel="noopener">Oficial: Interior, Balance de Criminalidad 4.º trimestre 2023 (infracciones de 2023, sin tasa), 2024</a>
+          <a class="src" href="https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/dam/jcr:1575adad-8f29-4700-a166-c49326ffb067/nota_prensa_2019_4_trimestre.pdf" target="_blank" rel="noopener">Oficial: Interior, nota de prensa del 4.º trimestre de 2019 (infracciones de 2018 y 2019), 2020</a>
+          <a class="src" href="https://estadisticasdecriminalidad.ses.mir.es/publico/portalestadistico/dam/jcr:e35f0e71-155f-4964-9042-c73327bc71ee/Balance%20de%20Criminalidad%20Cuarto%20Trimestre%202020.pdf" target="_blank" rel="noopener">Oficial: Interior, Balance de Criminalidad 4.º trimestre 2020 (infracciones de 2020), 2021</a>
+        </div>
+      </details>
+    </div>
+    <div class="limit"><p>Qué no dicen estas cifras: qué las causó ni qué parte corresponde al Estado, a las comunidades o a los ayuntamientos.</p><ul class="nolist"><li>Tasa de criminalidad de 2018, 2019, 2020 y 2023: no la hemos encontrado publicada; es cálculo propio con población del INE. La de 2025 es la suma propia de las tasas convencional y ciber.</li><li>Los balances del 4.º trimestre de 2018, 2021, 2022 y 2024 no se pudieron abrir; esas cifras salen del balance siguiente, de una nota oficial o de prensa.</li><li>Recuentos oficiales de las votaciones finales de 2019, 2021, 2022 y 2023, y de las proposiciones sobre ocupación de 2021, 2022 (dos) y sus grupos en contra.</li><li>Que la proposición del PP sobre ocupación admitida en 2026 decayera con la disolución no lo confirma una fuente expresa.</li><li>Ofertas de empleo público y equiparación salarial de Policía Nacional y Guardia Civil: no hemos encontrado una ley o real decreto-ley propio; no se incluyen.</li><li>No hemos podido hacer más búsquedas web en esta ampliación (límite agotado): pueden faltar otras proposiciones votadas en el Pleno.</li></ul></div>
+  </section>
+
+  <footer class="foot">
+    <p><b>Estado de la verificación.</b> Con fuente oficial (BOE o actas y Diario de Sesiones del Congreso): las ocho leyes orgánicas, el rechazo en comisión de 2023, la toma en consideración y las enmiendas a la totalidad de la reforma de seguridad ciudadana de 2024, la admisión de la ley del PP sobre ocupación de 2026 y el recuento de la ley de multirreincidencia. Con dos fuentes de prensa: el rechazo de la ley del PP sobre ocupación de 2021 (sin recuento) y los grupos en contra de la ley de infancia. Con una sola fuente: recuentos finales de 2019, 2022 y 2023 (Senado), los rechazos de 2022 sobre ocupación, los grupos en contra de 2023 y 2026, y que la reforma de 2024 decae. Indicadores: infracciones de 2018-2021, 2023 y 2025 oficiales; 2022 y 2024 de prensa. Tasa: 2021 y 2022 oficiales, 2024 de prensa, 2018-2020, 2023 y 2025 cálculo propio. Consulta: 11 de noviembre de 2026. Que Pedro Sánchez preside el Gobierno desde junio de 2018 es de dominio público.</p>
+    <p>Última revisión: 11 de noviembre de 2026. ¿Un dato está mal? <a href="metodologia.html#correcciones">Dínoslo</a>. Cómo se ha hecho: <a href="metodologia.html">metodología</a>.</p>
+  </footer>
+</main>
+
+<script>
+(function(){
+  var SPECS=[{"id": "c1", "u": "infracciones", "dec": 0, "t": "Infracciones penales conocidas, total anual", "s": [{"l": "2018", "v": 2131118, "c": false}, {"l": "2019", "v": 2201859, "c": false}, {"l": "2020", "v": 1773366, "c": false}, {"l": "2021", "v": 1960113, "c": false}, {"l": "2022", "v": 2325358, "c": false}, {"l": "2023", "v": 2459659, "c": false}, {"l": "2024", "v": 2456413, "c": false}, {"l": "2025", "v": 2474156, "c": false}]}, {"id": "c2", "u": "puntos", "dec": 1, "t": "Tasa de criminalidad, infracciones por cada 1.000 habitantes", "s": [{"l": "2018", "v": 45.6, "c": true}, {"l": "2019", "v": 46.8, "c": true}, {"l": "2020", "v": 37.4, "c": true}, {"l": "2021", "v": 41.4, "c": false}, {"l": "2022", "v": 48.8, "c": false}, {"l": "2023", "v": 51.2, "c": true}, {"l": "2024", "v": 50.6, "c": false}, {"l": "2025", "v": 50.4, "c": true}]}];
+  function num(v,dec){var s=Math.abs(v).toFixed(dec).split('.');s[0]=s[0].replace(/\B(?=(\d{3})+(?!\d))/g,'.');return (v<0?'−':'')+s.join(',')}
+  function fmt(v,u,dec){var n=num(v,dec);if(!u)return n;return u==='%'?n+' %':n+' '+u}
+  SPECS.forEach(function(sp){
+    var vals=sp.s.filter(function(d){return d.v!=null}).map(function(d){return d.v});
+    var mn=Math.min(0,Math.min.apply(null,vals)), mx=Math.max(0,Math.max.apply(null,vals));
+    var W=360,LB=58,VL=86,RH=25,BH=15,pw=W-LB-VL-(mn<0?VL*0.6:0),H=sp.s.length*RH+2;
+    var span=(mx-mn)||1, x0=LB+(mn<0?VL*0.6:0)+(-mn/span)*pw;
+    var s='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+sp.t+': '+sp.s.map(function(d){return d.l+' '+(d.v==null?'sin dato':fmt(d.v,sp.u,sp.dec))}).join(', ')+'">';
+    sp.s.forEach(function(d,i){
+      var y=i*RH+2;
+      s+='<text x="0" y="'+(y+12)+'" font-size="12" font-family="IBM Plex Mono, monospace" fill="var(--ink-2)">'+d.l+'</text>';
+      if(d.v==null){s+='<text x="'+(x0+4)+'" y="'+(y+12)+'" font-size="12" font-style="italic" font-family="Source Sans 3, system-ui, sans-serif" fill="var(--ink-2)">sin dato</text>';return}
+      var w=Math.max(2,Math.abs(d.v)/span*pw), x=d.v<0?x0-w:x0;
+      s+='<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+BH+'" fill="'+(d.c?'var(--alt)':'var(--accent)')+'" rx="2"/>';
+      var tx=d.v<0?x-6:x+w+6, an=d.v<0?'end':'start';
+      s+='<text x="'+tx+'" y="'+(y+12)+'" text-anchor="'+an+'" font-size="12" font-weight="600" font-family="IBM Plex Mono, monospace" fill="var(--ink)">'+fmt(d.v,sp.u,sp.dec)+'</text>';
+    });
+    s+='<line x1="'+x0+'" x2="'+x0+'" y1="0" y2="'+H+'" stroke="var(--ink-2)" stroke-width="1"/></svg>';
+    document.getElementById(sp.id).innerHTML=s;
+  });
+})();
+</script>
