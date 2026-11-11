@@ -22,8 +22,10 @@
       "votacion": {                       // null si no hubo o no consta
         "fecha": "2022-02-03",
         "a_favor": 175, "en_contra": 174, "abstenciones": 0,   // null si no consta el recuento
-        "grupos_en_contra": ["PP", "Vox"],                       // [] si no consta; orden alfabético
-        "resultado": "convalidado"        // convalidado | derogado | aprobado (ley aprobada) | tomado_en_consideracion | rechazado | devuelto (enmiendas de totalidad aprobadas: a_favor = votos a favor de las enmiendas) | enmienda_rechazada (enmiendas de totalidad rechazadas: a_favor = votos a favor de las enmiendas)
+        "grupos_en_contra": ["PP", "Vox"],                       // [] si no consta; orden alfabético. Se guarda pero NO se muestra en la ficha (solo constaba cuando la prensa lo decía)
+        "resultado": "convalidado",       // convalidado | derogado | aprobado (ley aprobada) | tomado_en_consideracion | rechazado | devuelto (enmiendas de totalidad aprobadas: a_favor = votos a favor de las enmiendas) | enmienda_rechazada (enmiendas de totalidad rechazadas: a_favor = votos a favor de las enmiendas)
+        "fuente_recuento": "oficial",      // oficial (Diario de Sesiones, acta o registro del Congreso) | dos_fuentes | una_fuente | null si no hay recuento. Decide la etiqueta «recuento oficial / según dos medios / según un medio»
+        "camara": "congreso"               // opcional: congreso (Pleno, por defecto) | senado | comision | diputacion_permanente. Se muestra si no es el Pleno del Congreso
       },
       "fuentes": [
         {"nombre": "BOE-A-2021-21788", "url": "https://...", "tipo": "oficial", "fecha": "2021-12-30"}

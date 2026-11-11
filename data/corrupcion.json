@@ -4,7 +4,7 @@
   "titulo": "Corrupción y calidad de la política: qué ha hecho el Estado",
   "aviso_competencia": "",
   "resumen": {
-    "aprobado": "Las empresas pasaron a responder penalmente por malversación (2019). Se reformó la malversación y se suprimió la sedición (2022). Se aprobó la ley que protege a quien denuncia infracciones (2023) y la ley de amnistía, que incluye la malversación ligada al proceso independentista sin enriquecimiento (2024). El Gobierno aprobó un Plan Estatal de Lucha contra la Corrupción (2025).",
+    "aprobado": "Las empresas pasaron a responder penalmente por malversación (2019). Se reformó la malversación, con una pena más leve para los desvíos presupuestarios según el preámbulo, y se suprimió la sedición (2022). Se aprobó la ley que protege a quien denuncia infracciones (2023) y la ley de amnistía, que incluye la malversación ligada al proceso independentista sin enriquecimiento (2024). El Gobierno aprobó un Plan Estatal de Lucha contra la Corrupción (2025).",
     "no_salio": "El Congreso rechazó tramitar leyes contra la corrupción o de protección de denunciantes de Ciudadanos (2020, 159 a favor y 178 en contra), Vox (2021, 150 a 192) y Sumar (2025, 170 a 176). La ley de lobbies y el proyecto de Ley Orgánica de Integridad Pública no llegaron a aprobarse antes de la disolución.",
     "cifras": "España tenía 58 puntos sobre 100 en el Índice de Percepción de la Corrupción en 2018 (puesto 41) y 55 en 2025 (puesto 49). Su puntuación más alta del periodo fue 62, en 2019 y 2020.",
     "no_sabe": "Esta ficha no recoge casos judiciales. Falta el recuento final de varias leyes y el voto por grupos de casi todas las votaciones."
@@ -48,7 +48,8 @@
         "en_contra": 136,
         "abstenciones": 18,
         "grupos_en_contra": [],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -91,7 +92,8 @@
           "PSOE",
           "Unidas Podemos"
         ],
-        "resultado": "rechazado"
+        "resultado": "rechazado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -138,7 +140,8 @@
           "Ciudadanos",
           "PP"
         ],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -176,7 +179,8 @@
         "en_contra": 192,
         "abstenciones": 3,
         "grupos_en_contra": [],
-        "resultado": "rechazado"
+        "resultado": "rechazado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -208,7 +212,8 @@
         "en_contra": null,
         "abstenciones": 55,
         "grupos_en_contra": [],
-        "resultado": "tomado_en_consideracion"
+        "resultado": "tomado_en_consideracion",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -244,7 +249,7 @@
       "tipo": "aprobado",
       "fecha": "2022-12-22",
       "titulo": "Ley Orgánica 14/2022: reforma de la malversación y supresión de la sedición",
-      "frase_llana": "Cambia las penas de la malversación según el uso que se dé al dinero público. Suprime el delito de sedición y reescribe el de desórdenes públicos.",
+      "frase_llana": "Según el preámbulo, la apropiación de dinero público sigue castigada como hasta ahora y «los desvíos presupuestarios tendrán una pena más leve». Suprime el delito de sedición y reescribe el de desórdenes públicos.",
       "detalle": "LO 14/2022, de 22 de diciembre. BOE núm. 307, de 23-12-2022 (BOE-A-2022-21800). En vigor el 12-01-2023. Malversación: apropiación (art. 432), 2 a 6 años de prisión, hasta 4-8 en casos agravados; uso temporal para fines privados (nuevo art. 432 bis), 6 meses a 3 años; desvío a otra finalidad pública (art. 433), 1 a 4 años si causa daño grave al servicio. Suprime los artículos 544 a 549 (sedición). Senado, 22-12-2022: 140 a favor, 118 en contra, 3 abstenciones (una fuente de prensa).",
       "votacion": {
         "fecha": "2022-12-15",
@@ -262,7 +267,8 @@
           "Teruel Existe",
           "Vox"
         ],
-        "resultado": "aprobado"
+        "resultado": "aprobado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -270,6 +276,12 @@
           "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-21800",
           "tipo": "oficial",
           "fecha": "2022-12-23"
+        },
+        {
+          "nombre": "Diario de Sesiones del Congreso, Pleno, núm. 234",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-234.PDF",
+          "tipo": "oficial",
+          "fecha": "2022-12-15"
         },
         {
           "nombre": "Orain: el Congreso aprueba derogar la sedición y rebajar penas por malversación",
@@ -291,7 +303,7 @@
         }
       ],
       "verificacion": "oficial",
-      "no_sabemos": "La norma consta en el BOE. El recuento del Congreso procede de dos medios de prensa; la lista de grupos en contra, de uno solo (Valencia Plaza), que añade que una diputada del PP votó en contra y que el resto del PP y Ciudadanos no votaron."
+      "no_sabemos": "La norma consta en el BOE. El recuento del Congreso es oficial (Diario de Sesiones del Congreso); la lista de grupos en contra procede de un solo medio (Valencia Plaza), que añade que una diputada del PP votó en contra y que el resto del PP y Ciudadanos no votaron."
     },
     {
       "id": "corr-2023-ley-2-informante",
@@ -309,7 +321,8 @@
           "PP",
           "Vox"
         ],
-        "resultado": "aprobado"
+        "resultado": "aprobado",
+        "fuente_recuento": null
       },
       "fuentes": [
         {
@@ -352,7 +365,8 @@
           "UPN",
           "Vox"
         ],
-        "resultado": "aprobado"
+        "resultado": "aprobado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -390,7 +404,8 @@
         "en_contra": 177,
         "abstenciones": 136,
         "grupos_en_contra": [],
-        "resultado": "enmienda_rechazada"
+        "resultado": "enmienda_rechazada",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -451,7 +466,8 @@
           "PP",
           "Vox"
         ],
-        "resultado": "rechazado"
+        "resultado": "rechazado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -681,5 +697,5 @@
     "No se recogen las reformas del Reglamento del Congreso sobre grupos de interés, porque no son leyes.",
     "No se ha revisado el registro completo de votaciones del Pleno: puede haber proposiciones de ley sobre estos asuntos que no constan."
   ],
-  "pie_verificacion": "Las normas y proyectos constan en el BOE, el BOCG o La Moncloa. Los recuentos de las votaciones de 2020, 2021, 2022 (toma en consideración), 2024 y 2025 salen del Diario de Sesiones o de las actas del Pleno. El recuento de la reforma penal de 2022 viene de dos medios de prensa. Los grupos que votaron en contra vienen casi siempre de prensa, a menudo de una sola fuente. El índice de percepción procede de Transparencia Internacional; los datos de 2023 y la posición de 2024 se toman de prensa que cita el informe."
+  "pie_verificacion": "Las normas y proyectos constan en el BOE, el BOCG o La Moncloa. Los recuentos de las votaciones de 2020, 2021, 2022 (toma en consideración y reforma penal), 2024 y 2025 salen del Diario de Sesiones o de las actas del Pleno. Los grupos que votaron en contra vienen casi siempre de prensa, a menudo de una sola fuente. El índice de percepción procede de Transparencia Internacional; los datos de 2023 y la posición de 2024 se toman de prensa que cita el informe."
 }

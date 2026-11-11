@@ -149,6 +149,8 @@ details.yg>summary::before{content:"+";font-family:var(--f-mono);font-size:1rem;
 details.yg[open]>summary::before{content:"−"}
 .ygi{display:flex;flex-direction:column;gap:14px}
 .tl.compact li{padding-bottom:10px}
+.tl li.sep{display:block;padding-bottom:10px}
+.tl li.sep span{display:block;border-top:1px dashed var(--rule);padding-top:6px;font-family:var(--f-mono);font-size:.74rem;color:var(--ink-2);text-transform:uppercase;letter-spacing:.06em}
 .tl.compact .t{font-weight:500;font-size:.95rem}
 .keys{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.88rem;color:var(--ink-2)}
 .keys i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px}
@@ -164,13 +166,13 @@ details.yg[open]>summary::before{content:"−"}
   <div class="head">
     <p class="kicker">Gobierno central y Cortes · 2018 a 2026</p>
     <h1>Corrupción y calidad de la política: qué ha hecho el Estado</h1>
-    <p class="lede">Ocho años con Pedro Sánchez como presidente del Gobierno, desde junio de 2018.</p>
+    <p class="lede">Periodo: junio de 2018 a octubre de 2026. Tres gobiernos presididos por Pedro Sánchez: PSOE (2018-2020), PSOE y Unidas Podemos (2020-2023), PSOE y Sumar (desde 2023). Los datos de 2018 anteriores a junio corresponden al Gobierno anterior.</p>
   </div>
 
   <div class="sum" aria-label="Resumen">
     <div class="row">
       <span class="k">Lo que se aprobó</span>
-      <p>Las empresas pasaron a responder penalmente por malversación (2019). Se reformó la malversación y se suprimió la sedición (2022). Se aprobó la ley que protege a quien denuncia infracciones (2023) y la ley de amnistía, que incluye la malversación ligada al proceso independentista sin enriquecimiento (2024). El Gobierno aprobó un Plan Estatal de Lucha contra la Corrupción (2025).</p>
+      <p>Las empresas pasaron a responder penalmente por malversación (2019). Se reformó la malversación, con una pena más leve para los desvíos presupuestarios según el preámbulo, y se suprimió la sedición (2022). Se aprobó la ley que protege a quien denuncia infracciones (2023) y la ley de amnistía, que incluye la malversación ligada al proceso independentista sin enriquecimiento (2024). El Gobierno aprobó un Plan Estatal de Lucha contra la Corrupción (2025).</p>
     </div>
     <div class="row">
       <span class="k">Lo que no salió</span>
@@ -191,6 +193,7 @@ details.yg[open]>summary::before{content:"−"}
     <div class="legend"><span><i class="dot"></i>Aprobado</span><span><i class="dot no"></i>No salió</span></div>
     <ol class="tl compact">
       <li><time>20 feb 2019</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley Orgánica 1/2019, reforma del Código Penal por directivas europeas</p><p class="s"></p></div></li>
+      <li class="sep"><span>Enero de 2020 · Gobierno de PSOE y Unidas Podemos</span></li>
       <li><time>4 feb 2020</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 3/2020, contratación pública en sectores especiales</p><p class="s"></p></div></li>
       <li><time>17 jun 2020</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proposición de Ley de medidas de lucha contra la corrupción (Ciudadanos)</p><p class="s">Rechazado</p></div></li>
       <li><time>30 dic 2020</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 36/2020, gestión del Plan de Recuperación</p><p class="s"></p></div></li>
@@ -198,6 +201,7 @@ details.yg[open]>summary::before{content:"−"}
       <li><time>8 jul 2022</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley 14/2022, reforma de la Ley de transparencia (pymes en la contratación pública)</p><p class="s"></p></div></li>
       <li><time>22 dic 2022</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley Orgánica 14/2022: reforma de la malversación y supresión de la sedición</p><p class="s"></p></div></li>
       <li><time>20 feb 2023</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley 2/2023, de protección de las personas que informen sobre infracciones y de lucha contra la corrupción</p><p class="s"></p></div></li>
+      <li class="sep"><span>Noviembre de 2023 · Gobierno de PSOE y Sumar</span></li>
       <li><time>10 jun 2024</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley Orgánica 1/2024, de amnistía</p><p class="s"></p></div></li>
       <li><time>25 mar 2025</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Ley de grupos de interés (lobbies): el Congreso rechaza devolverla al Gobierno</p><p class="s">Votación sobre las enmiendas de totalidad: rechazadas, el texto sigue adelante</p></div></li>
       <li><time>26 ago 2025</time><span class="mk"><i class="dot"></i></span><div><p class="t">Plan Estatal de Lucha contra la Corrupción</p><p class="s"></p></div></li>
@@ -209,7 +213,7 @@ details.yg[open]>summary::before{content:"−"}
   <section aria-labelledby="h-a">
     <h2 id="h-a">Qué ha aprobado el Estado<span class="count">8</span></h2>
     <article class="fact">
-      <div class="meta"><time>20 feb 2019</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>20 feb 2019</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Ley Orgánica 1/2019, reforma del Código Penal por directivas europeas</h3>
       <p class="plain">Las empresas y otras personas jurídicas pueden responder penalmente por malversación. El cohecho se extiende a funcionarios de otros países, de la UE y de organizaciones internacionales.</p>
       
@@ -224,10 +228,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>4 feb 2020</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>4 feb 2020</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 3/2020, contratación pública en sectores especiales</h3>
       <p class="plain">Fija las reglas de contratación de las empresas de agua, energía, transporte y servicios postales, y modifica la Ley 9/2017 de contratos. Incluye también cambios en seguros, planes de pensiones e impuestos.</p>
-      <div class="vote" role="img" aria-label="185 a favor, 136 en contra, 18 abstenciones"><span class="lbl">20 feb 2020 · Convalidado</span><div class="bar"><span class="y" style="width:54.57%">185 a favor</span><span class="n" style="width:40.12%">136 en contra</span><span class="a" style="width:5.31%"></span></div></div>
+      <div class="vote" role="img" aria-label="185 a favor, 136 en contra, 18 abstenciones"><span class="lbl">20 feb 2020 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:54.57%">185 a favor</span><span class="n" style="width:40.12%">136 en contra</span><span class="a" style="width:5.31%"></span></div></div>
       <p class="limit">No consta el voto por grupos. No consta si la tramitación como proyecto de ley terminó en una ley.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -240,11 +244,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>30 dic 2020</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>30 dic 2020</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 36/2020, gestión del Plan de Recuperación</h3>
       <p class="plain">Cambia normas de contratación pública, subvenciones y control para gestionar los fondos europeos de recuperación. Modifica tres artículos de la Ley 9/2017 de contratos.</p>
-      <div class="vote" role="img" aria-label="170 a favor, 126 en contra, 52 abstenciones"><span class="lbl">28 ene 2021 · Convalidado</span><div class="bar"><span class="y" style="width:48.85%">170 a favor</span><span class="n" style="width:36.21%">126 en contra</span><span class="a" style="width:14.94%">52</span></div></div>
-      <p>En contra: Ciudadanos, PP.</p>
+      <div class="vote" role="img" aria-label="170 a favor, 126 en contra, 52 abstenciones"><span class="lbl">28 ene 2021 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:48.85%">170 a favor</span><span class="n" style="width:36.21%">126 en contra</span><span class="a" style="width:14.94%">52</span></div></div>
       <p class="limit">El recuento es oficial. Que PP y Ciudadanos votaron en contra y Vox se abstuvo lo dice una sola fuente de prensa. La contratación es uno de varios bloques de la norma. No consta si la tramitación como proyecto de ley terminó en una ley.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -257,7 +260,7 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>8 jul 2022</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>8 jul 2022</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Ley 14/2022, reforma de la Ley de transparencia (pymes en la contratación pública)</h3>
       <p class="plain">Las administraciones deben publicar cada seis meses qué parte de los contratos públicos, en número y en valor, va a pequeñas y medianas empresas.</p>
       <p class="vote"><span class="lbl">1 feb 2022 · Admitido a trámite · las fuentes no dan el recuento</span></p>
@@ -274,17 +277,17 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>22 dic 2022</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>22 dic 2022</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Ley Orgánica 14/2022: reforma de la malversación y supresión de la sedición</h3>
-      <p class="plain">Cambia las penas de la malversación según el uso que se dé al dinero público. Suprime el delito de sedición y reescribe el de desórdenes públicos.</p>
-      <div class="vote" role="img" aria-label="184 a favor, 64 en contra, 1 abstenciones"><span class="lbl">15 dic 2022 · Aprobado</span><div class="bar"><span class="y" style="width:73.90%">184 a favor</span><span class="n" style="width:25.70%">64 en contra</span><span class="a" style="width:0.40%"></span></div></div>
-      <p>En contra: BNG, CC, CUP, Foro Asturias, Junts, Navarra Suma, PRC, Teruel Existe, Vox.</p>
-      <p class="limit">La norma consta en el BOE. El recuento del Congreso procede de dos medios de prensa; la lista de grupos en contra, de uno solo (Valencia Plaza), que añade que una diputada del PP votó en contra y que el resto del PP y Ciudadanos no votaron.</p>
+      <p class="plain">Según el preámbulo, la apropiación de dinero público sigue castigada como hasta ahora y «los desvíos presupuestarios tendrán una pena más leve». Suprime el delito de sedición y reescribe el de desórdenes públicos.</p>
+      <div class="vote" role="img" aria-label="184 a favor, 64 en contra, 1 abstenciones"><span class="lbl">15 dic 2022 · Aprobado · recuento oficial</span><div class="bar"><span class="y" style="width:73.90%">184 a favor</span><span class="n" style="width:25.70%">64 en contra</span><span class="a" style="width:0.40%"></span></div></div>
+      <p class="limit">La norma consta en el BOE. El recuento del Congreso es oficial (Diario de Sesiones del Congreso); la lista de grupos en contra procede de un solo medio (Valencia Plaza), que añade que una diputada del PP votó en contra y que el resto del PP y Ciudadanos no votaron.</p>
       <details>
         <summary>Detalle y fuentes</summary>
         <div class="in">
           <p>LO 14/2022, de 22 de diciembre. BOE núm. 307, de 23-12-2022 (BOE-A-2022-21800). En vigor el 12-01-2023. Malversación: apropiación (art. 432), 2 a 6 años de prisión, hasta 4-8 en casos agravados; uso temporal para fines privados (nuevo art. 432 bis), 6 meses a 3 años; desvío a otra finalidad pública (art. 433), 1 a 4 años si causa daño grave al servicio. Suprime los artículos 544 a 549 (sedición). Senado, 22-12-2022: 140 a favor, 118 en contra, 3 abstenciones (una fuente de prensa).</p>
           <a class="src" href="https://www.boe.es/buscar/act.php?id=BOE-A-2022-21800" target="_blank" rel="noopener">Oficial: BOE-A-2022-21800, 23 dic 2022</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-234.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, Pleno, núm. 234, 15 dic 2022</a>
           <a class="src" href="https://orain.eus/es/politica/2022/12/15/el-congreso-aprueba-derogar-sedicion-rebajar-penas-por-malversacion-y-modificar-tc/" target="_blank" rel="noopener">Orain: el Congreso aprueba derogar la sedición y rebajar penas por malversación, 15 dic 2022</a>
           <a class="src" href="https://valenciaplaza.com/congreso-aprueba-reforma-penal-suprime-sedicion" target="_blank" rel="noopener">Valencia Plaza: el Congreso aprueba la reforma que suprime la sedición y modifica la malversación, 15 dic 2022</a>
           <a class="src" href="https://rtvc.es/aprobada-reforma-sobre-sedicion-y-rebaja-penas-por-malversacion/" target="_blank" rel="noopener">RTVC: aprobada la reforma sobre sedición y malversación (Senado), 22 dic 2022</a>
@@ -292,11 +295,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>20 feb 2023</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>20 feb 2023</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Ley 2/2023, de protección de las personas que informen sobre infracciones y de lucha contra la corrupción</h3>
       <p class="plain">Protege frente a represalias a quien informa de infracciones graves que conoce por su trabajo. Obliga a empresas de 50 o más trabajadores y al sector público a tener un canal interno de denuncias.</p>
       <p class="vote"><span class="lbl">16 feb 2023 · Aprobado · las fuentes no dan el recuento</span></p>
-      <p>En contra: PP, Vox.</p>
       <p class="limit">No consta el recuento de votos. El Diario de Sesiones solo dice que las enmiendas del Senado se aprobaron. Que PP y Vox votaron en contra lo dice una sola fuente de prensa.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -309,11 +311,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>10 jun 2024</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>10 jun 2024</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Ley Orgánica 1/2024, de amnistía</h3>
       <p class="plain">Amnistía determinados actos vinculados al proceso independentista de Cataluña, entre ellos las consultas del 9 de noviembre de 2014 y del 1 de octubre de 2017. Incluye la malversación destinada a esos fines cuando no hubo propósito de enriquecimiento.</p>
-      <div class="vote" role="img" aria-label="177 a favor, 172 en contra"><span class="lbl">30 may 2024 · Aprobado</span><div class="bar"><span class="y" style="width:50.72%">177 a favor</span><span class="n" style="width:49.28%">172 en contra</span></div></div>
-      <p>En contra: CC, PP, UPN, Vox.</p>
+      <div class="vote" role="img" aria-label="177 a favor, 172 en contra"><span class="lbl">30 may 2024 · Aprobado · recuento oficial</span><div class="bar"><span class="y" style="width:50.72%">177 a favor</span><span class="n" style="width:49.28%">172 en contra</span></div></div>
       <p class="limit">Entra en esta ficha porque la propia ley regula la malversación (art. 1). El recuento es oficial; la lista de grupos en contra viene de una sola fuente de prensa. No consta a cuántas personas se ha aplicado por malversación.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -326,7 +327,7 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>26 ago 2025</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>26 ago 2025</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Plan Estatal de Lucha contra la Corrupción</h3>
       <p class="plain">El Gobierno aprueba un plan de 15 medidas. Incluye una agencia independiente de integridad, más control de la contratación pública y de las cuentas de los partidos.</p>
       
@@ -345,11 +346,10 @@ details.yg[open]>summary::before{content:"−"}
     <h2 id="h-b">Qué intentó y no salió<span class="count">5</span></h2>
     <p class="lede">Solo se cuenta lo que pasó, sin juzgar a nadie. Los motivos de cada grupo se añadirán como cita literal del Diario de Sesiones.</p>
     <article class="fact">
-      <div class="meta"><time>17 jun 2020</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>17 jun 2020</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Proposición de Ley de medidas de lucha contra la corrupción (Ciudadanos)</h3>
       <p class="plain">El Congreso rechaza empezar a tramitar una ley de Ciudadanos con medidas contra la corrupción y protección de denunciantes en el sector público.</p>
-      <div class="vote" role="img" aria-label="159 a favor, 178 en contra, 11 abstenciones"><span class="lbl">17 jun 2020 · Rechazado</span><div class="bar"><span class="y" style="width:45.69%">159 a favor</span><span class="n" style="width:51.15%">178 en contra</span><span class="a" style="width:3.16%"></span></div></div>
-      <p>En contra: ERC, PNV, PSOE, Unidas Podemos.</p>
+      <div class="vote" role="img" aria-label="159 a favor, 178 en contra, 11 abstenciones"><span class="lbl">17 jun 2020 · Rechazado · recuento oficial</span><div class="bar"><span class="y" style="width:45.69%">159 a favor</span><span class="n" style="width:51.15%">178 en contra</span><span class="a" style="width:3.16%"></span></div></div>
       <p class="limit">El recuento es oficial. PSOE y Unidas Podemos en contra lo dicen dos medios; ERC y PNV, uno solo. Ciudadanos volvió a registrar una ley parecida en diciembre de 2020 (122/000116); no consta que se votara en el Pleno.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -363,10 +363,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>22 jun 2021</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>22 jun 2021</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Proposición de Ley de protección integral de los denunciantes de corrupción (Vox)</h3>
       <p class="plain">El Congreso rechaza empezar a tramitar una ley de Vox para proteger a quien denuncia casos de corrupción.</p>
-      <div class="vote" role="img" aria-label="150 a favor, 192 en contra, 3 abstenciones"><span class="lbl">22 jun 2021 · Rechazado</span><div class="bar"><span class="y" style="width:43.48%">150 a favor</span><span class="n" style="width:55.65%">192 en contra</span><span class="a" style="width:0.87%"></span></div></div>
+      <div class="vote" role="img" aria-label="150 a favor, 192 en contra, 3 abstenciones"><span class="lbl">22 jun 2021 · Rechazado · recuento oficial</span><div class="bar"><span class="y" style="width:43.48%">150 a favor</span><span class="n" style="width:55.65%">192 en contra</span><span class="a" style="width:0.87%"></span></div></div>
       <p class="limit">No consta el voto por grupos.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -378,10 +378,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>25 mar 2025</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>25 mar 2025</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Ley de grupos de interés (lobbies): el Congreso rechaza devolverla al Gobierno</h3>
       <p class="plain">El proyecto crea un registro público y obligatorio de lobbies ante la Administración del Estado. Superó la enmienda de devolución, pero no llegó a aprobarse antes de la disolución.</p>
-      <div class="vote" role="img" aria-label="32 a favor, 177 en contra, 136 abstenciones"><span class="lbl">25 mar 2025 · Votación sobre las enmiendas de totalidad: rechazadas, el texto sigue adelante</span><div class="bar"><span class="y" style="width:9.28%">32 a favor</span><span class="n" style="width:51.30%">177 en contra</span><span class="a" style="width:39.42%">136</span></div></div>
+      <div class="vote" role="img" aria-label="32 a favor, 177 en contra, 136 abstenciones"><span class="lbl">25 mar 2025 · Votación sobre las enmiendas de totalidad: rechazadas, el texto sigue adelante · recuento oficial</span><div class="bar"><span class="y" style="width:9.28%">32 a favor</span><span class="n" style="width:51.30%">177 en contra</span><span class="a" style="width:39.42%">136</span></div></div>
       <p class="limit">La votación es sobre la enmienda de devolución, no sobre la ley: los votos a favor son a favor de devolverla. No consta el voto por grupos. Que la ley decae con la disolución lo dice una fuente de prensa.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -394,11 +394,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>16 sep 2025</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>16 sep 2025</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Proposición de ley de creación de la Oficina de prevención de la corrupción</h3>
       <p class="plain">El Congreso rechaza empezar a tramitar una ley de Sumar para crear una oficina estatal contra la corrupción.</p>
-      <div class="vote" role="img" aria-label="170 a favor, 176 en contra, 1 abstenciones"><span class="lbl">16 sep 2025 · Rechazado</span><div class="bar"><span class="y" style="width:48.99%">170 a favor</span><span class="n" style="width:50.72%">176 en contra</span><span class="a" style="width:0.29%"></span></div></div>
-      <p>En contra: Junts, PP, Vox.</p>
+      <div class="vote" role="img" aria-label="170 a favor, 176 en contra, 1 abstenciones"><span class="lbl">16 sep 2025 · Rechazado · recuento oficial</span><div class="bar"><span class="y" style="width:48.99%">170 a favor</span><span class="n" style="width:50.72%">176 en contra</span><span class="a" style="width:0.29%"></span></div></div>
       <p class="limit">El recuento es oficial. Los grupos en contra los nombran dos medios de prensa.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -412,7 +411,7 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>28 jul 2026</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>28 jul 2026</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Proyecto de Ley Orgánica de Integridad Pública</h3>
       <p class="plain">El Gobierno lleva al Congreso una ley que crea una agencia independiente contra la corrupción y endurece penas. No llegó a votarse y decae con la disolución.</p>
       
@@ -467,7 +466,7 @@ details.yg[open]>summary::before{content:"−"}
   </section>
 
   <footer class="foot">
-    <p><b>Estado de la verificación.</b> Las normas y proyectos constan en el BOE, el BOCG o La Moncloa. Los recuentos de las votaciones de 2020, 2021, 2022 (toma en consideración), 2024 y 2025 salen del Diario de Sesiones o de las actas del Pleno. El recuento de la reforma penal de 2022 viene de dos medios de prensa. Los grupos que votaron en contra vienen casi siempre de prensa, a menudo de una sola fuente. El índice de percepción procede de Transparencia Internacional; los datos de 2023 y la posición de 2024 se toman de prensa que cita el informe. Que Pedro Sánchez preside el Gobierno desde junio de 2018 es de dominio público.</p>
+    <p><b>Estado de la verificación.</b> Las normas y proyectos constan en el BOE, el BOCG o La Moncloa. Los recuentos de las votaciones de 2020, 2021, 2022 (toma en consideración y reforma penal), 2024 y 2025 salen del Diario de Sesiones o de las actas del Pleno. Los grupos que votaron en contra vienen casi siempre de prensa, a menudo de una sola fuente. El índice de percepción procede de Transparencia Internacional; los datos de 2023 y la posición de 2024 se toman de prensa que cita el informe. Que Pedro Sánchez preside el Gobierno desde junio de 2018 es de dominio público.</p>
     <p>Última revisión: 11 de noviembre de 2026. ¿Un dato está mal? <a href="metodologia.html#correcciones">Dínoslo</a>. Cómo se ha hecho: <a href="metodologia.html">metodología</a>.</p>
   </footer>
 </main>

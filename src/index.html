@@ -185,7 +185,7 @@ select{appearance:auto}
     {id:'aragon', name:'Aragón', party:'PP', v27:false},
     {id:'asturias', name:'Principado de Asturias', party:'PSOE', v27:true},
     {id:'baleares', name:'Illes Balears', party:'PP', v27:true},
-    {id:'canarias', name:'Canarias', party:'Coalición Canaria', v27:true, police:'la Policía Canaria, adscrita al Cuerpo'},
+    {id:'canarias', name:'Canarias', party:'Coalición Canaria', v27:true, police:'la Policía Canaria'},
     {id:'cantabria', name:'Cantabria', party:'PP', v27:true},
     {id:'cyl', name:'Castilla y León', party:'PP', v27:false},
     {id:'clm', name:'Castilla-La Mancha', party:'PSOE', v27:true},
@@ -278,7 +278,7 @@ select{appearance:auto}
       hechos:{estado:'seguridad.html'},
       lv:{
         estado:{w:3, t:'Dirige la Policía Nacional y la Guardia Civil y escribe el Código Penal.', ref:'CE art. 149.1.29'},
-        ccaa:{w:1, t:'Solo cuatro comunidades tienen policía propia: Cataluña, País Vasco, Navarra y Canarias (adscrita).', ref:''},
+        ccaa:{w:1, t:'Cuatro comunidades tienen policía propia: Cataluña, País Vasco, Navarra y Canarias.', ref:''},
         local:{w:2, t:'La Policía Local lleva la seguridad urbana y el tráfico, y se coordina con el Estado en la Junta Local de Seguridad.', ref:'Ley 7/1985, art. 25'}
       },
       ask:'¿Cuántos agentes más habrá en mi zona y cómo se coordinarán con la policía local?',
@@ -304,15 +304,24 @@ select{appearance:auto}
   function prob(id){return PROBS.filter(function(p){return p.id===id})[0]}
   function muniName(){return S.muni.trim()||'tu municipio'}
 
+  /* En Ceuta y Melilla sanidad y educación las gestiona el Estado: pesos Estado 3 / ciudad 1. */
+  function lvl(p){
+    var c=cc();
+    if(c && c.city && (p.id==='sanidad'||p.id==='educacion')){
+      return {estado:{w:3,t:p.lv.estado.t,ref:p.lv.estado.ref}, ccaa:{w:1,t:p.lv.ccaa.t,ref:p.lv.ccaa.ref}, local:p.lv.local};
+    }
+    return p.lv;
+  }
   function tops(p){
-    var w=[['estado',p.lv.estado.w],['ccaa',p.lv.ccaa.w],['local',p.lv.local.w]];
+    var L=lvl(p);
+    var w=[['estado',L.estado.w],['ccaa',L.ccaa.w],['local',L.local.w]];
     var m=Math.max.apply(null,w.map(function(x){return x[1]}));
     var t=w.filter(function(x){return x[1]===m}).map(function(x){return x[0]});
     return t;
   }
   function lead(p){var t=tops(p); return t.length===1?t[0]:'mixto'}
   function verdict(p){
-    var w=p.lv.estado.w;
+    var w=lvl(p).estado.w;
     if(w>=3) return {t:'Las generales deciden casi todo', strong:true};
     if(w===2) return {t:'Las generales deciden una parte', strong:false};
     return {t:'Las generales deciden poco', strong:false};
@@ -387,7 +396,8 @@ select{appearance:auto}
     var t=tops(p);
     var showTop=t.length<3;
     var v=verdict(p);
-    var rows=['estado','ccaa','local'].map(function(k){return levelRow(k,p,p.lv[k],showTop && t.indexOf(k)>-1)}).join('');
+    var L=lvl(p);
+    var rows=['estado','ccaa','local'].map(function(k){return levelRow(k,p,L[k],showTop && t.indexOf(k)>-1)}).join('');
     var ex=p.extra?p.extra(c):[];
     var notes=ex.map(function(n){return '<p class="note">'+esc(n)+'</p>'}).join('');
     var hechos='';
@@ -462,13 +472,14 @@ select{appearance:auto}
     var fuera=picks.filter(function(p){var d=lead(p); return d==='ccaa'||d==='local'}).length;
     var a=picks.filter(function(p){return lead(p)==='estado'}).length;
     if(fuera>0){
-      if(n===1) return {big:'Lo que me preocupa', rest:'no se decide en las generales.'};
-      if(fuera===n) return {big:'Mis '+n+' preocupaciones', rest:'no se deciden en las generales.'};
-      return {big:fuera+' de mis '+n+' preocupaciones', rest:'no se deciden en las generales.'};
+      if(n===1) return {big:'Mi preocupación', rest:'quien más decide no se elige en las generales.'};
+      if(fuera===n) return {big:'Mis '+n+' preocupaciones', rest:'quien más decide no se elige en las generales.'};
+      return {big:fuera+' de mis '+n+' preocupaciones', rest:'quien más decide no se elige en las generales.'};
     }
     if(a>0){
-      if(n===1) return {big:'Lo que me preocupa', rest:'sí se decide en las generales.'};
-      return {big:'Mis '+n+' preocupaciones', rest:'sí se deciden en las generales.'};
+      if(n===1) return {big:'Mi preocupación', rest:'quien más decide se elige en las generales.'};
+      if(a===n) return {big:'Mis '+n+' preocupaciones', rest:'quien más decide se elige en las generales.'};
+      return {big:a+' de mis '+n+' preocupaciones', rest:'quien más decide se elige en las generales.'};
     }
     return {big:'Mis preocupaciones', rest:'se reparten entre varios gobiernos.'};
   }

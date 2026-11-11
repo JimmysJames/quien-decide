@@ -149,6 +149,8 @@ details.yg>summary::before{content:"+";font-family:var(--f-mono);font-size:1rem;
 details.yg[open]>summary::before{content:"−"}
 .ygi{display:flex;flex-direction:column;gap:14px}
 .tl.compact li{padding-bottom:10px}
+.tl li.sep{display:block;padding-bottom:10px}
+.tl li.sep span{display:block;border-top:1px dashed var(--rule);padding-top:6px;font-family:var(--f-mono);font-size:.74rem;color:var(--ink-2);text-transform:uppercase;letter-spacing:.06em}
 .tl.compact .t{font-weight:500;font-size:.95rem}
 .keys{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.88rem;color:var(--ink-2)}
 .keys i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px}
@@ -164,7 +166,7 @@ details.yg[open]>summary::before{content:"−"}
   <div class="head">
     <p class="kicker">Gobierno central y Cortes · 2018 a 2026</p>
     <h1>Seguridad ciudadana: qué ha hecho el Estado</h1>
-    <p class="lede">Ocho años con Pedro Sánchez como presidente del Gobierno, desde junio de 2018.</p>
+    <p class="lede">Periodo: junio de 2018 a octubre de 2026. Tres gobiernos presididos por Pedro Sánchez: PSOE (2018-2020), PSOE y Unidas Podemos (2020-2023), PSOE y Sumar (desde 2023). Los datos de 2018 anteriores a junio corresponden al Gobierno anterior.</p>
   </div>
 
   <div class="sum" aria-label="Resumen">
@@ -178,7 +180,7 @@ details.yg[open]>summary::before{content:"−"}
     </div>
     <div class="row">
       <span class="k">Lo que dicen las cifras</span>
-      <p>Infracciones penales conocidas: 2.131.118 en 2018, 1.773.366 en 2020 y 2.474.156 en 2025. Por cada 1.000 habitantes: 41,4 en 2021 y 50,4 en 2025 (este, suma propia de las tasas que publica Interior). Las cifras dependen también de las denuncias y de cambios de método.</p>
+      <p>Infracciones penales conocidas: 2.131.118 en 2018, 1.773.366 en 2020 y 2.474.156 en 2025. Por cada 1.000 habitantes: 45,6 en 2018 (cálculo propio) y 50,4 en 2025. De esas 50,4, 40,4 son criminalidad convencional y 10,0 cibercriminalidad; en 2024 eran 41,0 y 9,6.</p>
     </div>
     <div class="row gap">
       <span class="k">Lo que esta página no sabe</span>
@@ -191,6 +193,7 @@ details.yg[open]>summary::before{content:"−"}
     <div class="legend"><span><i class="dot"></i>Aprobado</span><span><i class="dot no"></i>No salió</span></div>
     <ol class="tl compact">
       <li><time>1 mar 2019</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley Orgánica 2/2019, imprudencia al volante y abandono del lugar del accidente</p><p class="s"></p></div></li>
+      <li class="sep"><span>Enero de 2020 · Gobierno de PSOE y Unidas Podemos</span></li>
       <li><time>16 feb 2021</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proposición de ley del PP contra la ocupación ilegal: rechazada (2021)</p><p class="s">Rechazado</p></div></li>
       <li><time>26 may 2021</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley Orgánica 7/2021, protección de datos tratados por policía y justicia penal</p><p class="s"></p></div></li>
       <li><time>4 jun 2021</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley Orgánica 8/2021, protección de la infancia y la adolescencia frente a la violencia</p><p class="s"></p></div></li>
@@ -201,6 +204,7 @@ details.yg[open]>summary::before{content:"−"}
       <li><time>29 nov 2022</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proposición de ley del PP contra la ocupación ilegal: rechazada (2022)</p><p class="s">Rechazado</p></div></li>
       <li><time>14 mar 2023</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Reforma de la Ley de Seguridad Ciudadana: rechazada en la Comisión de Interior</p><p class="s">Rechazado</p></div></li>
       <li><time>27 abr 2023</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley Orgánica 4/2023, reforma de la ley del «solo sí es sí»</p><p class="s"></p></div></li>
+      <li class="sep"><span>Noviembre de 2023 · Gobierno de PSOE y Sumar</span></li>
       <li><time>29 oct 2024</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Nueva reforma de la Ley de Seguridad Ciudadana: admitida a trámite en 2024, decae con la disolución</p><p class="s">Admitido a trámite</p></div></li>
       <li><time>12 dic 2024</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Reforma de la Ley de Seguridad Ciudadana: rechazadas las enmiendas a la totalidad de PP y Vox</p><p class="s">Votación sobre las enmiendas de totalidad: rechazadas, el texto sigue adelante</p></div></li>
       <li><time>8 abr 2026</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley Orgánica 1/2026, en materia de multirreincidencia</p><p class="s"></p></div></li>
@@ -211,11 +215,10 @@ details.yg[open]>summary::before{content:"−"}
   <section aria-labelledby="h-a">
     <h2 id="h-a">Qué ha aprobado el Estado<span class="count">8</span></h2>
     <article class="fact">
-      <div class="meta"><time>1 mar 2019</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>1 mar 2019</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Ley Orgánica 2/2019, imprudencia al volante y abandono del lugar del accidente</h3>
       <p class="plain">Sube las penas por matar o herir por imprudencia conduciendo. Es delito irse del lugar de un accidente con muertos o heridos graves.</p>
-      <div class="vote" role="img" aria-label="222 a favor, 17 en contra"><span class="lbl">20 feb 2019 · Aprobado</span><div class="bar"><span class="y" style="width:92.89%">222 a favor</span><span class="n" style="width:7.11%">17 en contra</span></div></div>
-      <p>En contra: Unidos Podemos.</p>
+      <div class="vote" role="img" aria-label="222 a favor, 17 en contra"><span class="lbl">20 feb 2019 · Senado · Aprobado · recuento según un medio</span><div class="bar"><span class="y" style="width:92.89%">222 a favor</span><span class="n" style="width:7.11%">17 en contra</span></div></div>
       <p class="limit">El recuento del Senado (222-17) y que votó en contra Unidos Podemos salen de un solo medio. No consta el número de abstenciones.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -227,7 +230,7 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>26 may 2021</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>26 may 2021</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Ley Orgánica 7/2021, protección de datos tratados por policía y justicia penal</h3>
       <p class="plain">Fija cómo pueden usar y guardar la policía, los fiscales y los jueces los datos personales en la investigación de delitos, y qué derechos tiene la persona sobre esos datos.</p>
       
@@ -241,11 +244,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>4 jun 2021</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>4 jun 2021</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Ley Orgánica 8/2021, protección de la infancia y la adolescencia frente a la violencia</h3>
       <p class="plain">Obliga a todos, y más a los profesionales, a avisar si sospechan violencia contra un menor. Cambia plazos de prescripción de delitos contra menores y la forma de tomar declaración a menores de 14 años.</p>
       <p class="vote"><span class="lbl">20 may 2021 · Aprobado · las fuentes no dan el recuento</span></p>
-      <p>En contra: Vox.</p>
       <p class="limit">El recuento de la votación final del 20 de mayo de 2021. Que Vox fue el único grupo en contra lo dicen dos medios, no el Diario de Sesiones.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -258,7 +260,7 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>21 mar 2022</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>21 mar 2022</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Ley Orgánica 2/2022, protección de huérfanos de víctimas de violencia de género</h3>
       <p class="plain">Los hijos de mujeres asesinadas por violencia de género pueden cobrar la prestación de orfandad aunque no cumplan los requisitos de cotización, y pagan menos impuestos al heredar.</p>
       
@@ -272,11 +274,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>6 sep 2022</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>6 sep 2022</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Ley Orgánica 10/2022, de garantía integral de la libertad sexual («solo sí es sí»)</h3>
       <p class="plain">Todo acto sexual sin consentimiento pasa a ser agresión sexual: desaparece la distinción entre abuso y agresión. Añade derechos de asistencia y reparación para las víctimas.</p>
-      <div class="vote" role="img" aria-label="205 a favor, 141 en contra, 3 abstenciones"><span class="lbl">25 ago 2022 · Aprobado</span><div class="bar"><span class="y" style="width:58.74%">205 a favor</span><span class="n" style="width:40.40%">141 en contra</span><span class="a" style="width:0.86%"></span></div></div>
-      <p>En contra: PP, Vox.</p>
+      <div class="vote" role="img" aria-label="205 a favor, 141 en contra, 3 abstenciones"><span class="lbl">25 ago 2022 · Aprobado · recuento según dos medios</span><div class="bar"><span class="y" style="width:58.74%">205 a favor</span><span class="n" style="width:40.40%">141 en contra</span><span class="a" style="width:0.86%"></span></div></div>
       <p class="limit">El recuento (205-141-3) sale de un medio; otro lo confirma solo en el titular. No lo hemos cotejado con el Diario de Sesiones. La CUP se abstuvo según Qué!.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -289,26 +290,26 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>13 sep 2022</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>13 sep 2022</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Ley Orgánica 11/2022, imprudencia menos grave al volante</h3>
       <p class="plain">Si un conductor mata o hiere a alguien cometiendo una infracción grave de tráfico, ya no puede tratarse como imprudencia leve sin explicarlo. Amplía el delito de abandono del lugar del accidente a más tipos de lesiones.</p>
-      <div class="vote" role="img" aria-label="144 a favor, 4 en contra, 112 abstenciones"><span class="lbl">7 sep 2022 · Aprobado</span><div class="bar"><span class="y" style="width:55.38%">144 a favor</span><span class="n" style="width:1.54%">4 en contra</span><span class="a" style="width:43.08%">112</span></div></div>
-      <p>En contra: Vox.</p>
-      <p class="limit">El recuento del Senado (144-4-112), que Vox votó en contra y que PP y PNV se abstuvieron salen de un solo medio.</p>
+      <div class="vote" role="img" aria-label="195 a favor, 51 en contra, 96 abstenciones"><span class="lbl">9 jun 2022 · Aprobado · recuento oficial</span><div class="bar"><span class="y" style="width:57.02%">195 a favor</span><span class="n" style="width:14.91%">51 en contra</span><span class="a" style="width:28.07%">96</span></div></div>
+      <p class="limit">El recuento del Congreso (9 de junio de 2022) es oficial (Diario de Sesiones del Congreso). El recuento del Senado (144-4-112) sale de un solo medio.</p>
       <details>
         <summary>Detalle y fuentes</summary>
         <div class="in">
-          <p>Ley Orgánica 11/2022, de 13 de septiembre, de modificación del Código Penal en materia de imprudencia en la conducción de vehículos a motor o ciclomotor. BOE núm. 221, de 14 de septiembre de 2022 (BOE-A-2022-14965). En vigor el 15 de septiembre de 2022. Modifica los artículos 142.2, 152.2 y 382 bis.1 del Código Penal: una infracción grave de tráfico determinante del resultado se considera al menos imprudencia menos grave, con motivación del juez; retirada del carné de 3 a 18 meses. La Administración debe comunicar al juez los accidentes con heridos o muertos. Aprobación definitiva en el Pleno del Senado el 7 de septiembre de 2022.</p>
+          <p>Ley Orgánica 11/2022, de 13 de septiembre, de modificación del Código Penal en materia de imprudencia en la conducción de vehículos a motor o ciclomotor. BOE núm. 221, de 14 de septiembre de 2022 (BOE-A-2022-14965). En vigor el 15 de septiembre de 2022. Modifica los artículos 142.2, 152.2 y 382 bis.1 del Código Penal: una infracción grave de tráfico determinante del resultado se considera al menos imprudencia menos grave, con motivación del juez; retirada del carné de 3 a 18 meses. La Administración debe comunicar al juez los accidentes con heridos o muertos. Aprobación definitiva en el Pleno del Senado el 7 de septiembre de 2022. Votación en el Senado el 7 de septiembre de 2022: 144 a favor, 4 en contra y 112 abstenciones (una fuente de prensa).</p>
           <a class="src" href="https://www.boe.es/eli/es/lo/2022/09/13/11" target="_blank" rel="noopener">Oficial: BOE-A-2022-14965, 14 sep 2022</a>
+          <a class="src" href="https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-193.PDF" target="_blank" rel="noopener">Oficial: Diario de Sesiones del Congreso, Pleno, núm. 193, 9 jun 2022</a>
           <a class="src" href="https://www.ultimahora.es/noticias/nacional/2022/09/07/1787671/trafico-espana-nueva-ley-acaba-impunidad-volante.html" target="_blank" rel="noopener">Última Hora: aprobada la ley que acaba con la impunidad al volante, 7 sep 2022</a>
         </div>
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>27 abr 2023</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>27 abr 2023</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Ley Orgánica 4/2023, reforma de la ley del «solo sí es sí»</h3>
       <p class="plain">Vuelve a distinguir, dentro de la agresión sexual, los casos con violencia o intimidación, con penas más altas para ellos.</p>
-      <div class="vote" role="img" aria-label="231 a favor, 19 en contra, 4 abstenciones"><span class="lbl">26 abr 2023 · Aprobado</span><div class="bar"><span class="y" style="width:90.94%">231 a favor</span><span class="n" style="width:7.48%">19 en contra</span><span class="a" style="width:1.57%"></span></div></div>
+      <div class="vote" role="img" aria-label="231 a favor, 19 en contra, 4 abstenciones"><span class="lbl">26 abr 2023 · Senado · Aprobado · recuento según un medio</span><div class="bar"><span class="y" style="width:90.94%">231 a favor</span><span class="n" style="width:7.48%">19 en contra</span><span class="a" style="width:1.57%"></span></div></div>
       <p class="limit">El recuento del Senado sale de un solo medio y no nombra los grupos en contra. No consta el recuento del Pleno del Congreso del 20 de abril de 2023.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -321,11 +322,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>8 abr 2026</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>8 abr 2026</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Ley Orgánica 1/2026, en materia de multirreincidencia</h3>
       <p class="plain">Quien acumula al menos tres condenas por hurto puede ir a prisión aunque lo robado valga menos de 400 euros. Agrava el robo de móviles y amplía las medidas cautelares.</p>
-      <div class="vote" role="img" aria-label="272 a favor, 71 en contra, 7 abstenciones"><span class="lbl">26 mar 2026 · Aprobado</span><div class="bar"><span class="y" style="width:77.71%">272 a favor</span><span class="n" style="width:20.29%">71 en contra</span><span class="a" style="width:2.00%"></span></div></div>
-      <p>En contra: Podemos, Sumar.</p>
+      <div class="vote" role="img" aria-label="272 a favor, 71 en contra, 7 abstenciones"><span class="lbl">26 mar 2026 · Aprobado · recuento oficial</span><div class="bar"><span class="y" style="width:77.71%">272 a favor</span><span class="n" style="width:20.29%">71 en contra</span><span class="a" style="width:2.00%"></span></div></div>
       <p class="limit">El recuento es oficial. Los grupos en contra (Podemos y Sumar) y la abstención de ERC salen de un solo medio.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -343,7 +343,7 @@ details.yg[open]>summary::before{content:"−"}
     <h2 id="h-b">Qué intentó y no salió<span class="count">7</span></h2>
     <p class="lede">Solo se cuenta lo que pasó, sin juzgar a nadie. Los motivos de cada grupo se añadirán como cita literal del Diario de Sesiones.</p>
     <article class="fact">
-      <div class="meta"><time>16 feb 2021</time><span class="badge">Prensa · 2 fuentes</span></div>
+      <div class="meta"><time>16 feb 2021</time><span class="badge">Norma: Prensa · 2 fuentes</span></div>
       <h3>Proposición de ley del PP contra la ocupación ilegal: rechazada (2021)</h3>
       <p class="plain">El Congreso no admitió a trámite una ley del PP para volver a castigar con cárcel la ocupación de viviendas y desalojar en 48 horas.</p>
       <p class="vote"><span class="lbl">16 feb 2021 · Rechazado · las fuentes no dan el recuento</span></p>
@@ -358,7 +358,7 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>28 abr 2022</time><span class="badge">Una sola fuente</span></div>
+      <div class="meta"><time>28 abr 2022</time><span class="badge">Norma: Una sola fuente</span></div>
       <h3>Proposición de ley de Vox para endurecer las penas por ocupación: rechazada</h3>
       <p class="plain">El Congreso no admitió a trámite una ley de Vox para subir las penas por ocupar viviendas.</p>
       <p class="vote"><span class="lbl">28 abr 2022 · Rechazado · las fuentes no dan el recuento</span></p>
@@ -372,10 +372,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>29 nov 2022</time><span class="badge">Una sola fuente</span></div>
+      <div class="meta"><time>29 nov 2022</time><span class="badge">Norma: Una sola fuente</span></div>
       <h3>Proposición de ley del PP contra la ocupación ilegal: rechazada (2022)</h3>
       <p class="plain">El Congreso no admitió a trámite una ley del PP para desalojar viviendas ocupadas en 24 horas y subir las penas por ocupación con violencia.</p>
-      <div class="vote" role="img" aria-label="160 a favor, 178 en contra"><span class="lbl">29 nov 2022 · Rechazado</span><div class="bar"><span class="y" style="width:47.34%">160 a favor</span><span class="n" style="width:52.66%">178 en contra</span></div></div>
+      <div class="vote" role="img" aria-label="160 a favor, 178 en contra"><span class="lbl">29 nov 2022 · Rechazado · recuento según un medio</span><div class="bar"><span class="y" style="width:47.34%">160 a favor</span><span class="n" style="width:52.66%">178 en contra</span></div></div>
       <p class="limit">El recuento sale de un solo medio y no da el número de abstenciones. El medio nombra al PSOE en contra, pero no la lista completa de grupos.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -386,11 +386,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>14 mar 2023</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>14 mar 2023</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Reforma de la Ley de Seguridad Ciudadana: rechazada en la Comisión de Interior</h3>
       <p class="plain">La reforma de la ley de 2015 (llamada «ley mordaza») se rechazó en la Comisión de Interior del Congreso por un voto. No llegó al Pleno y la ley siguió igual.</p>
-      <div class="vote" role="img" aria-label="18 a favor, 19 en contra"><span class="lbl">14 mar 2023 · Rechazado</span><div class="bar"><span class="y" style="width:48.65%">18 a favor</span><span class="n" style="width:51.35%">19 en contra</span></div></div>
-      <p>En contra: Ciudadanos, EH Bildu, ERC, Junts, Navarra Suma, PP, Vox.</p>
+      <div class="vote" role="img" aria-label="18 a favor, 19 en contra"><span class="lbl">14 mar 2023 · Comisión · Rechazado · recuento oficial</span><div class="bar"><span class="y" style="width:48.65%">18 a favor</span><span class="n" style="width:51.35%">19 en contra</span></div></div>
       <p class="limit">El recuento es oficial. La lista de grupos en contra sale de un solo medio.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -402,11 +401,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>29 oct 2024</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>29 oct 2024</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Nueva reforma de la Ley de Seguridad Ciudadana: admitida a trámite en 2024, decae con la disolución</h3>
       <p class="plain">El Congreso admitió a trámite en 2024 una ley para sustituir la Ley de Seguridad Ciudadana de 2015. No se llegó a aprobar y decayó al disolverse las Cortes.</p>
-      <div class="vote" role="img" aria-label="176 a favor, 170 en contra"><span class="lbl">29 oct 2024 · Admitido a trámite</span><div class="bar"><span class="y" style="width:50.87%">176 a favor</span><span class="n" style="width:49.13%">170 en contra</span></div></div>
-      <p>En contra: PP, UPN, Vox.</p>
+      <div class="vote" role="img" aria-label="176 a favor, 170 en contra"><span class="lbl">29 oct 2024 · Admitido a trámite · recuento oficial</span><div class="bar"><span class="y" style="width:50.87%">176 a favor</span><span class="n" style="width:49.13%">170 en contra</span></div></div>
       <p class="limit">El recuento es oficial (el acta no recoge abstenciones). Los grupos en contra salen de prensa. Que decae con la disolución lo dice un solo medio.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -421,10 +419,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>12 dic 2024</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>12 dic 2024</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Reforma de la Ley de Seguridad Ciudadana: rechazadas las enmiendas a la totalidad de PP y Vox</h3>
       <p class="plain">El Congreso rechazó los textos alternativos de PP y Vox a la nueva ley de seguridad ciudadana, y la reforma siguió en trámite.</p>
-      <div class="vote" role="img" aria-label="169 a favor, 176 en contra"><span class="lbl">12 dic 2024 · Votación sobre las enmiendas de totalidad: rechazadas, el texto sigue adelante</span><div class="bar"><span class="y" style="width:48.99%">169 a favor</span><span class="n" style="width:51.01%">176 en contra</span></div></div>
+      <div class="vote" role="img" aria-label="169 a favor, 176 en contra"><span class="lbl">12 dic 2024 · Votación sobre las enmiendas de totalidad: rechazadas, el texto sigue adelante · recuento oficial</span><div class="bar"><span class="y" style="width:48.99%">169 a favor</span><span class="n" style="width:51.01%">176 en contra</span></div></div>
       <p class="limit">El acta no recoge abstenciones en la enmienda del PP.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -435,10 +433,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>19 may 2026</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>19 may 2026</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Proposición de ley del PP contra la ocupación ilegal: admitida a trámite (2026)</h3>
       <p class="plain">El Congreso admitió a trámite una ley del PP para subir las penas por ocupación con violencia, acelerar la recuperación de viviendas e impedir que los ocupantes se empadronen. No llegó a aprobarse antes de la disolución.</p>
-      <div class="vote" role="img" aria-label="171 a favor, 164 en contra, 11 abstenciones"><span class="lbl">19 may 2026 · Admitido a trámite</span><div class="bar"><span class="y" style="width:49.42%">171 a favor</span><span class="n" style="width:47.40%">164 en contra</span><span class="a" style="width:3.18%"></span></div></div>
+      <div class="vote" role="img" aria-label="171 a favor, 164 en contra, 11 abstenciones"><span class="lbl">19 may 2026 · Admitido a trámite · recuento oficial</span><div class="bar"><span class="y" style="width:49.42%">171 a favor</span><span class="n" style="width:47.40%">164 en contra</span><span class="a" style="width:3.18%"></span></div></div>
       <p class="limit">Qué grupos votaron en contra. No hemos confirmado con una fuente expresa que decayera con la disolución; no consta que se aprobara como ley.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -500,7 +498,7 @@ details.yg[open]>summary::before{content:"−"}
   </section>
 
   <footer class="foot">
-    <p><b>Estado de la verificación.</b> Con fuente oficial (BOE o actas y Diario de Sesiones del Congreso): las ocho leyes orgánicas, el rechazo en comisión de 2023, la toma en consideración y las enmiendas a la totalidad de la reforma de seguridad ciudadana de 2024, la admisión de la ley del PP sobre ocupación de 2026 y el recuento de la ley de multirreincidencia. Con dos fuentes de prensa: el rechazo de la ley del PP sobre ocupación de 2021 (sin recuento) y los grupos en contra de la ley de infancia. Con una sola fuente: recuentos finales de 2019, 2022 y 2023 (Senado), los rechazos de 2022 sobre ocupación, los grupos en contra de 2023 y 2026, y que la reforma de 2024 decae. Indicadores: infracciones de 2018-2021, 2023 y 2025 oficiales; 2022 y 2024 de prensa. Tasa: 2021 y 2022 oficiales, 2024 de prensa, 2018-2020, 2023 y 2025 cálculo propio. Consulta: 11 de noviembre de 2026. Que Pedro Sánchez preside el Gobierno desde junio de 2018 es de dominio público.</p>
+    <p><b>Estado de la verificación.</b> Con fuente oficial (BOE o actas y Diario de Sesiones del Congreso): las ocho leyes orgánicas, el recuento del Congreso de la imprudencia menos grave de 2022, el rechazo en comisión de 2023, la toma en consideración y las enmiendas a la totalidad de la reforma de seguridad ciudadana de 2024, la admisión de la ley del PP sobre ocupación de 2026 y el recuento de la ley de multirreincidencia. Con dos fuentes de prensa: el rechazo de la ley del PP sobre ocupación de 2021 (sin recuento) y los grupos en contra de la ley de infancia. Con una sola fuente: los recuentos del Senado de 2019 y 2023, el recuento de la ley de «solo sí es sí» de 2022, los rechazos de 2022 sobre ocupación, los grupos en contra de 2023 y 2026, y que la reforma de 2024 decae. Indicadores: infracciones de 2018-2021, 2023 y 2025 oficiales; 2022 y 2024 de prensa. Tasa: 2021 y 2022 oficiales, 2024 de prensa, 2018-2020, 2023 y 2025 cálculo propio. Consulta: 11 de noviembre de 2026. Que Pedro Sánchez preside el Gobierno desde junio de 2018 es de dominio público.</p>
     <p>Última revisión: 11 de noviembre de 2026. ¿Un dato está mal? <a href="metodologia.html#correcciones">Dínoslo</a>. Cómo se ha hecho: <a href="metodologia.html">metodología</a>.</p>
   </footer>
 </main>

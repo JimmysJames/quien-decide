@@ -149,6 +149,8 @@ details.yg>summary::before{content:"+";font-family:var(--f-mono);font-size:1rem;
 details.yg[open]>summary::before{content:"−"}
 .ygi{display:flex;flex-direction:column;gap:14px}
 .tl.compact li{padding-bottom:10px}
+.tl li.sep{display:block;padding-bottom:10px}
+.tl li.sep span{display:block;border-top:1px dashed var(--rule);padding-top:6px;font-family:var(--f-mono);font-size:.74rem;color:var(--ink-2);text-transform:uppercase;letter-spacing:.06em}
 .tl.compact .t{font-weight:500;font-size:.95rem}
 .keys{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.88rem;color:var(--ink-2)}
 .keys i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px}
@@ -164,7 +166,7 @@ details.yg[open]>summary::before{content:"−"}
   <div class="head">
     <p class="kicker">Gobierno central y Cortes · 2018 a 2026</p>
     <h1>Sanidad: qué ha hecho el Estado</h1>
-    <p class="lede">Ocho años con Pedro Sánchez como presidente del Gobierno, desde junio de 2018.</p>
+    <p class="lede">Periodo: junio de 2018 a octubre de 2026. Tres gobiernos presididos por Pedro Sánchez: PSOE (2018-2020), PSOE y Unidas Podemos (2020-2023), PSOE y Sumar (desde 2023). Los datos de 2018 anteriores a junio corresponden al Gobierno anterior.</p>
   </div>
 
   <div class="aviso"><b>Aquí quien más decide es tu comunidad</b><p>La sanidad la gestionan las comunidades autónomas: hospitales, centros de salud, personal y listas de espera. Esta ficha solo recoge lo que ha hecho el Estado.</p></div>
@@ -193,6 +195,7 @@ details.yg[open]>summary::before{content:"−"}
     <div class="legend"><span><i class="dot"></i>Aprobado</span><span><i class="dot no"></i>No salió</span></div>
     <ol class="tl compact">
       <li><time>27 jul 2018</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 7/2018, sobre el acceso universal al Sistema Nacional de Salud</p><p class="s"></p></div></li>
+      <li class="sep"><span>Enero de 2020 · Gobierno de PSOE y Unidas Podemos</span></li>
       <li><time>9 jun 2020</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 21/2020, de medidas urgentes de prevención, contención y coordinación frente a la COVID-19</p><p class="s"></p></div></li>
       <li><time>29 sep 2020</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 29/2020, teletrabajo en las administraciones y personal del Sistema Nacional de Salud frente a la COVID-19</p><p class="s"></p></div></li>
       <li><time>24 nov 2020</time><span class="mk"><i class="dot"></i></span><div><p class="t">Estrategia de Vacunación COVID-19 en España</p><p class="s"></p></div></li>
@@ -207,6 +210,7 @@ details.yg[open]>summary::before{content:"−"}
       <li><time>28 abr 2022</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proposición de ley del PP sobre publicidad de prestaciones y actividades sanitarias, rechazada</p><p class="s">Rechazado</p></div></li>
       <li><time>22 sep 2022</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proyecto de ley de equidad, universalidad y cohesión del SNS: rechazadas las enmiendas de totalidad</p><p class="s">Votación sobre las enmiendas de totalidad: rechazadas, el texto sigue adelante</p></div></li>
       <li><time>28 feb 2023</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley Orgánica 1/2023, reforma de la ley de salud sexual y reproductiva y del aborto</p><p class="s"></p></div></li>
+      <li class="sep"><span>Noviembre de 2023 · Gobierno de PSOE y Sumar</span></li>
       <li><time>30 oct 2024</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley 3/2024, para mejorar la calidad de vida de personas con ELA y otras enfermedades de alta complejidad y curso irreversible</p><p class="s"></p></div></li>
       <li><time>10 dic 2024</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proposición de ley del PSOE sobre el derecho a otorgar instrucciones previas, rechazada</p><p class="s">Rechazado</p></div></li>
       <li><time>11 feb 2025</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proposición de ley del PP relativa a la violencia en el ámbito sanitario, rechazada</p><p class="s">Rechazado</p></div></li>
@@ -228,11 +232,10 @@ details.yg[open]>summary::before{content:"−"}
     <summary><span class="yy">2018</span><span class="yn">1 hecho</span></summary>
     <div class="ygi">
     <article class="fact">
-      <div class="meta"><time>27 jul 2018</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>27 jul 2018</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 7/2018, sobre el acceso universal al Sistema Nacional de Salud</h3>
       <p class="plain">El derecho a la sanidad pública pasa a depender de residir en España, no de la situación administrativa. Incluye a personas extranjeras sin permiso de residencia, con condiciones.</p>
-      <div class="vote" role="img" aria-label="177 a favor, 133 en contra, 31 abstenciones"><span class="lbl">6 sep 2018 · Convalidado</span><div class="bar"><span class="y" style="width:51.91%">177 a favor</span><span class="n" style="width:39.00%">133 en contra</span><span class="a" style="width:9.09%">31</span></div></div>
-      <p>En contra: PP.</p>
+      <div class="vote" role="img" aria-label="177 a favor, 133 en contra, 31 abstenciones"><span class="lbl">6 sep 2018 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:51.91%">177 a favor</span><span class="n" style="width:39.00%">133 en contra</span><span class="a" style="width:9.09%">31</span></div></div>
       <p class="limit">El recuento está cotejado con el Diario de Sesiones. Que el PP votó en contra y Ciudadanos se abstuvo lo dice una sola fuente de prensa.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -252,11 +255,10 @@ details.yg[open]>summary::before{content:"−"}
     <summary><span class="yy">2020</span><span class="yn">3 hechos</span></summary>
     <div class="ygi">
     <article class="fact">
-      <div class="meta"><time>9 jun 2020</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>9 jun 2020</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 21/2020, de medidas urgentes de prevención, contención y coordinación frente a la COVID-19</h3>
       <p class="plain">Fija las normas para salir del estado de alarma: mascarilla obligatoria desde los seis años en espacios donde no se pueda mantener 1,5 metros de distancia, y medidas de prevención en trabajos, colegios, comercios y transporte.</p>
-      <div class="vote" role="img" aria-label="265 a favor, 77 en contra, 5 abstenciones"><span class="lbl">25 jun 2020 · Convalidado</span><div class="bar"><span class="y" style="width:76.37%">265 a favor</span><span class="n" style="width:22.19%">77 en contra</span><span class="a" style="width:1.44%"></span></div></div>
-      <p>En contra: EH Bildu, ERC, Junts, Vox.</p>
+      <div class="vote" role="img" aria-label="265 a favor, 77 en contra, 5 abstenciones"><span class="lbl">25 jun 2020 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:76.37%">265 a favor</span><span class="n" style="width:22.19%">77 en contra</span><span class="a" style="width:1.44%"></span></div></div>
       <p class="limit">Recuento cotejado con el Diario de Sesiones; corrige las cifras de prensa (una daba 70 votos en contra). Qué grupos votaron en contra viene de prensa, no del registro del Congreso.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -272,10 +274,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>29 sep 2020</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>29 sep 2020</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 29/2020, teletrabajo en las administraciones y personal del Sistema Nacional de Salud frente a la COVID-19</h3>
       <p class="plain">Durante la pandemia, las comunidades pueden contratar a médicos sin el título de especialista reconocido en España y mover a personal sanitario a las unidades que más lo necesitan.</p>
-      <div class="vote" role="img" aria-label="196 a favor, 141 en contra, 10 abstenciones"><span class="lbl">15 oct 2020 · Convalidado</span><div class="bar"><span class="y" style="width:56.48%">196 a favor</span><span class="n" style="width:40.63%">141 en contra</span><span class="a" style="width:2.88%"></span></div></div>
+      <div class="vote" role="img" aria-label="196 a favor, 141 en contra, 10 abstenciones"><span class="lbl">15 oct 2020 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:56.48%">196 a favor</span><span class="n" style="width:40.63%">141 en contra</span><span class="a" style="width:2.88%"></span></div></div>
       <p class="limit">No consta qué grupos votaron en contra. No consta cuántas personas se contrataron con esta vía ni hasta cuándo se prorrogó.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -289,7 +291,7 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>24 nov 2020</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>24 nov 2020</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Estrategia de Vacunación COVID-19 en España</h3>
       <p class="plain">La vacuna contra la COVID-19 se pone de forma gratuita y voluntaria en la sanidad pública. Primero, residentes y personal de residencias de mayores y personas con gran dependencia.</p>
       
@@ -308,11 +310,10 @@ details.yg[open]>summary::before{content:"−"}
     <summary><span class="yy">2021</span><span class="yn">6 hechos</span></summary>
     <div class="ygi">
     <article class="fact">
-      <div class="meta"><time>24 mar 2021</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>24 mar 2021</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Ley Orgánica 3/2021, de regulación de la eutanasia</h3>
       <p class="plain">Una persona mayor de edad con una enfermedad grave e incurable, o un padecimiento grave, crónico e imposibilitante, puede pedir ayuda para morir. La prestación entra en la cartera común del Sistema Nacional de Salud.</p>
-      <div class="vote" role="img" aria-label="202 a favor, 141 en contra, 2 abstenciones"><span class="lbl">18 mar 2021 · Aprobado</span><div class="bar"><span class="y" style="width:58.55%">202 a favor</span><span class="n" style="width:40.87%">141 en contra</span><span class="a" style="width:0.58%"></span></div></div>
-      <p>En contra: PP, UPN, Vox.</p>
+      <div class="vote" role="img" aria-label="202 a favor, 141 en contra, 2 abstenciones"><span class="lbl">18 mar 2021 · Aprobado · recuento oficial</span><div class="bar"><span class="y" style="width:58.55%">202 a favor</span><span class="n" style="width:40.87%">141 en contra</span><span class="a" style="width:0.58%"></span></div></div>
       <p class="limit">Recuento cotejado con el Diario de Sesiones. Los grupos en contra vienen de prensa; una de las fuentes añade a Foro Asturias. Cuántas personas han recibido la prestación no consta en esta ficha.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -326,10 +327,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>29 mar 2021</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>29 mar 2021</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Ley 2/2021, de medidas urgentes de prevención, contención y coordinación frente a la COVID-19</h3>
       <p class="plain">Pasa a ley la obligación de llevar mascarilla desde los seis años en la calle, al aire libre, en espacios cerrados públicos y en el transporte, con excepciones. No llevarla es una infracción leve con multa de hasta 100 euros.</p>
-      <div class="vote" role="img" aria-label="199 a favor, 91 en contra, 57 abstenciones"><span class="lbl">18 mar 2021 · Aprobado</span><div class="bar"><span class="y" style="width:57.35%">199 a favor</span><span class="n" style="width:26.22%">91 en contra</span><span class="a" style="width:16.43%">57</span></div></div>
+      <div class="vote" role="img" aria-label="199 a favor, 91 en contra, 57 abstenciones"><span class="lbl">18 mar 2021 · Aprobado · recuento oficial</span><div class="bar"><span class="y" style="width:57.35%">199 a favor</span><span class="n" style="width:26.22%">91 en contra</span><span class="a" style="width:16.43%">57</span></div></div>
       <p class="limit">La votación recogida es la del bloque principal de enmiendas del Senado; no hubo votación de conjunto. No consta qué grupos votaron en contra. El texto del BOE leído no menciona el RDL 21/2020; la relación se deduce del acuerdo de tramitarlo como proyecto de ley y del título idéntico.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -342,10 +343,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>4 may 2021</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>4 may 2021</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 8/2021, medidas urgentes en el orden sanitario, social y jurisdiccional tras el estado de alarma</h3>
       <p class="plain">Al acabar el estado de alarma, fija controles sanitarios a los viajeros que llegan a España y permite recurrir ante el Tribunal Supremo las decisiones judiciales sobre las restricciones sanitarias de las comunidades.</p>
-      <div class="vote" role="img" aria-label="189 a favor, 100 en contra, 60 abstenciones"><span class="lbl">20 may 2021 · Convalidado</span><div class="bar"><span class="y" style="width:54.15%">189 a favor</span><span class="n" style="width:28.65%">100 en contra</span><span class="a" style="width:17.19%">60</span></div></div>
+      <div class="vote" role="img" aria-label="189 a favor, 100 en contra, 60 abstenciones"><span class="lbl">20 may 2021 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:54.15%">189 a favor</span><span class="n" style="width:28.65%">100 en contra</span><span class="a" style="width:17.19%">60</span></div></div>
       <p class="limit">La prensa dio 188 votos a favor; el Diario de Sesiones dice 189. No consta qué grupos votaron en contra ni si la tramitación como proyecto de ley terminó en una ley.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -359,10 +360,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>24 jun 2021</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>24 jun 2021</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 13/2021, fin de la mascarilla obligatoria al aire libre</h3>
       <p class="plain">La mascarilla deja de ser obligatoria al aire libre si se puede mantener 1,5 metros de distancia con quien no convive contigo. Sigue siendo obligatoria en interiores públicos y en el transporte.</p>
-      <div class="vote" role="img" aria-label="180 a favor, 90 en contra, 78 abstenciones"><span class="lbl">21 jul 2021 · Convalidado</span><div class="bar"><span class="y" style="width:51.72%">180 a favor</span><span class="n" style="width:25.86%">90 en contra</span><span class="a" style="width:22.41%">78</span></div></div>
+      <div class="vote" role="img" aria-label="180 a favor, 90 en contra, 78 abstenciones"><span class="lbl">21 jul 2021 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:51.72%">180 a favor</span><span class="n" style="width:25.86%">90 en contra</span><span class="a" style="width:22.41%">78</span></div></div>
       <p class="limit">No consta qué grupos votaron en contra. La fecha exacta de entrada en vigor no se ha leído en el BOE.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -376,7 +377,7 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>15 dic 2021</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>15 dic 2021</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Plan de Acción de Atención Primaria y Comunitaria 2022-2023</h3>
       <p class="plain">El Ministerio y las comunidades acuerdan un plan para los centros de salud. Entre sus objetivos, bajar la temporalidad del personal de atención primaria por debajo del 8 % y crear la categoría de enfermera familiar y comunitaria.</p>
       
@@ -391,11 +392,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>23 dic 2021</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>23 dic 2021</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 30/2021, vuelve la mascarilla obligatoria al aire libre</h3>
       <p class="plain">La mascarilla vuelve a ser obligatoria al aire libre desde los seis años, salvo en actividades en espacios naturales con distancia. Los médicos y enfermeras jubilados pueden seguir trabajando sin perder la pensión durante 2022.</p>
-      <div class="vote" role="img" aria-label="162 a favor, 153 en contra, 28 abstenciones"><span class="lbl">1 feb 2022 · Convalidado</span><div class="bar"><span class="y" style="width:47.23%">162 a favor</span><span class="n" style="width:44.61%">153 en contra</span><span class="a" style="width:8.16%">28</span></div></div>
-      <p>En contra: Ciudadanos, PP, Vox.</p>
+      <div class="vote" role="img" aria-label="162 a favor, 153 en contra, 28 abstenciones"><span class="lbl">1 feb 2022 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:47.23%">162 a favor</span><span class="n" style="width:44.61%">153 en contra</span><span class="a" style="width:8.16%">28</span></div></div>
       <p class="limit">La prensa dio 155-149-26, que son solo los votos presenciales; el Diario de Sesiones suma los telemáticos (162-153-28). Los grupos en contra vienen de una sola fuente de prensa. No consta en esta ficha el real decreto que retiró después la mascarilla al aire libre.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -413,11 +413,10 @@ details.yg[open]>summary::before{content:"−"}
     <summary><span class="yy">2023</span><span class="yn">1 hecho</span></summary>
     <div class="ygi">
     <article class="fact">
-      <div class="meta"><time>28 feb 2023</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>28 feb 2023</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Ley Orgánica 1/2023, reforma de la ley de salud sexual y reproductiva y del aborto</h3>
       <p class="plain">Las mujeres de 16 y 17 años pueden abortar sin permiso de sus padres y desaparecen los tres días de reflexión. Los anticonceptivos hormonales se dan gratis en la sanidad pública y la menstruación incapacitante por una patología diagnosticada da derecho a baja.</p>
-      <div class="vote" role="img" aria-label="185 a favor, 154 en contra, 3 abstenciones"><span class="lbl">16 feb 2023 · Aprobado</span><div class="bar"><span class="y" style="width:54.09%">185 a favor</span><span class="n" style="width:45.03%">154 en contra</span><span class="a" style="width:0.88%"></span></div></div>
-      <p>En contra: PP, Vox.</p>
+      <div class="vote" role="img" aria-label="185 a favor, 154 en contra, 3 abstenciones"><span class="lbl">16 feb 2023 · Aprobado · recuento oficial</span><div class="bar"><span class="y" style="width:54.09%">185 a favor</span><span class="n" style="width:45.03%">154 en contra</span><span class="a" style="width:0.88%"></span></div></div>
       <p class="limit">Recuento oficial. Que votaron en contra PP y Vox y que se abstuvo el PDeCAT lo dice una sola fuente de prensa; no consta si otros grupos votaron en contra.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -435,10 +434,10 @@ details.yg[open]>summary::before{content:"−"}
     <summary><span class="yy">2024</span><span class="yn">1 hecho</span></summary>
     <div class="ygi">
     <article class="fact">
-      <div class="meta"><time>30 oct 2024</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>30 oct 2024</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Ley 3/2024, para mejorar la calidad de vida de personas con ELA y otras enfermedades de alta complejidad y curso irreversible</h3>
       <p class="plain">Las personas con ELA tienen reconocido el grado I de dependencia desde el diagnóstico y un procedimiento urgente para la discapacidad, con resolución en un máximo de tres meses.</p>
-      <div class="vote" role="img" aria-label="344 a favor, 0 en contra"><span class="lbl">10 oct 2024 · Aprobado</span><div class="bar"><span class="y" style="width:100.00%">344 a favor</span><span class="n" style="width:0.00%">0 en contra</span></div></div>
+      <div class="vote" role="img" aria-label="344 a favor, 0 en contra"><span class="lbl">10 oct 2024 · Aprobado · recuento oficial</span><div class="bar"><span class="y" style="width:100.00%">344 a favor</span><span class="n" style="width:0.00%">0 en contra</span></div></div>
       <p class="limit">El acta no recoge votos en contra ni abstenciones en la votación final. La votación de las enmiendas de Vox viene de una sola fuente de prensa. No consta cuántas personas han recibido las ayudas.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -457,7 +456,7 @@ details.yg[open]>summary::before{content:"−"}
     <summary><span class="yy">2025</span><span class="yn">2 hechos</span></summary>
     <div class="ygi">
     <article class="fact">
-      <div class="meta"><time>28 jul 2025</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>28 jul 2025</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Ley 7/2025, por la que se crea la Agencia Estatal de Salud Pública</h3>
       <p class="plain">Crea un organismo estatal que vigila la salud de la población, coordina la respuesta ante crisis sanitarias y presenta cada año un informe a las Cortes.</p>
       
@@ -474,10 +473,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>21 oct 2025</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>21 oct 2025</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 11/2025, financiación de la ley ELA y refuerzo de la dependencia</h3>
       <p class="plain">Pone medidas y dinero para cumplir la ley ELA de 2024 y reforzar el sistema de dependencia.</p>
-      <div class="vote" role="img" aria-label="346 a favor, 0 en contra"><span class="lbl">19 nov 2025 · Convalidado</span><div class="bar"><span class="y" style="width:100.00%">346 a favor</span><span class="n" style="width:0.00%">0 en contra</span></div></div>
+      <div class="vote" role="img" aria-label="346 a favor, 0 en contra"><span class="lbl">19 nov 2025 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:100.00%">346 a favor</span><span class="n" style="width:0.00%">0 en contra</span></div></div>
       <p class="limit">No se ha leído el texto del decreto en el BOE (solo su título y fecha, por el acuerdo de convalidación). No consta la cuantía en esta ficha ni cuánto se ha ejecutado.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -495,7 +494,7 @@ details.yg[open]>summary::before{content:"−"}
     <summary><span class="yy">2026</span><span class="yn">3 hechos</span></summary>
     <div class="ygi">
     <article class="fact">
-      <div class="meta"><time>11 mar 2026</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>11 mar 2026</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto 180/2026, sobre el reconocimiento del derecho a la atención sanitaria de personas extranjeras sin residencia legal</h3>
       <p class="plain">Fija qué documentos hay que presentar para acceder a la sanidad pública sin residencia legal. Al pedirlo se recibe un documento provisional para ser atendido mientras se resuelve.</p>
       
@@ -509,11 +508,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>12 may 2026</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>12 may 2026</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 11/2026, por el que se modifica la aportación de los usuarios en la prestación farmacéutica ambulatoria</h3>
       <p class="plain">Cambia lo que se paga en la farmacia por los medicamentos con receta. Las personas en activo pasan de tres a seis tramos según su renta y los pensionistas de tres a cuatro, con nuevos topes mensuales.</p>
-      <div class="vote" role="img" aria-label="164 a favor, 33 en contra, 149 abstenciones"><span class="lbl">28 may 2026 · Convalidado</span><div class="bar"><span class="y" style="width:47.40%">164 a favor</span><span class="n" style="width:9.54%">33 en contra</span><span class="a" style="width:43.06%">149</span></div></div>
-      <p>En contra: Vox.</p>
+      <div class="vote" role="img" aria-label="164 a favor, 33 en contra, 149 abstenciones"><span class="lbl">28 may 2026 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:47.40%">164 a favor</span><span class="n" style="width:9.54%">33 en contra</span><span class="a" style="width:43.06%">149</span></div></div>
       <p class="limit">Recuento cotejado con el acta del Pleno. Que el PP se abstuvo y Vox votó en contra lo dicen dos fuentes de prensa.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -528,7 +526,7 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>29 jul 2026</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>29 jul 2026</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Ley 3/2026, de modificación de normas sobre el programa de cribado neonatal del SNS</h3>
       <p class="plain">La prueba del talón a los recién nacidos (21 enfermedades en la cartera común) se evaluará al menos una vez al año para ampliarla, y no se podrán quitar pruebas salvo que cambie la evidencia.</p>
       
@@ -556,11 +554,10 @@ details.yg[open]>summary::before{content:"−"}
     <summary><span class="yy">2021</span><span class="yn">2 hechos</span></summary>
     <div class="ygi">
     <article class="fact">
-      <div class="meta"><time>11 may 2021</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>11 may 2021</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Proposición de ley de la Junta General de Asturias de universalización de la asistencia sanitaria pública, rechazada</h3>
       <p class="plain">El Congreso no admitió a trámite una ley del Parlamento asturiano para reconocer por ley la sanidad pública gratuita a todas las personas residentes en España.</p>
-      <div class="vote" role="img" aria-label="42 a favor, 259 en contra, 38 abstenciones"><span class="lbl">11 may 2021 · Rechazado</span><div class="bar"><span class="y" style="width:12.39%">42 a favor</span><span class="n" style="width:76.40%">259 en contra</span><span class="a" style="width:11.21%">38</span></div></div>
-      <p>En contra: Foro Asturias, PP, PSOE, Vox.</p>
+      <div class="vote" role="img" aria-label="42 a favor, 259 en contra, 38 abstenciones"><span class="lbl">11 may 2021 · Rechazado · recuento oficial</span><div class="bar"><span class="y" style="width:12.39%">42 a favor</span><span class="n" style="width:76.40%">259 en contra</span><span class="a" style="width:11.21%">38</span></div></div>
       <p class="limit">Recuento oficial. Los grupos en contra vienen de una sola fuente de prensa.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -572,10 +569,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>28 sep 2021</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>28 sep 2021</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Proposición de ley general de salud mental, admitida a trámite</h3>
       <p class="plain">El Congreso admitió a trámite una ley de salud mental propuesta por Unidas Podemos. No consta que llegara a aprobarse.</p>
-      <div class="vote" role="img" aria-label="194 a favor, 10 en contra, 141 abstenciones"><span class="lbl">28 sep 2021 · Admitido a trámite</span><div class="bar"><span class="y" style="width:56.23%">194 a favor</span><span class="n" style="width:2.90%">10 en contra</span><span class="a" style="width:40.87%">141</span></div></div>
+      <div class="vote" role="img" aria-label="194 a favor, 10 en contra, 141 abstenciones"><span class="lbl">28 sep 2021 · Admitido a trámite · recuento oficial</span><div class="bar"><span class="y" style="width:56.23%">194 a favor</span><span class="n" style="width:2.90%">10 en contra</span><span class="a" style="width:40.87%">141</span></div></div>
       <p class="limit">La prensa contó solo los votos presenciales (96 a favor). No consta qué grupos votaron en contra. No se ha comprobado qué pasó con la proposición después; no figura una ley de salud mental en el BOE de esta ficha.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -592,10 +589,10 @@ details.yg[open]>summary::before{content:"−"}
     <summary><span class="yy">2022</span><span class="yn">2 hechos</span></summary>
     <div class="ygi">
     <article class="fact">
-      <div class="meta"><time>28 abr 2022</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>28 abr 2022</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Proposición de ley del PP sobre publicidad de prestaciones y actividades sanitarias, rechazada</h3>
       <p class="plain">El Congreso no admitió a trámite una ley del PP para regular la publicidad de servicios sanitarios.</p>
-      <div class="vote" role="img" aria-label="120 a favor, 159 en contra, 70 abstenciones"><span class="lbl">28 abr 2022 · Rechazado</span><div class="bar"><span class="y" style="width:34.38%">120 a favor</span><span class="n" style="width:45.56%">159 en contra</span><span class="a" style="width:20.06%">70</span></div></div>
+      <div class="vote" role="img" aria-label="120 a favor, 159 en contra, 70 abstenciones"><span class="lbl">28 abr 2022 · Rechazado · recuento oficial</span><div class="bar"><span class="y" style="width:34.38%">120 a favor</span><span class="n" style="width:45.56%">159 en contra</span><span class="a" style="width:20.06%">70</span></div></div>
       <p class="limit">La prensa dio 118 a favor y 150 en contra (solo votos presenciales). No consta el voto de cada grupo.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -607,10 +604,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>22 sep 2022</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>22 sep 2022</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Proyecto de ley de equidad, universalidad y cohesión del SNS: rechazadas las enmiendas de totalidad</h3>
       <p class="plain">El Congreso rechazó devolver al Gobierno su proyecto de ley de equidad del Sistema Nacional de Salud, que siguió su tramitación. No consta que llegara a aprobarse en esa legislatura.</p>
-      <div class="vote" role="img" aria-label="64 a favor, 191 en contra, 88 abstenciones"><span class="lbl">22 sep 2022 · Votación sobre las enmiendas de totalidad: rechazadas, el texto sigue adelante</span><div class="bar"><span class="y" style="width:18.66%">64 a favor</span><span class="n" style="width:55.69%">191 en contra</span><span class="a" style="width:25.66%">88</span></div></div>
+      <div class="vote" role="img" aria-label="64 a favor, 191 en contra, 88 abstenciones"><span class="lbl">22 sep 2022 · Votación sobre las enmiendas de totalidad: rechazadas, el texto sigue adelante · recuento oficial</span><div class="bar"><span class="y" style="width:18.66%">64 a favor</span><span class="n" style="width:55.69%">191 en contra</span><span class="a" style="width:25.66%">88</span></div></div>
       <p class="limit">No se ha comprobado en el registro qué pasó con el proyecto de 2022 tras la disolución de 2023. El proyecto de 2024 no tuvo votación en el Pleno que conste: una fuente de prensa de julio de 2025 indica que el plazo de enmiendas de totalidad se había ampliado más de 40 veces.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -627,11 +624,10 @@ details.yg[open]>summary::before{content:"−"}
     <summary><span class="yy">2024</span><span class="yn">1 hecho</span></summary>
     <div class="ygi">
     <article class="fact">
-      <div class="meta"><time>10 dic 2024</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>10 dic 2024</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Proposición de ley del PSOE sobre el derecho a otorgar instrucciones previas, rechazada</h3>
       <p class="plain">El Congreso no admitió a trámite una ley del PSOE sobre el testamento vital (instrucciones previas), relacionada con los cuidados paliativos y la eutanasia.</p>
-      <div class="vote" role="img" aria-label="162 a favor, 180 en contra, 1 abstenciones"><span class="lbl">10 dic 2024 · Rechazado</span><div class="bar"><span class="y" style="width:47.23%">162 a favor</span><span class="n" style="width:52.48%">180 en contra</span><span class="a" style="width:0.29%"></span></div></div>
-      <p>En contra: Junts, PNV, PP, Vox.</p>
+      <div class="vote" role="img" aria-label="162 a favor, 180 en contra, 1 abstenciones"><span class="lbl">10 dic 2024 · Rechazado · recuento oficial</span><div class="bar"><span class="y" style="width:47.23%">162 a favor</span><span class="n" style="width:52.48%">180 en contra</span><span class="a" style="width:0.29%"></span></div></div>
       <p class="limit">Recuento oficial; los grupos en contra vienen del titular de una sola fuente de prensa.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -648,10 +644,10 @@ details.yg[open]>summary::before{content:"−"}
     <summary><span class="yy">2025</span><span class="yn">2 hechos</span></summary>
     <div class="ygi">
     <article class="fact">
-      <div class="meta"><time>11 feb 2025</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>11 feb 2025</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Proposición de ley del PP relativa a la violencia en el ámbito sanitario, rechazada</h3>
       <p class="plain">El Congreso no admitió a trámite, por dos votos de diferencia, una ley del PP sobre las agresiones a profesionales sanitarios.</p>
-      <div class="vote" role="img" aria-label="171 a favor, 173 en contra"><span class="lbl">11 feb 2025 · Rechazado</span><div class="bar"><span class="y" style="width:49.71%">171 a favor</span><span class="n" style="width:50.29%">173 en contra</span></div></div>
+      <div class="vote" role="img" aria-label="171 a favor, 173 en contra"><span class="lbl">11 feb 2025 · Rechazado · recuento oficial</span><div class="bar"><span class="y" style="width:49.71%">171 a favor</span><span class="n" style="width:50.29%">173 en contra</span></div></div>
       <p class="limit">El acta no recoge abstenciones. Una fuente de prensa sitúa en contra a PNV, EH Bildu y ERC, sin dar el voto de los demás grupos; por eso no se listan grupos.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -663,11 +659,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>20 mar 2025</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>20 mar 2025</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Primer proyecto de ley de la Agencia Estatal de Salud Pública, rechazado en el Pleno</h3>
       <p class="plain">El Congreso votó en contra del proyecto para crear una agencia estatal de salud pública. El Gobierno presentó después un segundo proyecto, que se aprobó en julio de 2025.</p>
-      <div class="vote" role="img" aria-label="167 a favor, 176 en contra, 2 abstenciones"><span class="lbl">20 mar 2025 · Rechazado</span><div class="bar"><span class="y" style="width:48.41%">167 a favor</span><span class="n" style="width:51.01%">176 en contra</span><span class="a" style="width:0.58%"></span></div></div>
-      <p>En contra: Junts, PP, Vox.</p>
+      <div class="vote" role="img" aria-label="167 a favor, 176 en contra, 2 abstenciones"><span class="lbl">20 mar 2025 · Rechazado · recuento oficial</span><div class="bar"><span class="y" style="width:48.41%">167 a favor</span><span class="n" style="width:51.01%">176 en contra</span><span class="a" style="width:0.58%"></span></div></div>
       <p class="limit">Recuento cotejado con el acta del Pleno. Los grupos en contra vienen de prensa. Una fuente indica que una diputada del PSOE se equivocó al votar.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -686,10 +681,10 @@ details.yg[open]>summary::before{content:"−"}
     <summary><span class="yy">2026</span><span class="yn">3 hechos</span></summary>
     <div class="ygi">
     <article class="fact">
-      <div class="meta"><time>21 abr 2026</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>21 abr 2026</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Proposición de ley del PSOE sobre la crioconservación de óvulos, admitida a trámite</h3>
       <p class="plain">El Congreso admitió a trámite una ley para que una mujer pueda decidir destruir sus óvulos congelados sin necesitar un informe médico favorable. No consta que se aprobara antes de la disolución de las Cortes.</p>
-      <div class="vote" role="img" aria-label="306 a favor, 33 en contra, 8 abstenciones"><span class="lbl">21 abr 2026 · Admitido a trámite</span><div class="bar"><span class="y" style="width:88.18%">306 a favor</span><span class="n" style="width:9.51%">33 en contra</span><span class="a" style="width:2.31%"></span></div></div>
+      <div class="vote" role="img" aria-label="306 a favor, 33 en contra, 8 abstenciones"><span class="lbl">21 abr 2026 · Admitido a trámite · recuento oficial</span><div class="bar"><span class="y" style="width:88.18%">306 a favor</span><span class="n" style="width:9.51%">33 en contra</span><span class="a" style="width:2.31%"></span></div></div>
       <p class="limit">No consta el voto de cada grupo. No se ha comprobado su estado a la disolución del 6 de octubre de 2026.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -701,10 +696,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>11 jun 2026</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>11 jun 2026</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Proposición de ley del Parlamento de Cataluña sobre normas procesales y el derecho a morir dignamente, admitida a trámite</h3>
       <p class="plain">El Congreso admitió a trámite una ley del Parlamento catalán que cambia normas de los juicios relacionados con la eutanasia. No consta que se aprobara antes de la disolución de las Cortes.</p>
-      <div class="vote" role="img" aria-label="178 a favor, 169 en contra"><span class="lbl">11 jun 2026 · Admitido a trámite</span><div class="bar"><span class="y" style="width:51.30%">178 a favor</span><span class="n" style="width:48.70%">169 en contra</span></div></div>
+      <div class="vote" role="img" aria-label="178 a favor, 169 en contra"><span class="lbl">11 jun 2026 · Admitido a trámite · recuento oficial</span><div class="bar"><span class="y" style="width:51.30%">178 a favor</span><span class="n" style="width:48.70%">169 en contra</span></div></div>
       <p class="limit">No consta el voto de cada grupo ni el contenido detallado de la proposición. Una fuente de prensa la atribuyó al PSOE; el acta la atribuye al Parlamento de Cataluña.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -715,11 +710,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>10 sep 2026</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>10 sep 2026</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Proposición de ley del PSOE para reconocer como profesiones sanitarias la de biólogo y la de trabajador social, admitida a trámite</h3>
       <p class="plain">El Congreso admitió a trámite una ley para que biólogos y trabajadores sociales sean profesiones sanitarias. Las Cortes se disolvieron un mes después.</p>
-      <div class="vote" role="img" aria-label="165 a favor, 32 en contra, 148 abstenciones"><span class="lbl">10 sep 2026 · Admitido a trámite</span><div class="bar"><span class="y" style="width:47.83%">165 a favor</span><span class="n" style="width:9.28%">32 en contra</span><span class="a" style="width:42.90%">148</span></div></div>
-      <p>En contra: Vox.</p>
+      <div class="vote" role="img" aria-label="165 a favor, 32 en contra, 148 abstenciones"><span class="lbl">10 sep 2026 · Admitido a trámite · recuento oficial</span><div class="bar"><span class="y" style="width:47.83%">165 a favor</span><span class="n" style="width:9.28%">32 en contra</span><span class="a" style="width:42.90%">148</span></div></div>
       <p class="limit">El documento de votación no dice en palabras el resultado; con más votos a favor que en contra, la toma en consideración sale aprobada. Un diputado del Grupo Mixto también votó en contra.</p>
       <details>
         <summary>Detalle y fuentes</summary>

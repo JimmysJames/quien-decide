@@ -5,7 +5,7 @@
   "aviso_competencia": "",
   "resumen": {
     "aprobado": "Subidas anuales del salario mínimo por real decreto (de 735,90 euros al mes en 2018 a 1.221 en 2026), registro diario de jornada y plan de igualdad obligatorio (2019), ERTE y sus prórrogas en la pandemia (2020-2022), trabajo a distancia (2020), reforma laboral (2021), paro para empleadas del hogar (2022), reforma del subsidio por desempleo (2024) y permiso por nacimiento de 19 semanas (2025).",
-    "no_salio": "El Congreso derogó el primer decreto del subsidio por desempleo (enero de 2024) y el decreto ómnibus que prorrogaba el salario mínimo de 2025 (enero de 2026), devolvió al Gobierno el proyecto de jornada de 37,5 horas (septiembre de 2025) y rechazó tramitar propuestas de jornada de 35 horas, de conciliación y sobre deslocalizaciones.",
+    "no_salio": "El Congreso derogó el primer decreto del subsidio por desempleo (enero de 2024) y el decreto ómnibus 16/2025, que incluía la prórroga del salario mínimo de 2025 (enero de 2026), devolvió al Gobierno el proyecto de jornada de 37,5 horas (septiembre de 2025) y rechazó tramitar propuestas de jornada de 35 horas, de conciliación y sobre deslocalizaciones.",
     "cifras": "La tasa de paro del segundo trimestre pasó del 15,28 % en 2018 al 9,87 % en 2026. La tasa de temporalidad de los asalariados era del 26,80 % en el segundo trimestre de 2018 y del 17,32 % en el de 2023.",
     "no_sabe": "No consta la tasa de temporalidad de 2024 a 2026 en las notas de prensa del INE. Faltan recuentos de varias prórrogas de los ERTE y de las votaciones finales de algunas leyes. No se ha revisado una a una cada proposición de ley laboral votada en el Pleno entre 2018 y 2026."
   },
@@ -48,7 +48,8 @@
         "en_contra": 1,
         "abstenciones": 164,
         "grupos_en_contra": [],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -82,7 +83,9 @@
         "grupos_en_contra": [
           "PP"
         ],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "dos_fuentes",
+        "camara": "diputacion_permanente"
       },
       "fuentes": [
         {
@@ -122,7 +125,9 @@
         "grupos_en_contra": [
           "PP"
         ],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "dos_fuentes",
+        "camara": "diputacion_permanente"
       },
       "fuentes": [
         {
@@ -185,7 +190,8 @@
         "en_contra": 52,
         "abstenciones": 91,
         "grupos_en_contra": [],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -223,7 +229,8 @@
         "en_contra": 54,
         "abstenciones": 6,
         "grupos_en_contra": [],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -255,7 +262,8 @@
         "en_contra": 138,
         "abstenciones": 21,
         "grupos_en_contra": [],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -287,7 +295,8 @@
         "en_contra": 139,
         "abstenciones": 14,
         "grupos_en_contra": [],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -380,7 +389,8 @@
         "en_contra": 1,
         "abstenciones": 54,
         "grupos_en_contra": [],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -422,7 +432,8 @@
           "PP",
           "Vox"
         ],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -485,7 +496,8 @@
         "en_contra": 174,
         "abstenciones": 0,
         "grupos_en_contra": [],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -548,7 +560,8 @@
         "en_contra": 0,
         "abstenciones": 51,
         "grupos_en_contra": [],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -586,7 +599,8 @@
         "en_contra": 0,
         "abstenciones": 146,
         "grupos_en_contra": [],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -656,7 +670,9 @@
         "en_contra": 0,
         "abstenciones": 11,
         "grupos_en_contra": [],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial",
+        "camara": "diputacion_permanente"
       },
       "fuentes": [
         {
@@ -680,7 +696,7 @@
       "tipo": "no_salio",
       "fecha": "2024-01-10",
       "titulo": "Real Decreto-ley 7/2023, reforma del subsidio por desempleo (derogado)",
-      "frase_llana": "El Congreso tumbó el primer decreto que cambiaba el subsidio por desempleo y el permiso de lactancia. Esos cambios no entraron en vigor de forma definitiva.",
+      "frase_llana": "El Congreso no convalidó el primer decreto que cambiaba el subsidio por desempleo y el permiso de lactancia. Esos cambios no entraron en vigor de forma definitiva.",
       "detalle": "Real Decreto-ley 7/2023, de 19 de diciembre, por el que se adoptan medidas urgentes para completar la transposición de la Directiva (UE) 2019/1158 (conciliación) y para la simplificación y mejora del nivel asistencial de la protección por desempleo. BOE núm. 303, de 20 de diciembre de 2023. En el Pleno del 10 de enero de 2024: \"votos emitidos, 343; a favor, 167; en contra, 176. En consecuencia, queda derogado el real decreto ley\" (Diario de Sesiones). Acuerdo de derogación publicado en el BOE del 12 de enero de 2024.",
       "votacion": {
         "fecha": "2024-01-10",
@@ -693,7 +709,8 @@
           "UPN",
           "Vox"
         ],
-        "resultado": "derogado"
+        "resultado": "derogado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -756,7 +773,8 @@
         "en_contra": 0,
         "abstenciones": 171,
         "grupos_en_contra": [],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -844,7 +862,8 @@
         "en_contra": 0,
         "abstenciones": 33,
         "grupos_en_contra": [],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -882,7 +901,8 @@
         "en_contra": 33,
         "abstenciones": 0,
         "grupos_en_contra": [],
-        "resultado": "tomado_en_consideracion"
+        "resultado": "tomado_en_consideracion",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -914,7 +934,8 @@
         "en_contra": 170,
         "abstenciones": 0,
         "grupos_en_contra": [],
-        "resultado": "devuelto"
+        "resultado": "devuelto",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -968,7 +989,8 @@
           "PP",
           "Vox"
         ],
-        "resultado": "rechazado"
+        "resultado": "rechazado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -1000,7 +1022,8 @@
         "en_contra": 175,
         "abstenciones": 0,
         "grupos_en_contra": [],
-        "resultado": "rechazado"
+        "resultado": "rechazado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -1017,8 +1040,8 @@
       "id": "emp-2026-rdl-16-2025-smi-derogado",
       "tipo": "no_salio",
       "fecha": "2026-01-27",
-      "titulo": "Real Decreto-ley 16/2025, prórroga del salario mínimo de 2025 (derogado)",
-      "frase_llana": "El Congreso tumba el decreto ómnibus que, entre otras medidas, mantenía el salario mínimo de 2025 mientras no se fijaba el de 2026. El Gobierno aprobó el salario mínimo de 2026 en febrero.",
+      "titulo": "Real Decreto-ley 16/2025, decreto ómnibus, derogado",
+      "frase_llana": "Decreto con medidas de varias materias a la vez. Mantenía el salario mínimo de 2025 mientras no se fijaba el de 2026. El Congreso no lo convalidó. El Gobierno aprobó el salario mínimo de 2026 en febrero.",
       "detalle": "Real Decreto-ley 16/2025, de 23 de diciembre, por el que se prorrogan determinadas medidas para hacer frente a situaciones de vulnerabilidad social, y se adoptan medidas urgentes en materia tributaria y de Seguridad Social. BOE núm. 309, de 24 de diciembre de 2025. Su preámbulo incluye \"la prórroga de la vigencia del Real Decreto 87/2025\" (salario mínimo de 1.184 euros) hasta que se apruebe el de 2026. Incluía también la revalorización de las pensiones (ficha de pensiones). Derogado por el Congreso el 27 de enero de 2026 (171 a favor, 178 en contra; Resolución de 27 de enero de 2026, BOE-A-2026-2024). El Real Decreto 126/2026, de 18 de febrero, fijó después el salario mínimo de 2026.",
       "votacion": {
         "fecha": "2026-01-27",
@@ -1030,7 +1053,8 @@
           "PP",
           "Vox"
         ],
-        "resultado": "derogado"
+        "resultado": "derogado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -1093,7 +1117,8 @@
         "en_contra": 178,
         "abstenciones": 1,
         "grupos_en_contra": [],
-        "resultado": "rechazado"
+        "resultado": "rechazado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -1127,7 +1152,8 @@
         "grupos_en_contra": [
           "Vox"
         ],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {

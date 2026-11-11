@@ -6,7 +6,7 @@
   "resumen": {
     "aprobado": "Penas más altas por imprudencia al volante (2019 y 2022), ley de protección de la infancia frente a la violencia (2021), ley del «solo sí es sí» (2022) y su reforma (2023), y ley de multirreincidencia (2026).",
     "no_salio": "La reforma de la Ley de Seguridad Ciudadana se rechazó en comisión en 2023; otra, admitida en 2024, decayó con la disolución en 2026. El Congreso rechazó leyes de PP y Vox contra la ocupación de viviendas en 2021 y 2022, y admitió una del PP en 2026 que no llegó a aprobarse.",
-    "cifras": "Infracciones penales conocidas: 2.131.118 en 2018, 1.773.366 en 2020 y 2.474.156 en 2025. Por cada 1.000 habitantes: 41,4 en 2021 y 50,4 en 2025 (este, suma propia de las tasas que publica Interior). Las cifras dependen también de las denuncias y de cambios de método.",
+    "cifras": "Infracciones penales conocidas: 2.131.118 en 2018, 1.773.366 en 2020 y 2.474.156 en 2025. Por cada 1.000 habitantes: 45,6 en 2018 (cálculo propio) y 50,4 en 2025. De esas 50,4, 40,4 son criminalidad convencional y 10,0 cibercriminalidad; en 2024 eran 41,0 y 9,6.",
     "no_sabe": "La tasa de 2018, 2019, 2020 y 2023 es cálculo propio: Interior no la publica en los balances consultados. Faltan recuentos oficiales de varias votaciones."
   },
   "hechos": [
@@ -25,7 +25,9 @@
         "grupos_en_contra": [
           "Unidos Podemos"
         ],
-        "resultado": "aprobado"
+        "resultado": "aprobado",
+        "fuente_recuento": "una_fuente",
+        "camara": "senado"
       },
       "fuentes": [
         {
@@ -57,7 +59,8 @@
         "en_contra": null,
         "abstenciones": null,
         "grupos_en_contra": [],
-        "resultado": "rechazado"
+        "resultado": "rechazado",
+        "fuente_recuento": null
       },
       "fuentes": [
         {
@@ -110,7 +113,8 @@
         "grupos_en_contra": [
           "Vox"
         ],
-        "resultado": "aprobado"
+        "resultado": "aprobado",
+        "fuente_recuento": null
       },
       "fuentes": [
         {
@@ -167,7 +171,8 @@
         "en_contra": null,
         "abstenciones": null,
         "grupos_en_contra": [],
-        "resultado": "rechazado"
+        "resultado": "rechazado",
+        "fuente_recuento": null
       },
       "fuentes": [
         {
@@ -196,7 +201,8 @@
           "PP",
           "Vox"
         ],
-        "resultado": "aprobado"
+        "resultado": "aprobado",
+        "fuente_recuento": "dos_fuentes"
       },
       "fuentes": [
         {
@@ -227,16 +233,15 @@
       "fecha": "2022-09-13",
       "titulo": "Ley Orgánica 11/2022, imprudencia menos grave al volante",
       "frase_llana": "Si un conductor mata o hiere a alguien cometiendo una infracción grave de tráfico, ya no puede tratarse como imprudencia leve sin explicarlo. Amplía el delito de abandono del lugar del accidente a más tipos de lesiones.",
-      "detalle": "Ley Orgánica 11/2022, de 13 de septiembre, de modificación del Código Penal en materia de imprudencia en la conducción de vehículos a motor o ciclomotor. BOE núm. 221, de 14 de septiembre de 2022 (BOE-A-2022-14965). En vigor el 15 de septiembre de 2022. Modifica los artículos 142.2, 152.2 y 382 bis.1 del Código Penal: una infracción grave de tráfico determinante del resultado se considera al menos imprudencia menos grave, con motivación del juez; retirada del carné de 3 a 18 meses. La Administración debe comunicar al juez los accidentes con heridos o muertos. Aprobación definitiva en el Pleno del Senado el 7 de septiembre de 2022.",
+      "detalle": "Ley Orgánica 11/2022, de 13 de septiembre, de modificación del Código Penal en materia de imprudencia en la conducción de vehículos a motor o ciclomotor. BOE núm. 221, de 14 de septiembre de 2022 (BOE-A-2022-14965). En vigor el 15 de septiembre de 2022. Modifica los artículos 142.2, 152.2 y 382 bis.1 del Código Penal: una infracción grave de tráfico determinante del resultado se considera al menos imprudencia menos grave, con motivación del juez; retirada del carné de 3 a 18 meses. La Administración debe comunicar al juez los accidentes con heridos o muertos. Aprobación definitiva en el Pleno del Senado el 7 de septiembre de 2022. Votación en el Senado el 7 de septiembre de 2022: 144 a favor, 4 en contra y 112 abstenciones (una fuente de prensa).",
       "votacion": {
-        "fecha": "2022-09-07",
-        "a_favor": 144,
-        "en_contra": 4,
-        "abstenciones": 112,
-        "grupos_en_contra": [
-          "Vox"
-        ],
-        "resultado": "aprobado"
+        "fecha": "2022-06-09",
+        "a_favor": 195,
+        "en_contra": 51,
+        "abstenciones": 96,
+        "grupos_en_contra": [],
+        "resultado": "aprobado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -246,6 +251,12 @@
           "fecha": "2022-09-14"
         },
         {
+          "nombre": "Diario de Sesiones del Congreso, Pleno, núm. 193",
+          "url": "https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-193.PDF",
+          "tipo": "oficial",
+          "fecha": "2022-06-09"
+        },
+        {
           "nombre": "Última Hora: aprobada la ley que acaba con la impunidad al volante",
           "url": "https://www.ultimahora.es/noticias/nacional/2022/09/07/1787671/trafico-espana-nueva-ley-acaba-impunidad-volante.html",
           "tipo": "prensa",
@@ -253,7 +264,7 @@
         }
       ],
       "verificacion": "oficial",
-      "no_sabemos": "El recuento del Senado (144-4-112), que Vox votó en contra y que PP y PNV se abstuvieron salen de un solo medio."
+      "no_sabemos": "El recuento del Congreso (9 de junio de 2022) es oficial (Diario de Sesiones del Congreso). El recuento del Senado (144-4-112) sale de un solo medio."
     },
     {
       "id": "seg-2022-okupacion-pp-rechazada",
@@ -268,7 +279,8 @@
         "en_contra": 178,
         "abstenciones": null,
         "grupos_en_contra": [],
-        "resultado": "rechazado"
+        "resultado": "rechazado",
+        "fuente_recuento": "una_fuente"
       },
       "fuentes": [
         {
@@ -302,7 +314,9 @@
           "PP",
           "Vox"
         ],
-        "resultado": "rechazado"
+        "resultado": "rechazado",
+        "fuente_recuento": "oficial",
+        "camara": "comision"
       },
       "fuentes": [
         {
@@ -334,7 +348,9 @@
         "en_contra": 19,
         "abstenciones": 4,
         "grupos_en_contra": [],
-        "resultado": "aprobado"
+        "resultado": "aprobado",
+        "fuente_recuento": "una_fuente",
+        "camara": "senado"
       },
       "fuentes": [
         {
@@ -376,7 +392,8 @@
           "UPN",
           "Vox"
         ],
-        "resultado": "tomado_en_consideracion"
+        "resultado": "tomado_en_consideracion",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -426,7 +443,8 @@
         "en_contra": 176,
         "abstenciones": 0,
         "grupos_en_contra": [],
-        "resultado": "enmienda_rechazada"
+        "resultado": "enmienda_rechazada",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -455,7 +473,8 @@
           "Podemos",
           "Sumar"
         ],
-        "resultado": "aprobado"
+        "resultado": "aprobado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -493,7 +512,8 @@
         "en_contra": 164,
         "abstenciones": 11,
         "grupos_en_contra": [],
-        "resultado": "tomado_en_consideracion"
+        "resultado": "tomado_en_consideracion",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -742,5 +762,5 @@
     "Ofertas de empleo público y equiparación salarial de Policía Nacional y Guardia Civil: no hemos encontrado una ley o real decreto-ley propio; no se incluyen.",
     "No hemos podido hacer más búsquedas web en esta ampliación (límite agotado): pueden faltar otras proposiciones votadas en el Pleno."
   ],
-  "pie_verificacion": "Con fuente oficial (BOE o actas y Diario de Sesiones del Congreso): las ocho leyes orgánicas, el rechazo en comisión de 2023, la toma en consideración y las enmiendas a la totalidad de la reforma de seguridad ciudadana de 2024, la admisión de la ley del PP sobre ocupación de 2026 y el recuento de la ley de multirreincidencia. Con dos fuentes de prensa: el rechazo de la ley del PP sobre ocupación de 2021 (sin recuento) y los grupos en contra de la ley de infancia. Con una sola fuente: recuentos finales de 2019, 2022 y 2023 (Senado), los rechazos de 2022 sobre ocupación, los grupos en contra de 2023 y 2026, y que la reforma de 2024 decae. Indicadores: infracciones de 2018-2021, 2023 y 2025 oficiales; 2022 y 2024 de prensa. Tasa: 2021 y 2022 oficiales, 2024 de prensa, 2018-2020, 2023 y 2025 cálculo propio. Consulta: 11 de noviembre de 2026."
+  "pie_verificacion": "Con fuente oficial (BOE o actas y Diario de Sesiones del Congreso): las ocho leyes orgánicas, el recuento del Congreso de la imprudencia menos grave de 2022, el rechazo en comisión de 2023, la toma en consideración y las enmiendas a la totalidad de la reforma de seguridad ciudadana de 2024, la admisión de la ley del PP sobre ocupación de 2026 y el recuento de la ley de multirreincidencia. Con dos fuentes de prensa: el rechazo de la ley del PP sobre ocupación de 2021 (sin recuento) y los grupos en contra de la ley de infancia. Con una sola fuente: los recuentos del Senado de 2019 y 2023, el recuento de la ley de «solo sí es sí» de 2022, los rechazos de 2022 sobre ocupación, los grupos en contra de 2023 y 2026, y que la reforma de 2024 decae. Indicadores: infracciones de 2018-2021, 2023 y 2025 oficiales; 2022 y 2024 de prensa. Tasa: 2021 y 2022 oficiales, 2024 de prensa, 2018-2020, 2023 y 2025 cálculo propio. Consulta: 11 de noviembre de 2026."
 }

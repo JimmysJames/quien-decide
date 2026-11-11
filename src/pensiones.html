@@ -149,6 +149,8 @@ details.yg>summary::before{content:"+";font-family:var(--f-mono);font-size:1rem;
 details.yg[open]>summary::before{content:"−"}
 .ygi{display:flex;flex-direction:column;gap:14px}
 .tl.compact li{padding-bottom:10px}
+.tl li.sep{display:block;padding-bottom:10px}
+.tl li.sep span{display:block;border-top:1px dashed var(--rule);padding-top:6px;font-family:var(--f-mono);font-size:.74rem;color:var(--ink-2);text-transform:uppercase;letter-spacing:.06em}
 .tl.compact .t{font-weight:500;font-size:.95rem}
 .keys{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.88rem;color:var(--ink-2)}
 .keys i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px}
@@ -164,7 +166,7 @@ details.yg[open]>summary::before{content:"−"}
   <div class="head">
     <p class="kicker">Gobierno central y Cortes · 2018 a 2026</p>
     <h1>Pensiones: qué ha hecho el Estado</h1>
-    <p class="lede">Ocho años con Pedro Sánchez como presidente del Gobierno, desde junio de 2018.</p>
+    <p class="lede">Periodo: junio de 2018 a octubre de 2026. Tres gobiernos presididos por Pedro Sánchez: PSOE (2018-2020), PSOE y Unidas Podemos (2020-2023), PSOE y Sumar (desde 2023). Los datos de 2018 anteriores a junio corresponden al Gobierno anterior.</p>
   </div>
 
   <div class="sum" aria-label="Resumen">
@@ -174,7 +176,7 @@ details.yg[open]>summary::before{content:"−"}
     </div>
     <div class="row">
       <span class="k">Lo que no salió</span>
-      <p>El Congreso derogó dos decretos ómnibus que incluían la subida anual: en enero de 2025 y en enero de 2026. En los dos casos, un decreto posterior con la subida se convalidó. En septiembre de 2026 el Congreso admitió a trámite quitar el recorte por jubilación anticipada con 40 años cotizados, pero no llegó a ser ley.</p>
+      <p>El Congreso derogó dos decretos ómnibus, con medidas de varias materias, que incluían la subida anual: en enero de 2025 y en enero de 2026. En los dos casos, un decreto posterior con la subida se convalidó. En septiembre de 2026 el Congreso admitió a trámite quitar el recorte por jubilación anticipada con 40 años cotizados, pero no llegó a ser ley.</p>
     </div>
     <div class="row">
       <span class="k">Lo que dicen las cifras</span>
@@ -192,6 +194,7 @@ details.yg[open]>summary::before{content:"−"}
     <ol class="tl compact">
       <li><time>28 dic 2018</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 28/2018, revalorización de 2019</p><p class="s"></p></div></li>
       <li><time>1 mar 2019</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley 3/2019, orfandad por violencia contra la mujer</p><p class="s"></p></div></li>
+      <li class="sep"><span>Enero de 2020 · Gobierno de PSOE y Unidas Podemos</span></li>
       <li><time>14 ene 2020</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 1/2020, revalorización de 2020</p><p class="s"></p></div></li>
       <li><time>29 may 2020</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 20/2020, ingreso mínimo vital</p><p class="s"></p></div></li>
       <li><time>26 ene 2021</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto 46/2021, revalorización de 2021</p><p class="s"></p></div></li>
@@ -203,11 +206,12 @@ details.yg[open]>summary::before{content:"−"}
       <li><time>26 jul 2022</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 13/2022, cotización de autónomos por ingresos reales</p><p class="s"></p></div></li>
       <li><time>27 dic 2022</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto 1058/2022, revalorización de 2023</p><p class="s"></p></div></li>
       <li><time>16 mar 2023</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 2/2023, reforma de pensiones</p><p class="s"></p></div></li>
+      <li class="sep"><span>Noviembre de 2023 · Gobierno de PSOE y Sumar</span></li>
       <li><time>27 dic 2023</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 8/2023, decreto ómnibus con la revalorización de 2024</p><p class="s"></p></div></li>
       <li><time>23 dic 2024</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 11/2024, compatibilidad de pensión y trabajo</p><p class="s"></p></div></li>
-      <li><time>22 ene 2025</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Real Decreto-ley 9/2024, decreto ómnibus con la revalorización de 2025</p><p class="s">Derogado: no se convalidó</p></div></li>
+      <li><time>22 ene 2025</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Real Decreto-ley 9/2024, decreto ómnibus, derogado</p><p class="s">Derogado: no se convalidó</p></div></li>
       <li><time>28 ene 2025</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 1/2025, revalorización de 2025 (sustituto)</p><p class="s"></p></div></li>
-      <li><time>27 ene 2026</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Real Decreto-ley 16/2025, decreto ómnibus con la revalorización de 2026</p><p class="s">Derogado: no se convalidó</p></div></li>
+      <li><time>27 ene 2026</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Real Decreto-ley 16/2025, decreto ómnibus, derogado</p><p class="s">Derogado: no se convalidó</p></div></li>
       <li><time>3 feb 2026</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 3/2026, revalorización de las pensiones de 2026</p><p class="s"></p></div></li>
       <li><time>27 may 2026</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto 416/2026, jubilación flexible</p><p class="s"></p></div></li>
       <li><time>29 jul 2026</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley 2/2026, pasarela de mutualistas al régimen de autónomos</p><p class="s"></p></div></li>
@@ -221,10 +225,10 @@ details.yg[open]>summary::before{content:"−"}
     <summary><span class="yy">2018</span><span class="yn">1 hecho</span></summary>
     <div class="ygi">
     <article class="fact">
-      <div class="meta"><time>28 dic 2018</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>28 dic 2018</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 28/2018, revalorización de 2019</h3>
       <p class="plain">Las pensiones contributivas suben un 1,6 % en 2019 y se paga una cantidad única por la diferencia de 2018. Los autónomos pasan a cotizar obligatoriamente por accidente de trabajo y por cese de actividad.</p>
-      <div class="vote" role="img" aria-label="181 a favor, 1 en contra, 164 abstenciones"><span class="lbl">22 ene 2019 · Convalidado</span><div class="bar"><span class="y" style="width:52.31%">181 a favor</span><span class="n" style="width:0.29%">1 en contra</span><span class="a" style="width:47.40%">164</span></div></div>
+      <div class="vote" role="img" aria-label="181 a favor, 1 en contra, 164 abstenciones"><span class="lbl">22 ene 2019 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:52.31%">181 a favor</span><span class="n" style="width:0.29%">1 en contra</span><span class="a" style="width:47.40%">164</span></div></div>
       <p class="limit">Qué grupos se abstuvieron y quién votó en contra. Si la tramitación como proyecto de ley terminó antes de la disolución de 2019.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -241,7 +245,7 @@ details.yg[open]>summary::before{content:"−"}
     <summary><span class="yy">2019</span><span class="yn">1 hecho</span></summary>
     <div class="ygi">
     <article class="fact">
-      <div class="meta"><time>1 mar 2019</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>1 mar 2019</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Ley 3/2019, orfandad por violencia contra la mujer</h3>
       <p class="plain">Los hijos e hijas de mujeres asesinadas por violencia contra la mujer pueden cobrar una prestación o un incremento de su pensión de orfandad, aunque la madre no tuviera cotización suficiente.</p>
       
@@ -260,7 +264,7 @@ details.yg[open]>summary::before{content:"−"}
     <summary><span class="yy">2020</span><span class="yn">2 hechos</span></summary>
     <div class="ygi">
     <article class="fact">
-      <div class="meta"><time>14 ene 2020</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>14 ene 2020</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 1/2020, revalorización de 2020</h3>
       <p class="plain">Las pensiones contributivas suben un 0,9 % en 2020, con efectos desde el 1 de enero.</p>
       <p class="vote"><span class="lbl">4 feb 2020 · Convalidado · las fuentes no dan el recuento</span></p>
@@ -276,7 +280,7 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>29 may 2020</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>29 may 2020</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 20/2020, ingreso mínimo vital</h3>
       <p class="plain">Se crea el ingreso mínimo vital, una prestación de la Seguridad Social para hogares con ingresos bajos. No exige haber cotizado.</p>
       <p class="vote"><span class="lbl">10 jun 2020 · Convalidado · las fuentes no dan el recuento</span></p>
@@ -296,7 +300,7 @@ details.yg[open]>summary::before{content:"−"}
     <summary><span class="yy">2021</span><span class="yn">4 hechos</span></summary>
     <div class="ygi">
     <article class="fact">
-      <div class="meta"><time>26 ene 2021</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>26 ene 2021</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto 46/2021, revalorización de 2021</h3>
       <p class="plain">Las pensiones contributivas suben un 0,9 % en 2021 y las no contributivas un 1,8 %.</p>
       
@@ -309,11 +313,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>2 feb 2021</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>2 feb 2021</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 3/2021, complemento de brecha de género</h3>
       <p class="plain">El complemento de maternidad de las pensiones se sustituye por un complemento por cada hijo para reducir la brecha de género. Algunos hombres también pueden cobrarlo. Se amplía el acceso al ingreso mínimo vital.</p>
-      <div class="vote" role="img" aria-label="168 a favor, 164 en contra, 16 abstenciones"><span class="lbl">18 feb 2021 · Convalidado</span><div class="bar"><span class="y" style="width:48.28%">168 a favor</span><span class="n" style="width:47.13%">164 en contra</span><span class="a" style="width:4.60%"></span></div></div>
-      <p>En contra: Ciudadanos, CUP, PNV, PP, UPN, Vox.</p>
+      <div class="vote" role="img" aria-label="168 a favor, 164 en contra, 16 abstenciones"><span class="lbl">18 feb 2021 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:48.28%">168 a favor</span><span class="n" style="width:47.13%">164 en contra</span><span class="a" style="width:4.60%"></span></div></div>
       <p class="limit">Los grupos en contra (y la abstención de ERC y EH Bildu) solo los da una fuente de prensa.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -326,10 +329,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>20 dic 2021</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>20 dic 2021</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Ley 19/2021, ingreso mínimo vital</h3>
       <p class="plain">El ingreso mínimo vital pasa a ser ley. Se añade un complemento por hijo de 50 a 100 euros al mes y se facilita el acceso a jóvenes y a hogares recién formados.</p>
-      <div class="vote" role="img" aria-label="169 a favor, 98 en contra, 63 abstenciones"><span class="lbl">16 dic 2021 · Aprobado</span><div class="bar"><span class="y" style="width:51.21%">169 a favor</span><span class="n" style="width:29.70%">98 en contra</span><span class="a" style="width:19.09%">63</span></div></div>
+      <div class="vote" role="img" aria-label="169 a favor, 98 en contra, 63 abstenciones"><span class="lbl">16 dic 2021 · Aprobado · recuento oficial</span><div class="bar"><span class="y" style="width:51.21%">169 a favor</span><span class="n" style="width:29.70%">98 en contra</span><span class="a" style="width:19.09%">63</span></div></div>
       <p class="limit">El recuento es el de la votación de las enmiendas del Senado que da el sumario; no hemos leído si hubo varias votaciones separadas. Qué grupos votaron en contra.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -342,11 +345,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>28 dic 2021</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>28 dic 2021</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Ley 21/2021, de garantía del poder adquisitivo de las pensiones</h3>
       <p class="plain">Las pensiones contributivas suben cada enero según la inflación media del año anterior. Si la inflación es negativa, no bajan.</p>
-      <div class="vote" role="img" aria-label="176 a favor, 148 en contra, 6 abstenciones"><span class="lbl">2 dic 2021 · Aprobado</span><div class="bar"><span class="y" style="width:53.33%">176 a favor</span><span class="n" style="width:44.85%">148 en contra</span><span class="a" style="width:1.82%"></span></div></div>
-      <p>En contra: EH Bildu, PP, Vox.</p>
+      <div class="vote" role="img" aria-label="176 a favor, 148 en contra, 6 abstenciones"><span class="lbl">2 dic 2021 · Aprobado · recuento oficial</span><div class="bar"><span class="y" style="width:53.33%">176 a favor</span><span class="n" style="width:44.85%">148 en contra</span><span class="a" style="width:1.82%"></span></div></div>
       <p class="limit">El recuento sale del Diario de Sesiones. Los grupos en contra salen de prensa: PP y EH Bildu en dos fuentes; Vox solo en una (la otra no dice cómo votó).</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -368,7 +370,7 @@ details.yg[open]>summary::before{content:"−"}
     <summary><span class="yy">2022</span><span class="yn">4 hechos</span></summary>
     <div class="ygi">
     <article class="fact">
-      <div class="meta"><time>25 ene 2022</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>25 ene 2022</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto 65/2022, revalorización de 2022</h3>
       <p class="plain">Las pensiones contributivas suben un 2,5 % en 2022, la inflación media del año anterior. Las no contributivas suben un 3 %.</p>
       
@@ -381,10 +383,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>30 jun 2022</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>30 jun 2022</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Ley 12/2022, planes de pensiones de empleo</h3>
       <p class="plain">Se crean fondos de pensiones de empleo de promoción pública y planes simplificados para empresas y autónomos. La desgravación de los planes individuales baja a 1.500 euros al año y la de los planes de empresa puede llegar a 8.500.</p>
-      <div class="vote" role="img" aria-label="172 a favor, 164 en contra, 6 abstenciones"><span class="lbl">9 jun 2022 · Aprobado</span><div class="bar"><span class="y" style="width:50.29%">172 a favor</span><span class="n" style="width:47.95%">164 en contra</span><span class="a" style="width:1.75%"></span></div></div>
+      <div class="vote" role="img" aria-label="172 a favor, 164 en contra, 6 abstenciones"><span class="lbl">9 jun 2022 · Aprobado · recuento oficial</span><div class="bar"><span class="y" style="width:50.29%">172 a favor</span><span class="n" style="width:47.95%">164 en contra</span><span class="a" style="width:1.75%"></span></div></div>
       <p class="limit">Qué grupos votaron en contra en el Congreso: la prensa leída solo lo da para el Senado (PP, Vox, Junts y ERC) y nombra la abstención de EH Bildu.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -398,11 +400,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>26 jul 2022</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>26 jul 2022</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 13/2022, cotización de autónomos por ingresos reales</h3>
       <p class="plain">Desde 2023 los autónomos cotizan según sus ingresos reales, por tramos, y no según la base que elijan. Se amplían los casos en que pueden cobrar la prestación por cese de actividad.</p>
-      <div class="vote" role="img" aria-label="260 a favor, 64 en contra, 25 abstenciones"><span class="lbl">25 ago 2022 · Convalidado</span><div class="bar"><span class="y" style="width:74.50%">260 a favor</span><span class="n" style="width:18.34%">64 en contra</span><span class="a" style="width:7.16%">25</span></div></div>
-      <p>En contra: Ciudadanos, Vox.</p>
+      <div class="vote" role="img" aria-label="260 a favor, 64 en contra, 25 abstenciones"><span class="lbl">25 ago 2022 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:74.50%">260 a favor</span><span class="n" style="width:18.34%">64 en contra</span><span class="a" style="width:7.16%">25</span></div></div>
       <p class="limit">Los grupos en contra solo los da una fuente de prensa (dice que Vox y Ciudadanos rechazaron el decreto y que EH Bildu y BNG se abstuvieron). Si la tramitación como proyecto de ley terminó en una ley.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -415,7 +416,7 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>27 dic 2022</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>27 dic 2022</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto 1058/2022, revalorización de 2023</h3>
       <p class="plain">Las pensiones contributivas suben un 8,5 % en 2023, también las mínimas y las de Clases Pasivas.</p>
       
@@ -433,11 +434,10 @@ details.yg[open]>summary::before{content:"−"}
     <summary><span class="yy">2023</span><span class="yn">2 hechos</span></summary>
     <div class="ygi">
     <article class="fact">
-      <div class="meta"><time>16 mar 2023</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>16 mar 2023</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 2/2023, reforma de pensiones</h3>
       <p class="plain">Sube la cotización que va a la hucha de las pensiones y la de los sueldos más altos. Cambia cómo se calcula la pensión: se elige la opción más favorable entre dos.</p>
-      <div class="vote" role="img" aria-label="179 a favor, 104 en contra, 61 abstenciones"><span class="lbl">30 mar 2023 · Convalidado</span><div class="bar"><span class="y" style="width:52.03%">179 a favor</span><span class="n" style="width:30.23%">104 en contra</span><span class="a" style="width:17.73%">61</span></div></div>
-      <p>En contra: Ciudadanos, PP.</p>
+      <div class="vote" role="img" aria-label="179 a favor, 104 en contra, 61 abstenciones"><span class="lbl">30 mar 2023 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:52.03%">179 a favor</span><span class="n" style="width:30.23%">104 en contra</span><span class="a" style="width:17.73%">61</span></div></div>
       <p class="limit">Los grupos en contra (PP y Ciudadanos) solo los nombra una fuente de prensa. Porcentaje del MEI año a año en 2023: no lo hemos leído en el BOE.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -451,11 +451,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>27 dic 2023</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>27 dic 2023</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 8/2023, decreto ómnibus con la revalorización de 2024</h3>
       <p class="plain">Las pensiones contributivas suben un 3,8 % en 2024; las mínimas, las no contributivas y el ingreso mínimo vital, un 6,9 %. El decreto incluía otras medidas económicas.</p>
-      <div class="vote" role="img" aria-label="172 a favor, 171 en contra, 7 abstenciones"><span class="lbl">10 ene 2024 · Convalidado</span><div class="bar"><span class="y" style="width:49.14%">172 a favor</span><span class="n" style="width:48.86%">171 en contra</span><span class="a" style="width:2.00%"></span></div></div>
-      <p>En contra: PP, UPN, Vox.</p>
+      <div class="vote" role="img" aria-label="172 a favor, 171 en contra, 7 abstenciones"><span class="lbl">10 ene 2024 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:49.14%">172 a favor</span><span class="n" style="width:48.86%">171 en contra</span><span class="a" style="width:2.00%"></span></div></div>
       <p class="limit">No hemos leído en el BOE el artículo concreto del decreto con el 3,8 %; el dato sale de La Moncloa. Los grupos en contra (y la abstención de Junts) solo los da una fuente de prensa.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -474,10 +473,10 @@ details.yg[open]>summary::before{content:"−"}
     <summary><span class="yy">2024</span><span class="yn">1 hecho</span></summary>
     <div class="ygi">
     <article class="fact">
-      <div class="meta"><time>23 dic 2024</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>23 dic 2024</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 11/2024, compatibilidad de pensión y trabajo</h3>
       <p class="plain">Es más fácil cobrar parte de la pensión y seguir trabajando. Cambian la jubilación activa, la parcial y la demorada.</p>
-      <div class="vote" role="img" aria-label="298 a favor, 51 en contra"><span class="lbl">22 ene 2025 · Convalidado</span><div class="bar"><span class="y" style="width:85.39%">298 a favor</span><span class="n" style="width:14.61%">51 en contra</span></div></div>
+      <div class="vote" role="img" aria-label="298 a favor, 51 en contra"><span class="lbl">22 ene 2025 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:85.39%">298 a favor</span><span class="n" style="width:14.61%">51 en contra</span></div></div>
       <p class="limit">Qué grupos votaron en contra; el sumario no da abstenciones.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -495,11 +494,10 @@ details.yg[open]>summary::before{content:"−"}
     <summary><span class="yy">2025</span><span class="yn">1 hecho</span></summary>
     <div class="ygi">
     <article class="fact">
-      <div class="meta"><time>28 ene 2025</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>28 ene 2025</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 1/2025, revalorización de 2025 (sustituto)</h3>
       <p class="plain">Nuevo decreto con la subida de las pensiones de 2025: 2,8 % las contributivas. El Congreso lo convalida.</p>
-      <div class="vote" role="img" aria-label="315 a favor, 33 en contra, 1 abstenciones"><span class="lbl">12 feb 2025 · Convalidado</span><div class="bar"><span class="y" style="width:90.26%">315 a favor</span><span class="n" style="width:9.46%">33 en contra</span><span class="a" style="width:0.29%"></span></div></div>
-      <p>En contra: Vox.</p>
+      <div class="vote" role="img" aria-label="315 a favor, 33 en contra, 1 abstenciones"><span class="lbl">12 feb 2025 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:90.26%">315 a favor</span><span class="n" style="width:9.46%">33 en contra</span><span class="a" style="width:0.29%"></span></div></div>
       <p class="limit">El grupo en contra (Vox) lo nombra una fuente de prensa; la misma atribuye la abstención a UPN.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -518,11 +516,10 @@ details.yg[open]>summary::before{content:"−"}
     <summary><span class="yy">2026</span><span class="yn">3 hechos</span></summary>
     <div class="ygi">
     <article class="fact">
-      <div class="meta"><time>3 feb 2026</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>3 feb 2026</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 3/2026, revalorización de las pensiones de 2026</h3>
       <p class="plain">Decreto solo de pensiones: las contributivas suben un 2,7 % en 2026, las mínimas más del 7 % y las no contributivas y el ingreso mínimo vital un 11,4 %. El Congreso lo convalida.</p>
-      <div class="vote" role="img" aria-label="317 a favor, 33 en contra"><span class="lbl">26 feb 2026 · Convalidado</span><div class="bar"><span class="y" style="width:90.57%">317 a favor</span><span class="n" style="width:9.43%">33 en contra</span></div></div>
-      <p>En contra: Vox.</p>
+      <div class="vote" role="img" aria-label="317 a favor, 33 en contra"><span class="lbl">26 feb 2026 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:90.57%">317 a favor</span><span class="n" style="width:9.43%">33 en contra</span></div></div>
       <p class="limit">El grupo en contra (Vox) lo nombra una fuente de prensa. No hemos abierto el fichero de votación nominal de la convalidación.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -537,7 +534,7 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>27 may 2026</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>27 may 2026</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto 416/2026, jubilación flexible</h3>
       <p class="plain">Regula cómo compatibilizar la pensión con un trabajo a tiempo parcial o por cuenta propia. La pensión se reduce según la jornada.</p>
       
@@ -551,7 +548,7 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>29 jul 2026</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>29 jul 2026</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Ley 2/2026, pasarela de mutualistas al régimen de autónomos</h3>
       <p class="plain">Los profesionales que cotizan en mutualidades (como abogados) pueden pasar lo ahorrado allí a la Seguridad Social y convertirlo en tiempo cotizado como autónomos. Quedan fuera quienes ya cobran una pensión, salvo la de viudedad.</p>
       <p class="vote"><span class="lbl">23 jul 2026 · Aprobado · las fuentes no dan el recuento</span></p>
@@ -575,12 +572,11 @@ details.yg[open]>summary::before{content:"−"}
     <h2 id="h-b">Qué intentó y no salió<span class="count">3</span></h2>
     <p class="lede">Solo se cuenta lo que pasó, sin juzgar a nadie. Los motivos de cada grupo se añadirán como cita literal del Diario de Sesiones.</p>
     <article class="fact">
-      <div class="meta"><time>22 ene 2025</time><span class="badge of">Oficial</span></div>
-      <h3>Real Decreto-ley 9/2024, decreto ómnibus con la revalorización de 2025</h3>
-      <p class="plain">El Congreso no convalida el decreto que subía las pensiones en 2025 junto con otras medidas. La subida de enero ya se había pagado; el Gobierno aprueba otro decreto.</p>
-      <div class="vote" role="img" aria-label="171 a favor, 177 en contra, 1 abstenciones"><span class="lbl">22 ene 2025 · Derogado: no se convalidó</span><div class="bar"><span class="y" style="width:49.00%">171 a favor</span><span class="n" style="width:50.72%">177 en contra</span><span class="a" style="width:0.29%"></span></div></div>
-      <p>En contra: Junts, PP, Vox.</p>
-      <p class="limit">Los grupos en contra solo los nombra una fuente de prensa.</p>
+      <div class="meta"><time>22 ene 2025</time><span class="badge of">Norma: Oficial</span></div>
+      <h3>Real Decreto-ley 9/2024, decreto ómnibus, derogado</h3>
+      <p class="plain">Decreto con medidas de varias materias a la vez. Subía las pensiones en 2025. El Congreso no lo convalida. La subida de enero ya se había pagado; el Gobierno aprueba otro decreto.</p>
+      <div class="vote" role="img" aria-label="171 a favor, 177 en contra, 1 abstenciones"><span class="lbl">22 ene 2025 · Derogado: no se convalidó · recuento oficial</span><div class="bar"><span class="y" style="width:49.00%">171 a favor</span><span class="n" style="width:50.72%">177 en contra</span><span class="a" style="width:0.29%"></span></div></div>
+      <p class="limit">El recuento es oficial (Diario de Sesiones del Congreso); los grupos en contra proceden de una sola fuente de prensa.</p>
       <details>
         <summary>Detalle y fuentes</summary>
         <div class="in">
@@ -593,11 +589,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>27 ene 2026</time><span class="badge of">Oficial</span></div>
-      <h3>Real Decreto-ley 16/2025, decreto ómnibus con la revalorización de 2026</h3>
-      <p class="plain">El Congreso no convalida el decreto que subía las pensiones en 2026 junto con otras medidas. El Gobierno aprueba otro decreto solo de pensiones.</p>
-      <div class="vote" role="img" aria-label="171 a favor, 178 en contra"><span class="lbl">27 ene 2026 · Derogado: no se convalidó</span><div class="bar"><span class="y" style="width:49.00%">171 a favor</span><span class="n" style="width:51.00%">178 en contra</span></div></div>
-      <p>En contra: Junts, PP, Vox.</p>
+      <div class="meta"><time>27 ene 2026</time><span class="badge of">Norma: Oficial</span></div>
+      <h3>Real Decreto-ley 16/2025, decreto ómnibus, derogado</h3>
+      <p class="plain">Decreto con medidas de varias materias a la vez. Subía las pensiones en 2026. El Congreso no lo convalida. El Gobierno aprueba otro decreto solo de pensiones.</p>
+      <div class="vote" role="img" aria-label="171 a favor, 178 en contra"><span class="lbl">27 ene 2026 · Derogado: no se convalidó · recuento oficial</span><div class="bar"><span class="y" style="width:49.00%">171 a favor</span><span class="n" style="width:51.00%">178 en contra</span></div></div>
       <p class="limit">El acta no da abstenciones. Los grupos en contra solo los nombra una fuente de prensa. No hemos leído la resolución de derogación en el BOE.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -610,10 +605,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>22 sep 2026</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>22 sep 2026</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Proposición de ley de jubilación sin penalización (toma en consideración)</h3>
       <p class="plain">El Congreso admite a trámite quitar el recorte de la pensión a quien se jubila antes de tiempo con 40 años cotizados. No llegó a ser ley antes de la disolución de las Cortes.</p>
-      <div class="vote" role="img" aria-label="178 a favor, 33 en contra, 136 abstenciones"><span class="lbl">22 sep 2026 · Admitido a trámite</span><div class="bar"><span class="y" style="width:51.30%">178 a favor</span><span class="n" style="width:9.51%">33 en contra</span><span class="a" style="width:39.19%">136</span></div></div>
+      <div class="vote" role="img" aria-label="178 a favor, 33 en contra, 136 abstenciones"><span class="lbl">22 sep 2026 · Admitido a trámite · recuento oficial</span><div class="bar"><span class="y" style="width:51.30%">178 a favor</span><span class="n" style="width:9.51%">33 en contra</span><span class="a" style="width:39.19%">136</span></div></div>
       <p class="limit">Qué grupos votaron en contra y cuáles se abstuvieron en la toma en consideración.</p>
       <details>
         <summary>Detalle y fuentes</summary>

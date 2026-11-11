@@ -149,6 +149,8 @@ details.yg>summary::before{content:"+";font-family:var(--f-mono);font-size:1rem;
 details.yg[open]>summary::before{content:"−"}
 .ygi{display:flex;flex-direction:column;gap:14px}
 .tl.compact li{padding-bottom:10px}
+.tl li.sep{display:block;padding-bottom:10px}
+.tl li.sep span{display:block;border-top:1px dashed var(--rule);padding-top:6px;font-family:var(--f-mono);font-size:.74rem;color:var(--ink-2);text-transform:uppercase;letter-spacing:.06em}
 .tl.compact .t{font-weight:500;font-size:.95rem}
 .keys{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.88rem;color:var(--ink-2)}
 .keys i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px}
@@ -164,7 +166,7 @@ details.yg[open]>summary::before{content:"−"}
   <div class="head">
     <p class="kicker">Gobierno central y Cortes · 2018 a 2026</p>
     <h1>Empleo y salarios: qué ha hecho el Estado</h1>
-    <p class="lede">Ocho años con Pedro Sánchez como presidente del Gobierno, desde junio de 2018.</p>
+    <p class="lede">Periodo: junio de 2018 a octubre de 2026. Tres gobiernos presididos por Pedro Sánchez: PSOE (2018-2020), PSOE y Unidas Podemos (2020-2023), PSOE y Sumar (desde 2023). Los datos de 2018 anteriores a junio corresponden al Gobierno anterior.</p>
   </div>
 
   <div class="sum" aria-label="Resumen">
@@ -174,7 +176,7 @@ details.yg[open]>summary::before{content:"−"}
     </div>
     <div class="row">
       <span class="k">Lo que no salió</span>
-      <p>El Congreso derogó el primer decreto del subsidio por desempleo (enero de 2024) y el decreto ómnibus que prorrogaba el salario mínimo de 2025 (enero de 2026), devolvió al Gobierno el proyecto de jornada de 37,5 horas (septiembre de 2025) y rechazó tramitar propuestas de jornada de 35 horas, de conciliación y sobre deslocalizaciones.</p>
+      <p>El Congreso derogó el primer decreto del subsidio por desempleo (enero de 2024) y el decreto ómnibus 16/2025, que incluía la prórroga del salario mínimo de 2025 (enero de 2026), devolvió al Gobierno el proyecto de jornada de 37,5 horas (septiembre de 2025) y rechazó tramitar propuestas de jornada de 35 horas, de conciliación y sobre deslocalizaciones.</p>
     </div>
     <div class="row">
       <span class="k">Lo que dicen las cifras</span>
@@ -194,6 +196,7 @@ details.yg[open]>summary::before{content:"−"}
       <li><time>28 dic 2018</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 28/2018, medidas en materia social, laboral y de empleo</p><p class="s"></p></div></li>
       <li><time>1 mar 2019</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 6/2019, igualdad entre mujeres y hombres en el empleo</p><p class="s"></p></div></li>
       <li><time>8 mar 2019</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 8/2019, registro de jornada y subsidio para mayores de 52 años</p><p class="s"></p></div></li>
+      <li class="sep"><span>Enero de 2020 · Gobierno de PSOE y Unidas Podemos</span></li>
       <li><time>4 feb 2020</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto 231/2020, salario mínimo de 950 euros para 2020</p><p class="s"></p></div></li>
       <li><time>18 feb 2020</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 4/2020 y Ley 1/2020, fin del despido por faltas de asistencia</p><p class="s"></p></div></li>
       <li><time>17 mar 2020</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 8/2020, ERTE por la COVID-19</p><p class="s"></p></div></li>
@@ -210,6 +213,7 @@ details.yg[open]>summary::before{content:"−"}
       <li><time>14 feb 2023</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto 99/2023, salario mínimo de 1.080 euros para 2023</p><p class="s"></p></div></li>
       <li><time>28 feb 2023</time><span class="mk"><i class="dot"></i></span><div><p class="t">Ley 3/2023, de Empleo</p><p class="s"></p></div></li>
       <li><time>28 jun 2023</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 5/2023, nuevos permisos de cuidados</p><p class="s"></p></div></li>
+      <li class="sep"><span>Noviembre de 2023 · Gobierno de PSOE y Sumar</span></li>
       <li><time>10 ene 2024</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Real Decreto-ley 7/2023, reforma del subsidio por desempleo (derogado)</p><p class="s">Derogado: no se convalidó</p></div></li>
       <li><time>6 feb 2024</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto 145/2024, salario mínimo de 1.134 euros para 2024</p><p class="s"></p></div></li>
       <li><time>21 may 2024</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 2/2024, reforma del subsidio por desempleo</p><p class="s"></p></div></li>
@@ -220,7 +224,7 @@ details.yg[open]>summary::before{content:"−"}
       <li><time>10 sep 2025</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proyecto de ley de jornada de 37,5 horas, devuelto al Gobierno</p><p class="s">Votación sobre las enmiendas de totalidad: aprobadas, el texto vuelve al Gobierno</p></div></li>
       <li><time>14 oct 2025</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proposición de ley de jornada de 35 horas, rechazada</p><p class="s">Rechazado</p></div></li>
       <li><time>14 oct 2025</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proposición de ley de conciliación y corresponsabilidad familiar del PP, rechazada</p><p class="s">Rechazado</p></div></li>
-      <li><time>27 ene 2026</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Real Decreto-ley 16/2025, prórroga del salario mínimo de 2025 (derogado)</p><p class="s">Derogado: no se convalidó</p></div></li>
+      <li><time>27 ene 2026</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Real Decreto-ley 16/2025, decreto ómnibus, derogado</p><p class="s">Derogado: no se convalidó</p></div></li>
       <li><time>18 feb 2026</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto 126/2026, salario mínimo de 1.221 euros para 2026</p><p class="s"></p></div></li>
       <li><time>24 feb 2026</time><span class="mk"><i class="dot no"></i></span><div><p class="t">Proposición de ley sobre derechos laborales en deslocalizaciones, rechazada</p><p class="s">Rechazado</p></div></li>
       <li><time>29 jul 2026</time><span class="mk"><i class="dot"></i></span><div><p class="t">Real Decreto-ley 20/2026, protección laboral ante los incendios forestales</p><p class="s"></p></div></li>
@@ -233,7 +237,7 @@ details.yg[open]>summary::before{content:"−"}
     <summary><span class="yy">2018</span><span class="yn">2 hechos</span></summary>
     <div class="ygi">
     <article class="fact">
-      <div class="meta"><time>21 dic 2018</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>21 dic 2018</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto 1462/2018, salario mínimo de 900 euros para 2019</h3>
       <p class="plain">El salario mínimo pasa de 735,90 a 900 euros al mes. Lo fija el Gobierno por real decreto, sin votación en el Congreso.</p>
       
@@ -247,10 +251,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>28 dic 2018</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>28 dic 2018</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 28/2018, medidas en materia social, laboral y de empleo</h3>
       <p class="plain">Desaparece el contrato indefinido de apoyo a emprendedores, sube la cotización de los contratos de muy corta duración y las personas en prácticas no laborales pasan a cotizar a la Seguridad Social.</p>
-      <div class="vote" role="img" aria-label="181 a favor, 1 en contra, 164 abstenciones"><span class="lbl">22 ene 2019 · Convalidado</span><div class="bar"><span class="y" style="width:52.31%">181 a favor</span><span class="n" style="width:0.29%">1 en contra</span><span class="a" style="width:47.40%">164</span></div></div>
+      <div class="vote" role="img" aria-label="181 a favor, 1 en contra, 164 abstenciones"><span class="lbl">22 ene 2019 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:52.31%">181 a favor</span><span class="n" style="width:0.29%">1 en contra</span><span class="a" style="width:47.40%">164</span></div></div>
       <p class="limit">Qué grupo votó en contra.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -267,11 +271,10 @@ details.yg[open]>summary::before{content:"−"}
     <summary><span class="yy">2019</span><span class="yn">2 hechos</span></summary>
     <div class="ygi">
     <article class="fact">
-      <div class="meta"><time>1 mar 2019</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>1 mar 2019</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 6/2019, igualdad entre mujeres y hombres en el empleo</h3>
       <p class="plain">El permiso por nacimiento del otro progenitor sube por etapas hasta igualarse en 16 semanas en 2021. Las empresas deben llevar un registro de salarios por sexo y las de 50 o más trabajadores, un plan de igualdad.</p>
-      <div class="vote" role="img" aria-label="40 a favor, 25 en contra"><span class="lbl">3 abr 2019 · Convalidado</span><div class="bar"><span class="y" style="width:61.54%">40 a favor</span><span class="n" style="width:38.46%">25 en contra</span></div></div>
-      <p>En contra: PP.</p>
+      <div class="vote" role="img" aria-label="40 a favor, 25 en contra"><span class="lbl">3 abr 2019 · Diputación Permanente · Convalidado · recuento según dos medios</span><div class="bar"><span class="y" style="width:61.54%">40 a favor</span><span class="n" style="width:38.46%">25 en contra</span></div></div>
       <p class="limit">El recuento sale de dos fuentes de prensa, no del Diario de Sesiones de la Diputación Permanente. El voto en contra del PP lo nombra una sola fuente.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -284,11 +287,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>8 mar 2019</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>8 mar 2019</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 8/2019, registro de jornada y subsidio para mayores de 52 años</h3>
       <p class="plain">Las empresas deben registrar cada día la hora de entrada y salida de su plantilla. El subsidio por desempleo para mayores vuelve a pedirse desde los 52 años, en lugar de 55, y se cobra hasta la edad de jubilación.</p>
-      <div class="vote" role="img" aria-label="34 a favor, 25 en contra, 6 abstenciones"><span class="lbl">3 abr 2019 · Convalidado</span><div class="bar"><span class="y" style="width:52.31%">34 a favor</span><span class="n" style="width:38.46%">25 en contra</span><span class="a" style="width:9.23%">6</span></div></div>
-      <p>En contra: PP.</p>
+      <div class="vote" role="img" aria-label="34 a favor, 25 en contra, 6 abstenciones"><span class="lbl">3 abr 2019 · Diputación Permanente · Convalidado · recuento según dos medios</span><div class="bar"><span class="y" style="width:52.31%">34 a favor</span><span class="n" style="width:38.46%">25 en contra</span><span class="a" style="width:9.23%">6</span></div></div>
       <p class="limit">El recuento sale de dos fuentes de prensa, no del Diario de Sesiones. El voto en contra del PP lo nombra una sola fuente; no consta quién se abstuvo.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -306,7 +308,7 @@ details.yg[open]>summary::before{content:"−"}
     <summary><span class="yy">2020</span><span class="yn">7 hechos</span></summary>
     <div class="ygi">
     <article class="fact">
-      <div class="meta"><time>4 feb 2020</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>4 feb 2020</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto 231/2020, salario mínimo de 950 euros para 2020</h3>
       <p class="plain">El salario mínimo pasa de 900 a 950 euros al mes en 14 pagas. Lo fija el Gobierno por real decreto, sin votación en el Congreso.</p>
       
@@ -320,10 +322,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>18 feb 2020</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>18 feb 2020</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 4/2020 y Ley 1/2020, fin del despido por faltas de asistencia</h3>
       <p class="plain">La empresa ya no puede despedir por causas objetivas a quien acumula faltas de asistencia, aunque estén justificadas, como las bajas médicas.</p>
-      <div class="vote" role="img" aria-label="207 a favor, 52 en contra, 91 abstenciones"><span class="lbl">25 mar 2020 · Convalidado</span><div class="bar"><span class="y" style="width:59.14%">207 a favor</span><span class="n" style="width:14.86%">52 en contra</span><span class="a" style="width:26.00%">91</span></div></div>
+      <div class="vote" role="img" aria-label="207 a favor, 52 en contra, 91 abstenciones"><span class="lbl">25 mar 2020 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:59.14%">207 a favor</span><span class="n" style="width:14.86%">52 en contra</span><span class="a" style="width:26.00%">91</span></div></div>
       <p class="limit">Qué grupos votaron en contra; recuento de la votación final de la Ley 1/2020.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -336,10 +338,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>17 mar 2020</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>17 mar 2020</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 8/2020, ERTE por la COVID-19</h3>
       <p class="plain">Las empresas pueden suspender contratos o reducir jornada por la pandemia como fuerza mayor. Los trabajadores afectados cobran paro aunque no hayan cotizado el mínimo, y ese tiempo no les descuenta paro futuro.</p>
-      <div class="vote" role="img" aria-label="290 a favor, 54 en contra, 6 abstenciones"><span class="lbl">25 mar 2020 · Convalidado</span><div class="bar"><span class="y" style="width:82.86%">290 a favor</span><span class="n" style="width:15.43%">54 en contra</span><span class="a" style="width:1.71%"></span></div></div>
+      <div class="vote" role="img" aria-label="290 a favor, 54 en contra, 6 abstenciones"><span class="lbl">25 mar 2020 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:82.86%">290 a favor</span><span class="n" style="width:15.43%">54 en contra</span><span class="a" style="width:1.71%"></span></div></div>
       <p class="limit">Qué grupos votaron en contra.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -351,10 +353,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>27 mar 2020</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>27 mar 2020</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 9/2020, la COVID-19 no justifica despidos</h3>
       <p class="plain">Las causas que permiten un ERTE por la pandemia no sirven para despedir. Los contratos temporales suspendidos no corren mientras dura la suspensión.</p>
-      <div class="vote" role="img" aria-label="188 a favor, 138 en contra, 21 abstenciones"><span class="lbl">9 abr 2020 · Convalidado</span><div class="bar"><span class="y" style="width:54.18%">188 a favor</span><span class="n" style="width:39.77%">138 en contra</span><span class="a" style="width:6.05%">21</span></div></div>
+      <div class="vote" role="img" aria-label="188 a favor, 138 en contra, 21 abstenciones"><span class="lbl">9 abr 2020 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:54.18%">188 a favor</span><span class="n" style="width:39.77%">138 en contra</span><span class="a" style="width:6.05%">21</span></div></div>
       <p class="limit">Qué grupos votaron en contra.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -366,10 +368,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>29 mar 2020</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>29 mar 2020</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 10/2020, permiso retribuido recuperable</h3>
       <p class="plain">Del 30 de marzo al 9 de abril de 2020, quien no trabajaba en servicios esenciales ni podía teletrabajar se quedó en casa cobrando su sueldo. Las horas se devolvían a la empresa antes de terminar 2020.</p>
-      <div class="vote" role="img" aria-label="194 a favor, 139 en contra, 14 abstenciones"><span class="lbl">9 abr 2020 · Convalidado</span><div class="bar"><span class="y" style="width:55.91%">194 a favor</span><span class="n" style="width:40.06%">139 en contra</span><span class="a" style="width:4.03%"></span></div></div>
+      <div class="vote" role="img" aria-label="194 a favor, 139 en contra, 14 abstenciones"><span class="lbl">9 abr 2020 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:55.91%">194 a favor</span><span class="n" style="width:40.06%">139 en contra</span><span class="a" style="width:4.03%"></span></div></div>
       <p class="limit">Qué grupos votaron en contra.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -381,7 +383,7 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>12 may 2020</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>12 may 2020</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Prórrogas de los ERTE de la pandemia (2020-2022)</h3>
       <p class="plain">Siete decretos alargaron los ERTE de la COVID-19 y sus ayudas, de junio de 2020 a marzo de 2022.</p>
       
@@ -402,10 +404,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>22 sep 2020</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>22 sep 2020</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 28/2020 y Ley 10/2021, trabajo a distancia</h3>
       <p class="plain">Trabajar a distancia es voluntario para las dos partes y exige un acuerdo por escrito. La empresa paga o compensa los gastos.</p>
-      <div class="vote" role="img" aria-label="293 a favor, 1 en contra, 54 abstenciones"><span class="lbl">15 oct 2020 · Convalidado</span><div class="bar"><span class="y" style="width:84.20%">293 a favor</span><span class="n" style="width:0.29%">1 en contra</span><span class="a" style="width:15.52%">54</span></div></div>
+      <div class="vote" role="img" aria-label="293 a favor, 1 en contra, 54 abstenciones"><span class="lbl">15 oct 2020 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:84.20%">293 a favor</span><span class="n" style="width:0.29%">1 en contra</span><span class="a" style="width:15.52%">54</span></div></div>
       <p class="limit">Recuento de la votación final de la Ley 10/2021.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -423,11 +425,10 @@ details.yg[open]>summary::before{content:"−"}
     <summary><span class="yy">2021</span><span class="yn">3 hechos</span></summary>
     <div class="ygi">
     <article class="fact">
-      <div class="meta"><time>28 sep 2021</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>28 sep 2021</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Ley 12/2021, ley rider (repartidores de plataformas digitales)</h3>
       <p class="plain">Se presume que los repartidores que trabajan para plataformas digitales con gestión por algoritmo son asalariados. Los comités de empresa pueden pedir información sobre esos algoritmos.</p>
-      <div class="vote" role="img" aria-label="195 a favor, 151 en contra, 2 abstenciones"><span class="lbl">10 jun 2021 · Convalidado</span><div class="bar"><span class="y" style="width:56.03%">195 a favor</span><span class="n" style="width:43.39%">151 en contra</span><span class="a" style="width:0.57%"></span></div></div>
-      <p>En contra: Ciudadanos, PP, Vox.</p>
+      <div class="vote" role="img" aria-label="195 a favor, 151 en contra, 2 abstenciones"><span class="lbl">10 jun 2021 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:56.03%">195 a favor</span><span class="n" style="width:43.39%">151 en contra</span><span class="a" style="width:0.57%"></span></div></div>
       <p class="limit">Los grupos en contra salen de un solo titular de prensa; no se ha revisado la votación final de la ley.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -440,7 +441,7 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>28 sep 2021</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>28 sep 2021</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto 817/2021, salario mínimo de 965 euros para 2021</h3>
       <p class="plain">El salario mínimo pasa de 950 a 965 euros al mes en 14 pagas desde el 1 de septiembre de 2021. Lo fija el Gobierno por real decreto, sin votación en el Congreso.</p>
       
@@ -454,10 +455,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>28 dic 2021</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>28 dic 2021</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 32/2021, reforma laboral</h3>
       <p class="plain">Desaparece el contrato de obra o servicio. Los contratos temporales quedan para picos de producción o sustituciones. Se crea el Mecanismo RED para ERTE en crisis.</p>
-      <div class="vote" role="img" aria-label="175 a favor, 174 en contra"><span class="lbl">3 feb 2022 · Convalidado</span><div class="bar"><span class="y" style="width:50.14%">175 a favor</span><span class="n" style="width:49.86%">174 en contra</span></div></div>
+      <div class="vote" role="img" aria-label="175 a favor, 174 en contra"><span class="lbl">3 feb 2022 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:50.14%">175 a favor</span><span class="n" style="width:49.86%">174 en contra</span></div></div>
       <p class="limit">El voto por grupo: las fuentes leídas no dan la lista completa de grupos en contra.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -476,7 +477,7 @@ details.yg[open]>summary::before{content:"−"}
     <summary><span class="yy">2022</span><span class="yn">2 hechos</span></summary>
     <div class="ygi">
     <article class="fact">
-      <div class="meta"><time>22 feb 2022</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>22 feb 2022</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto 152/2022, salario mínimo de 1.000 euros para 2022</h3>
       <p class="plain">El salario mínimo pasa de 965 a 1.000 euros al mes en 14 pagas. Lo fija el Gobierno por real decreto, sin votación en el Congreso.</p>
       
@@ -489,10 +490,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>6 sep 2022</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>6 sep 2022</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 16/2022, empleadas del hogar</h3>
       <p class="plain">Las trabajadoras del hogar cotizan por desempleo y pueden cobrar el paro desde octubre de 2022. El empleador ya no puede despedir sin causa.</p>
-      <div class="vote" role="img" aria-label="293 a favor, 0 en contra, 51 abstenciones"><span class="lbl">29 sep 2022 · Convalidado</span><div class="bar"><span class="y" style="width:85.17%">293 a favor</span><span class="n" style="width:0.00%">0 en contra</span><span class="a" style="width:14.83%">51</span></div></div>
+      <div class="vote" role="img" aria-label="293 a favor, 0 en contra, 51 abstenciones"><span class="lbl">29 sep 2022 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:85.17%">293 a favor</span><span class="n" style="width:0.00%">0 en contra</span><span class="a" style="width:14.83%">51</span></div></div>
       <details>
         <summary>Detalle y fuentes</summary>
         <div class="in">
@@ -509,10 +510,10 @@ details.yg[open]>summary::before{content:"−"}
     <summary><span class="yy">2023</span><span class="yn">4 hechos</span></summary>
     <div class="ygi">
     <article class="fact">
-      <div class="meta"><time>10 ene 2023</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>10 ene 2023</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 1/2023, incentivos a la contratación y artistas</h3>
       <p class="plain">Reordena las rebajas de cotización a las empresas que contratan de forma indefinida a parados de larga duración y otros colectivos. Crea un paro especial para artistas y técnicos del espectáculo.</p>
-      <div class="vote" role="img" aria-label="200 a favor, 0 en contra, 146 abstenciones"><span class="lbl">24 ene 2023 · Convalidado</span><div class="bar"><span class="y" style="width:57.80%">200 a favor</span><span class="n" style="width:0.00%">0 en contra</span><span class="a" style="width:42.20%">146</span></div></div>
+      <div class="vote" role="img" aria-label="200 a favor, 0 en contra, 146 abstenciones"><span class="lbl">24 ene 2023 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:57.80%">200 a favor</span><span class="n" style="width:0.00%">0 en contra</span><span class="a" style="width:42.20%">146</span></div></div>
       <details>
         <summary>Detalle y fuentes</summary>
         <div class="in">
@@ -523,7 +524,7 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>14 feb 2023</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>14 feb 2023</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto 99/2023, salario mínimo de 1.080 euros para 2023</h3>
       <p class="plain">El salario mínimo pasa de 1.000 a 1.080 euros al mes en 14 pagas. Lo fija el Gobierno por real decreto, sin votación en el Congreso.</p>
       
@@ -536,7 +537,7 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>28 feb 2023</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>28 feb 2023</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Ley 3/2023, de Empleo</h3>
       <p class="plain">Nueva ley sobre las políticas para buscar trabajo. El SEPE pasa a ser la Agencia Española de Empleo y se fijan colectivos de atención prioritaria.</p>
       
@@ -550,10 +551,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>28 jun 2023</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>28 jun 2023</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 5/2023, nuevos permisos de cuidados</h3>
       <p class="plain">Crea un permiso parental para cuidar a hijos hasta los ocho años y un permiso por motivos familiares urgentes de cuatro días al año pagados. Amplía el permiso por enfermedad de familiares.</p>
-      <div class="vote" role="img" aria-label="53 a favor, 0 en contra, 11 abstenciones"><span class="lbl">26 jul 2023 · Convalidado</span><div class="bar"><span class="y" style="width:82.81%">53 a favor</span><span class="n" style="width:0.00%">0 en contra</span><span class="a" style="width:17.19%">11</span></div></div>
+      <div class="vote" role="img" aria-label="53 a favor, 0 en contra, 11 abstenciones"><span class="lbl">26 jul 2023 · Diputación Permanente · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:82.81%">53 a favor</span><span class="n" style="width:0.00%">0 en contra</span><span class="a" style="width:17.19%">11</span></div></div>
       <p class="limit">El texto leído del BOE no da la duración del permiso parental ni los días del permiso por enfermedad de familiares.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -570,7 +571,7 @@ details.yg[open]>summary::before{content:"−"}
     <summary><span class="yy">2024</span><span class="yn">2 hechos</span></summary>
     <div class="ygi">
     <article class="fact">
-      <div class="meta"><time>6 feb 2024</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>6 feb 2024</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto 145/2024, salario mínimo de 1.134 euros para 2024</h3>
       <p class="plain">El salario mínimo pasa de 1.080 a 1.134 euros al mes en 14 pagas. Lo fija el Gobierno por real decreto, sin votación en el Congreso.</p>
       
@@ -583,10 +584,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>21 may 2024</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>21 may 2024</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 2/2024, reforma del subsidio por desempleo</h3>
       <p class="plain">Cambia el subsidio para quien agota el paro o no ha cotizado bastante: más colectivos pueden pedirlo y se puede cobrar a la vez que se trabaja durante un tiempo.</p>
-      <div class="vote" role="img" aria-label="178 a favor, 0 en contra, 171 abstenciones"><span class="lbl">20 jun 2024 · Convalidado</span><div class="bar"><span class="y" style="width:51.00%">178 a favor</span><span class="n" style="width:0.00%">0 en contra</span><span class="a" style="width:49.00%">171</span></div></div>
+      <div class="vote" role="img" aria-label="178 a favor, 0 en contra, 171 abstenciones"><span class="lbl">20 jun 2024 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:51.00%">178 a favor</span><span class="n" style="width:0.00%">0 en contra</span><span class="a" style="width:49.00%">171</span></div></div>
       <p class="limit">Qué grupos se abstuvieron.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -605,7 +606,7 @@ details.yg[open]>summary::before{content:"−"}
     <summary><span class="yy">2025</span><span class="yn">3 hechos</span></summary>
     <div class="ygi">
     <article class="fact">
-      <div class="meta"><time>11 feb 2025</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>11 feb 2025</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto 87/2025, salario mínimo de 1.184 euros para 2025</h3>
       <p class="plain">El salario mínimo pasa de 1.134 a 1.184 euros al mes en 14 pagas. Lo fija el Gobierno por real decreto, sin votación en el Congreso.</p>
       
@@ -618,7 +619,7 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>29 abr 2025</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>29 abr 2025</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Ley 2/2025, fin del despido automático por incapacidad permanente</h3>
       <p class="plain">Que a alguien le reconozcan una incapacidad permanente ya no acaba solo con su contrato. La empresa debe adaptar el puesto o buscarle otro, salvo que el coste sea excesivo.</p>
       
@@ -633,10 +634,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>29 jul 2025</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>29 jul 2025</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 9/2025, permiso por nacimiento de 19 semanas</h3>
       <p class="plain">El permiso por nacimiento y cuidado pasa de 16 a 19 semanas para cada progenitor, y a 32 en familias monoparentales. Dos de esas semanas pueden usarse hasta que el niño cumpla ocho años.</p>
-      <div class="vote" role="img" aria-label="313 a favor, 0 en contra, 33 abstenciones"><span class="lbl">9 sep 2025 · Convalidado</span><div class="bar"><span class="y" style="width:90.46%">313 a favor</span><span class="n" style="width:0.00%">0 en contra</span><span class="a" style="width:9.54%">33</span></div></div>
+      <div class="vote" role="img" aria-label="313 a favor, 0 en contra, 33 abstenciones"><span class="lbl">9 sep 2025 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:90.46%">313 a favor</span><span class="n" style="width:0.00%">0 en contra</span><span class="a" style="width:9.54%">33</span></div></div>
       <p class="limit">Qué grupo se abstuvo.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -654,7 +655,7 @@ details.yg[open]>summary::before{content:"−"}
     <summary><span class="yy">2026</span><span class="yn">2 hechos</span></summary>
     <div class="ygi">
     <article class="fact">
-      <div class="meta"><time>18 feb 2026</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>18 feb 2026</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto 126/2026, salario mínimo de 1.221 euros para 2026</h3>
       <p class="plain">El salario mínimo pasa de 1.184 a 1.221 euros al mes en 14 pagas. Lo fija el Gobierno por real decreto, sin votación en el Congreso.</p>
       
@@ -667,11 +668,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>29 jul 2026</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>29 jul 2026</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 20/2026, protección laboral ante los incendios forestales</h3>
       <p class="plain">Quien no puede ir a trabajar por los incendios puede suspender su contrato y cobrar una prestación extraordinaria sin haber cotizado un mínimo. Las empresas con ERTE en las zonas afectadas no pagan su parte de la Seguridad Social de agosto a noviembre de 2026.</p>
-      <div class="vote" role="img" aria-label="312 a favor, 30 en contra, 1 abstenciones"><span class="lbl">9 sep 2026 · Convalidado</span><div class="bar"><span class="y" style="width:90.96%">312 a favor</span><span class="n" style="width:8.75%">30 en contra</span><span class="a" style="width:0.29%"></span></div></div>
-      <p>En contra: Vox.</p>
+      <div class="vote" role="img" aria-label="312 a favor, 30 en contra, 1 abstenciones"><span class="lbl">9 sep 2026 · Convalidado · recuento oficial</span><div class="bar"><span class="y" style="width:90.96%">312 a favor</span><span class="n" style="width:8.75%">30 en contra</span><span class="a" style="width:0.29%"></span></div></div>
       <p class="limit">Cuántas personas cobraron la prestación extraordinaria.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -690,11 +690,10 @@ details.yg[open]>summary::before{content:"−"}
     <h2 id="h-b">Qué intentó y no salió<span class="count">7</span></h2>
     <p class="lede">Solo se cuenta lo que pasó, sin juzgar a nadie. Los motivos de cada grupo se añadirán como cita literal del Diario de Sesiones.</p>
     <article class="fact">
-      <div class="meta"><time>10 ene 2024</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>10 ene 2024</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Real Decreto-ley 7/2023, reforma del subsidio por desempleo (derogado)</h3>
-      <p class="plain">El Congreso tumbó el primer decreto que cambiaba el subsidio por desempleo y el permiso de lactancia. Esos cambios no entraron en vigor de forma definitiva.</p>
-      <div class="vote" role="img" aria-label="167 a favor, 176 en contra"><span class="lbl">10 ene 2024 · Derogado: no se convalidó</span><div class="bar"><span class="y" style="width:48.69%">167 a favor</span><span class="n" style="width:51.31%">176 en contra</span></div></div>
-      <p>En contra: Podemos, PP, UPN, Vox.</p>
+      <p class="plain">El Congreso no convalidó el primer decreto que cambiaba el subsidio por desempleo y el permiso de lactancia. Esos cambios no entraron en vigor de forma definitiva.</p>
+      <div class="vote" role="img" aria-label="167 a favor, 176 en contra"><span class="lbl">10 ene 2024 · Derogado: no se convalidó · recuento oficial</span><div class="bar"><span class="y" style="width:48.69%">167 a favor</span><span class="n" style="width:51.31%">176 en contra</span></div></div>
       <p class="limit">Los grupos en contra salen de dos fuentes de prensa, no del registro oficial de votaciones.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -708,10 +707,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>9 sep 2025</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>9 sep 2025</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Proposición de ley de cuota de reserva de empleo para personas con discapacidad, tomada en consideración</h3>
       <p class="plain">El Congreso acepta debatir una propuesta del PSOE para reforzar la reserva de puestos de trabajo para personas con discapacidad. Tomarla en consideración no cambia nada todavía.</p>
-      <div class="vote" role="img" aria-label="313 a favor, 33 en contra"><span class="lbl">9 sep 2025 · Admitido a trámite</span><div class="bar"><span class="y" style="width:90.46%">313 a favor</span><span class="n" style="width:9.54%">33 en contra</span></div></div>
+      <div class="vote" role="img" aria-label="313 a favor, 33 en contra"><span class="lbl">9 sep 2025 · Admitido a trámite · recuento oficial</span><div class="bar"><span class="y" style="width:90.46%">313 a favor</span><span class="n" style="width:9.54%">33 en contra</span></div></div>
       <p class="limit">Qué grupo votó en contra y si la proposición llegó a ser ley antes de la disolución.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -723,10 +722,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>10 sep 2025</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>10 sep 2025</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Proyecto de ley de jornada de 37,5 horas, devuelto al Gobierno</h3>
       <p class="plain">El Congreso aprobó las enmiendas a la totalidad y devolvió al Gobierno el proyecto que bajaba la jornada máxima de 40 a 37,5 horas semanales. La jornada legal no cambió.</p>
-      <div class="vote" role="img" aria-label="178 a favor, 170 en contra"><span class="lbl">10 sep 2025 · Votación sobre las enmiendas de totalidad: aprobadas, el texto vuelve al Gobierno</span><div class="bar"><span class="y" style="width:51.15%">178 a favor</span><span class="n" style="width:48.85%">170 en contra</span></div></div>
+      <div class="vote" role="img" aria-label="178 a favor, 170 en contra"><span class="lbl">10 sep 2025 · Votación sobre las enmiendas de totalidad: aprobadas, el texto vuelve al Gobierno · recuento oficial</span><div class="bar"><span class="y" style="width:51.15%">178 a favor</span><span class="n" style="width:48.85%">170 en contra</span></div></div>
       <p class="limit">Las fuentes de prensa leídas no coinciden del todo en qué grupos votaron a favor de devolverlo (una añade UPN).</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -741,11 +740,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>14 oct 2025</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>14 oct 2025</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Proposición de ley de jornada de 35 horas, rechazada</h3>
       <p class="plain">El Congreso rechaza debatir una propuesta del BNG para bajar la jornada máxima a 35 horas semanales. La jornada legal no cambia.</p>
-      <div class="vote" role="img" aria-label="162 a favor, 178 en contra, 6 abstenciones"><span class="lbl">14 oct 2025 · Rechazado</span><div class="bar"><span class="y" style="width:46.82%">162 a favor</span><span class="n" style="width:51.45%">178 en contra</span><span class="a" style="width:1.73%"></span></div></div>
-      <p>En contra: Junts, PP, Vox.</p>
+      <div class="vote" role="img" aria-label="162 a favor, 178 en contra, 6 abstenciones"><span class="lbl">14 oct 2025 · Rechazado · recuento oficial</span><div class="bar"><span class="y" style="width:46.82%">162 a favor</span><span class="n" style="width:51.45%">178 en contra</span><span class="a" style="width:1.73%"></span></div></div>
       <p class="limit">Los grupos en contra los nombra una fuente de prensa.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -757,10 +755,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>14 oct 2025</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>14 oct 2025</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Proposición de ley de conciliación y corresponsabilidad familiar del PP, rechazada</h3>
       <p class="plain">El Congreso rechaza debatir una propuesta del PP sobre conciliación de la vida laboral y familiar. No cambia nada.</p>
-      <div class="vote" role="img" aria-label="171 a favor, 175 en contra"><span class="lbl">14 oct 2025 · Rechazado</span><div class="bar"><span class="y" style="width:49.42%">171 a favor</span><span class="n" style="width:50.58%">175 en contra</span></div></div>
+      <div class="vote" role="img" aria-label="171 a favor, 175 en contra"><span class="lbl">14 oct 2025 · Rechazado · recuento oficial</span><div class="bar"><span class="y" style="width:49.42%">171 a favor</span><span class="n" style="width:50.58%">175 en contra</span></div></div>
       <p class="limit">El contenido concreto de la proposición y qué grupos votaron en contra.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -771,11 +769,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>27 ene 2026</time><span class="badge of">Oficial</span></div>
-      <h3>Real Decreto-ley 16/2025, prórroga del salario mínimo de 2025 (derogado)</h3>
-      <p class="plain">El Congreso tumba el decreto ómnibus que, entre otras medidas, mantenía el salario mínimo de 2025 mientras no se fijaba el de 2026. El Gobierno aprobó el salario mínimo de 2026 en febrero.</p>
-      <div class="vote" role="img" aria-label="171 a favor, 178 en contra"><span class="lbl">27 ene 2026 · Derogado: no se convalidó</span><div class="bar"><span class="y" style="width:49.00%">171 a favor</span><span class="n" style="width:51.00%">178 en contra</span></div></div>
-      <p>En contra: Junts, PP, Vox.</p>
+      <div class="meta"><time>27 ene 2026</time><span class="badge of">Norma: Oficial</span></div>
+      <h3>Real Decreto-ley 16/2025, decreto ómnibus, derogado</h3>
+      <p class="plain">Decreto con medidas de varias materias a la vez. Mantenía el salario mínimo de 2025 mientras no se fijaba el de 2026. El Congreso no lo convalidó. El Gobierno aprobó el salario mínimo de 2026 en febrero.</p>
+      <div class="vote" role="img" aria-label="171 a favor, 178 en contra"><span class="lbl">27 ene 2026 · Derogado: no se convalidó · recuento oficial</span><div class="bar"><span class="y" style="width:49.00%">171 a favor</span><span class="n" style="width:51.00%">178 en contra</span></div></div>
       <p class="limit">El acta no da abstenciones. Los grupos en contra los nombra una fuente de prensa. No hemos leído el artículo concreto del decreto que prorroga el salario mínimo, solo el preámbulo.</p>
       <details>
         <summary>Detalle y fuentes</summary>
@@ -789,10 +786,10 @@ details.yg[open]>summary::before{content:"−"}
       </details>
     </article>
     <article class="fact">
-      <div class="meta"><time>24 feb 2026</time><span class="badge of">Oficial</span></div>
+      <div class="meta"><time>24 feb 2026</time><span class="badge of">Norma: Oficial</span></div>
       <h3>Proposición de ley sobre derechos laborales en deslocalizaciones, rechazada</h3>
       <p class="plain">El Congreso rechaza debatir una propuesta de Sumar sobre los derechos de la plantilla cuando una empresa traslada o vende su actividad. No cambia nada.</p>
-      <div class="vote" role="img" aria-label="168 a favor, 178 en contra, 1 abstenciones"><span class="lbl">24 feb 2026 · Rechazado</span><div class="bar"><span class="y" style="width:48.41%">168 a favor</span><span class="n" style="width:51.30%">178 en contra</span><span class="a" style="width:0.29%"></span></div></div>
+      <div class="vote" role="img" aria-label="168 a favor, 178 en contra, 1 abstenciones"><span class="lbl">24 feb 2026 · Rechazado · recuento oficial</span><div class="bar"><span class="y" style="width:48.41%">168 a favor</span><span class="n" style="width:51.30%">178 en contra</span><span class="a" style="width:0.29%"></span></div></div>
       <p class="limit">Qué grupos votaron en contra.</p>
       <details>
         <summary>Detalle y fuentes</summary>

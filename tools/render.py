@@ -26,6 +26,8 @@ details.yg>summary::before{content:"+";font-family:var(--f-mono);font-size:1rem;
 details.yg[open]>summary::before{content:"−"}
 .ygi{display:flex;flex-direction:column;gap:14px}
 .tl.compact li{padding-bottom:10px}
+.tl li.sep{display:block;padding-bottom:10px}
+.tl li.sep span{display:block;border-top:1px dashed var(--rule);padding-top:6px;font-family:var(--f-mono);font-size:.74rem;color:var(--ink-2);text-transform:uppercase;letter-spacing:.06em}
 .tl.compact .t{font-weight:500;font-size:.95rem}
 .keys{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.88rem;color:var(--ink-2)}
 .keys i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px}
@@ -33,6 +35,10 @@ details.yg[open]>summary::before{content:"−"}
 </style>"""
 REVISION = "11 de noviembre de 2026"
 MESES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"]
+CAMARA = {"senado": "Senado", "comision": "Comisión", "diputacion_permanente": "Diputación Permanente"}
+RECUENTO = {"oficial": "recuento oficial", "dos_fuentes": "recuento según dos medios", "una_fuente": "recuento según un medio"}
+GOBIERNOS = [("2020-01-13", "Enero de 2020 · Gobierno de PSOE y Unidas Podemos"),
+             ("2023-11-16", "Noviembre de 2023 · Gobierno de PSOE y Sumar")]
 BADGE = {"oficial": ("Oficial", True), "dos_fuentes": ("Prensa · 2 fuentes", False),
          "terceros": ("Resumen de terceros", False), "una_fuente": ("Una sola fuente", False)}
 RESULT = {"convalidado": "Convalidado", "derogado": "Derogado: no se convalidó",
@@ -64,24 +70,24 @@ def votacion_html(v):
     res = RESULT.get(v.get("resultado"), "")
     a, n, ab = v.get("a_favor"), v.get("en_contra"), v.get("abstenciones") or 0
     parts = []
+    cam = CAMARA.get(v.get("camara"))
+    rc = RECUENTO.get(v.get("fuente_recuento"))
     if a is not None and n is not None:
         tot = a + n + ab
         lab = "%d a favor, %d en contra%s" % (a, n, (", %d abstenciones" % ab) if ab else "")
         seg = '<span class="y" style="width:%.2f%%">%d a favor</span><span class="n" style="width:%.2f%%">%d en contra</span>' % (
             a * 100 / tot, a, n * 100 / tot, n)
         if ab: seg += '<span class="a" style="width:%.2f%%">%s</span>' % (ab * 100 / tot, ab if ab * 100 / tot > 6 else "")
-        parts.append('<div class="vote" role="img" aria-label="%s"><span class="lbl">%s · %s</span><div class="bar">%s</div></div>' % (
-            e(lab), e(fecha(v.get("fecha"))), e(res), seg))
+        parts.append('<div class="vote" role="img" aria-label="%s"><span class="lbl">%s</span><div class="bar">%s</div></div>' % (
+            e(lab), e(" · ".join(x for x in [fecha(v.get("fecha")), cam, res, rc] if x)), seg))
     else:
-        parts.append('<p class="vote"><span class="lbl">%s · %s · las fuentes no dan el recuento</span></p>' % (e(fecha(v.get("fecha"))), e(res)))
-    g = v.get("grupos_en_contra") or []
-    if g: parts.append("<p>En contra: %s.</p>" % e(", ".join(sorted(g, key=str.lower))))
+        parts.append('<p class="vote"><span class="lbl">%s</span></p>' % e(" · ".join(x for x in [fecha(v.get("fecha")), cam, res, "las fuentes no dan el recuento"] if x)))
     return "\n      ".join(parts)
 
 
 def fact_html(h):
     lab, of = BADGE.get(h.get("verificacion"), ("Una sola fuente", False))
-    badge = '<span class="badge%s">%s</span>' % (" of" if of else "", e(lab))
+    badge = '<span class="badge%s">Norma: %s</span>' % (" of" if of else "", e(lab))
     limit = ('\n      <p class="limit">%s</p>' % e(h["no_sabemos"])) if h.get("no_sabemos") else ""
     det = ('<p>%s</p>\n          ' % e(h["detalle"])) if h.get("detalle") else ""
     return """    <article class="fact">
@@ -125,9 +131,11 @@ def render(tema):
         " gap" if k.startswith("Lo que esta") else "", e(k), e(v)) for k, v in rows if v)
 
     compact = len(hechos) > 12
-    tl = "\n".join('      <li><time>%s</time><span class="mk"><i class="dot%s"></i></span><div><p class="t">%s</p><p class="s">%s</p></div></li>' % (
+    items = [(h["fecha"], h) for h in hechos] + [(f, t) for f, t in GOBIERNOS]
+    items.sort(key=lambda x: x[0])
+    tl = "\n".join('      <li class="sep"><span>%s</span></li>' % e(h) if isinstance(h, str) else '      <li><time>%s</time><span class="mk"><i class="dot%s"></i></span><div><p class="t">%s</p><p class="s">%s</p></div></li>' % (
         e(fecha(h["fecha"])), "" if h["tipo"] == "aprobado" else " no", e(h["titulo"]),
-        "" if compact and h["tipo"] == "aprobado" else e(RESULT.get((h.get("votacion") or {}).get("resultado"), "") if h["tipo"] != "aprobado" else (h["frase_llana"].split(". ")[0].rstrip(".") + "."))) for h in hechos)
+        "" if compact and h["tipo"] == "aprobado" else e(RESULT.get((h.get("votacion") or {}).get("resultado"), "") if h["tipo"] != "aprobado" else (h["frase_llana"].split(". ")[0].rstrip(".") + "."))) for _, h in items)
 
     aviso = ""
     if d.get("aviso_competencia"):
@@ -180,7 +188,7 @@ def render(tema):
   <div class="head">
     <p class="kicker">Gobierno central y Cortes · 2018 a 2026</p>
     <h1>%(titulo)s</h1>
-    <p class="lede">Ocho años con Pedro Sánchez como presidente del Gobierno, desde junio de 2018.</p>
+    <p class="lede">Periodo: junio de 2018 a octubre de 2026. Tres gobiernos presididos por Pedro Sánchez: PSOE (2018-2020), PSOE y Unidas Podemos (2020-2023), PSOE y Sumar (desde 2023). Los datos de 2018 anteriores a junio corresponden al Gobierno anterior.</p>
   </div>
 %(aviso)s
   <div class="sum" aria-label="Resumen">

@@ -5,7 +5,7 @@
   "aviso_competencia": "",
   "resumen": {
     "aprobado": "Subida de las pensiones cada año (entre 0,9 % y 8,5 %), ligada a la inflación desde la Ley 21/2021. Ingreso mínimo vital (2020, ley en 2021) y complemento por hijos contra la brecha de género (2021). Cotización de autónomos por ingresos reales (2022), reforma de cotizaciones y cálculo de la pensión (2023) y compatibilidad entre pensión y trabajo (2024 y 2026).",
-    "no_salio": "El Congreso derogó dos decretos ómnibus que incluían la subida anual: en enero de 2025 y en enero de 2026. En los dos casos, un decreto posterior con la subida se convalidó. En septiembre de 2026 el Congreso admitió a trámite quitar el recorte por jubilación anticipada con 40 años cotizados, pero no llegó a ser ley.",
+    "no_salio": "El Congreso derogó dos decretos ómnibus, con medidas de varias materias, que incluían la subida anual: en enero de 2025 y en enero de 2026. En los dos casos, un decreto posterior con la subida se convalidó. En septiembre de 2026 el Congreso admitió a trámite quitar el recorte por jubilación anticipada con 40 años cotizados, pero no llegó a ser ley.",
     "cifras": "La pensión media de jubilación pasó de 1.074,83 euros al mes en enero de 2018 a 1.563,60 en enero de 2026, en euros corrientes. Las pensiones contributivas pasaron de 9,57 a 10,45 millones. La mayor subida anual fue la de 2023: 8,5 %.",
     "no_sabe": "Qué grupos votaron en contra o se abstuvieron en varias votaciones (a menudo solo lo da una fuente de prensa) y el recuento final de la ley de mutualistas de 2026."
   },
@@ -23,7 +23,8 @@
         "en_contra": 1,
         "abstenciones": 164,
         "grupos_en_contra": [],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -74,7 +75,8 @@
         "en_contra": null,
         "abstenciones": 49,
         "grupos_en_contra": [],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -112,7 +114,8 @@
         "en_contra": null,
         "abstenciones": 52,
         "grupos_en_contra": [],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -169,7 +172,8 @@
           "UPN",
           "Vox"
         ],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -207,7 +211,8 @@
         "en_contra": 98,
         "abstenciones": 63,
         "grupos_en_contra": [],
-        "resultado": "aprobado"
+        "resultado": "aprobado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -249,7 +254,8 @@
           "PP",
           "Vox"
         ],
-        "resultado": "aprobado"
+        "resultado": "aprobado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -329,7 +335,8 @@
         "en_contra": 164,
         "abstenciones": 6,
         "grupos_en_contra": [],
-        "resultado": "aprobado"
+        "resultado": "aprobado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -376,7 +383,8 @@
           "Ciudadanos",
           "Vox"
         ],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -435,7 +443,8 @@
           "Ciudadanos",
           "PP"
         ],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -483,7 +492,8 @@
           "UPN",
           "Vox"
         ],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -527,7 +537,8 @@
         "en_contra": 51,
         "abstenciones": null,
         "grupos_en_contra": [],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -556,8 +567,8 @@
       "id": "pen-2025-rdl-9-2024-derogado",
       "tipo": "no_salio",
       "fecha": "2025-01-22",
-      "titulo": "Real Decreto-ley 9/2024, decreto ómnibus con la revalorización de 2025",
-      "frase_llana": "El Congreso no convalida el decreto que subía las pensiones en 2025 junto con otras medidas. La subida de enero ya se había pagado; el Gobierno aprueba otro decreto.",
+      "titulo": "Real Decreto-ley 9/2024, decreto ómnibus, derogado",
+      "frase_llana": "Decreto con medidas de varias materias a la vez. Subía las pensiones en 2025. El Congreso no lo convalida. La subida de enero ya se había pagado; el Gobierno aprueba otro decreto.",
       "detalle": "Real Decreto-ley 9/2024, de 23 de diciembre, por el que se adoptan medidas urgentes en materia económica, tributaria, de transporte, y de Seguridad Social, y se prorrogan determinadas medidas para hacer frente a situaciones de vulnerabilidad social. BOE núm. 309, de 24 de diciembre de 2024. Incluía la revalorización del 2,8 % de las pensiones contributivas. Derogado el 22 de enero de 2025 (Resolución publicada en el BOE núm. 20, de 23 de enero de 2025, BOE-A-2025-1136). La nómina de enero de 2025 ya incorporaba la subida.",
       "votacion": {
         "fecha": "2025-01-22",
@@ -569,7 +580,8 @@
           "PP",
           "Vox"
         ],
-        "resultado": "derogado"
+        "resultado": "derogado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -598,7 +610,7 @@
         }
       ],
       "verificacion": "oficial",
-      "no_sabemos": "Los grupos en contra solo los nombra una fuente de prensa."
+      "no_sabemos": "El recuento es oficial (Diario de Sesiones del Congreso); los grupos en contra proceden de una sola fuente de prensa."
     },
     {
       "id": "pen-2025-rdl-1",
@@ -615,7 +627,8 @@
         "grupos_en_contra": [
           "Vox"
         ],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -650,8 +663,8 @@
       "id": "pen-2026-rdl-16-2025-derogado",
       "tipo": "no_salio",
       "fecha": "2026-01-27",
-      "titulo": "Real Decreto-ley 16/2025, decreto ómnibus con la revalorización de 2026",
-      "frase_llana": "El Congreso no convalida el decreto que subía las pensiones en 2026 junto con otras medidas. El Gobierno aprueba otro decreto solo de pensiones.",
+      "titulo": "Real Decreto-ley 16/2025, decreto ómnibus, derogado",
+      "frase_llana": "Decreto con medidas de varias materias a la vez. Subía las pensiones en 2026. El Congreso no lo convalida. El Gobierno aprueba otro decreto solo de pensiones.",
       "detalle": "Real Decreto-ley 16/2025, de 23 de diciembre, por el que se prorrogan determinadas medidas para hacer frente a situaciones de vulnerabilidad social, y se adoptan medidas urgentes en materia tributaria y de Seguridad Social (expediente 130/000030). Incluía la revalorización del 2,7 % de las contributivas, 7 % de las mínimas y 11,4 % de las no contributivas y el ingreso mínimo vital. Votos emitidos: 349. Derogado el 27 de enero de 2026. La nómina de enero de 2026 ya incorporaba la subida.",
       "votacion": {
         "fecha": "2026-01-27",
@@ -663,7 +676,8 @@
           "PP",
           "Vox"
         ],
-        "resultado": "derogado"
+        "resultado": "derogado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -703,7 +717,8 @@
         "grupos_en_contra": [
           "Vox"
         ],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -772,7 +787,8 @@
         "en_contra": null,
         "abstenciones": null,
         "grupos_en_contra": [],
-        "resultado": "aprobado"
+        "resultado": "aprobado",
+        "fuente_recuento": null
       },
       "fuentes": [
         {
@@ -816,7 +832,8 @@
         "en_contra": 33,
         "abstenciones": 136,
         "grupos_en_contra": [],
-        "resultado": "tomado_en_consideracion"
+        "resultado": "tomado_en_consideracion",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {

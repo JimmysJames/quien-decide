@@ -25,7 +25,8 @@
         "grupos_en_contra": [
           "PP"
         ],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -80,7 +81,8 @@
           "Junts",
           "Vox"
         ],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -136,7 +138,8 @@
         "en_contra": 141,
         "abstenciones": 10,
         "grupos_en_contra": [],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -203,7 +206,8 @@
           "UPN",
           "Vox"
         ],
-        "resultado": "aprobado"
+        "resultado": "aprobado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -247,7 +251,8 @@
         "en_contra": 91,
         "abstenciones": 57,
         "grupos_en_contra": [],
-        "resultado": "aprobado"
+        "resultado": "aprobado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -285,7 +290,8 @@
         "en_contra": 100,
         "abstenciones": 60,
         "grupos_en_contra": [],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -334,7 +340,8 @@
           "PSOE",
           "Vox"
         ],
-        "resultado": "rechazado"
+        "resultado": "rechazado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -366,7 +373,8 @@
         "en_contra": 90,
         "abstenciones": 78,
         "grupos_en_contra": [],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -410,7 +418,8 @@
         "en_contra": 10,
         "abstenciones": 141,
         "grupos_en_contra": [],
-        "resultado": "tomado_en_consideracion"
+        "resultado": "tomado_en_consideracion",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -471,7 +480,8 @@
           "PP",
           "Vox"
         ],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -509,7 +519,8 @@
         "en_contra": 159,
         "abstenciones": 70,
         "grupos_en_contra": [],
-        "resultado": "rechazado"
+        "resultado": "rechazado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -541,7 +552,8 @@
         "en_contra": 191,
         "abstenciones": 88,
         "grupos_en_contra": [],
-        "resultado": "enmienda_rechazada"
+        "resultado": "enmienda_rechazada",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -576,7 +588,8 @@
           "PP",
           "Vox"
         ],
-        "resultado": "aprobado"
+        "resultado": "aprobado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -614,7 +627,8 @@
         "en_contra": 0,
         "abstenciones": 0,
         "grupos_en_contra": [],
-        "resultado": "aprobado"
+        "resultado": "aprobado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -663,7 +677,8 @@
           "PP",
           "Vox"
         ],
-        "resultado": "rechazado"
+        "resultado": "rechazado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -695,7 +710,8 @@
         "en_contra": 173,
         "abstenciones": 0,
         "grupos_en_contra": [],
-        "resultado": "rechazado"
+        "resultado": "rechazado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -731,7 +747,8 @@
           "PP",
           "Vox"
         ],
-        "resultado": "rechazado"
+        "resultado": "rechazado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -812,7 +829,8 @@
         "en_contra": 0,
         "abstenciones": 0,
         "grupos_en_contra": [],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -869,7 +887,8 @@
         "en_contra": 33,
         "abstenciones": 8,
         "grupos_en_contra": [],
-        "resultado": "tomado_en_consideracion"
+        "resultado": "tomado_en_consideracion",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -903,7 +922,8 @@
         "grupos_en_contra": [
           "Vox"
         ],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -953,7 +973,8 @@
         "en_contra": 169,
         "abstenciones": 0,
         "grupos_en_contra": [],
-        "resultado": "tomado_en_consideracion"
+        "resultado": "tomado_en_consideracion",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -1024,7 +1045,8 @@
         "grupos_en_contra": [
           "Vox"
         ],
-        "resultado": "tomado_en_consideracion"
+        "resultado": "tomado_en_consideracion",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {

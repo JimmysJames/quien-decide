@@ -84,7 +84,8 @@
         "en_contra": null,
         "abstenciones": null,
         "grupos_en_contra": [],
-        "resultado": "aprobado"
+        "resultado": "aprobado",
+        "fuente_recuento": null
       },
       "fuentes": [
         {
@@ -141,7 +142,8 @@
         "en_contra": 154,
         "abstenciones": 7,
         "grupos_en_contra": [],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -186,7 +188,8 @@
           "UPN",
           "Vox"
         ],
-        "resultado": "aprobado"
+        "resultado": "aprobado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -242,7 +245,8 @@
         "en_contra": 0,
         "abstenciones": 27,
         "grupos_en_contra": [],
-        "resultado": "tomado_en_consideracion"
+        "resultado": "tomado_en_consideracion",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -381,7 +385,8 @@
         "grupos_en_contra": [
           "PP"
         ],
-        "resultado": "aprobado"
+        "resultado": "aprobado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -432,7 +437,8 @@
           "PP",
           "Vox"
         ],
-        "resultado": "convalidado"
+        "resultado": "convalidado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -476,7 +482,8 @@
           "PP",
           "Vox"
         ],
-        "resultado": "aprobado"
+        "resultado": "aprobado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -553,7 +560,8 @@
         "grupos_en_contra": [
           "Vox"
         ],
-        "resultado": "aprobado"
+        "resultado": "aprobado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -603,7 +611,8 @@
         "en_contra": 177,
         "abstenciones": 0,
         "grupos_en_contra": [],
-        "resultado": "rechazado"
+        "resultado": "rechazado",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {
@@ -635,7 +644,8 @@
         "en_contra": 329,
         "abstenciones": 7,
         "grupos_en_contra": [],
-        "resultado": "enmienda_rechazada"
+        "resultado": "enmienda_rechazada",
+        "fuente_recuento": "oficial"
       },
       "fuentes": [
         {

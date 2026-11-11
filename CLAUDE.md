@@ -57,7 +57,7 @@ Decisión explícita: se descartó una versión con postura editorial. Motivos: 
 | Pensiones | 3 | 0 | 0 | CE 149.1.17 |
 | Educación | 2 | 3 | 1 | LOMLOE; transferida; 0–3 y mantenimiento de colegios municipal. Ceuta y Melilla: Ministerio |
 | Corrupción | 2 | 2 | 2 | Código Penal; Ley 9/2017 de contratos |
-| Seguridad ciudadana | 3 | 1 | 2 | CE 149.1.29; policía propia solo en Cataluña, País Vasco, Navarra y Canarias (adscrita); Policía Local |
+| Seguridad ciudadana | 3 | 1 | 2 | CE 149.1.29; policía propia solo en Cataluña, País Vasco, Navarra y Canarias (Policía Canaria, Ley 2/2008); Policía Local |
 | Clima y energía | 2 | 2 | 2 | Ley 7/2021; ordenación del territorio; residuos y movilidad municipal |
 
 Partido que lidera cada gobierno autonómico (2026, verificar): PP en Andalucía, Aragón, Baleares, Cantabria, Castilla y León, C. Valenciana, Extremadura, Galicia, Madrid, Murcia, La Rioja, Ceuta y Melilla; PSOE en Asturias, Castilla-La Mancha y Navarra; PSC en Cataluña; PNV en País Vasco; Coalición Canaria en Canarias. Estado: PSOE. Gobiernos municipales: no incluidos (dato difícil de mantener; sale de resultados y pactos).
@@ -221,6 +221,7 @@ La ficha HTML se genera a partir de estos registros. Un hecho sin `fuentes` no s
 - 2026-11-11 · Corrupción incluye la LO 1/2024 de amnistía porque su texto en el BOE comprende la malversación; texto estrictamente literal. PENDIENTE DE CONFIRMAR.
 - 2026-11-11 · Sanidad incluye la LO 1/2023 (salud sexual y reproductiva y aborto) por ser materia sanitaria.
 - 2026-11-11 · No promocionar el 28 de noviembre ni publicar agregados desde el 24. Motivo: jornada de reflexión y prohibición de sondeos (LOREG).
+- 2026-11-11 · Revisión de neutralidad (A, B, C). A: las fichas dejan de mostrar los grupos «en contra» (solo constaban cuando la prensa lo decía; el campo se conserva en los datos); decretos ómnibus derogados con título y primera frase iguales en todas las fichas; «tumbar» sustituido; mismo recuento y mismo texto de fuente para una misma votación en varias fichas. B: encabezado con los tres gobiernos y separadores de gobierno en la línea de tiempo; la tarjeta usa la formulación del resumen; Ceuta y Melilla con sanidad y educación 3 Estado / 1 ciudad; Policía Canaria es cuerpo propio. C: cada votación lleva `fuente_recuento` (oficial / dos_fuentes / una_fuente / null) y `camara` si no es el Pleno del Congreso; siete recuentos cotejados en el Diario de Sesiones; los Presupuestos no presentados pasan a «Lo que esta página no sabe» (no es norma ni votación); la frase de la LO 14/2022 cita el preámbulo.
 
 ## Estado actual (11 nov 2026)
 
